@@ -1,0 +1,41 @@
+# lsFusionMETA instruction
+
+# META instruction
+
+The **META** instruction creates a new [metacode](Metaprogramming_1310740.html#Metaprogramming-metacode).
+
+**Syntax**
+
+    META name(param1, ..., paramN)
+        statement1
+        ...
+        statementM
+    END
+
+**Description**
+
+The **META** instruction declares a new metacode and adds it to the current [module](lsFusionModules.md). 
+
+The **META** instruction is an exception - it is not supposed to end with a colon.  
+
+**Parameters**
+
+*name*
+
+Metacode name. [Simple ID](lsFusionIDs.md). Must be unique within the current namespace among metacodes with the same number of parameters.
+
+*param1, ..., paramN*
+
+List of metacode parameters. Each parameter is defined by a simple ID. The list cannot be empty.
+
+*statement1 ... statementM*
+
+A sequence of  [instructions](lsFusionInstructions.md) represented by a block of code. Instructions may contain [special operations \#\# and \#\#\#](Metaprogramming_1310740.html#Metaprogramming-concat) used for concatenating [lexemes](lsFusionTokens.md). Instructions cannot include another **META** instruction.
+
+**Examples**
+
+********************
+
+
+
+  

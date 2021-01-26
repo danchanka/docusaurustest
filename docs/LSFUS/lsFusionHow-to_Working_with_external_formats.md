@@ -1,0 +1,8 @@
+# lsFusionHow-to: Working with external formats
+
+# How-to: Working with external formats
+
+##### How to read these sections
+
+1.  [Data export](lsFusionHow-to_Data_export.md). The description of the mechanisms of exporting data to various structured formats.
+2.  [Data import](lsFusionHow-to_Data_import.md). Description of the mechanisms of importing data from various structured formats.

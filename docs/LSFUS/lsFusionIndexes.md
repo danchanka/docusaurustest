@@ -1,0 +1,17 @@
+# lsFusionIndexes
+
+# Indexes
+
+Building an *index* by property allows storing all the values of this property in the database in an ordered form. Accordingly, the index is updated with every change of the indexed property value. Due to the index, if, for example, you filter by an indexed property, you can find the objects you need very quickly, rather than viewing all the objects that exist in the system.
+
+Only [materialized](lsFusionMaterializations.md) properties can be indexed.
+
+An index can also be built on several properties at once (this is effective if, for example, you need to filter by several properties simultaneously). In addition, property parameters can be included in a composite index of this kind. The built index will be named as following: **&lt;table ID&gt;\_&lt;property/parameter name 1&gt;\_...\_&lt;property/parameter name N&gt;**. If the specified properties are stored in different [tables](lsFusionTables.md), then the corresponding error will be thrown when you try to build the index.
+
+**Language**
+
+To create indexes, you must use the [**INDEX** instruction](lsFusionINDEX_instruction.md) or the [**INDEXED** option](Property-options_7798786.html#Propertyoptions-indexed) in property options.
+
+**Examples**
+
+
