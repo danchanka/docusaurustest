@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'lsfusion documentation',
+  tagline: 'lsfusion documentation',
   url: 'https://danchanka.github.io',
   baseUrl: '/docusaurustest/',
   onBrokenLinks: 'warn',
@@ -10,7 +10,7 @@ module.exports = {
   projectName: 'docusaurustest', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'lsfusion',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -24,7 +24,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/danchanka/docusaurustest',
           label: 'GitHub',
           position: 'right',
         },
@@ -37,12 +37,8 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
-            },
-            {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'lsf docs',
+              to: 'docs/index',
             },
           ],
         },
@@ -51,15 +47,15 @@ module.exports = {
           items: [
             {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              href: 'https://ru.stackoverflow.com/questions/tagged/lsfusion',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Slack',
+              href: 'https://slack.lsfusion.org',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/lsfusion',
             },
           ],
         },
@@ -71,13 +67,17 @@ module.exports = {
               to: 'blog',
             },
             {
+              label: 'Habr',
+              href: 'https://habr.com/ru/company/lsfusion/blog/',
+            },
+            {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/danchanka/docusaurustest',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} lsfusion.org. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -88,13 +88,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/danchanka/docusaurustest/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/danchanka/docusaurustest/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

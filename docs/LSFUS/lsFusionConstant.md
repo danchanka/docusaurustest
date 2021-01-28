@@ -12,23 +12,6 @@ Static objects of built-in classes are specified by special [literals](lsFusionL
 
 Examples
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11CLASS Direction {
-north, east, south, west // declaring static objects
-}
-isNorth (Direction d) = d == Direction.north; // here a constant property is created from a Direction.north object which is then used by the comparison operator to construct the isNorth property
-defaultDate() = 1982\_07\_13; // here a constant property is created from a literal describing the date
-CLASS Man;
-age 'Age' = DATA INTEGER (Man);
-isChild (Man m) = age(m) &lt; 17; // here a constant property is used created from an integer (integer literal)
+
 
   
