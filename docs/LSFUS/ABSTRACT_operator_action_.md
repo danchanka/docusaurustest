@@ -1,6 +1,6 @@
-# lsFusionABSTRACT operator (action)
-
-# ABSTRACT operator (action)
+---
+title: 'ABSTRACT operator (action)'
+---
 
 The **ABSTRACT** operator - creating an [abstract action](Action_extension.md). 
 

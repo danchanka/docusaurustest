@@ -1,6 +1,6 @@
-# lsFusionInstruction +=
-
-# Instruction +=
+---
+title: 'Instruction +='
+---
 
 The += instruction adds an implementation (selection option) to an [abstract property](Property_extension.md).
 

@@ -1,6 +1,6 @@
-# lsFusionACTIVATE operator
-
-# ACTIVATE operator
+---
+title: 'ACTIVATE operator'
+---
 
 The **ACTIVATE** operator creates an [action](Actions.md) that [activates](Activation_ACTIVATE_.md) a specified [form](Forms.md), tab, property, or action on a form
 

@@ -1,6 +1,6 @@
-# lsFusionEXTEND FORM instruction
-
-# EXTEND FORM instruction
+---
+title: 'EXTEND FORM instruction'
+---
 
 The **EXTEND FORM** instruction [extends](Form_extension.md) an existing [form](Forms.md).
 

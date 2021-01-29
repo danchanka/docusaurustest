@@ -1,6 +1,6 @@
-# lsFusionLaunch parameters
-
-# Launch parameters
+---
+title: 'Launch parameters'
+---
 
 -   Application server (Server)
     -   [Java](#Launchparameters-appjava)

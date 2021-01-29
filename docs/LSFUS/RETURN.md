@@ -1,6 +1,6 @@
-# lsFusionRETURN
-
-# RETURN
+---
+title: 'RETURN'
+---
 
 The **RETURN** operator creates an [action](Actions.md) that implements [exit](Exit_RETURN_.md) from an action created by the [**EXEC** operator](Call_EXEC_.md).
 

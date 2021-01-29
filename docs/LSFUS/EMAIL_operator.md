@@ -1,6 +1,6 @@
-# lsFusionEMAIL operator
-
-# EMAIL operator
+---
+title: 'EMAIL operator'
+---
 
 The **EMAIL** operator creates an [action](Actions.md) that [sends email](Send_mail_EMAIL_.md).
 

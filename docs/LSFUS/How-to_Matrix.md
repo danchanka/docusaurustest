@@ -1,6 +1,6 @@
-# lsFusionHow-to: Matrix
-
-# How-to: Matrix
+---
+title: 'How-to: Matrix'
+---
 
 ##### Example 1
 

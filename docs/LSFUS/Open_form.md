@@ -1,6 +1,6 @@
-# lsFusionOpen form
-
-# Open form
+---
+title: 'Open form'
+---
 
 The *open form* operator creates an [action](Actions.md) that opens the specified [form](Forms.md).
 

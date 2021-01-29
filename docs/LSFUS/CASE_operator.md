@@ -1,6 +1,6 @@
-# lsFusionCASE operator
-
-# CASE operator
+---
+title: 'CASE operator'
+---
 
 The **CASE** operator  creates a [property](Properties.md) that [selects](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md) a result by condition.
 

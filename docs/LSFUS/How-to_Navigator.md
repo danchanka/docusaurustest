@@ -1,6 +1,6 @@
-# lsFusionHow-to: Navigator
-
-# How-to: Navigator
+---
+title: 'How-to: Navigator'
+---
 
 ##### Example 1
 

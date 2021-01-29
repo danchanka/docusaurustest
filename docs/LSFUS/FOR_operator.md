@@ -1,6 +1,6 @@
-# lsFusionFOR operator
-
-# FOR operator
+---
+title: 'FOR operator'
+---
 
 The **FOR** operator creates an [action](Actions.md) that implements [loop](Loop_FOR_.md).
 

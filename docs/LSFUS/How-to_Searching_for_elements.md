@@ -1,6 +1,6 @@
-# lsFusionHow-to: Searching for elements
-
-# How-to: Searching for elements
+---
+title: 'How-to: Searching for elements'
+---
 
 ##### How to read these sections
 

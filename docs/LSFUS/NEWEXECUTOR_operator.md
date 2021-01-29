@@ -1,6 +1,6 @@
-# lsFusionNEWEXECUTOR operator
-
-# NEWEXECUTOR operator
+---
+title: 'NEWEXECUTOR operator'
+---
 
 The **NEWEXECUTOR** operator creates an [action](Actions.md) that enables executing other actions in a [new thread pool](New_threads_NEWTHREAD_NEWEXECUTOR_.md).
 

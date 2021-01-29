@@ -1,6 +1,6 @@
-# lsFusionIF operator
-
-# IF operator
+---
+title: 'IF operator'
+---
 
 The **IF** operator - creating a [property](Properties.md) implementing [selection](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md) of a value by condition (single form). 
 

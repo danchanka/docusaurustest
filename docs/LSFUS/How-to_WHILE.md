@@ -1,6 +1,6 @@
-# lsFusionHow-to: WHILE
-
-# How-to: WHILE
+---
+title: 'How-to: WHILE'
+---
 
 ##### Example 1
 

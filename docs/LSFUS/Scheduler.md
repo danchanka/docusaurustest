@@ -1,6 +1,6 @@
-# lsFusionScheduler
-
-# Scheduler
+---
+title: 'Scheduler'
+---
 
 The scheduler is designed to automatically execute certain tasks with specified frequency.
 

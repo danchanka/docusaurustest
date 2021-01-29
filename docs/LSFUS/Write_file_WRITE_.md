@@ -1,6 +1,6 @@
-# lsFusionWrite file (WRITE)
-
-# Write file (WRITE)
+---
+title: 'Write file (WRITE)'
+---
 
 The *write file* operator creates an [action](Actions.md) which reads a file from the value of some property and saves it to the defined source.
 

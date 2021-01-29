@@ -1,6 +1,6 @@
-# lsFusionHow-to: Imperative logic
-
-# How-to: Imperative logic
+---
+title: 'How-to: Imperative logic'
+---
 
 ##### How to read these sections
 

@@ -1,6 +1,6 @@
-# lsFusionIndexes
-
-# Indexes
+---
+title: 'Indexes'
+---
 
 Building an *index* by property allows storing all the values of this property in the database in an ordered form. Accordingly, the index is updated with every change of the indexed property value. Due to the index, if, for example, you filter by an indexed property, you can find the objects you need very quickly, rather than viewing all the objects that exist in the system.
 

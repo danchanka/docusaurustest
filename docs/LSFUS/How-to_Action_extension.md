@@ -1,6 +1,6 @@
-# lsFusionHow-to: Action extension
-
-# How-to: Action extension
+---
+title: 'How-to: Action extension'
+---
 
 We can use the following scheme to implement polymorphism:
 

@@ -1,6 +1,6 @@
-# lsFusionExecution
-
-# Execution
+---
+title: 'Execution'
+---
 
 If the system is small and there is not much data in it, it usually works quite efficiently without any additional optimizations. But if the logic becomes more complex, and the amount of data increases significantly, it often makes sense to tell the platform how best to store and process all this data.
 

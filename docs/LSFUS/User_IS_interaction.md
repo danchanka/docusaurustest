@@ -1,6 +1,6 @@
-# lsFusionUser/IS interaction
-
-# User/IS interaction
+---
+title: 'User/IS interaction'
+---
 
 This category includes operators for interacting with the user and with other information systems:
 

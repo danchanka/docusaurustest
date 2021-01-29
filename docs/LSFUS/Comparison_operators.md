@@ -1,6 +1,6 @@
-# lsFusionComparison operators
-
-# Comparison operators
+---
+title: 'Comparison operators'
+---
 
 **==, =**, **!=**, **&lt;**, **&gt;**, **&lt;=**, **&gt;=** operators create [properties](Properties.md) that implement [comparison operations](Comparison_operators_=_..._.md).
 

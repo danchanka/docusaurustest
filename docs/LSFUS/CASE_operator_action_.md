@@ -1,6 +1,6 @@
-# lsFusionCASE operator (action)
-
-# CASE operator (action)
+---
+title: 'CASE operator (action)'
+---
 
 The **CASE** operator creates an [action](Actions.md) that implements [branching](Branching_CASE_IF_MULTI_.md).
 

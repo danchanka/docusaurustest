@@ -1,6 +1,6 @@
-# lsFusionAGGR operator
-
-# AGGR operator
+---
+title: 'AGGR operator'
+---
 
 The **AGGR** operator creates an [aggregation](Aggregations.md).
 

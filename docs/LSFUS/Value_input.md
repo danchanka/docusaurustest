@@ -1,6 +1,6 @@
-# lsFusionValue input
-
-# Value input
+---
+title: 'Value input'
+---
 
 This category includes operators responsible for inputting a value:
 

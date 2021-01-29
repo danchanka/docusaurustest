@@ -1,6 +1,6 @@
-# lsFusionHow-to: Class extension
-
-# How-to: Class extension
+---
+title: 'How-to: Class extension'
+---
 
 The typical scheme for extracting relations between classes to a separate module is as follows:
 

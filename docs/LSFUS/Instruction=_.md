@@ -1,6 +1,6 @@
-# lsFusionInstruction=&gt;
-
-# Instruction=&gt;
+---
+title: 'Instruction=&gt;'
+---
 
 The **=&gt;** instruction creates a [consequence](Simple_constraints.md).
 

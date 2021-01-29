@@ -1,6 +1,6 @@
-# lsFusionScore table
-
-# Score table
+---
+title: 'Score table'
+---
 
 ##### "Score table" task description
 

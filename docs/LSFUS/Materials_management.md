@@ -1,6 +1,6 @@
-# lsFusionMaterials management
-
-# Materials management
+---
+title: 'Materials management'
+---
 
 ##### Description of the "Materials management" task
 

@@ -1,6 +1,6 @@
-# lsFusionMigration
-
-# Migration
+---
+title: 'Migration'
+---
 
 An **lsFusion**-based information system uses a relational database management system for permanent data storage. It should be remembered that after certain changes to the system logic, the platform is unable to determine how the data should be migrated. In these cases, the developer must explicitly define the migration method by creating the special *migration file* **migration.script**, which should be in the CLASSPATH of the application server.
 

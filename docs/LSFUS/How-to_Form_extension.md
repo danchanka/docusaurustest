@@ -1,6 +1,6 @@
-# lsFusionHow-to: Form extension
-
-# How-to: Form extension
+---
+title: 'How-to: Form extension'
+---
 
 Let's assume there is a module that describes the **Sku** form that is used to edit SKU values:
 

@@ -1,6 +1,6 @@
-# lsFusionHow-to: GROUP LAST
-
-# How-to: GROUP LAST
+---
+title: 'How-to: GROUP LAST'
+---
 
 ##### Example 1
 

@@ -1,6 +1,6 @@
-# lsFusionIn a structured view (EXPORT, IMPORT)
-
-# In a structured view (EXPORT, IMPORT)
+---
+title: 'In a structured view (EXPORT, IMPORT)'
+---
 
 This operator creates an action that [opens a form](Open_form.md) in the [structured](Structured_view.md) view.
 

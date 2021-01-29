@@ -1,6 +1,6 @@
-# lsFusionAccess to an external system (EXTERNAL)
-
-# Access to an external system (EXTERNAL)
+---
+title: 'Access to an external system (EXTERNAL)'
+---
 
 The operator for *accessing an external system* executes a specified code in the language/paradigm of the external system specified. In addition, this operator allows passing objects of [built-in classes](Built-in_classes.md) as parameters of this type of call, and also writing the *results* of calls to the properties specified (without parameters).
 

@@ -1,6 +1,6 @@
-# lsFusionExamples
-
-# Examples
+---
+title: 'Examples'
+---
 
 Examples are intended to demonstrate the capabilities of the **lsFusion** platform.
 

@@ -1,6 +1,6 @@
-# lsFusionSEEK operator
-
-# SEEK operator
+---
+title: 'SEEK operator'
+---
 
 The **SEEK** operator creates an [action](Actions.md) that [seeks specified objects](Search_SEEK_.md) on a [form](Forms.md).
 

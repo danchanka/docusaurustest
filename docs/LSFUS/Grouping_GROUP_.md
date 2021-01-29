@@ -1,6 +1,6 @@
-# lsFusionGrouping (GROUP)
-
-# Grouping (GROUP)
+---
+title: 'Grouping (GROUP)'
+---
 
 The *group *operator creates a [property](Properties.md) that divides all object collections in the system into groups, and calculates an [aggregating function](Set-operations_4391029.html#Setoperations-func) for each group following specified order. Accordingly, the set for which this aggregating function is calculated is determined as all the object collections belonging to this group. 
 

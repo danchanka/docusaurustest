@@ -1,6 +1,6 @@
-# lsFusionBEFORE instruction
-
-# BEFORE instruction
+---
+title: 'BEFORE instruction'
+---
 
 The **BEFORE** instruction calls an [action](Actions.md) before calling another action. 
 

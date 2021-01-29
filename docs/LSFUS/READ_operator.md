@@ -1,6 +1,6 @@
-# lsFusionREAD operator
-
-# READ operator
+---
+title: 'READ operator'
+---
 
 The **READ** operator creates an [action](Actions.md) that [reads a file](Read_file_READ_.md) to a [property](Properties.md) from an external resource.** **
 

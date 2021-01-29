@@ -1,6 +1,6 @@
-# lsFusionHow-to: IF/CASE
-
-# How-to: IF/CASE
+---
+title: 'How-to: IF/CASE'
+---
 
 ##### Example 1
 

@@ -1,6 +1,6 @@
-# lsFusionHow-to: Data entry
-
-# How-to: Data entry
+---
+title: 'How-to: Data entry'
+---
 
 ##### Example 1
 

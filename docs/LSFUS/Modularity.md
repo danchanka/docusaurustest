@@ -1,6 +1,6 @@
-# lsFusionModularity
-
-# Modularity
+---
+title: 'Modularity'
+---
 
 Modularity is a key mechanism for providing extensibility, reusability, and effective interaction among the development team.
 

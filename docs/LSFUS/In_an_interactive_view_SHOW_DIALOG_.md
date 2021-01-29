@@ -1,6 +1,6 @@
-# lsFusionIn an interactive view (SHOW, DIALOG)
-
-# In an interactive view (SHOW, DIALOG)
+---
+title: 'In an interactive view (SHOW, DIALOG)'
+---
 
 This operator creates an action that [opens a form](Open_form.md) in the [interactive](Interactive_view.md) view.
 

@@ -1,6 +1,6 @@
-# lsFusionValue request (REQUEST)
-
-# Value request (REQUEST)
+---
+title: 'Value request (REQUEST)'
+---
 
 The *value request* operator creates an [action](Actions.md) in which *requesting* value(s) is separated from directly *processing* the value(s). Accordingly, this operator allows not to perform a value request if its result *is known in advance* in the context of the call (the value of the **System.requestPushed** property is equal to **TRUE**). This, in turn, automatically gives you the following capabilities in various use cases:
 

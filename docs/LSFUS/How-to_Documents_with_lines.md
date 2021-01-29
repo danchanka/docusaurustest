@@ -1,6 +1,6 @@
-# lsFusionHow-to: Documents with lines
-
-# How-to: Documents with lines
+---
+title: 'How-to: Documents with lines'
+---
 
 ##### Example 1
 

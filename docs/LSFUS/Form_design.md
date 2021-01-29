@@ -1,6 +1,6 @@
-# lsFusionForm design
-
-# Form design
+---
+title: 'Form design'
+---
 
 The *form design* defines how a [form](Forms.md) is displayed in the [interactive](Interactive_view.md) view.
 

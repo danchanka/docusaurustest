@@ -1,6 +1,6 @@
-# lsFusionWorking parameters
-
-# Working parameters
+---
+title: 'Working parameters'
+---
 
 The platform working parameters can be set in one of the following ways (in the order of their priorities, lower priority at the bottom):
 

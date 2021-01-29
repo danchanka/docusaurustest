@@ -1,6 +1,6 @@
-# lsFusionDomain logic
-
-# Domain logic
+---
+title: 'Domain logic'
+---
 
 [Properties](Properties.md) are the basic concept for business logic and are responsible for storing and calculating data. 
 

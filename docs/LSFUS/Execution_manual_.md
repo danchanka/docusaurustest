@@ -1,6 +1,6 @@
-# lsFusionExecution (manual)
-
-# Execution (manual)
+---
+title: 'Execution (manual)'
+---
 
 To install the application server, web server and client, Java version 8 or later must first be installed on the computer.
 

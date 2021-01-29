@@ -1,6 +1,6 @@
-# lsFusionAction options
-
-# Action options
+---
+title: 'Action options'
+---
 
 When declaring an [action](Actions.md) in the [**ACTION** instruction](ACTION_instruction.md) a certain set of *action options* may be specified at the end of the declaration. 
 

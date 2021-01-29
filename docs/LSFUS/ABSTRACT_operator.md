@@ -1,6 +1,6 @@
-# lsFusionABSTRACT operator
-
-# ABSTRACT operator
+---
+title: 'ABSTRACT operator'
+---
 
 The **ABSTRACT** operator creates an [abstract property](Property_extension.md). 
 

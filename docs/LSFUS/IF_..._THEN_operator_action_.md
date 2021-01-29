@@ -1,6 +1,6 @@
-# lsFusionIF ... THEN operator (action)
-
-# IF ... THEN operator (action)
+---
+title: 'IF ... THEN operator (action)'
+---
 
 The **IF ... THEN** operator creates an [action](Actions.md) that implements [branching](5275770.html#Branching(CASE,IF,MULTI)-single) with one condition (single form).
 

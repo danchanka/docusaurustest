@@ -1,6 +1,6 @@
-# lsFusionSequence ({...})
-
-# Sequence ({...})
+---
+title: 'Sequence ({...})'
+---
 
 To create an [action](Actions.md) that performs a sequence of other actions, the [**{...}** operator](Operator_..._.md) is used - a block enclosed by curly brackets. The body of this block must contain a sequence of [action operators](Оperators.md) and local property declarations.
 

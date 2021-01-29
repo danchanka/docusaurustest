@@ -1,6 +1,6 @@
-# lsFusionParadigm
-
-# Paradigm
+---
+title: 'Paradigm'
+---
 
 The paradigm can be divided into two parts:
 

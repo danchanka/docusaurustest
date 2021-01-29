@@ -1,6 +1,6 @@
-# lsFusionFilter (FILTER)
-
-# Filter (FILTER)
+---
+title: 'Filter (FILTER)'
+---
 
 The *filter* operator creates a [property](Properties.md) that returns **TRUE** if the object collection matches the current [filter](Form-structure_1573069.html#Formstructure-filters) of the specified object group, and **NULL** if it does not.
 

@@ -1,6 +1,6 @@
-# lsFusionNew threads (NEWTHREAD, NEWEXECUTOR)
-
-# New threads (NEWTHREAD, NEWEXECUTOR)
+---
+title: 'New threads (NEWTHREAD, NEWEXECUTOR)'
+---
 
 The *new thread* operator allows you to execute an action in a thread other than the current one. 
 

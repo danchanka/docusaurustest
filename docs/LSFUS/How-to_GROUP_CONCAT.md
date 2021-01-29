@@ -1,6 +1,6 @@
-# lsFusionHow-to: GROUP CONCAT
-
-# How-to: GROUP CONCAT
+---
+title: 'How-to: GROUP CONCAT'
+---
 
 ##### Example 1
 

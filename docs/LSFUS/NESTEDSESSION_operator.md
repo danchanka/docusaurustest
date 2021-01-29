@@ -1,6 +1,6 @@
-# lsFusionNESTEDSESSION operator
-
-# NESTEDSESSION operator
+---
+title: 'NESTEDSESSION operator'
+---
 
 The **NESTEDSESSION** operator creates an [action](Actions.md) that executes the other action in a [nested session](30769225.html#Newsession(NEWSESSION,NESTEDSESSION)-nested).
 

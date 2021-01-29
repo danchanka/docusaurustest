@@ -1,6 +1,6 @@
-# lsFusionInstructions
-
-# Instructions
+---
+title: 'Instructions'
+---
 
 The code of any [module](Modules.md) in **[lsFusion](Language.md)** consists of a sequence of *instructions. *
 

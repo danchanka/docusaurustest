@@ -1,6 +1,6 @@
-# lsFusionNEW operator
-
-# NEW operator
+---
+title: 'NEW operator'
+---
 
 The **NEW** operator creates an [action](Actions.md) that [creates objects](New_object_NEW_.md) of the specified [class](Classes.md).
 

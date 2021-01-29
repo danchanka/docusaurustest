@@ -1,6 +1,6 @@
-# lsFusionForms
-
-# Forms
+---
+title: 'Forms'
+---
 
 Forms let you combine different types of information for one or more objects in a single interface. Logically, aform can be divided into two parts:
 

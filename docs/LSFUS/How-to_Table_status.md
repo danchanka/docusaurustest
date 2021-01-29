@@ -1,6 +1,6 @@
-# lsFusionHow-to: Table status
-
-# How-to: Table status
+---
+title: 'How-to: Table status'
+---
 
 ##### Example 1
 

@@ -1,6 +1,6 @@
-# lsFusionACTION+ instruction
-
-# ACTION+ instruction
+---
+title: 'ACTION+ instruction'
+---
 
 The **ACTION+**  instruction adds an implementation (branching condition) to an [abstract action](Action_extension.md).
 

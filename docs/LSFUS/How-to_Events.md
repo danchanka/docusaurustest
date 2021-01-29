@@ -1,6 +1,6 @@
-# lsFusionHow-to: Events
-
-# How-to: Events
+---
+title: 'How-to: Events'
+---
 
 ##### Example 1
 

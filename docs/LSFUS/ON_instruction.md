@@ -1,6 +1,6 @@
-# lsFusionON instruction
-
-# ON instruction
+---
+title: 'ON instruction'
+---
 
 The **ON** instruction adds an [event](Events.md) handler.
 

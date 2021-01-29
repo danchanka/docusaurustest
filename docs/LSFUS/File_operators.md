@@ -1,6 +1,6 @@
-# lsFusionFile operators
-
-# File operators
+---
+title: 'File operators'
+---
 
 The platform supports the following file operators:
 

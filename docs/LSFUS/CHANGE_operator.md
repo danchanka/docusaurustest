@@ -1,6 +1,6 @@
-# lsFusionCHANGE operator
-
-# CHANGE operator
+---
+title: 'CHANGE operator'
+---
 
 The **CHANGE** operator creates an [action](Actions.md) that [changes properties](Property_сhange_CHANGE_.md).
 

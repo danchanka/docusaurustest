@@ -1,6 +1,6 @@
-# lsFusionAFTER instruction
-
-# AFTER instruction
+---
+title: 'AFTER instruction'
+---
 
 The **AFTER** instruction  calls an [action](Actions.md) after calling another action. 
 

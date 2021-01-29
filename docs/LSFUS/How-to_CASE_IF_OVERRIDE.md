@@ -1,6 +1,6 @@
-# lsFusionHow-to: CASE/IF/OVERRIDE
-
-# How-to: CASE/IF/OVERRIDE
+---
+title: 'How-to: CASE/IF/OVERRIDE'
+---
 
 ##### Example 1
 

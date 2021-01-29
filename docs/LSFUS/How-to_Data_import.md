@@ -1,6 +1,6 @@
-# lsFusionHow-to: Data import
-
-# How-to: Data import
+---
+title: 'How-to: Data import'
+---
 
 ##### Example 1
 

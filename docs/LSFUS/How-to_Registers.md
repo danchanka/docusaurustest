@@ -1,6 +1,6 @@
-# lsFusionHow-to: Registers
-
-# How-to: Registers
+---
+title: 'How-to: Registers'
+---
 
 ##### Accumulation ledger
 

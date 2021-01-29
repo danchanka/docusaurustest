@@ -1,6 +1,6 @@
-# lsFusionSTRUCT operator
-
-# STRUCT operator
+---
+title: 'STRUCT operator'
+---
 
 The **STRUCT** operator creates a [property](Properties.md) that creates a [structure](Structure_operations_STRUCT_.md).
 

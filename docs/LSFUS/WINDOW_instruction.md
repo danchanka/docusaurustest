@@ -1,6 +1,6 @@
-# lsFusionWINDOW instruction
-
-# WINDOW instruction
+---
+title: 'WINDOW instruction'
+---
 
 The **WINDOW** instruction creates a new [window](Navigator_design.md).
 

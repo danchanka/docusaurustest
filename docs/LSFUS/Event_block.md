@@ -1,6 +1,6 @@
-# lsFusionEvent block
-
-# Event block
+---
+title: 'Event block'
+---
 
 The event block of the  [FORM instruction](FORM_instruction.md) - a set of constructions controlling [events](Form_events.md) in an interactive form view.
 

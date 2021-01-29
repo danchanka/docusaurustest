@@ -1,6 +1,6 @@
-# lsFusionHow-to: GUI
-
-# How-to: GUI
+---
+title: 'How-to: GUI'
+---
 
 ##### How to read these sections
 

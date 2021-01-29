@@ -1,6 +1,6 @@
-# lsFusionEmpty instruction
-
-# Empty instruction
+---
+title: 'Empty instruction'
+---
 
 *Empty instruction* - a special instruction that consists of a single semicolon.
 

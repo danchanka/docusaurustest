@@ -1,6 +1,6 @@
-# lsFusionHow-to: GROUP SUM
-
-# How-to: GROUP SUM
+---
+title: 'How-to: GROUP SUM'
+---
 
 ##### Example 1
 

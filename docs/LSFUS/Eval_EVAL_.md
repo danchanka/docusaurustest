@@ -1,6 +1,6 @@
-# lsFusionEval (EVAL)
-
-# Eval (EVAL)
+---
+title: 'Eval (EVAL)'
+---
 
 The eval operator creates an action that executes defined program code in the **lsFusion** language. Program code is defined as a property whose value should belong to the string class. This is implemented using an [action](Actions.md) which takes a line of code as an argument.
 

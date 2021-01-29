@@ -1,6 +1,6 @@
-# lsFusionManagement
-
-# Management
+---
+title: 'Management'
+---
 
 [System parameters](System_parameters.md)
 

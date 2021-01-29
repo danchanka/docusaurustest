@@ -1,6 +1,6 @@
-# lsFusionHow-to: Constraints
-
-# How-to: Constraints
+---
+title: 'How-to: Constraints'
+---
 
 ##### Example 1
 

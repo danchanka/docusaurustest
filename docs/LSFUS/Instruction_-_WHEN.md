@@ -1,6 +1,6 @@
-# lsFusionInstruction&lt;- WHEN
-
-# Instruction&lt;- WHEN
+---
+title: 'Instruction&lt;- WHEN'
+---
 
 The **&lt;- WHEN** instruction creates a [calculated event](Calculated_events.md).
 

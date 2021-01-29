@@ -1,6 +1,6 @@
-# lsFusionJOIN operator
-
-# JOIN operator
+---
+title: 'JOIN operator'
+---
 
 The **JOIN** operator creates a [property](Properties.md) that implements a [composition](Composition_JOIN_.md).
 

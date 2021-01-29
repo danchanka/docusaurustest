@@ -1,6 +1,6 @@
-# lsFusionForm extension
-
-# Form extension
+---
+title: 'Form extension'
+---
 
 The [form](Forms.md) [extension](Extensions.md) technique allows the developer to extend the [structure](Form_structure.md) and [design](Interactive_view.md) of a form created in another module.
 

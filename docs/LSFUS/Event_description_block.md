@@ -1,6 +1,6 @@
-# lsFusionEvent description block
-
-# Event description block
+---
+title: 'Event description block'
+---
 
 *Event description block* describes an [event](Events.md) in different instructions.
 

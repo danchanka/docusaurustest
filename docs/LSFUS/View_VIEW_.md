@@ -1,6 +1,6 @@
-# lsFusionView (VIEW)
-
-# View (VIEW)
+---
+title: 'View (VIEW)'
+---
 
 The view operator creates a property that returns **TRUE** if the object collection is visible to the user in the specified object group, and **NULL** otherwise.
 

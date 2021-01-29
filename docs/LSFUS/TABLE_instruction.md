@@ -1,6 +1,6 @@
-# lsFusionTABLE instruction
-
-# TABLE instruction
+---
+title: 'TABLE instruction'
+---
 
 The **TABLE** instruction creates an new [table](Tables.md).
 

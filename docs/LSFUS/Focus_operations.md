@@ -1,6 +1,6 @@
-# lsFusionFocus operations
-
-# Focus operations
+---
+title: 'Focus operations'
+---
 
 This category includes operators responsible for managing component activity:
 

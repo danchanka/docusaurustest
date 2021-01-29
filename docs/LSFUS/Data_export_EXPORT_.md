@@ -1,6 +1,6 @@
-# lsFusionData export (EXPORT)
-
-# Data export (EXPORT)
+---
+title: 'Data export (EXPORT)'
+---
 
 The *data export* operator creates an [action](Actions.md) that reads values of the specified properties for all object collections where the value of the specified property (*condition*) is not **NULL**, and then saves these values to a file in a specified [format](Structured_view.md). 
 

@@ -1,6 +1,6 @@
-# lsFusionHow-to: DELETE
-
-# How-to: DELETE
+---
+title: 'How-to: DELETE'
+---
 
 ##### Example 1
 

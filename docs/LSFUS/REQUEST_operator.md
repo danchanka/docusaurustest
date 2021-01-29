@@ -1,6 +1,6 @@
-# lsFusionREQUEST operator
-
-# REQUEST operator
+---
+title: 'REQUEST operator'
+---
 
 The **REQUEST** operator creates an [action](Actions.md) that [requests a value](Value_request_REQUEST_.md).
 

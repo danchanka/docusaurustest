@@ -1,6 +1,6 @@
-# lsFusionCANCEL operator
-
-# CANCEL operator
+---
+title: 'CANCEL operator'
+---
 
 The **CANCEL **operator creates an [action](Actions.md) that [cancels changes](Cancel_changes_CANCEL_.md) in the current session.
 

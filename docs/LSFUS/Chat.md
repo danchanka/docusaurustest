@@ -1,5 +1,5 @@
-# lsFusionChat
-
-# Chat
+---
+title: 'Chat'
+---
 
 # (Under development)

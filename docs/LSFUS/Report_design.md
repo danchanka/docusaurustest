@@ -1,6 +1,6 @@
-# lsFusionReport design
-
-# Report design
+---
+title: 'Report design'
+---
 
 For each report you need to specify a special file (*template)* which will be used to build the result document. The name of the template for a specific report is &lt;name *of form&gt;\_*&lt;name of the first *group of objects*&gt;. An[empty](Static-view_29884533.html#Staticview-empty) object group is considered to have no name, so if the first object group is empty, the name of the template is simply equal to the name of the form (without the \_ postfix).
 

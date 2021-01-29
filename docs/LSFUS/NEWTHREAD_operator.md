@@ -1,6 +1,6 @@
-# lsFusionNEWTHREAD operator
-
-# NEWTHREAD operator
+---
+title: 'NEWTHREAD operator'
+---
 
 The **NEWTHREAD** operator creates an [action](Actions.md) that executes another action in a [new thread](New_threads_NEWTHREAD_NEWEXECUTOR_.md).
 

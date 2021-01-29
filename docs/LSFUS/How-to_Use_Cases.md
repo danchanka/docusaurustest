@@ -1,6 +1,6 @@
-# lsFusionHow-to: Use Cases
-
-# How-to: Use Cases
+---
+title: 'How-to: Use Cases'
+---
 
 ##### How to read these sections
 

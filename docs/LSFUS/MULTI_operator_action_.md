@@ -1,6 +1,6 @@
-# lsFusionMULTI operator (action)
-
-# MULTI operator (action)
+---
+title: 'MULTI operator (action)'
+---
 
 The **MULTI** operator creates an [action](Actions.md) that implements [branching](5275770.html#Branching(CASE,IF,MULTI)-poly) (polymorphic form).
 

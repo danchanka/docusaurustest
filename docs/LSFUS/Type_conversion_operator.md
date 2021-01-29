@@ -1,6 +1,6 @@
-# lsFusionType conversion operator
-
-# Type conversion operator
+---
+title: 'Type conversion operator'
+---
 
 The type conversion operator creates a [property](Properties.md) that performs [type conversion](Type_conversion.md).
 

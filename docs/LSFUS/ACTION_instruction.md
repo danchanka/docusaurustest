@@ -1,6 +1,6 @@
-# lsFusionACTION instruction
-
-# ACTION instruction
+---
+title: 'ACTION instruction'
+---
 
 The **ACTION** instruction creates an [action](Actions.md).
 

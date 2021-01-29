@@ -1,6 +1,6 @@
-# lsFusionОperators
-
-# Оperators
+---
+title: 'Оperators'
+---
 
 Operators for creating actions can be divided into several categories:
 

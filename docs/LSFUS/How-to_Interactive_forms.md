@@ -1,6 +1,6 @@
-# lsFusionHow-to: Interactive forms
-
-# How-to: Interactive forms
+---
+title: 'How-to: Interactive forms'
+---
 
 ##### How to read these sections
 

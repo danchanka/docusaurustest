@@ -1,6 +1,6 @@
-# lsFusionChange sessions
-
-# Change sessions
+---
+title: 'Change sessions'
+---
 
 [Actions](Actions.md) can change the state of the system in which they are executed. It is not always desirable to write these changes directly to the database, both from the perspective of integrity and from the perspective of the ergonomics of the system. The platform therefore allows to accumulate these changes locally in *change sessions.* 
 

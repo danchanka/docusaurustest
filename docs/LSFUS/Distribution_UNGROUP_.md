@@ -1,6 +1,6 @@
-# lsFusionDistribution (UNGROUP)
-
-# Distribution (UNGROUP)
+---
+title: 'Distribution (UNGROUP)'
+---
 
 The *distribution* operator creates a property, the [grouping](Grouping_GROUP_.md) value of which using sum function will be equal to the value of the specified property (*distributable*). Accordingly, as for a group operator, for a distribution operator multiple properties (*groups*) must be set by which the grouping will take place.
 

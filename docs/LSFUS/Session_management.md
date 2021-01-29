@@ -1,6 +1,6 @@
-# lsFusionSession management
-
-# Session management
+---
+title: 'Session management'
+---
 
 The system has the following operators for working with sessions:
 

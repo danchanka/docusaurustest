@@ -1,6 +1,6 @@
-# lsFusionAction extension
-
-# Action extension
+---
+title: 'Action extension'
+---
 
 The [actions](Actions.md) [extension](Extensions.md) technique allows the developer to declare an abstract action in one [module](Modules.md) and add to it an implementation in other modules. This technique is essentially a "postponed definition" of a [branch operator](Branching_CASE_IF_MULTI_.md), where the operator’s title is defined when the property is declared, and branching conditions are added as new functionality (of [classes](Classes.md) or [static objects](Static_objects.md)) is added to the system. Furthermore, branching conditions (if branching is not mutually exclusive) can be added both to the beginning and to the end of the abstract action created. Similarly, this technique works with a [sequence operator](Sequence_..._.md).
 

@@ -1,6 +1,6 @@
-# lsFusionHow-to: Trees
-
-# How-to: Trees
+---
+title: 'How-to: Trees'
+---
 
 ##### Example 1
 

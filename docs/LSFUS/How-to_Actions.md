@@ -1,6 +1,6 @@
-# lsFusionHow-to: Actions
-
-# How-to: Actions
+---
+title: 'How-to: Actions'
+---
 
 ##### How to read these sections
 

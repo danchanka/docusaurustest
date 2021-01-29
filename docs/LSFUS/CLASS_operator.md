@@ -1,6 +1,6 @@
-# lsFusionCLASS operator
-
-# CLASS operator
+---
+title: 'CLASS operator'
+---
 
 The **CLASS** operator creates a property that implements a [matching signature operator](Property_signature_CLASS_.md).
 

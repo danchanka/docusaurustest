@@ -1,6 +1,6 @@
-# lsFusionClass change (CHANGECLASS, DELETE)
-
-# Class change (CHANGECLASS, DELETE)
+---
+title: 'Class change (CHANGECLASS, DELETE)'
+---
 
 The *class change* operator creates an [action](Actions.md) that assigns the given [class](Classes.md) to all objects where value of a particular [property](Properties.md) (*condition*) is not equal to **NULL**. The condition can be omitted, in which case it is considered to be equal to **TRUE**.  
 

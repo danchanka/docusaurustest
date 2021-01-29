@@ -1,6 +1,6 @@
-# lsFusionHow-to: Binding properties
-
-# How-to: Binding properties
+---
+title: 'How-to: Binding properties'
+---
 
 ##### Example 1
 

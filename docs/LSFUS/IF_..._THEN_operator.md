@@ -1,6 +1,6 @@
-# lsFusionIF ... THEN operator
-
-# IF ... THEN operator
+---
+title: 'IF ... THEN operator'
+---
 
 The **IF ... THEN** operator creates a [property](Properties.md) that implements [selection](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md) with one condition (single form).
 

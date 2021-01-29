@@ -1,6 +1,6 @@
-# lsFusionDevelopment
-
-# Development
+---
+title: 'Development'
+---
 
 The development model includes the following concepts:
 

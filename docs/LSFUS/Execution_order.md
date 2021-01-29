@@ -1,6 +1,6 @@
-# lsFusionExecution order
-
-# Execution order
+---
+title: 'Execution order'
+---
 
 The platform supports the following operators for managing the order in which actions are executed:
 

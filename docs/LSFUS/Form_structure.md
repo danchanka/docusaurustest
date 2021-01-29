@@ -1,6 +1,6 @@
-# lsFusionForm structure
-
-# Form structure
+---
+title: 'Form structure'
+---
 
 The [form](Forms.md) structure is a complex of *objects*, [properties](Properties.md), [actions](Actions.md) and relations between them.
 

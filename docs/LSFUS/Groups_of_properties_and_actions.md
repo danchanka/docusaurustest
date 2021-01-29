@@ -1,6 +1,6 @@
-# lsFusionGroups of properties and actions
-
-# Groups of properties and actions
+---
+title: 'Groups of properties and actions'
+---
 
 The behavior of properties and actions in the context of working with groups is absolutely identical, therefore, in the rest of this section, we will use only the term property (the behavior for actions is completely similar).
 

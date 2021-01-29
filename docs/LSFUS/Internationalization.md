@@ -1,6 +1,6 @@
-# lsFusionInternationalization
-
-# Internationalization
+---
+title: 'Internationalization'
+---
 
 *Internationalization* consists of software development techniques that allow adapting the software to the linguistic and cultural particularities of different countries and regions.
 

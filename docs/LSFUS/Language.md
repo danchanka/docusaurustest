@@ -1,6 +1,6 @@
-# lsFusionLanguage
-
-# Language
+---
+title: 'Language'
+---
 
 *lsFusion* is a programming language that describes **lsFusion** [modules](Modules.md).
 

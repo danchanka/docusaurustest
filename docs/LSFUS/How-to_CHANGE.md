@@ -1,6 +1,6 @@
-# lsFusionHow-to: CHANGE
-
-# How-to: CHANGE
+---
+title: 'How-to: CHANGE'
+---
 
 ##### Example 1
 

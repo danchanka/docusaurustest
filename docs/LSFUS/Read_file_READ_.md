@@ -1,6 +1,6 @@
-# lsFusionRead file (READ)
-
-# Read file (READ)
+---
+title: 'Read file (READ)'
+---
 
 The *read* *file *operator creates an [action](Actions.md) that reads a file from a defined source and [writes](Property_сhange_CHANGE_.md) this file to the specified local [data](Data_properties_DATA_.md) property without parameters.
 

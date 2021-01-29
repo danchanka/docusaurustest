@@ -1,6 +1,6 @@
-# lsFusionProperties
-
-# Properties
+---
+title: 'Properties'
+---
 
 A *property* is an element of the system that takes a set of objects (*parameters*) and returns exactly one object (the *return value*). 
 

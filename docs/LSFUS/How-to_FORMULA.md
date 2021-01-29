@@ -1,6 +1,6 @@
-# lsFusionHow-to: FORMULA
-
-# How-to: FORMULA
+---
+title: 'How-to: FORMULA'
+---
 
 ##### Example 1
 

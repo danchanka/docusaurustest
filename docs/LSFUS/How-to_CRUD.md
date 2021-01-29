@@ -1,6 +1,6 @@
-# lsFusionHow-to: CRUD
-
-# How-to: CRUD
+---
+title: 'How-to: CRUD'
+---
 
 ##### Example 1
 

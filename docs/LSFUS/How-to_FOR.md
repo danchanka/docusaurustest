@@ -1,6 +1,6 @@
-# lsFusionHow-to: FOR
-
-# How-to: FOR
+---
+title: 'How-to: FOR'
+---
 
 ##### Example 1
 

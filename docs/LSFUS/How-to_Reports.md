@@ -1,6 +1,6 @@
-# lsFusionHow-to: Reports
-
-# How-to: Reports
+---
+title: 'How-to: Reports'
+---
 
 ##### Example 1
 

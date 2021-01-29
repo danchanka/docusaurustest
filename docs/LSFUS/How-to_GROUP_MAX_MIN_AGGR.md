@@ -1,6 +1,6 @@
-# lsFusionHow-to: GROUP MAX/MIN/AGGR
-
-# How-to: GROUP MAX/MIN/AGGR
+---
+title: 'How-to: GROUP MAX/MIN/AGGR'
+---
 
 ##### Example 1
 

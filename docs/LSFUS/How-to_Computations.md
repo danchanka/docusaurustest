@@ -1,6 +1,6 @@
-# lsFusionHow-to: Computations
-
-# How-to: Computations
+---
+title: 'How-to: Computations'
+---
 
 ##### How to read these sections
 

@@ -1,6 +1,6 @@
-# lsFusionExtensions
-
-# Extensions
+---
+title: 'Extensions'
+---
 
 *Extension* is a technique that allows a developer to extend the functionality of one module in another. 
 

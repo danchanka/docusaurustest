@@ -1,6 +1,6 @@
-# lsFusionHow-to: PARTITION
-
-# How-to: PARTITION
+---
+title: 'How-to: PARTITION'
+---
 
 ##### Example 1
 

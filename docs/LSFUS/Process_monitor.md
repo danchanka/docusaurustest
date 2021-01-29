@@ -1,5 +1,5 @@
-# lsFusionProcess monitor
-
-# Process monitor
+---
+title: 'Process monitor'
+---
 
 # (Under development)

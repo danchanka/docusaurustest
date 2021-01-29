@@ -1,6 +1,6 @@
-# lsFusionCONSTRAINT instruction
-
-# CONSTRAINT instruction
+---
+title: 'CONSTRAINT instruction'
+---
 
 The **CONSTRAINT** instruction creates a [constraint](Constraints.md).
 

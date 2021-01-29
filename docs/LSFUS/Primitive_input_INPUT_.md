@@ -1,6 +1,6 @@
-# lsFusionPrimitive input (INPUT)
-
-# Primitive input (INPUT)
+---
+title: 'Primitive input (INPUT)'
+---
 
 The  *primitive input *operator creates an [action](Actions.md) that requests the client to [input a value](Value_input.md) [of a builtin class](Built-in_classes.md). The user can [cancel the input](Value-input_35520941.html#Valueinput-result), for example by pressing the **ESC** key on the keyboard.
 

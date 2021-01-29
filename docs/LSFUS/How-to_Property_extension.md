@@ -1,6 +1,6 @@
-# lsFusionHow-to: Property extension
-
-# How-to: Property extension
+---
+title: 'How-to: Property extension'
+---
 
 The classic approach for implementing polymorphism can look as follows:
 

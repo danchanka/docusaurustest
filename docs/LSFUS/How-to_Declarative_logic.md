@@ -1,6 +1,6 @@
-# lsFusionHow-to: Declarative logic
-
-# How-to: Declarative logic
+---
+title: 'How-to: Declarative logic'
+---
 
 ##### How to read these sections
 

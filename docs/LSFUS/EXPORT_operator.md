@@ -1,6 +1,6 @@
-# lsFusionEXPORT operator
-
-# EXPORT operator
+---
+title: 'EXPORT operator'
+---
 
 The **EXPORT** operator: creates an [action](Actions.md) that exports [specified properties](Data_export_EXPORT_.md) to a file, or, in common case, that [opens a form](In_a_structured_view_EXPORT_IMPORT_.md) in a structured view. 
 

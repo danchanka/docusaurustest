@@ -1,6 +1,6 @@
-# lsFusionSimple event
-
-# Simple event
+---
+title: 'Simple event'
+---
 
 *Simple* event - an [event](Events.md) that occurs when the value of the specified [property](Properties.md) (which shall be called an event *condition*) changes to non-**NULL**. This event is a kind of extension of a basic event (adding an additional condition), which means that all the same parameters must be set as for an basic event, in particular:
 

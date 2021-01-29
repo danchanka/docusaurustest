@@ -1,6 +1,6 @@
-# lsFusionArithmetic operators
-
-# Arithmetic operators
+---
+title: 'Arithmetic operators'
+---
 
 **+**, **-**, **\***, **/**, **(+)**, **(-)** operators create [properties](Properties.md) responsible for [arithmetic operations](Arithmetic_operators_+_-_..._.md).
 

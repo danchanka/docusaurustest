@@ -1,6 +1,6 @@
-# lsFusionJournals and logs
-
-# Journals and logs
+---
+title: 'Journals and logs'
+---
 
 ### Logs
 

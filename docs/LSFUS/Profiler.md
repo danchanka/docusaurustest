@@ -1,5 +1,5 @@
-# lsFusionProfiler
-
-# Profiler
+---
+title: 'Profiler'
+---
 
 # (Under development)

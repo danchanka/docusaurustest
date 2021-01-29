@@ -1,6 +1,6 @@
-# lsFusionMULTI operator
-
-# MULTI operator
+---
+title: 'MULTI operator'
+---
 
 The **MULTI** operator creates a [property](Properties.md) that implements [selection](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-single) of one of the values (polymorphic form).
 

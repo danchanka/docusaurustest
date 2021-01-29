@@ -1,6 +1,6 @@
-# lsFusionPhysical model
-
-# Physical model
+---
+title: 'Physical model'
+---
 
 The physical model consists of two parts: 
 

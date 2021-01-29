@@ -1,6 +1,6 @@
-# lsFusionObject blocks
-
-# Object blocks
+---
+title: 'Object blocks'
+---
 
 Object block of the [FORM instruction](FORM_instruction.md)  adds [objects](#Objectblocks-objects) (including object groups) to the form structure, as well as [object trees](#Objectblocks-tree) to the interactive form view.
 

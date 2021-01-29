@@ -1,6 +1,6 @@
-# lsFusionHow-to: Working with documents
-
-# How-to: Working with documents
+---
+title: 'How-to: Working with documents'
+---
 
 ##### Posting documents
 

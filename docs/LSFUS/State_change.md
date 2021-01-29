@@ -1,6 +1,6 @@
-# lsFusionState change
-
-# State change
+---
+title: 'State change'
+---
 
 System state change operators include the following.
 

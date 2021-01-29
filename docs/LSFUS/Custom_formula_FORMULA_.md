@@ -1,6 +1,6 @@
-# lsFusionCustom formula (FORMULA)
-
-# Custom formula (FORMULA)
+---
+title: 'Custom formula (FORMULA)'
+---
 
 The *custom formula* operator allows you to create a [property](Properties.md) that calculates defined formula in SQL. You can specify different implementations of the formula for different SQL servers. The formula is defined as a string, within which the special character $ and the number of this parameter (starting from 1) are used to access the parameter. Accordingly, the number of parameters of the result property will be equal to the greatest of the numbers of the parameters used. 
 

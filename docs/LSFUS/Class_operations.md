@@ -1,6 +1,6 @@
-# lsFusionClass operations
-
-# Class operations
+---
+title: 'Class operations'
+---
 
 Class operators include the following operators:
 

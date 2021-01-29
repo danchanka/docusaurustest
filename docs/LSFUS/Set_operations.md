@@ -1,6 +1,6 @@
-# lsFusionSet operations
-
-# Set operations
+---
+title: 'Set operations'
+---
 
 One of the key features of the platform is the ability to execute certain operations for all object collections for which the values of one or more [properties](Properties.md) are not **NULL**. In the property logic such an operation is the calculation of various *aggregate functions*. 
 

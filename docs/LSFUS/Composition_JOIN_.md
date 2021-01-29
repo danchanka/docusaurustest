@@ -1,6 +1,6 @@
-# lsFusionComposition (JOIN)
-
-# Composition (JOIN)
+---
+title: 'Composition (JOIN)'
+---
 
 The composition operator allows you to use values of other properties as *arguments* for one (*main*) property.
 

@@ -1,6 +1,6 @@
-# lsFusionWHEN instruction
-
-# WHEN instruction
+---
+title: 'WHEN instruction'
+---
 
 The **WHEN** instruction adds a [simple event](Simple_event.md) handler.
 

@@ -1,6 +1,6 @@
-# lsFusionHow-to: Working with external formats
-
-# How-to: Working with external formats
+---
+title: 'How-to: Working with external formats'
+---
 
 ##### How to read these sections
 

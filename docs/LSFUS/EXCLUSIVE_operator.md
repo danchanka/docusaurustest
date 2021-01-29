@@ -1,6 +1,6 @@
-# lsFusionEXCLUSIVE operator
-
-# EXCLUSIVE operator
+---
+title: 'EXCLUSIVE operator'
+---
 
 Оператор **EXCLUSIVE **- es aсоздание [yсвойства](Properties.md), sреализующего [seletonвыбор](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive) одного из значений (полиморфная форма).
 

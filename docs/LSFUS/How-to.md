@@ -1,6 +1,6 @@
-# lsFusionHow-to
-
-# How-to
+---
+title: 'How-to'
+---
 
 ##### How to read these sections
 

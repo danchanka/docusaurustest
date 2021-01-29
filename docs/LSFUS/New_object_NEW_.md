@@ -1,6 +1,6 @@
-# lsFusionNew object (NEW)
-
-# New object (NEW)
+---
+title: 'New object (NEW)'
+---
 
 The *new object* operator creates an [action](Actions.md) that creates objects of a specified [custom class](User_classes.md) for object collections where the value of some [property](Properties.md) (*condition*) is not **NULL**. The condition can be omitted, in which case it is considered to be equal to **TRUE**.
 

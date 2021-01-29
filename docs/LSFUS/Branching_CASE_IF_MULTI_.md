@@ -1,6 +1,6 @@
-# lsFusionBranching (CASE, IF, MULTI)
-
-# Branching (CASE, IF, MULTI)
+---
+title: 'Branching (CASE, IF, MULTI)'
+---
 
 *The branching operator* creates an [action](Actions.md) that determines for a set of *conditions* which condition is met, and calls the corresponding action.
 

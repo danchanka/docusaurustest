@@ -1,6 +1,6 @@
-# lsFusionFORM instruction
-
-# FORM instruction
+---
+title: 'FORM instruction'
+---
 
 The **FORM** instruction creates a [form](Forms.md). 
 

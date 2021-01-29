@@ -1,6 +1,6 @@
-# lsFusionHow-to: Overriding values
-
-# How-to: Overriding values
+---
+title: 'How-to: Overriding values'
+---
 
 Often there are tasks when it is necessary to give the user opportunity to enter the value of some attribute for some general object and then override it for some specific object.
 

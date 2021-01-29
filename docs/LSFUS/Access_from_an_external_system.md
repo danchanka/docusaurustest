@@ -1,6 +1,6 @@
-# lsFusionAccess from an external system
-
-# Access from an external system
+---
+title: 'Access from an external system'
+---
 
 The platform allows external systems   to access an lsFusion-based system using various network protocols. The interface of such interaction is a call for an action with specified parameters and, if necessary, the return of certain property values (without parameters) as  *results*. It is assumed that all parameter and result objects are objects of [built-in classes](Built-in_classes.md).
 

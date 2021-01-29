@@ -1,6 +1,6 @@
-# lsFusionCLASS instruction
-
-# CLASS instruction
+---
+title: 'CLASS instruction'
+---
 
 **CLASS **instruction creates a new [custom class](User_classes.md).
 

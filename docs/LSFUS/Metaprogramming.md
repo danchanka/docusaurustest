@@ -1,6 +1,6 @@
-# lsFusionMetaprogramming
-
-# Metaprogramming
+---
+title: 'Metaprogramming'
+---
 
 *Metaprogramming* is a type of programming associated with writing software code that results in the generation of more software code. Metaprogramming is used for code reusability and to speed up development.  
 

@@ -1,6 +1,6 @@
-# lsFusionModules
-
-# Modules
+---
+title: 'Modules'
+---
 
 A *module* is a functionally complete part of a [project](Projects.md). A module consists of declarations of [p](Element_identification.md)[roperties](Properties.md), [actions](Actions.md), [events](Events.md), [constraints](Constraints.md), and other [system elements](Naming.md).
 

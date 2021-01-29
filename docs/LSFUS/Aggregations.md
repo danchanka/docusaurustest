@@ -1,6 +1,6 @@
-# lsFusionAggregations
-
-# Aggregations
+---
+title: 'Aggregations'
+---
 
 Aggregation is the creation of a unique (*aggregate*) of the object corresponding to each non-**NULL** value of some *aggregated* property. Each such object is assumed to have properties that map this object to each aggregated property parameter, and, conversely, a property that maps the aggregated property parameters to this object. 
 

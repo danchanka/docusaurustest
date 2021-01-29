@@ -1,6 +1,6 @@
-# lsFusionElement identification
-
-# Element identification
+---
+title: 'Element identification'
+---
 
 On the **lsFusion** platform, some elements of the system are *named*, meaning that they can be used by acсessing them by name.
 

@@ -1,6 +1,6 @@
-# lsFusionFilters and sortings block
-
-# Filters and sortings block
+---
+title: 'Filters and sortings block'
+---
 
 The filter and order block of the [FORM instruction](FORM_instruction.md) – add [filters](Form-structure_1573069.html#Formstructure-filters) and [orderings](Form-structure_1573069.html#Formstructure-sort) to the form structure; add [filter groups](Interactive-view_1573071.html#Interactiveview-filtergroup) to the interactive form view.
 

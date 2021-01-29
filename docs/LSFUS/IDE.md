@@ -1,6 +1,6 @@
-# lsFusionIDE
-
-# IDE
+---
+title: 'IDE'
+---
 
 ### Table of contents
 

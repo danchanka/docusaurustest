@@ -1,6 +1,6 @@
-# lsFusionApply changes (APPLY)
-
-# Apply changes (APPLY)
+---
+title: 'Apply changes (APPLY)'
+---
 
 The *apply changes* operator saves all changes made to the database, and also triggers the handling of all synchronous global [events](Events.md).
 

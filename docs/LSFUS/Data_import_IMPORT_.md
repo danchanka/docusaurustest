@@ -1,6 +1,6 @@
-# lsFusionData import (IMPORT)
-
-# Data import (IMPORT)
+---
+title: 'Data import (IMPORT)'
+---
 
 The *data import *operator creates an [action](Actions.md) which reads a file from the value of some [property](Properties.md), then, depending on its [format](Structured_view.md), defines the columns (fields) of data in this file, after which it [writes](Property_сhange_CHANGE_.md) the value of each column (field) to the corresponding property (parameter) - import *assignment*. The mapping of columns to properties can go in either column or name order.
 

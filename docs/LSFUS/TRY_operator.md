@@ -1,6 +1,6 @@
-# lsFusionTRY operator
-
-# TRY operator
+---
+title: 'TRY operator'
+---
 
 The **TRY** operator creates an [action](Actions.md) that executes another action with [exception handling](Exception_handling_TRY_.md).
 

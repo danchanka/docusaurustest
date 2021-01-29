@@ -1,6 +1,6 @@
-# lsFusionManual installation
-
-# Manual installation
+---
+title: 'Manual installation'
+---
 
 [Development](Development_manual_.md)
 

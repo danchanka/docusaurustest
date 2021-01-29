@@ -1,6 +1,6 @@
-# lsFusionAND, OR, NOT, XOR operators
-
-# AND, OR, NOT, XOR operators
+---
+title: 'AND, OR, NOT, XOR operators'
+---
 
 **AND**, **OR**, **NOT**, **XOR** operators that create [properties](Properties.md) that implement [logical operations](Logical_operators_AND_OR_NOT_XOR_.md).
 

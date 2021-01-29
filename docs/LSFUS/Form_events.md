@@ -1,6 +1,6 @@
-# lsFusionForm events
-
-# Form events
+---
+title: 'Form events'
+---
 
 While the application is running, there is a number of events for each form that occur as a result of certain user actions:
 

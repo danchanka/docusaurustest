@@ -1,6 +1,6 @@
-# lsFusionStructured view
-
-# Structured view
+---
+title: 'Structured view'
+---
 
 All structured views (*formats*) can be divided into two types:
 

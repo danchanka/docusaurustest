@@ -1,6 +1,6 @@
-# lsFusionHow-to: Interaction via HTTP protocol
-
-# How-to: Interaction via HTTP protocol
+---
+title: 'How-to: Interaction via HTTP protocol'
+---
 
 ##### Example 1
 

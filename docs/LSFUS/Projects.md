@@ -1,6 +1,6 @@
-# lsFusionProjects
-
-# Projects
+---
+title: 'Projects'
+---
 
 *Project* is a collection of [modules](Modules.md) and additional information (pictures, report design files, etc.) that fully describe the functionality of the information system being created.
 

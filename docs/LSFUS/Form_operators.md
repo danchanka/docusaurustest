@@ -1,6 +1,6 @@
-# lsFusionForm operators
-
-# Form operators
+---
+title: 'Form operators'
+---
 
 Form operators can be divided into several categories:
 

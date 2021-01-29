@@ -1,6 +1,6 @@
-# lsFusionIn a print view (PRINT)
-
-# In a print view (PRINT)
+---
+title: 'In a print view (PRINT)'
+---
 
 This operator creates an action that [opens a form](Open_form.md) in the [print](Print_view.md) view.
 

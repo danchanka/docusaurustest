@@ -1,6 +1,6 @@
-# lsFusionINDEX instruction
-
-# INDEX instruction
+---
+title: 'INDEX instruction'
+---
 
 The **INDEX** instruction creates a new [index](Indexes.md).
 

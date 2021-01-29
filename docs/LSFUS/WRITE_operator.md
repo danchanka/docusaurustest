@@ -1,6 +1,6 @@
-# lsFusionWRITE operator
-
-# WRITE operator
+---
+title: 'WRITE operator'
+---
 
 The **WRITE** operator creates an [action](Actions.md) that [writes a file](Write_file_WRITE_.md) from a property to an external resource. 
 

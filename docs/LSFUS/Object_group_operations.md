@@ -1,6 +1,6 @@
-# lsFusionObject group operations
-
-# Object group operations
+---
+title: 'Object group operations'
+---
 
 Object group operations include the following operators:
 

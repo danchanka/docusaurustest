@@ -1,6 +1,6 @@
-# lsFusionUNGROUP operator
-
-# UNGROUP operator
+---
+title: 'UNGROUP operator'
+---
 
 The **UNGROUP** operator creates a [property](Properties.md) that implements [distribution](Distribution_UNGROUP_.md) in an extended form.
 

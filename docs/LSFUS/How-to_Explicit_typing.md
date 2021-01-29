@@ -1,6 +1,6 @@
-# lsFusionHow-to: Explicit typing
-
-# How-to: Explicit typing
+---
+title: 'How-to: Explicit typing'
+---
 
 In certain situations, you may want to use the same [name](Naming.md) for different system properties or actions. 
 

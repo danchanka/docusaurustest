@@ -1,6 +1,6 @@
-# lsFusionRECURSION operator
-
-# RECURSION operator
+---
+title: 'RECURSION operator'
+---
 
 The **RECURSION **operator creates a [property](Properties.md) that implements [recursion](Recursion_RECURSION_.md).
 

@@ -1,6 +1,6 @@
-# lsFusionSecurity policy
-
-# Security policy
+---
+title: 'Security policy'
+---
 
 ### Customizing user roles
 

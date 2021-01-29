@@ -1,6 +1,6 @@
-# lsFusionLogical model
-
-# Logical model
+---
+title: 'Logical model'
+---
 
 The logical model is traditionally divided into two parts:
 

@@ -1,6 +1,6 @@
-# lsFusionPartitioning / sorting (PARTITION ... ORDER)
-
-# Partitioning / sorting (PARTITION ... ORDER)
+---
+title: 'Partitioning / sorting (PARTITION ... ORDER)'
+---
 
 The *partition/order* operator creates a [property](Properties.md) that partitions all objects collections in the system into *groups*, and using the specified *order* calculates an [aggregate function](Set-operations_4391029.html#Setoperations-func) for each objects collection. Accordingly, the set on which this aggregating function is calculated is determined as following: all object collections of the group of this object collection, and the order of which is less than or equal to the order of this object collection. 
 

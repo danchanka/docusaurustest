@@ -1,6 +1,6 @@
-# lsFusionEXTEND CLASS instruction
-
-# EXTEND CLASS instruction
+---
+title: 'EXTEND CLASS instruction'
+---
 
 The **EXTEND CLASS** instruction [extends](Class_extension.md) an existing class.
 

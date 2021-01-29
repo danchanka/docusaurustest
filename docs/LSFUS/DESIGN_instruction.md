@@ -1,6 +1,6 @@
-# lsFusionDESIGN instruction
-
-# DESIGN instruction
+---
+title: 'DESIGN instruction'
+---
 
 The **DESIGN** instruction changes [form design](Form_design.md).
 

@@ -1,6 +1,6 @@
-# lsFusionHow-to: NEWSESSION
-
-# How-to: NEWSESSION
+---
+title: 'How-to: NEWSESSION'
+---
 
 ##### Example 1
 

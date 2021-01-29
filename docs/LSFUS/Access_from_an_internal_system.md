@@ -1,6 +1,6 @@
-# lsFusionAccess from an internal system
-
-# Access from an internal system
+---
+title: 'Access from an internal system'
+---
 
 *Java interaction*
 

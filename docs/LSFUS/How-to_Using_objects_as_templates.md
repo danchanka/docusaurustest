@@ -1,6 +1,6 @@
-# lsFusionHow-to: Using objects as templates
-
-# How-to: Using objects as templates
+---
+title: 'How-to: Using objects as templates'
+---
 
 ##### Example 1
 

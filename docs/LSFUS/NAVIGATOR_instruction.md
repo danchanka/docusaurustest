@@ -1,6 +1,6 @@
-# lsFusionNAVIGATOR instruction
-
-# NAVIGATOR instruction
+---
+title: 'NAVIGATOR instruction'
+---
 
 The **NAVIGATOR**  instruction is used to modify the [navigator](Navigator.md).
 

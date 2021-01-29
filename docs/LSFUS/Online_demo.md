@@ -1,6 +1,6 @@
-# lsFusionOnline demo
-
-# Online demo
+---
+title: 'Online demo'
+---
 
 All demos support the following browsers: *Chrome* (recommended), *Safari*, *Firefox*, *Opera*, and *Internet Explorer*.
 

@@ -1,6 +1,6 @@
-# lsFusionMETA instruction
-
-# META instruction
+---
+title: 'META instruction'
+---
 
 The **META** instruction creates a new [metacode](Metaprogramming_1310740.html#Metaprogramming-metacode).
 

@@ -1,6 +1,6 @@
-# lsFusionDevelopment (manual)
-
-# Development (manual)
+---
+title: 'Development (manual)'
+---
 
 To install the application server, IDE, and client, Java version 8 or later must first be installed on the computer.
 

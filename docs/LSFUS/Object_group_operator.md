@@ -1,6 +1,6 @@
-# lsFusionObject group operator
-
-# Object group operator
+---
+title: 'Object group operator'
+---
 
 [Object group](Form_structure.md) operators are used for creating [properties](Properties.md) working with the [current state](Object_group_operations.md) of the object group on the [form](Forms.md).
 

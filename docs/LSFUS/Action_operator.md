@@ -1,6 +1,6 @@
-# lsFusionAction operator
-
-# Action operator
+---
+title: 'Action operator'
+---
 
 *Action operator* is a syntax construct that describes an [operator](Оperators.md) creating an [action](Actions.md).
 

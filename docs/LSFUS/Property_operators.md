@@ -1,6 +1,6 @@
-# lsFusionProperty operators
-
-# Property operators
+---
+title: 'Property operators'
+---
 
 *Property operator* is a syntax construct that describes an [operator](Operators.md) creating a [property](Properties.md). 
 

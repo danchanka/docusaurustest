@@ -1,6 +1,6 @@
-# lsFusionASK operator
-
-# ASK operator
+---
+title: 'ASK operator'
+---
 
 The **ASK** operator creates an action that shows the user a message in a [dialog form](4915326.html#Showmessage(MESSAGE,ASK)-dialog).
 

@@ -1,6 +1,6 @@
-# lsFusionHow-to: Integration
-
-# How-to: Integration
+---
+title: 'How-to: Integration'
+---
 
 ##### How to read these sections
 

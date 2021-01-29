@@ -1,6 +1,6 @@
-# lsFusionSystem parameters
-
-# System parameters
+---
+title: 'System parameters'
+---
 
 [Launch parameters](Launch_parameters.md)
 

@@ -1,6 +1,6 @@
-# lsFusionIS, AS operators
-
-# IS, AS operators
+---
+title: 'IS, AS operators'
+---
 
 **IS**, **AS** operators create an [action](Properties.md) that implements [classification](Classification_IS_AS_.md).
 

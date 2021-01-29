@@ -1,6 +1,6 @@
-# lsFusionNew session (NEWSESSION, NESTEDSESSION)
-
-# New session (NEWSESSION, NESTEDSESSION)
+---
+title: 'New session (NEWSESSION, NESTEDSESSION)'
+---
 
 The new [session](Change_sessions.md) operator allows you to execute an action in a session different from the current one. 
 

@@ -1,6 +1,6 @@
-# lsFusionForm views
-
-# Form views
+---
+title: 'Form views'
+---
 
 A [form](Forms.md) view can be classified as follows:
 

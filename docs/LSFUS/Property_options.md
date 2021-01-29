@@ -1,6 +1,6 @@
-# lsFusionProperty options
-
-# Property options
+---
+title: 'Property options'
+---
 
 When a [property](Properties.md) is declared in the [= instruction](Instruction_=.md) a set of *property options* can be specified at the end of the declaration 
 

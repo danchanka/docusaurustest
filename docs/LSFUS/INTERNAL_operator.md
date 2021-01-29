@@ -1,6 +1,6 @@
-# lsFusionINTERNAL operator
-
-# INTERNAL operator
+---
+title: 'INTERNAL operator'
+---
 
 The **INTERNAL** operator creates an [action](Actions.md) that executes an [internal call](Internal_call_INTERNAL_.md).
 

@@ -1,6 +1,6 @@
-# lsFusionActivation (ACTIVATE)
-
-# Activation (ACTIVATE)
+---
+title: 'Activation (ACTIVATE)'
+---
 
 The *activation* operator creates an [action](Actions.md) that activates one of three form elements:
 

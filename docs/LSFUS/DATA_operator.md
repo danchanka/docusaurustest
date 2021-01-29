@@ -1,6 +1,6 @@
-# lsFusionDATA operator
-
-# DATA operator
+---
+title: 'DATA operator'
+---
 
 The **DATA** operator creates a [data property](Data_properties_DATA_.md).
 

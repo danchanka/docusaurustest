@@ -1,6 +1,6 @@
-# lsFusionAccess to an internal system (INTERNAL, FORMULA)
-
-# Access to an internal system (INTERNAL, FORMULA)
+---
+title: 'Access to an internal system (INTERNAL, FORMULA)'
+---
 
 *Java interaction*
 

@@ -1,6 +1,6 @@
-# lsFusionInstall
-
-# Install
+---
+title: 'Install'
+---
 
 **Automatic installation**
 

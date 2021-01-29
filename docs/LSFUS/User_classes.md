@@ -1,6 +1,6 @@
-# lsFusionUser classes
-
-# User classes
+---
+title: 'User classes'
+---
 
 [Classes](Classes.md) that a developer can create and the instances of which a user can create are called *custom classes*. 
 

@@ -1,6 +1,6 @@
-# lsFusionLoop (FOR)
-
-# Loop (FOR)
+---
+title: 'Loop (FOR)'
+---
 
 The *loop* operator creates an [action](Actions.md) that iterates all object collections for which the defined *condition* is met, and executes a defined action for each such object collection (let's call it the *main one).* You can also define an *alternative action* that will be executed only if no object collections have been found that meet the condition*.* The condition itself is defined as a certain [property](Properties.md). Let's say that the condition is *satisfied* if the value of this property is not **NULL**. 
 

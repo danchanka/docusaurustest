@@ -1,6 +1,6 @@
-# lsFusionDELETE operator
-
-# DELETE operator
+---
+title: 'DELETE operator'
+---
 
 The **DELETE** operator creates an [action](Actions.md) that [deletes objects](Class_change_CHANGECLASS_DELETE_.md).
 

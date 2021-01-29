@@ -1,6 +1,6 @@
-# lsFusionChange operators
-
-# Change operators
+---
+title: 'Change operators'
+---
 
 Change operators - a set of operators that determine various types of [property value changes](Change_operators_SET_CHANGED_..._.md). 
 

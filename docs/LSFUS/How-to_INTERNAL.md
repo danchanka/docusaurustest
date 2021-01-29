@@ -1,6 +1,6 @@
-# lsFusionHow-to: INTERNAL
-
-# How-to: INTERNAL
+---
+title: 'How-to: INTERNAL'
+---
 
 ##### Example 1
 

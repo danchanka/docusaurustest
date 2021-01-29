@@ -1,6 +1,6 @@
-# lsFusionUser interface
-
-# User interface
+---
+title: 'User interface'
+---
 
 **Working with objects**
 

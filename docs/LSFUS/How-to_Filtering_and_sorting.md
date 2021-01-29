@@ -1,6 +1,6 @@
-# lsFusionHow-to: Filtering and sorting
-
-# How-to: Filtering and sorting
+---
+title: 'How-to: Filtering and sorting'
+---
 
 ##### Пример 1
 

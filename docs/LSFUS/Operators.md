@@ -1,6 +1,6 @@
-# lsFusionOperators
-
-# Operators
+---
+title: 'Operators'
+---
 
 The platform currently supports the following property creation operators: 
 

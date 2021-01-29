@@ -1,6 +1,6 @@
-# lsFusionPRINT operator
-
-# PRINT operator
+---
+title: 'PRINT operator'
+---
 
 The **PRINT** operator creates an [action](Actions.md) that [opens a form](In_a_print_view_PRINT_.md) in print view. 
 

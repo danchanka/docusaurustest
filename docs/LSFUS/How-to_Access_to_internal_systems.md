@@ -1,6 +1,6 @@
-# lsFusionHow-to: Access to internal systems
-
-# How-to: Access to internal systems
+---
+title: 'How-to: Access to internal systems'
+---
 
 ##### How to read these sections
 

@@ -1,6 +1,6 @@
-# lsFusionCONCAT operator
-
-# CONCAT operator
+---
+title: 'CONCAT operator'
+---
 
 The **CONCAT** operator creates a [property](Properties.md) that implements a string [concatenation](String_operators_+_CONCAT_SUBSTRING_.md).
 

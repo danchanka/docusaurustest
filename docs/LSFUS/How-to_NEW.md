@@ -1,6 +1,6 @@
-# lsFusionHow-to: NEW
-
-# How-to: NEW
+---
+title: 'How-to: NEW'
+---
 
 ##### Example 1
 

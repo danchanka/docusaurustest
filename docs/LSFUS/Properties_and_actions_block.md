@@ -1,6 +1,6 @@
-# lsFusionProperties and actions block
-
-# Properties and actions block
+---
+title: 'Properties and actions block'
+---
 
 The property and action [block of the FORM instruction](FORM_instruction.md) adds [properties and actions](Form-structure_1573069.html#Formstructure-properties) to the [form structure](Form_structure.md). 
 

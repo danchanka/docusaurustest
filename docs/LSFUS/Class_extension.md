@@ -1,6 +1,6 @@
-# lsFusionClass extension
-
-# Class extension
+---
+title: 'Class extension'
+---
 
 The class [extension](Extensions.md) technique allows the developer to *inherit* one [class](Classes.md) from another after its creation. Also, using this mechanism you can add extra [static objects](Static_objects.md) to a class.
 

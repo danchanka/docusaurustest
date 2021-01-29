@@ -1,6 +1,6 @@
-# lsFusionInternal call (INTERNAL)
-
-# Internal call (INTERNAL)
+---
+title: 'Internal call (INTERNAL)'
+---
 
 The *internal call* operator allows to create actions in programming languages other than the lsFusion language.** **The platform currently supports external actions only in the **Java** language.
 

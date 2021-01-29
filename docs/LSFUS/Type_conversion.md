@@ -1,6 +1,6 @@
-# lsFusionType conversion
-
-# Type conversion
+---
+title: 'Type conversion'
+---
 
 The *type conversion* operator creates a [property](Properties.md) that converts an object of one [built-in class](Built-in_classes.md) to an object of another built-in class. If type conversion is not possible, the property value will be **NULL**.
 

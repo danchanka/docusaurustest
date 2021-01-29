@@ -1,6 +1,6 @@
-# lsFusionHow-to: Internationalization
-
-# How-to: Internationalization
+---
+title: 'How-to: Internationalization'
+---
 
 The system supports  [internationalization](Internationalization.md) by passing to the client values localized according to the language chosen by the user. All values in braces are localized. Let's assume that we need to implement a simple form with a list of books and their prices that we can create/delete.
 

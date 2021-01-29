@@ -1,6 +1,6 @@
-# lsFusionACTIVE TAB operator
-
-# ACTIVE TAB operator
+---
+title: 'ACTIVE TAB operator'
+---
 
 The **ACTIVE TAB** operator creates a [property](Properties.md) that checks if specified tab is [active](Activity_ACTIVE_.md).
 

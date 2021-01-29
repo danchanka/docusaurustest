@@ -1,6 +1,6 @@
-# lsFusionSelection (CASE, IF, MULTI, OVERRIDE, EXCLUSIVE)
-
-# Selection (CASE, IF, MULTI, OVERRIDE, EXCLUSIVE)
+---
+title: 'Selection (CASE, IF, MULTI, OVERRIDE, EXCLUSIVE)'
+---
 
 The *selection* operator creates a property that determines for a set of *conditions *which condition is met, and returns the value of the *result* corresponding to that condition. If none of the conditions is met, then the value of the created property will be **NULL**. 
 

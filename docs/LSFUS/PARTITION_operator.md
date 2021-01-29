@@ -1,6 +1,6 @@
-# lsFusionPARTITION operator
-
-# PARTITION operator
+---
+title: 'PARTITION operator'
+---
 
 The **PARTITION** operator creates a [property](Properties.md) that implements [partition/order](Partitioning_sorting_PARTITION_..._ORDER_.md) or [simple distribution](Distribution_UNGROUP_.md).
 

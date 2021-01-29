@@ -1,6 +1,6 @@
-# lsFusionNavigator design
-
-# Navigator design
+---
+title: 'Navigator design'
+---
 
 *Navigator design* determines how the navigator  is displayed to the user on the screen of his device (we will call the screen space on which the navigator is displayed the *desktop*).
 

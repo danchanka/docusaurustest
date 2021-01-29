@@ -1,6 +1,6 @@
-# lsFusionGROUP instruction
-
-# GROUP instruction
+---
+title: 'GROUP instruction'
+---
 
 The **GROUP** instruction creates a new [property group](Groups_of_properties_and_actions.md).
 

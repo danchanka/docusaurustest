@@ -1,6 +1,6 @@
-# lsFusionNaming
-
-# Naming
+---
+title: 'Naming'
+---
 
 Each [system element](Element_identification.md) may have a *name* which can be used to [access](Search.md) the element.
 

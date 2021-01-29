@@ -1,6 +1,6 @@
-# lsFusionDIALOG operator
-
-# DIALOG operator
+---
+title: 'DIALOG operator'
+---
 
 The **DIALOG** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG_.md) in an interactive view in [dialog](36307331.html#Inaninteractiveview(SHOW,DIALOG)-dialog) mode. 
 

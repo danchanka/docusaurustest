@@ -1,6 +1,6 @@
-# lsFusionNavigator
-
-# Navigator
+---
+title: 'Navigator'
+---
 
 *Navigator* is a hierarchical structure (tree) consisting of *navigator elements*. There are three types of navigator elements:
 

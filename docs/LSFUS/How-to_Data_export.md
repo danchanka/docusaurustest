@@ -1,6 +1,6 @@
-# lsFusionHow-to: Data export
-
-# How-to: Data export
+---
+title: 'How-to: Data export'
+---
 
 ##### Example 1
 

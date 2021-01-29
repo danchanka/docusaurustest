@@ -1,6 +1,6 @@
-# lsFusionInstruction =
-
-# Instruction =
+---
+title: 'Instruction ='
+---
 
 The **= ** instruction creates a new [property](Properties.md).
 

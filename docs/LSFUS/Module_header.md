@@ -1,6 +1,6 @@
-# lsFusionModule header
-
-# Module header
+---
+title: 'Module header'
+---
 
 Each [module](Modules.md) begins with a *header.*
 

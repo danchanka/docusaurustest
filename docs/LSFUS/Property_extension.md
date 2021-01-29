@@ -1,6 +1,6 @@
-# lsFusionProperty extension
-
-# Property extension
+---
+title: 'Property extension'
+---
 
 The [properties](Properties.md) [extension](Extensions.md) technique allows the developer to declare an *abstract action* in one [module](Modules.md) and define its implementation in other modules. This technique is essentially a "postponed definition" of a [selection operator](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md), where the operator’s title is defined when the property is declared, and as new functionality (of [classes](Classes.md) or [static objects](Static_objects.md)) is added, selection options are added to the system. Furthermore, variants of selection (if it is not mutually exclusive) can be added both to the beginning and to the end of the abstract property created.
 

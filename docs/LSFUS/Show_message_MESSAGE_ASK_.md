@@ -1,6 +1,6 @@
-# lsFusionShow message (MESSAGE, ASK)
-
-# Show message (MESSAGE, ASK)
+---
+title: 'Show message (MESSAGE, ASK)'
+---
 
 The *show message* operator creates an [action](Actions.md) which shows the user a window with a text message. The message is defined as some [property](Properties.md) whose value will be used as a message.
 

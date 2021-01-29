@@ -1,6 +1,6 @@
-# lsFusionHow-to: Physical model
-
-# How-to: Physical model
+---
+title: 'How-to: Physical model'
+---
 
 By default, each class in the database creates a separate table that stores all those [properties](Properties.md) whose only parameter is an object of this class. The key in this table is a field that stores a unique object ID. For properties with several parameters, a table will be created with the IDs of parameter objects as keys.
 

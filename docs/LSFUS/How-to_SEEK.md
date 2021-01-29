@@ -1,6 +1,6 @@
-# lsFusionHow-to: SEEK
-
-# How-to: SEEK
+---
+title: 'How-to: SEEK'
+---
 
 ##### Example 1
 

@@ -1,6 +1,6 @@
-# lsFusionStatic objects
-
-# Static objects
+---
+title: 'Static objects'
+---
 
 *Static* (or built-in) objects are objects that are defined by the developer and are automatically created on system startup (if they are not стартаpresent in the system at launch time). Also, such objects are prohibited from being deleted.
 

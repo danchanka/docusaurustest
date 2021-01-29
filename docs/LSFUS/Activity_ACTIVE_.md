@@ -1,6 +1,6 @@
-# lsFusionActivity (ACTIVE)
-
-# Activity (ACTIVE)
+---
+title: 'Activity (ACTIVE)'
+---
 
 The *activity* operator creates a property that determines whether one of the following form elements is active:
 

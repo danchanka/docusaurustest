@@ -1,6 +1,6 @@
-# lsFusionOVERRIDE operator
-
-# OVERRIDE operator
+---
+title: 'OVERRIDE operator'
+---
 
 The **OVERRIDE** operator creates a [property](Properties.md) that implements the [selection](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive) of one of the values (polymorphic form).
 

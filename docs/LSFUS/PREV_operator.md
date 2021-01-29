@@ -1,6 +1,6 @@
-# lsFusionPREV operator
-
-# PREV operator
+---
+title: 'PREV operator'
+---
 
 The **PREV** operator creates a property using a [previous value operator](Previous_value_PREV_.md).
 

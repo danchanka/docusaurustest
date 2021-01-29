@@ -1,6 +1,6 @@
-# lsFusionHow-to: Design
-
-# How-to: Design
+---
+title: 'How-to: Design'
+---
 
 ##### Example 1
 

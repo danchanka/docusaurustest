@@ -1,6 +1,6 @@
-# lsFusionInstruction@
-
-# Instruction@
+---
+title: 'Instruction@'
+---
 
 The @ instruction uses [metacode](Metaprogramming_1310740.html#Metaprogramming-metacode).
 

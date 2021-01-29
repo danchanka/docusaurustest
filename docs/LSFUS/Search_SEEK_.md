@@ -1,6 +1,6 @@
-# lsFusionSearch (SEEK)
-
-# Search (SEEK)
+---
+title: 'Search (SEEK)'
+---
 
 *Search* operator tries to make the specified object collection [current](Form-structure_1573069.html#Formstructure-currentObject) for the specified form object group. The objects from the specified object collection shall be called *seek objects*.
 

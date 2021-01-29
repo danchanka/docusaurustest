@@ -1,6 +1,6 @@
-# lsFusionAutomatic installation
-
-# Automatic installation
+---
+title: 'Automatic installation'
+---
 
 [Development](Development_auto_.md)
 

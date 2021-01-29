@@ -1,6 +1,6 @@
-# lsFusionEVAL operator
-
-# EVAL operator
+---
+title: 'EVAL operator'
+---
 
 The **EVAL** operator: creating an [action](Actions.md) that [executes code](Eval_EVAL_.md) in the **lsFusion** language.
 

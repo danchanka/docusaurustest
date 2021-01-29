@@ -1,6 +1,6 @@
-# lsFusionACTIVE FORM operator
-
-# ACTIVE FORM operator
+---
+title: 'ACTIVE FORM operator'
+---
 
 The **ACTIVATE FORM** operator creates an [action](Actions.md) that checks the [activeness](Activity_ACTIVE_.md) of a [form](Forms.md).
 
