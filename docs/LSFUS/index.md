@@ -5,1083 +5,1083 @@
 
 ## Available Pages:
 
--   [Install](lsFusionInstall.md)
-    -   [Automatic installation](lsFusionAutomatic_installation.md)
-        -   [Development (auto)](lsFusionDevelopment_auto_.md)
+-   [Install](Install.md)
+    -   [Automatic installation](Automatic_installation.md)
+        -   [Development (auto)](Development_auto_.md)
 
         <!-- -->
 
-        -   [Execution (auto)](lsFusionExecution_auto_.md)
+        -   [Execution (auto)](Execution_auto_.md)
 
     <!-- -->
 
-    -   [Manual installation](lsFusionManual_installation.md)
-        -   [Development (manual)](lsFusionDevelopment_manual_.md)
+    -   [Manual installation](Manual_installation.md)
+        -   [Development (manual)](Development_manual_.md)
 
         <!-- -->
 
-        -   [Execution (manual)](lsFusionExecution_manual_.md)
--   [Learn](lsFusionLearn.md)
+        -   [Execution (manual)](Execution_manual_.md)
+-   [Learn](Learn.md)
     <img src="images/icons/contenttypes/home_page_16.png" width="16" height="16" />
-    -   [Paradigm](lsFusionParadigm.md)
-        -   [Logical model](lsFusionLogical_model.md)
-            -   [Domain logic](lsFusionDomain_logic.md)
-                -   [Properties](lsFusionProperties.md)
-                    -   [Operators](lsFusionOperators.md)
-                        -   [Data properties (DATA)](lsFusionData_properties_DATA_.md)
+    -   [Paradigm](Paradigm.md)
+        -   [Logical model](Logical_model.md)
+            -   [Domain logic](Domain_logic.md)
+                -   [Properties](Properties.md)
+                    -   [Operators](Operators.md)
+                        -   [Data properties (DATA)](Data_properties_DATA_.md)
 
                         <!-- -->
 
-                        -   [Composition (JOIN)](lsFusionComposition_JOIN_.md)
+                        -   [Composition (JOIN)](Composition_JOIN_.md)
 
                         <!-- -->
 
-                        -   [Constant](lsFusionConstant.md)
+                        -   [Constant](Constant.md)
 
                         <!-- -->
 
-                        -   [Primitive operations](lsFusionPrimitive_operations.md)
-                            -   [Arithmetic operators (+, -, \*, ...)](lsFusionArithmetic_operators_+_-_..._.md)
+                        -   [Primitive operations](Primitive_operations.md)
+                            -   [Arithmetic operators (+, -, \*, ...)](Arithmetic_operators_+_-_..._.md)
 
                             <!-- -->
 
-                            -   [Logical operators (AND, OR, NOT, XOR)](lsFusionLogical_operators_AND_OR_NOT_XOR_.md)
+                            -   [Logical operators (AND, OR, NOT, XOR)](Logical_operators_AND_OR_NOT_XOR_.md)
 
                             <!-- -->
 
-                            -   [Comparison operators (=, &gt;, &lt;, ...)](lsFusionComparison_operators_=_..._.md)
+                            -   [Comparison operators (=, &gt;, &lt;, ...)](Comparison_operators_=_..._.md)
 
                             <!-- -->
 
-                            -   [Extremum (MAX, MIN)](lsFusionExtremum_MAX_MIN_.md)
+                            -   [Extremum (MAX, MIN)](Extremum_MAX_MIN_.md)
 
                             <!-- -->
 
-                            -   [String operators (+, CONCAT, SUBSTRING)](lsFusionString_operators_+_CONCAT_SUBSTRING_.md)
+                            -   [String operators (+, CONCAT, SUBSTRING)](String_operators_+_CONCAT_SUBSTRING_.md)
 
                             <!-- -->
 
-                            -   [Structure operations (STRUCT, \[\])](lsFusionStructure_operations_STRUCT_.md)
+                            -   [Structure operations (STRUCT, \[\])](Structure_operations_STRUCT_.md)
 
                             <!-- -->
 
-                            -   [Type conversion](lsFusionType_conversion.md)
+                            -   [Type conversion](Type_conversion.md)
 
                         <!-- -->
 
-                        -   [Class operations](lsFusionClass_operations.md)
-                            -   [Classification (IS/AS)](lsFusionClassification_IS_AS_.md)
+                        -   [Class operations](Class_operations.md)
+                            -   [Classification (IS/AS)](Classification_IS_AS_.md)
 
                             <!-- -->
 
-                            -   [Property signature (CLASS)](lsFusionProperty_signature_CLASS_.md)
+                            -   [Property signature (CLASS)](Property_signature_CLASS_.md)
 
                         <!-- -->
 
-                        -   [Selection (CASE, IF, MULTI, OVERRIDE, EXCLUSIVE)](lsFusionSelection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md)
+                        -   [Selection (CASE, IF, MULTI, OVERRIDE, EXCLUSIVE)](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md)
 
                         <!-- -->
 
-                        -   [Set operations](lsFusionSet_operations.md)
-                            -   [Grouping (GROUP)](lsFusionGrouping_GROUP_.md)
+                        -   [Set operations](Set_operations.md)
+                            -   [Grouping (GROUP)](Grouping_GROUP_.md)
 
                             <!-- -->
 
-                            -   [Partitioning / sorting (PARTITION ... ORDER)](lsFusionPartitioning_sorting_PARTITION_..._ORDER_.md)
+                            -   [Partitioning / sorting (PARTITION ... ORDER)](Partitioning_sorting_PARTITION_..._ORDER_.md)
 
                             <!-- -->
 
-                            -   [Recursion (RECURSION)](lsFusionRecursion_RECURSION_.md)
+                            -   [Recursion (RECURSION)](Recursion_RECURSION_.md)
 
                             <!-- -->
 
-                            -   [Distribution (UNGROUP)](lsFusionDistribution_UNGROUP_.md)
+                            -   [Distribution (UNGROUP)](Distribution_UNGROUP_.md)
 
                 <!-- -->
 
-                -   [Actions](lsFusionActions.md)
-                    -   [Change sessions](lsFusionChange_sessions.md)
+                -   [Actions](Actions.md)
+                    -   [Change sessions](Change_sessions.md)
 
                     <!-- -->
 
-                    -   [Оperators](lsFusionОperators.md)
-                        -   [Execution order](lsFusionExecution_order.md)
-                            -   [Sequence ({...})](lsFusionSequence_..._.md)
+                    -   [Оperators](Оperators.md)
+                        -   [Execution order](Execution_order.md)
+                            -   [Sequence ({...})](Sequence_..._.md)
 
                             <!-- -->
 
-                            -   [Call (EXEC)](lsFusionCall_EXEC_.md)
+                            -   [Call (EXEC)](Call_EXEC_.md)
 
                             <!-- -->
 
-                            -   [Loop (FOR)](lsFusionLoop_FOR_.md)
+                            -   [Loop (FOR)](Loop_FOR_.md)
 
                             <!-- -->
 
-                            -   [Branching (CASE, IF, MULTI)](lsFusionBranching_CASE_IF_MULTI_.md)
+                            -   [Branching (CASE, IF, MULTI)](Branching_CASE_IF_MULTI_.md)
 
                             <!-- -->
 
-                            -   [Recursive loop (WHILE)](lsFusionRecursive_loop_WHILE_.md)
+                            -   [Recursive loop (WHILE)](Recursive_loop_WHILE_.md)
 
                             <!-- -->
 
-                            -   [Interruption (BREAK)](lsFusionInterruption_BREAK_.md)
+                            -   [Interruption (BREAK)](Interruption_BREAK_.md)
 
                             <!-- -->
 
-                            -   [Exit (RETURN)](lsFusionExit_RETURN_.md)
+                            -   [Exit (RETURN)](Exit_RETURN_.md)
 
                             <!-- -->
 
-                            -   [New threads (NEWTHREAD, NEWEXECUTOR)](lsFusionNew_threads_NEWTHREAD_NEWEXECUTOR_.md)
+                            -   [New threads (NEWTHREAD, NEWEXECUTOR)](New_threads_NEWTHREAD_NEWEXECUTOR_.md)
 
                             <!-- -->
 
-                            -   [Exception handling (TRY)](lsFusionException_handling_TRY_.md)
+                            -   [Exception handling (TRY)](Exception_handling_TRY_.md)
 
                         <!-- -->
 
-                        -   [State change](lsFusionState_change.md)
-                            -   [Property сhange (CHANGE)](lsFusionProperty_сhange_CHANGE_.md)
+                        -   [State change](State_change.md)
+                            -   [Property сhange (CHANGE)](Property_сhange_CHANGE_.md)
 
                             <!-- -->
 
-                            -   [New object (NEW)](lsFusionNew_object_NEW_.md)
+                            -   [New object (NEW)](New_object_NEW_.md)
 
                             <!-- -->
 
-                            -   [Class change (CHANGECLASS, DELETE)](lsFusionClass_change_CHANGECLASS_DELETE_.md)
+                            -   [Class change (CHANGECLASS, DELETE)](Class_change_CHANGECLASS_DELETE_.md)
 
                         <!-- -->
 
-                        -   [Session management](lsFusionSession_management.md)
-                            -   [Apply changes (APPLY)](lsFusionApply_changes_APPLY_.md)
+                        -   [Session management](Session_management.md)
+                            -   [Apply changes (APPLY)](Apply_changes_APPLY_.md)
 
                             <!-- -->
 
-                            -   [Cancel changes (CANCEL)](lsFusionCancel_changes_CANCEL_.md)
+                            -   [Cancel changes (CANCEL)](Cancel_changes_CANCEL_.md)
 
                             <!-- -->
 
-                            -   [New session (NEWSESSION, NESTEDSESSION)](lsFusionNew_session_NEWSESSION_NESTEDSESSION_.md)
+                            -   [New session (NEWSESSION, NESTEDSESSION)](New_session_NEWSESSION_NESTEDSESSION_.md)
 
                             <!-- -->
 
-                            -   [Previous value (PREV)](lsFusionPrevious_value_PREV_.md)
+                            -   [Previous value (PREV)](Previous_value_PREV_.md)
 
                             <!-- -->
 
-                            -   [Change operators (SET, CHANGED, ...)](lsFusionChange_operators_SET_CHANGED_..._.md)
+                            -   [Change operators (SET, CHANGED, ...)](Change_operators_SET_CHANGED_..._.md)
 
                         <!-- -->
 
-                        -   [User/IS interaction](lsFusionUser_IS_interaction.md)
-                            -   [Show message (MESSAGE, ASK)](lsFusionShow_message_MESSAGE_ASK_.md)
+                        -   [User/IS interaction](User_IS_interaction.md)
+                            -   [Show message (MESSAGE, ASK)](Show_message_MESSAGE_ASK_.md)
 
                             <!-- -->
 
-                            -   [File operators](lsFusionFile_operators.md)
-                                -   [Read file (READ)](lsFusionRead_file_READ_.md)
+                            -   [File operators](File_operators.md)
+                                -   [Read file (READ)](Read_file_READ_.md)
 
                                 <!-- -->
 
-                                -   [Write file (WRITE)](lsFusionWrite_file_WRITE_.md)
+                                -   [Write file (WRITE)](Write_file_WRITE_.md)
 
                                 <!-- -->
 
-                                -   [Data import (IMPORT)](lsFusionData_import_IMPORT_.md)
+                                -   [Data import (IMPORT)](Data_import_IMPORT_.md)
 
                                 <!-- -->
 
-                                -   [Data export (EXPORT)](lsFusionData_export_EXPORT_.md)
+                                -   [Data export (EXPORT)](Data_export_EXPORT_.md)
 
                             <!-- -->
 
-                            -   [Send mail (EMAIL)](lsFusionSend_mail_EMAIL_.md)
+                            -   [Send mail (EMAIL)](Send_mail_EMAIL_.md)
 
                 <!-- -->
 
-                -   [Events](lsFusionEvents.md)
-                    -   [Simple event](lsFusionSimple_event.md)
+                -   [Events](Events.md)
+                    -   [Simple event](Simple_event.md)
 
                     <!-- -->
 
-                    -   [Calculated events](lsFusionCalculated_events.md)
+                    -   [Calculated events](Calculated_events.md)
 
                 <!-- -->
 
-                -   [Constraints](lsFusionConstraints.md)
-                    -   [Simple constraints](lsFusionSimple_constraints.md)
+                -   [Constraints](Constraints.md)
+                    -   [Simple constraints](Simple_constraints.md)
 
                     <!-- -->
 
-                    -   [Classes](lsFusionClasses.md)
-                        -   [Built-in classes](lsFusionBuilt-in_classes.md)
+                    -   [Classes](Classes.md)
+                        -   [Built-in classes](Built-in_classes.md)
 
                         <!-- -->
 
-                        -   [Static objects](lsFusionStatic_objects.md)
+                        -   [Static objects](Static_objects.md)
 
                         <!-- -->
 
-                        -   [User classes](lsFusionUser_classes.md)
+                        -   [User classes](User_classes.md)
 
                     <!-- -->
 
-                    -   [Aggregations](lsFusionAggregations.md)
+                    -   [Aggregations](Aggregations.md)
 
             <!-- -->
 
-            -   [View logic](lsFusionView_logic.md)
-                -   [Forms](lsFusionForms.md)
-                    -   [Form structure](lsFusionForm_structure.md)
-                        -   [Groups of properties and actions](lsFusionGroups_of_properties_and_actions.md)
+            -   [View logic](View_logic.md)
+                -   [Forms](Forms.md)
+                    -   [Form structure](Form_structure.md)
+                        -   [Groups of properties and actions](Groups_of_properties_and_actions.md)
 
                     <!-- -->
 
-                    -   [Form views](lsFusionForm_views.md)
-                        -   [Interactive view](lsFusionInteractive_view.md)
-                            -   [Form design](lsFusionForm_design.md)
+                    -   [Form views](Form_views.md)
+                        -   [Interactive view](Interactive_view.md)
+                            -   [Form design](Form_design.md)
 
                             <!-- -->
 
-                            -   [Form events](lsFusionForm_events.md)
+                            -   [Form events](Form_events.md)
 
                             <!-- -->
 
-                            -   [Form operators](lsFusionForm_operators.md)
-                                -   [Value input](lsFusionValue_input.md)
-                                    -   [Primitive input (INPUT)](lsFusionPrimitive_input_INPUT_.md)
+                            -   [Form operators](Form_operators.md)
+                                -   [Value input](Value_input.md)
+                                    -   [Primitive input (INPUT)](Primitive_input_INPUT_.md)
 
                                     <!-- -->
 
-                                    -   [Value request (REQUEST)](lsFusionValue_request_REQUEST_.md)
+                                    -   [Value request (REQUEST)](Value_request_REQUEST_.md)
 
                                 <!-- -->
 
-                                -   [Object group operations](lsFusionObject_group_operations.md)
-                                    -   [Search (SEEK)](lsFusionSearch_SEEK_.md)
+                                -   [Object group operations](Object_group_operations.md)
+                                    -   [Search (SEEK)](Search_SEEK_.md)
 
                                     <!-- -->
 
-                                    -   [Filter (FILTER)](lsFusionFilter_FILTER_.md)
+                                    -   [Filter (FILTER)](Filter_FILTER_.md)
 
                                     <!-- -->
 
-                                    -   [Order (ORDER)](lsFusionOrder_ORDER_.md)
+                                    -   [Order (ORDER)](Order_ORDER_.md)
 
                                     <!-- -->
 
-                                    -   [View (VIEW)](lsFusionView_VIEW_.md)
+                                    -   [View (VIEW)](View_VIEW_.md)
 
                                 <!-- -->
 
-                                -   [Focus operations](lsFusionFocus_operations.md)
-                                    -   [Activation (ACTIVATE)](lsFusionActivation_ACTIVATE_.md)
+                                -   [Focus operations](Focus_operations.md)
+                                    -   [Activation (ACTIVATE)](Activation_ACTIVATE_.md)
 
                                     <!-- -->
 
-                                    -   [Activity (ACTIVE)](lsFusionActivity_ACTIVE_.md)
+                                    -   [Activity (ACTIVE)](Activity_ACTIVE_.md)
 
                         <!-- -->
 
-                        -   [Static view](lsFusionStatic_view.md)
-                            -   [Print view](lsFusionPrint_view.md)
-                                -   [Report design](lsFusionReport_design.md)
+                        -   [Static view](Static_view.md)
+                            -   [Print view](Print_view.md)
+                                -   [Report design](Report_design.md)
 
                             <!-- -->
 
-                            -   [Structured view](lsFusionStructured_view.md)
+                            -   [Structured view](Structured_view.md)
 
                     <!-- -->
 
-                    -   [Open form](lsFusionOpen_form.md)
-                        -   [In an interactive view (SHOW, DIALOG)](lsFusionIn_an_interactive_view_SHOW_DIALOG_.md)
+                    -   [Open form](Open_form.md)
+                        -   [In an interactive view (SHOW, DIALOG)](In_an_interactive_view_SHOW_DIALOG_.md)
 
                         <!-- -->
 
-                        -   [In a print view (PRINT)](lsFusionIn_a_print_view_PRINT_.md)
+                        -   [In a print view (PRINT)](In_a_print_view_PRINT_.md)
 
                         <!-- -->
 
-                        -   [In a structured view (EXPORT, IMPORT)](lsFusionIn_a_structured_view_EXPORT_IMPORT_.md)
+                        -   [In a structured view (EXPORT, IMPORT)](In_a_structured_view_EXPORT_IMPORT_.md)
 
                 <!-- -->
 
-                -   [Navigator](lsFusionNavigator.md)
-                    -   [Navigator design](lsFusionNavigator_design.md)
+                -   [Navigator](Navigator.md)
+                    -   [Navigator design](Navigator_design.md)
 
         <!-- -->
 
-        -   [Physical model](lsFusionPhysical_model.md)
-            -   [Development](lsFusionDevelopment.md)
-                -   [Element identification](lsFusionElement_identification.md)
-                    -   [Naming](lsFusionNaming.md)
+        -   [Physical model](Physical_model.md)
+            -   [Development](Development.md)
+                -   [Element identification](Element_identification.md)
+                    -   [Naming](Naming.md)
 
                     <!-- -->
 
-                    -   [Search](lsFusionSearch.md)
+                    -   [Search](Search.md)
 
                 <!-- -->
 
-                -   [Modularity](lsFusionModularity.md)
-                    -   [Modules](lsFusionModules.md)
+                -   [Modularity](Modularity.md)
+                    -   [Modules](Modules.md)
 
                     <!-- -->
 
-                    -   [Projects](lsFusionProjects.md)
+                    -   [Projects](Projects.md)
 
                     <!-- -->
 
-                    -   [Extensions](lsFusionExtensions.md)
-                        -   [Class extension](lsFusionClass_extension.md)
+                    -   [Extensions](Extensions.md)
+                        -   [Class extension](Class_extension.md)
 
                         <!-- -->
 
-                        -   [Property extension](lsFusionProperty_extension.md)
+                        -   [Property extension](Property_extension.md)
 
                         <!-- -->
 
-                        -   [Action extension](lsFusionAction_extension.md)
+                        -   [Action extension](Action_extension.md)
 
                         <!-- -->
 
-                        -   [Form extension](lsFusionForm_extension.md)
+                        -   [Form extension](Form_extension.md)
 
                 <!-- -->
 
-                -   [Metaprogramming](lsFusionMetaprogramming.md)
+                -   [Metaprogramming](Metaprogramming.md)
 
                 <!-- -->
 
-                -   [Integration](lsFusionIntegration.md)
-                    -   [Access from an external system](lsFusionAccess_from_an_external_system.md)
+                -   [Integration](Integration.md)
+                    -   [Access from an external system](Access_from_an_external_system.md)
 
                     <!-- -->
 
-                    -   [Access from an internal system](lsFusionAccess_from_an_internal_system.md)
+                    -   [Access from an internal system](Access_from_an_internal_system.md)
 
                     <!-- -->
 
-                    -   [Access to an external system (EXTERNAL)](lsFusionAccess_to_an_external_system_EXTERNAL_.md)
+                    -   [Access to an external system (EXTERNAL)](Access_to_an_external_system_EXTERNAL_.md)
 
                     <!-- -->
 
-                    -   [Access to an internal system (INTERNAL, FORMULA)](lsFusionAccess_to_an_internal_system_INTERNAL_FORMULA_.md)
-                        -   [Internal call (INTERNAL)](lsFusionInternal_call_INTERNAL_.md)
+                    -   [Access to an internal system (INTERNAL, FORMULA)](Access_to_an_internal_system_INTERNAL_FORMULA_.md)
+                        -   [Internal call (INTERNAL)](Internal_call_INTERNAL_.md)
 
                         <!-- -->
 
-                        -   [Custom formula (FORMULA)](lsFusionCustom_formula_FORMULA_.md)
+                        -   [Custom formula (FORMULA)](Custom_formula_FORMULA_.md)
 
                     <!-- -->
 
-                    -   [Eval (EVAL)](lsFusionEval_EVAL_.md)
+                    -   [Eval (EVAL)](Eval_EVAL_.md)
 
                 <!-- -->
 
-                -   [Migration](lsFusionMigration.md)
+                -   [Migration](Migration.md)
 
                 <!-- -->
 
-                -   [Internationalization](lsFusionInternationalization.md)
+                -   [Internationalization](Internationalization.md)
 
             <!-- -->
 
-            -   [Execution](lsFusionExecution.md)
-                -   [Materializations](lsFusionMaterializations.md)
+            -   [Execution](Execution.md)
+                -   [Materializations](Materializations.md)
 
                 <!-- -->
 
-                -   [Indexes](lsFusionIndexes.md)
+                -   [Indexes](Indexes.md)
 
                 <!-- -->
 
-                -   [Tables](lsFusionTables.md)
+                -   [Tables](Tables.md)
 
             <!-- -->
 
-            -   [Management](lsFusionManagement.md)
-                -   [System parameters](lsFusionSystem_parameters.md)
-                    -   [Launch parameters](lsFusionLaunch_parameters.md)
-                        -   [Launch events](lsFusionLaunch_events.md)
+            -   [Management](Management.md)
+                -   [System parameters](System_parameters.md)
+                    -   [Launch parameters](Launch_parameters.md)
+                        -   [Launch events](Launch_events.md)
 
                     <!-- -->
 
-                    -   [Working parameters](lsFusionWorking_parameters.md)
+                    -   [Working parameters](Working_parameters.md)
 
                 <!-- -->
 
-                -   [User interface](lsFusionUser_interface.md)
+                -   [User interface](User_interface.md)
 
                 <!-- -->
 
-                -   [Interpreter](lsFusionInterpreter.md)
+                -   [Interpreter](Interpreter.md)
 
                 <!-- -->
 
-                -   [Security policy](lsFusionSecurity_policy.md)
+                -   [Security policy](Security_policy.md)
 
                 <!-- -->
 
-                -   [Process monitor](lsFusionProcess_monitor.md)
+                -   [Process monitor](Process_monitor.md)
 
                 <!-- -->
 
-                -   [Scheduler](lsFusionScheduler.md)
+                -   [Scheduler](Scheduler.md)
 
                 <!-- -->
 
-                -   [Journals and logs](lsFusionJournals_and_logs.md)
+                -   [Journals and logs](Journals_and_logs.md)
 
                 <!-- -->
 
-                -   [Profiler](lsFusionProfiler.md)
+                -   [Profiler](Profiler.md)
 
                 <!-- -->
 
-                -   [Chat](lsFusionChat.md)
+                -   [Chat](Chat.md)
 
     <!-- -->
 
-    -   [Language](lsFusionLanguage.md)
-        -   [Tokens](lsFusionTokens.md)
+    -   [Language](Language.md)
+        -   [Tokens](Tokens.md)
 
         <!-- -->
 
-        -   [IDs](lsFusionIDs.md)
+        -   [IDs](IDs.md)
 
         <!-- -->
 
-        -   [Literals](lsFusionLiterals.md)
+        -   [Literals](Literals.md)
 
         <!-- -->
 
-        -   [Instructions](lsFusionInstructions.md)
-            -   [Module header](lsFusionModule_header.md)
+        -   [Instructions](Instructions.md)
+            -   [Module header](Module_header.md)
 
             <!-- -->
 
-            -   [Instruction =](lsFusionInstruction_=.md)
-                -   [Expression](lsFusionExpression.md)
-                    -   [Operator priority](lsFusionOperator_priority.md)
+            -   [Instruction =](Instruction_=.md)
+                -   [Expression](Expression.md)
+                    -   [Operator priority](Operator_priority.md)
 
                 <!-- -->
 
-                -   [Property operators](lsFusionProperty_operators.md)
-                    -   [Arithmetic operators](lsFusionArithmetic_operators.md)
+                -   [Property operators](Property_operators.md)
+                    -   [Arithmetic operators](Arithmetic_operators.md)
 
                     <!-- -->
 
-                    -   [Operator \[\]](lsFusionOperator_.md)
+                    -   [Operator \[\]](Operator_.md)
 
                     <!-- -->
 
-                    -   [ABSTRACT operator](lsFusionABSTRACT_operator.md)
+                    -   [ABSTRACT operator](ABSTRACT_operator.md)
 
                     <!-- -->
 
-                    -   [ABSTRACT operator new](lsFusionABSTRACT_operator.md)
+                    -   [ABSTRACT operator new](ABSTRACT_operator.md)
 
                     <!-- -->
 
-                    -   [ACTIVE TAB operator](lsFusionACTIVE_TAB_operator.md)
+                    -   [ACTIVE TAB operator](ACTIVE_TAB_operator.md)
 
                     <!-- -->
 
-                    -   [AGGR operator](lsFusionAGGR_operator.md)
+                    -   [AGGR operator](AGGR_operator.md)
 
                     <!-- -->
 
-                    -   [CASE operator](lsFusionCASE_operator.md)
+                    -   [CASE operator](CASE_operator.md)
 
                     <!-- -->
 
-                    -   [CLASS operator](lsFusionCLASS_operator.md)
+                    -   [CLASS operator](CLASS_operator.md)
 
                     <!-- -->
 
-                    -   [CONCAT operator](lsFusionCONCAT_operator.md)
+                    -   [CONCAT operator](CONCAT_operator.md)
 
                     <!-- -->
 
-                    -   [DATA operator](lsFusionDATA_operator.md)
+                    -   [DATA operator](DATA_operator.md)
 
                     <!-- -->
 
-                    -   [EXCLUSIVE operator](lsFusionEXCLUSIVE_operator.md)
+                    -   [EXCLUSIVE operator](EXCLUSIVE_operator.md)
 
                     <!-- -->
 
-                    -   [FORMULA operator](lsFusionFORMULA_operator.md)
+                    -   [FORMULA operator](FORMULA_operator.md)
 
                     <!-- -->
 
-                    -   [GROUP operator](lsFusionGROUP_operator.md)
+                    -   [GROUP operator](GROUP_operator.md)
 
                     <!-- -->
 
-                    -   [IF operator](lsFusionIF_operator.md)
+                    -   [IF operator](IF_operator.md)
 
                     <!-- -->
 
-                    -   [IF ... THEN operator](lsFusionIF_..._THEN_operator.md)
+                    -   [IF ... THEN operator](IF_..._THEN_operator.md)
 
                     <!-- -->
 
-                    -   [JOIN operator](lsFusionJOIN_operator.md)
+                    -   [JOIN operator](JOIN_operator.md)
 
                     <!-- -->
 
-                    -   [MAX operator](lsFusionMAX_operator.md)
+                    -   [MAX operator](MAX_operator.md)
 
                     <!-- -->
 
-                    -   [MIN operator](lsFusionMIN_operator.md)
+                    -   [MIN operator](MIN_operator.md)
 
                     <!-- -->
 
-                    -   [MULTI operator](lsFusionMULTI_operator.md)
+                    -   [MULTI operator](MULTI_operator.md)
 
                     <!-- -->
 
-                    -   [OVERRIDE operator](lsFusionOVERRIDE_operator.md)
+                    -   [OVERRIDE operator](OVERRIDE_operator.md)
 
                     <!-- -->
 
-                    -   [PARTITION operator](lsFusionPARTITION_operator.md)
+                    -   [PARTITION operator](PARTITION_operator.md)
 
                     <!-- -->
 
-                    -   [PREV operator](lsFusionPREV_operator.md)
+                    -   [PREV operator](PREV_operator.md)
 
                     <!-- -->
 
-                    -   [RECURSION operator](lsFusionRECURSION_operator.md)
+                    -   [RECURSION operator](RECURSION_operator.md)
 
                     <!-- -->
 
-                    -   [STRUCT operator](lsFusionSTRUCT_operator.md)
+                    -   [STRUCT operator](STRUCT_operator.md)
 
                     <!-- -->
 
-                    -   [UNGROUP operator](lsFusionUNGROUP_operator.md)
+                    -   [UNGROUP operator](UNGROUP_operator.md)
 
                     <!-- -->
 
-                    -   [Object group operator](lsFusionObject_group_operator.md)
+                    -   [Object group operator](Object_group_operator.md)
 
                     <!-- -->
 
-                    -   [Type conversion operator](lsFusionType_conversion_operator.md)
+                    -   [Type conversion operator](Type_conversion_operator.md)
 
                     <!-- -->
 
-                    -   [AND, OR, NOT, XOR operators](lsFusionAND_OR_NOT_XOR_operators.md)
+                    -   [AND, OR, NOT, XOR operators](AND_OR_NOT_XOR_operators.md)
 
                     <!-- -->
 
-                    -   [IS, AS operators](lsFusionIS_AS_operators.md)
+                    -   [IS, AS operators](IS_AS_operators.md)
 
                     <!-- -->
 
-                    -   [Change operators](lsFusionChange_operators.md)
+                    -   [Change operators](Change_operators.md)
 
                     <!-- -->
 
-                    -   [Comparison operators](lsFusionComparison_operators.md)
+                    -   [Comparison operators](Comparison_operators.md)
 
                 <!-- -->
 
-                -   [Property options](lsFusionProperty_options.md)
+                -   [Property options](Property_options.md)
 
             <!-- -->
 
-            -   [ACTION instruction](lsFusionACTION_instruction.md)
-                -   [Action operator](lsFusionAction_operator.md)
-                    -   [Operator{...}](lsFusionOperator_..._.md)
+            -   [ACTION instruction](ACTION_instruction.md)
+                -   [Action operator](Action_operator.md)
+                    -   [Operator{...}](Operator_..._.md)
 
                     <!-- -->
 
-                    -   [ABSTRACT operator (action)](lsFusionABSTRACT_operator_action_.md)
+                    -   [ABSTRACT operator (action)](ABSTRACT_operator_action_.md)
 
                     <!-- -->
 
-                    -   [ACTIVATE operator](lsFusionACTIVATE_operator.md)
+                    -   [ACTIVATE operator](ACTIVATE_operator.md)
 
                     <!-- -->
 
-                    -   [ACTIVE FORM operator](lsFusionACTIVE_FORM_operator.md)
+                    -   [ACTIVE FORM operator](ACTIVE_FORM_operator.md)
 
                     <!-- -->
 
-                    -   [APPLY operator](lsFusionAPPLY_operator.md)
+                    -   [APPLY operator](APPLY_operator.md)
 
                     <!-- -->
 
-                    -   [ASK operator](lsFusionASK_operator.md)
+                    -   [ASK operator](ASK_operator.md)
 
                     <!-- -->
 
-                    -   [CHANGE operator](lsFusionCHANGE_operator.md)
+                    -   [CHANGE operator](CHANGE_operator.md)
 
                     <!-- -->
 
-                    -   [BREAK operator](lsFusionBREAK_operator.md)
+                    -   [BREAK operator](BREAK_operator.md)
 
                     <!-- -->
 
-                    -   [CANCEL operator](lsFusionCANCEL_operator.md)
+                    -   [CANCEL operator](CANCEL_operator.md)
 
                     <!-- -->
 
-                    -   [CASE operator (action)](lsFusionCASE_operator_action_.md)
+                    -   [CASE operator (action)](CASE_operator_action_.md)
 
                     <!-- -->
 
-                    -   [CHANGECLASS operator](lsFusionCHANGECLASS_operator.md)
+                    -   [CHANGECLASS operator](CHANGECLASS_operator.md)
 
                     <!-- -->
 
-                    -   [INTERNAL operator](lsFusionINTERNAL_operator.md)
+                    -   [INTERNAL operator](INTERNAL_operator.md)
 
                     <!-- -->
 
-                    -   [DELETE operator](lsFusionDELETE_operator.md)
+                    -   [DELETE operator](DELETE_operator.md)
 
                     <!-- -->
 
-                    -   [DIALOG operator](lsFusionDIALOG_operator.md)
+                    -   [DIALOG operator](DIALOG_operator.md)
 
                     <!-- -->
 
-                    -   [EMAIL operator](lsFusionEMAIL_operator.md)
+                    -   [EMAIL operator](EMAIL_operator.md)
 
                     <!-- -->
 
-                    -   [EVAL operator](lsFusionEVAL_operator.md)
+                    -   [EVAL operator](EVAL_operator.md)
 
                     <!-- -->
 
-                    -   [EXEC operator](lsFusionEXEC_operator.md)
+                    -   [EXEC operator](EXEC_operator.md)
 
                     <!-- -->
 
-                    -   [EXPORT operator](lsFusionEXPORT_operator.md)
+                    -   [EXPORT operator](EXPORT_operator.md)
 
                     <!-- -->
 
-                    -   [EXTERNAL operator](lsFusionEXTERNAL_operator.md)
+                    -   [EXTERNAL operator](EXTERNAL_operator.md)
 
                     <!-- -->
 
-                    -   [FOR operator](lsFusionFOR_operator.md)
+                    -   [FOR operator](FOR_operator.md)
 
                     <!-- -->
 
-                    -   [IF ... THEN operator (action)](lsFusionIF_..._THEN_operator_action_.md)
+                    -   [IF ... THEN operator (action)](IF_..._THEN_operator_action_.md)
 
                     <!-- -->
 
-                    -   [IMPORT operator](lsFusionIMPORT_operator.md)
+                    -   [IMPORT operator](IMPORT_operator.md)
 
                     <!-- -->
 
-                    -   [INPUT operator](lsFusionINPUT_operator.md)
+                    -   [INPUT operator](INPUT_operator.md)
 
                     <!-- -->
 
-                    -   [MESSAGE operator](lsFusionMESSAGE_operator.md)
+                    -   [MESSAGE operator](MESSAGE_operator.md)
 
                     <!-- -->
 
-                    -   [MULTI operator (action)](lsFusionMULTI_operator_action_.md)
+                    -   [MULTI operator (action)](MULTI_operator_action_.md)
 
                     <!-- -->
 
-                    -   [NEW operator](lsFusionNEW_operator.md)
+                    -   [NEW operator](NEW_operator.md)
 
                     <!-- -->
 
-                    -   [NESTEDSESSION operator](lsFusionNESTEDSESSION_operator.md)
+                    -   [NESTEDSESSION operator](NESTEDSESSION_operator.md)
 
                     <!-- -->
 
-                    -   [NEWEXECUTOR operator](lsFusionNEWEXECUTOR_operator.md)
+                    -   [NEWEXECUTOR operator](NEWEXECUTOR_operator.md)
 
                     <!-- -->
 
-                    -   [NEWSESSION operator](lsFusionNEWSESSION_operator.md)
+                    -   [NEWSESSION operator](NEWSESSION_operator.md)
 
                     <!-- -->
 
-                    -   [NEWTHREAD operator](lsFusionNEWTHREAD_operator.md)
+                    -   [NEWTHREAD operator](NEWTHREAD_operator.md)
 
                     <!-- -->
 
-                    -   [PRINT operator](lsFusionPRINT_operator.md)
+                    -   [PRINT operator](PRINT_operator.md)
 
                     <!-- -->
 
-                    -   [READ operator](lsFusionREAD_operator.md)
+                    -   [READ operator](READ_operator.md)
 
                     <!-- -->
 
-                    -   [REQUEST operator](lsFusionREQUEST_operator.md)
+                    -   [REQUEST operator](REQUEST_operator.md)
 
                     <!-- -->
 
-                    -   [RETURN](lsFusionRETURN.md)
+                    -   [RETURN](RETURN.md)
 
                     <!-- -->
 
-                    -   [SEEK operator](lsFusionSEEK_operator.md)
+                    -   [SEEK operator](SEEK_operator.md)
 
                     <!-- -->
 
-                    -   [SHOW operator](lsFusionSHOW_operator.md)
+                    -   [SHOW operator](SHOW_operator.md)
 
                     <!-- -->
 
-                    -   [TRY operator](lsFusionTRY_operator.md)
+                    -   [TRY operator](TRY_operator.md)
 
                     <!-- -->
 
-                    -   [WHILE operator](lsFusionWHILE_operator.md)
+                    -   [WHILE operator](WHILE_operator.md)
 
                     <!-- -->
 
-                    -   [WRITE operator](lsFusionWRITE_operator.md)
+                    -   [WRITE operator](WRITE_operator.md)
 
                 <!-- -->
 
-                -   [Action options](lsFusionAction_options.md)
+                -   [Action options](Action_options.md)
 
             <!-- -->
 
-            -   [GROUP instruction](lsFusionGROUP_instruction.md)
+            -   [GROUP instruction](GROUP_instruction.md)
 
             <!-- -->
 
-            -   [ON instruction](lsFusionON_instruction.md)
-                -   [Event description block](lsFusionEvent_description_block.md)
+            -   [ON instruction](ON_instruction.md)
+                -   [Event description block](Event_description_block.md)
 
             <!-- -->
 
-            -   [WHEN instruction](lsFusionWHEN_instruction.md)
+            -   [WHEN instruction](WHEN_instruction.md)
 
             <!-- -->
 
-            -   [Instruction&lt;- WHEN](lsFusionInstruction_-_WHEN.md)
+            -   [Instruction&lt;- WHEN](Instruction_-_WHEN.md)
 
             <!-- -->
 
-            -   [CONSTRAINT instruction](lsFusionCONSTRAINT_instruction.md)
+            -   [CONSTRAINT instruction](CONSTRAINT_instruction.md)
 
             <!-- -->
 
-            -   [Instruction=&gt;](lsFusionInstruction=_.md)
+            -   [Instruction=&gt;](Instruction=_.md)
 
             <!-- -->
 
-            -   [CLASS instruction](lsFusionCLASS_instruction.md)
+            -   [CLASS instruction](CLASS_instruction.md)
 
             <!-- -->
 
-            -   [FORM instruction](lsFusionFORM_instruction.md)
-                -   [Object blocks](lsFusionObject_blocks.md)
+            -   [FORM instruction](FORM_instruction.md)
+                -   [Object blocks](Object_blocks.md)
 
                 <!-- -->
 
-                -   [Properties and actions block](lsFusionProperties_and_actions_block.md)
+                -   [Properties and actions block](Properties_and_actions_block.md)
 
                 <!-- -->
 
-                -   [Filters and sortings block](lsFusionFilters_and_sortings_block.md)
+                -   [Filters and sortings block](Filters_and_sortings_block.md)
 
                 <!-- -->
 
-                -   [Event block](lsFusionEvent_block.md)
+                -   [Event block](Event_block.md)
 
             <!-- -->
 
-            -   [DESIGN instruction](lsFusionDESIGN_instruction.md)
+            -   [DESIGN instruction](DESIGN_instruction.md)
 
             <!-- -->
 
-            -   [NAVIGATOR instruction](lsFusionNAVIGATOR_instruction.md)
+            -   [NAVIGATOR instruction](NAVIGATOR_instruction.md)
 
             <!-- -->
 
-            -   [WINDOW instruction](lsFusionWINDOW_instruction.md)
+            -   [WINDOW instruction](WINDOW_instruction.md)
 
             <!-- -->
 
-            -   [EXTEND CLASS instruction](lsFusionEXTEND_CLASS_instruction.md)
+            -   [EXTEND CLASS instruction](EXTEND_CLASS_instruction.md)
 
             <!-- -->
 
-            -   [EXTEND FORM instruction](lsFusionEXTEND_FORM_instruction.md)
+            -   [EXTEND FORM instruction](EXTEND_FORM_instruction.md)
 
             <!-- -->
 
-            -   [Instruction +=](lsFusionInstruction_+=.md)
+            -   [Instruction +=](Instruction_+=.md)
 
             <!-- -->
 
-            -   [ACTION+ instruction](lsFusionACTION+_instruction.md)
+            -   [ACTION+ instruction](ACTION+_instruction.md)
 
             <!-- -->
 
-            -   [META instruction](lsFusionMETA_instruction.md)
+            -   [META instruction](META_instruction.md)
 
             <!-- -->
 
-            -   [Instruction@](lsFusionInstruction_.md)
+            -   [Instruction@](Instruction_.md)
 
             <!-- -->
 
-            -   [TABLE instruction](lsFusionTABLE_instruction.md)
+            -   [TABLE instruction](TABLE_instruction.md)
 
             <!-- -->
 
-            -   [INDEX instruction](lsFusionINDEX_instruction.md)
+            -   [INDEX instruction](INDEX_instruction.md)
 
             <!-- -->
 
-            -   [BEFORE instruction](lsFusionBEFORE_instruction.md)
+            -   [BEFORE instruction](BEFORE_instruction.md)
 
             <!-- -->
 
-            -   [AFTER instruction](lsFusionAFTER_instruction.md)
+            -   [AFTER instruction](AFTER_instruction.md)
 
             <!-- -->
 
-            -   [Empty instruction](lsFusionEmpty_instruction.md)
+            -   [Empty instruction](Empty_instruction.md)
 
     <!-- -->
 
-    -   [IDE](lsFusionIDE.md)
+    -   [IDE](IDE.md)
 
     <!-- -->
 
-    -   [Examples](lsFusionExamples.md)
-        -   [Score table](lsFusionScore_table.md)
+    -   [Examples](Examples.md)
+        -   [Score table](Score_table.md)
 
         <!-- -->
 
-        -   [Materials management](lsFusionMaterials_management.md)
+        -   [Materials management](Materials_management.md)
 
         <!-- -->
 
-        -   [How-to](lsFusionHow-to.md)
-            -   [How-to: Computations](lsFusionHow-to_Computations.md)
-                -   [How-to: GROUP SUM](lsFusionHow-to_GROUP_SUM.md)
+        -   [How-to](How-to.md)
+            -   [How-to: Computations](How-to_Computations.md)
+                -   [How-to: GROUP SUM](How-to_GROUP_SUM.md)
 
                 <!-- -->
 
-                -   [How-to: GROUP MAX/MIN/AGGR](lsFusionHow-to_GROUP_MAX_MIN_AGGR.md)
+                -   [How-to: GROUP MAX/MIN/AGGR](How-to_GROUP_MAX_MIN_AGGR.md)
 
                 <!-- -->
 
-                -   [How-to: CASE/IF/OVERRIDE](lsFusionHow-to_CASE_IF_OVERRIDE.md)
+                -   [How-to: CASE/IF/OVERRIDE](How-to_CASE_IF_OVERRIDE.md)
 
                 <!-- -->
 
-                -   [How-to: GROUP LAST](lsFusionHow-to_GROUP_LAST.md)
+                -   [How-to: GROUP LAST](How-to_GROUP_LAST.md)
 
                 <!-- -->
 
-                -   [How-to: GROUP CONCAT](lsFusionHow-to_GROUP_CONCAT.md)
+                -   [How-to: GROUP CONCAT](How-to_GROUP_CONCAT.md)
 
                 <!-- -->
 
-                -   [How-to: PARTITION](lsFusionHow-to_PARTITION.md)
+                -   [How-to: PARTITION](How-to_PARTITION.md)
 
             <!-- -->
 
-            -   [How-to: GUI](lsFusionHow-to_GUI.md)
-                -   [How-to: Interactive forms](lsFusionHow-to_Interactive_forms.md)
-                    -   [How-to: CRUD](lsFusionHow-to_CRUD.md)
+            -   [How-to: GUI](How-to_GUI.md)
+                -   [How-to: Interactive forms](How-to_Interactive_forms.md)
+                    -   [How-to: CRUD](How-to_CRUD.md)
 
                     <!-- -->
 
-                    -   [How-to: Documents with lines](lsFusionHow-to_Documents_with_lines.md)
+                    -   [How-to: Documents with lines](How-to_Documents_with_lines.md)
 
                     <!-- -->
 
-                    -   [How-to: Filtering and sorting](lsFusionHow-to_Filtering_and_sorting.md)
+                    -   [How-to: Filtering and sorting](How-to_Filtering_and_sorting.md)
 
                     <!-- -->
 
-                    -   [How-to: Design](lsFusionHow-to_Design.md)
+                    -   [How-to: Design](How-to_Design.md)
 
                     <!-- -->
 
-                    -   [How-to: Trees](lsFusionHow-to_Trees.md)
+                    -   [How-to: Trees](How-to_Trees.md)
 
                     <!-- -->
 
-                    -   [How-to: Data entry](lsFusionHow-to_Data_entry.md)
+                    -   [How-to: Data entry](How-to_Data_entry.md)
 
                     <!-- -->
 
-                    -   [How-to: Navigator](lsFusionHow-to_Navigator.md)
+                    -   [How-to: Navigator](How-to_Navigator.md)
 
                     <!-- -->
 
-                    -   [How-to: Matrix](lsFusionHow-to_Matrix.md)
+                    -   [How-to: Matrix](How-to_Matrix.md)
 
                     <!-- -->
 
-                    -   [How-to: Table status](lsFusionHow-to_Table_status.md)
+                    -   [How-to: Table status](How-to_Table_status.md)
 
                 <!-- -->
 
-                -   [How-to: Reports](lsFusionHow-to_Reports.md)
+                -   [How-to: Reports](How-to_Reports.md)
 
             <!-- -->
 
-            -   [How-to: Imperative logic](lsFusionHow-to_Imperative_logic.md)
-                -   [How-to: Actions](lsFusionHow-to_Actions.md)
-                    -   [How-to: CHANGE](lsFusionHow-to_CHANGE.md)
+            -   [How-to: Imperative logic](How-to_Imperative_logic.md)
+                -   [How-to: Actions](How-to_Actions.md)
+                    -   [How-to: CHANGE](How-to_CHANGE.md)
 
                     <!-- -->
 
-                    -   [How-to: EXEC](lsFusionHow-to_EXEC.md)
+                    -   [How-to: EXEC](How-to_EXEC.md)
 
                     <!-- -->
 
-                    -   [How-to: NEW](lsFusionHow-to_NEW.md)
+                    -   [How-to: NEW](How-to_NEW.md)
 
                     <!-- -->
 
-                    -   [How-to: DELETE](lsFusionHow-to_DELETE.md)
+                    -   [How-to: DELETE](How-to_DELETE.md)
 
                     <!-- -->
 
-                    -   [How-to: FOR](lsFusionHow-to_FOR.md)
+                    -   [How-to: FOR](How-to_FOR.md)
 
                     <!-- -->
 
-                    -   [How-to: IF/CASE](lsFusionHow-to_IF_CASE.md)
+                    -   [How-to: IF/CASE](How-to_IF_CASE.md)
 
                     <!-- -->
 
-                    -   [How-to: WHILE](lsFusionHow-to_WHILE.md)
+                    -   [How-to: WHILE](How-to_WHILE.md)
 
                     <!-- -->
 
-                    -   [How-to: NEWSESSION](lsFusionHow-to_NEWSESSION.md)
+                    -   [How-to: NEWSESSION](How-to_NEWSESSION.md)
 
                     <!-- -->
 
-                    -   [How-to: SEEK](lsFusionHow-to_SEEK.md)
+                    -   [How-to: SEEK](How-to_SEEK.md)
 
                 <!-- -->
 
-                -   [How-to: Events](lsFusionHow-to_Events.md)
+                -   [How-to: Events](How-to_Events.md)
 
             <!-- -->
 
-            -   [How-to: Declarative logic](lsFusionHow-to_Declarative_logic.md)
-                -   [How-to: Constraints](lsFusionHow-to_Constraints.md)
+            -   [How-to: Declarative logic](How-to_Declarative_logic.md)
+                -   [How-to: Constraints](How-to_Constraints.md)
 
                 <!-- -->
 
-                -   [How-to: Inheritance and aggregation](lsFusionHow-to_Inheritance_and_aggregation.md)
+                -   [How-to: Inheritance and aggregation](How-to_Inheritance_and_aggregation.md)
 
             <!-- -->
 
-            -   [How-to: Searching for elements](lsFusionHow-to_Searching_for_elements.md)
-                -   [How-to: Namespaces](lsFusionHow-to_Namespaces.md)
+            -   [How-to: Searching for elements](How-to_Searching_for_elements.md)
+                -   [How-to: Namespaces](How-to_Namespaces.md)
 
                 <!-- -->
 
-                -   [How-to: Explicit typing](lsFusionHow-to_Explicit_typing.md)
+                -   [How-to: Explicit typing](How-to_Explicit_typing.md)
 
             <!-- -->
 
-            -   [How-to: Extensions](lsFusionHow-to_Extensions.md)
-                -   [How-to: Class extension](lsFusionHow-to_Class_extension.md)
+            -   [How-to: Extensions](How-to_Extensions.md)
+                -   [How-to: Class extension](How-to_Class_extension.md)
 
                 <!-- -->
 
-                -   [How-to: Property extension](lsFusionHow-to_Property_extension.md)
+                -   [How-to: Property extension](How-to_Property_extension.md)
 
                 <!-- -->
 
-                -   [How-to: Action extension](lsFusionHow-to_Action_extension.md)
+                -   [How-to: Action extension](How-to_Action_extension.md)
 
                 <!-- -->
 
-                -   [How-to: Form extension](lsFusionHow-to_Form_extension.md)
+                -   [How-to: Form extension](How-to_Form_extension.md)
 
             <!-- -->
 
-            -   [How-to: Integration](lsFusionHow-to_Integration.md)
-                -   [How-to: Working with external formats](lsFusionHow-to_Working_with_external_formats.md)
-                    -   [How-to: Data export](lsFusionHow-to_Data_export.md)
+            -   [How-to: Integration](How-to_Integration.md)
+                -   [How-to: Working with external formats](How-to_Working_with_external_formats.md)
+                    -   [How-to: Data export](How-to_Data_export.md)
 
                     <!-- -->
 
-                    -   [How-to: Data import](lsFusionHow-to_Data_import.md)
+                    -   [How-to: Data import](How-to_Data_import.md)
 
                 <!-- -->
 
-                -   [How-to: Interaction via HTTP protocol](lsFusionHow-to_Interaction_via_HTTP_protocol.md)
+                -   [How-to: Interaction via HTTP protocol](How-to_Interaction_via_HTTP_protocol.md)
 
                 <!-- -->
 
-                -   [How-to: Frontend](lsFusionHow-to_Frontend.md)
+                -   [How-to: Frontend](How-to_Frontend.md)
 
                 <!-- -->
 
-                -   [How-to: Access to internal systems](lsFusionHow-to_Access_to_internal_systems.md)
-                    -   [How-to: FORMULA](lsFusionHow-to_FORMULA.md)
+                -   [How-to: Access to internal systems](How-to_Access_to_internal_systems.md)
+                    -   [How-to: FORMULA](How-to_FORMULA.md)
 
                     <!-- -->
 
-                    -   [How-to: INTERNAL](lsFusionHow-to_INTERNAL.md)
+                    -   [How-to: INTERNAL](How-to_INTERNAL.md)
 
             <!-- -->
 
-            -   [How-to: Use Cases](lsFusionHow-to_Use_Cases.md)
-                -   [How-to: Working with documents](lsFusionHow-to_Working_with_documents.md)
+            -   [How-to: Use Cases](How-to_Use_Cases.md)
+                -   [How-to: Working with documents](How-to_Working_with_documents.md)
 
                 <!-- -->
 
-                -   [How-to: Registers](lsFusionHow-to_Registers.md)
+                -   [How-to: Registers](How-to_Registers.md)
 
                 <!-- -->
 
-                -   [How-to: Numbering](lsFusionHow-to_Numbering.md)
+                -   [How-to: Numbering](How-to_Numbering.md)
 
                 <!-- -->
 
-                -   [How-to: Using objects as templates](lsFusionHow-to_Using_objects_as_templates.md)
+                -   [How-to: Using objects as templates](How-to_Using_objects_as_templates.md)
 
                 <!-- -->
 
-                -   [How-to: Overriding values](lsFusionHow-to_Overriding_values.md)
+                -   [How-to: Overriding values](How-to_Overriding_values.md)
 
                 <!-- -->
 
-                -   [How-to: Binding properties](lsFusionHow-to_Binding_properties.md)
+                -   [How-to: Binding properties](How-to_Binding_properties.md)
 
             <!-- -->
 
-            -   [How-to: Metaprogramming](lsFusionHow-to_Metaprogramming.md)
+            -   [How-to: Metaprogramming](How-to_Metaprogramming.md)
 
             <!-- -->
 
-            -   [How-to: Physical model](lsFusionHow-to_Physical_model.md)
+            -   [How-to: Physical model](How-to_Physical_model.md)
 
             <!-- -->
 
-            -   [How-to: Internationalization](lsFusionHow-to_Internationalization.md)
+            -   [How-to: Internationalization](How-to_Internationalization.md)
 
     <!-- -->
 
-    -   [Online demo](lsFusionOnline_demo.md)
+    -   [Online demo](Online_demo.md)
