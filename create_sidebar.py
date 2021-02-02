@@ -12,13 +12,6 @@ def name(s):
 def printsp(text, d, outfile):
     outfile.write(' ' * (d + 4) + text + '\n')
 
-#   type: 'category',
-#   label: 'Getting Started',
-#   items: ['greeting'],
-
-#   type: 'doc';
-#   id: string;        
-
 def open_category(line, d, outfile):
     printsp('{', d, outfile)    
     printsp('type: \'category\',', d+2, outfile)
@@ -29,12 +22,14 @@ def close_category(d, outfile):
     printsp(']', d+2, outfile)
     printsp('},', d, outfile)
 
-def print_leaf(line, d, outfile):
-    printsp('{', d, outfile)    
-    printsp('type: \'doc\',', d+2, outfile)
-    printsp(f'id: \'LSFUS/{name(line)}\',', d+2, outfile)
-    printsp('},', d, outfile)
+# def print_leaf(line, d, outfile):
+#     printsp('{', d, outfile)    
+#     printsp('type: \'doc\',', d+2, outfile)
+#     printsp(f'id: \'LSFUS/{name(line)}\',', d+2, outfile)
+#     printsp('},', d, outfile)
 
+def print_leaf(line, d, outfile):
+    printsp(f'\'{name(line)}\', ', d, outfile)
 
 def build_sidebar(lines, outfile):
     stack = []
