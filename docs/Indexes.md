@@ -6,7 +6,7 @@ Building an *index* by property allows storing all the values of this property i
 
 Only [materialized](Materializations.md) properties can be indexed.
 
-An index can also be built on several properties at once (this is effective if, for example, you need to filter by several properties simultaneously). In addition, property parameters can be included in a composite index of this kind. The built index will be named as following: **&lt;table ID&gt;\_&lt;property/parameter name 1&gt;\_...\_&lt;property/parameter name N&gt;**. If the specified properties are stored in different [tables](Tables.md), then the corresponding error will be thrown when you try to build the index.
+An index can also be built on several properties at once (this is effective if, for example, you need to filter by several properties simultaneously). In addition, property parameters can be included in a composite index of this kind. The built index will be named as following: **<table ID\>\_<property/parameter name 1\>\_...\_<property/parameter name N\>**. If the specified properties are stored in different [tables](Tables.md), then the corresponding error will be thrown when you try to build the index.
 
 **Language**
 

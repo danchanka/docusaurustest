@@ -32,7 +32,19 @@ def create_title(data):
     data = '---\ntitle: ' + escape_title(title) + '\n---\n' + '\n'.join(lines[3:])
     return data
 
+def replace_html_ltgt(data):
+    nlines = []
+    lines = data.split('\n')
+    for line in lines:
+        if line.find('&gt;') != -1 and line.find('&lt;') != -1:
+            line = line.replace('&gt;', '\\>').replace('&lt;', '<')    
+        else:     
+            line = line.replace('&gt;', '>').replace('&lt;', '<')
+        nlines.append(line)
+    return '\n'.join(nlines)
+
 def transform_file_content(data):
+    data = replace_html_ltgt(data)
     data = create_title(data)
     data = remove_tables(data)
     return data    
@@ -41,12 +53,12 @@ indir, outdir = get_dirs()
 for filename in os.listdir(indir):
     fullname = indir + '/' + filename 
     print(fullname)
-    if os.path.isfile(fullname) and fullname.endswith('.md'):
+    if os.path.isfile(fullname) and fullname.endswith('.md') and not fullname.endswith('index.md'):
         with open(fullname, 'r', encoding='utf-8') as infile:
             data = infile.read()
             infile.close()
             fulloutname = outdir + '/' + filename
-            if len(data) > 0:
+            if len(data) > 0 and data[0] == '#':
                 data = transform_file_content(data)
                 with open(fulloutname, 'w', encoding='utf-8') as outfile:
                     outfile.write(data)

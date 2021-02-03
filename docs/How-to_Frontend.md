@@ -402,7 +402,7 @@ The first parameter passed is the callback function to which the initial state o
 
 The returned JSON also has other utility fields.
 
-Object tables can be read from **game.list** and **team.list** respectively. Current objects are stored in **game.value** and **team.value**. We use this data to form two tables, of games and of teams. To mark the current row we use the equals function, which compares, for example, the values from **game.value** and **game.list\[&lt;row&gt;\].value**. This is necessary because **value** may contain more complex objects, if several objects are declared in the object group.
+Object tables can be read from **game.list** and **team.list** respectively. Current objects are stored in **game.value** and **team.value**. We use this data to form two tables, of games and of teams. To mark the current row we use the equals function, which compares, for example, the values from **game.value** and **game.list\[<row\>\].value**. This is necessary because **value** may contain more complex objects, if several objects are declared in the object group.
 
 Until the form has loaded, the helper function **formCreated** returns **false** and tables are not displayed.
 

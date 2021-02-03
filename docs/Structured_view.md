@@ -120,7 +120,7 @@ For example, in lsFusion to export a property to a tag with a specified namespac
 
     [namespace[=uri]:]name
 
-For example, h:table or h=<http://www.w3.org/TR/html4:table>. The namespace name may be empty if necessary. If no URI is specified for the namespace, it is inherited from the namespace with the same name of the parent tags. If there are no namespaces with that name in the parent tags, URI is automatically considered equal to http://www.w3.org/ of the namespace&gt;.
+For example, h:table or h=<http://www.w3.org/TR/html4:table>. The namespace name may be empty if necessary. If no URI is specified for the namespace, it is inherited from the namespace with the same name of the parent tags. If there are no namespaces with that name in the parent tags, URI is automatically considered equal to http://www.w3.org/ of the namespace>.
 
 It is not possible to specify the property name described above (for example, h:table) in the lsFusion syntax (since the name cannot contain a colon), therefore, to specify such an export name, you should use the [described above](#Structuredview-extid) **EXTID** option.
 

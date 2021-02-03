@@ -1,8 +1,8 @@
 ---
-title: 'Instruction=&gt;'
+title: 'Instruction=>'
 ---
 
-The **=&gt;** instruction creates a [consequence](Simple_constraints.md).
+The **=>** instruction creates a [consequence](Simple_constraints.md).
 
 **Syntax**
 
@@ -10,7 +10,7 @@ The **=&gt;** instruction creates a [consequence](Simple_constraints.md).
 
 **Description**
 
-The **=&gt; ** instruction creates a consequence. This operator ** ** can declare its own local parameters when specifying the property of the consequence premise. These parameters can then be used in the expression of the consequence.
+The **=> ** instruction creates a consequence. This operator ** ** can declare its own local parameters when specifying the property of the consequence premise. These parameters can then be used in the expression of the consequence.
 
 When creating a consequence a [constraint](Constraints.md) will be created, which is pretty similar to the following instruction
 

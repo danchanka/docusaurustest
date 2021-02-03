@@ -22,13 +22,13 @@ Communication over this protocol is supported both for an application server on 
 
 The URL format, depending on the method of [action definition](#Accessfromanexternalsystem-actiontype), looks as follows:
 
--   EXEC - http://server address:port/exec?action=&lt;action name&gt;. The "action" parameter must always be specified.
--   EVAL - http://server address:port/eval?script=&lt;code&gt;. If the "script" parameter is not specified, it is assumed that the code is passed in the first BODY parameter.
--   EVAL ACTION – http://server address:port/eval/action?script=&lt;action code&gt;. If the "script" parameter is not specified, it is assumed that the code is passed in the first BODY parameter.
+-   EXEC - http://server address:port/exec?action=<action name\>. The "action" parameter must always be specified.
+-   EVAL - http://server address:port/eval?script=<code\>. If the "script" parameter is not specified, it is assumed that the code is passed in the first BODY parameter.
+-   EVAL ACTION – http://server address:port/eval/action?script=<action code\>. If the "script" parameter is not specified, it is assumed that the code is passed in the first BODY parameter.
 
 *Parameters*
 
-Parameters can be passed both in the request string (by appending constructs like &p=&lt;parameter value&gt; to the end of the string), as well as in the request body (BODY). It is assumed that URL parameters are substituted (in the order of their appearance in the request) for the executed action before BODY parameters.
+Parameters can be passed both in the request string (by appending constructs like &p=<parameter value\> to the end of the string), as well as in the request body (BODY). It is assumed that URL parameters are substituted (in the order of their appearance in the request) for the executed action before BODY parameters.
 
 When processing BODY parameters, parameters with the content type from the following [table](https://github.com/lsfusion/platform/blob/master/api/src/main/resources/MIMETypes.properties) are considered files and are passed to the action parameters as objects of the file class ( **FILE** , ****PDFFILE****  , etc.). During this process, the corresponding file extension is taken from the table mentioned above. If a particular content type is not found in the table, but it starts with "application", the parameter is still considered a file, and the file extension is taken from the right part of the content type (for example, it will be "abc" for the "application/abc" content type). Parameters with the application/null content type are considered to be equal to **NULL**.
 
@@ -38,9 +38,9 @@ BODY parameters with types of content different from the ones mentioned above ar
 
 *Results*
 
-Properties whose values must be returned as the result are passed in the request string by adding strings like &return=&lt;property name&gt; to its end. It is assumed that the values of specified properties are returned in the order of their appearance in the request string. By default, if no result properties are specified, the resulting property is the first one with a non-**NULL** value from the following [list](Built-in-classes_2031657.html#Built-inclasses-export). 
+Properties whose values must be returned as the result are passed in the request string by adding strings like &return=<property name\> to its end. It is assumed that the values of specified properties are returned in the order of their appearance in the request string. By default, if no result properties are specified, the resulting property is the first one with a non-**NULL** value from the following [list](Built-in-classes_2031657.html#Built-inclasses-export). 
 
-If the result of a request is a file (**FILE**, **PDFFILE**, etc.), the response [content type](https://en.wikipedia.org/wiki/Media_type) , depending on the file extension, is determined in accordance with the following [table](https://github.com/lsfusion/platform/blob/master/api/src/main/resources/MIMETypes.properties). If the file extension is not found in this table, the content type is set to application/&lt;file extension&gt;.
+If the result of a request is a file (**FILE**, **PDFFILE**, etc.), the response [content type](https://en.wikipedia.org/wiki/Media_type) , depending on the file extension, is determined in accordance with the following [table](https://github.com/lsfusion/platform/blob/master/api/src/main/resources/MIMETypes.properties). If the file extension is not found in this table, the content type is set to application/<file extension\>.
 
 The file extension in this case is determined automatically, similarly to the [**WRITE** operator](WRITE-operator_34439654.html#WRITEoperator-id-%D0%9E%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80WRITE-extension).
 
@@ -63,7 +63,7 @@ Note that the processing of parameters and request results is largely similar to
 
 *Stateful API*
 
-The API described above is a REST API. Accordingly, the [change session](Change_sessions.md) is created when a call is initiated, and closes immediately after the call ends. However, there are situations where such behavior is undesirable, and you need to accumulate changes for a certain period of time (for example, while the user is inputting data), which means that the session must be saved and handed over between sessions. In order to do this, you can add a string of the following format to the end of the query string: &session=&lt;session ID&gt;, where &lt;session ID&gt; is any non-empty string. In this case, the session will not be closed after the call, but will be associated with a previously passed ID, so that all subsequent calls with this ID will be executed in this session. In order to close a session (after the end of a call), you need to add the \_close postfix (for example,&session=0\_close) to its ID in the request string.
+The API described above is a REST API. Accordingly, the [change session](Change_sessions.md) is created when a call is initiated, and closes immediately after the call ends. However, there are situations where such behavior is undesirable, and you need to accumulate changes for a certain period of time (for example, while the user is inputting data), which means that the session must be saved and handed over between sessions. In order to do this, you can add a string of the following format to the end of the query string: &session=<session ID\>, where <session ID\> is any non-empty string. In this case, the session will not be closed after the call, but will be associated with a previously passed ID, so that all subsequent calls with this ID will be executed in this session. In order to close a session (after the end of a call), you need to add the \_close postfix (for example,&session=0\_close) to its ID in the request string.
 
 Since cookie files are implicitly used for working with HTTP sessions, it is important not to forget to save / pass cookies between stateful http calls (this, however, is typically done automatically by a browser, the HttpClient in Java, etc.)
 
@@ -73,10 +73,10 @@ The current implementation of the platform assumes that if sessions are used, th
 
 When executing an http request, it is often necessary to identify the user on whose behalf the specified action will be executed. At the moment, two types of authentication are supported by the platform:
 
--   [Basic identification](https://en.wikipedia.org/wiki/Basic_access_authentication) - the user name and password are passed in an encoded form in the "Authorization: Basic &lt;credentials&gt;"heading.
+-   [Basic identification](https://en.wikipedia.org/wiki/Basic_access_authentication) - the user name and password are passed in an encoded form in the "Authorization: Basic <credentials\>"heading.
 -   Token-based authentication consists of two stages:
     -   At the first stage, you need to execute the  **Authentication.getAuthToken\[\]** action with basic authentication. The result of this action will be an authentication token with a fixed lifetime (one day [by default](Working-parameters_60555468.html#Workingparameters-authTokenExpiration)). An example of a request:  <http://localhost/exec?action=getAuthToken.>
-    -   The token you receive can be used for authentication during its lifetime by passing it in the "Authorization: Bearer &lt;token&gt;" header (similarly to JWT which is used in the current implementation of the platform for generating authentication tokens).
+    -   The token you receive can be used for authentication during its lifetime by passing it in the "Authorization: Bearer <token\>" header (similarly to JWT which is used in the current implementation of the platform for generating authentication tokens).
 
 *Form API*
 
@@ -100,7 +100,7 @@ The task of the library is to automatically keep this state described above up t
 The library exports the following functions:
 
 -   create - creates a new form. Parameters:
-    1.  setState - a state change request function. This function is supposed to take a single parameter – a state change function (which, in turn, has just one parameter, the previous state, and outputs the next state as the result) and as a result of execution add this function to the state change queue (or, for example, apply it right away depending on the implementation of the view logic). This state management logic is fully identical to the state management logic in React and, as a rule, if used inside a React component, the setState parameter is passed as updateState =&gt; this.setState(updateState).
+    1.  setState - a state change request function. This function is supposed to take a single parameter – a state change function (which, in turn, has just one parameter, the previous state, and outputs the next state as the result) and as a result of execution add this function to the state change queue (or, for example, apply it right away depending on the implementation of the view logic). This state management logic is fully identical to the state management logic in React and, as a rule, if used inside a React component, the setState parameter is passed as updateState => this.setState(updateState).
     2.  baseUrl - the URL of the lsFusion web server - a string, for example 'https://demo.lsfusion.org/hockeystats'.
     3.  formData - an object describing the form. Must contain either a name field with the name of the form (for example {name: "MainForm"}) or a script field with the form code (for example, script:"OBJECTS i = Invoice PROPERTIES (i) date, stock")
 -   change - changes the form data. Parameters:

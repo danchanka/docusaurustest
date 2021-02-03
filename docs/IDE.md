@@ -16,7 +16,7 @@ title: 'IDE'
 
 ### Creating a new lsFusion project
 
-Launch **IDEA** and select *Create New Project*, or when **IDEA** is already opened, select *File* -&gt; *New* -&gt; *Project* from the menu.
+Launch **IDEA** and select *Create New Project*, or when **IDEA** is already opened, select *File* -> *New* -> *Project* from the menu.
 
 ![](attachments/46367442/65241572.png)![](attachments/46367442/65241575.png)
 
@@ -42,7 +42,7 @@ You can also create subfolders (by choosing *Package*) to group similar modules
 
 ### Starting up a server
 
-When you create a new project, a server startup configuration is also created by default. You can run it by selecting "Run -&gt; Run 'Run lsFusion server,'" or by clicking on the symbol ![](attachments/46367442/46367451.png) next to the caption *Run lsFusion server* in the upper right corner. If startup is successful, the last line in the log should be *Server has successfully started*.
+When you create a new project, a server startup configuration is also created by default. You can run it by selecting "Run -> Run 'Run lsFusion server,'" or by clicking on the symbol ![](attachments/46367442/46367451.png) next to the caption *Run lsFusion server* in the upper right corner. If startup is successful, the last line in the log should be *Server has successfully started*.
 
 ![](attachments/46367442/65241582.png)
 

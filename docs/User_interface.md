@@ -15,7 +15,7 @@ Table row filtering function
 
 Filtering is activated via the "Select" button  and is carried out according to one or more filtering conditions.
 
-Each condition includes a column, a comparison operation (=, &gt;, &lt;, &lt;=, &gt;=, !=, Starts with) and a value for comparison.
+Each condition includes a column, a comparison operation (=, \>, <, <=, \>=, !=, Starts with) and a value for comparison.
 
 To show how two filtering conditions are fulfilled together/separately, specify **"AND/OR" **after the first condition:
 

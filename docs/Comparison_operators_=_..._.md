@@ -1,5 +1,5 @@
 ---
-title: 'Comparison operators (=, &gt;, &lt;, ...)'
+title: 'Comparison operators (=, \>, <, ...)'
 ---
 
 *Comparison operators* create [actions](Properties.md) which return the result of the comparison operation. The values of the created properties belong to the [built-in class](Built-in_classes.md) **BOOLEAN**.

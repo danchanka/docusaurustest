@@ -10,7 +10,7 @@ For the application server to work, it must have access to the PostgreSQL databa
 
 To install the plug-in, Intellij IDEA version 2017.1.6 or higher must be installed on the computer.
 
--   In the IDEA settings (File &gt; Settings), select Plugins &gt; Browse repositories, find the [lsFusion plugin](https://plugins.jetbrains.com/plugin/7601-lsfusion), click Install, and restart IDEA.
+-   In the IDEA settings (File > Settings), select Plugins > Browse repositories, find the [lsFusion plugin](https://plugins.jetbrains.com/plugin/7601-lsfusion), click Install, and restart IDEA.
 
 #### Installing an application server via IDE
 
@@ -26,7 +26,7 @@ To install the plug-in, Intellij IDEA version 2017.1.6 or higher must be install
 
 #### Installing an application server via IDE
 
--   Download the lsfusion-server-&lt;version&gt;.jar file of the required version (for example, lsfusion-server-2.0.jar) from the [central server](https://download.lsfusion.org/java) to the folder of the required project module (we will call this folder *$FUSION\_DIR$*).
+-   Download the lsfusion-server-<version\>.jar file of the required version (for example, lsfusion-server-2.0.jar) from the [central server](https://download.lsfusion.org/java) to the folder of the required project module (we will call this folder *$FUSION\_DIR$*).
 -   If the database server is located on another computer, and if authorization is enabled on the database server (for example, for Postgres, using the md5 method and if the postgres password is not empty), set the [database server connection parameters](Launch-parameters_65241244.html#Launchparameters-connectdb) (e.g., by creating a startup [settings file](Launch-parameters_65241244.html#Launchparameters-filesettings) in the project folder)
 -   Add the downloaded file as a dependency of the required project module (File → Project Structure → Modules → module name → Dependencies tab → +) 
 -   Create a [startup configuration](IDE_46367442.html#IDE-configuration) (when creating a new lsFusion project, this and the upper two sections are done automatically). If the platform is loaded as a library, instead of creating a configuration you can use a Spring bean with the logicsInstance ID from the lsfusion.xml configuration file, and its start() and stop() methods, responsible for starting and stopping the application server, respectively.

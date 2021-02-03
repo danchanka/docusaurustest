@@ -6,7 +6,7 @@ The *constant* operator is used to create properties without parameters which a
 
 **Language**
 
-Static objects of custom classes are specified as **&lt;class name&gt;.&lt;object name&gt;**.
+Static objects of custom classes are specified as **<class name\>.<object name\>**.
 
 Static objects of built-in classes are specified by special [literals](Literals.md)*. *
 

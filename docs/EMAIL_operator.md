@@ -34,7 +34,7 @@ An expression which value determines the email subject.
 
 *recipientType1 ... recipientTypeN*
 
-Recipient types. N&gt;=1. Each of them is specified by one of the keywords:
+Recipient types. N>=1. Each of them is specified by one of the keywords:
 
 -   **TO** - message recipient
 -   **СС** - secondary message recipient to whom a copy is sent

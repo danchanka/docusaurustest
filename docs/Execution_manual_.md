@@ -8,7 +8,7 @@ For the application server to work, it must have access to the PostgreSQL databa
 
 #### Installing the application server as a service
 
--   Download the file lsfusion-server-&lt;version&gt;.jar of the required version (for example lsfusion-server-2.0.jar) from [the central server](https://download.lsfusion.org/java) to some folder (we will call this folder *$FUSION\_DIR$*).
+-   Download the file lsfusion-server-<version\>.jar of the required version (for example lsfusion-server-2.0.jar) from [the central server](https://download.lsfusion.org/java) to some folder (we will call this folder *$FUSION\_DIR$*).
 
 -   If the database server is located on another computer, and if authorization is enabled on the database server (for example, for Postgres, using the md5 method and if the password postgres is not empty), set the [parameters for connecting to the database server](Launch-parameters_65241244.html#Launchparameters-connectdb) (e.g. by creating a startup [settings file](Launch-parameters_65241244.html#Launchparameters-filesettings)in the *$FUSION\_DIR$* folder)
 
@@ -65,13 +65,13 @@ For the application server to work, it must have access to the PostgreSQL databa
 
 To install the web server, Apache Tomcat version 7 or higher must be installed on the computer.
 
--   Download the file lsfusion-client-&lt;version&gt;.war of the required version from [the central server](https://download.lsfusion.org/java). For example, lsfusion-client-2.0.war. 
+-   Download the file lsfusion-client-<version\>.war of the required version from [the central server](https://download.lsfusion.org/java). For example, lsfusion-client-2.0.war. 
 -   If the application server is located on another computer, as well as if [access parameters to the application server](Launch-parameters_65241244.html#Launchparameters-accessapp) are different from the standard, set [connection parameters to the application server](Launch-parameters_65241244.html#Launchparameters-connectapp) (for example by creating / editing the Tomcat [settings file](Launch-parameters_65241244.html#Launchparameters-filewebsettings)) 
--   Deploy the application on Tomcat. The easiest way is to copy Tomcat to the webapps folder. In this case, the file can be renamed first (for example, to lsfusion.war), since the file name will correspond to the context path where the application will be available. If Tomcat uses port 8080, then the web client will be available at: <http://localhost:8080/>&lt;filename of the war file&gt;. For example, [http://localhost:8080/lsfusion](http://localhost:8080/lsfusion/). An empty context name in Tomcat corresponds to the name ROOT, that is, if the file name is ROOT.war, the web client will be available at <http://localhost:8080/>. You can download the desktop client from the authorization page at "Run Desktop Client" (via Java Web Start).
+-   Deploy the application on Tomcat. The easiest way is to copy Tomcat to the webapps folder. In this case, the file can be renamed first (for example, to lsfusion.war), since the file name will correspond to the context path where the application will be available. If Tomcat uses port 8080, then the web client will be available at: <http://localhost:8080/><filename of the war file\>. For example, [http://localhost:8080/lsfusion](http://localhost:8080/lsfusion/). An empty context name in Tomcat corresponds to the name ROOT, that is, if the file name is ROOT.war, the web client will be available at <http://localhost:8080/>. You can download the desktop client from the authorization page at "Run Desktop Client" (via Java Web Start).
 
 #### Installing only the desktop client (on the client's computer)
 
--   Download the file lsfusion-client-&lt;version&gt;.jar of the required version from [the central server](https://download.lsfusion.org/). For example, lsfusion-client-2.0.jar
+-   Download the file lsfusion-client-<version\>.jar of the required version from [the central server](https://download.lsfusion.org/). For example, lsfusion-client-2.0.jar
 
 -   Create a shortcut on the desktop. In this case, you need to use as the working directory the directory which contains the downloaded client jar-file. Use the following line as the launch command:
 
@@ -79,7 +79,7 @@ To install the web server, Apache Tomcat version 7 or higher must be installed o
 
         java -jar lsfusion-client-2.0.jar
 
-    You can also use the method of installing the desktop client for development. To do this, just download the file lsfusion-client-&lt;version&gt;.jnlp of the required version from the central server, and then run it locally on the client. This method is faster and more convenient, but less flexible.
+    You can also use the method of installing the desktop client for development. To do this, just download the file lsfusion-client-<version\>.jnlp of the required version from the central server, and then run it locally on the client. This method is faster and more convenient, but less flexible.
 
 The latest versions that are currently under development (snapshots) can be downloaded directly from the maven repository [https://repo.lsfusion.org](https://repo.lsfusion.org/). For example, for the server, the full path is as follows: <https://repo.lsfusion.org/nexus/service/rest/repository/browse/public/lsfusion/platform/server/> (for server and desktop client you need to download jar files with the -assembly postfix)
 

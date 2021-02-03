@@ -147,7 +147,7 @@ Specifies a [default filter](Interactive-view_1573071.html#Interactiveview-userf
 
 *compare*
 
-Default filter type. [String literal](Literals_35521071.html#Literals-strliteral). Can be one the following values: '=', '&gt;', '&lt;', '&gt;=', '&lt;=', '!=', 'START\_WITH', 'CONTAINS', 'ENDS\_WITH', 'LIKE'. The default value is '=' ** ** for all data types except case-insensitive string types, for which the default value is 'CONTAINS'**. ** If **System.defaultCompareForStringContains ** is enabled, default value is 'CONTAINS'** **for all string data regardless of case sensitivity. Can be overridden in the **DESIGN** instruction.
+Default filter type. [String literal](Literals_35521071.html#Literals-strliteral). Can be one the following values: '=', '\>', '<', '\>=', '<=', '!=', 'START\_WITH', 'CONTAINS', 'ENDS\_WITH', 'LIKE'. The default value is '=' ** ** for all data types except case-insensitive string types, for which the default value is 'CONTAINS'**. ** If **System.defaultCompareForStringContains ** is enabled, default value is 'CONTAINS'** **for all string data regardless of case sensitivity. Can be overridden in the **DESIGN** instruction.
 
 **Examples**
 

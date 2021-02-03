@@ -15,7 +15,7 @@ The operator has two forms:
 
 The **INTERNAL** operator creates an action which calls the code written in **Java**. The first form of the operator allows you to specify the fully qualified name of a Java class. This class must be inherited from the **lsfusion.server.physics.dev.integration.internal.to.InternalAction** Java class and must contain the **executeInternal** method which is executed when the action is called.
 
-The second form of the operator allows to write some **Java** code inside the **&lt;{...}&gt;** block. This block contents will be the code of **executeInternal** method for the generated Java class. In this code you can refer to the only parameter of the **executeInternal** method – the **context** parameter of the **lsfusion.server.logics.action.controller.context.ExecutionContext** class.
+The second form of the operator allows to write some **Java** code inside the **<{...}\>** block. This block contents will be the code of **executeInternal** method for the generated Java class. In this code you can refer to the only parameter of the **executeInternal** method – the **context** parameter of the **lsfusion.server.logics.action.controller.context.ExecutionContext** class.
 
 **Parameters**
 

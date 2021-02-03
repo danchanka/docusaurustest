@@ -51,7 +51,7 @@ Keyword. Specifies that the operator executes an action of another lsFusion serv
 
     bodyStrExpr
 
-[Expression](Expression.md). Continuation of http request string in BODY. Relevant when BODY has &gt; 1 parameter. If not specified, the parameters are passed in multipart format.
+[Expression](Expression.md). Continuation of http request string in BODY. Relevant when BODY has > 1 parameter. If not specified, the parameters are passed in multipart format.
 
 *headersPropertyId*
 

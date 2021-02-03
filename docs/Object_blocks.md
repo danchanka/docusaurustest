@@ -84,7 +84,7 @@ A list of object names on the form that will be used as action parameters. The 
 
 *PAGESIZE* pageSize
 
-Specification of the number of readable objects in the table. By default, the quantity is determined dynamically depending on the size of the component in the user interface and equals to 3\*&lt;number of visible rows in the table&gt;. A value of 0 means that all objects must be read.
+Specification of the number of readable objects in the table. By default, the quantity is determined dynamically depending on the size of the component in the user interface and equals to 3\*<number of visible rows in the table\>. A value of 0 means that all objects must be read.
 
 *pageSize*
 

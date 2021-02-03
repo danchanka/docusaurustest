@@ -14,7 +14,7 @@ For this type of interaction, only the request string (URL) is specified, which
 
 Parameters can be passed both in the request string (to refer to the parameter, the special character $ and the number of this parameter, starting with 1, are used) and in its body (BODY). It is assumed that all parameters not used in the request string are passed to BODY.
 
-When processing file class parameters (**FILE**, **PDFFILE**, etc.) to BODY, the [content type](https://en.wikipedia.org/wiki/Media_type) of the parameter, depending on the file extension, is determined in accordance with the following [table](https://github.com/lsfusion/platform/blob/master/api/src/main/resources/MIMETypes.properties). If the file extension is not found in this table, the content type is set to application/&lt;file extension&gt;.
+When processing file class parameters (**FILE**, **PDFFILE**, etc.) to BODY, the [content type](https://en.wikipedia.org/wiki/Media_type) of the parameter, depending on the file extension, is determined in accordance with the following [table](https://github.com/lsfusion/platform/blob/master/api/src/main/resources/MIMETypes.properties). If the file extension is not found in this table, the content type is set to application/<file extension\>.
 
 The file extension in this case is determined automatically, similarly to the [**WRITE** operator](WRITE-operator_34439654.html#WRITEoperator-extension).
 
