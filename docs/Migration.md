@@ -24,41 +24,41 @@ The migration file allows you to handle changes to [canonical names](Naming_3552
     TABLE oldNS.oldName -> newNS.newName
     NAVIGATOR oldNS.oldName -> newNS.newName
 
-**Changing the name of a property or action**
+### Changing the name of a property or action
 
 When renaming a [property](Properties.md)/[action](Actions.md) and/or when moving it to another [namespace](Naming_35521066.html#Naming-namespace), the canonical name of the property/action changes. Adding a **PROPERTY **change to the migration file specifying the old and new canonical names will allow you to preserve the security policy settings, as well as settings from the **Reflection.properties** table. If the property is [primary](Data_properties_DATA_.md), to preserve data when changing the canonical name of this property **it is necessary** to add a **STORED PROPERTY** change. Then, when the server starts, the field corresponding to this property in the database table will be renamed. Otherwise, the old field will be renamed to the field with the name **<old ID\>\_deleted** (for example, when deleting a property), and a new field will be created with empty values. Apart from that the **STORED PROPERTY** type is equivalent to the **PROPERTY** type.
 
 On the right side of **STORED PROPERTY** and **PROPERTY** changes it is not necessary to specify a signature, as here the signature is automatically taken from the left side.
 
-**Changing the name of a property/action on a form**
+### Changing the name of a property/action on a form
 
 When changing [the name of the property on a form](Properties-and-actions-block_3866665.html#Propertiesandactionsblock-name) using the migration file, you can preserve information from the table settings for this property/action on the form. For this, the **FORM PROPERTY** change type is used. The old and new names are the name of the form namespace, the name of the form, and the name of the property on the form, separated by dots. Also, using this type of change you can preserve information from the table settings when changing the canonical name of the form. To do this, add **FORM PROPERTY** changes to the migration file for all properties/actions on the form with the changed canonical name of the form.
 
-**Changing the name of a custom class**
+### Changing the name of a custom class
 
 When renaming a [custom class](User_classes.md) and/or when moving it to another namespace, the canonical name of this class changes. In this case, it is **essential** to reflect these changes in the migration file in order to preserve objects of this class and all data associated with these objects. To do this, add a **CLASS** change to the migration file, specifying the old and new class names. This will also automatically rename [static objects](Static_objects.md) of this class, if they exist. 
 
 It is worth noting that changing the canonical name of a class can lead to changes in the canonical names of data properties. At present these changes are not automatically tracked, and they must also be added to the migration file.
 
-**Changing the name of a static object**
+### Changing the name of a static object
 
 When renaming a [static object](Static_objects.md), an **OBJECT** change is used, which allows you to preserve data associated with the object. The old and new names are the name of the class namespace, the name of the class, and the name of the object, separated by dots. 
 
-**Changing the name of a table**
+### Changing the name of a table
 
 When renaming a [table](Tables.md) and/or when moving it to another namespace, the canonical name of this table changes. In this case, after creating a table with a new name, the system automatically moves all the records from the table with the old name in a separate request. However, if you add a **TABLE** change to the migration file, specifying the old and new canonical table names, a query will be executed to rename the old table, which will be significantly faster.
 
-**Changing the name of a navigator element**
+### Changing the name of a navigator element
 
 When renaming a [navigator element](Navigator.md) and/or when moving it to another namespace, the canonical name of this element changes. In order to preserve the security policy settings associated with this element, add a **NAVIGATOR** change to the migration file, specifying the old and new canonical names of the navigator element. 
 
-**Changing the name of a namespace**
+### Changing the name of a namespace
 
 Since the name of a namespace is used in the canonical names of system elements, changing it causes the canonical names of the system elements included in it to change. Therefore, if a namespace name is changed, information on all the above elements must be placed in the migration file. The same must be done when moving system elements to different namespaces.
 
-**Example**
+### Example
 
-**migration.script**
+### migration.script
 
     V0.3.1 {
         STORED PROPERTY Item.gender[Item.Article] -> Item.dataGender[Item.Article] // change of DATA property 

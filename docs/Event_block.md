@@ -4,7 +4,7 @@ title: 'Event block'
 
 The event block of the  [FORM instruction](FORM_instruction.md) - a set of constructions controlling [events](Form_events.md) in an interactive form view.
 
-**Syntax**
+### Syntax
 
     EVENTS formEventDecl1, ..., formEventDeclN
 
@@ -12,11 +12,11 @@ Where each *formEventDecli* has the following syntax:
 
     ON eventType eventActionId(param1, ..., paramK) | { eventActionOperator }
 
-**Description**
+### Description
 
 The event block allows to define handlers for [form events](Form_events.md) that occur as the result of certain user actions. Each block can have an arbitrary number of comma-separated event handlers. If several handlers are defined for an event, they are guaranteed to be executed in the order they are defined. 
 
-**Parameters **
+### Parameters 
 
 *eventType*
 
@@ -50,13 +50,8 @@ List of action parameters. Each parameter is specified with the object name on 
 
   
 
-**Examples**
-
-****************
+### Examples
 
 
-**********  
-**********
 
-**********  
-**********
+

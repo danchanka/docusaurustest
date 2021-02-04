@@ -11,22 +11,21 @@ Extension of properties allows you to:
 -   Implement the concept of property polymorphism by analogy with certain object-oriented programming languages.
 -   Remove dependency between modules by adding specific "entry points" to change the way properties are calculated.
 
-**Polymorphic form**
+### Polymorphic form
 
 Just as [for a selection operator](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-poly), for an abstract property there is a *polymorphic form* where the selection condition and the result corresponding to it are set by a single property. Accordingly, as in a selection operator, either belonging to the [signature ](Property_signature_CLASS_.md)of this property or the property itself can be a condition.
 
-**Mutual exclusion of conditions**
+### Mutual exclusion of conditions
 
 As [for a selection operator](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive), you can specify that all conditions of an abstract property must be *mutually exclusive*. If this option is set, and the conditions are not in fact mutually exclusive, the platform will throw the corresponding error.
 
 It is worth noting that this check is no more than a hint to the platform (for better optimization), and also a kind of self-checking on the part of the developer. However, in many cases it allows you to make the code more transparent and readable (especially given a polymorphic form of the abstract property).
 
-**Language**
+### Language
 
 The key instructions that implement the extension procedure are the [**ABSTRACT** operator](ABSTRACT_operator.md),for declaring an abstract action, and the [**+=** instruction](Instruction_+=.md), for defining its implementation.
 
-**Example**
+### Example
 
-****
 
 

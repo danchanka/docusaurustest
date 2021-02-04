@@ -15,7 +15,7 @@ It is worth noting that in order to access the Java elements of the lsFusion sys
 
 Systems that have access to the SQL server of the lsFusion system (one such system, for example, is the SQL server itself) can directly access [tables](Tables.md) and [fields](Materializations.md) created by the lsFusion system using SQL server means. It should be kept in mind that while reading data is relatively safe (except for possible deletion/modification of tables and their fields), when writing data no [events](Events.md) will be triggered (including all elements that use them - [constraints](Constraints.md), [aggregations](Aggregations.md), etc.), and also no [materializations](Materializations.md) will be recalculated. For this reason writing data directly to lsFusion system tables is highly discouraged. If doing so is necessary, all of the above factors should be taken into account.
 
-**Examples**
+### Examples
 
     package lsfusion.server.logics.property.actions;
 

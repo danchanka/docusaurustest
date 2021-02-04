@@ -4,7 +4,7 @@ title: 'Operator{...}'
 
 The  **{...}** operator creates [actions](Actions.md) that executes a [sequence of other actions](Sequence_..._.md). 
 
-**Syntax**
+### Syntax
 
     {
         operator1
@@ -17,11 +17,11 @@ Operators can be of two types:
     actionOperator
     LOCAL [NESTED] name1, ..., nameN = returnClass (paramClass1, ..., paramClassN)
 
-**Description**
+### Description
 
 A sequence of [action operators](Action_operator.md) and **LOCAL** operators enclosed in braces creates a new action that sequentially executes specified actions and creates specified [local properties](Data_properties_DATA_.md). The area of visibility of the local properties created inside the  **{...}** operator ends at the end of this operator.
 
-**Parameters**
+### Parameters
 
 *actionOperator*
 
@@ -43,9 +43,8 @@ The [class ID](IDs_1573053.html#IDs-classid) of the returned value of the local
 
 A list of argument class ID's of the local property.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

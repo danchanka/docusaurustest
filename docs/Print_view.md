@@ -6,20 +6,20 @@ Print view of the [form](Forms.md) consists of a set of templates (*reports*). 
 
 For each report, a set of the form [object groups](Form-structure_1573069.html#Formstructure-objects) that it will display is determined.
 
-**Report hierarchy**
+### Report hierarchy
 
 Similar to an object group, each report has a *parent* report, so all reports form a hierarchy. The report hierarchy should:
 
 -   include [the hierarchy of object groups](Static_view.md), i.e. if a group of objects of one report is a child of a group of objects of the other report, then the first report must match the second one or be its child as well
 -   within one report, each group of objects must have exactly one child.
 
-**Building report hierarchy**
+### Building report hierarchy
 
 Based on the report hierarchy restrictions, only "chains" of object groups can be included in one report (i.e., G1, G2, G3, ... Gn, where G2 is the only linear child object of G1, G3 is the only child of G2, etc.). Thus, the decision on how to break object groups into reports comes down to whether to merge an object group with its only child (if there is one) or not. By default, such a merge is performed, however, if necessary, the developer can disable it by specifying the corresponding option (**SUBREPORT**) for a child object group.
 
 Using this option comes down to whether to display data for a parent object group when the child object group has no data.
 
-**Report hierarchy example**
+### Report hierarchy example
 
 The form is similar to the [example of building an object group hierarchy](Static-view_29884533.html#Staticview-hierarchysample):
 
@@ -30,13 +30,13 @@ The report hierarchy for this form is built as follows:
 
 <img src="download/temp/svgout7045576126208291584.png" width="581" height="371" />
 
-**Language**
+### Language
 
 All of the above options, as well as defining the form structure, can be done using the [**FORM** instruction](FORM_instruction.md).
 
-**Open form**
+### Open form
 
 To display the form in print view, the corresponding [open form](Open_form.md) in the [print view](In_a_print_view_PRINT_.md) operator is used.
 
-**Examples**
+### Examples
 

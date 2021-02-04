@@ -6,5 +6,5 @@ A *token* in a programming language is the smallest significant sequence of cha
 
 Tokens are usually separated by *delimiters* (spaces, line breaks, tabs), but separators can be omitted in cases where ambiguity does not occur.
 
-**Examples**
+### Examples
 

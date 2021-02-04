@@ -4,7 +4,7 @@ title: 'In an interactive view (SHOW, DIALOG)'
 
 This operator creates an action that [opens a form](Open_form.md) in the [interactive](Interactive_view.md) view.
 
-**Flow management**
+### Flow management
 
 The operator works in two modes:
 
@@ -13,7 +13,7 @@ The operator works in two modes:
 
 By default, the operator works in the synchronous mode.
 
-**Form location**
+### Form location
 
 A form being opened can be shown in two ways:
 
@@ -24,11 +24,11 @@ By default, forms in the synchronous mode are shown as windows, in the asynchron
 
 In the current implementation of the platform, a form shown as a window is always modal, which means that the "asynchronous window" mode is not supported.
 
-**System action management**
+### System action management
 
 By default, when the interactive view is enabled, the platform [automatically determines](Interactive-view_1573071.html#Interactiveview-sysactions) which system actions of the form/session lifecycle management should be shown and which not. But since these conditions are somewhat heuristic, the developer can use a corresponding set of options to specify the actions that need to be shown when the form is opened. Similarly, the corresponding option can be used to specify whether the form is the [owner of the session](Interactive-view_1573071.html#Interactiveview-anchor) in which it is opened or not.
 
-**Dialog form**
+### Dialog form
 
 This operator also allows to return the latest [current value](Form-structure_1573069.html#Formstructure-currentObject) of a specified object (or, if necessary, of several objects), thus, essentially, performing [value input](Value_input.md). In this case, [input is considered to be canceled](Value-input_35520941.html#Valueinput-result) if the user closes the form using **System.formClose (**not **System.formOk**).
 
@@ -44,20 +44,19 @@ In addition, if a value is entered to input to change the specified property, it
 
 The operator dialog form is available in the synchronous mode only.
 
-**Extra features**
+### Extra features
 
 When opening a form, you can specify that all of its properties should be available in the "read-only"mode. In this case, the behavior will be identical to the behavior when during form creation, the "read-only" mode is specified for each [property view](Interactive-view_1573071.html#Interactiveview-property).
 
 Also, when calling the form, you can specify that it will be opened in a [new](New_session_NEWSESSION_NESTEDSESSION_.md) (nested) session. In this case, [passing objects](Open-form_3014672.html#Openform-params) and value input will be performed in the current session (so it makes sense to use this option only if you need to pass objects and/or input a value; otherwise, it makes more sense to use a [new session](New_session_NEWSESSION_NESTEDSESSION_.md) operator).
 
-**Language**
+### Language
 
 To open a form in the interactive view, use the [**SHOW** operator](SHOW_operator.md). To show the form in the dialog mode, use the [**DIALOG** operator](DIALOG_operator.md).
 
-**Examples**
+### Examples
 
 
-************************************
 
 
   

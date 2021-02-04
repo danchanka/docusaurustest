@@ -4,7 +4,7 @@ title: 'APPLY operator'
 
 The **APPLY** operator creates an [action](Actions.md) that [applies changes](Apply_changes_APPLY_.md) to the database.
 
-**Syntax**
+### Syntax
 
     APPLY [nestedBlock] [SERIALIZABLE] [action]
 
@@ -13,11 +13,11 @@ where *nestedBlock* has one of two possible syntaxes:
     NESTED LOCAL
     NESTED (propertyId1, ..., propertyIdN)
 
-**Description**
+### Description
 
 The **APPLY** operator creates an action that applies changes to the database. By specifying the keyword **NESTED** you can specify [local properties](688168.html#Dataproperties(DATA)-local) whose changes are not dropped when applying the changes. This operator also includes an action to be executed before applying the changes to the database.
 
-**Parameters**
+### Parameters
 
 *LOCAL*
 
@@ -35,9 +35,8 @@ A keyword that sets the transaction isolation level to "Serializable."
 
 A [context-dependent operator](Action-operator_36307157.html#Actionoperator-contextdependent) that describes an action to be executed before applying changes. It is executed in the same transaction as the application of changes.
 
-**Examples**
+### Examples
 
-************
 
 
   

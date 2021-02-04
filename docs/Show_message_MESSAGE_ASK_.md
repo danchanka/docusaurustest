@@ -4,11 +4,11 @@ title: 'Show message (MESSAGE, ASK)'
 
 The *show message* operator creates an [action](Actions.md) which shows the user a window with a text message. The message is defined as some [property](Properties.md) whose value will be used as a message.
 
-**Flow control**
+### Flow control
 
 By default, the created action stops the thread until the user closes the message. However, this behavior can be changed using the corresponding option – in this case, the created action is completed immediately and the message is shown to the user as soon as possible (that is, the next user interaction). The first mode shall be called *synchronous* and the second *asynchronous*.
 
-**Dialog form**
+### Dialog form
 
 It is also often necessary not only to inform the user about something, but also, for example, to request confirmation to continue an action. For such cases, the operator allows, instead of simply displaying the message (with a single OK button), to ask a question with the option of canceling (OK/Cancel) and thereby essentially to implement [a value input](Value_input.md). This input is considered to have been [canceled](Value-input_35520941.html#Valueinput-result) if the Cancel button is pressed (there is no input value in that case).
 
@@ -20,16 +20,14 @@ As with other value input operators, in the dialog form of this operator you ca
 
 The operator dialog form is available in synchronous mode only.
 
-**Language**
+### Language
 
 To declare an action showing a message, use [the **MESSAGE** operator](MESSAGE_operator.md). To display the message in dialog form, use the [**ASK** operator](ASK_operator.md).
 
-**Examples**
+### Examples
 
-************************************************
 
 
   
 
-************
 

@@ -4,16 +4,16 @@ title: 'ACTION+ instruction'
 
 The **ACTION+**  instruction adds an implementation (branching condition) to an [abstract action](Action_extension.md).
 
-**Syntax**
+### Syntax
 
     [ACTION] actionId(param1, ..., paramN) + { implAction }
     [ACTION] actionId(param1, ..., paramN) + WHEN whenExpr THEN { implAction }
 
-**Description**
+### Description
 
 The **ACTION+** instruction adds an implementation to an abstract action. The syntax for adding an implementation depends on the type of abstract action. If the abstract action is of type **CASE**, then the implementation should be described using **WHEN ... THEN ...** otherwise, the implementation should be described simply as an action. 
 
-**Parameters**
+### Parameters
 
 **actionId*  
 *
@@ -32,9 +32,8 @@ List of parameters that will be used to define the implementation. Each element 
 
 An [expression](Expression.md) whose value determines the selection condition of the implementation of an abstract property (action) that has type **CASE**. 
 
-**Examples**
+### Examples
 
-****************
 
 
   

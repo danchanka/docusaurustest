@@ -4,16 +4,16 @@ title: 'REQUEST operator'
 
 The **REQUEST** operator creates an [action](Actions.md) that [requests a value](Value_request_REQUEST_.md).
 
-**Syntax**
+### Syntax
 
     REQUEST requestAction 
     DO doAction [ELSE elseAction]
 
-**Description**
+### Description
 
 The **REQUEST** operator creates an action that allows the separation of a request for a value from its handling.
 
-**Parameters**
+### Parameters
 
 *requestAction*
 
@@ -27,7 +27,7 @@ A context-dependent action operator that is executed if the input was completed 
 
 A context-dependent action operator that is executed if the input was [cancelled](Value-input_35520941.html#Valueinput-result).
 
-**Examples**
+### Examples
 
 
 **  

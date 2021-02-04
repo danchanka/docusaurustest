@@ -54,7 +54,7 @@ For property, it is possible to define its event handlers for the whole logics a
 
 You can also specify a keyboard shortcut for each property, pressing which triggers the property's **CHANGE** event. If several properties on the form correspond to one key combination, the event will be triggered only for the property whose component is closest to the current active component in the component hierarchy.
 
-**Default handlers**
+### Default handlers
 
 For some events, the platform automatically creates default handlers:
 
@@ -81,18 +81,18 @@ For an *object request* from the user, depending on the type of class , the fol
 -   Builtin classes - the [input primitive](Primitive_input_INPUT_.md) operator.
 -   [Custom classes](User_classes.md) - the [open form](In_an_interactive_view_SHOW_DIALOG_.md) operator. The form is the [list](Interactive-view_1573071.html#Interactiveview-edtClass) form for this class. 
 
-**Standard handlers**
+### Standard handlers
 
 For properties and actions on the form, it is also possible to define the following *standard* change event handlers (**CHANGE**, **CHANGEWYS**, **GROUPCHANGE**, **EDIT**): 
 
 -   *Read Only *(**READONLY**) - if the property is displayed in the table, the handler will be similar to **CHANGE** default handler when the property is not mutable (that is, the user filter mechanism will be called). If the property is not displayed in the table, nothing will happen. You can also make this option conditional (**READONLYIF**) (that is, change only if the value of some property is not **NULL**).
 -   *Selector* (**SELECTOR**) - when you try to make a change, a dialog will be shown in which the user will be asked to change the [current value](Form-structure_1573069.html#Formstructure-currentObject) of the object.
 
-**Language**
+### Language
 
 To define the form event handlers, use the **ON** option in the **FORM** instruction ([events](Event_block.md) block, [properties and actions](Properties_and_actions_block.md) block, [objects](Object-blocks_3866658.html#Objectblocks-objects) block), as well as in [property options](Property_options.md). 
 
-**Examples**
+### Examples
 
 
   

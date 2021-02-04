@@ -4,11 +4,11 @@ title: 'TRY operator'
 
 The **TRY** operator creates an [action](Actions.md) that executes another action with [exception handling](Exception_handling_TRY_.md).
 
-**Syntax**
+### Syntax
 
     TRY action [CATCH catchAction] [FINALLY finallyAction]
 
-**Description**
+### Description
 
 The **TRY** operator creates an action that executes another action and handles exceptions within it. 
 
@@ -16,7 +16,7 @@ An operator form without the **FINALLY** keyword creates an action that execute
 
 An operator form with the **FINALLY** keyword creates an action that executes another action, intercepts errors that occur, then, regardless of whether an error was thrown or not, executes the action specified in the **FINALLY** block, and then, if an error was thrown, passes this error to the top action in the stack.
 
-**Parameters**
+### Parameters
 
 *action*
 
@@ -30,9 +30,8 @@ A context-dependent operator that describes an action to be executed if an error
 
 A context-dependent operator that describes an action to be executed after the action being executed, regardless of whether or not an error has been thrown.
 
-**Examples**
+### Examples
 
-********
 
 
 **  

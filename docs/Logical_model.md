@@ -12,7 +12,7 @@ It determines what information the system stores and what you can do with this i
 
 It includes everything related to the display of information to entities using the information system – users and other information systems.
 
-**Stack**
+### Stack
 
 **  
 **

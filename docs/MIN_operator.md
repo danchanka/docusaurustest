@@ -8,17 +8,16 @@ The **MIN** operator creates a [property](Properties.md) that implements find
 
     MIN expr1, ..., exprN
 
-**Description**
+### Description
 
 The **MIN** operator creates a property that returns the minimum value of the values of the specified properties.
 
-**Parameters**
+### Parameters
 
 *expr1, ..., exprN*
 
 A list of [expressions](Expression.md) of which values the minimum is selected.
 
-**Examples**
+### Examples
 
-****
 

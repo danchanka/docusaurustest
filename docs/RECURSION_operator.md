@@ -4,15 +4,15 @@ title: 'RECURSION operator'
 
 The **RECURSION **operator creates a [property](Properties.md) that implements [recursion](Recursion_RECURSION_.md).
 
-**Syntax **
+### Syntax 
 
     RECURSION initialExpr STEP stepExpr [CYCLES YES | CYCLES NO | CYCLES IMPOSSIBLE]
 
-**Description**
+### Description
 
 The **RECURSION** operator creates a property that implements recursion. [Expressions](Expression.md) that describe the next step of the recursion may access not only the property parameters but also the parameters at the previous step. This access has the syntax **$name**, where **name** is the name of the parameter.
 
-**Parameters**
+### Parameters
 
 *initialExpr*
 
@@ -34,9 +34,8 @@ An expression whose value is a property of a recursion step. Allows a special sy
 
         Specifies that cycles are not possible.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

@@ -12,6 +12,6 @@ Physical model
 
 It includes everything else - everything related to the development, performance improvement and management of a working system.
 
-**Stack**
+### Stack
 
 <img src="download/temp/svgout2684672321431722364.png" width="816" height="1601" />

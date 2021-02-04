@@ -11,7 +11,7 @@ As with any GUI, form design is a hierarchy whose nodes are *components*. Compo
 
 Each component must have its own unique name within *the form*. 
 
-**Containers**
+### Containers
 
 All children of any container make an ordered list. It is necessary to determine how the child components of each container on the form should be placed. To do this, one of the following *types* can be specified for a container:
 
@@ -29,7 +29,7 @@ The default container type is vertical container (CONTAINERV)*.*
 
 If at some point a container has no child components , or they are invisible, it is automatically hidden. In turn, if a component is not a child of any container, then it will not be shown on the form.
 
-**Base components**
+### Base components
 
 When defining the form design, the developer can use the following base components, which are created automatically based on the form structure:
 
@@ -47,7 +47,7 @@ When defining the form design, the developer can use the following base componen
 
 -   *Property panel* (**PROPERTY**): a component that displays the title and current value of a property. The caption can be either to the left of the value cell or at the top. Not shown if the property is displayed in the table.
 
-**Dimensions and components layout**
+### Dimensions and components layout
 
 The developer can control how the platform distributes the available container sizes between its internal components, as well as how these components will be located relative to each other.
 
@@ -85,7 +85,7 @@ In addition, cell widths can be specified in *characters* (**charWidth** ), whic
 
 In the last two cases (that is, when specifying the width as a sample value or in characters), if the property value class implies the presence of buttons on the right during [input](Primitive_input_INPUT_.md) (for example, **DATE** class), then the width of this button (21 pixels) is added to the width of the property value cell.
 
-**Default dimensions and layout**
+### Default dimensions and layout
 
 By default, the extension coefficient and alignment for components are determined as follows:
 
@@ -101,11 +101,11 @@ The following formulas are used by default to determine the width of a property 
 
 The default height of a property value cell is equal to the height of the font used, except properties whose values belong to the **TEXT** class (in this case, the height is four times the font height).
 
-**Window size**
+### Window size
 
 If the form opens in [window](36307331.html#Inaninteractiveview(SHOW,DIALOG)-location) mode it does not have an upper container, so you need to determine this window's initial size. This size is determined similarly to the default base size, the only difference is that for tables/trees the default size is determined not as a constant (the default is 130.70) but in such a way that it contains their whole contents (similar to the automatic sizing mechanism), but no less than 130 in width and 140 in height.
 
-****Default design****
+### **Default design**
 
 An automatic design can be created for each form, based on the form's structure. The developer can modify the automatic design or create a design from scratch.
 
@@ -135,7 +135,7 @@ The automatic design is generated as follows:
     -   **TOOLBARBOX**: contains property components that are displayed in TOOLBARview and have no display group (for example, the property has no parameters). The internal structure and layout are similar to the corresponding internal structure and layout of an object group (except for **FILTERGROUPS**, which does not make sense when there is no object group, and therefore is not present in this container).
         -   **TOOLBARLEFT, TOOLBARRIGHT, TOOLBAR...**
 
-**Default design example**
+### Default design example
 
 
 The hierarchy of containers and components in the default design will look like this:
@@ -144,11 +144,11 @@ The hierarchy of containers and components in the default design will look l
 
   
 
-**Language**
+### Language
 
 To set up the design of the form, use the [****DESIGN**** instruction](DESIGN_instruction.md).
 
-**Examples**
+### Examples
 
 
 The output is the following form:

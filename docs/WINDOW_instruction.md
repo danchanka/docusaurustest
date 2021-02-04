@@ -4,7 +4,7 @@ title: 'WINDOW instruction'
 
 The **WINDOW** instruction creates a new [window](Navigator_design.md).
 
-**Syntax**
+### Syntax
 
     WINDOW name [caption] type [options]
 
@@ -21,11 +21,11 @@ The options that go at the end of the instruction has the following syntax (the 
     TEXTHALIGN(alignType)
     TEXTVALIGN(alignType)
 
-**Description**
+### Description
 
 The **WINDOW** instruction declares a new window and adds it to the current [module](Modules.md). Options are listed one after another in arbitrary order, separated by spaces or line breaks. Depending on the selected window type – **TOOLBAR**, **PANEL**, **TREE**, or **MENU** – a toolbar, panel, tree, or menu* *will be created.
 
-**Parameters**
+### Parameters
 
 *name*
 
@@ -39,7 +39,7 @@ Window caption. [String literal](Literals_35521071.html#Literals-strliteral). I
 
 Type of window to create. Specified with one of the keywords **TOOLBAR**, **PANEL**, **TREE**, or **MENU**.
 
-***Window options***
+### *Window options*
 
 HIDETITLE
 
@@ -130,9 +130,8 @@ Alignment type. This is specified using one of these keywords:
     -   **END **- the text will be located at the bottom of the button.  
           
 
-**Examples**
+### Examples
 
-********
 
 
 **  

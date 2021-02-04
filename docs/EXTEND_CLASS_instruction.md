@@ -4,7 +4,7 @@ title: 'EXTEND CLASS instruction'
 
 The **EXTEND CLASS** instruction [extends](Class_extension.md) an existing class.
 
-**Syntax**
+### Syntax
 
     EXTEND CLASS name 
     [{
@@ -14,11 +14,11 @@ The **EXTEND CLASS** instruction [extends](Class_extension.md) an existing cla
     }] 
     [: parent1, ..., parentN];
 
-**Description**
+### Description
 
 The **EXTEND CLASS** instruction extends an existing [custom class](User_classes.md) with additional parent classes and new[static objects](Static_objects.md). You can also extend [abstract classes](User-classes_2228341.html#Userclasses-abstract) by adding parent classes to them.
 
-**Parameters**
+### Parameters
 
 *name *
 
@@ -36,9 +36,8 @@ Captions of new static objects of the specified class. Each caption is a [string
 
 A list of names of new parent classes. Each name is defined by a composite ID. 
 
-**Examples**
+### Examples
 
-************
 
 
   

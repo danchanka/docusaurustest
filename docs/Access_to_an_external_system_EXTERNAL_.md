@@ -72,9 +72,9 @@ By default, this type of interaction is implemented via HTTP protocol using the 
 
 You can also use operators for [reading](Read_file_READ_.md) and [writing](Write_file_WRITE_.md) files to access external systems (if file exchange is the interface for this interaction).
 
-**Language**
+### Language
 
 To declare an action that accesses an external system, use the [**EXTERNAL** operator](EXTERNAL_operator.md).
 
-**Examples**
+### Examples
 

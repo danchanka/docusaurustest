@@ -2,7 +2,7 @@
 title: 'User interface'
 ---
 
-**Working with objects**
+### Working with objects
 
 Create: **"Add"** or ** **"Insert" on the keyboard,  
 Change** : "Edit"** or** **"Backspace" on the keyboard,  
@@ -54,7 +54,7 @@ To get the summary data from the values in the table, click the **"Group"** but
 
  ** **
 
-**Print and export features**
+### Print and export features
 
 To open the table printing form, press the **"Print table"** button. To transfer the table data to Excel, press the **"Export to XLS"** button. If a filter is applied to the table, only filtered rows are printed and exported.
 

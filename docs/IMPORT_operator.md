@@ -4,7 +4,7 @@ title: 'IMPORT operator'
 
 The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT_.md) or, in general, into a [specified form](57737720.html#Inastructuredview(EXPORT,IMPORT)-importForm).
 
-**Syntax**
+### Syntax
 
     IMPORT [importFormat] FROM fileExpr importDestination [DO actionOperator [ELSE elseActionOperator]]
     IMPORT formName [importFormat] [FROM (fileExpr | (groupId1 = fileExpr1 [, ..., groupIdM = fileExprM])]
@@ -34,9 +34,9 @@ If * *the format of the imported file* *is not specified, it is determined aut
 
 The first passed file is used to automatically determine a flat file format by its extension
 
-**Parameters**
+### Parameters
 
-***Source of import***
+### *Source of import*
 
 *fileExpr*
 
@@ -50,7 +50,7 @@ Names of object groups of the imported form for which you want to import data. 
 
 Expressions whose values are files that need to be imported for the specified object groups. The value of each expression must be an object of a file class (**FILE**, **RAWFILE**, **JSONFILE** etc. ). Used only to import forms from flat formats. For the [empty object group](Static-view_29884533.html#Staticview-empty), the name **root** is used. 
 
-***Import format***
+### *Import format*
 
 *ATTR*
 
@@ -95,7 +95,7 @@ charsetStr is a string literal that defines the encoding. 
 
 A context-dependent action operator describing the action that is executed if no records have been imported. Parameters into which data is imported cannot be used as parameters of this action.
 
-***Import destination***
+### *Import destination*
 
 *formName*
 
@@ -133,8 +133,7 @@ Names of local parameters into which columns (fields) of data are imported. Sim
 
 Keyword. Specifies that **NULL** values during import (if the imported format supports them) will not be replaced with default values (for example, 0 for numbers, the empty string for strings, etc. ).
 
-**Examples**
+### Examples
 
-****************************************
 
 

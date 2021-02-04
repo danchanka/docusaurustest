@@ -13,7 +13,7 @@ We need to implement an action that will display a message with the server's nam
 
 To solve the task, create an action using the [INTERNAL](INTERNAL_operator.md) operator which will generate an object of the  **GetIP** class (if the class has a package, then you must also specify "package" in the class name) and will call the **executeInternal** method. The source code for this class will be as follows:
 
-**GetIP.java**
+### GetIP.java
 
     import lsfusion.server.data.sql.exception.SQLHandledException;
     import lsfusion.server.language.ScriptingErrorLog;
@@ -59,7 +59,7 @@ We need to implement an action that calculates the maximum common divisor of the
 
 The key difference from the previous example is that the action has two **INTEGER** arguments. Keep this in mind when writing your own **CalculateGCD** class. Here is the source code:
 
-**CalculateGCD.java**
+### CalculateGCD.java
 
     import lsfusion.server.data.sql.exception.SQLHandledException;
     import lsfusion.server.language.ScriptingErrorLog;
@@ -103,7 +103,7 @@ We need to implement an action that calculates the greatest common divisor of tw
 
 In this example we first need to read the values of the properties for the passed object, and then to write the result to a property with one input. This is done as follows:
 
-**CalculateGCDObject.java**
+### CalculateGCDObject.java
 
     import lsfusion.server.data.sql.exception.SQLHandledException;
     import lsfusion.server.data.value.DataObject;
@@ -151,7 +151,7 @@ We need to implement an action that will generate a sound signal 5 times on the 
 
 The Java code for an action created using the **INTERNAL** operator, runs on the server's virtual machine. So the signal cannot be called directly from the code of a class that inherits from **InternalAction**. For this purpose there is a method called **requestUserInteraction**, which must be passed a class that inherits from class **ClientAction**.
 
-**Beep.java**
+### Beep.java
 
     import lsfusion.server.data.sql.exception.SQLHandledException;
     import lsfusion.server.language.ScriptingLogicsModule;
@@ -176,7 +176,7 @@ The Java code for an action created using the **INTERNAL** operator, runs on the
 
 The system halts code execution when this method is called, then passes **ClientBeep** (and all classes it uses that are not present in JRE) to the client application, constructs an object with the parameters passed (in this case just the number 5), and calls its **dispatch** method. Source code of class **ClientBeep**:
 
-**ClientBeep.java**
+### ClientBeep.java
 
     import lsfusion.interop.action.ClientAction;
     import lsfusion.interop.action.ClientActionDispatcher;

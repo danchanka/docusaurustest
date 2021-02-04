@@ -4,17 +4,17 @@ title: 'DATA operator'
 
 The **DATA** operator creates a [data property](Data_properties_DATA_.md).
 
-**Syntax**
+### Syntax
 
     DATA [LOCAL [NESTED]] returnClass (argumentClass1, ..., argumentClassN)
 
-**Description**
+### Description
 
 The **DATA** operator creates a data property. This [property operator](Operators.md) cannot be used inside [expressions](Expression.md). The data property can be created local by specifying the keyword **LOCAL**. 
 
 This operator cannot be used in the [**JOIN** operator](JOIN_operator.md) (inside \[\]), since a name must be specified for the data property.
 
-**Parameters**
+### Parameters
 
 *LOCAL*
 
@@ -32,9 +32,8 @@ A keyword that, when specified, marks the local property as [nested](Session-ma
 
 A list of class IDs for property arguments. 
 
-**Examples**
+### Examples
 
-****
 
 
 **  

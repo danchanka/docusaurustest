@@ -6,11 +6,10 @@ The *write file* operator creates an [action](Actions.md) which reads a file f
 
 The source is set as a [property](Properties.md) whose values are instances of [string classes](Built-in_classes.md). The following types of data sources (URLs) are supported: **FILE**, **FTP**, **SFTP**
 
-**Language**
+### Language
 
 To declare an action that writes a file, use the [**WRITE** operator](WRITE_operator.md).
 
-**Examples**
+### Examples
 
-****
 

@@ -4,7 +4,7 @@ title: 'SHOW operator'
 
 The **SHOW** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG_.md) in interactive view. 
 
-**Syntax**
+### Syntax
 
     SHOW name 
     [OBJECTS objName1 = expr1 [NULL], ..., objNameN = exprN [NULL]]
@@ -25,11 +25,11 @@ When opening the list/edit form, the syntax is slightly different:
     CANCEL | NOCANCEL
     READONLY
 
-**Description**
+### Description
 
 The **SHOW** operator creates an action that opens the specified form. When opening the form in the **OBJECTS** block, [initial values](Open-form_3014672.html#Openform-params) can be specified for [Form structure](Form_structure.md)form objects.
 
-**Parameters**
+### Parameters
 
 *name*
 
@@ -58,7 +58,7 @@ Names of form objects for which initial values are specified. [Simple IDs](IDs_1
 
 Specifies that the values passed may be **NULL**.
 
-***SHOW operator options***
+### *SHOW operator options*
 
 *syncType*
 
@@ -90,7 +90,6 @@ Keyword. Determines whether or not to show the "Cancel" system action (**System.
 
 Keyword. If specified, the form is opened in [read-only](36307331.html#Inaninteractiveview(SHOW,DIALOG)-extra) mode.
 
-**Examples**
+### Examples
 
-****
 

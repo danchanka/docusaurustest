@@ -4,7 +4,7 @@ title: 'PARTITION operator'
 
 The **PARTITION** operator creates a [property](Properties.md) that implements [partition/order](Partitioning_sorting_PARTITION_..._ORDER_.md) or [simple distribution](Distribution_UNGROUP_.md).
 
-**Syntax**
+### Syntax
 
 There are two different types of **PARTITION** operator. The first implements partition/order:
 
@@ -36,7 +36,7 @@ The **BY** block describes the groups into which numerous sets of object collect
 
 The **ORDER** block defines the order in which the aggregate function will be calculated or the distribution will take place. If this function is [non-commutative](Set_operations.md), the specified order must be uniquely determined. If a new parameter (not used earlier in the  **PARTITION** and **BY** options and in the upper context) is declared in the expressions defining the order, when calculating the resulting value the condition of non-**NULLness** of all these expressions is automatically added.
 
-**Parameters**
+### Parameters
 
 *type*
 
@@ -88,9 +88,8 @@ Keyword. Specifies a reverse iteration order for object collections. 
 
 A list of expressions that define the order in which object collections will be iterated when calculating the aggregate function or during distribution. To determine the order, first the value of the first expression is used; then, if equal, the value of the second is used, etc. 
 
-**Examples**
+### Examples
 
-****
 
 
 **  

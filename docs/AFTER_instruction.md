@@ -4,15 +4,15 @@ title: 'AFTER instruction'
 
 The **AFTER** instruction  calls an [action](Actions.md) after calling another action. 
 
-**Syntax**
+### Syntax
 
     AFTER action(param1, ..., paramN) DO aspectAction;
 
-**Description**
+### Description
 
 The **AFTER** instruction defines an action (let's call it an *aspect*) that will be called after the specified action.
 
-**Parameters**
+### Parameters
 
 *action*
 
@@ -26,9 +26,8 @@ List of action parameter names. Each name is defined [by a simple ID](IDs_15730
 
 A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) describing the aspect.
 
-**Examples**
+### Examples
 
-********************
 
 
   

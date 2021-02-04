@@ -8,7 +8,7 @@ Projects, like modules, can depend on each other. A project graph should "includ
 
 Also, as a rule, assembly automation and versioning are supported for projects (for example, assembling a single executable file with all dependencies).
 
-**Language**
+### Language
 
 From a technical standpoint, a project is nothing more than a set of files, so project support is not directly a part of the platform. It is assumed that external tools are used for this, from simple built-in IDEs to complex multi-purpose frameworks (such as [Maven](https://maven.apache.org/)).
 

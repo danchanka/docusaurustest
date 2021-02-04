@@ -10,12 +10,11 @@ If there is a non-**NULL** value of some [data property](Data_properties_DATA_.m
 
 This behavior is implemented by analogy with [computed](Calculated_events.md) and [simple](Simple_event.md) events.
 
-**Language**
+### Language
 
 To declare an action that implements a change of object classes, use the [**CHANGECLASS** operator](CHANGECLASS_operator.md) or [the **DELETE** operator](DELETE_operator.md).
 
-**Examples**
+### Examples
 
 
-************************
 

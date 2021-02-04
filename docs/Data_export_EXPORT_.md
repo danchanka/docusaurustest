@@ -8,7 +8,7 @@ The condition is optional in this operator and, if not defined, it is considered
 
 Similar to the other [set operations](Set_operations.md), the condition must be such that the operation is [correct](Set_operations.md).
 
-**General case**
+### General case
 
 It should be noted that data export is a special case of (syntactic sugar for) [form export](In_a_structured_view_EXPORT_IMPORT_.md), in which the exported form is created automatically, named **export** and consists of:
 
@@ -19,13 +19,12 @@ It should be noted that data export is a special case of (syntactic sugar for) [
 
 Thus, the behavior of the data export operator (for example, determining the names of the resulting columns/keys, [processing **value**](Structured-view_29884537.html#Structuredview-id-%D0%A1%D1%82%D1%80%D1%83%D0%BA%D1%82%D1%83%D1%80%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5%D0%BF%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5-value), etc.) is completely determined by the behavior of the form export operator (as if the above form was passed to it as a parameter).
 
-**Language**
+### Language
 
 To declare an action that exports data, use the [**EXPORT** operator](EXPORT_operator.md).
 
-**Examples**
+### Examples
 
-****************************************
 
 
   

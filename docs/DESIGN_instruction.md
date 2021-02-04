@@ -4,7 +4,7 @@ title: 'DESIGN instruction'
 
 The **DESIGN** instruction changes [form design](Form_design.md).
 
-**Syntax**
+### Syntax
 
 The syntax consists of nested blocks of *design instructions.* The outer block, beginning with the keyword **DESIGN**, defines a [form](Forms.md) whose design will change: 
 
@@ -39,7 +39,7 @@ In turn, *groupObjectTreeSelector* can be one of two types:
     groupObjectSelector
     TREE treeSelector
 
-**Description**
+### Description
 
 Using the **DESIGN** instruction the developer can manage the [design](Form_design.md) [of the](Interactive_view.md) interactive form view by creating, moving, and deleting containers and components, as well as changing their certain properties. By default, a [default design](Form-design_29884443.html#Formdesign-defaultDesign)  is created for each form, along with appropriate containers. If necessary, you can recreate the design without the default containers and previously configured settings. This is done using the keyword **CUSTOM**.  
 
@@ -55,9 +55,9 @@ The component hierarchy described in this instruction can have an arbitrary numb
 
 To access design components, you can use their names or address property components on the form (**PROPERTY**), the parent component (**PARENT**), property group components (**GROUP**), and other base components/default design components.
 
-**Parameters**
+### Parameters
 
-***Common parameters***
+### *Common parameters*
 
 *formName*
 
@@ -94,22 +94,22 @@ The name of the component property. The list of existing properties is provided 
 
 The value assigned to the corresponding container property. Acceptable value types are provided in the tables below.
 
-***Component properties***
+### *Component properties*
 
 
-***Container properties***
+### *Container properties*
 
 
-***Properties of actions and properties on the form***
+### *Properties of actions and properties on the form*
 
 
-***Toolbar properties***
+### *Toolbar properties*
 
 
-***Other properties***
+### *Other properties*
 
 
-***Selector parameters***
+### *Selector parameters*
 
 *componentName*
 
@@ -160,7 +160,6 @@ The type of an object group / tree container.
 
  **Examples**
 
-************
 
 
 The output is the following form:

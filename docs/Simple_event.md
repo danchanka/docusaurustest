@@ -14,9 +14,9 @@ Compared to a basic event, a simple event just wraps its handling in a [loop](Lo
 -   For these events there is the possibility of "recalculation" - that is, executing handlers in a mode where all previous values are **NULL** (as if the database were empty). This is useful when an event is created for an existing database, and the old data must also follow the logic of this event.
 -   If the action in a simple event is a single [change](Property_change_CHANGE_.md) of a given property, this event is easily made [calculated](Calculated_events.md) and vice versa.
 
-**Language**
+### Language
 
 To create simple events, use the [**WHEN** instruction](WHEN_instruction.md).
 
-**Examples**
+### Examples
 

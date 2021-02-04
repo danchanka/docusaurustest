@@ -4,7 +4,7 @@ title: 'FOR operator'
 
 The **FOR** operator creates an [action](Actions.md) that implements [loop](Loop_FOR_.md).
 
-**Syntax**
+### Syntax
 
     FOR expression [ORDER [DESC] orderExpr1, ..., orderExprN]
     [NEW [alias =] className]
@@ -16,7 +16,7 @@ It is possible to include a **NEW** block in the operator but not to specify a c
     NEW [alias =] className
     action
 
-**Description**
+### Description
 
 The **FOR** operator creates an action that implements loop. This operator must add its local parameters when defining a condition. These parameters correspond to the objects being iterated and are not parameters of the created action. You can also use a **NEW** block to specify the name of the [class](Classes.md) of the object that will be created for each object collection that meets the condition. The name of this object needs to be specified. This name will be used as the name of the local parameter that the created object will be written to.
 
@@ -26,7 +26,7 @@ The main action is specified after the keyword **DO**; an alternative may be spe
 
 In the case when the operator contains a **NEW** block, and no condition is specified, the main action will be called for the created object.
 
-**Parameters**
+### Parameters
 
 *expression*
 
@@ -56,9 +56,8 @@ The name of the class of the object to create. Defined by a [class ID](IDs_15730
 
 Context-dependent action operator defining an alternative action. Parameters added when defining the condition/creating the object cannot be used as parameters of this action.
 
-**Examples**
+### Examples
 
-****************************************
 
 
   

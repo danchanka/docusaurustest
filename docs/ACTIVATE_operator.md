@@ -4,17 +4,17 @@ title: 'ACTIVATE operator'
 
 The **ACTIVATE** operator creates an [action](Actions.md) that [activates](Activation_ACTIVATE_.md) a specified [form](Forms.md), tab, property, or action on a form
 
-**Syntax **
+### Syntax 
 
     ACTIVATE FORM formName
     ACTIVATE TAB formName.componentSelector
     ACTIVATE PROPERTY formPropertyId
 
-**Description**
+### Description
 
 The **ACTIVATE** operator creates an action that activates a form, a tab, a property or an action on a form. 
 
-**Parameters**
+### Parameters
 
 *formName*
 
@@ -28,7 +28,7 @@ Design component [selector](DESIGN-instruction_4718609.html#DESIGNinstruction-se
 
 The global [ID of a property or action on a form](IDs_1573053.html#IDs-formpropertyid) which should get focus.
 
-**Examples**
+### Examples
 
 
   

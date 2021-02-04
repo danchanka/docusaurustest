@@ -19,11 +19,10 @@ Note that sets of objects may begin to repeat after a certain number of iteratio
 
 When using the recursion operator, it is important to make sure that the first step execution process is finite, that is, the step value will sooner or later become **NULL**. (This refers primarily to a **CYCLES IMPOSSIBLE** policy because otherwise the recursion will stop at the first cycle found). If this condition is not met, the operation will be forced to stop depending on the settings of the SQL server.
 
-**Language**
+### Language
 
 To declare a property that implements recursion, use the [**RECURSION** operator](RECURSION_operator.md).
 
-**Examples**
+### Examples
 
-****
 

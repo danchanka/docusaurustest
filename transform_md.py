@@ -52,10 +52,26 @@ def replace_html_ltgt(data):
         nlines.append(line)
     return '\n'.join(nlines)
 
+def trash_stars(line):
+    return line.count('*') > 2 and re.fullmatch(r'[* \t]*', line)
+
+
+def make_headers(data):
+    lines = data.split('\n')
+    nlines = []
+    for line in lines:
+        if not trash_stars(line):
+            if line.startswith('**') and line.endswith('**') and not re.fullmatch(r'[A-Z* \t]+', line):
+                nlines.append('### ' + line[2:-2])
+            else:
+                nlines.append(line)    
+    return '\n'.join(nlines)    
+
 def transform_file_content(data):
     data = replace_html_ltgt(data)
     data = create_title(data)
     data = remove_tables(data)
+    data = make_headers(data)
     return data    
 
 indir, outdir = get_dirs()

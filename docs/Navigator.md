@@ -14,9 +14,9 @@ If no navigator elements are displayed in a particular navigator folder, this fo
 
 Just as an [interactive](Interactive_view.md) form view, the navigator is displayed in a 2D space: on the user's device screen. Therefore, it's [design](Navigator_design.md) can/has to be defined, as well as for all other [graphic](Form-views_29884425.html#Formviews-graphic) views.
 
-**Language**
+### Language
 
 To manage the navigator use the [**NAVIGATOR** instruction](NAVIGATOR_instruction.md).
 
-**Examples**
+### Examples
 

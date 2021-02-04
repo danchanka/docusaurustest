@@ -4,7 +4,7 @@ title: 'BEFORE instruction'
 
 The **BEFORE** instruction calls an [action](Actions.md) before calling another action. 
 
-**Syntax**
+### Syntax
 
     BEFORE action(param1, ..., paramN) DO aspectAction;
 
@@ -12,7 +12,7 @@ Description
 
 The **BEFORE** instruction defines an action (let's call it an *aspect*) that will be called before the specified one.
 
-**Parameters**
+### Parameters
 
 *action*
 
@@ -26,9 +26,8 @@ List of action parameter names. Each name is defined [by a simple ID](IDs_157305
 
 A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) describing the aspect.
 
-**Examples**
+### Examples
 
-********************
 
 
   

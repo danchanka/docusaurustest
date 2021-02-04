@@ -36,13 +36,13 @@ In fact, the value request operator performs only two operations: it [checks](Br
 
 As with other value input operators, it is possible to define [main and alternative](Value-input_35520941.html#Valueinput-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled). Accordingly, it is these two actions in this operator that are responsible for processing request values.
 
-**Implicit use**
+### Implicit use
 
 Note that all [value input](Value_input.md) operators can be automatically "wrapped" in the value request operator by using the corresponding option (**DO**). And since, as a rule, a value is input using one input operator, it is recommended to use this option by default, and use the value request operator explicitly only in really complex cases, for example, if there can be several input options (depending on the condition, different forms, etc.)
 
-**Language**
+### Language
 
 The syntax of the value request operator is described by the [**REQUEST** operator](REQUEST_operator.md).
 
-**Examples**
+### Examples
 

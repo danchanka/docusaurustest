@@ -8,19 +8,18 @@ The **MAX** operator creates a [property](Properties.md) that implements finding
 
     MAX expr1, ..., exprN
 
-**Description**
+### Description
 
 The **MAX** operator creates a property that returns the maximum value of the values of the specified properties.
 
-**Parameters**
+### Parameters
 
 *expr1, ..., exprN*
 
 A list of [expressions](Expression.md) of which values the maximum is selected.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

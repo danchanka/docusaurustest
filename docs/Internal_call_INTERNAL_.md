@@ -8,9 +8,9 @@ This operator also makes it possible to directly specify the source for an actio
 
 This operator allows to specify which classes the action created can take, and whether or not it can take **NULL** values. If the specified conditions are not met, the created action is not executed: control simply passes to the next action.
 
-**Language**
+### Language
 
 To declare an action implemented in **Java** use the  [**INTERNAL** operator](INTERNAL_operator.md).
 
-**Examples**
+### Examples
 

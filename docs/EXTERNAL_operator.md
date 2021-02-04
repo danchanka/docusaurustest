@@ -4,7 +4,7 @@ title: 'EXTERNAL operator'
 
 The **EXTERNAL** operator creates an [action](Actions.md) that implements [accessing to an external system](Access_to_an_external_system_EXTERNAL_.md). 
 
-**Syntax**
+### Syntax
 
     EXTERNAL externalCall [PARAMS paramExpr1, ..., paramExprN] [TO propertyId1. ..., propertyIdM]
 
@@ -14,17 +14,17 @@ externalCall - an external call defined by one of the following syntaxes:
     SQL connectionStrExpr EXEC execStrExpr
     LSF connectionStrExpr lsfExecType execStrExpr
 
-**Description**
+### Description
 
 The **EXTERNAL** operator creates an action that makes a request to an external system.
 
-**Parameters**
+### Parameters
 
 *HTTP*
 
 Keyword. Specifies that the operator is executing a web server HTTP request.
 
-**requestType**
+### requestType
 
 Keyword. Defines the [method](https://ru.wikipedia.org/wiki/HTTP#%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B) of the HTTP request:
 
@@ -55,7 +55,7 @@ Keyword. Specifies that the operator executes an action of another lsFusion serv
 
 *headersPropertyId*
 
-**headersToPropertyId**
+### headersToPropertyId
 
 [Property ID](IDs_1573053.html#IDs-propertyid) containing request headers. The property must have exactly one parameter: the name of the request's header. This parameter must belong to a string class. If the property is not specified, headers are ignored/not set.
 
@@ -86,9 +86,8 @@ List of expressions whose values will be used as the call parameters.
 
 List of property IDs (without parameters) to which the results will be written.
 
-**Examples**
+### Examples
 
-************************************
 
 
   

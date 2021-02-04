@@ -4,15 +4,15 @@ title: 'EXEC operator'
 
 The **EXEC** operator creates an [action](Actions.md) that [executes](Call_EXEC_.md) another action.
 
-**Syntax**
+### Syntax
 
     [EXEC] actionId(expression1, ..., expressionN)
 
-**Description**
+### Description
 
 The **EXEC** operator creates an action that executes another action, passing it the values of [expressions](Expression.md) as parameters.
 
-**Parameters**
+### Parameters
 
 *actionId*
 
@@ -26,9 +26,8 @@ A list of expressions whose values will be passed to the action being executed a
 
 An operator that creates the action being executed.
 
-**Examples**
+### Examples
 
-************************************
 
 
   

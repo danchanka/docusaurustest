@@ -17,5 +17,5 @@ Note that the definiteness constraint is a special case of the consequence, in w
 
 There is also an implicit fifth kind of simple constraint, *uniqueness*, but it is combined with an aggregation operator (which returns this most unique value), and therefore it is not considered here. Together with consequences, this type of constraint allows to implement the [aggregation](Aggregations.md) mechanism. 
 
-**Examples**
+### Examples
 

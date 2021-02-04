@@ -4,11 +4,11 @@ title: 'ABSTRACT operator (action)'
 
 The **ABSTRACT** operator - creating an [abstract action](Action_extension.md). 
 
-**Syntax**
+### Syntax
 
     ABSTRACT [type [exclusionType]] [FIRST | LAST] [CHECKED] (argClassName1, ..., argClassNameN) 
 
-**Description**
+### Description
 
 The **ABSTRACT** operator creates an abstract action, the implementation of which can be defined later (for example, in other [modules](Modules.md) dependent on the module containing the **ABSTRACT** action). Implementations are added to the action using the [instruction + =](ACTION+_instruction.md). When executing **MULTI** or **CASE** type abstract actions, their matching implementation is selected and executed. The selection of the matching implementation depends on the selection conditions that are defined when adding implementations, and on the **ABSTRACT** operator type.
 
@@ -21,7 +21,7 @@ When performing a **LIST** abstract action, all implementations are executed s
 
 The **ABSTRACT** operator cannot be used inside the [**{...}** operator](Operator_..._.md).
 
-**Parameters**
+### Parameters
 
 *type*
 
@@ -53,9 +53,8 @@ Keyword. If specified, the platform will automatically check that at least one 
 
 List of class names of property arguments. Each name is defined by a [class ID](IDs_1573053.html#IDs-classid).
 
-**Examples**
+### Examples
 
-********
 
 
 **  

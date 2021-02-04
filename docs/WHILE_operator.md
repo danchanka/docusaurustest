@@ -4,19 +4,19 @@ title: 'WHILE operator'
 
 The **WHILE** operator creates an [action](Actions.md) that implements a [recursive loop](Recursive_loop_WHILE_.md).
 
-**Syntax**
+### Syntax
 
     WHILE expression [ORDER [DESC] orderExpr1, ..., orderExprN]
     [NEW [alias =] className]
     DO action
 
-**Description**
+### Description
 
 The **WHILE ** operator creates an action implementing a recursive loop. This operator  can add its local parameters while defining a condition. These parameters correspond to the objects being iterated and are not parameters of the created action. You can also use the NEW  block to specify the name of the class whose object will be created for each object collection meeting the condition. The name of this object needs to be specified. This name will be used as the name of the local parameter that the created object will be written to.
 
 The object iteration order in the WHILE operator can be specified with the ORDER block.
 
-**Parameters**
+### Parameters
 
 *expression*
 
@@ -42,9 +42,8 @@ The name of the class of the object to create. Defined by a [class ID](IDs_1573
 
 [Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) describing the action being executed.
 
-**Examples**
+### Examples
 
-********
 
 
 **  

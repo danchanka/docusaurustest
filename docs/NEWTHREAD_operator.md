@@ -4,16 +4,16 @@ title: 'NEWTHREAD operator'
 
 The **NEWTHREAD** operator creates an [action](Actions.md) that executes another action in a [new thread](New_threads_NEWTHREAD_NEWEXECUTOR_.md).
 
-**Syntax**
+### Syntax
 
     NEWTHREAD action [CONNECTION connectionExpr]
     NEWTHREAD action SCHEDULE [PERIOD periodExpr] [DELAY delayExpr]
 
-**Description**
+### Description
 
 The **NEWTHREAD** operator creates an action that executes another action in a new thread. When the **CONNECTION** keyword is used, you can specify the connection which will be used during the action execution. There is also a second form of the **NEWTHREAD** operator for triggering an action using the scheduler. This form usage is determined by the presence of the **SCHEDULE** keyword.  
 
-**Parameters**
+### Parameters
 
 *action *
 
@@ -33,7 +33,6 @@ An expression which value is a property that returns the delay before the first 
 
  **Examples**
 
-********************************************************
 
 
   

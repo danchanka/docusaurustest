@@ -4,17 +4,17 @@ title: 'FORMULA operator'
 
 The **FORMULA** operator creates a [property](Properties.md) that implements a [custom formula](Custom_formula_FORMULA_.md).
 
-**Syntax**
+### Syntax
 
     FORMULA [NULL] [className] [syntaxType1] text1, ..., [syntaxTypeN] textN
 
-**Description**
+### Description
 
 The **FORMULA** operator creates a property that executes an arbitrary formula in SQL. It is possible to specify different formulas for different SQL dialects so that these properties are portable between different DBMSs. 
 
 This property operator cannot be used inside [expressions](Expression.md).
 
-**Parameters**
+### Parameters
 
 *NULL*
 
@@ -37,9 +37,8 @@ If the dialect type is not specified explicitly, then the corresponding formula 
 
 [String literals](IDs_1573053.html#IDs-strliteral), each of which contains a formula in SQL syntax. The notation **$1**, **$2** etc. is used to pass property parameters to the formula, where the number denotes the property parameter number. Parameter numbers start from 1. The number of parameters in the created property will be equal to the maximum parameter number specified in the description of the formula.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

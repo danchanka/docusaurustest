@@ -4,13 +4,13 @@ title: 'In a structured view (EXPORT, IMPORT)'
 
 This operator creates an action that [opens a form](Open_form.md) in the [structured](Structured_view.md) view.
 
-**Format**
+### Format
 
 In this operator, you can define the format that all form data will be converted to:  **XML**, **JSON**, **DBF, CSV, XLS**. The generated file(s) in this format is then written to the specified property.
 
 Form export is a general case of the  [data export operator](Data_export_EXPORT_.md).
 
-**Form import**
+### Form import
 
 Form import is an operation that is opposite to opening the form in a structured view. The import operator accepts files in a structured format, then parses them and saves the data to the properties of the set form in such a way that when this form is exported back into the imported format, it would recreate the original file.
 
@@ -30,10 +30,10 @@ If a property (object group) is not found during import, it is ignored (that is,
 
 Form import is a general case of the [data import](Data_import_IMPORT_.md) operator.
 
-**Language**
+### Language
 
 To open the form in the structured view, use the [**EXPORT** operator](EXPORT_operator.md). To import a form, use the [**IMPORT** operator](IMPORT_operator.md).
 
-**Examples**
+### Examples
 
 

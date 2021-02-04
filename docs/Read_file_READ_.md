@@ -6,9 +6,9 @@ The *read* *file *operator creates an [action](Actions.md) that reads a file 
 
 The source is defined as a [property](Properties.md) which values are instances of [string classes](Built-in_classes.md). The following types of data sources (URLs) are supported: FILE, HTTP, HTTPS, FTP, SFTP, JDBC, MDB.
 
-**Language**
+### Language
 
 To declare an action that reads a file, use the [**READ** operator](READ_operator.md).
 
-**Examples**
+### Examples
 

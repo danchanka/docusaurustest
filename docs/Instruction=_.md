@@ -4,11 +4,11 @@ title: 'Instruction=>'
 
 The **=>** instruction creates a [consequence](Simple_constraints.md).
 
-**Syntax**
+### Syntax
 
     leftPropertyId(param1, ..., paramN) => eventClause rightExpr [RESOLVE resolveType];
 
-**Description**
+### Description
 
 The **=> ** instruction creates a consequence. This operator ** ** can declare its own local parameters when specifying the property of the consequence premise. These parameters can then be used in the expression of the consequence.
 
@@ -26,7 +26,7 @@ but it allows you to automatically resolve situations where this constraint is v
     WHEN eventClause DROPPED(leftPropertyId(param1, ..., paramN)) DO
         DROPACTION(rightExpr);
 
-**Parameters**
+### Parameters
 
 *leftPropertyId*
 
@@ -52,9 +52,8 @@ List of [parameters](IDs_1573053.html#IDs-paramid) of the property that defines 
 
 [Event description block](Event_description_block.md). Describes an [event](Events.md) upon the occurrence of which the created consequence will be checked and automatic resolution operations will be performed.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

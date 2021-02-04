@@ -4,17 +4,17 @@ title: 'ASK operator'
 
 The **ASK** operator creates an action that shows the user a message in a [dialog form](4915326.html#Showmessage(MESSAGE,ASK)-dialog).
 
-**Syntax**
+### Syntax
 
     ASK expression 
     [[alias =] YESNO]
     [DO actionOperator [ELSE elseOperator]]
 
-**Description**
+### Description
 
 The **ASK** operator creates an action that asks the user for confirmation/asks the user a question.
 
-**Parameters**
+### Parameters
 
 *expression*
 
@@ -36,9 +36,8 @@ A [context-dependent action operator](Action-operator_36307157.html#Actionoperat
 
 A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was cancelled. Only upper parameters can be used as parameters.
 
-**Example**
+### Example
 
-************
 
 
   

@@ -9,7 +9,7 @@ Forms let you combine different types of information for one or more objects in 
 
 In the user interface, a form is opened when a corresponding element is chosen in the [navigator](Navigator.md) or when an action created using a [corresponding operator](Open_form.md) is executed.
 
-**Stack**
+### Stack
 
 **  
 **

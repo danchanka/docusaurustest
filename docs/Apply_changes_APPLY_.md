@@ -11,9 +11,9 @@ After completion of operation (whether successful or unsuccessful), all messages
 As with other session management operators, you can explicitly specify [nested local properties](Session-management_30769221.html#Sessionmanagement-nested) for the apply changes operator, which will preserve their changes after the operator is executed.
 
 
-**Language**
+### Language
 
 To declare an action that applies changes, use the [**APPLY** operator](APPLY_operator.md).
 
-**Examples**
+### Examples
 

@@ -89,7 +89,7 @@ If:
 
 Then: properties (actions) from the third section are deleted from the set of candidates (i.e., those for which the parameter classes are equal to the classes of the referring parameters)
 
-**Additional operations to search for properties / actions**
+### Additional operations to search for properties / actions
 
 *Matching parameter classes*
 
@@ -121,15 +121,12 @@ When a call is made a property (action), if the parameter classes are not explic
 If the parameter classes of a property (action) are not explicitly specified, the platform tries to automatically determine them from the property (action) implementation. The following is an (incomplete) list of possible implementations, and how the platform determines property (action) parameter classes in these cases:
 
 
-**Examples**
-
-****
+### Examples
 
 
-****
 
 
-****
+
 
 
 **  

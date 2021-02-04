@@ -16,7 +16,7 @@ Description
 
 The CASE operator creates a property that implements a conditional selection. Selection conditions are defined using the properties specified in the WHEN block. If the selection condition is met, the property value will be the value of the property specified in the corresponding THEN block. If none of the conditions are met, the property value will be the property value in the ELSE block, if that block is specified (if not, NULL is returned).
 
-**Parameters**
+### Parameters
 
 ** ***exclusionType*
 
@@ -43,5 +43,5 @@ An expression whose value defines the property value if none of the conditions a
 
   
 
-**Examples**
+### Examples
 

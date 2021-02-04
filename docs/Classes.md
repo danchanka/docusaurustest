@@ -4,7 +4,7 @@ title: 'Classes'
 
 The base element in **lsFusion** is the object. Each object is an *instance* of some *class*, which determines the qualities of all its instances. Classes in turn can be divided into [built-in classes](Built-in_classes.md), which are responsible for primitive data types, and [user classes](User_classes.md). 
 
-**Inheritance**
+### Inheritance
 
 Classes can *inherit* from each other. When class **B** inherits from class **A**, class **A** shall be called the *parent*, and class **B** shall be called the *child*.
 
@@ -14,7 +14,7 @@ Let's say that an object *belongs to* class **A** if that object is either an 
 
 To implement polymorphism, inheritance is usually used together with properties and actions extension mechanism. 
 
-**Class limitations**
+### Class limitations
 
 The class mechanism has several limitations:
 

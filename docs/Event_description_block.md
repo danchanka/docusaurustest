@@ -4,11 +4,11 @@ title: 'Event description block'
 
 *Event description block* describes an [event](Events.md) in different instructions.
 
-**Syntax**
+### Syntax
 
     [GLOBAL | LOCAL] [FORMS formName1, ..., formNameN] [GOAFTER propertyId1, ..., propertyIdM]
 
-**Parameters**
+### Parameters
 
 *GLOBAL *
 

@@ -4,17 +4,17 @@ title: 'IF ... THEN operator (action)'
 
 The **IF ... THEN** operator creates an [action](Actions.md) that implements [branching](5275770.html#Branching(CASE,IF,MULTI)-single) with one condition (single form).
 
-**Syntax**
+### Syntax
 
     IF condition 
     THEN action
     [ELSE alternativeAction]
 
-**Description**
+### Description
 
 The **IF ... THEN** operator creates an action that implements branching with one condition. When this action is executed, the condition is checked and, if the condition is met, the action specified after the keyword **THEN** is called. There is also the option of specifying an alternative action with the keyword **ELSE**, which is called if the condition is not met.
 
-**Parameters**
+### Parameters
 
 *condition*
 
@@ -28,9 +28,8 @@ The **IF ... THEN** operator creates an action that implements branching with on
 
 Context-dependent operator that describes an action that will be executed if the condition is not met.
 
-**Examples**
+### Examples
 
-****************************************
 
 
   

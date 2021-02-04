@@ -4,7 +4,7 @@ title: 'NAVIGATOR instruction'
 
 The **NAVIGATOR**  instruction is used to modify the [navigator](Navigator.md).
 
-**Syntax**
+### Syntax
 
 The syntax consists of nested blocks of *navigator instructions.* The outer instruction block is described after the keyword **NAVIGATOR**:
 
@@ -37,7 +37,7 @@ The options for the *options* navigator element can be listed one after the othe
     FIRST 
     IMAGE fileName
 
-**Description**
+### Description
 
 The **NAVIGATOR** instruction allows to modify the navigator. Each navigator instruction block enclosed in braces allows to change the descendants of a particular [navigator element](Navigator.md), which we will call the *current* element. In the outer block that follows the **NAVIGATOR** keyword, the current element is the root system folder **System.root**. There are three types of navigator instructions:
 
@@ -49,7 +49,7 @@ The move and modify instructions allow to change the caption and options of a na
 
 The hierarchy described within a single **NAVIGATOR** instruction can have an arbitrary nesting level and describe any number of elements at each level.
 
-**Parameters**
+### Parameters
 
 *name*
 
@@ -103,9 +103,8 @@ Specifying the relative path to the file with the image to be displayed as the i
 
 Path to the file. String literal. The path is relative to the  **images** directory.
 
-**Examples**
+### Examples
 
-********
 
 
 **  

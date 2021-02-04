@@ -4,11 +4,11 @@ title: 'CONSTRAINT instruction'
 
 The **CONSTRAINT** instruction creates a [constraint](Constraints.md).
 
-**Syntax**
+### Syntax
 
     CONSTRAINT eventClause constraintExpr [CHECKED [BY propertyId1, ..., propertyIdN]] MESSAGE messageExpr;
 
-**Description**
+### Description
 
 The **CONSTRAINT** instruction creates a constraint. If the constraint is violated, the user will be shown the message defined in the instruction.
 
@@ -24,7 +24,7 @@ Creating a constraint is pretty similar to the following instruction:
 
 but it also has [a number of advantages](Constraints.md).
 
-**Parameters**
+### Parameters
 
 *eventClause*
 
@@ -42,9 +42,8 @@ List of [property IDs](IDs_1573053.html#IDs-propertyid). When showing change dia
 
 An expression whose value is shown as a message to the user when the set constraint is violated. It may be either a [string literal](IDs_1573053.html#IDs-strliteral) or a property without parameters.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

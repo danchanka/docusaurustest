@@ -4,15 +4,15 @@ title: 'IF operator'
 
 The **IF** operator - creating a [property](Properties.md) implementing [selection](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md) of a value by condition (single form). 
 
-**Syntax**
+### Syntax
 
     result IF condition 
 
-**Description**
+### Description
 
 The **IF** operator creates a property that returns the given value when a certain condition is met. If the condition is not met, the property returns **NULL**.
 
-**Parameters**
+### Parameters
 
 *result*
 
@@ -22,9 +22,8 @@ The **IF** operator creates a property that returns the given value when a certa
 
 An expression whose value defines the condition.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

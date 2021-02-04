@@ -77,7 +77,7 @@ Fig. 7 Setting user logging.
 
 -   once you restart the application server, right-clicking on the «Surname» property will bring up an additional «Show Change History» menu item. If the surname for the current record has been changed by someone, then this will be reflected in the property change history (fig. 8).
 
-**<img src="attachments/60555482/65241140.png" height="250" />**
+### <img src="attachments/60555482/65241140.png" height="250" />
 
 Fig. 8. Property change history.
 

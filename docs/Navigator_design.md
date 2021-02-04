@@ -8,24 +8,24 @@ The navigator design consists of multiple *windows*, desktop components,* *each
 
 Each window must have a *caption* which will be used when displaying the window in the user interface.
 
-**Navigator elements layout in windows**
+### Navigator elements layout in windows
 
 For each navigator element, you can specify the window in which its descendants should be displayed. If necessary, the element itself can be displayed there. Thus, the set of *subtrees* (navigator *elements*) that is displayed in each window is uniquely determined. Graphically, this can be represented as follows:
 
 <img src="attachments/1310742/86476284.png" height="400" />
 
-**Window layout on the desktop**
+### Window layout on the desktop
 
 Each window occupies a predefined section of the desktop. Graphically, this can be represented as follows:
 
 
 The entire desktop is 100x100 *pixels* in size. When creating a window, you must specify the window's upper left coordinate, width and height, expressed in *pixels*. It is desirable that windows should "cover" the entire area of the desktop. If this does not happen, then the free area will be given to one of the windows (there is no guarantee as to which one). Two windows are allowed to have absolutely identical coordinates and sizes. In this case they will be displayed in the same place, but switching between them will be possible using tabs.
 
-**Selected folder**
+### Selected folder
 
 At any moment in time in each window there can be one current user-*selected *navigator folder. Accordingly, if the element item belongs to a window other than the window of its parent folder, then this element is shown in its window if and only if its parent folder is selected in its window. The predefined **System.root** folder is always considered to be selected. If at some point a window does not display any navigator element, then that window is automatically hidden.
 
-**Types**
+### Types
 
 There are several window *types* that determine which component in the interface will be used to display navigator elements.
 
@@ -36,7 +36,7 @@ There are several window *types* that determine which component in the interfa
 
 By default, a UI component that displays navigator elements is wrapped into scrollbars. They appear when the component does not fit in the window. If necessary, this behavior can be disabled.
 
-**System windows**
+### System windows
 
 There are several predefined system windows that are necessary for the client application to work:
 
@@ -50,16 +50,16 @@ Also, three additional windows are automatically created for ease of development
 -   **toolbar**: a vertical toolbar in which it is recommended to display some of the descendants of the navigator elements that are displayed in the **root** window.
 -   **tree**: a tree in which it is recommended to display some of the descendants of the navigator elements displayed in the* ***root** window
 
-**Default layout**
+### Default layout
 
 By default, the desktop has the following layout (the left coordinate, upper coordinate, width, and height are indicated in brackets):
 
 
-**Language**
+### Language
 
 To manage windows, use the [**WINDOW** instruction](WINDOW_instruction.md).
 
-**Examples**
+### Examples
 
 
   

@@ -4,7 +4,7 @@ title: 'FORM instruction'
 
 The **FORM** instruction creates a [form](Forms.md). 
 
-**Syntax**
+### Syntax
 
     FORM name [caption] formOptions
         formBlock1
@@ -31,11 +31,11 @@ After the form options, the blocks of the form *formBlock1 ... are described in 
     EDIT className OBJECT objectName
     LIST className OBJECT objectName 
 
-**Description**
+### Description
 
 The **FORM** instruction declares a new form and adds it to the current [module](Modules.md). In addition, this instruction is used to describe [the form structure](Form_structure.md), as well as its [static](Static_view.md) and partially [interactive](Interactive_view.md) (except [form design](Form_design.md)) views. At the beginning of the instruction, name and captions are specified, followed by form options and the declaration containing an arbitrary number of blocks describing the structure of the form. They can be used in any order, provided that each block is declared after the blocks whose elements it uses. Each block can be used any number of times.
 
-**Parameters**
+### Parameters
 
 *name*
 
@@ -121,9 +121,8 @@ Sets the current form as the [list form](Interactive-view_1573071.html#Interacti
 
 *objectName* – the name of the form object whose current value will be used as the object being selected. Defined with a simple ID.
 
-**Examples**
+### Examples
 
-************
 
 
   

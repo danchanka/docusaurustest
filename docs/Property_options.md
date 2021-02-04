@@ -4,7 +4,7 @@ title: 'Property options'
 
 When a [property](Properties.md) is declared in the [= instruction](Instruction_=.md) a set of *property options* can be specified at the end of the declaration 
 
-**Syntax**
+### Syntax
 
 Options are listed one after another in arbitrary order, separated by spaces or line feeds:
 
@@ -26,7 +26,7 @@ The following set of options is supported (the syntax of each option is indicate
     ECHO
     DEFAULTCOMPARE [compare]
 
-**Description and parameters**
+### Description and parameters
 
 *IN groupName*
 
@@ -60,7 +60,7 @@ Keyword that, if specified, then when the property becomes **NULL**, objects tha
 
 [Event type description block](Event_description_block.md). Describes the event by which the property will be checked for **NULL**.
 
-***Interactive view block***
+### *Interactive view block*
 
 *viewType*
 
@@ -90,7 +90,7 @@ Type of form event. Specified by one of the following options:
 
 [Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent). An operator that defines the action executed on an event. You can use the parameters of the property itself as operator parameters.
 
-***DESIGN instruction default values block***
+### *DESIGN instruction default values block*
 
 *CHARWIDTH width *\[FLEX | NOFLEX\]
 
@@ -149,5 +149,5 @@ Specifies a [default filter](Interactive-view_1573071.html#Interactiveview-userf
 
 Default filter type. [String literal](Literals_35521071.html#Literals-strliteral). Can be one the following values: '=', '\>', '<', '\>=', '<=', '!=', 'START\_WITH', 'CONTAINS', 'ENDS\_WITH', 'LIKE'. The default value is '=' ** ** for all data types except case-insensitive string types, for which the default value is 'CONTAINS'**. ** If **System.defaultCompareForStringContains ** is enabled, default value is 'CONTAINS'** **for all string data regardless of case sensitivity. Can be overridden in the **DESIGN** instruction.
 
-**Examples**
+### Examples
 

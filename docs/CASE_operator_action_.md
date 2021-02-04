@@ -16,7 +16,7 @@ Description
 
 The CASE operator creates an action that executes one of the actions passed to it depending on whether the selection conditions are met. Selection conditions are defined using the properties specified in the WHEN block. If a selection condition is met, the action specified in the corresponding THEN block is executed. If none of the conditions is met, the action specified in the ELSE block will be executed if this block is specified.
 
-**Parameters**
+### Parameters
 
 ** ** *exclusionType*
 
@@ -41,7 +41,6 @@ The **OVERRIDE** type is used by default.
 
 A context-dependent operator that describes an action to be executed if none of the conditions is met. 
 
-**Examples**
+### Examples
 
-********************
 

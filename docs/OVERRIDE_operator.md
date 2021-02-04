@@ -4,23 +4,22 @@ title: 'OVERRIDE operator'
 
 The **OVERRIDE** operator creates a [property](Properties.md) that implements the [selection](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive) of one of the values (polymorphic form).
 
-**Syntax**
+### Syntax
 
     OVERRIDE expr1, ..., exprN
 
-**Description**
+### Description
 
 The **OVERRIDE** operator creates a property whose value will be the value of one of the properties specified in the operator. Selection is made among properties with a non-**NULL** value. If multiple properties are non-**NULL**, the value of the first of these properties is selected.
 
-**Parameters**
+### Parameters
 
 *expr1, ..., exprN*
 
 List of [expressions](Expression.md) whose values will determine the value of the property.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

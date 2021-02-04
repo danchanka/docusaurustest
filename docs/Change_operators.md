@@ -4,15 +4,15 @@ title: 'Change operators'
 
 Change operators - a set of operators that determine various types of [property value changes](Change_operators_SET_CHANGED_..._.md). 
 
-**Syntax**
+### Syntax
 
     typeChange(propExpr)
 
-**Description**
+### Description
 
 Change operators create [actions](Properties.md) which determine whether some types of changes have been made for a certain property in the current session.
 
-**Parameters**
+### Parameters
 
 *typeChange*
 
@@ -29,9 +29,8 @@ Type of the change operator. It is specified by one of the keywords:
 
 An [expression](Expression.md) which value defines the property that should be checked for the presence of a change.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

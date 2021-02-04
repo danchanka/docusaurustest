@@ -8,9 +8,9 @@ Groups in this operator are defined as a set of properties (*groupings*), and th
 
 Note that the partition/order operator is very similar to the [grouping operator](Grouping_GROUP_.md), but unlike the latter, it computes a result not for grouping values, but for the object collections for which calculation is taking place.
 
-**Language**
+### Language
 
 To declare a property that implements partition/order, use the [**PARTITION** operator](PARTITION_operator.md). 
 
-**Examples**
+### Examples
 

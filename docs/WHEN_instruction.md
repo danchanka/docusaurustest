@@ -4,11 +4,11 @@ title: 'WHEN instruction'
 
 The **WHEN** instruction adds a [simple event](Simple_event.md) handler.
 
-**Syntax **
+### Syntax 
 
     WHEN eventClause eventExpr [ORDER [DESC] orderExpr1, ..., orderExprN] DO eventAction;
 
-**Description**
+### Description
 
 The **WHEN** instruction adds a simple event handler. In a condition expression you can implicitly declare local parameters that can then be used in the event handler.
 
@@ -20,7 +20,7 @@ Using the **WHEN** instruction is much like the following instruction:
 
 but it also has [a number of advantages](Simple_event.md).
 
-**Parameters**
+### Parameters
 
 *eventClause*
 
@@ -42,7 +42,7 @@ Keyword. Specifies a reverse iteration order for object collections. 
 
 A list of expressions that defines the order in which handlers will be called for object collections for which an event condition has been met. To determine the order, first the value of the first expression is used; then, if equal, the value of the second is used, etc. 
 
-**Examples**
+### Examples
 
 
 **  

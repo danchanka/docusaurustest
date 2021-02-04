@@ -4,11 +4,11 @@ title: 'CHANGE operator'
 
 The **CHANGE** operator creates an [action](Actions.md) that [changes properties](Property_change_CHANGE_.md).
 
-**Syntax**
+### Syntax
 
     [CHANGE] propertyId(expr1, ..., exprN) <- valueExpr [WHERE whereExpr]
 
-**Description**
+### Description
 
 The **CHANGE** operator creates an action that changes a property when a condition is met. This operator  can add its own local parameters when specifying the property whose value is to be changed. These parameters correspond to the objects being iterated and are not parameters of the created action. 
 
@@ -16,7 +16,7 @@ The condition is defined by the **WHERE** block. If this block is not specified,
 
 The keyword **CHANGE**, which defines an operator, may be omitted.** **
 
-**Parameters**
+### Parameters
 
 *propertyId*
 
@@ -34,9 +34,8 @@ The expression to whose value the property value must be changed.
 
 An expression whose value is a condition for the change being created. If not specified, it is considered equal to **TRUE**.
 
-**Examples**
+### Examples
 
-****************
 
 
   

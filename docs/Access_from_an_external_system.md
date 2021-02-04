@@ -4,7 +4,7 @@ title: 'Access from an external system'
 
 The platform allows external systems   to access an lsFusion-based system using various network protocols. The interface of such interaction is a call for an action with specified parameters and, if necessary, the return of certain property values (without parameters) as  *results*. It is assumed that all parameter and result objects are objects of [built-in classes](Built-in_classes.md).
 
-**Defining an action**
+### Defining an action
 
 An action being called can be defined in one of the three ways:
 
@@ -12,7 +12,7 @@ An action being called can be defined in one of the three ways:
 -   EVAL – code in the lsFusion language is specified. It is assumed that this code contains a declaration of an action named **run**. This is the action that will be called.
 -   EVAL ACTION – action code in the lsFusion language is specified. To access a parameter, the special character $ and the parameter number (starting from 1) are used.
 
-**Protocols**
+### Protocols
 
 The platform currently supports the following network protocols:
 
@@ -118,7 +118,7 @@ As the names of object groups and properties, not names on the form are used, bu
 
 Authentication, stateful and form API are only supported when executing http requests on the web server. When an application server (or specifically, a built-in web server) executes an HTTP request, authentication headers, as well as parameters with the session ID, are ignored (the user is considered anonymous). Form API is completely unsupported by the built-in web server.
 
-**Examples**
+### Examples
 
 *Rest API (Python)*
 

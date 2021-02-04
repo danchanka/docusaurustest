@@ -6,7 +6,7 @@ title: 'Action operator'
 
 Action operators can be divided into *context dependent* and *context independent*.
 
-**Context dependent operators**
+### Context dependent operators
 
 Context dependent action operators can use external context parameters. They can be used wherever you need to define an action, for example, when creating another action or [event](Events.md). These operators are:
 
@@ -48,7 +48,7 @@ Context dependent action operators can use external context parameters. They can
 -   [**WHILE** operator](WHILE_operator.md)
 -   [**WRITE** operator](WRITE_operator.md)
 
-**Context independent operators**
+### Context independent operators
 
 Context independent action operators cannot use external context parameters. Thus they can only be used in the [**ACTION** instruction](ACTION_instruction.md):
 

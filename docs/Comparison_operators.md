@@ -4,7 +4,7 @@ title: 'Comparison operators'
 
 **==, =**, **!=**, **<**, **\>**, **<=**, **\>=** operators create [properties](Properties.md) that implement [comparison operations](Comparison_operators_=_..._.md).
 
-**Syntax**
+### Syntax
 
     expression1 == expression2
     expression1 = expression2
@@ -14,15 +14,14 @@ title: 'Comparison operators'
     expression1 <= expression2
     expression1 >= expression2
 
-**Parameters**
+### Parameters
 
 *expression1, expression2*
 
 [Expressions](Expression.md) which values are the arguments of a comparison operator.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

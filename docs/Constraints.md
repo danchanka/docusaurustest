@@ -14,7 +14,7 @@ Compared to implementation via simple events, constraints have a set of addition
 
 Note that in some cases, instead of showing a message to the user and canceling the transaction, it is necessary, for example, to automatically resolve the violated constraint. In that case, it is recommended to use [simple constraints](Simple_constraints.md), or, if it is impossible, simple events.
 
-**Show message**
+### Show message
 
 For any non-**NULL** value [output](In_a_print_view_PRINT_.md) the platform uses an automatically generated [form](Forms.md), consisting of:
 
@@ -23,9 +23,9 @@ For any non-**NULL** value [output](In_a_print_view_PRINT_.md) the platform use
 -   a [filter](Form-structure_1573069.html#Formstructure-filters) equal to the constrained property.
 -   a global message defined by the developer when creating the constraint.
 
-**Language**
+### Language
 
 Constraints are created using the [**CONSTRAINT** instruction](CONSTRAINT_instruction.md). 
 
-**Examples**
+### Examples
 

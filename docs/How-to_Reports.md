@@ -38,7 +38,7 @@ Let's make a few changes in the automatic template and save it:
 
 <img src="attachments/46367627/57738052.png" width="800" />
 
-**Template: Sample\_booksByCategories.jrxml**
+### Template: Sample\_booksByCategories.jrxml
  Expand source
 
     <?xml version="1.0" encoding="UTF-8"?>
@@ -105,7 +105,7 @@ Let's move the invoice data from the group header (**Group Header**) to the invo
 
   
 
-**Template: Sample\_invoice\_i.jrxml**
+### Template: Sample\_invoice\_i.jrxml
  Expand source
 
     <?xml version="1.0" encoding="UTF-8"?>

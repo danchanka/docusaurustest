@@ -6,9 +6,9 @@ An *action* is an element of the system that takes a set of objects (*parameter
 
 The type and behavior of each action is determined by the [operator](Оperators.md) that creates the action.
 
-**Language**
+### Language
 
 To add a new action to the system, use [the **ACTION** instruction](ACTION_instruction.md).
 
-**Examples**
+### Examples
 

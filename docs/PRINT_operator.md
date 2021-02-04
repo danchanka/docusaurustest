@@ -4,7 +4,7 @@ title: 'PRINT operator'
 
 The **PRINT** operator creates an [action](Actions.md) that [opens a form](In_a_print_view_PRINT_.md) in print view. 
 
-**Syntax**
+### Syntax
 
     PRINT name 
     [OBJECTS objName1 = expr1, ..., objNameN = exprN]
@@ -16,11 +16,11 @@ The **PRINT** operator creates an [action](Actions.md) that [opens a form](In
     [PREVIEW | NOPREVIEW] [syncType] [TO printerExpr]
     MESSAGE [syncType] [TOP n]
 
-**Description**
+### Description
 
 The **PRINT** operator creates an action that prints the specified form. When printing a form in the **OBJECTS** block you can add [additional filters](Open-form_3014672.html#Openform-params) for form objects to check these objects for equality to the values passed.
 
-**Parameters**
+### Parameters
 
 *name*
 
@@ -34,7 +34,7 @@ Names of form objects for which additional filters are specified. [Simple IDs](I
 
 [Expressions](Expression.md) whose values determine the filtered (fixed) values for form objects.
 
-***Additional options***
+### *Additional options*
 
 *printFormat*
 
@@ -87,9 +87,8 @@ Determines when the created action should be continued:
 -   **WAIT** - after the client completes the action (closes the preview/message form). Used by default.
 -   **NOWAIT** - after preparation of the information for sending to the client (form data is read).
 
-**Examples**
+### Examples
 
-********************************************************
 
 
   

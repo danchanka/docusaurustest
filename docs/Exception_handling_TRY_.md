@@ -8,11 +8,11 @@ The *exception handling* operator enables you to execute an action and do the fo
 -   execute a different action, then pass the error to the top action (as if the operation didn't exist),
 -   execute a different action regardless of whether there's been an error or not, then pass the error to the top action (as if this operator didn't exist)
 
-**Language**
+### Language
 
 To declare an exception handling action, use the [**TRY** operator](TRY_operator.md).
 
-**Examples**
+### Examples
 
 
   

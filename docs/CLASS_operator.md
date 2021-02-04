@@ -4,23 +4,22 @@ title: 'CLASS operator'
 
 The **CLASS** operator creates a property that implements a [matching signature operator](Property_signature_CLASS_.md).
 
-**Syntax**
+### Syntax
 
     CLASS(expr) 
 
-**Description**
+### Description
 
 The **CLASS** operator creates a property that determines whether or not, from a class perspective, a specified property can have a non-**NULL** value for passed arguments.
 
-**Parameters**
+### Parameters
 
 *expr*
 
 An [expression](Expression.md) whose result is a property. For this property, a set of parameter classes is inferred, matching which is checked by the result property. 
 
-**Examples**
+### Examples
 
-****
 
 
 **  

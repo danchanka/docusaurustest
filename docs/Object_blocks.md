@@ -4,9 +4,9 @@ title: 'Object blocks'
 
 Object block of the [FORM instruction](FORM_instruction.md)  adds [objects](#Objectblocks-objects) (including object groups) to the form structure, as well as [object trees](#Objectblocks-tree) to the interactive form view.
 
-**Object block**
+### Object block
 
-**Syntax**
+### Syntax
 
     OBJECTS groupDeclaration1 [groupOptions1], ...., groupDeclarationN [groupOptionsN]
 
@@ -34,11 +34,11 @@ The declaration of each object group may be followed by a set of options called 
     EXTID extID
     SUBREPORT [subReportExpression]
 
-**Description**
+### Description
 
 A single **OBJECTS** block can contain several comma-delimited declarations of [object groups](Interactive-view_1573071.html#Interactiveview-objects). An object group can contain just one object or several ones. In case of a single object, you can use simplified syntax without specifying the name of an object group and using parentheses. The declaration of an object group may be followed by the options of this group. They are listed one after another in an arbitrary order.
 
-**Parameters**
+### Parameters
 
 *groupName*
 
@@ -72,7 +72,7 @@ A list of object names on the form that will be used as action parameters. The 
 
 [Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent). You can use the names of already declared objects on the form as parameters.
 
-***Object group options***
+### *Object group options*
 
 *viewType*
 
@@ -132,19 +132,17 @@ Specifies that you need to generate a separate [report](Print_view.md) file for
 
 The expression whose value will be used as the name of the  [report](Print_view.md) file for the created object group. You can use the names of already declared objects on the form as parameters. It is assumed that the values of these objects will be [passed](Open-form_3014672.html#Openform-params) when the form is opened [in the print view](In_a_print_view_PRINT_.md) (if it's not done, they will be considered equal **NULL**).
 
-**Examples**
-
-****************
+### Examples
 
 
-****************************
+
 
 
   
 
 ### **Object tree block**
 
-**Syntax**
+### Syntax
 
     TREE [name] groupDeclaration1 [parentBlock1], ...., groupDeclarationN [parentBlockN] [treeOptions]
 
@@ -160,13 +158,13 @@ The tree*Options* options set may be specified after the declaration of each obj
     AFTER groupName
     BEFORE groupName
 
-**Description**
+### Description
 
 *Object tree block* lets you create an [object tree](Interactive-view_1573071.html#Interactiveview-tree). The first specified object group will form a list of top-level objects, each of which will have a child list of objects of the second specified object group and so  on.
 
 Use the **PARENT** block to create [hierarchical object groups](Interactive-view_1573071.html#Interactiveview-treegroup). To do that, specify a property that will define the parent element for an object (or several objects if an object group contains several ones).
 
-**Parameters**
+### Parameters
 
 *name*
 
@@ -180,7 +178,7 @@ The name of the object tree being created*.* [Simple ID](IDs_1573053.html#IDs-i
 
 A list of property ID's defining the hierarchy for an object group consisting of several objects. All specified properties must have the same number of parameters as the number of objects in the object group. Each of these properties must return one of the parent objects of the passed objects as a value (or  **NULL**  if the passed object collection is the top one). The first property should return the first parent object, the second property - the second object, etc.  on.
 
-***Object tree options***
+### *Object tree options*
 
 AFTER groupName
 
@@ -192,9 +190,8 @@ Specifying that the object tree should be added to the form structure immediatel
 
 [Object group name](#Objectblocks-groupName). 
 
-**Examples**
+### Examples
 
-****************
 
 
   

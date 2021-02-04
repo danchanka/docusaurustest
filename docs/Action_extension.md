@@ -11,24 +11,23 @@ Actions extension allows:
 -   Implement the concept of action polymorphism by analogy with certain object-oriented programming languages.
 -   Remove dependency between modules by adding specific "entry points," to which new behavior can be added later.
 
-**Polymorphic form**
+### Polymorphic form
 
 As with a branching operator, for an abstract action there is a *polymorphic form*, where it is possible not to define a condition explicitly, but to use as a condition matching the [signature](Property_signature_CLASS_.md) of the action that corresponds to this condition.
 
-**Mutual exclusion of conditions**
+### Mutual exclusion of conditions
 
 As for a branch operator, you can specify that all conditions of an abstract action must be *mutually exclusive*. If this option is specified, and the conditions are not in fact mutually exclusive, the platform will throw the corresponding error.
 
 It is worth noting that this check is no more than a hint to the platform (for better optimization), and also a kind of self-checking on the part of the developer. However, in many cases it allows to make the code more transparent and readable (especially in a polymorphic form of the abstract action).
 
-**Language**
+### Language
 
 The key instructions that implement the extension technique are the [**ABSTRACT** operator](ABSTRACT_operator_action_.md), for declaring an abstract action, and the [**ACTION+** instruction](ACTION+_instruction.md), for adding an implementation to it.
 
-**Examples**
+### Examples
 
 
-********************
 
 
   

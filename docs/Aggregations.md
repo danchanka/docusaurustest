@@ -8,9 +8,9 @@ The aggregated object and each aggregated property parameter must belong to a sp
 
 The aggregation mechanism is implemented using two [consequences](Simple_constraints.md) with automatic resolution and an [aggregation](Grouping_GROUP_.md) operator. With the help of the aggregation operator, the first consequence creates an object when the aggregated property becomes non-**NULL**, and writes the necessary values to all its properties. The second consequence deletes the object when the aggregated property becomes **NULL**.
 
-**Language**
+### Language
 
 To create aggregations, use the [operator**AGGR**](AGGR_operator.md).
 
-**Examples**
+### Examples
 

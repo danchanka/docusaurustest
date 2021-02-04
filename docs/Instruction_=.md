@@ -4,12 +4,12 @@ title: 'Instruction ='
 
 The **= ** instruction creates a new [property](Properties.md).
 
-**Syntax**
+### Syntax
 
     name [caption] [(param1, ..., paramN)] = expression [options];
     name [caption] [(param1, ..., paramN)] = contextIndependentOperator [options];
 
-**Description**
+### Description
 
 The **= ** instruction declares a new property and adds it to the current [module](Modules.md).
 
@@ -20,7 +20,7 @@ When creating a property, the instruction has two forms:
 
 When declaring a property, its set of options can also be specified.   
 
-**Parameters**
+### Parameters
 
 *name *
 
@@ -48,5 +48,5 @@ A context-independent property operator that describes and creates a property. 
 
 [Property options](Property_options.md). 
 
-**Examples**
+### Examples
 

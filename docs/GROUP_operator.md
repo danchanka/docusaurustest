@@ -4,7 +4,7 @@ title: 'GROUP operator'
 
 The **GROUP** operator creates a [property](Properties.md) implementing [grouping](Grouping_GROUP_.md).
 
-**Syntax **
+### Syntax 
 
     GROUP 
     type expr1, ..., exprN
@@ -12,7 +12,7 @@ The **GROUP** operator creates a [property](Properties.md) implementing [groupi
     [WHERE whereExpr]
     [BY groupExpr1, ..., groupExprM]
 
-**Description**
+### Description
 
 The **GROUP** operator creates a property implementing grouping. The type of grouping is determined by the type of the [aggregate function](Set_operations.md). This operator differs from others in that it can implicitly declare its parameters in the expressions used (by analogy with the [**=** instruction](Instruction_=.md) when the parameters are not defined explicitly). At the same time, it is important to understand that these "implicitly declared" parameters are not parameters of the created property (which are actually determined by the **BY** block and / or the upper parameters used)
 
@@ -26,7 +26,7 @@ The **WHERE** block defines the condition under which object collections will pa
 
 For **AGGR** and **NAGGR** using this block explicitly (and not, say, an [**IF** operator](IF_operator.md) in **GROUP** and **BY** blocks) only makes sense from the perspective of being able to change the created property to non-**NULL** in some automatic mechanisms of the platform (for example, [automatic resolution](Simple_constraints.md) of simple constraints).
 
-**Parameters**
+### Parameters
 
 *type*
 
@@ -52,9 +52,8 @@ A list of expressions that define the order in which object collections will be 
 
 Filtering expression. Only object groups for which the value of the filtering expression is not **NULL** will participate in the grouping.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

@@ -6,9 +6,9 @@ title: 'Calculated events'
 
 For each property, there can only be one calculated event that changes this property.  
 
-**Language**
+### Language
 
 To define calculated events, use [the **<- WHEN** instruction](Instruction_-_WHEN.md).
 
-**Examples**
+### Examples
 

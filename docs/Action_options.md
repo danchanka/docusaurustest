@@ -4,7 +4,7 @@ title: 'Action options'
 
 When declaring an [action](Actions.md) in the [**ACTION** instruction](ACTION_instruction.md) a certain set of *action options* may be specified at the end of the declaration. 
 
-**Syntax**
+### Syntax
 
 Options are listed one after another in arbitrary order, separated by spaces or line feeds:
 
@@ -20,7 +20,7 @@ The following set of options is supported (the syntax of each option is indicate
     IMAGE path
     CONFIRM
 
-**Description and parameters**
+### Description and parameters
 
 *IN groupName*
 
@@ -28,7 +28,7 @@ Specifying the [group of properties and actions](Groups_of_properties_and_actio
 
 *groupName* - a group name. [Composite ID](IDs_1573053.html#IDs-cid).
 
-***Interactive view block***
+### *Interactive view block*
 
 *viewType*
 
@@ -80,7 +80,7 @@ Specifies the file with the image to be displayed as an action icon.
 
 *path* is the relative path to the file. [String literal](Literals_35521071.html#Literals-strliteral). The path is specified relative to the **images** folder.
 
-***DESIGN instruction default values block***
+### *DESIGN instruction default values block*
 
 *EDITKEY key \[SHOW | HIDE\]*
 

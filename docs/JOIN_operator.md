@@ -4,7 +4,7 @@ title: 'JOIN operator'
 
 The **JOIN** operator creates a [property](Properties.md) that implements a [composition](Composition_JOIN_.md).
 
-**Syntax**
+### Syntax
 
     [JOIN] propertyId(expr1, ..., exprN)
      
@@ -26,7 +26,7 @@ The latter two options allow to use as the main property a property without a n
 
 Formally, the **JOIN** operator is also responsible for such constructions as **propertyID(a, b)**, i.e. just an existing property with the parameters passed to it. In such cases, when possible, the **JOIN** operator will not create a new anonymous property but return the property with the **propertyID**.** **
 
-**Parameters**
+### Parameters
 
 *propertyId*
 
@@ -44,9 +44,8 @@ A [context-independent](Property_operators.md) property operator that is used to
 
 An [expression](Expression.md) which is used to define the main property. Cannot be a single parameter.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

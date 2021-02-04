@@ -28,7 +28,7 @@ lsFusion startup parameters for server applications can be set in one of the fo
 
 Example conf/settings.properties file ([section 3](#Launchparameters-appp3)):
 
-**$FUSION\_DIR$/conf/settings.properties**
+### $FUSION\_DIR$/conf/settings.properties
 
     db.server=localhost
     db.name=lsfusion

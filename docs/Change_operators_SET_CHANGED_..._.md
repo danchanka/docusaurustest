@@ -6,9 +6,9 @@ title: 'Change operators (SET, CHANGED, ...)'
 
 
 
-**Language**
+### Language
 
 To declare a property using change operators, the following [syntax constructs](Change_operators.md) are used. 
 
-**Examples**
+### Examples
 

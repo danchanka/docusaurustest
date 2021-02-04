@@ -12,7 +12,7 @@ The system has the following operators for working with sessions:
 
 Note that the latter two operators create properties, not actions.
 
-**Nested local properties**
+### Nested local properties
 
 When the first three session management operators are executed, all local properties are reset to **NULL** . This is not always convenient. Besides, you may often need to pass data between different sessions or "life cycles" of the same session. To do that, you can mark specific local properties as *nested*. In this case:
 

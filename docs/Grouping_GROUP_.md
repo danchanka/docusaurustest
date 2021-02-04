@@ -13,9 +13,9 @@ In addition to the standard types of aggregate functions for grouping, there are
 -   **EQUAL **is a special case of the aggregation function **MAX** (or **MIN**), with the additional [constraint](Constraints.md) that the value of the operand of the aggregating function within each group must be the same. 
 -   **AGGR** and **NAGGR ** are a special case of **EQUAL**, but with an even more strict constraint: for each group there is no more than one object collection, the operand of the aggregating function is one of the objects, and the groups include all other objects. Aggregate function NAGGR only differs from AGGR in the fact that if it is used, no constraint is created (it is assumed that the constraint follows from the semantics of the properties of the operands and / or groupings themselves).
 
-**Language**
+### Language
 
 To declare a property that implements grouping, use the [**GROUP** operator](GROUP_operator.md).
 
-**Examples**
+### Examples
 

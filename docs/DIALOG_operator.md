@@ -4,7 +4,7 @@ title: 'DIALOG operator'
 
 The **DIALOG** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG_.md) in an interactive view in [dialog](36307331.html#Inaninteractiveview(SHOW,DIALOG)-dialog) mode. 
 
-**Syntax**
+### Syntax
 
     DIALOG name
     [OBJECTS objName1 [= expr1] [NULL] [inputOptions1], ..., objNameN [= exprN] [NULL] [inputOptionsN]]
@@ -31,11 +31,11 @@ When opening the list/edit form, the syntax is slightly different:
     NEWSESSION | NESTEDSESSION
     READONLY
 
-**Description**
+### Description
 
 The **DIALOG** operator creates an action that opens the specified form. When opening a form in the **OBJECTS** block you can [specify](Open-form_3014672.html#Openform-params) [initial values](Value-input_35520941.html#Valueinput-initial) for the [form objects](Form_structure.md) and also return the last current values to the specified parameters and execute the **DO** action which will process the received values in case the input has not been cancelled.
 
-**Parameters**
+### Parameters
 
 *name*
 
@@ -64,7 +64,7 @@ Names of form objects for which initial values are specified. [Simple IDs](IDs_1
 
 Specifies that **NULL** values can be passed. This option is automatically enabled if the object returns a value.
 
-***Input options***
+### *Input options*
 
 *INPUT*
 
@@ -98,7 +98,7 @@ A [context-dependent action operator](Action-operator_36307157.html#Actionoperat
 
 A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was cancelled. Parameters added to the input block (INPUT) cannot be used as parameters.
 
-***Additional options***
+### *Additional options*
 
 *windowType*
 
@@ -123,9 +123,8 @@ Keyword. Determines whether or not to show the "Cancel" system action (**System.
 
 Keyword. If specified, the form is opened in [read-only](36307331.html#Inaninteractiveview(SHOW,DIALOG)-extra) mode.
 
-**Examples**
+### Examples
 
-********************************
 
 
   

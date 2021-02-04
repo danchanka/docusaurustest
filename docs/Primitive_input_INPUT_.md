@@ -12,9 +12,9 @@ As with other value input operators, this operator allows to:
 
 This operator can only be used in property  [change event](Form-events_5636111.html#Formevents-property) handlers on a form.
 
-**Language**
+### Language
 
 The syntax of the primitive input operator is described by [the **INPUT** operator](INPUT_operator.md).
 
-**Examples**
+### Examples
 

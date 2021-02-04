@@ -4,15 +4,15 @@ title: 'Type conversion operator'
 
 The type conversion operator creates a [property](Properties.md) that performs [type conversion](Type_conversion.md).
 
-**Syntax**
+### Syntax
 
     typeName(expression) 
 
-**Description**
+### Description
 
 The operator creates a property that converts the value of a certain expression into a value of a specified [built-in class](Built-in_classes.md). If conversion is impossible, the value of the property will be **NULL**.
 
-**Parameters**
+### Parameters
 
 *typeName*
 
@@ -22,9 +22,8 @@ The name of the * *[built-in class](Built-in_classes.md) that the values will b
 
 The [expression](Expression.md) whose value will be converted into the value of the specified built-in class.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

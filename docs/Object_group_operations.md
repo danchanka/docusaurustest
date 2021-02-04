@@ -4,11 +4,11 @@ title: 'Object group operations'
 
 Object group operations include the following operators:
 
-**Actions**
+### Actions
 
 -   [Seek (SEEK)](Search_SEEK_.md)
 
-**Properties**
+### Properties
 
 -   [Filter (FILTER)](Filter_FILTER_.md)
 -   [Order (ORDER)](Order_ORDER_.md)

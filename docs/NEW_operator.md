@@ -4,11 +4,11 @@ title: 'NEW operator'
 
 The **NEW** operator creates an [action](Actions.md) that [creates objects](New_object_NEW_.md) of the specified [class](Classes.md).
 
-**Syntax**
+### Syntax
 
     NEW className [WHERE whereExpr] [TO propertyId(prm1, ..., prmN)]
 
-**Description**
+### Description
 
 The **NEW** operator creates an action which creates objects of the specified class and writes them as the returned values of certain [properties](Properties.md). This operator can add its local parameters when defining a condition in the WHERE block. These parameters correspond to the objects being iterated for which the object will be created and are not parameters of the created action. 
 
@@ -16,7 +16,7 @@ The **TO** block is used to define the [data property](Data_properties_DATA_.md)
 
 There is a special option with the same name (**NEW**) in the [**FOR** operator](FOR_operator.md) for creating objects, and it is recommended to use it when possible.
 
-**Parameters**
+### Parameters
 
 *className*
 
@@ -37,9 +37,8 @@ An [ID of the property](IDs_1573053.html#IDs-propertyid) to which value the crea
 
 A list of data property parameter names. You can use only the local parameters that were added in the **WHERE** block. The number of parameters in the list must be equal to the number of parameters of the data property. 
 
-**Examples**
+### Examples
 
-************************************************
 
 
   

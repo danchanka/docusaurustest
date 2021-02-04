@@ -4,7 +4,7 @@ title: 'EXPORT operator'
 
 The **EXPORT** operator: creates an [action](Actions.md) that exports [specified properties](Data_export_EXPORT_.md) to a file, or, in common case, that [opens a form](In_a_structured_view_EXPORT_IMPORT_.md) in a structured view. 
 
-**Syntax**
+### Syntax
 
     EXPORT [exportFormat] [TOP n] FROM [columnId1 =] propertyExpr1, ..., [columnIdN = ] propertyExprN [WHERE whereExpr] [ORDER orderExpr1 [DESC], ..., orderExprL [DESC]] [TO propertyId]
     EXPORT formName [OBJECTS objName1 = expr1, ..., objNameK = exprK] [exportFormat] [TOP n] [TO (propertyId | (groupId1 = propertyId1, ..., groupIdN = propertyIdM))]
@@ -31,9 +31,9 @@ If the property to which the data is exported is of class **FILE**, then the ext
 
 When exporting a form in an **OBJECTS** block, it is possible to add extra filters to check for the equality of the objects on the form with [the values passed](Open-form_3014672.html#Openform-params). These objects [will not participate](Structured-view_29884537.html#Structuredview-objects) in building the object group hierarchy.
 
-**Parameters**
+### Parameters
 
-***Source of export ***
+### *Source of export *
 
 *formName*
 
@@ -67,7 +67,7 @@ List of [expressions](Expression.md) by which the exported data is sorted. Only
 
 Keyword. Specifies reverse sort order. By default, ascending sort is used.
 
-***Export format***
+### *Export format*
 
 *ATTR*
 
@@ -99,7 +99,7 @@ charsetStr is a string literal that defines the encoding. 
 
 Exports only the first n records. [Integer literal](Literals_35521071.html#Literals-id-%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8B-intliteral).
 
-***Export destination***
+### *Export destination*
 
 *propertyId*
 
@@ -109,13 +109,12 @@ Exports only the first n records. [Integer literal](Literals_35521071.html#Lite
 
 Names of object groups from the exported form for which you want to export data. [Simple IDs](IDs_1573053.html#IDs-id). Used only for exporting forms to flat formats.
 
-**propertyIdM *, ..., *propertyIdM**
+### propertyIdM *, ..., *propertyIdM
 
 [Property IDs](IDs_1573053.html#IDs-propertyid) to which the generated files for specified object groups will be written. These properties must not have parameters and their value must be of file classes (**FILE**, **RAWFILE**, **JSONFILE**, etc.). Used only for exporting forms to flat formats. For the[empty group](Static-view_29884533.html#Staticview-empty) of objects, the name **root** is used. 
 
-**Examples**
+### Examples
 
-************************************
 
 
 

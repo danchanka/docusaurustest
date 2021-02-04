@@ -4,15 +4,15 @@ title: 'MULTI operator'
 
 The **MULTI** operator creates a [property](Properties.md) that implements [selection](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-single) of one of the values (polymorphic form).
 
-**Syntax**
+### Syntax
 
     MULTI expr1, ..., exprN [exclusionType]
 
-**Description**
+### Description
 
 The **MULTI** operator creates a property which value will be the value of one of the properties specified in the operator. The property selection condition is that the parameters match this property [signature](CLASS_operator.md). 
 
-**Parameters**
+### Parameters
 
 *expr1, ..., exprN* ** ** 
 
@@ -29,9 +29,8 @@ The **EXCLUSIVE** type indicates that the conditions for the property selectio
 
 The **EXCLUSIVE** type is used by default.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

@@ -4,7 +4,7 @@ title: 'Properties and actions block'
 
 The property and action [block of the FORM instruction](FORM_instruction.md) adds [properties and actions](Form-structure_1573069.html#Formstructure-properties) to the [form structure](Form_structure.md). 
 
-**Syntax**
+### Syntax
 
     PROPERTIES [(cparam1, ..., cparamN)] [formPropertyOptions] formPropertyDecl1, ..., formPropertyDeclM
 
@@ -46,7 +46,7 @@ Each *formPropertyOptions* specifies options for the property or action being ad
     EXTID extID
     IN propertyGroup
 
-**Description**
+### Description
 
 One **PROPERTIES** block adds properties and actions to the form structure. To add a property (action), specify its ID and the [form objects](Form-structure_1573069.html#Formstructure-objects) whose values will be passed to this property (action) as arguments. Sometimes it’s convenient to list these form objects for the entire **PROPERTIES** block. To do this, specify the block of *common parameters*. In this case, when adding a property (action), you only need to specify its ID, while the common parameters will be passed as arguments.
 
@@ -62,7 +62,7 @@ When adding a property (action) to the form structure, you may specify a set of 
 
 In all [expressions](Expression.md) and [context-dependent action operators](Action-operator_36307157.html#Actionoperator-contextdependent), you can use the names of the objects already declared on the form as parameters.
 
-**Parameters**
+### Parameters
 
 *cparam1, ..., cparamN*
 
@@ -112,7 +112,7 @@ List of parameters of the added properties or actions. Each parameter is specifi
 
 [Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) being added to the form structure
 
-***Options*** ***for the property or action***
+### *Options*** ***for the property or action*
 
 *changeType*
 
@@ -274,7 +274,6 @@ Specifying a [property/action group](Groups_of_properties_and_actions.md) which
 
 **propertyGroup* – *the property group name. [Composite ID](IDs_1573053.html#IDs-cid).
 
-**Examples**
+### Examples
 
-****************
 

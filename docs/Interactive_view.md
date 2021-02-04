@@ -4,7 +4,7 @@ title: 'Interactive view'
 
 A form opened in *interactive* mode is a graphical component with a certain [design](Form_design.md) in which the user can trigger various [events](Form_events.md) and thereby navigate through system objects, view and change [property](Properties.md) values, execute [actions](Actions.md), and so on. Developers can also use an [additional set of operators](Form_operators.md) with this view, making it possible to manage the open form.
 
-**Object views**
+### Object views
 
 In the interactive view, object groups can be displayed in a table. The rows in the table are object collections, and the columns are properties. The records displayed in the table and their order are determined by the current [filters](Form-structure_1573069.html#Formstructure-filters) and [orders](Form-structure_1573069.html#Formstructure-sort).
 
@@ -12,7 +12,7 @@ In the interactive view, object groups can be displayed in a table. The rows in
 
 When an object group is displayed in a table, the number of rows (object collections) displayed can either be determined automatically based on the height of the visible part of the table, or specified by the developer explicitly when creating the form.
 
-**Object trees**
+### Object trees
 
 The platform also allows to display multiple object groups in one table simultaneously. This happens similarly to the [object group hierarchy](Static-view_29884533.html#Staticview-hierarchy) in a static view, i.e. if we have two groups **A** and **B** then, in the "joined" table, the first object collection from **A** is displayed first, then all object collections from **B** (as filtered), then a second object collection from **A**, then again all the object collections from **B** and so on. In this case, it is highly desirable that the filters for **B** used all objects from **A, ** since otherwise combining these groups into a single tree doesn't make sense. Initially, when a form is opened in the table, only objects of the topmost object group are displayed, but at the same time, a special column is created on the left of the table, using which the user can open nodes on his own and thus view only objects of interest in the lower object groups. Another function of this created column is to demonstrate the nesting of nodes by tabulating the elements inside this column (this allows the user to better understand what level of the hierarchy he is currently at).
 
@@ -22,7 +22,7 @@ In the current platform implementation, hierarchical groups allow only trees to 
 
 The properties of different object groups in the tree are arranged in columns under each other, that is, the first column displays the first properties of each object group, the second column displays the second ones, and so on. The total number of tree columns is determined by the last group of objects on the tree (all "extra" properties of the upper groups are simply ignored).
 
-**Property views**
+### Property views
 
 Any property or action can be displayed on a form in one of the following *views*:
 
@@ -42,20 +42,20 @@ By default, the caption of each property on the form is the title of the propert
 
 In addition to the captions, you can define colors (both the background color and the text color) for each property view on a form, as well as a condition that needs to be met for the property to be displayed. Like the caption, each of these parameters is defined using some property.
 
-**Filter group**
+### Filter group
 
 In order to provide the user with an interface for choosing filters to apply, they can be combined into *filter groups*. For each of these groups, a special component will be created on the form: the user can use it to select one filter from the group as the current active filter. If several filters in one group are applied to different object groups, then the component will be displayed for the last of them.
 
 The developer can specify a name for each filter group which can be used to access it in the future (for example, in form design).
 
-**Custom filters/orders**
+### Custom filters/orders
 
 The user can change existing orders or add their own, as well as add their own filters using the corresponding interfaces:
 
 -   Orders – by double-clicking on the column heading.
 -   Filters – by using the corresponding button under the table for each object group. By default, the filter is set to the active property in the table, and filters it for equality to the entered value (for all types except case-insensitive string types, where the filter is set to include the entered string). If necessary, the developer can specify the default filtering type explicitly by using the corresponding option.
 
-**Default objects selection**
+### Default objects selection
 
 In the interactive form view, object group filters can change as a result of various user actions (for example, changing the upper objects of these filters, selecting filters in the filter group, etc.), after which the [current](Form-structure_1573069.html#Formstructure-currentObject) objects may no longer meet the conditions of the new filters. Also, when [a form is opened](Open_form.md), some objects may not be [passed](Open-form_3014672.html#Openform-params) or may be passed equal to **NULL**. In both of these cases, it is necessary to change the current objects, to some current *default objects. * The platform provides several options for selecting new current objects:
 
@@ -77,7 +77,7 @@ It is worth noting that the selection of objects by default is pretty the same a
 
 Search direction is determined by the object's default type (**PREV** here is equivalent to **FIRST**).
 
-**Object operators**
+### Object operators
 
 When adding properties to a form, you can use a predefined set of operators that implement the most common scenarios for working with objects instead of using specific properties (thus avoiding the need to create and name these properties outside the form each time):
 
@@ -92,13 +92,13 @@ You can also specify options for the last four operators (ignored for all other 
 -   [New Session](New_session_NEWSESSION_NESTEDSESSION_.md) (**NEWSESSION**) – in this case, the action added to the form will be executed in a new session. When opening forms in a new session, it is important to remember that changes made in the current session (form) will not be visible. Thus, this mechanism is only recommended if the form is opened from a form in which the user cannot change anything, or if the properties and actions of the two forms do not intersect in any way. Note that when the operator is used to create a new object (NEW) in a new session, the object is not only created but also edited (NEWEDIT) (otherwise, the session would immediately close and your changes would be lost).
 -   Nested Session (**NESTEDSESSION**) – the action will be executed in a new nested session. As with a new session, **NEW** is replaced by **NEWEDIT**.
 
-**Selection/editing forms**
+### Selection/editing forms
 
 For each form, you can specify that it is the default form for viewing/editing objects of a given class. In this case, this form will be opened when you call actions created using the operators for object operations (create/edit an object). The same form will be opened when the corresponding  [form selection](Open-form_3014672.html#Openform-form) option is used in the form opening operator.
 
 If list/edit form is not defined for a class, the platform will create one automatically. This form will consist of one object of the class, along with all properties matching the class and belonging to the **System.base** [property group](Groups_of_properties_and_actions.md). Also, actions of [creating](#Interactiveview-new), [editing](#Interactiveview-edit) and [deleting](#Interactiveview-delete) an object in a [new session](#Interactiveview-newsession) will be automatically added to the form, along with the [object value](#Interactiveview-value) property if there are no properties from the **System.id** property group corresponding to the class of the object (that is, no "ID" of the object has been added to the form).
 
-**Session owner**
+### Session owner
 
 Since a form is opened by default in the current session, it may not always be safe to apply/cancel changes to this session: for example, the changes made in other forms may accidentally be applied. To avoid such situations, the platform has the concept of a *session owner* – a form which is responsible for managing the life cycle of the session (for example, applying / canceling changes). By default, it is considered that a form is the session owner if the session did not have any other owner when the form was [opened](In_an_interactive_view_SHOW_DIALOG_.md).
 
@@ -108,7 +108,7 @@ If necessary, the developer can explicitly specify when opening a form that this
 
 Session ownership only affects the display / behavior of system actions for managing the life cycle of a form / session. When using the remaining actions, it is recommended that the developer should consider the risk of applying the "wrong" changes by himself (and, for example, use the mentioned above **System.sessionOwners** property).
 
-**System actions for form/session lifecycle management**
+### System actions for form/session lifecycle management
 
 The following system actions are automatically added to any form (their names are specified in brackets):
 
@@ -124,20 +124,20 @@ By default, these system actions have the following visibility conditions:
 
 If necessary, all these actions can be shown/hidden by removing the corresponding components from the [form design](Form_design.md) and/or using the corresponding options in the [open form](Open_form.md) operator.
 
-**Additional features**
+### Additional features
 
 You can specify an image file which will be displayed as the form's icon.
 
 Also, if necessary, you can enable *automatic update* mode for a form: the**System.formRefresh** action will then be executed for the form at a specified interval.
 
-**Language**
+### Language
 
 All of the above options, as well as defining the form structure, can be done using the [**FORM** instruction](FORM_instruction.md).
 
-**Open form**
+### Open form
 
 To display the form in the interactive view, the corresponding [open form](Open_form.md) operator is used in [interactive view](In_an_interactive_view_SHOW_DIALOG_.md).
 
-**Examples**
+### Examples
 
 

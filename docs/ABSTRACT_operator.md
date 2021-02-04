@@ -4,7 +4,7 @@ title: 'ABSTRACT operator'
 
 The **ABSTRACT** operator creates an [abstract property](Property_extension.md). 
 
-**Syntax**
+### Syntax
 
     ABSTRACT [type [exclusionType]] [CHECKED] returnClassName(argClassName1, ..., argClassNameN)
 
@@ -13,7 +13,7 @@ Where *exclusionType* is of two types:
     EXCLUSIVE
     OVERRIDE [FIRST | LAST]
 
-**Description**
+### Description
 
 The **ABSTRACT** operator creates an abstract property, the implementations of which can be defined later (for example, in other [modules](Modules.md) dependent on the module containing the **ABSTRACT** property). Implementations are added to the property using the [instruction + =](Instruction_+=.md). When calculating an abstract property, its *matching* implementation is selected and calculated. The selection of the matching implementation depends on the *selection conditions* that are defined when adding implementations, and on the **ABSTRACT** operator type.
 
@@ -25,7 +25,7 @@ The [type of mutual exclusion](Property-extension_1146897.html#Propertyextension
 
 The **ABSTRACT** operator cannot be used inside [expressions](Expression.md).
 
-**Parameters**
+### Parameters
 
 *type*
 
@@ -60,9 +60,8 @@ Class of the return value of the property. [Class ID](IDs_1573053.html#IDs-class
 
 List of class names of property arguments. Each name is defined by a class ID.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

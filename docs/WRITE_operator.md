@@ -4,11 +4,11 @@ title: 'WRITE operator'
 
 The **WRITE** operator creates an [action](Actions.md) that [writes a file](Write_file_WRITE_.md) from a property to an external resource. 
 
-**Syntax**
+### Syntax
 
     WRITE [CLIENT [DIALOG]] fileExpr TO urlExpr [APPEND]
 
-**Description**
+### Description
 
 The **WRITE**  operator creates an action that writes a file from the property to an external resource located at the specified URL.
 
@@ -22,7 +22,7 @@ It is assumed that the file extension is not specified in the URL (that is, the
 
 The Downloads folder in the user folder is considered to be the current folder on the client side.
 
-**Parameters**
+### Parameters
 
 *CLIENT*
 
@@ -37,7 +37,7 @@ Keyword. If specified, before writing the file a dialog will be shown in which t
 
 An [expression](Expression.md) whose value equals to the URL.
 
-***fileExpr***
+### *fileExpr*
 
 An [expression](Expression.md) whose value equals to the file that will be written to an external resource. 
 
@@ -48,10 +48,7 @@ Keyword. If specified, the file is re-read from  fileExpr and appended to the 
 **  
 **
 
-****Examples****
-
-************
+### **Examples**
 
 
-****  
-****
+

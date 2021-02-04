@@ -10,20 +10,19 @@ The action can also be executed in a new thread on behalf of a specified connect
 
 The delay, interval and connection in this statement are defined as certain [properties](Properties.md).
 
-**New thread pool**
+### New thread pool
 
 Sometimes the number of simultaneously running threads must be limited to a certain value (as a rule, this is done if the executed actions are not critical and the moment in time when they are completed is not so important). To implement this functionality, the platform has an operator for creating a *new thread pool*. This allows the operator to perform an action in such a way that all new threads generated inside this action come into this thread pool, which at the same time can include no more than a specified number of threads.
 
 The number of threads is defined as a property.
 
-**Language**
+### Language
 
 To declare an action that executes another action in a new thread, use the [**NEWTHREAD** operator](NEWTHREAD_operator.md). To perform an action in a new thread pool, use the [**NEWEXECUTOR** operator](NEWEXECUTOR_operator.md).
 
-**Examples**
+### Examples
 
 
-****************************************************
 
 
   

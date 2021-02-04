@@ -4,7 +4,7 @@ title: 'CANCEL operator'
 
 The **CANCEL **operator creates an [action](Actions.md) that [cancels changes](Cancel_changes_CANCEL_.md) in the current session.
 
-**Syntax**
+### Syntax
 
     CANCEL [nestedBlock]
 
@@ -13,11 +13,11 @@ where *nestedBlock* has one of two possible syntaxes:
     NESTED LOCAL
     NESTED (propertyId1, ..., propertyIdN)
 
-**Description**
+### Description
 
 The **CANCEL** operator creates an action that cancels changes in the current session. By specifying the keyword **NESTED** you can specify [local properties](688168.html#Dataproperties(DATA)-local) whose changes are not dropped when cancelling the changes. 
 
-**Parameters**
+### Parameters
 
 *LOCAL*
 
@@ -27,9 +27,8 @@ Keyword. If specified, all local properties preserve their changes after the **C
 
 List of local properties. Each list element is a [property ID](IDs_1573053.html#IDs-propertyid). The local properties specified in the list will preserve their changes after the operator is executed.
 
-**Examples**
+### Examples
 
-********************
 
 
   

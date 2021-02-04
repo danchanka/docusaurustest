@@ -4,15 +4,15 @@ title: 'MULTI operator (action)'
 
 The **MULTI** operator creates an [action](Actions.md) that implements [branching](5275770.html#Branching(CASE,IF,MULTI)-poly) (polymorphic form).
 
-**Syntax**
+### Syntax
 
      MULTI [exclusionType] action1, ..., actionN 
 
-**Description**
+### Description
 
 The **MULTI** operator creates an action that executes one of the actions passed to it depending on whether the selection conditions are met. The property selection condition is that the parameters match this action [signature](CLASS_operator.md). 
 
-**Parameters**
+### Parameters
 
 *exclusionType*
 
@@ -29,9 +29,8 @@ The **EXCLUSIVE** type is used by default.
 
 A list of [context dependent action operators](Action-operator_36307157.html#Actionoperator-contextdependent) which define the actions from which the selection is made.
 
-**Example**
+### Example
 
-************************************************
 
 
   

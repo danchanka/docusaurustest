@@ -4,15 +4,15 @@ title: 'GROUP instruction'
 
 The **GROUP** instruction creates a new [property group](Groups_of_properties_and_actions.md).
 
-**Syntax**
+### Syntax
 
     GROUP name [caption] [EXTID extID] [: parentName];
 
-**Description**
+### Description
 
 The  **GROUP **instruction declares a new property group and adds it to the current [module](Modules.md).  
 
-**Parameters**
+### Parameters
 
 *name *
 
@@ -34,7 +34,7 @@ String literal.
 
 Name of the parent group. [Сomposite ID](IDs_1573053.html#IDs-cid). If the name of the parent group is not defined, the **System.private** group becomes the parent.  
 
-**Examples**
+### Examples
 
 
 **  

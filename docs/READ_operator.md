@@ -4,11 +4,11 @@ title: 'READ operator'
 
 The **READ** operator creates an [action](Actions.md) that [reads a file](Read_file_READ_.md) to a [property](Properties.md) from an external resource.** **
 
-**Syntax**
+### Syntax
 
     READ [CLIENT [DIALOG]] urlExpr [TO propertyId]
 
-**Description**
+### Description
 
 The **READ** operator creates an action that reads a file from an external resource at the URL specified, and then writes the result file to the specified property.
 
@@ -19,7 +19,7 @@ The following URL types are supported: 
 
 If the value of the property to which the file is written belongs to the **FILE** class, the file extension from the URL is also written to its value along with the file.
 
-**Parameters**
+### Parameters
 
 *CLIENT*
 
@@ -37,9 +37,8 @@ An [expression](Expression.md) whose value is the URL from which to read. The va
 
 The [ID of the property](IDs_1573053.html#IDs-propertyid) to which read data should be written. This property must not have parameters and its value must be of a file class (**FILE**, **RAWFILE**, **JSONFILE**, etc.). If this property is not specified, the **System.exportFile** property is used by default.
 
-**Examples**
+### Examples
 
-************************************************************
 
 
   

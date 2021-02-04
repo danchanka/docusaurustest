@@ -8,9 +8,9 @@ Only [materialized](Materializations.md) properties can be indexed.
 
 An index can also be built on several properties at once (this is effective if, for example, you need to filter by several properties simultaneously). In addition, property parameters can be included in a composite index of this kind. The built index will be named as following: **<table ID\>\_<property/parameter name 1\>\_...\_<property/parameter name N\>**. If the specified properties are stored in different [tables](Tables.md), then the corresponding error will be thrown when you try to build the index.
 
-**Language**
+### Language
 
 To create indexes, you must use the [**INDEX** instruction](INDEX_instruction.md) or the [**INDEXED** option](Property-options_7798786.html#Propertyoptions-indexed) in property options.
 
-**Examples**
+### Examples
 

@@ -9,11 +9,10 @@ The platform currently supports the following comparison operators:
 
 If one of the operands is **NULL**, all operators will return **NULL** as a result.
 
-**Language**
+### Language
 
 Description of [comparison operators](Comparison_operators.md).
 
-**Examples**
+### Examples
 
-****
 

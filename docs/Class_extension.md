@@ -10,9 +10,9 @@ Class extension, together with the [property](Property_extension.md) and [action
 -   Modify the functionality of an existing module without making any changes to it.
 -   Declare classes in the [metacode](Metaprogramming.md) by defining the inheritance of a class outside its bounds.
 
-**Language**
+### Language
 
 To extend a class, use the [**EXTEND CLASS** instruction](EXTEND_CLASS_instruction.md).
 
-**Examples**
+### Examples
 

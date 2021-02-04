@@ -9,7 +9,7 @@ The **AGGR** operator creates an [aggregation](Aggregations.md).
 
     AGGR aggrClass WHERE aggrExpr
 
-****Description****
+### **Description**
 
 In addition to the property that is the result of this operator and contains the value of the aggregated object, for each parameter the **AGGR** operator also creates a data property with one parameter, whose [class](User_classes.md) is equal to the class of the aggregated object. The value class and name of this property are equal to the class and name of the parameter for which this property is created. Accordingly, when creating an aggregated object, the value of the parameter for which the aggregated object is created is automatically written to this property.
 
@@ -34,7 +34,7 @@ but it is a more declarative and readable instruction, and therefore using it is
 
 Unlike other context-dependent operators, the **AGGR** operator cannot be used in [expressions](Expression.md) inside other operators (in this sense it is more like context-independent operators), or in the [**JOIN** operator](JOIN_operator.md) (inside \[= \])
 
-**Parameters**
+### Parameters
 
 *aggrClass*
 
@@ -44,7 +44,7 @@ The value class of the aggregated object.
 
 An [expression](Expression.md) whose value defines an aggregated property.
 
-**Examples**
+### Examples
 
 
   

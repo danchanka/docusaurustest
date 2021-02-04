@@ -4,17 +4,17 @@ title: 'TABLE instruction'
 
 The **TABLE** instruction creates an new [table](Tables.md).
 
-**Syntax**
+### Syntax
 
     TABLE name(className1, ..., classNameN) [FULL | NODEFAULT];
 
-**Description**
+### Description
 
 The **TABLE ** instruction declares a new table and adds it to the current [module](Modules.md). 
 
   
 
-**Parameters**
+### Parameters
 
 *name*
 
@@ -32,9 +32,8 @@ The keyword that, when specified, marks the table as [full](Tables_688175.html#T
 
 The keyword that, when specified, excludes the table from the process of automatic [property table determining](Tables_688175.html#Tables-property).
 
-**Examples**
+### Examples
 
-********************
 
 
   

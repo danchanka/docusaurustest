@@ -4,15 +4,15 @@ title: 'CONCAT operator'
 
 The **CONCAT** operator creates a [property](Properties.md) that implements a string [concatenation](String_operators_+_CONCAT_SUBSTRING_.md).
 
-**Syntax**
+### Syntax
 
     CONCAT separatorString, concatExpr1, ..., concatExprN
 
-**Description**
+### Description
 
 The **CONCAT** operator creates a property that concatenates values using the "separatorString" separator. Here, NULL values are skipped and the separator is inserted only between non-NULL values.
 
-**Parameters**
+### Parameters
 
 *separatorString*
 
@@ -22,9 +22,8 @@ The **CONCAT** operator creates a property that concatenates values using the 
 
 [Expressions](Expression.md) whose values are to be concatenated.
 
-**Examples**
+### Examples
 
-****
 
 
 **  

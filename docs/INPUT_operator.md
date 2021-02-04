@@ -4,7 +4,7 @@ title: 'INPUT operator'
 
 The **INPUT** operator creates an [action](Actions.md) that [inputs a primitive](Primitive_input_INPUT_.md).
 
-**Syntax**
+### Syntax
 
     INPUT inputOptions 
     [CHANGE [= changeExpr]]
@@ -15,11 +15,11 @@ The **INPUT** operator creates an [action](Actions.md) that [inputs a primiti
     [alias =] builtInClassName
     [alias] = expr
 
-**Description**
+### Description
 
 The **INPUT** operator creates an action which allows to request the value of one of the [built-in classes](Built-in_classes.md) from the user.
 
-**Parameters**
+### Parameters
 
 *builtInClassName*
 
@@ -49,9 +49,8 @@ A [context-dependent action operator](Action-operator_36307157.html#Actionoperat
 
 A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was cancelled. The input result parameter cannot be used as parameters.
 
-**Examples**
+### Examples
 
-********************************************
 
 
   

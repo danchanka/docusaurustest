@@ -4,11 +4,11 @@ title: 'Open form'
 
 The *open form* operator creates an [action](Actions.md) that opens the specified [form](Forms.md).
 
-**Form selection**
+### Form selection
 
 In addition to explicitly specifying the form to be opened, the platform also allows to open the [list/edit](Interactive-view_1573071.html#Interactiveview-edtClass) form for objects of the specified class. In this case, you only need to specify the corresponding option and specify the custom class whose list/edit form needs to be opened instead of a form.
 
-**View type**
+### View type
 
 When a form is opened, the [view](Form_views.md) type which will be used to display the form needs to be specified:
 
@@ -17,7 +17,7 @@ When a form is opened, the [view](Form_views.md) type which will be used to dis
     -   [In a print view (PRINT)](In_a_print_view_PRINT_.md)
     -   [In a structured view (EXPORT, IMPORT)](In_a_structured_view_EXPORT_IMPORT_.md)
 
-**Passing objects**
+### Passing objects
 
 When you open a form, you can pass a value for each of its objects from the calling context, which will be used as follows depending on the view:
 

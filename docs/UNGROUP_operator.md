@@ -4,7 +4,7 @@ title: 'UNGROUP operator'
 
 The **UNGROUP** operator creates a [property](Properties.md) that implements [distribution](Distribution_UNGROUP_.md) in an extended form.
 
-**Syntax**
+### Syntax
 
     UNGROUP 
     propertyId [BY groupExpr1, ..., groupExprM] 
@@ -29,7 +29,7 @@ The **ORDER **block defines the order in which distribution will be done. The 
 
 The **WHERE **block defines a condition under which an object collection will participate in distribution operation.
 
-**Parameters**
+### Parameters
 
 **  
 **
@@ -90,4 +90,4 @@ Filtering expression. Only object groups for which the value of the filtering ex
 
 At the moment, the support of the **UNGROUP** operator is not implemented.
 
-**Examples**
+### Examples

@@ -4,12 +4,12 @@ title: 'ACTION instruction'
 
 The **ACTION** instruction creates an [action](Actions.md).
 
-**Syntax**
+### Syntax
 
     [ACTION] name [caption] [(param1, ..., paramN)] { operator } [options];
     [ACTION] name [caption] [(param1, ..., paramN)] contextIndependentOperator [options];
 
-**Description**
+### Description
 
 The **ACTION **instruction declares a new action and adds it to the current [module](Modules.md).
 
@@ -17,7 +17,7 @@ The instruction has two forms: the first form creates an action using a [contex
 
 Also, when declaring an action, a set of its options can be specified.   
 
-**Parameters**
+### Parameters
 
 *name *
 
@@ -45,5 +45,5 @@ The [context-independent](Action-operator_36307157.html#Actionoperator-contextin
 
 [Action options](Action_options.md) . 
 
-**Examples**
+### Examples
 

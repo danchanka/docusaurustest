@@ -10,10 +10,10 @@ The custom class whose objects will be created by this operator must be concrete
 
 You can also create objects using the corresponding [option](5275768.html#Loop(FOR)-addobject) in the [loop](Loop_FOR_.md) operator.
 
-**Language**
+### Language
 
 To declare an action that implements objects creation, use the [**NEW** operator](NEW_operator.md). The **NEW** option in the [**FOR** operator](FOR_operator.md) is also used to implement similar functionality.
 
-**Examples**
+### Examples
 
 

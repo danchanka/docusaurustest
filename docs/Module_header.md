@@ -4,14 +4,14 @@ title: 'Module header'
 
 Each [module](Modules.md) begins with a *header.*
 
-**Syntax**
+### Syntax
 
     MODULE name;
     [REQUIRE moduleName1, ..., moduleNameN;]
     [PRIORITY namespaceName1, ..., namespaceNameM;]
     [NAMESPACE namespaceName;]
 
-**Description**
+### Description
 
 The module header can consist of four special instructions, in the following order:
 
@@ -26,7 +26,7 @@ The **NAMESPACE** instruction defines the module's namespace.  
 **  
 **
 
-**Parameters**
+### Parameters
 
 *name*
 

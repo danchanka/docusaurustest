@@ -12,11 +12,11 @@ Static objects of [built-in classes](Built-in_classes.md) are numbers, strings, 
 
 Static objects can be used to create a limited set of objects of a certain class. Such a set can be used as an enumerated data type to provide a choice from a limited set of values. 
 
-**Language**
+### Language
 
 Static objects of custom classes are defined in the [CLASS **instruction**](CLASS_instruction.md) in a block enclosed in braces.
 
-**Examples**
+### Examples
 
 
 **  

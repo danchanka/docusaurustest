@@ -6,13 +6,13 @@ The *custom formula* operator allows you to create a [property](Properties.md) t
 
 Using this operator is recommended only if the task cannot be accomplished using other operators, and only if it is known for certain which specific SQL servers can be used, or if the syntax constructs used comply with one of the latest SQL standards.
 
-**Determining the result class**
+### Determining the result class
 
 By default, the result class of the custom operator is a [common ancestor](Built-in-classes_2031657.html#Built-inclasses-commonparentclass) of all its operands. If necessary, the developer can specify this class explicitly.
 
-**Language**
+### Language
 
 To declare a property using a custom formula, use the [**FORMULA** operator](FORMULA_operator.md).
 
-**Examples**
+### Examples
 

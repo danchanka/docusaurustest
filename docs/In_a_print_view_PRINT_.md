@@ -4,13 +4,13 @@ title: 'In a print view (PRINT)'
 
 This operator creates an action that [opens a form](Open_form.md) in the [print](Print_view.md) view.
 
-**Format**
+### Format
 
 In this operator, you can specify the format that form data will be converted to before being shown to the user:  **DOC**, **DOCX**, **XLS**, **XLSX**, **PDF, HTML, RTF**.
 
 By default, if the format is specified in the print view, when the client receives a file in a specified format, it attempts to open this file using standard OS means (that is, using the program associated with the specified format). If necessary, however, in addition to the format, you can specify a property that will contain a file with the generated report. In this case, no data will be sent to the client and all data processing will be done exclusively on the server.
 
-**Interactive print view**
+### Interactive print view
 
 Apart from the export in a specified format, the print view allows to display information to the user in the following *interactive* modes:
 
@@ -22,9 +22,9 @@ Similarly to the [interactive view](In_an_interactive_view_SHOW_DIALOG_.md), th
 
 Сurrent implementation: in the **MESSAGE** mode, the form is always shown as a window (the "asynchronous window" option is not supported in this case); in the asynchronous **PREVIEW** mode the form is always shown as a tab; in the synchronous **PREVIEW** mode - as a window. The **NOPREVIEW** mode is always asynchronous and the form location in it does not make sense (since no forms are shown to the user directly)
 
-**Language**
+### Language
 
 To open the form in the print view, [**PRINT** operator](PRINT_operator.md) is used.
 
-**Examples**
+### Examples
 

@@ -8,13 +8,13 @@ By default, object collections are iterated in arbitrary order. However, the dev
 
 As for other [set operations](Set_operations.md), the condition must be such that the operation is [correct](Set-operations_4391029.html#Setoperations-correct).
 
-**Adding an object**
+### Adding an object
 
 This operator also allows you to create an object of a specified concrete [custom class](User_classes.md) for each iterated object collection. This object can then be used in the main action as a parameter.
 
-**Language**
+### Language
 
 The syntax of the loop operator is described by [the**FOR** operator](FOR_operator.md).
 
-**Examples**
+### Examples
 

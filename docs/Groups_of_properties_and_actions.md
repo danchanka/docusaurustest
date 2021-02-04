@@ -8,7 +8,7 @@ All [p](Properties.md)roperties in the system are divided into *property groups.
 
 Each property or action belongs directly to exactly one group, and also belongs to all the ancestors of that group. So, for example, all properties and actions in the system belong to the **System.root** group.
 
-**Builtin property groups**
+### Builtin property groups
 
 In addition to **root** in the **System** module, the following groups of properties and actions are created automatically:
 
@@ -20,7 +20,7 @@ In addition to **root** in the **System** module, the following groups of prop
 
 All these groups (including **root**) are not used in form display mechanisms (i.e. containers in the [default form design](Form-design_29884443.html#Formdesign-defaultDesign) and elements of the [hierarchical](Structured-view_29884537.html#Structuredview-hierarchy) import / export hierarchy are not created for them).
 
-**Property groups usage**
+### Property groups usage
 
 Property groups are currently used in the following mechanisms:
 
@@ -33,7 +33,7 @@ Property groups are currently used in the following mechanisms:
 -   In the security policy:
     -   You can set a security policy for a group as a whole (and not for each property individually).
 
-**Language**
+### Language
 
 To add a new property/action group to the system, use the [**GROUP** instruction](GROUP_instruction.md).
 

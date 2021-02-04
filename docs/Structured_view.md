@@ -20,7 +20,7 @@ When building an object group [hierarchy](Static-view_29884533.html#Staticview-h
 
 If the property [display group](Form-structure_1573069.html#Formstructure-drawgroup) is specified explicitly in a structured view, then this group should not be earlier than the default one (if the specified group appears earlier, then the default display group will be used anyway).
 
-**Export/import name**
+### Export/import name
 
 The name of the property on the form that will be used during export/import can be specified explicitly using the corresponding option (**EXTID**). Unless this is done, the name of the property on the form will be used as the name of the export/import. If it is also not specified, then the name of the property itself will be the name of the export/import (without adding parameter objects to its end, as it is done in the other mechanisms - [reports](Print_view.md), customizing interactive view [design](Form_design.md), etc.). The export/import names of object groups and property groups are determined similarly.
 
@@ -28,7 +28,7 @@ Because of the grammar nature, the option for specifying import/export name of t
 
 Unlike property names on the form, property export/import names (**EXTID**) of different properties can be equal if these properties are located in different nodes of the hierarchy (i.e., different groups of objects/properties). The same applies to export/import names of object groups and property groups.
 
-**Hierarchical view**
+### Hierarchical view
 
 Before directly proceeding with the form export/import, the platform builds a hierarchy of properties, groups of objects/properties as follows:
 
@@ -104,7 +104,7 @@ When importing from XML, the name of the uppermost tag (in the rule) is ignored 
 
 Properties with **NULL** values, as well as property groups that do not have any tags inside as a result of export, are not exported (ignored).
 
-**Predefined value**
+### Predefined value
 
 When importing JSON, if for an object group an array ( \[ \] ) of values contains not an object ( { } ), but a specific value (for example, a number or a string), then this value is automatically converted to an object { "**value**" : value }. A similar conversion is performed when exporting an object group to JSON: if the object contains exactly one **value** key (i.e., it has the form { "**value**" : value}), then instead of it, the value for this **value** key is substituted to the resulting JSON. In addition to "ordinary" object groups, the same conversions are also performed for the [empty](Static-view_29884533.html#Staticview-empty) root object group, i.e., for example JSON \["ab","vv"\] is processed as JSON { "**value**" : \["ab","vv"\] }.
 
@@ -112,7 +112,7 @@ When importing/exporting XML, if the property is named **value**, then the valu
 
 When importing XML, if the object group is named **value**, then all tags are read (with any name). 
 
-**XML namespaces**
+### XML namespaces
 
 Unlike other formats, XML supports a concept of namespaces for tags and attributes.
 
@@ -128,7 +128,7 @@ If a namespace must be declared in a tag , but the tag itself should not belong
 
 Working with namespaces is similar when importing properties, as well as when working with object groups/property groups.
 
-**Flat view**
+### Flat view
 
 Each file for an object group in flat view is a table in which:
 
@@ -139,15 +139,15 @@ In CSV format (when there is no first header line), the columns are named simila
 
 If a column with the form property name is not found when importing the form, then the column next to the column of the previous property in the list of form properties is selected for import (in this case, the **parent** column is considered the first).
 
-**Language**
+### Language
 
 All of the above options, as well as defining the form structure, can be done using the [**FORM** instruction](FORM_instruction.md).
 
-**Open form**
+### Open form
 
 To display the form in structured view, the corresponding [open form](Open_form.md) in a [structured view&nbsp;](In_a_structured_view_EXPORT_IMPORT_.md)operator is used.
 
-**Examples**
+### Examples
 
 
 

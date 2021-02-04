@@ -4,13 +4,13 @@ title: 'SEEK operator'
 
 The **SEEK** operator creates an [action](Actions.md) that [seeks specified objects](Search_SEEK_.md) on a [form](Forms.md).
 
-**Syntax**
+### Syntax
 
     SEEK [FIRST | LAST] formObjectId = expr
     SEEK [FIRST | LAST] formGroupObjectId [OBJECTS formObject1 = expr1, ..., formObjectK = exprk]
     SEEK NULL formGroupObjectId
 
-**Description**
+### Description
 
 The **SEEK** operator creates an action that changes the current objects on a form. There are two forms of this operator. In the first form the required value of a single object on a form is specified (this object may be a part of an object group), in the second form specific object group and the required values for certain objects of this group are specified (these objects shall be called *seek objects*)
 
@@ -20,7 +20,7 @@ If the required object collection is not found for the search objects, the curre
 
 Also, in the second form of the operator (when a group of objects is specified) it is possible to reset all objects of the specified group to **NULL**. In this case, the seek direction is not applicable/not specified.
 
-**Parameters**
+### Parameters
 
 *FIRST*
 
@@ -63,7 +63,7 @@ List of form object names. May contain only a part of the objects of the specifi
 
 A list of expressions whose values are the required values of the corresponding objects in the specified group of objects.
 
-**Examples**
+### Examples
 
 
 **  

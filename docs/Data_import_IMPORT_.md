@@ -11,7 +11,7 @@ Rows, in turn, are mapped during import to objects of specified classes (let's c
 
 You can also define an import *condition*: this is a property in which the [default value](Built-in_classes.md) of the property value class is written for each row (as opposed to import destination in which column values are written).
 
-**General case**
+### General case
 
 It should be noted that data import is a special case of (syntactic sugar for) [form import](57737720.html#Inastructuredview(EXPORT,IMPORT)-importForm), in which the imported form is created automatically and consists of:
 
@@ -21,11 +21,10 @@ It should be noted that data import is a special case of (syntactic sugar for) 
 
 Accordingly, the behavior of the data import operator (for example, determining the names of the resulting columns / keys, [processing of **value**](Structured-view_29884537.html#Structuredview-value), etc.) is completely determined by the behavior of the form import operator (as if the above form were passed to it as a parameter).
 
-**Language**
+### Language
 
 To declare an action that imports data, use the [**IMPORT** operator](IMPORT_operator.md).
 
-**Examples**
+### Examples
 
-****************************************
 

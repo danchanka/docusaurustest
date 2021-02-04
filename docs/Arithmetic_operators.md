@@ -4,7 +4,7 @@ title: 'Arithmetic operators'
 
 **+**, **-**, **\***, **/**, **(+)**, **(-)** operators create [properties](Properties.md) responsible for [arithmetic operations](Arithmetic_operators_+_-_..._.md).
 
-**Syntax**
+### Syntax
 
     expression1 + expression2  
     expression1 - expression2  
@@ -14,13 +14,13 @@ title: 'Arithmetic operators'
     expression1 (+) expression2  
     expression1 (-) expression2  
 
-**Parameters**
+### Parameters
 
 *expression1, expression2*
 
 [Expressions](Expression.md) whose values will be arguments for arithmetic operators.
 
-**Examples**
+### Examples
 
 
 **  
