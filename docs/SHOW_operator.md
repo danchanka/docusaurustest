@@ -76,7 +76,7 @@ Method of [the form layout](36307331.html#Inaninteractiveview(SHOW,DIALOG)-locat
 
 *MANAGESESSION* | *NOMANAGESESSION*
 
-Keyword. Determines whether or not the created form [is considered to be the owner of the session](Interactive-view_1573071.html#Interactiveview-id-Интерактивноепредставление-session) (if so, in interactive mode the corresponding buttons for managing the session will be shown on the form). By default, the platform tries to determine which mode to use [automatically](Interactive-view_1573071.html#Interactiveview-sysactions) depending on the context.
+Keyword. Determines whether or not the created form [is considered to be the owner of the session](Interactive-view_1573071.html#Interactiveview-owner) (if so, in interactive mode the corresponding buttons for managing the session will be shown on the form). By default, the platform tries to determine which mode to use [automatically](Interactive-view_1573071.html#Interactiveview-sysactions) depending on the context.
 
 *CANCEL* | *NOCANCEL*
 

@@ -58,7 +58,7 @@ An expression whose value determines the password that sets the read-only mode f
 
 *propertyId*
 
-[Property ID](IDs_1573053.html#IDs-id-Синтаксическиеэлементы-propertyid) to which the generated file will be written. The property must not have parameters. If a property is not specified, the generated file is sent to the client and opened by the operating system
+[Property ID](IDs_1573053.html#IDs-propertyid) to which the generated file will be written. The property must not have parameters. If a property is not specified, the generated file is sent to the client and opened by the operating system
 
 *PREVIEW*
 

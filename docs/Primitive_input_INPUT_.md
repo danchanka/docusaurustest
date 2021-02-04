@@ -6,9 +6,9 @@ The  *primitive input *operator creates an [action](Actions.md) that requests
 
 As with other value input operators, this operator allows to:
 
--   specify [initial object values](Value-input_35520941.html#Valueinput-id-Вводзначения-initial)
+-   specify [initial object values](Value-input_35520941.html#Valueinput-initial)
 -   specify [main and alternative](Value-input_35520941.html#Valueinput-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled).
--   [change](Value-input_35520941.html#Valueinput-id-Вводзначения-initial) a specified property
+-   [change](Value-input_35520941.html#Valueinput-initial) a specified property
 
 This operator can only be used in property  [change event](Form-events_5636111.html#Formevents-property) handlers on a form.
 

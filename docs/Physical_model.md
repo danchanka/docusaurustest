@@ -2,7 +2,7 @@
 title: 'Physical model'
 ---
 
-The physical model consists of two parts: 
+The physical model consists of three parts: 
 
 [Development](Development.md)
 
@@ -21,4 +21,4 @@ Includes everything related to operations on an already working system.
 **  
 **
 
-<img src="download/temp/svgout6647412718165685996.png" width="751" height="341" />
+<img src="download/temp/svgout6356290897837953232.png" width="751" height="341" />

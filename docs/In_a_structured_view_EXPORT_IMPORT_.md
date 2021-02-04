@@ -18,7 +18,7 @@ Since the import operator is essentially an "input operator", the following cons
 
 -   All form objects must belong to  numeric or[concrete](User-classes_2228341.html#Userclasses-abstract) [user](User_classes.md) classes. Object groups must consist of exactly one object (this constraint is caused by the fact that all the used formats are essentially lists — that is, mappings of numbers to values).
 
--   Properties and [filters](Form-structure_1573069.html#Formstructure-filters) on the form should be  [changeable](Property_сhange_CHANGE_.md) by a given value (that is, as a rule, be [primary](Data_properties_DATA_.md)). Before importing, any existing changes to the imported properties in the current session are canceled.
+-   Properties and [filters](Form-structure_1573069.html#Formstructure-filters) on the form should be  [changeable](Property_change_CHANGE_.md) by a given value (that is, as a rule, be [primary](Data_properties_DATA_.md)). Before importing, any existing changes to the imported properties in the current session are canceled.
 
 During import, filters change to the default values of value classes of these filters.
 

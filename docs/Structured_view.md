@@ -76,7 +76,7 @@ After the hierarchy is built, the form is exported/imported recursively accordin
 *XML*:
 
     XML result ::= 
-        <form name> XML with properties, groups of properties/objects without parents </имя формы>
+        <form name> XML with properties, groups of properties/objects without parents </form name>
 
     XML with properties, groups of properties/objects ::= 
         XML of the property 1 | XML of the property group 1 | XML of the object group 1
@@ -85,20 +85,20 @@ After the hierarchy is built, the form is exported/imported recursively accordin
         XML of the property M | XML of the property group M | XML of the object group M
 
     XML of the property ::= 
-        <property name on the form> property value </имя свойства на форме>
+        <property name on the form> property value </property name on the form>
 
     XML of the property group ::=
-        <property group name> XML with child properties, groups of properties/objects </имя группы свойств>
+        <property group name> XML with child properties, groups of properties/objects </property group name>
 
     XML of the object group ::=
-        <object group name> XML with child properties, groups of properties/objects 1 </имя группы объектов>
-        <object group name> XML with child properties, groups of properties/objects 2 </имя группы объектов>
+        <object group name> XML with child properties, groups of properties/objects 1 </property group name>
+        <object group name> XML with child properties, groups of properties/objects 2 </property group name>
         ...
-        <object group name> XML with child properties, groups of properties/objects N </имя группы объектов>
+        <object group name> XML with child properties, groups of properties/objects N </property group name>
 
 When exporting/importing to XML, the special ATTR option can be specified for a property on the form. Thus, when exporting/importing that property, its value will be stored not in a separate tag, but in the attribute of the parent tag:
 
-    <родительский тег ... имя свойства на форме = "значение свойства" ...>
+    <parent tag ... property name on the form = "property value" ...>
 
 When importing from XML, the name of the uppermost tag (in the rule) is ignored (according to the XML specification, there should be only one such tag).
 

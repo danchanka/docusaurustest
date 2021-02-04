@@ -21,7 +21,7 @@ Also, when declaring an action, a set of its options can be specified.   
 
 *name *
 
-Action name. [Simple ID](IDs_1573053.html#IDs-id-Синтаксическиеэлементы-id).
+Action name. [Simple ID](IDs_1573053.html#IDs-id).
 
 *caption*
 
@@ -35,7 +35,7 @@ If parameters are not defined explicitly, they will be automatically calculated 
 
 *operator*
 
-A [context-dependent](Action-operator_36307157.html#Actionoperator-id-Операторы-действия-contextdependent) action operator describing and creating an action. You can use the parameters defined in this instruction (if any) as operator parameters.
+A [context-dependent](Action-operator_36307157.html#Actionoperator-contextdependent) action operator describing and creating an action. You can use the parameters defined in this instruction (if any) as operator parameters.
 
 *contextIndependentOperator*
 

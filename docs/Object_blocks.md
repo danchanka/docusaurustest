@@ -66,7 +66,7 @@ Specifying an [action](Actions.md) that will be called when the current object v
 
 *param1, ..., paramM*
 
-A list of object names on the form that will be used as action parameters. The number of these objects must be equal to the number of action parameters. The name of the object is defined with a [simple ID](IDs_1573053.html#IDs-id-Идентификаторы-id).
+A list of object names on the form that will be used as action parameters. The number of these objects must be equal to the number of action parameters. The name of the object is defined with a [simple ID](IDs_1573053.html#IDs-id).
 
 *actionOperator*
 

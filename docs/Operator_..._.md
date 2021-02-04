@@ -37,7 +37,7 @@ A list of names of the local properties being created. The names are defined by
 
 *returnClass*
 
-The [class ID](IDs_1573053.html#IDs-id-Синтаксическиеэлементы-classid) of the returned value of the local property. 
+The [class ID](IDs_1573053.html#IDs-classid) of the returned value of the local property. 
 
 *argumentClass1, ..., argumentClassN*
 

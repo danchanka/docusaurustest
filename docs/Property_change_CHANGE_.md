@@ -1,5 +1,5 @@
 ---
-title: 'Property сhange (CHANGE)'
+title: 'Property change (CHANGE)'
 ---
 
 The *property change* operator allows you to change the values of one property (*write*) to the value of another property (*read*) for all object collections for which the value of a third property (*condition*) is not **NULL**. The condition can be omitted (in which case it is considered to be equal to **TRUE**).

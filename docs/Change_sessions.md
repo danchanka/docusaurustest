@@ -4,7 +4,7 @@ title: 'Change sessions'
 
 [Actions](Actions.md) can change the state of the system in which they are executed. It is not always desirable to write these changes directly to the database, both from the perspective of integrity and from the perspective of the ergonomics of the system. The platform therefore allows to accumulate these changes locally in *change sessions.* 
 
-Changes in a session may be changes in [data](Data_properties_DATA_.md) properties, including local ones, as well as changes in [classes](User_classes.md) of objects. The former are done by actions created using the [property change operator](Property_сhange_CHANGE_.md), the latter using the [add](New_object_NEW_.md)/[change](Class_change_CHANGECLASS_DELETE_.md) object class operators.
+Changes in a session may be changes in [data](Data_properties_DATA_.md) properties, including local ones, as well as changes in [classes](User_classes.md) of objects. The former are done by actions created using the [property change operator](Property_change_CHANGE_.md), the latter using the [add](New_object_NEW_.md)/[change](Class_change_CHANGECLASS_DELETE_.md) object class operators.
 
 Each time an action is executed, the *current* session is determined depending on the execution context. For example, if the action is called as the handler of some event on a form (the most common case), then the session of that form will be the current session for it. The current session may also change when the [new session](New_session_NEWSESSION_NESTEDSESSION_.md) operator is used, for example.
 

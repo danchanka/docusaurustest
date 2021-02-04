@@ -26,7 +26,7 @@ List of parameters that will be used to define the implementation. Each element 
 
 *implAction*
 
-[Context-dependent action operator](Action-operator_36307157.html#Actionoperator-id-Операторы-действия-contextdependent) whose value determines the implementation of the abstract action. 
+[Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) whose value determines the implementation of the abstract action. 
 
 *whenExpr*
 

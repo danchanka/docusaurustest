@@ -36,9 +36,9 @@ While inputting a value, it is sometimes necessary to not just choose one from a
 
 Similar to the other value input operators, the dialog form of this operator allows to:
 
--   specify [initial object values](Value-input_35520941.html#Valueinput-id-Вводзначения-initial) (through the [passing objects](Open_form.md) mechanism).
+-   specify [initial object values](Value-input_35520941.html#Valueinput-initial) (through the [passing objects](Open_form.md) mechanism).
 -   specify [main and alternative](Value-input_35520941.html#Valueinput-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled).
--   [change](Value-input_35520941.html#Valueinput-id-Вводзначения-initial) a specified property.
+-   [change](Value-input_35520941.html#Valueinput-initial) a specified property.
 
 In addition, if a value is entered to input to change the specified property, it is often necessary (at the value selection stage) to show the user not all object collections, but only those ones, whose selection (and subsequent change with these objects) will not violate existing [constraints](Constraints.md). Accordingly, so that the developer does not have to copy the form and manually add the necessary filter, the platform automatically generates and adds corresponding filters to the form (this behavior, however, can be disabled using a corresponding option).
 

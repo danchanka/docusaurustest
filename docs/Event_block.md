@@ -42,11 +42,11 @@ The [ID of the action](IDs_1573053.html#IDs-propertyid), that will be the event
 
 *param1, ..., paramK*
 
-List of action parameters. Each parameter is specified with the object name on the form. The object name, in turn, is specified with a [simple ID](IDs_1573053.html#IDs-id-Идентификаторы-id).
+List of action parameters. Each parameter is specified with the object name on the form. The object name, in turn, is specified with a [simple ID](IDs_1573053.html#IDs-id).
 
 *actionOperator*
 
-[Context-dependent action operator](Action-operator_36307157.html#Actionoperator-id-Операторы-действия-contextdependent). You can use the names of already declared objects on the form as parameters.
+[Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent). You can use the names of already declared objects on the form as parameters.
 
   
 

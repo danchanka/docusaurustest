@@ -129,7 +129,7 @@ module.exports = {
                               label: 'State change',
                               items: [
                                 'State_change', 
-                                'Property_сhange_CHANGE_', 
+                                'Property_change_CHANGE_', 
                                 'New_object_NEW_', 
                                 'Class_change_CHANGECLASS_DELETE_', 
                               ]
@@ -454,7 +454,6 @@ module.exports = {
                         'Arithmetic_operators', 
                         'Operator_', 
                         'ABSTRACT_operator', 
-                        'ABSTRACT_operator', 
                         'ACTIVE_TAB_operator', 
                         'AGGR_operator', 
                         'CASE_operator', 
@@ -622,7 +621,7 @@ module.exports = {
                         'How-to_Interactive_forms', 
                         'How-to_CRUD', 
                         'How-to_Documents_with_lines', 
-                        'How-to_Filtering_and_sorting', 
+                        'How-to_Filtering_and_ordering', 
                         'How-to_Design', 
                         'How-to_Trees', 
                         'How-to_Data_entry', 

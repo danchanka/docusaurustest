@@ -6,7 +6,7 @@ title: 'How-to: Interactive forms'
 
 1.  [CRUD](How-to_CRUD.md). Create / Replace / Update / Delete. How to create a simple "catalogue".
 2.  [Documents with lines](How-to_Documents_with_lines.md). A GUI generation template for documents with lines.
-3.  [Filtering and ordering](How-to_Filtering_and_sorting.md). Methods of filtering and ordering objects on a form.
+3.  [Filtering and ordering](How-to_Filtering_and_ordering.md). Methods of filtering and ordering objects on a form.
 4.  [Design](How-to_Design.md). Configuring the form  [design](Form_design.md) .
 5.  [Trees](How-to_Trees.md). Adding hierarchical objects to a form.
 6.  [Data entry](How-to_Data_entry.md). Changing the standard behavior while editing properties.

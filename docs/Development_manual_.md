@@ -63,4 +63,4 @@ To install the plug-in, Intellij IDEA version 2017.1.6 or higher must be install
 
     As for other projects not created using the operation for creating a new lsFusion project, for a maven project you must manually create a [settings file](Launch-parameters_65241244.html#Launchparameters-filesettings) and a [startup configuration](IDE_46367442.html#IDE-configuration) (or, if the platform needs to be loaded as a library, use a [special Spring bean](#Development(manual)-bean))
 
-If working with a large project, and [metacodes](Metaprogramming.md) are actively being used in it (such as [ERP](https://github.com/lsfusion-solutions/erp)), it is recommended that in the IDEA startup parameters (idea.options or idea64, options) the Xmx be increased to at least 2gb.
+If working with a large project, and [metacodes](Metaprogramming.md) are actively being used in it (such as [ERP](https://github.com/lsfusion-solutions/erp)), it is recommended that in the IDEA startup parameters (idea.exe.vmoptions or idea64.exe.vmoptions) the Xmx be increased to at least 2gb.

@@ -4,7 +4,7 @@ title: 'State change'
 
 System state change operators include the following.
 
--   [Property change (CHANGE)](Property_сhange_CHANGE_.md)
+-   [Property change (CHANGE)](Property_change_CHANGE_.md)
 -   [New object (NEW)](New_object_NEW_.md)
 -   [Class change (DELETE / CHANGECLASS)](Class_change_CHANGECLASS_DELETE_.md)
 

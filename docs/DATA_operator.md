@@ -18,11 +18,11 @@ This operator cannot be used in the [**JOIN** operator](JOIN_operator.md) (ins
 
 *LOCAL*
 
-A keyword that, when specified, creates a [local data property](688168.html#Dataproperties(DATA)-Сессионныепервичныесвойства). 
+A keyword that, when specified, creates a [local data property](688168.html#Dataproperties(DATA)-local). 
 
 *NESTED*
 
-A keyword that, when specified, marks the local property as [nested](Session-management_30769221.html#Sessionmanagement-id-Управлениесессиями-nested); that is, all its changes will be visible in new sessions, and when these sessions are closed, changes to this property will be applied to the current session. Note that this behavior is similar to the behavior of a regular local property (not **NESTED**) when using the [**NEWSESSION** operator](NEWSESSION_operator.md) with the specified keyword **NESTED LOCAL** (or just **NESTED** if this local property is explicitly specified in the property list).
+A keyword that, when specified, marks the local property as [nested](Session-management_30769221.html#Sessionmanagement-nested) that is, all its changes will be visible in new sessions, and when these sessions are closed, changes to this property will be applied to the current session. Note that this behavior is similar to the behavior of a regular local property (not **NESTED**) when using the [**NEWSESSION** operator](NEWSESSION_operator.md) with the specified keyword **NESTED LOCAL** (or just **NESTED** if this local property is explicitly specified in the property list).
 
 *returnClass*
 

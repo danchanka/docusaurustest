@@ -16,7 +16,7 @@ The  **GROUP **instruction declares a new property group and adds it to the cu
 
 *name *
 
-Group name. [Simple ID](IDs_1573053.html#IDs-id-Синтаксическиеэлементы-id). The name must be unique within the current [namespace](Naming_35521066.html#Naming-namespace).
+Group name. [Simple ID](IDs_1573053.html#IDs-id). The name must be unique within the current [namespace](Naming_35521066.html#Naming-namespace).
 
 *caption*
 
@@ -32,7 +32,7 @@ String literal.
 
 *parentName*
 
-Name of the parent group. [Сomposite ID](IDs_1573053.html#IDs-id-Синтаксическиеэлементы-cid). If the name of the parent group is not defined, the **System.private** group becomes the parent.  
+Name of the parent group. [Сomposite ID](IDs_1573053.html#IDs-cid). If the name of the parent group is not defined, the **System.private** group becomes the parent.  
 
 **Examples**
 

@@ -27,12 +27,7 @@ Username: **guest**
 
 Password: **guest**
 
-The GitHub source code is located [here](https://github.com/lsfusion/samples/tree/master/mm).**  
-**
-
-### CRM
-
-Description on GitHub.
+The GitHub source code is located [here](https://github.com/lsfusion/samples/tree/master/mm).
 
 ### ERP
 

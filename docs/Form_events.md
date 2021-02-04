@@ -68,7 +68,7 @@ QUERYOK
 
 *CHANGE*
 
-The user is requested for an object of the changed property value class, after which the received object is written to this property. If the property is not [mutable](5472305.html#Propertyсhange(CHANGE)-changeable), the [user filter](Interactive-view_1573071.html#Interactiveview-userfilters) mechanism for this property (or for the property specified using the corresponding option) is automatically called.
+The user is requested for an object of the changed property value class, after which the received object is written to this property. If the property is not [mutable](5472305.html#Propertychange(CHANGE)-changeable), the [user filter](Interactive-view_1573071.html#Interactiveview-userfilters) mechanism for this property (or for the property specified using the corresponding option) is automatically called.
 
 *GROUPCHANGE*
 

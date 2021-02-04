@@ -2,7 +2,7 @@
 title: 'Element identification'
 ---
 
-On the **lsFusion** platform, some elements of the system are *named*, meaning that they can be used by acсessing them by name.
+On the **lsFusion** platform, some elements of the system are *named*, meaning that they can be used by accessing them by name.
 
 Named system elements include: [properties](Properties.md)  [actions](Actions.md), [user-defined classes](User_classes.md), [forms](Forms.md), [navigator elements](Navigator.md), [property groups](Groups_of_properties_and_actions.md), [windows](Navigator_design.md), [tables](Tables.md), [metacodes](Metaprogramming_1310740.html#Metaprogramming-metacode).
 

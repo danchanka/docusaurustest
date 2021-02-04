@@ -18,7 +18,7 @@ title: 'CLASS instruction'
 
 **Description**
 
-The **CLASS** instruction declares a new class and adds it to the current [модуль](Modules.md). 
+The **CLASS** instruction declares a new class and adds it to the current [module](Modules.md). 
 
 The instruction has two forms:  **CLASS ABSTRACT** for declaring an [abstract class](User-classes_2228341.html#Userclasses-abstract) and just **CLASS** for declaring a concrete class. In the latter case, during declaration, you can declare the [static objects](Static_objects.md)  of this class and specify their names and captions in a curly brackets block.   
 

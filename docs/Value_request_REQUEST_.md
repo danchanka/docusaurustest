@@ -34,7 +34,7 @@ By default, group change handler is created as follows: **CHANGE** is called fir
 
 In fact, the value request operator performs only two operations: it [checks](Branching_CASE_IF_MULTI_.md) **System.requestPushed** (pushing the value) for the value request action and **System.requestCanceled** (canceling the value) for the request processing action, and it is also responsible for determining the possibility of asynchronous input of the property being changed. At the same time, using this operator makes the code clearer and more readable, therefore it is recommended to use it (instead of explicit checks and options).
 
-As with other value input operators, it is possible to define [main and alternative](Value-input_35520941.html#Valueinput-id-Вводзначения-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled). Accordingly, it is these two actions in this operator that are responsible for processing request values.
+As with other value input operators, it is possible to define [main and alternative](Value-input_35520941.html#Valueinput-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled). Accordingly, it is these two actions in this operator that are responsible for processing request values.
 
 **Implicit use**
 

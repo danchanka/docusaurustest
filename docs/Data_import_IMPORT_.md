@@ -2,7 +2,7 @@
 title: 'Data import (IMPORT)'
 ---
 
-The *data import *operator creates an [action](Actions.md) which reads a file from the value of some [property](Properties.md), then, depending on its [format](Structured_view.md), defines the columns (fields) of data in this file, after which it [writes](Property_сhange_CHANGE_.md) the value of each column (field) to the corresponding property (parameter) - import *assignment*. The mapping of columns to properties can go in either column or name order.
+The *data import *operator creates an [action](Actions.md) which reads a file from the value of some [property](Properties.md), then, depending on its [format](Structured_view.md), defines the columns (fields) of data in this file, after which it [writes](Property_change_CHANGE_.md) the value of each column (field) to the corresponding property (parameter) - import *assignment*. The mapping of columns to properties can go in either column or name order.
 
 Rows, in turn, are mapped during import to objects of specified classes (let's call these objects *imported*). In the current platform implementation, there can be at most one object and the specified class must be either [numeric](Built-in_classes.md) or a [specific user-defined class](User-classes_2228341.html#Userclasses-abstract). Rows are mapped to the imported object as follows:
 

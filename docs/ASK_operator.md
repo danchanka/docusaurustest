@@ -30,11 +30,11 @@ The name of the local parameter in which the user's response to the question wil
 
 *actionOperator*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-id-Операторы-действия-contextdependent) that is executed if the input was completed successfully. Both upper parameters and the user response parameter (if the question was Yes/No) can be used as parameters
+A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was completed successfully. Both upper parameters and the user response parameter (if the question was Yes/No) can be used as parameters
 
 *elseActionOperator*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-id-Операторы-действия-contextdependent) that is executed if the input was cancelled. Only upper parameters can be used as parameters.
+A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was cancelled. Only upper parameters can be used as parameters.
 
 **Example**
 

@@ -19,6 +19,6 @@ Accordingly, the summary table for all elements of the business logic is as foll
 **  
 **
 
-<img src="download/temp/svgout6437976993032778832.png" width="563" height="482" />
+<img src="download/temp/svgout5324045094396325582.png" width="563" height="482" />
 
   

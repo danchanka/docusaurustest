@@ -24,7 +24,7 @@ When declaring a property, its set of options can also be specified.   
 
 *name *
 
-The name of the property. [Simple ID](IDs_1573053.html#IDs-id-Синтаксическиеэлементы-id).
+The name of the property. [Simple ID](IDs_1573053.html#IDs-id).
 
 *caption*
 

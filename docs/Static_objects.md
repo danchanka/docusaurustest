@@ -2,7 +2,7 @@
 title: 'Static objects'
 ---
 
-*Static* (or built-in) objects are objects that are defined by the developer and are automatically created on system startup (if they are not стартаpresent in the system at launch time). Also, such objects are prohibited from being deleted.
+*Static* (or built-in) objects are objects that are defined by the developer and are automatically created on system startup (if they are not present in the system at launch time). Also, such objects are prohibited from being deleted.
 
 When declaring a [custom class](User_classes.md), you can declare objects of this class which will be static objects. If you do this, this custom class automatically [inherits](User-classes_2228341.html#Userclasses-inheritance) from class **System.StaticObject**.
 

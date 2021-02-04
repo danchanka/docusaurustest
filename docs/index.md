@@ -143,7 +143,7 @@
                         <!-- -->
 
                         -   [State change](State_change.md)
-                            -   [Property сhange (CHANGE)](Property_сhange_CHANGE_.md)
+                            -   [Property change (CHANGE)](Property_change_CHANGE_.md)
 
                             <!-- -->
 
@@ -479,10 +479,6 @@
                     <!-- -->
 
                     -   [ABSTRACT operator](ABSTRACT_operator.md)
-
-                    <!-- -->
-
-                    -   [ABSTRACT operator new](ABSTRACT_operator.md)
 
                     <!-- -->
 
@@ -911,7 +907,7 @@
 
                     <!-- -->
 
-                    -   [How-to: Filtering and sorting](How-to_Filtering_and_sorting.md)
+                    -   [How-to: Filtering and ordering](How-to_Filtering_and_ordering.md)
 
                     <!-- -->
 

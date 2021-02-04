@@ -14,4 +14,4 @@ It includes everything else - everything related to the development, performanc
 
 **Stack**
 
-<img src="download/temp/svgout6520671692010478343.png" width="816" height="1601" />
+<img src="download/temp/svgout2684672321431722364.png" width="816" height="1601" />

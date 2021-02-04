@@ -53,7 +53,7 @@ if len(sys.argv) < 3:
     sys.exit()
 
 with open(sys.argv[1], 'r', encoding='utf-8') as infile:
-    lines = [line.rstrip() for line in infile.readlines() if re.match(r"\s*-[^-].*", line)]
+    lines = [line.rstrip() for line in infile.readlines() if re.fullmatch(r'\s*-[^-].*\n', line)]
     # print('\n'.join(lines))
     with open(sys.argv[2], 'w', encoding='utf-8') as outfile:
         outfile.write('module.exports = {\n  docs: [\n')

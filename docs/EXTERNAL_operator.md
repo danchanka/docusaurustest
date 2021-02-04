@@ -84,7 +84,7 @@ List of expressions whose values will be used as the call parameters.
 
 *propertyId1, ..., propertyIdM*
 
-List of [property IDs](IDs_1573053.html#IDs-id-Синтаксическиеэлементы-propertyid) (without parameters) to which the results will be written.
+List of property IDs (without parameters) to which the results will be written.
 
 **Examples**
 

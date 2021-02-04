@@ -72,7 +72,7 @@ Keyword. If used, then the last current value of the object of the opened form w
 
 *alias*
 
-The name of the local parameter to which the input result is written. [Simple ID](IDs_1573053.html#IDs-id-Идентификаторы-id). If the name is not specified, then the name of the form object will be used as the parameter name.
+The name of the local parameter to which the input result is written. [Simple ID](IDs_1573053.html#IDs-id). If the name is not specified, then the name of the form object will be used as the parameter name.
 
 *CHANGE*
 
@@ -92,11 +92,11 @@ A keyword that determines whether the user can select **NULL** as the return val
 
 *actionOperator*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-id-Операторы-действия-contextdependent) that is executed if the input was completed successfully.
+A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was completed successfully.
 
 *elseActionOperator*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-id-Операторы-действия-contextdependent) that is executed if the input was cancelled. Parameters added to the input block (INPUT) cannot be used as parameters.
+A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was cancelled. Parameters added to the input block (INPUT) cannot be used as parameters.
 
 ***Additional options***
 

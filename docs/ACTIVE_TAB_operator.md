@@ -21,7 +21,7 @@ Form name. [Composite ID](IDs_1573053.html#IDs-cid).
 **componentSelector*  
 *
 
-Design component [selector](DESIGN-instruction_4718609.html#DESIGNinstruction-id-ИнструкцияDESIGN-selector). The component must be a tab in the tab panel.
+Design component [selector](DESIGN-instruction_4718609.html#DESIGNinstruction-selector). The component must be a tab in the tab panel.
 
 **Examples**
 

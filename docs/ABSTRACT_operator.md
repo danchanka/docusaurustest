@@ -38,7 +38,7 @@ Type of abstract* *property. It is specified by one of the keywords:
 
 The default value is **MULTI**.
 
-*exсlusionType*
+*exclusionType*
 
 Type of mutual exclusion. One of these keywords: **EXCLUSIVE** or **OVERRIDE**. Unless explicitly specified, in a **MULTI** abstract property the default type of mutual exclusion is **EXCLUSIVE**, and in all other cases the default mutual exclusion type is **OVERRIDE**.
 

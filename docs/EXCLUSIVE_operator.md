@@ -2,23 +2,23 @@
 title: 'EXCLUSIVE operator'
 ---
 
-Оператор **EXCLUSIVE **- es aсоздание [yсвойства](Properties.md), sреализующего [seletonвыбор](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive) одного из значений (полиморфная форма).
+The **EXCLUSIVE **operator creates a [property](Properties.md) that implements a [selection](1572905.html#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive) of one of the values (polymorphic form).
 
-**Синтаксис**
+**Syntax**
 
     EXCLUSIVE expr1, ..., exprN
 
-**Описание**
+**Description**
 
-Оператор **EXCLUSIVE **создает свойство, значением которого будет значение одного из указанных в операторе свойств. При этом предполагается, что при любом наборе параметров максимум одно из свойств не будет равняться **NULL**. Значением свойства будет значение этого единственного не равного **NULL** свойства, либо **NULL**, если таких свойств нет.
+The **EXCLUSIVE** operator creates a property whose value will be the value of one of the properties specified in the operator. It is assumed that for any set of parameters, at most one of the properties will be non-**NULL**. The value of the property will be the value of this single non-**NULL** property, or **NULL** if there are no such properties.
 
-**Параметры**
+**Parameters**
 
 *expr1, ..., exprN*
 
-Список [выражений](Expression.md), значения которых будут определять значение свойства.
+List of [expressions](Expression.md) whose values will determine the value of the property.
 
-**Примеры**
+**Examples**
 
 ****
 
