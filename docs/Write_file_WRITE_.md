@@ -14,4 +14,3 @@ To declare an action that writes a file, use the [**WRITE** operator](WRITE_oper
 
 ****
 
-

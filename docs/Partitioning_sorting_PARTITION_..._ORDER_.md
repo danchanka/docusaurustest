@@ -14,4 +14,3 @@ To declare a property that implements partition/order, use the [**PARTITION** op
 
 **Examples**
 
-

@@ -11,6 +11,8 @@ The maximum property is created using the [**MAX** operator](MAX_operator.md), t
 **Examples**
 
 
+********
+
 
 **  
 **

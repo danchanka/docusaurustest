@@ -10,4 +10,3 @@ To declare a property that determines matching the filter use the [**FILTER** op
 
 **Examples**
 
-

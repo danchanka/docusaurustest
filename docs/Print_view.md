@@ -24,3 +24,19 @@ Using this option comes down to whether to display data for a parent object grou
 The form is similar to the [example of building an object group hierarchy](Static-view_29884533.html#Staticview-hierarchysample):
 
 
+The report hierarchy for this form is built as follows:
+
+  
+
+<img src="download/temp/svgout7045576126208291584.png" width="581" height="371" />
+
+**Language**
+
+All of the above options, as well as defining the form structure, can be done using the [**FORM** instruction](FORM_instruction.md).
+
+**Open form**
+
+To display the form in print view, the corresponding [open form](Open_form.md) in the [print view](In_a_print_view_PRINT_.md) operator is used.
+
+**Examples**
+

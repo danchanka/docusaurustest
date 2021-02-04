@@ -29,4 +29,3 @@ To declare an action that imports data, use the [**IMPORT** operator](IMPORT_ope
 
 ****************************************
 
-

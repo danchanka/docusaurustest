@@ -18,4 +18,3 @@ The syntax of the primitive input operator is described by [the **INPUT** operat
 
 **Examples**
 
-

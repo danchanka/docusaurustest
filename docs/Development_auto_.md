@@ -7,7 +7,6 @@ On this page you can download installers that install everything needed for deve
 ### Download
 
 
-
 ### After installation
 
 After the installation completes successfully, the corresponding shortcuts for launching IDE and the client will automatically be created on the desktop:

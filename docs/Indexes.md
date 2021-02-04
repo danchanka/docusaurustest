@@ -14,4 +14,3 @@ To create indexes, you must use the [**INDEX** instruction](INDEX_instruction.m
 
 **Examples**
 
-

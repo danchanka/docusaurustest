@@ -50,4 +50,3 @@ A context-independent property operator that describes and creates a property. 
 
 **Examples**
 
-

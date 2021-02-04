@@ -27,7 +27,6 @@ The **CONCAT** operator creates a property that concatenates values using the 
 ****
 
 
-
 **  
 **
 

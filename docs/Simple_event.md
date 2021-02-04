@@ -20,4 +20,3 @@ To create simple events, use the [**WHEN** instruction](WHEN_instruction.md).
 
 **Examples**
 
-

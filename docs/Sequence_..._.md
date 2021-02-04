@@ -10,4 +10,3 @@ To declare an action that executes a sequence of other actions, use the [**{...}
 
 **Examples**
 
-

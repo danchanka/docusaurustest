@@ -12,5 +12,4 @@ The platform working parameters can be set in one of the following ways (in the 
 -   During the execution of an action using system actions: **Service.pushSetting\[STRING, STRING\]**, **Service.popSetting\[STRING\]** (overriding the value of the property for the entire current thread).
 
 
-
 In addition to the system parameters, the platform also has [launch parameters](Launch_parameters.md) which are set a little differently and are relevant mainly for startup (initialization) processes of various components of the platform and access to these components.

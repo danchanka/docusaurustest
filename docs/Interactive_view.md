@@ -122,3 +122,22 @@ The following system actions are automatically added to any form (their names 
 By default, these system actions have the following visibility conditions:
 
 
+If necessary, all these actions can be shown/hidden by removing the corresponding components from the [form design](Form_design.md) and/or using the corresponding options in the [open form](Open_form.md) operator.
+
+**Additional features**
+
+You can specify an image file which will be displayed as the form's icon.
+
+Also, if necessary, you can enable *automatic update* mode for a form: the**System.formRefresh** action will then be executed for the form at a specified interval.
+
+**Language**
+
+All of the above options, as well as defining the form structure, can be done using the [**FORM** instruction](FORM_instruction.md).
+
+**Open form**
+
+To display the form in the interactive view, the corresponding [open form](Open_form.md) operator is used in [interactive view](In_an_interactive_view_SHOW_DIALOG_.md).
+
+**Examples**
+
+

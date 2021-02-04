@@ -47,4 +47,3 @@ The [context-independent](Action-operator_36307157.html#Actionoperator-contextin
 
 **Examples**
 
-

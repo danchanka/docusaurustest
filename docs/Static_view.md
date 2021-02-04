@@ -33,7 +33,6 @@ As follows from the algorithm, the empty object group is always the only root gr
 **An example of constructing ****object group**** hierarchy**
 
 
-
 The hierarchy of groups of objects for this form will be constructed as follows:
 
 <img src="download/temp/svgout7068039305109720991.png" width="653" height="421" />

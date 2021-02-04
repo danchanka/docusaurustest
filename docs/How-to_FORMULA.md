@@ -9,6 +9,37 @@ title: 'How-to: FORMULA'
 We have a list of orders.
 
 
+We need to export this list to CSV and keep the date in the ISO format (YYYY-MM-DD).
+
+###### Solution
+
+
+To solve this task we use the [FORMULA](FORMULA_operator.md) operator to create a new property that takes a date and returns its value as a string in the YYYY-MM-DD format. The expression contains [to\_char](https://www.postgresql.org/docs/11/functions-formatting.html) which is a standard PostgreSQL function.
+
+##### Example 2
+
+###### Condition
+
+Similar to **Example 1**. New lines containing quantity and amount have been added to the orders.
+
+
+We need to export all the lines from a given order as CSV file in which quantities and amounts are shortened to 3 and 2 characters respectively. In addition, the numbers must be split into triads.
+
+###### Solution
+
+
+We create the toString property that takes two parameters (numeric value and format) and returns a value of the **TEXT** type. When exporting, we pass the required format as the second parameter.
+
+##### Example 3
+
+###### Condition
+
+Similar to **Example 2**.
+
+We need to add a column that will be marked when the given order number contains only digits.
+
+###### Solution
+
 
 Since single quotes are used in the formula, make sure to [escape](https://ru.wikipedia.org/wiki/%D0%AD%D0%BA%D1%80%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D0%BE%D0%B2) them with a backslash **\\\\**.
 

@@ -28,4 +28,3 @@ To open the form in the print view, [**PRINT** operator](PRINT_operator.md) is
 
 **Examples**
 
-

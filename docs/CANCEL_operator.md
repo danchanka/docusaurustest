@@ -32,5 +32,4 @@ List of local properties. Each list element is a [property ID](IDs_1573053.html
 ********************
 
 
-
   

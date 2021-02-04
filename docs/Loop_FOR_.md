@@ -18,4 +18,3 @@ The syntax of the loop operator is described by [the**FOR** operator](FOR_operat
 
 **Examples**
 
-

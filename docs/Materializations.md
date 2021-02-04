@@ -12,4 +12,3 @@ To materialize a property, use the [**MATERIALIZED** option](Property-options_77
 
 **Examples**
 
-

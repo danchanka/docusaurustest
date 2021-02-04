@@ -27,4 +27,3 @@ To declare a property that implements recursion, use the [**RECURSION** operator
 
 ****
 
-

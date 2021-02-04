@@ -10,4 +10,3 @@ To declare a property that determines whether a specified object collection is d
 
 **Examples**
 
-

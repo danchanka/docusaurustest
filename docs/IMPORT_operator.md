@@ -30,3 +30,111 @@ The **IMPORT** operator creates an action that imports data from a specified fil
 If * *the format of the imported file* *is not specified, it is determined automatically depending on the class of the imported file (or on the extension, if the class is **FILE**), in the following way:
 
 
+  
+
+The first passed file is used to automatically determine a flat file format by its extension
+
+**Parameters**
+
+***Source of import***
+
+*fileExpr*
+
+[Expression](Expression.md) whose value is the imported file. The value of the expression must be an object of a file class (**FILE**, **RAWFILE**, **JSONFILE** etc. ). If this expression is not specified when importing a form, then the default expression is **System.importFile()**.
+
+*groupId1, ..., groupIdM*
+
+Names of object groups of the imported form for which you want to import data. [Simple IDs](IDs_1573053.html#IDs-id). Used only for importing a form from flat formats.
+
+*fileExpr1 , ..., fileExprM*
+
+Expressions whose values are files that need to be imported for the specified object groups. The value of each expression must be an object of a file class (**FILE**, **RAWFILE**, **JSONFILE** etc. ). Used only to import forms from flat formats. For the [empty object group](Static-view_29884533.html#Staticview-empty), the name **root** is used. 
+
+***Import format***
+
+*ATTR*
+
+A keyword that specifies that values should be read from the attributes of an element. If not specified, then reading happens from child elements. Only applicable for import from **XML**.
+
+*separator*
+
+Delimiter in a **CSV** file. [String literal](Literals_35521071.html#Literals-strliteral). If not specified, then the default delimiter is '**;** '.
+
+*HEADER | NOHEADER*
+
+Keywords specifying the presence (**HEADER**) or absence (**NOHEADER**) of a header string in a **CSV** , or **XLS** file. The default is **NOHEADER**.
+
+When using the **NOHEADER** option:
+
+-   -   column names are considered to be: A, B, ..., Z, AA, ...,  AE, ...
+    -   if a column is not found / does not match the type of the destination property, the value of this column is considered to be **NULL** (in other import formats, in the platform throws an error in these cases).
+
+*ESCAPE | NOESCAPE*
+
+Keyword specifying the presence (**ESCAPE**) or absence (**NOESCAPE**) of escaping for special characters (\\\\r, \\\\n, " (double quotes)) and the specified delimiter (*separator*) in a **CSV** file. It makes sense to use **NOESCAPE** only in cases where the specified delimiter is guaranteed not to occur in the data. The default is **ESCAPE**.
+
+*SHEET sheetExpr*
+
+An option specifying the import of a specific sheet from an Excel file. If the option is not specified, then sheet number 1 is taken.
+
+sheetExpr - an expression whose value determines the number of the sheet imported from the Excel file. The value of the expression must be of class **INTEGER** or **LONG**. Numbering starts from 1.
+
+ALL - a keyword that means that import will be from all sheets of the excel file.
+
+*CHARSET charsetStr*
+
+An option specifying the encoding used for import.
+
+charsetStr is a string literal that defines the encoding. 
+
+*actionOperator*
+
+[Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) describing the action that is executed for each imported record.
+
+*elseActionOperator*
+
+A context-dependent action operator describing the action that is executed if no records have been imported. Parameters into which data is imported cannot be used as parameters of this action.
+
+***Import destination***
+
+*formName*
+
+The name of the form into which data has to be imported. [Composite ID](IDs_1573053.html#IDs-cid).
+
+*objClassId1, ..., objClassIdK*
+
+Classes of the [imported](36601927.html#Dataimport(IMPORT)-objects) objects. Specified by [class IDs](IDs_1573053.html#IDs-classid). K <= 1. By default, it is assumed that what is being imported is one object of class **INTEGER**.
+
+*objAlias1, ..., objAliasK*
+
+Names of local parameters into which imported objects are written. [Simple IDs](IDs_1573053.html#IDs-id). K <= 1. By default, it is assumed that one object is being imported with the name **row**.
+
+*propertyId1, ..., propertyIdN*
+
+List [property IDs](IDs_1573053.html#IDs-propertyid) into which columns (fields) of data are imported. Property parameters and their classes must match the imported objects and their classes.
+
+*columnId1, ..., columnIdN*
+
+A list of column IDs in the source file from which data will be imported to the corresponding property. Each element of the list is specified either by a simple ID or by a string literal. When the ID of a nonexistent column is specified, or in the absence of an ID, the column corresponding to the property is the column that follows the column specified for the previous property in the list, or the first if the first property is specified. For **DBF** files, column IDs are case-insensitive. 
+
+*whereId*
+
+Property ID to which [a default value](Built-in-classes_2031657.html#Built-inclasses-defaultvalue) of the class of this property value will be written for each imported object. Property parameters and classes must match the imported objects and their classes. If the property is not specified and the number of imported objects is greater than 0, a property with the name **imported** and classes of imported objects (e.g. **System.imported\[INTEGER\]**) is used.
+
+*propClassId1, ..., *propClassId*N*
+
+List of names of [builtin classes](Built-in_classes.md) of the imported columns.
+
+*propAlias1, ..., propAliasN*
+
+Names of local parameters into which columns (fields) of data are imported. Simple IDs. If the name is not specified, then the name of the column (field) in the source file will be used as the parameter name.
+
+*NULL*
+
+Keyword. Specifies that **NULL** values during import (if the imported format supports them) will not be replaced with default values (for example, 0 for numbers, the empty string for strings, etc. ).
+
+**Examples**
+
+****************************************
+
+

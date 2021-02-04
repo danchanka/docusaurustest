@@ -12,4 +12,3 @@ To declare an action that reads a file, use the [**READ** operator](READ_operato
 
 **Examples**
 
-

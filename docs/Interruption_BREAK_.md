@@ -10,4 +10,3 @@ The interrupt operator syntax is described by the [**BREAK** operator](BREAK_ope
 
 **Examples**
 
-

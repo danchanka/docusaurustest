@@ -16,4 +16,3 @@ To extend a class, use the [**EXTEND CLASS** instruction](EXTEND_CLASS_instructi
 
 **Examples**
 
-

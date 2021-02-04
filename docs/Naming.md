@@ -39,7 +39,6 @@ Since properties and actions can have the same names within the same namespace, 
 Since the signature of properties/actions do not have to contain only custom classes, canonical names are also determined for builtin classes: 
 
 
-
 In some cases, an element of the property signature may be not a single class but a set of classes. In this case, the canonical name will be more complex.
 
 **Name policy**

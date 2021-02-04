@@ -13,3 +13,22 @@ Aggregate function is *commutative* if the order in which the object collection
 The table below shows the currently supported types of aggregate functions:
 
 
+From the perspective of determining the set of object collections and the result display method, four main operators for working with sets can be distinguished:
+
+-   [Group (GROUP)](Grouping_GROUP_.md)
+-   [Partition/order (PARTITION ... ORDER)](Partitioning_sorting_PARTITION_..._ORDER_.md)
+-   [Recursion (RECURSION)](Recursion_RECURSION_.md)
+-   [Distribution (UNGROUP)](Distribution_UNGROUP_.md)
+
+**Operation correctness**
+
+You should consider that during each operation on a set of object collections, this set must be finite. In this case, the operation is called *correct*.
+
+**Examples**
+
+
+**  
+**
+
+There are several non-trivial cases when the operation is correct but the platform cannot determine this. For example, if the only limiting condition for a parameter is whether it falls within the range:
+

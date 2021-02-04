@@ -97,6 +97,71 @@ The value assigned to the corresponding container property. Acceptable value typ
 ***Component properties***
 
 
+***Container properties***
+
+
+***Properties of actions and properties on the form***
+
+
+***Toolbar properties***
+
+
+***Other properties***
+
+
+***Selector parameters***
+
+*componentName*
+
+Name of a design component. [Simple ID](IDs_1573053.html#IDs-id).
+
+*formPropertyName *
+
+[Property/action name on the form](Properties-and-actions-block_3866665.html#Propertiesandactionsblock-name)*.*
+
+*filterGroupName*
+
+The name of [a filter group](Filters-and-sortings-block_3866671.html#Filtersandsortingsblock-filterName). [Simple ID](IDs_1573053.html#IDs-id).
+
+*propertyGroupSelector*
+
+The name of a [property group](Groups_of_properties_and_actions.md). [Simple ID](IDs_1573053.html#IDs-id).
+
+*groupObjectSelector*
+
+The name of an [object group on the form](Object-blocks_3866658.html#Objectblocks-groupName). [Simple ID](IDs_1573053.html#IDs-id).
+
+*treeSelector*
+
+The name of [an object tree on the form](Object-blocks_3866658.html#Objectblocks-treeName). [Simple ID](IDs_1573053.html#IDs-id).
+
+*noGroupObjectTreeContainerType*
+
+Type of form container:**  
+**
+
+-   **BOX** – a common form container
+-   **PANEL** – contains components of properties that are displayed in PANEL view and display group of which is undefined.
+-   **TOOLBARBOX** – a common toolbar container with property components that are displayed in the panel, marked for placement on the **TOOLBAR**,** **and for which no object group is defined.
+-   **TOOLBARLEFT **- the left part of the toolbar
+-   **TOOLBARRIGHT** - the right part of the toolbar
+-   **TOOLBAR** contains components of properties that are displayed in TOOLBAR view and display group of which is undefined.
+
+*groupObjectTreeContainerType*
+
+The type of an object group / tree container.
+
+-   All types of containers of the *noGroupObjectTreeContainerType* form (identical semantics)
+-   **GRIDBOX **- a table container
+-   **GRID **- a table component
+-   **TOOLBARSYSTEM** - a system toolbar (number of records, group adjustment, etc.).
+-   **FILTERGROUPS **- contains filter group components
+-   **USERFILTER **- a component that displays custom filters
+
+ **Examples**
+
+************
+
 
 The output is the following form:
 

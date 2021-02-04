@@ -22,6 +22,5 @@ title: 'AND, OR, NOT, XOR operators'
 ****
 
 
-
 **  
 **

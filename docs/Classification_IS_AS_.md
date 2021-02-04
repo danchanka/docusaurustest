@@ -10,4 +10,3 @@ To implement classification operators, [**IS** and **AS** operators](IS_AS_ope
 
 **Examples **
 
-

@@ -38,5 +38,4 @@ Property groups are currently used in the following mechanisms:
 To add a new property/action group to the system, use the [**GROUP** instruction](GROUP_instruction.md).
 
 
-
   

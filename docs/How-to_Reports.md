@@ -9,6 +9,164 @@ title: 'How-to: Reports'
 We have a logic for books split into categories.
 
 
+We need to create a [print form](Print_view.md) to display all the books by category. We also need to export this form to the XLSX format.
+
+###### Solution
+
+First, we need to declare a [form](Forms.md) to define the print form structure.
+
+
+Then, we add two actions that use the [PRINT](PRINT_operator.md) operator for creating a report and for previewing it and exporting to XLSX respectively.
+
+
+Now let's display them on the **books** form in the toolbar of the table of books.
+
+
+Then, we start the server from the IDE, launch the desktop client, open the form with books and click the created "Print" button. The system will automatically create a print-ready form and open it in the [preview](57737722.html#Inaprintview(PRINT)-interactive) mode. Then, click the button below:
+
+<img src="attachments/46367627/46367670.png" width="800" />
+
+The system will save automatic templates for [Jasper Reports](https://community.jaspersoft.com/project/jasperreports-library) to the source code folder (src/main/lsfusion).
+
+<img src="attachments/46367627/57738054.png" width="800" />
+
+The system will then start the editor associated with the jrxml format where these files will be opened. You can use [JasperSoft Studio](https://community.jaspersoft.com/project/jaspersoft-studio) as an editor. In addition, a background process will be launched to constantly synchronize report files in the src / main / lsfusion and out / production folders (or target / classes if Maven is used to start the configuration instead of IDEA Build) to eliminate the need for rebuilding the project after the templates are modified in the editor.
+
+Since categories and books are associated, a single flat report will be created with categories represented as groups of books. Report data will be transmitted in a flat, denormalized form, where a separate (**Field)** field will be created for each property. A group (**Group**) and a corresponding header block (**Group Header**) will be created for categories.
+
+Let's make a few changes in the automatic template and save it:
+
+<img src="attachments/46367627/57738052.png" width="800" />
+
+**Template: Sample\_booksByCategories.jrxml**
+ Expand source
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+    <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Книги по категориям" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" uuid="31977562-8391-4ea1-a6bd-a5081bbc75bb">
+        <style name="DefaultStyle" isDefault="true" vTextAlign="Middle" vImageAlign="Middle" fontName="lsf.TimesNewRoman" fontSize="10">
+            <box>
+                <pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+            </box>
+            <paragraph leftIndent="2" rightIndent="2"/>
+        </style>
+        <style name="GroupCellStyle2" vTextAlign="Middle" vImageAlign="Middle" fontName="lsf.TimesNewRoman" fontSize="10">
+            <box>
+                <pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+            </box>
+            <paragraph leftIndent="2" rightIndent="2"/>
+        </style>
+        <style name="GroupCellStyle1" mode="Opaque" backcolor="#DFDFDF" vTextAlign="Middle" vImageAlign="Middle" fontName="lsf.TimesNewRoman" fontSize="10">
+            <box>
+                <pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+            </box>
+            <paragraph leftIndent="2" rightIndent="2"/>
+        </style>
+        <style name="GroupCellStyle0" vTextAlign="Middle" vImageAlign="Middle" fontName="lsf.TimesNewRoman" fontSize="10">
+            <box>
+                <pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+            </box>
+            <paragraph leftIndent="2" rightIndent="2"/>
+        </style>
+        <field name="c.object" class="java.lang.Long"/>
+        <field name="name(c)" class="java.lang.String"/>
+        <field name="countBooks(c)" class="java.lang.Integer"/>
+        <field name="b.object" class="java.lang.Long"/>
+        <field name="name(b)" class="java.lang.String"/>
+        <field name="nameCategory(b)" class="java.lang.String"/>
+        <group name="designGroup522">
+            <groupExpression><![CDATA[String.valueOf($F{c.object})]]></groupExpression>\n\t\t<groupHeader>\n\t\t\t<band height="18" splitType="Prevent">\n\t\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t\t<reportElement style="GroupCellStyle1" stretchType="RelativeToBandHeight" x="0" y="0" width="96" height="18" uuid="5b282d01-48bf-4170-8cb5-358756cdd8fd"/>\n\t\t\t\t\t<textElement textAlignment="Center"/>\n\t\t\t\t\t<textFieldExpression><![CDATA["Name"]]></textFieldExpression>\n\t\t\t\t</textField>\n\t\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t\t<reportElement style="GroupCellStyle1" positionType="Float" stretchType="RelativeToBandHeight" x="96" y="0" width="459" height="18" backcolor="#FF0000" uuid="b8110564-b312-4096-bb6b-a466364ea2b9"/>\n\t\t\t\t\t<textElement textAlignment="Left"/>\n\t\t\t\t\t<textFieldExpression><![CDATA[$F{name(c)}]]></textFieldExpression>\n\t\t\t\t</textField>\n\t\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t\t<reportElement style="GroupCellStyle1" stretchType="RelativeToBandHeight" x="555" y="0" width="93" height="18" uuid="b2edb91d-7e15-4c69-8ed5-43f6ffa82208"/>\n\t\t\t\t\t<textElement textAlignment="Center"/>\n\t\t\t\t\t<textFieldExpression><![CDATA["Quantity of books"]]></textFieldExpression>\n\t\t\t\t</textField>\n\t\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t\t<reportElement style="GroupCellStyle1" positionType="Float" stretchType="RelativeToBandHeight" x="648" y="0" width="154" height="18" uuid="6e18a055-237f-4845-8134-20ff20f182db"/>\n\t\t\t\t\t<textElement textAlignment="Right"/>\n\t\t\t\t\t<textFieldExpression><![CDATA[$F{countBooks(c)}]]></textFieldExpression>\n\t\t\t\t</textField>\n\t\t\t</band>\n\t\t</groupHeader>\n\t</group>\n\t<pageHeader>\n\t\t<band height="18">\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" stretchType="RelativeToBandHeight" x="0" y="0" width="555" height="18" uuid="f9243784-60ef-4031-8c73-4afeed320bab"/>\n\t\t\t\t<textElement textAlignment="Center"/>\n\t\t\t\t<textFieldExpression><![CDATA["Name"]]></textFieldExpression>\n\t\t\t</textField>\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" stretchType="RelativeToBandHeight" x="555" y="0" width="247" height="18" uuid="a1fd3130-9652-4f34-9d9b-d8508fe21663"/>\n\t\t\t\t<textElement textAlignment="Center"/>\n\t\t\t\t<textFieldExpression><![CDATA["Category"]]></textFieldExpression>\n\t\t\t</textField>\n\t\t</band>\n\t</pageHeader>\n\t<detail>\n\t\t<band height="18">\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="555" height="18" uuid="ca0e19c6-4400-465b-8af7-5dc6074dc82f"/>\n\t\t\t\t<textElement textAlignment="Left"/>\n\t\t\t\t<textFieldExpression><![CDATA[$F{name(b)}]]></textFieldExpression>\n\t\t\t</textField>\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" positionType="Float" stretchType="RelativeToBandHeight" x="555" y="0" width="247" height="18" uuid="3c9eb36e-c2d6-4b37-86ae-2eca4d14903d"/>\n\t\t\t\t<textElement textAlignment="Left"/>\n\t\t\t\t<textFieldExpression><![CDATA[$F{nameCategory(b)}]]></textFieldExpression>\n\t\t\t</textField>\n\t\t</band>\n\t</detail>\n</jasperReport>
+
+Once done, if you re-run the report generation procedure, it will use modified templates and the result will look as follows:
+
+<img src="attachments/46367627/57738056.png" width="800" />
+
+If the background process fails to synchronize development and execution folders for some reason, you just need to restart the server so that the project is re-built and changes are applied.
+
+##### Example 2
+
+###### Condition
+
+The invoice logic has been defined.
+
+
+We need to create a print form for invoices that will contain all of their parameters and lines. We also need to be able to export this form to the DOCX format.
+
+###### Solution
+
+To create a print form, let's use the existing **invoice** form that works for us in terms of structure. However, we can create a new form, if necessary.
+
+
+Since the **i** objects of the **invoice** form are displayed on the panel, the report will only contain data for the invoice that is passed to this object as a parameter in the **PRINT** operator.
+
+Let's move the invoice data from the group header (**Group Header**) to the invoice header so that it gets displayed above the columns.
+
+<img src="attachments/46367627/57738059.png" width="800" />
+
+  
+
+**Template: Sample\_invoice\_i.jrxml**
+ Expand source
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <!-- Created with Jaspersoft Studio version 6.6.0.final using JasperReports Library version 6.6.0  -->
+    <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Счет" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="30" bottomMargin="30" uuid="f60eb956-09f7-45ef-a1e0-3345187967cb">
+        <style name="DefaultStyle" isDefault="true" vTextAlign="Middle" vImageAlign="Middle" fontName="lsf.TimesNewRoman" fontSize="10">
+            <box>
+                <pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+            </box>
+            <paragraph leftIndent="2" rightIndent="2"/>
+        </style>
+        <style name="GroupCellStyle2" vTextAlign="Middle" vImageAlign="Middle" fontName="lsf.TimesNewRoman" fontSize="10">
+            <box>
+                <pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+            </box>
+            <paragraph leftIndent="2" rightIndent="2"/>
+        </style>
+        <style name="GroupCellStyle1" mode="Opaque" backcolor="#DFDFDF" vTextAlign="Middle" vImageAlign="Middle" fontName="lsf.TimesNewRoman" fontSize="10">
+            <box>
+                <pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+            </box>
+            <paragraph leftIndent="2" rightIndent="2"/>
+        </style>
+        <style name="GroupCellStyle0" vTextAlign="Middle" vImageAlign="Middle" fontName="lsf.TimesNewRoman" fontSize="10">
+            <box>
+                <pen lineWidth="0.5" lineStyle="Solid" lineColor="#000000"/>
+            </box>
+            <paragraph leftIndent="2" rightIndent="2"/>
+        </style>
+        <field name="i.object" class="java.lang.Long"/>
+        <field name="date(i)" class="java.util.Date"/>
+        <field name="number(i)" class="java.lang.String"/>
+        <field name="nameCustomer(i)" class="java.lang.String"/>
+        <field name="d.object" class="java.lang.Long"/>
+        <field name="nameBook(d)" class="java.lang.String"/>
+        <field name="quantity(d)" class="java.lang.Integer"/>
+        <field name="price(d)" class="java.math.BigDecimal"/>
+        <title>
+            <band height="18">
+                <textField isStretchWithOverflow="true" isBlankWhenNull="true">
+                    <reportElement style="GroupCellStyle1" stretchType="RelativeToBandHeight" x="0" y="0" width="802" height="18" uuid="798a30fc-f932-4434-a299-d289e5acf420"/>
+                    <textElement textAlignment="Center"/>
+                    <textFieldExpression><![CDATA["Invoice No." + $F{number(i)} + " dated " + $F{date(i)}]]></textFieldExpression>\n\t\t\t</textField>\n\t\t</band>\n\t</title>\n\t<pageHeader>\n\t\t<band height="18">\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" stretchType="RelativeToBandHeight" x="0" y="0" width="606" height="18" uuid="c151590a-a89b-464a-89ff-8bf91a7e652f"/>\n\t\t\t\t<textElement textAlignment="Center"/>\n\t\t\t\t<textFieldExpression><![CDATA["Book"]]></textFieldExpression>\n\t\t\t</textField>\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" stretchType="RelativeToBandHeight" x="606" y="0" width="97" height="18" uuid="186213e1-9aa8-46e8-aa27-60e9e59dd03f"/>\n\t\t\t\t<textElement textAlignment="Center"/>\n\t\t\t\t<textFieldExpression><![CDATA["Quantity"]]></textFieldExpression>\n\t\t\t</textField>\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" stretchType="RelativeToBandHeight" x="703" y="0" width="99" height="18" uuid="5d3c0f3a-fc6e-4182-b7ae-f3ad933029f8"/>\n\t\t\t\t<textElement textAlignment="Center"/>\n\t\t\t\t<textFieldExpression><![CDATA["Price"]]></textFieldExpression>\n\t\t\t</textField>\n\t\t</band>\n\t</pageHeader>\n\t<detail>\n\t\t<band height="18">\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" positionType="Float" stretchType="RelativeToBandHeight" x="0" y="0" width="606" height="18" uuid="3b31443c-0422-40d4-b32c-82ac15259dd9"/>\n\t\t\t\t<textElement textAlignment="Left"/>\n\t\t\t\t<textFieldExpression><![CDATA[$F{nameBook(d)}]]></textFieldExpression>\n\t\t\t</textField>\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" positionType="Float" stretchType="RelativeToBandHeight" x="606" y="0" width="97" height="18" uuid="204da3de-446c-4c2c-ba1b-33262b64ef4b"/>\n\t\t\t\t<textElement textAlignment="Right"/>\n\t\t\t\t<textFieldExpression><![CDATA[$F{quantity(d)}]]></textFieldExpression>\n\t\t\t</textField>\n\t\t\t<textField isStretchWithOverflow="true" isBlankWhenNull="true">\n\t\t\t\t<reportElement style="GroupCellStyle0" positionType="Float" stretchType="RelativeToBandHeight" x="703" y="0" width="99" height="18" uuid="6fb33419-b7aa-46fb-9021-d13a8c906dc9"/>\n\t\t\t\t<textElement textAlignment="Right"/>\n\t\t\t\t<textFieldExpression><![CDATA[$F{price(d)}]]></textFieldExpression>\n\t\t\t</textField>\n\t\t</band>\n\t</detail>\n</jasperReport>\n
+
+The resulting report will look like this:
+
+<img src="attachments/46367627/57738060.png" width="800" />
+
+##### Example 3
+
+###### Condition
+
+Similar to **Example 2**, plus the buyer and order logic.
+
+
+We need to create a print form with customer information that will include all orders and invoices.
+
+###### Solution
+
+First, let's create a form whose structure will correspond to the logic of the required print form. We will display the buyer object in the panel, as we only need to show data for a single buyer. The rest of the objects remain tables.
+
 
 The principle of this report is that objects with invoices and orders are independent of each other. Thus, they will be generated as different subreports (**Subreport**).
 

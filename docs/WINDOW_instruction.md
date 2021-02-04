@@ -135,6 +135,5 @@ Alignment type. This is specified using one of these keywords:
 ********
 
 
-
 **  
 **

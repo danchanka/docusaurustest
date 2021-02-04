@@ -16,4 +16,3 @@ To declare a primary property, use the [**DATA** operator](DATA_operator.md).
 
 ****
 
-

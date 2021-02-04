@@ -10,4 +10,3 @@ To implement this operator, use the [**CLASS** operator](CLASS_operator.md).
 
 **Examples**
 
-

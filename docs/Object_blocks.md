@@ -137,5 +137,64 @@ The expression whose value will be used as the name of the  [report](Print_view
 ****************
 
 
+****************************
+
+
+  
+
+### **Object tree block**
+
+**Syntax**
+
+    TREE [name] groupDeclaration1 [parentBlock1], ...., groupDeclarationN [parentBlockN] [treeOptions]
+
+Each *groupDeclaration* is a declaration of an object group that is similar to the declaration in an object block described above. Each *parentBlock* can be described in one of the following ways:
+
+    PARENT propertyId
+    (PARENT propertyId1, ..., propertyIdK)
+
+The first option is used if an object group for which the block is specified consists of a single object, the second one is used for groups of two and more objects.
+
+The tree*Options* options set may be specified after the declaration of each object tree.
+
+    AFTER groupName
+    BEFORE groupName
+
+**Description**
+
+*Object tree block* lets you create an [object tree](Interactive-view_1573071.html#Interactiveview-tree). The first specified object group will form a list of top-level objects, each of which will have a child list of objects of the second specified object group and so  on.
+
+Use the **PARENT** block to create [hierarchical object groups](Interactive-view_1573071.html#Interactiveview-treegroup). To do that, specify a property that will define the parent element for an object (or several objects if an object group contains several ones).
+
+**Parameters**
+
+*name*
+
+The name of the object tree being created*.* [Simple ID](IDs_1573053.html#IDs-id). 
+
+*propertyId*
+
+[ID of the property](IDs_1573053.html#IDs-propertyid) defining the hierarchy for an object group consisting of a single object. The specified property must have a single parameter and return the parent object of the passed object as its value (or **NULL**  if the passed object is the top one).
+
+*propertyId1, ..., propertyIdK*
+
+A list of property ID's defining the hierarchy for an object group consisting of several objects. All specified properties must have the same number of parameters as the number of objects in the object group. Each of these properties must return one of the parent objects of the passed objects as a value (or  **NULL**  if the passed object collection is the top one). The first property should return the first parent object, the second property - the second object, etc.  on.
+
+***Object tree options***
+
+AFTER groupName
+
+BEFORE groupName
+
+Specifying that the object tree should be added to the form structure immediately before (keyword **BEFORE**) or after (keyword **AFTER**) of a specified object group. Typically used with the [form extension](Form_extension.md) mechanism . If a group is added before the group in a tree, then this group should the first in this tree. Accordingly, if a group is added after the group in a tree, this group should be the last in this tree.
+
+*groupName*
+
+[Object group name](#Objectblocks-groupName). 
+
+**Examples**
+
+****************
+
 
   

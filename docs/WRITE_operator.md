@@ -20,6 +20,38 @@ The following URL types are supported:
 It is assumed that the file extension is not specified in the URL (that is, the period (.) is also considered a part of the file name). This extension is determined automatically based on the class of the file being written:
 
 
+The Downloads folder in the user folder is considered to be the current folder on the client side.
+
+**Parameters**
+
+*CLIENT*
+
+Keyword. If specified, the action will be executed on the client side. By default, the action is executed on the server.
+
+*DIALOG*
+
+Keyword. If specified, before writing the file a dialog will be shown in which the user can change the specified URL****.**** This can be used only when writing to the disk (the URL type is file).**** **** By default, the dialog is not shown. 
+
+****ulrExpr***  
+*
+
+An [expression](Expression.md) whose value equals to the URL.
+
+***fileExpr***
+
+An [expression](Expression.md) whose value equals to the file that will be written to an external resource. 
+
+**APPEND**
+
+Keyword. If specified, the file is re-read from  fileExpr and appended to the file at urlExpr;. For the CSV extension, data is added to the end of the file. For xls and xlsx , all sheets from the fileExpr file are copied to the file at the specified location urlExpr. Not supported for other extensions. By default, the file is rewritten.
+
+**  
+**
+
+****Examples****
+
+************
+
 
 ****  
 ****

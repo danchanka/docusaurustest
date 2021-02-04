@@ -18,4 +18,3 @@ To create properties, use [the **=** instruction](Instruction_=.md). 
 
 **Examples**
 
-

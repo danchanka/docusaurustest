@@ -20,4 +20,3 @@ To manage the navigator use the [**NAVIGATOR** instruction](NAVIGATOR_instruct
 
 **Examples**
 
-

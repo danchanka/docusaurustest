@@ -42,6 +42,5 @@ If the dialect type is not specified explicitly, then the corresponding formula 
 ****
 
 
-
 **  
 **

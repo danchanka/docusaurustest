@@ -12,4 +12,3 @@ To define calculated events, use [the **<- WHEN** instruction](Instruction_-_WHE
 
 **Examples**
 
-

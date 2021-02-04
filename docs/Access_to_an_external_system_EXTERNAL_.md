@@ -78,4 +78,3 @@ To declare an action that accesses an external system, use the [**EXTERNAL** o
 
 **Examples**
 
-

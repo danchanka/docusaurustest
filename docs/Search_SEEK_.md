@@ -26,4 +26,3 @@ To declare an action that implements an object change, use the [**SEEK** operat
 
 **Examples**
 
-

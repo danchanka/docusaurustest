@@ -16,4 +16,3 @@ To declare an action that implements property change, use the [**CHANGE** operat
 
 **Examples**
 
-

@@ -16,4 +16,3 @@ To implement conversion, the [type conversion operator](Type_conversion_operato
 
 **Examples**
 
-

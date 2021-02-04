@@ -30,6 +30,5 @@ A context-dependent action operator that is executed if the input was [cancelled
 **Examples**
 
 
-
 **  
 **

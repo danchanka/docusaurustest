@@ -20,8 +20,17 @@ def get_dirs():
     
 
 def remove_tables(data):
-    data = re.sub(r'<table class="(.*\n)*</table>', r'', data, re.M)
-    return data    
+    lines = data.split('\n')
+    nlines = []
+    opened = 0
+    for line in lines:
+        if line.lstrip().startswith('<table'):
+            opened += 1
+        if opened == 0:
+            nlines.append(line)   
+        if line.lstrip().startswith('</table>'):
+            opened -= 1    
+    return '\n'.join(nlines)    
 
 def escape_title(title):
     return '\'' + title + '\''       

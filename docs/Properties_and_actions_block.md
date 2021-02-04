@@ -278,4 +278,3 @@ Specifying a [property/action group](Groups_of_properties_and_actions.md) which
 
 ****************
 
-

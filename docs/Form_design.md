@@ -90,6 +90,66 @@ In the last two cases (that is, when specifying the width as a sample value or i
 By default, the extension coefficient and alignment for components are determined as follows:
 
 
+The base container size (except the tab panel) is equal by default to the sum of the base sizes of all its child components for the dynamic direction, and the maximum for the static direction. The base height of the tab panel is the sum of the base height of its current tab and the height of the tab title bar, the base width is the same as the base width of the current tab.
+
+The base width of tables/trees is 130 pixels by default, and the height is 70 pixels. The base size of the property panel is determined in the same way as if the panel was a container (horizontal if the caption is on the left, vertical if it is at the top) consisting of the caption and the value cell. The base size of the remaining base components (as well as the caption in the property panel) is determined in such a way as to enclose all the text contained in them.
+
+*Property value cell dimensions*
+
+The following formulas are used by default to determine the width of a property value cell:
+
+
+The default height of a property value cell is equal to the height of the font used, except properties whose values belong to the **TEXT** class (in this case, the height is four times the font height).
+
+**Window size**
+
+If the form opens in [window](36307331.html#Inaninteractiveview(SHOW,DIALOG)-location) mode it does not have an upper container, so you need to determine this window's initial size. This size is determined similarly to the default base size, the only difference is that for tables/trees the default size is determined not as a constant (the default is 130.70) but in such a way that it contains their whole contents (similar to the automatic sizing mechanism), but no less than 130 in width and 140 in height.
+
+****Default design****
+
+An automatic design can be created for each form, based on the form's structure. The developer can modify the automatic design or create a design from scratch.
+
+The automatic design is generated as follows:
+
+-   **BOX**: contains all the components of this form. Vertical container. Extension coefficient: 1, alignment: STRETCH.
+    -   **PANEL**: contains components of the properties that are displayed in PANEL view  and [display group](Form-structure_1573069.html#Formstructure-drawgroup) of which is undefined (the property has no parameters). The internal structure and layout are similar to the internal structure and layout of the object group container. 
+        -   **GROUP...**
+    -   **OBJECTS**: contains all the components that are created for object groups/trees on this form. Vertical container. Extension coefficient: 1, alignment: STRETCH.
+        -   **BOX** (<object group/tree\>):  contains all the components of this group of objects. Vertical container. Extension coefficient: 1, alignment: STRETCH.
+            -   **GRIDBOX** (<group of objects / tree\>):  contains table / tree. Horizontal container. Extension coefficient: 1, alignment: STRETCH.
+                -   GRID (): the base component of a Table.
+            -   TOOLBARBOX (
+                ): contains all the components of a toolbar (responsible for layout inside the toolbar). Horizontal container. Alignment: STRETCH
+                -   TOOLBARLEFT (): the left side of a toolbar. Horizontal container. Alignment: CENTER.  
+                    -   TOOLBARSYSTEM (): the base component of the System toolbar. Alignment: CENTER.
+                -   TOOLBARRIGHT (): the right side of a toolbar. Horizontal container. Extension coefficient: 1, alignment: CENTER.
+                    -   FILTERGROUPS (): contains all the components that are created for filter groups corresponding to a object group. Horizontal container. Alignment: CENTER.
+                        -   FILTERGROUP: base component of a Filter group. Alignment: CENTER.
+                    -   TOOLBAR (
+                        ):  contains the components of the properties displayed in the TOOLBAR view and display group equal to the specified one. Horizontal container. Alignment: CENTER.
+                        -   PROPERTY (): base component of the Property Panel.
+            -   USERFILTER ():  base component of the User filter. Alignment: STRETCH.
+            -   **PANEL** (tree>): contains the components of the properties displayed in the PANEL view. Vertical container. Alignment: STRETCH. If several properties belong to [groups](Groups_of_properties_and_actions.md) for which it is necessary to create separate containers, then a corresponding hierarchy of containers is created for them and the components of these properties are placed in it:
+                -   **GROUP** (<property group\>, tree\>): contains components of properties that belong to the specified object group and property group (or do not belong to any property group: in this case the property group is not specified, for example GROUP(,a)). Column container.
+                    -   PROPERTY (): base component of the Property Panel.
+    -   **TOOLBARBOX**: contains property components that are displayed in TOOLBARview and have no display group (for example, the property has no parameters). The internal structure and layout are similar to the corresponding internal structure and layout of an object group (except for **FILTERGROUPS**, which does not make sense when there is no object group, and therefore is not present in this container).
+        -   **TOOLBARLEFT, TOOLBARRIGHT, TOOLBAR...**
+
+**Default design example**
+
+
+The hierarchy of containers and components in the default design will look like this:
+
+![](attachments/29884443/57738024.png)
+
+  
+
+**Language**
+
+To set up the design of the form, use the [****DESIGN**** instruction](DESIGN_instruction.md).
+
+**Examples**
+
 
 The output is the following form:
 

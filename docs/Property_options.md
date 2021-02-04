@@ -151,4 +151,3 @@ Default filter type. [String literal](Literals_35521071.html#Literals-strliteral
 
 **Examples**
 
-

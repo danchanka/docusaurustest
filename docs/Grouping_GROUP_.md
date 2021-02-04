@@ -19,4 +19,3 @@ To declare a property that implements grouping, use the [**GROUP** operator](GRO
 
 **Examples**
 
-

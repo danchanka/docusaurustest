@@ -40,6 +40,18 @@ To create a property implementing a general form of selection, the **[CASE](CAS
 
 
 
+********
+
+
+********
+
+
+********
+
+
+********
+
+
 **  
 **
 

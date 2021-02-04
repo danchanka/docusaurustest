@@ -23,6 +23,5 @@ title: 'Arithmetic operators'
 **Examples**
 
 
-
 **  
 **

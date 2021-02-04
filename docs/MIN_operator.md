@@ -22,4 +22,3 @@ A list of [expressions](Expression.md) of which values the minimum is selected.
 
 ****
 
-

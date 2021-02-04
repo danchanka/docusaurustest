@@ -14,4 +14,3 @@ To declare an action implemented in **Java** use the  [**INTERNAL** operator](
 
 **Examples**
 
-

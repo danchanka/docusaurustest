@@ -14,4 +14,3 @@ To create aggregations, use the [operator**AGGR**](AGGR_operator.md).
 
 **Examples**
 
-

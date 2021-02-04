@@ -25,4 +25,3 @@ Design component [selector](DESIGN-instruction_4718609.html#DESIGNinstruction-se
 
 **Examples**
 
-

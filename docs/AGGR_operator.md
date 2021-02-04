@@ -47,5 +47,4 @@ An [expression](Expression.md) whose value defines an aggregated property.
 **Examples**
 
 
-
   

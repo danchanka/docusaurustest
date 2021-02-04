@@ -9,5 +9,52 @@ title: 'How-to: FOR'
 We have a list of books with titles.
 
 
+We need to find all the books containing a given line and display a message with their names and internal codes.
+
+###### Task
+
+
+Use the isSubstring property (defined in the **Utils** system [module](Modules.md)) to identify whether a given line contains another line.
+
+##### Example 2
+
+###### Task
+
+Similar to **Example 1**.
+
+We need to create an action that creates 100 new books with certain titles.
+
+###### Solution
+
+
+Both these implementations will provide the same result.
+
+To solve this task, use the **iterate** property (defined in the **Utils** system module) which returns **TRUE** for all integers in the range.
+
+##### Example 3
+
+###### Task
+
+Similar to **Example 1**, but with the order logic. Each order contains lines where books and discount prices are specified.
+
+
+We need to create an action that applies a discount to all the lines with prices above 100.
+
+###### Solution
+
+
+Both these implementations will provide the same result.
+
+##### Example 4
+
+###### Task
+
+Similar to **Example 3**, but a default price was added for each book.
+
+
+We need to create an action that adds all the books with prices above 100 to the order.
+
+###### Solution
+
 
 Both these implementations will provide the same result.

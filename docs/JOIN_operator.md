@@ -49,3 +49,8 @@ An [expression](Expression.md) which is used to define the main property. Cannot
 ****
 
 
+**  
+**
+
+Sometimes it’s convenient to define the main property with an expression to simplify the source code and make it more understandable.
+

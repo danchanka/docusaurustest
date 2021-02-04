@@ -19,6 +19,5 @@ Static objects of custom classes are defined in the [CLASS **instruction**](CLAS
 **Examples**
 
 
-
 **  
 **

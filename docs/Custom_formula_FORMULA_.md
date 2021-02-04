@@ -16,4 +16,3 @@ To declare a property using a custom formula, use the [**FORMULA** operator](FOR
 
 **Examples**
 
-

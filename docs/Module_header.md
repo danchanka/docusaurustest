@@ -46,4 +46,3 @@ The name of the module namespace. A simple ID that cannot contain an underscore.
 
 ###### **Examples**
 
-
