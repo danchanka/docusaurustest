@@ -2,7 +2,7 @@
 title: 'META instruction'
 ---
 
-The **META** instruction creates a new [metacode](Metaprogramming_1310740.html#Metaprogramming-metacode).
+The **META** instruction creates a new [metacode](Metaprogramming.md#Metaprogramming-metacode).
 
 ### Syntax
 
@@ -30,7 +30,7 @@ List of metacode parameters. Each parameter is defined by a simple ID. The list 
 
 *statement1 ... statementM*
 
-A sequence of  [instructions](Instructions.md) represented by a block of code. Instructions may contain [special operations \#\# and \#\#\#](Metaprogramming_1310740.html#Metaprogramming-concat) used for concatenating [lexemes](Tokens.md). Instructions cannot include another **META** instruction.
+A sequence of  [instructions](Instructions.md) represented by a block of code. Instructions may contain [special operations \#\# and \#\#\#](Metaprogramming.md#Metaprogramming-concat) used for concatenating [lexemes](Tokens.md). Instructions cannot include another **META** instruction.
 
 ### Examples
 

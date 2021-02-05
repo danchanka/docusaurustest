@@ -2,9 +2,9 @@
 title: 'Grouping (GROUP)'
 ---
 
-The *group *operator creates a [property](Properties.md) that divides all object collections in the system into groups, and calculates an [aggregating function](Set-operations_4391029.html#Setoperations-func) for each group following specified order. Accordingly, the set for which this aggregating function is calculated is determined as all the object collections belonging to this group. 
+The *group *operator creates a [property](Properties.md) that divides all object collections in the system into groups, and calculates an [aggregating function](Set_operations.md#Setoperations-func) for each group following specified order. Accordingly, the set for which this aggregating function is calculated is determined as all the object collections belonging to this group. 
 
-Groups are defined for this operator as a set of properties (*groups*), and the order is defined as a list of properties and an increasing or decreasing marker. If the aggregation function is not [commutative](Set-operations_4391029.html#Setoperations-commutative), then the order must be uniquely determined. 
+Groups are defined for this operator as a set of properties (*groups*), and the order is defined as a list of properties and an increasing or decreasing marker. If the aggregation function is not [commutative](Set_operations.md#Setoperations-commutative), then the order must be uniquely determined. 
 
 A uniquely determined order can be guaranteed if for example, the IDs of all objects for which grouping is performed are specified when the order is defined
 

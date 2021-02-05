@@ -2,7 +2,7 @@
 title: 'NESTEDSESSION operator'
 ---
 
-The **NESTEDSESSION** operator creates an [action](Actions.md) that executes the other action in a [nested session](30769225.html#Newsession(NEWSESSION,NESTEDSESSION)-nested).
+The **NESTEDSESSION** operator creates an [action](Actions.md) that executes the other action in a [nested session](New_session_NEWSESSION_NESTEDSESSION.md#Newsession(NEWSESSION,NESTEDSESSION)-nested).
 
 ### Syntax
 
@@ -16,7 +16,7 @@ The **NESTEDSESSION** operator creates an action which executes the other acti
 
 *action *
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that defines an action to be executed in the nested session.
+A [context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) that defines an action to be executed in the nested session.
 
 ### Examples
 

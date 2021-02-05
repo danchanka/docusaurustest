@@ -63,5 +63,5 @@ It is sometimes necessary to use some value for a built-in class which will diff
 When files of a specific type (**JSONFILE**, **XMLFILE**, ...) are cast into a file of dynamic type (**FILE**), whether explicitly or implicitly (e.g. with [data import](Data_import_IMPORT.md) without specifying a format or when [working with external systems](Access_to_an_external_system_EXTERNAL.md)), the extension of the result file is determined as follows:
 
 
-### The order of determining the result property when [accessing from an external system](Access-from-an-external-system_51216539.html#Accessfromanexternalsystem-httpresult)
+### The order of determining the result property when [accessing from an external system](Access_from_an_external_system.md#Accessfromanexternalsystem-httpresult)
 

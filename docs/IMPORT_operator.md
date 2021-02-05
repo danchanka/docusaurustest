@@ -2,7 +2,7 @@
 title: 'IMPORT operator'
 ---
 
-The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT.md) or, in general, into a [specified form](57737720.html#Inastructuredview(EXPORT,IMPORT)-importForm).
+The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT.md) or, in general, into a [specified form](In_a_structured_view_EXPORT_IMPORT.md#Inastructuredview(EXPORT,IMPORT)-importForm).
 
 ### Syntax
 
@@ -44,11 +44,11 @@ The first passed file is used to automatically determine a flat file format by i
 
 *groupId1, ..., groupIdM*
 
-Names of object groups of the imported form for which you want to import data. [Simple IDs](IDs_1573053.html#IDs-id). Used only for importing a form from flat formats.
+Names of object groups of the imported form for which you want to import data. [Simple IDs](IDs.md#IDs-id). Used only for importing a form from flat formats.
 
 *fileExpr1 , ..., fileExprM*
 
-Expressions whose values are files that need to be imported for the specified object groups. The value of each expression must be an object of a file class (**FILE**, **RAWFILE**, **JSONFILE** etc. ). Used only to import forms from flat formats. For the [empty object group](Static-view_29884533.html#Staticview-empty), the name **root** is used. 
+Expressions whose values are files that need to be imported for the specified object groups. The value of each expression must be an object of a file class (**FILE**, **RAWFILE**, **JSONFILE** etc. ). Used only to import forms from flat formats. For the [empty object group](Static_view.md#Staticview-empty), the name **root** is used. 
 
 ### *Import format*
 
@@ -58,7 +58,7 @@ A keyword that specifies that values should be read from the attributes of an el
 
 *separator*
 
-Delimiter in a **CSV** file. [String literal](Literals_35521071.html#Literals-strliteral). If not specified, then the default delimiter is '**;** '.
+Delimiter in a **CSV** file. [String literal](Literals.md#Literals-strliteral). If not specified, then the default delimiter is '**;** '.
 
 *HEADER | NOHEADER*
 
@@ -89,7 +89,7 @@ charsetStr is a string literal that defines the encoding. 
 
 *actionOperator*
 
-[Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) describing the action that is executed for each imported record.
+[Context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) describing the action that is executed for each imported record.
 
 *elseActionOperator*
 
@@ -99,19 +99,19 @@ A context-dependent action operator describing the action that is executed if no
 
 *formName*
 
-The name of the form into which data has to be imported. [Composite ID](IDs_1573053.html#IDs-cid).
+The name of the form into which data has to be imported. [Composite ID](IDs.md#IDs-cid).
 
 *objClassId1, ..., objClassIdK*
 
-Classes of the [imported](36601927.html#Dataimport(IMPORT)-objects) objects. Specified by [class IDs](IDs_1573053.html#IDs-classid). K <= 1. By default, it is assumed that what is being imported is one object of class **INTEGER**.
+Classes of the [imported](Data_import_IMPORT.md#Dataimport(IMPORT)-objects) objects. Specified by [class IDs](IDs.md#IDs-classid). K <= 1. By default, it is assumed that what is being imported is one object of class **INTEGER**.
 
 *objAlias1, ..., objAliasK*
 
-Names of local parameters into which imported objects are written. [Simple IDs](IDs_1573053.html#IDs-id). K <= 1. By default, it is assumed that one object is being imported with the name **row**.
+Names of local parameters into which imported objects are written. [Simple IDs](IDs.md#IDs-id). K <= 1. By default, it is assumed that one object is being imported with the name **row**.
 
 *propertyId1, ..., propertyIdN*
 
-List [property IDs](IDs_1573053.html#IDs-propertyid) into which columns (fields) of data are imported. Property parameters and their classes must match the imported objects and their classes.
+List [property IDs](IDs.md#IDs-propertyid) into which columns (fields) of data are imported. Property parameters and their classes must match the imported objects and their classes.
 
 *columnId1, ..., columnIdN*
 
@@ -119,7 +119,7 @@ A list of column IDs in the source file from which data will be imported to the 
 
 *whereId*
 
-Property ID to which [a default value](Built-in-classes_2031657.html#Built-inclasses-defaultvalue) of the class of this property value will be written for each imported object. Property parameters and classes must match the imported objects and their classes. If the property is not specified and the number of imported objects is greater than 0, a property with the name **imported** and classes of imported objects (e.g. **System.imported\[INTEGER\]**) is used.
+Property ID to which [a default value](Built-in_classes.md#Built-inclasses-defaultvalue) of the class of this property value will be written for each imported object. Property parameters and classes must match the imported objects and their classes. If the property is not specified and the number of imported objects is greater than 0, a property with the name **imported** and classes of imported objects (e.g. **System.imported\[INTEGER\]**) is used.
 
 *propClassId1, ..., *propClassId*N*
 

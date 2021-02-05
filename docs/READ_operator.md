@@ -35,7 +35,7 @@ An [expression](Expression.md) whose value is the URL from which to read. The va
 
 *propertyId*
 
-The [ID of the property](IDs_1573053.html#IDs-propertyid) to which read data should be written. This property must not have parameters and its value must be of a file class (**FILE**, **RAWFILE**, **JSONFILE**, etc.). If this property is not specified, the **System.exportFile** property is used by default.
+The [ID of the property](IDs.md#IDs-propertyid) to which read data should be written. This property must not have parameters and its value must be of a file class (**FILE**, **RAWFILE**, **JSONFILE**, etc.). If this property is not specified, the **System.exportFile** property is used by default.
 
 ### Examples
 

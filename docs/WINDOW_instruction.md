@@ -29,11 +29,11 @@ The **WINDOW** instruction declares a new window and adds it to the current [m
 
 *name*
 
-Window name. [Simple ID](IDs_1573053.html#IDs-id). The name must be unique within the current [namespace](Naming_35521066.html#Naming-namespace).
+Window name. [Simple ID](IDs.md#IDs-id). The name must be unique within the current [namespace](Naming.md#Naming-namespace).
 
 *caption*
 
-Window caption. [String literal](Literals_35521071.html#Literals-strliteral). If caption is not specified, the caption of the window will be its name.  
+Window caption. [String literal](Literals.md#Literals-strliteral). If caption is not specified, the caption of the window will be its name.  
 
 *type*
 
@@ -63,7 +63,7 @@ Specifying the size and location of the window. 
 
 *x*
 
-The left window coordinate. [Integer literal](Literals_35521071.html#Literals-intliteral) ranging from 0 to 100.
+The left window coordinate. [Integer literal](Literals.md#Literals-intliteral) ranging from 0 to 100.
 
 *y*
 

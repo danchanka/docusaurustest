@@ -22,7 +22,7 @@ An [expression](Expression.md) whose value must be a structure.
 
 *number*
 
-The sequence number of an object. [Numeric literal](Literals_35521071.html#Literals-intliteral). Must be within the range of \[1..N\], where N is the number of objects in the structure.
+The sequence number of an object. [Numeric literal](Literals.md#Literals-intliteral). Must be within the range of \[1..N\], where N is the number of objects in the structure.
 
 ### Examples
 

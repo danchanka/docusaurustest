@@ -53,23 +53,23 @@ The hierarchy described within a single **NAVIGATOR** instruction can have an ar
 
 *name*
 
-Navigator element name. In the create instruction, it is [a simple ID](IDs_1573053.html#IDs-id) and must be unique within the current [namespace](Naming_35521066.html#Naming-namespace), while in the rest of the instructions it is a [composite ID](IDs_1573053.html#IDs-cid). The name does not have to be specified when creating a form element or action element. Here the form name or action name is used as the element name.
+Navigator element name. In the create instruction, it is [a simple ID](IDs.md#IDs-id) and must be unique within the current [namespace](Naming.md#Naming-namespace), while in the rest of the instructions it is a [composite ID](IDs.md#IDs-cid). The name does not have to be specified when creating a form element or action element. Here the form name or action name is used as the element name.
 
 *caption*
 
-Navigator element caption. [String literal](Literals_35521071.html#Literals-strliteral). In the create instruction, if the caption is not specified, the caption will be the name of the created element. In the rest of the instructions it modifies the existing caption.
+Navigator element caption. [String literal](Literals.md#Literals-strliteral). In the create instruction, if the caption is not specified, the caption will be the name of the created element. In the rest of the instructions it modifies the existing caption.
 
 *actionName*
 
-The [action ID](IDs_1573053.html#IDs-propertyid) for which the navigator element will be created. The action must not take any parameters.
+The [action ID](IDs.md#IDs-propertyid) for which the navigator element will be created. The action must not take any parameters.
 
 *formName*
 
-The [form ID](IDs_1573053.html#IDs-propertyid) for which the navigator element will be created.
+The [form ID](IDs.md#IDs-propertyid) for which the navigator element will be created.
 
 *formElseActionName*
 
-The [form or action ID](IDs_1573053.html#IDs-propertyid) for which the navigator element will be created. It is initially assumed that in *formElseActionName *a form is specified, and that only if it is not found an action is specified in*formElseActionName * The action must not take any parameters.
+The [form or action ID](IDs.md#IDs-propertyid) for which the navigator element will be created. It is initially assumed that in *formElseActionName *a form is specified, and that only if it is not found an action is specified in*formElseActionName * The action must not take any parameters.
 
 ***Element options **(options)*
 

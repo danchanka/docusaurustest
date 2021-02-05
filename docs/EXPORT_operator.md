@@ -29,7 +29,7 @@ If no* *export file format* *is specified, it is considered to be **JSON**.
 If the property to which the data is exported is of class **FILE**, then the extension of the resulting file is determined depending on the format as follows:
 
 
-When exporting a form in an **OBJECTS** block, it is possible to add extra filters to check for the equality of the objects on the form with [the values passed](Open-form_3014672.html#Openform-params). These objects [will not participate](Structured-view_29884537.html#Structuredview-objects) in building the object group hierarchy.
+When exporting a form in an **OBJECTS** block, it is possible to add extra filters to check for the equality of the objects on the form with [the values passed](Open_form.md#Openform-params). These objects [will not participate](Structured_view.md#Structuredview-objects) in building the object group hierarchy.
 
 ### Parameters
 
@@ -37,11 +37,11 @@ When exporting a form in an **OBJECTS** block, it is possible to add extra fil
 
 *formName*
 
-The name of the form from which you want to export data. [Composite ID](IDs_1573053.html#IDs-cid).
+The name of the form from which you want to export data. [Composite ID](IDs.md#IDs-cid).
 
 *objName1 ... objNameK*
 
-Names of form objects for which filtered (fixed) values are specified. [Simple IDs](IDs_1573053.html#IDs-id).
+Names of form objects for which filtered (fixed) values are specified. [Simple IDs](IDs.md#IDs-id).
 
 *expr1 ... exprK*
 
@@ -53,7 +53,7 @@ List of [expressions](Expression.md) from whose values the data is exported. E
 
 *columnId1, ..., columnIdN*
 
-A list of column IDs in the resulting file into which data from the corresponding property will be exported. Each list element is either [a simple ID](IDs_1573053.html#IDs-id) or a [string literal](Literals_35521071.html#Literals-strliteral). If no ID is specified, it is considered equal to expr<Column number\> by default.
+A list of column IDs in the resulting file into which data from the corresponding property will be exported. Each list element is either [a simple ID](IDs.md#IDs-id) or a [string literal](Literals.md#Literals-strliteral). If no ID is specified, it is considered equal to expr<Column number\> by default.
 
 *whereExpr*
 
@@ -75,7 +75,7 @@ A keyword that specifies that values should be exported to the attributes of the
 
 *separator*
 
-Delimiter in a **CSV** file. [String literal](Literals_35521071.html#Literals-strliteral). If not specified, then the default delimiter is '**;** '.
+Delimiter in a **CSV** file. [String literal](Literals.md#Literals-strliteral). If not specified, then the default delimiter is '**;** '.
 
 *HEADER | NOHEADER*
 
@@ -97,21 +97,21 @@ charsetStr is a string literal that defines the encoding. 
 
 *TOP n*
 
-Exports only the first n records. [Integer literal](Literals_35521071.html#Literals-id-%D0%9B%D0%B8%D1%82%D0%B5%D1%80%D0%B0%D0%BB%D1%8B-intliteral).
+Exports only the first n records. [Integer literal](Literals.md#Literals-intliteral).
 
 ### *Export destination*
 
 *propertyId*
 
-[Property ID](IDs_1573053.html#IDs-propertyid) to which the generated file will be written. This property must not have parameters and its value must be of a file class (**FILE**, **RAWFILE**, **JSONFILE**, etc.). If this property is not specified, the **System.exportFile** property is used by default.
+[Property ID](IDs.md#IDs-propertyid) to which the generated file will be written. This property must not have parameters and its value must be of a file class (**FILE**, **RAWFILE**, **JSONFILE**, etc.). If this property is not specified, the **System.exportFile** property is used by default.
 
 *groupId1, ..., groupIdM*
 
-Names of object groups from the exported form for which you want to export data. [Simple IDs](IDs_1573053.html#IDs-id). Used only for exporting forms to flat formats.
+Names of object groups from the exported form for which you want to export data. [Simple IDs](IDs.md#IDs-id). Used only for exporting forms to flat formats.
 
 ### propertyIdM *, ..., *propertyIdM
 
-[Property IDs](IDs_1573053.html#IDs-propertyid) to which the generated files for specified object groups will be written. These properties must not have parameters and their value must be of file classes (**FILE**, **RAWFILE**, **JSONFILE**, etc.). Used only for exporting forms to flat formats. For the[empty group](Static-view_29884533.html#Staticview-empty) of objects, the name **root** is used. 
+[Property IDs](IDs.md#IDs-propertyid) to which the generated files for specified object groups will be written. These properties must not have parameters and their value must be of file classes (**FILE**, **RAWFILE**, **JSONFILE**, etc.). Used only for exporting forms to flat formats. For the[empty group](Static_view.md#Staticview-empty) of objects, the name **root** is used. 
 
 ### Examples
 

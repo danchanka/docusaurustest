@@ -17,7 +17,7 @@ The **REQUEST** operator creates an action that allows the separation of a reque
 
 *requestAction*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that requests a value.
+A [context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) that requests a value.
 
 *doAction*
 
@@ -25,7 +25,7 @@ A context-dependent action operator that is executed if the input was completed 
 
 *elseAction*
 
-A context-dependent action operator that is executed if the input was [cancelled](Value-input_35520941.html#Valueinput-result).
+A context-dependent action operator that is executed if the input was [cancelled](Value_input.md#Valueinput-result).
 
 ### Examples
 

@@ -41,7 +41,7 @@ We need to add a column that will be marked when the given order number contains
 ###### Solution
 
 
-Since single quotes are used in the formula, make sure to [escape](https://ru.wikipedia.org/wiki/%D0%AD%D0%BA%D1%80%D0%B0%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%81%D0%B8%D0%BC%D0%B2%D0%BE%D0%BB%D0%BE%D0%B2) them with a backslash **\\\\**.
+Since single quotes are used in the formula, make sure to [escape](https://en.wikipedia.org/wiki/Escape_character) them with a backslash **\\\\**.
 
 Note that the native **BOOLEAN** type allows only 2 values: **TRUE** and **NULL**. Therefore, when composing a logical expression, make sure to convert its negative value to **NULL**. In addition, the platform must explicitly know whether the expression can return an undefined value. This is why the keyword **FORMULA** must be followed by the corresponding marker.
 

@@ -30,7 +30,7 @@ Type of mutual exclusion and implicit definition do not make sense/are not suppo
 
 ### Determining the result class
 
-The result class of the selection operator is the common ancestor (builtin or [user-defined](User-classes_2228341.html#Userclasses-commonparentclass)) of its operands.
+The result class of the selection operator is the common ancestor (builtin or [user-defined](User_classes.md#Userclasses-commonparentclass)) of its operands.
 
 ### Language
 

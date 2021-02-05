@@ -32,7 +32,7 @@ The following set of options is supported (the syntax of each option is indicate
 
 Specifying the [group of properties and actions](Groups_of_properties_and_actions.md) to which the property belongs. If the option is not specified, then the property will belong by default to the group **System.private**.
 
-*groupName -* group name. [Compound ID](IDs_1573053.html#IDs-cid).
+*groupName -* group name. [Compound ID](IDs.md#IDs-cid).
 
 *MATERIALIZED*
 
@@ -64,13 +64,13 @@ Keyword that, if specified, then when the property becomes **NULL**, objects tha
 
 *viewType*
 
-Specifying the type of [property view](Interactive-view_1573071.html#Interactiveview-property) when added to the form.
+Specifying the type of [property view](Interactive_view.md#Interactiveview-property) when added to the form.
 
 -   **GRID** - table column
 -   **TOOLBAR** - toolbar
 -   **PANEL** - panel
 
-It is similar to specifying the viewType option in the [property block](Properties_and_actions_block.md) of the [**FORM**instruction](FORM_instruction.md). Thus, if this option is not specified either in the property options or in the property block directly on the form, the [default view](Interactive-view_1573071.html#Interactiveview-defaultPropertyView) of the property display group on the form is used.
+It is similar to specifying the viewType option in the [property block](Properties_and_actions_block.md) of the [**FORM**instruction](FORM_instruction.md). Thus, if this option is not specified either in the property options or in the property block directly on the form, the [default view](Interactive_view.md#Interactiveview-defaultPropertyView) of the property display group on the form is used.
 
 *ON eventType { actionOperator }*
 
@@ -84,17 +84,17 @@ Type of form event. Specified by one of the following options:
 -   **CHANGEWYS** -** **occurs when the user tries to change the value of the specified property using a special input mechanism. 
 -   **GROUPCHANGE** - occurs when the user tries to change the property value for all objects in the table (group editing).  
 -   **EDIT** - occurs when the user tries to edit the object that is the value of the specified property. 
--   **CONTEXTMENU **\[caption\] - the user has selected the specified item in the property context menu on the form. If necessary, you can also define the caption of this menu item ([string literal](Literals_35521071.html#Literals-strliteral)). If it is not specified, then, by default, it will be the same as the action caption.
+-   **CONTEXTMENU **\[caption\] - the user has selected the specified item in the property context menu on the form. If necessary, you can also define the caption of this menu item ([string literal](Literals.md#Literals-strliteral)). If it is not specified, then, by default, it will be the same as the action caption.
 
 *actionOperator*
 
-[Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent). An operator that defines the action executed on an event. You can use the parameters of the property itself as operator parameters.
+[Context-dependent action operator](Action_operator.md#Actionoperator-contextdependent). An operator that defines the action executed on an event. You can use the parameters of the property itself as operator parameters.
 
 ### *DESIGN instruction default values block*
 
 *CHARWIDTH width *\[FLEX | NOFLEX\]
 
-Specifying the [number of characters](Form-design_29884443.html#Formdesign-valueWidth) of the property value that should be visible to the user. Sets the value for the default design ; can be overridden in a **DESIGN** instruction.
+Specifying the [number of characters](Form_design.md#Formdesign-valueWidth) of the property value that should be visible to the user. Sets the value for the default design ; can be overridden in a **DESIGN** instruction.
 
 *width*
 
@@ -127,11 +127,11 @@ A keyword that causes asterisk (\*) characters to be displayed instead of a prop
 
 *CHANGEKEY key \[SHOW | HIDE\] *
 
-Specifies a [key combination](Form-events_5636111.html#Formevents-keyboard) which triggers editing of this property. Sets the value for the default design and can be overridden in the **DESIGN** instruction.
+Specifies a [key combination](Form_events.md#Formevents-keyboard) which triggers editing of this property. Sets the value for the default design and can be overridden in the **DESIGN** instruction.
 
 *key*
 
-[String literal](Literals_35521071.html#Literals-strliteral) describing the key combination *. * The method of specifying is similar to the method of specifying a parameter in the Java class method [Keystroke.getKeystroke (String)](http://docs.oracle.com/javase/7/docs/api/javax/swing/KeyStroke.html#getKeyStroke(java.lang.String)).
+[String literal](Literals.md#Literals-strliteral) describing the key combination *. * The method of specifying is similar to the method of specifying a parameter in the Java class method [Keystroke.getKeystroke (String)](http://docs.oracle.com/javase/7/docs/api/javax/swing/KeyStroke.html#getKeyStroke(java.lang.String)).
 
 *SHOW*
 
@@ -143,11 +143,11 @@ Keyword. When specified, the key combination will not be displayed in the proper
 
 *DEFAULTCOMPARE*
 
-Specifies a [default filter](Interactive-view_1573071.html#Interactiveview-userfilters) type for the property.
+Specifies a [default filter](Interactive_view.md#Interactiveview-userfilters) type for the property.
 
 *compare*
 
-Default filter type. [String literal](Literals_35521071.html#Literals-strliteral). Can be one the following values: '=', '\>', '<', '\>=', '<=', '!=', 'START\_WITH', 'CONTAINS', 'ENDS\_WITH', 'LIKE'. The default value is '=' ** ** for all data types except case-insensitive string types, for which the default value is 'CONTAINS'**. ** If **System.defaultCompareForStringContains ** is enabled, default value is 'CONTAINS'** **for all string data regardless of case sensitivity. Can be overridden in the **DESIGN** instruction.
+Default filter type. [String literal](Literals.md#Literals-strliteral). Can be one the following values: '=', '\>', '<', '\>=', '<=', '!=', 'START\_WITH', 'CONTAINS', 'ENDS\_WITH', 'LIKE'. The default value is '=' ** ** for all data types except case-insensitive string types, for which the default value is 'CONTAINS'**. ** If **System.defaultCompareForStringContains ** is enabled, default value is 'CONTAINS'** **for all string data regardless of case sensitivity. Can be overridden in the **DESIGN** instruction.
 
 ### Examples
 

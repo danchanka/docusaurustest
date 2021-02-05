@@ -6,7 +6,7 @@ The *loop* operator creates an [action](Actions.md) that iterates all object col
 
 By default, object collections are iterated in arbitrary order. However, the developer can explicitly define this order, if necessary. To do this, you need to specify a list of properties with values in an ascending or descending order that will define the order of object iteration.
 
-As for other [set operations](Set_operations.md), the condition must be such that the operation is [correct](Set-operations_4391029.html#Setoperations-correct).
+As for other [set operations](Set_operations.md), the condition must be such that the operation is [correct](Set_operations.md#Setoperations-correct).
 
 ### Adding an object
 

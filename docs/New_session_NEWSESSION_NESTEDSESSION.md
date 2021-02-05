@@ -4,7 +4,7 @@ title: 'New session (NEWSESSION, NESTEDSESSION)'
 
 The new [session](Change_sessions.md) operator allows you to execute an action in a session different from the current one. 
 
-As with other session management operators, you can explicitly specify [nested local properties](Session-management_30769221.html#Sessionmanagement-nested) for the new session operator.
+As with other session management operators, you can explicitly specify [nested local properties](Session_management.md#Sessionmanagement-nested) for the new session operator.
 
 ### Nested sessions
 

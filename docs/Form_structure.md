@@ -12,7 +12,7 @@ It is possible to combine objects into *object groups*. In this case, the table 
 
 In accordance with the order of adding object groups to the form, an ordered *list* of object groups is formed. Accordingly, the group with the maximum number for a certain set of object groups shall be called the *last* group for this set (i.e., the latest). The *last* group for a set of objects is determined similarly: first, a set of object groups into which these objects are included is built, then the last group is determined for the obtained set of object groups.
 
-Each object on the form has a *current value* at any time. It changes either as a result of [corresponding user actions](Interactive-view_1573071.html#Interactiveview-objects) in [interactive](Interactive_view.md) view or "virtually" while reading data in [static](Static_view.md) view.
+Each object on the form has a *current value* at any time. It changes either as a result of [corresponding user actions](Interactive_view.md#Interactiveview-objects) in [interactive](Interactive_view.md) view or "virtually" while reading data in [static](Static_view.md) view.
 
 ### Properties and actions
 
@@ -25,7 +25,7 @@ The behavior of properties and actions in the context of their display on the fo
   
 *Display group*
 
-Each property is displayed exactly in one of the object groups on the form (this group shall be called a *display group* of this property). By default, the display group is the last group for the set of objects which this property receives as an input. If necessary, the developer can specify the display group explicitly (with certain [constraints](Structured-view_29884537.html#Structuredview-drawgroup) when used in a structured view)
+Each property is displayed exactly in one of the object groups on the form (this group shall be called a *display group* of this property). By default, the display group is the last group for the set of objects which this property receives as an input. If necessary, the developer can specify the display group explicitly (with certain [constraints](Structured_view.md#Structuredview-drawgroup) when used in a structured view)
 
 *Groups-in-columns*
 
@@ -35,7 +35,7 @@ When determining a [display group](#Formstructure-drawgroup), properties of the 
 
 *Property groups*
 
-Properties on the form can be combined into [groups](Groups_of_properties_and_actions.md) which, in turn, are used in the interactive ([default design](Form-design_29884443.html#Formdesign-defaultDesign)) and [hierarchical](Structured-view_29884537.html#Structuredview-hierarchy) form views. By default, a property is included in a group globally (i.e., this inclusion is defined for a property for all forms at once), however, this inclusion can be redefined for particular forms.
+Properties on the form can be combined into [groups](Groups_of_properties_and_actions.md) which, in turn, are used in the interactive ([default design](Form_design.md#Formdesign-defaultDesign)) and [hierarchical](Structured_view.md#Structuredview-hierarchy) form views. By default, a property is included in a group globally (i.e., this inclusion is defined for a property for all forms at once), however, this inclusion can be redefined for particular forms.
 
 *Default settings*
 

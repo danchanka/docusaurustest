@@ -17,11 +17,11 @@ The += instruction adds an implementation to an abstract property. The syntax fo
 
 *propertyId*
 
-[ID](IDs_1573053.html#IDs-propertyid) of the abstract property. 
+[ID](IDs.md#IDs-propertyid) of the abstract property. 
 
 *param1, ..., paramN*
 
-List of parameters that will be used to define the implementation. Each element is a [typed parameter](IDs_1573053.html#IDs-paramid). The number of these parameters must be equal to the number of parameters of the abstract property. These parameters can then be used in expressions of the implementation of the abstract property and the selection condition of this implementation.
+List of parameters that will be used to define the implementation. Each element is a [typed parameter](IDs.md#IDs-paramid). The number of these parameters must be equal to the number of parameters of the abstract property. These parameters can then be used in expressions of the implementation of the abstract property and the selection condition of this implementation.
 
 *implExpr*
 

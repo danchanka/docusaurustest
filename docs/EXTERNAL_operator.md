@@ -26,7 +26,7 @@ Keyword. Specifies that the operator is executing a web server HTTP request.
 
 ### requestType
 
-Keyword. Defines the [method](https://ru.wikipedia.org/wiki/HTTP#%D0%9C%D0%B5%D1%82%D0%BE%D0%B4%D1%8B) of the HTTP request:
+Keyword. Defines the [method](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Request_methods) of the HTTP request:
 
 -   **POST**
 -   **GET**
@@ -57,17 +57,17 @@ Keyword. Specifies that the operator executes an action of another lsFusion serv
 
 ### headersToPropertyId
 
-[Property ID](IDs_1573053.html#IDs-propertyid) containing request headers. The property must have exactly one parameter: the name of the request's header. This parameter must belong to a string class. If the property is not specified, headers are ignored/not set.
+[Property ID](IDs.md#IDs-propertyid) containing request headers. The property must have exactly one parameter: the name of the request's header. This parameter must belong to a string class. If the property is not specified, headers are ignored/not set.
 
 *cookiesPropertyId*
 
 *cookiesToPropertyId*
 
-[Property ID](IDs_1573053.html#IDs-propertyid) containing request cookies. The property must have exactly one parameter: the name of the cookie. This parameter must belong to a string class. If the property is not specified, cookies are ignored/not set.
+[Property ID](IDs.md#IDs-propertyid) containing request cookies. The property must have exactly one parameter: the name of the cookie. This parameter must belong to a string class. If the property is not specified, cookies are ignored/not set.
 
 lsfExecType
 
-Keyword. Specifies the [way of defining](Access-from-an-external-system_51216539.html#Accessfromanexternalsystem-actiontype) the action:
+Keyword. Specifies the [way of defining](Access_from_an_external_system.md#Accessfromanexternalsystem-actiontype) the action:
 
 -   **EXEC** – the name of the action is specified.
 -   **EVAL** – the code of the action is specified in the lsFusion language. It is assumed that this code contains a declaration of an action named **run**. This is the action that will be called.

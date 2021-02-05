@@ -39,11 +39,11 @@ The **FORM** instruction declares a new form and adds it to the current [module]
 
 *name*
 
-Form name. [Simple ID](IDs_1573053.html#IDs-id). The name must be unique within the current [namespace](Naming_35521066.html#Naming-namespace).
+Form name. [Simple ID](IDs.md#IDs-id). The name must be unique within the current [namespace](Naming.md#Naming-namespace).
 
 *caption*
 
-Form caption. [String literal](IDs_1573053.html#IDs-strliteral). If the caption is not defined, the form's name will be its caption.
+Form caption. [String literal](IDs.md#IDs-strliteral). If the caption is not defined, the form's name will be its caption.
 
 ***Form options** (formOptions)*
 
@@ -55,9 +55,9 @@ The relative path to the file with the image that will be used as the form icon.
 
 AUTOREFRESH period
 
-Specifying the [automatic form update](Interactive-view_1573071.html#Interactiveview-extra) period. If the option is not specified, the form will not be updated automatically.
+Specifying the [automatic form update](Interactive_view.md#Interactiveview-extra) period. If the option is not specified, the form will not be updated automatically.
 
-*period* - a period of time in seconds. [Integral literal](IDs_1573053.html#IDs-intliteral). 
+*period* - a period of time in seconds. [Integral literal](IDs.md#IDs-intliteral). 
 
 ***Form blocks** (*formBlock1 ... formBlockN*)*
 
@@ -67,7 +67,7 @@ Adds objects to the form. [Object block syntax](Object_blocks.md) .
 
 TREE ...
 
-Adds an object tree to the form. [Syntax of the object tree block](Object-blocks_3866658.html#Objectblocks-tree).
+Adds an object tree to the form. [Syntax of the object tree block](Object_blocks.md#Objectblocks-tree).
 
 PROPERTIES ...
 
@@ -75,23 +75,23 @@ Adds [properties](Properties.md) and [actions](Actions.md) to the form. [Syntax 
 
 FILTERS ...
 
-Adds fixed filters to the form. [Syntax of the fixed filters block](Filters-and-sortings-block_3866671.html#Filtersandsortingsblock-fixedfilters).
+Adds fixed filters to the form. [Syntax of the fixed filters block](Filters_and_sortings_block.md#Filtersandsortingsblock-fixedfilters).
 
 \[EXTEND\] FILTERGROUP ...
 
-Adds a group of filters to the form or extends an existing one. [Syntax of a filter group block](Filters-and-sortings-block_3866671.html#Filtersandsortingsblock-filtergroup).
+Adds a group of filters to the form or extends an existing one. [Syntax of a filter group block](Filters_and_sortings_block.md#Filtersandsortingsblock-filtergroup).
 
 ORDER ...
 
-Adds sorting options to the form. [Syntax of the order block](Filters-and-sortings-block_3866671.html#Filtersandsortingsblock-sort).
+Adds sorting options to the form. [Syntax of the order block](Filters_and_sortings_block.md#Filtersandsortingsblock-sort).
 
 EVENTS ...
 
-Defines actions that are executed on specific events. [Syntax of the event block](Event-block_3866696.html#Eventblock-events)[.](Event_block.md)
+Defines actions that are executed on specific events. [Syntax of the event block](Event_block.md#Eventblock-events)[.](Event_block.md)
 
 *FORMEXTID extID*
 
-Specifying the name to be used to [export/import](Structured-view_29884537.html#Structuredview-extid) this form. Used only in the [structured](Structured_view.md) view.
+Specifying the name to be used to [export/import](Structured_view.md#Structuredview-extid) this form. Used only in the [structured](Structured_view.md) view.
 
 *extId*
 
@@ -107,15 +107,15 @@ REPORT propertyExpression
 
 EDIT сlassName OBJECT objectName
 
-Sets the current form as the [edit](Interactive-view_1573071.html#Interactiveview-edtClass) form for all objects of the specified class.
+Sets the current form as the [edit](Interactive_view.md#Interactiveview-edtClass) form for all objects of the specified class.
 
-*className* – the name of the [custom](User_classes.md) . When editing objects of this class, the created form will be opened. Defined with a [composite ID](IDs_1573053.html#IDs-cid).
+*className* – the name of the [custom](User_classes.md) . When editing objects of this class, the created form will be opened. Defined with a [composite ID](IDs.md#IDs-cid).
 
-*objectName* – the name of the form object that will be used for editing. Defined with a [simple ID](IDs_1573053.html#IDs-id).
+*objectName* – the name of the form object that will be used for editing. Defined with a [simple ID](IDs.md#IDs-id).
 
 LIST сlassName OBJECT objectName
 
-Sets the current form as the [list form](Interactive-view_1573071.html#Interactiveview-edtClass) for the object of the specified class. 
+Sets the current form as the [list form](Interactive_view.md#Interactiveview-edtClass) for the object of the specified class. 
 
 *className* – the name of the [custom](User_classes.md) class whose objects will be listed using the created form. Defined with a composite ID.
 

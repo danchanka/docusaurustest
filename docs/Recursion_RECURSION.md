@@ -7,7 +7,7 @@ The *recursion* operator is an operator that creates a [property](Properties.md)
 1.  Recursively builds an intermediate property (result) with an additional first parameter (operation number) as follows:
     1.  result(0, o1, o2, ..., oN) = initial(o1, ..., oN), where initial is an *initial* property.
     2.  result(i+1, o1, o2, ..., oN) = step(o1, ..., oN, $o1, $o2, ..., $oN) IF result(i, $o1, $o2, ..., $oN), where step is a *step* property.
-2.  For all values of the obtained property, it calculates the given [aggregate function](Set-operations_4391029.html#Setoperations-func) grouping by all its parameters except the operation number.
+2.  For all values of the obtained property, it calculates the given [aggregate function](Set_operations.md#Setoperations-func) grouping by all its parameters except the operation number.
 
 Currently, only two types of aggregate functions are supported for the recursion operator: **SUM** and **OR**. The latter is used in the case when the initial value and step are of class **BOOLEAN.** **SUM** is used in all other cases.
 

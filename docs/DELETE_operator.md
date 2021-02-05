@@ -16,7 +16,7 @@ The **DELETE** operator creates an action that deletes objects for which a certa
 
 *expr*
 
-An [expression](Expression.md) or [typed parameter](IDs_1573053.html#IDs-paramid). You can either use an already declared parameter as a typed parameter, or declare a new local parameter. When using an expression, new local parameters cannot be added.
+An [expression](Expression.md) or [typed parameter](IDs.md#IDs-paramid). You can either use an already declared parameter as a typed parameter, or declare a new local parameter. When using an expression, new local parameters cannot be added.
 
 *whereExpr*
 

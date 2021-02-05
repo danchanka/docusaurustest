@@ -57,4 +57,4 @@ To avoid name collision, as well as for better readability, it is recommended th
 
 ### Language
 
-Elements are named using [simple IDs](IDs_1573053.html#IDs-id).
+Elements are named using [simple IDs](IDs.md#IDs-id).

@@ -8,7 +8,7 @@ This operator also allows you to set a [primary property](Data_properties_DATA.m
 
 The custom class whose objects will be created by this operator must be concrete.
 
-You can also create objects using the corresponding [option](5275768.html#Loop(FOR)-addobject) in the [loop](Loop_FOR.md) operator.
+You can also create objects using the corresponding [option](Loop_FOR.md#Loop(FOR)-addobject) in the [loop](Loop_FOR.md) operator.
 
 ### Language
 

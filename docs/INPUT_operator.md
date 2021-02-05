@@ -27,11 +27,11 @@ The name of one of the [built-in classes](Built-in_classes.md). 
 
 expr
 
-        An [expression](Expression.md), which value determines the [initial value](Value-input_35520941.html#Valueinput-initial) of the input.
+        An [expression](Expression.md), which value determines the [initial value](Value_input.md#Valueinput-initial) of the input.
 
 *alias*
 
-The name of the local parameter to which the input result is written. [Simple ID](IDs_1573053.html#IDs-id).
+The name of the local parameter to which the input result is written. [Simple ID](IDs.md#IDs-id).
 
 *CHANGE*
 
@@ -43,11 +43,11 @@ An [expression](Expression.md) that determines the property to which the input r
 
 *actionOperator*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was completed successfully.
+A [context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) that is executed if the input was completed successfully.
 
 *elseActionOperator*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was cancelled. The input result parameter cannot be used as parameters.
+A [context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) that is executed if the input was cancelled. The input result parameter cannot be used as parameters.
 
 ### Examples
 

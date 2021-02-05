@@ -18,18 +18,18 @@ In addition to **root** in the **System** module, the following groups of prop
             -   **id**
     -   **private**
 
-All these groups (including **root**) are not used in form display mechanisms (i.e. containers in the [default form design](Form-design_29884443.html#Formdesign-defaultDesign) and elements of the [hierarchical](Structured-view_29884537.html#Structuredview-hierarchy) import / export hierarchy are not created for them).
+All these groups (including **root**) are not used in form display mechanisms (i.e. containers in the [default form design](Form_design.md#Formdesign-defaultDesign) and elements of the [hierarchical](Structured_view.md#Structuredview-hierarchy) import / export hierarchy are not created for them).
 
 ### Property groups usage
 
 Property groups are currently used in the following mechanisms:
 
 -   When displaying forms:
-    -   in the [interactive](Interactive_view.md) view: you can specify for each group that a separate container must be created in the [default design](Form-design_29884443.html#Formdesign-defaultDesign). Accordingly, the hierarchy of containers in the default design will match the hierarchy of these property groups. That is, if it is specified for a group (or property)  **A** and property group **B** that a container must be created, and group (or property) **A** is a descendant of group **B**, then the container of group (component of property) **A** will be the descendant of the container of group **B**.
-    -   in the [hierarchical](Structured-view_29884537.html#Structuredview-hierarchy) view :you can specify for each group that a separate intermediate tag must be created when the form is exported. Accordingly, the hierarchy of tags during export will match the hierarchy of property groups. That is, if it is specified for a group (or property)  **A** and property group **B** that a tag needs to be created, and group (or property) **A** is a descendant of group **B**, then group (property) **A** will be enclosed in the tag of group **B**. 
+    -   in the [interactive](Interactive_view.md) view: you can specify for each group that a separate container must be created in the [default design](Form_design.md#Formdesign-defaultDesign). Accordingly, the hierarchy of containers in the default design will match the hierarchy of these property groups. That is, if it is specified for a group (or property)  **A** and property group **B** that a container must be created, and group (or property) **A** is a descendant of group **B**, then the container of group (component of property) **A** will be the descendant of the container of group **B**.
+    -   in the [hierarchical](Structured_view.md#Structuredview-hierarchy) view :you can specify for each group that a separate intermediate tag must be created when the form is exported. Accordingly, the hierarchy of tags during export will match the hierarchy of property groups. That is, if it is specified for a group (or property)  **A** and property group **B** that a tag needs to be created, and group (or property) **A** is a descendant of group **B**, then group (property) **A** will be enclosed in the tag of group **B**. 
 -   When automatically creating forms:
-    -   All properties with one argument which are included in the **System.base** group will be displayed in the automatically generated dialog forms for [selecting/editing](Interactive-view_1573071.html#Interactiveview-edtClass) objects. 
-    -   All properties with one argument which are included in the **System.id** group will be displayed in automatically generated [message display forms](Constraints_3538950.html#Constraints-message) on constraint violation.
+    -   All properties with one argument which are included in the **System.base** group will be displayed in the automatically generated dialog forms for [selecting/editing](Interactive_view.md#Interactiveview-edtClass) objects. 
+    -   All properties with one argument which are included in the **System.id** group will be displayed in automatically generated [message display forms](Constraints.md#Constraints-message) on constraint violation.
 -   In the security policy:
     -   You can set a security policy for a group as a whole (and not for each property individually).
 

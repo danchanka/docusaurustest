@@ -2,7 +2,7 @@
 title: 'DIALOG operator'
 ---
 
-The **DIALOG** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG.md) in an interactive view in [dialog](36307331.html#Inaninteractiveview(SHOW,DIALOG)-dialog) mode. 
+The **DIALOG** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG.md) in an interactive view in [dialog](In_an_interactive_view_SHOW_DIALOG.md#Inaninteractiveview(SHOW,DIALOG)-dialog) mode. 
 
 ### Syntax
 
@@ -33,13 +33,13 @@ When opening the list/edit form, the syntax is slightly different:
 
 ### Description
 
-The **DIALOG** operator creates an action that opens the specified form. When opening a form in the **OBJECTS** block you can [specify](Open-form_3014672.html#Openform-params) [initial values](Value-input_35520941.html#Valueinput-initial) for the [form objects](Form_structure.md) and also return the last current values to the specified parameters and execute the **DO** action which will process the received values in case the input has not been cancelled.
+The **DIALOG** operator creates an action that opens the specified form. When opening a form in the **OBJECTS** block you can [specify](Open_form.md#Openform-params) [initial values](Value_input.md#Valueinput-initial) for the [form objects](Form_structure.md) and also return the last current values to the specified parameters and execute the **DO** action which will process the received values in case the input has not been cancelled.
 
 ### Parameters
 
 *name*
 
-Form name. [Composite ID](IDs_1573053.html#IDs-cid).
+Form name. [Composite ID](IDs.md#IDs-cid).
 
 *classFormType*
 
@@ -50,11 +50,11 @@ Keyword. Determines which form to open:
 
 *className*
 
-The name of the custom class for which a list/edit form should be opened. [Composite ID](IDs_1573053.html#IDs-cid).
+The name of the custom class for which a list/edit form should be opened. [Composite ID](IDs.md#IDs-cid).
 
 *objName1 ... objNameN*
 
-Names of form objects for which initial values are specified. [Simple IDs](IDs_1573053.html#IDs-id).
+Names of form objects for which initial values are specified. [Simple IDs](IDs.md#IDs-id).
 
 *expr1 ... exprN*
 
@@ -72,7 +72,7 @@ Keyword. If used, then the last current value of the object of the opened form w
 
 *alias*
 
-The name of the local parameter to which the input result is written. [Simple ID](IDs_1573053.html#IDs-id). If the name is not specified, then the name of the form object will be used as the parameter name.
+The name of the local parameter to which the input result is written. [Simple ID](IDs.md#IDs-id). If the name is not specified, then the name of the form object will be used as the parameter name.
 
 *CHANGE*
 
@@ -92,28 +92,28 @@ A keyword that determines whether the user can select **NULL** as the return val
 
 *actionOperator*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was completed successfully.
+A [context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) that is executed if the input was completed successfully.
 
 *elseActionOperator*
 
-A [context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) that is executed if the input was cancelled. Parameters added to the input block (INPUT) cannot be used as parameters.
+A [context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) that is executed if the input was cancelled. Parameters added to the input block (INPUT) cannot be used as parameters.
 
 ### *Additional options*
 
 *windowType*
 
-Method of [the form layout](36307331.html#Inaninteractiveview(SHOW,DIALOG)-location):
+Method of [the form layout](In_an_interactive_view_SHOW_DIALOG.md#Inaninteractiveview(SHOW,DIALOG)-location):
 
 -   **DOCKED** - as a tab.
 -   **FLOAT** - as a window. Used by default.
 
 *MANAGESESSION* | *NOMANAGESESSION*
 
-Keyword. Determines whether or not the created form is considered to be the [session owner](Interactive-view_1573071.html#Interactiveview-session) (if so, the corresponding buttons for managing the session will be shown on the form in interactive mode). By default, the platform tries to determine which mode to use [automatically](Interactive-view_1573071.html#Interactiveview-sysactions) depending on the context.
+Keyword. Determines whether or not the created form is considered to be the [session owner](Interactive_view.md#Interactiveview-session) (if so, the corresponding buttons for managing the session will be shown on the form in interactive mode). By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#Interactiveview-sysactions) depending on the context.
 
 *CANCEL* | *NOCANCEL*
 
-Keyword. Determines whether or not to show the "Cancel" system action (**System.formCancel**)** **on the form. By default, the platform tries to determine which mode to use [automatically](Interactive-view_1573071.html#Interactiveview-sysactions) depending on context.
+Keyword. Determines whether or not to show the "Cancel" system action (**System.formCancel**)** **on the form. By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#Interactiveview-sysactions) depending on context.
 
 *NEWSESSION | NESTEDSESSION*
 
@@ -121,7 +121,7 @@ Keyword. Determines whether or not to show the "Cancel" system action (**System.
 
 *READONLY*
 
-Keyword. If specified, the form is opened in [read-only](36307331.html#Inaninteractiveview(SHOW,DIALOG)-extra) mode.
+Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG.md#Inaninteractiveview(SHOW,DIALOG)-extra) mode.
 
 ### Examples
 

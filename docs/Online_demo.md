@@ -29,14 +29,8 @@ Password: **guest**
 
 The GitHub source code is located [here](https://github.com/lsfusion/samples/tree/master/mm).
 
-### ERP
+### MyCompany
 
-A commercial ERP system with broad functionality, operating in enterprises with more than 500 concurrent users.
+The demo is located at <https://demo.lsfusion.org/mycompany>[.](http://demo.lsfusion.org/hockeystats)
 
-The demo is located at <https://demo.lsfusion.org/erp>[.](http://demo.lsfusion.org/hockeystats)
-
-Username: **guest**
-
-Password: **guest**
-
-The GitHub source code is located [here](https://github.com/lsfusion-solutions/erp). The demo version is the equ-erp-logics module, which includes basic ERP logic (erp-logics) + communication interfaces (equ-srv) with the hardware server (which, in turn, is located in equ-clt).
+The GitHub source code is located [here](https://github.com/lsfusion-solutions/mycompany).

@@ -18,15 +18,15 @@ The **ACTION+** instruction adds an implementation to an abstract action. The sy
 **actionId*  
 *
 
-[ID](IDs_1573053.html#IDs-propertyid) of the abstract action. 
+[ID](IDs.md#IDs-propertyid) of the abstract action. 
 
 *param1, ..., paramN*
 
-List of parameters that will be used to define the implementation. Each element is a [typed parameter](IDs_1573053.html#IDs-paramid). The number of these parameters must be equal to the number of parameters of the abstract action. These parameters can then be used in the implementation operator of the abstract property and in the selection condition expression of this implementation.
+List of parameters that will be used to define the implementation. Each element is a [typed parameter](IDs.md#IDs-paramid). The number of these parameters must be equal to the number of parameters of the abstract action. These parameters can then be used in the implementation operator of the abstract property and in the selection condition expression of this implementation.
 
 *implAction*
 
-[Context-dependent action operator](Action-operator_36307157.html#Actionoperator-contextdependent) whose value determines the implementation of the abstract action. 
+[Context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) whose value determines the implementation of the abstract action. 
 
 *whenExpr*
 

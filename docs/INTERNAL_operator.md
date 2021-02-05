@@ -21,11 +21,11 @@ The second form of the operator allows to write some **Java** code inside the **
 
 *className*
 
-The fully qualified name of the Java class. [String literal](Literals_35521071.html#Literals-strliteral).
+The fully qualified name of the Java class. [String literal](Literals.md#Literals-strliteral).
 
 *classId1, ..., classIdN*
 
-A list of [class IDs](IDs_1573053.html#IDs-classid) of the action arguments. If not specified, the created action will have no parameters.
+A list of [class IDs](IDs.md#IDs-classid) of the action arguments. If not specified, the created action will have no parameters.
 
 *NULL*
 

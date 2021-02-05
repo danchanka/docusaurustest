@@ -12,13 +12,13 @@ If the user initiates a [property](Form_events.md) [change event](Form_events.m
 
 When the user inserts a value into a property cell using the OS tools, the platform triggers a WYSIWYG event to change this property (**CHANGEWYS**), and calls the corresponding handler on the server. In this case, the value that the user inserted is pushed as the request value.
 
-*Change event (**CHANGEWYS** and **CHANGE**) [default handler](Form-events_5636111.html#Formevents-default) for composition*
+*Change event (**CHANGEWYS** and **CHANGE**) [default handler](Form_events.md#Formevents-default) for composition*
 
 If a property being changed is created using the [composition](Composition_JOIN.md) operator with one argument (most often a name or ID), and change event handler is not explicitly defined for it, the platform automatically creates this handler as follows: 
 
 *CHANGE*
 
-The user is [requested](Form-events_5636111.html#Formevents-queryValue) an object of the property value class which is used as an argument, and this property value changes to the received object 
+The user is [requested](Form_events.md#Formevents-queryValue) an object of the property value class which is used as an argument, and this property value changes to the received object 
 
 *CHANGEWYS*
 
@@ -30,11 +30,11 @@ Creating such default handlers allows to use PASTE "out of the box" for properti
 
 *Group change (**GROUPCHANGE**) default handler*
 
-By default, group change handler is created as follows: **CHANGE** is called first for objects' [current values](Form-structure_1573069.html#Formstructure-currentObject), then if the input has not been canceled, the same handler is called for all other values of objects (matching the filter), with the value of the **System.requestPushed **property set to **TRUE** (it is assumed that the result of the input does not change during its handling, thus the behavior is emulated as if the first value was pushed).
+By default, group change handler is created as follows: **CHANGE** is called first for objects' [current values](Form_structure.md#Formstructure-currentObject), then if the input has not been canceled, the same handler is called for all other values of objects (matching the filter), with the value of the **System.requestPushed **property set to **TRUE** (it is assumed that the result of the input does not change during its handling, thus the behavior is emulated as if the first value was pushed).
 
 In fact, the value request operator performs only two operations: it [checks](Branching_CASE_IF_MULTI.md) **System.requestPushed** (pushing the value) for the value request action and **System.requestCanceled** (canceling the value) for the request processing action, and it is also responsible for determining the possibility of asynchronous input of the property being changed. At the same time, using this operator makes the code clearer and more readable, therefore it is recommended to use it (instead of explicit checks and options).
 
-As with other value input operators, it is possible to define [main and alternative](Value-input_35520941.html#Valueinput-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled). Accordingly, it is these two actions in this operator that are responsible for processing request values.
+As with other value input operators, it is possible to define [main and alternative](Value_input.md#Valueinput-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled). Accordingly, it is these two actions in this operator that are responsible for processing request values.
 
 ### Implicit use
 

@@ -2,7 +2,7 @@
 title: 'MULTI operator (action)'
 ---
 
-The **MULTI** operator creates an [action](Actions.md) that implements [branching](5275770.html#Branching(CASE,IF,MULTI)-poly) (polymorphic form).
+The **MULTI** operator creates an [action](Actions.md) that implements [branching](Branching_CASE_IF_MULTI.md#Branching(CASE,IF,MULTI)-poly) (polymorphic form).
 
 ### Syntax
 
@@ -16,7 +16,7 @@ The **MULTI** operator creates an action that executes one of the actions pass
 
 *exclusionType*
 
-[Type of mutual exclusion](5275770.html#Branching(CASE,IF,MULTI)-exclusive). Determines whether several conditions for the action selection can be met simultaneously with a certain set of parameters. It is specified by one of the keywords:
+[Type of mutual exclusion](Branching_CASE_IF_MULTI.md#Branching(CASE,IF,MULTI)-exclusive). Determines whether several conditions for the action selection can be met simultaneously with a certain set of parameters. It is specified by one of the keywords:
 
 -   **EXCLUSIVE**
 -   **OVERRIDE**
@@ -27,7 +27,7 @@ The **EXCLUSIVE** type is used by default.
 
 *action1, ..., actionN* ** ** 
 
-A list of [context dependent action operators](Action-operator_36307157.html#Actionoperator-contextdependent) which define the actions from which the selection is made.
+A list of [context dependent action operators](Action_operator.md#Actionoperator-contextdependent) which define the actions from which the selection is made.
 
 ### Example
 

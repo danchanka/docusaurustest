@@ -16,21 +16,21 @@ The **EXTEND CLASS** instruction [extends](Class_extension.md) an existing cla
 
 ### Description
 
-The **EXTEND CLASS** instruction extends an existing [custom class](User_classes.md) with additional parent classes and new[static objects](Static_objects.md). You can also extend [abstract classes](User-classes_2228341.html#Userclasses-abstract) by adding parent classes to them.
+The **EXTEND CLASS** instruction extends an existing [custom class](User_classes.md) with additional parent classes and new[static objects](Static_objects.md). You can also extend [abstract classes](User_classes.md#Userclasses-abstract) by adding parent classes to them.
 
 ### Parameters
 
 *name *
 
-Class name. A [Composite ID](IDs_1573053.html#IDs-cid). 
+Class name. A [Composite ID](IDs.md#IDs-cid). 
 
 *objectName1, ..., objectNameM*
 
-Names of new static objects of the specified class. Each name is defined [by a simple ID](IDs_1573053.html#IDs-id). Name values are stored in the **System.staticName** system property.
+Names of new static objects of the specified class. Each name is defined [by a simple ID](IDs.md#IDs-id). Name values are stored in the **System.staticName** system property.
 
 *objectCaption1, ..., objectCaptionM*
 
-Captions of new static objects of the specified class. Each caption is a [string literal](IDs_1573053.html#IDs-strliteral). If the caption is not defined, the name of the static object will be its caption. Caption values are stored in the **System.staticCaption** system property.
+Captions of new static objects of the specified class. Each caption is a [string literal](IDs.md#IDs-strliteral). If the caption is not defined, the name of the static object will be its caption. Caption values are stored in the **System.staticCaption** system property.
 
 *parent1, ..., parentN*
 

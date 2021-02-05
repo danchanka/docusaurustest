@@ -2,7 +2,7 @@
 title: 'Filter (FILTER)'
 ---
 
-The *filter* operator creates a [property](Properties.md) that returns **TRUE** if the object collection matches the current [filter](Form-structure_1573069.html#Formstructure-filters) of the specified object group, and **NULL** if it does not.
+The *filter* operator creates a [property](Properties.md) that returns **TRUE** if the object collection matches the current [filter](Form_structure.md#Formstructure-filters) of the specified object group, and **NULL** if it does not.
 
 ### Language
 

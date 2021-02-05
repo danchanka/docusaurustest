@@ -17,7 +17,6 @@ def get_dirs():
         if not os.path.isdir(output_dir):
             os.makedirs(output_dir)
     return input_dir, output_dir
-    
 
 def remove_tables(data):
     lines = data.split('\n')
@@ -55,7 +54,6 @@ def replace_html_ltgt(data):
 def trash_stars(line):
     return line.count('*') > 2 and re.fullmatch(r'[* \t]*', line)
 
-
 def make_headers(data):
     lines = data.split('\n')
     nlines = []
@@ -67,23 +65,38 @@ def make_headers(data):
                 nlines.append(line)    
     return '\n'.join(nlines)    
 
+def load_filemap():
+    mapfile = open('filemap.txt', 'r', encoding='utf-8')
+    m = dict()
+    for line in mapfile.readlines():
+        key, value = line.rstrip().split(':')
+        m[key] = value
+    return m
+
+def fix_links(data):
+    html_to_md = load_filemap()
+    for html, md in html_to_md.items():
+        data = data.replace(html, md)
+    return data
+
 def transform_file_content(data):
     data = replace_html_ltgt(data)
     data = create_title(data)
     data = remove_tables(data)
     data = make_headers(data)
+    data = fix_links(data)
     return data    
 
 indir, outdir = get_dirs()
 for filename in os.listdir(indir):
-    fullname = indir + '/' + filename 
+    fullname = indir + filename 
     print(fullname)
     if os.path.isfile(fullname) and fullname.endswith('.md') and not fullname.endswith('index.md'):
-        with open(fullname, 'r', encoding='utf-8') as infile:
-            data = infile.read()
-            infile.close()
-            fulloutname = outdir + '/' + filename
-            if len(data) > 0 and data[0] == '#':
-                data = transform_file_content(data)
-                with open(fulloutname, 'w', encoding='utf-8') as outfile:
-                    outfile.write(data)
+        infile = open(fullname, 'r', encoding='utf-8')
+        data = infile.read()
+        infile.close()
+        fulloutname = outdir + filename
+        if len(data) > 0 and data[0] == '#':
+            data = transform_file_content(data)
+            with open(fulloutname, 'w', encoding='utf-8') as outfile:
+                outfile.write(data)

@@ -16,11 +16,11 @@ The **CHANGECLASS** operator creates an action that changes the class of objects
 
 *expr*
 
-An [expression](Expression.md) or [typed parameter](IDs_1573053.html#IDs-paramid). You can either use an already declared parameter as a typed parameter, or declare a new local parameter. When using an expression, new local parameters cannot be added.
+An [expression](Expression.md) or [typed parameter](IDs.md#IDs-paramid). You can either use an already declared parameter as a typed parameter, or declare a new local parameter. When using an expression, new local parameters cannot be added.
 
 *className*
 
-The name of the class to which you want to change the object classes. A [composite ID](IDs_1573053.html#IDs-cid), since the class must be a [custom](User_classes.md) class.
+The name of the class to which you want to change the object classes. A [composite ID](IDs.md#IDs-cid), since the class must be a [custom](User_classes.md) class.
 
 *whereExpr*
 

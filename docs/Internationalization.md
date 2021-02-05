@@ -19,7 +19,7 @@ The language and country are specified in [standard Java](https://docs.oracle.co
 
 ### Determining the current locale
 
-The server locale is determined by the [default locale](http://www.oracle.com/us/technologies/java/locale-140624.html) of the JVM in which the server starts (namely, the startup parameters [user.language, user.country, user.timezone, and user.twoDigitYearStart](Launch-parameters_65241244.html#Launchparameters-locale)). When the application server starts, the parameters of this locale are automatically saved in the following properties:
+The server locale is determined by the [default locale](http://www.oracle.com/us/technologies/java/locale-140624.html) of the JVM in which the server starts (namely, the startup parameters [user.language, user.country, user.timezone, and user.twoDigitYearStart](Launch_parameters.md#Launchparameters-locale)). When the application server starts, the parameters of this locale are automatically saved in the following properties:
 
 
 The server locale is used as *current* when the action in which localization is being performed is initiated by the system, and not by a particular user (i.e., the system user is considered the current user).

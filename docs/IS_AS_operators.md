@@ -23,7 +23,7 @@ An expression which value is checked for belonging to the class.
 
 *className*
 
-Class name. [Class ID](IDs_1573053.html#IDs-classid).
+Class name. [Class ID](IDs.md#IDs-classid).
 
 ### Examples 
 

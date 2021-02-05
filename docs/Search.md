@@ -29,11 +29,11 @@ The name of the candidate matches the search name (must always be specified expl
 
 ##### Located in dependent module
 
-Candidate module [depends on](Modules_1146882.html#Modules-depends) the module in which the search is performed.
+Candidate module [depends on](Modules.md#Modules-depends) the module in which the search is performed.
 
 ##### Located in specified namespace (if explicitly specified)
 
-[Namespace](Naming_35521066.html#Naming-namespace) of the candidate equals the namespace of the search (if this namespace is specified explicitly).
+[Namespace](Naming.md#Naming-namespace) of the candidate equals the namespace of the search (if this namespace is specified explicitly).
 
 ##### Selection of a priority namespace (if the namespace is not explicitly specified)
 
@@ -53,7 +53,7 @@ This step is only executed if no search namespace is specified.
 
 ##### Located upper in the stack
 
-The candidate is a [local property](688168.html#Dataproperties(DATA)-local) and:
+The candidate is a [local property](Data_properties_DATA.md#Dataproperties(DATA)-local) and:
 
 -   is declared inside an operator of a [sequence](Sequence_....md) that executes an action that refers to the required element.
 -   is declared earlier than the action that directly refers to the required element.
@@ -99,7 +99,7 @@ Let's say that the classes of parameters (A1, ..., An) *match* the classes of p
 -   for each parameter **i**, one of the following is true:
     -   Ai is unknown (equal to **?**)
     -   Bi is unknown (equal to **?**)
-    -   Ai [inherits](User-classes_2228341.html#Userclasses-inheritance) from Bi (more specifically, the set of descendant classes of Bi includes the set of descendant classes of Ai)
+    -   Ai [inherits](User_classes.md#Userclasses-inheritance) from Bi (more specifically, the set of descendant classes of Bi includes the set of descendant classes of Ai)
 
 *Intersection of parameter classes*
 

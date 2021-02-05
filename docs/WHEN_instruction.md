@@ -32,7 +32,7 @@ An [expression](Expression.md) whose value is used as a condition for the create
 
 *eventAction*
 
-A [context-dependent operator](Action-operator_36307157.html#Actionoperator-contextdependent) that describes an action to be added as an event handler.
+A [context-dependent operator](Action_operator.md#Actionoperator-contextdependent) that describes an action to be added as an event handler.
 
 *DESC*
 
