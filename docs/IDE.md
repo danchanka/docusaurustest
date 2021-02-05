@@ -20,7 +20,7 @@ Launch **IDEA** and select *Create New Project*, or when **IDEA** is already op
 
 ![](attachments/46367442/65241572.png)![](attachments/46367442/65241575.png)
 
-Select project type **lsFusion**. Make sure that the JDK is set and the link to the library with the  **lsFusion** is selected (when [automatic installation](Development_auto_.md) is used, this link is set automatically; otherwise, click *Download* or select the previously downloaded library *Create*) and then** **click *Next*.
+Select project type **lsFusion**. Make sure that the JDK is set and the link to the library with the  **lsFusion** is selected (when [automatic installation](Development_auto.md) is used, this link is set automatically; otherwise, click *Download* or select the previously downloaded library *Create*) and then** **click *Next*.
 
 ![](attachments/46367442/65241577.png)
 

@@ -10,7 +10,7 @@ Action operators can be divided into *context dependent* and *context independen
 
 Context dependent action operators can use external context parameters. They can be used wherever you need to define an action, for example, when creating another action or [event](Events.md). These operators are:
 
--   [**{...}** operator](Operator_..._.md)
+-   [**{...}** operator](Operator_....md)
 
 -   [**ACTIVATE** operator](ACTIVATE_operator.md)
 -   [**ACTIVE FORM** operator](ACTIVE_FORM_operator.md)
@@ -18,7 +18,7 @@ Context dependent action operators can use external context parameters. They can
 -   [**ASK** operator](ASK_operator.md)
 -   [**BREAK** operator](BREAK_operator.md)
 -   [**CANCEL** operator](CANCEL_operator.md)
--   [**CASE** operator (action)](CASE_operator_action_.md)
+-   [**CASE** operator (action)](CASE_operator_action.md)
 -   [**CHANGE** operator](CHANGE_operator.md)
 -   [**CHANGECLASS** operator](CHANGECLASS_operator.md)
 -   [**DELETE** operator](DELETE_operator.md)
@@ -28,11 +28,11 @@ Context dependent action operators can use external context parameters. They can
 -   [**EXEC** operator](EXEC_operator.md)
 -   [**EXPORT** operator](EXPORT_operator.md)
 -   [**FOR** operator](FOR_operator.md)
--   [**IF** ... **THEN** operator (action)](IF_..._THEN_operator_action_.md)
+-   [**IF** ... **THEN** operator (action)](IF_..._THEN_operator_action.md)
 -   [**IMPORT** operator](IMPORT_operator.md)
 -   [**INPUT** operator](INPUT_operator.md)
 -   [**MESSAGE** operator](MESSAGE_operator.md)
--   [**MULTI** operator (action)](MULTI_operator_action_.md)
+-   [**MULTI** operator (action)](MULTI_operator_action.md)
 -   [**NEW** operator](NEW_operator.md)
 -   [**NESTEDSESSION** operator](NESTEDSESSION_operator.md)
 -   [**NEWEXECUTOR** operator](NEWEXECUTOR_operator.md)
@@ -52,7 +52,7 @@ Context dependent action operators can use external context parameters. They can
 
 Context independent action operators cannot use external context parameters. Thus they can only be used in the [**ACTION** instruction](ACTION_instruction.md):
 
--   [**ABSTRACT** operator](ABSTRACT_operator_action_.md)
+-   [**ABSTRACT** operator](ABSTRACT_operator_action.md)
 -   [**INTERNAL** operator](INTERNAL_operator.md)
 
   

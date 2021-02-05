@@ -2,7 +2,7 @@
 title: 'APPLY operator'
 ---
 
-The **APPLY** operator creates an [action](Actions.md) that [applies changes](Apply_changes_APPLY_.md) to the database.
+The **APPLY** operator creates an [action](Actions.md) that [applies changes](Apply_changes_APPLY.md) to the database.
 
 ### Syntax
 

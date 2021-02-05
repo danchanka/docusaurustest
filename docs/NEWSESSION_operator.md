@@ -2,7 +2,7 @@
 title: 'NEWSESSION operator'
 ---
 
-The **NEWSESSION** operator creates an [action](Actions.md) that executes the other action in a [new session](New_session_NEWSESSION_NESTEDSESSION_.md).
+The **NEWSESSION** operator creates an [action](Actions.md) that executes the other action in a [new session](New_session_NEWSESSION_NESTEDSESSION.md).
 
 ### Syntax
 

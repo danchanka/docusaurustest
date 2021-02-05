@@ -36,7 +36,7 @@ All of the above options, as well as defining the form structure, can be done u
 
 ### Open form
 
-To display the form in print view, the corresponding [open form](Open_form.md) in the [print view](In_a_print_view_PRINT_.md) operator is used.
+To display the form in print view, the corresponding [open form](Open_form.md) in the [print view](In_a_print_view_PRINT.md) operator is used.
 
 ### Examples
 

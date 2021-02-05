@@ -14,7 +14,7 @@ The builtin classes inherit only from one another within a single family, and ca
 
 ### **Common ancestor**
 
-According to this inheritance mechanism, the common ancestor of two builtin classes (e.g. for the [selection](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md) operation) is determined as follows:
+According to this inheritance mechanism, the common ancestor of two builtin classes (e.g. for the [selection](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md) operation) is determined as follows:
 
 *Strings*:
 
@@ -55,12 +55,12 @@ Note that sometimes in programming the definition of a common parent class is as
 
 ### Default value
 
-It is sometimes necessary to use some value for a built-in class which will differ from **NULL** (for example, in an import condition with [data import](Data_import_IMPORT_.md)). Let's call this value the *default value*. It is defined as follows:
+It is sometimes necessary to use some value for a built-in class which will differ from **NULL** (for example, in an import condition with [data import](Data_import_IMPORT.md)). Let's call this value the *default value*. It is defined as follows:
 
 
 ### Extensions of specific type files
 
-When files of a specific type (**JSONFILE**, **XMLFILE**, ...) are cast into a file of dynamic type (**FILE**), whether explicitly or implicitly (e.g. with [data import](Data_import_IMPORT_.md) without specifying a format or when [working with external systems](Access_to_an_external_system_EXTERNAL_.md)), the extension of the result file is determined as follows:
+When files of a specific type (**JSONFILE**, **XMLFILE**, ...) are cast into a file of dynamic type (**FILE**), whether explicitly or implicitly (e.g. with [data import](Data_import_IMPORT.md) without specifying a format or when [working with external systems](Access_to_an_external_system_EXTERNAL.md)), the extension of the result file is determined as follows:
 
 
 ### The order of determining the result property when [accessing from an external system](Access-from-an-external-system_51216539.html#Accessfromanexternalsystem-httpresult)

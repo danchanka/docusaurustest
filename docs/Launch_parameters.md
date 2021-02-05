@@ -37,7 +37,7 @@ Example conf/settings.properties file ([section 3](#Launchparameters-appp3)):
 
     rmi.port=7652
 
-By default, it is assumed that the startup parameter files conf/settings.properties and lsfusion.properties are located in the application server's startup folder. However, with [automatic installation](Execution_auto_.md) under GNU Linux symlinks for these files (as well as for [log](Journals-and-logs_60555482.html#Journalsandlogs-logs) folders)  are automatically created to [other files](57738078.html#Execution(auto)-settings) whose layout is better aligned with Linux ideology.
+By default, it is assumed that the startup parameter files conf/settings.properties and lsfusion.properties are located in the application server's startup folder. However, with [automatic installation](Execution_auto.md) under GNU Linux symlinks for these files (as well as for [log](Journals-and-logs_60555482.html#Journalsandlogs-logs) folders)  are automatically created to [other files](57738078.html#Execution(auto)-settings) whose layout is better aligned with Linux ideology.
 
 ### Web server (Client)
 

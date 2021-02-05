@@ -34,7 +34,7 @@ There are also several so-called *derivative* events that are nothing more than 
 -   **CLOSE** - occurs when the **System.formClose** action is executed.
 -   **DROP** - occurs when the **System.formDrop** action is executed.
 
-If the form is [the session owner](Interactive-view_1573071.html#Interactiveview-owner) (meaning that when the **System.formOk** action is executed the form session [is saved](Apply_changes_APPLY_.md)):
+If the form is [the session owner](Interactive-view_1573071.html#Interactiveview-owner) (meaning that when the **System.formOk** action is executed the form session [is saved](Apply_changes_APPLY.md)):
 
 -   **OK, OK BEFORE, OK AFTER** - occurs when the **System.formOk** action is executed, at the moments similar to the corresponding moments for the **APPLY** event (i.e. inside, before and after the transaction). In this case, **OK** and **OK BEFORE** handlers are executed before executing **APPLY** and **APPLY BEFORE** handlers, and **OK AFTER** is executed after **APPLY AFTER**.
 
@@ -74,12 +74,12 @@ The user is requested for an object of the changed property value class, after w
 
 Calls the **CHANGE** event handler for all objects that meet the filter conditions of the object group in which the changed property is displayed. 
 
-If property event handler uses (even [implicitly](5832722.html#Valuerequest(REQUEST)-implicit)) the [value request](Value_request_REQUEST_.md) operator, then default handler can be created [in a different way](5832722.html#Valuerequest(REQUEST)-defaultChange).
+If property event handler uses (even [implicitly](5832722.html#Valuerequest(REQUEST)-implicit)) the [value request](Value_request_REQUEST.md) operator, then default handler can be created [in a different way](5832722.html#Valuerequest(REQUEST)-defaultChange).
 
 For an *object request* from the user, depending on the type of class , the following operators are used:
 
--   Builtin classes - the [input primitive](Primitive_input_INPUT_.md) operator.
--   [Custom classes](User_classes.md) - the [open form](In_an_interactive_view_SHOW_DIALOG_.md) operator. The form is the [list](Interactive-view_1573071.html#Interactiveview-edtClass) form for this class. 
+-   Builtin classes - the [input primitive](Primitive_input_INPUT.md) operator.
+-   [Custom classes](User_classes.md) - the [open form](In_an_interactive_view_SHOW_DIALOG.md) operator. The form is the [list](Interactive-view_1573071.html#Interactiveview-edtClass) form for this class. 
 
 ### Standard handlers
 

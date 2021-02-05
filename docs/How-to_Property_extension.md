@@ -19,4 +19,4 @@ Let's assume that we need to make it so that in certain cases we can override th
 If the **overSquareCircle** property is not implemented in any module, its value will always be **NULL** and the base area calculation mechanism will be used. To change the calculation method to be used, you can define a different implementation in a certain **MyShape** module.
 
 
-Note that you can use any other expressions instead of the [OVERRIDE operator](OVERRIDE_operator.md). In particular, [(+) and (-)](Arithmetic_operators_+_-_..._.md) may be the most frequently used operators.
+Note that you can use any other expressions instead of the [OVERRIDE operator](OVERRIDE_operator.md). In particular, [(+) and (-)](Arithmetic_operators_+_-_....md) may be the most frequently used operators.

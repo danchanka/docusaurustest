@@ -83,7 +83,7 @@ For property value cells, it is also possible to specify the base width not in p
 
 In addition, cell widths can be specified in *characters* (**charWidth** ), which is equivalent to giving a string sample value consisting of the given number of zeros.
 
-In the last two cases (that is, when specifying the width as a sample value or in characters), if the property value class implies the presence of buttons on the right during [input](Primitive_input_INPUT_.md) (for example, **DATE** class), then the width of this button (21 pixels) is added to the width of the property value cell.
+In the last two cases (that is, when specifying the width as a sample value or in characters), if the property value class implies the presence of buttons on the right during [input](Primitive_input_INPUT.md) (for example, **DATE** class), then the width of this button (21 pixels) is added to the width of the property value cell.
 
 ### Default dimensions and layout
 

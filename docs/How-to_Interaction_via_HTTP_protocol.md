@@ -14,17 +14,17 @@ We need to send an HTTP request for adding a city in the JSON format to a certai
 ###### Solution
 
 
-The [EXPORT](Data_export_EXPORT_.md) operator will create a JSON in the [FILE](Built-in_classes.md) format and then will write it to the exportFile property. Here is an example of the generated file: 
+The [EXPORT](Data_export_EXPORT.md) operator will create a JSON in the [FILE](Built-in_classes.md) format and then will write it to the exportFile property. Here is an example of the generated file: 
 
     {"countryId":"123","name":"San Francisco"}
 
-Then we call the [EXTERNAL](Access_to_an_external_system_EXTERNAL_.md) operator, which sends a request to the specified url passing there the contents of the generated file as Body. In this case, since the property in the FROM block has the type JSON, *application/json* will be used as the content type. <namespace\><property name\> is encoded in the url. In this case, the namespace of the action being called (**createCity**) is **Location**. All parameters are passed consequently with the ID **p**.  The response from the server will be written to the **result** property. Suppose that the response is received in the JSON format and has one of the following types:
+Then we call the [EXTERNAL](Access_to_an_external_system_EXTERNAL.md) operator, which sends a request to the specified url passing there the contents of the generated file as Body. In this case, since the property in the FROM block has the type JSON, *application/json* will be used as the content type. <namespace\><property name\> is encoded in the url. In this case, the namespace of the action being called (**createCity**) is **Location**. All parameters are passed consequently with the ID **p**.  The response from the server will be written to the **result** property. Suppose that the response is received in the JSON format and has one of the following types:
 
     {"code":"0","message":"OK"}
 
     {"code":"1","message":"Invalid country code"}
 
-The response is handled by the [IMPORT](Data_import_IMPORT_.md) operator which parses the corresponding parameters into the **code** and **message** properties respectively. If any error occurs, the user will see a corresponding error message.
+The response is handled by the [IMPORT](Data_import_IMPORT.md) operator which parses the corresponding parameters into the **code** and **message** properties respectively. If any error occurs, the user will see a corresponding error message.
 
 ##### Example 2
 
@@ -43,7 +43,7 @@ Since the property is named **createCity** and located in the [module](Modules.m
 
 Body of the HTTP request will be passed as a parameter of the type **FILE**. The values read from the **countryId** and **name** parameters are written to the local properties **cy** and **ne** respectively.
 
-If there is no country with the corresponding code, then a JSON file is generated similar to that described in the previous example, and the [RETURN](Exit_RETURN_.md) operator is called to abort execution. By default, the response message value is also stored in the **exportFile** property.
+If there is no country with the corresponding code, then a JSON file is generated similar to that described in the previous example, and the [RETURN](Exit_RETURN.md) operator is called to abort execution. By default, the response message value is also stored in the **exportFile** property.
 
 If all the actions are completed successfully, the corresponding "OK message" is generated in response.
 

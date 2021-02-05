@@ -2,7 +2,7 @@
 title: 'INPUT operator'
 ---
 
-The **INPUT** operator creates an [action](Actions.md) that [inputs a primitive](Primitive_input_INPUT_.md).
+The **INPUT** operator creates an [action](Actions.md) that [inputs a primitive](Primitive_input_INPUT.md).
 
 ### Syntax
 

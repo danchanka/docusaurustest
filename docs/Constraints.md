@@ -2,9 +2,9 @@
 title: 'Constraints'
 ---
 
-Constraints in the platform determine which values the [data](Data_properties_DATA_.md)[properties](Properties.md) can have and which cannot. In general, a constraint is defined as a property which value should always be **NULL**.
+Constraints in the platform determine which values the [data](Data_properties_DATA.md)[properties](Properties.md) can have and which cannot. In general, a constraint is defined as a property which value should always be **NULL**.
 
-In fact, a constraint is a [simple event](Simple_event.md), where condition is the constrained property and handling is [showing](#Constraints-message) all the non-**NULL** values (in the [asynchronous message](57737722.html#Inaprintview(PRINT)-interactive) mode) and [canceling](Cancel_changes_CANCEL_.md) all the changes. As well as for a simple event, you need to specify a base [event](Events.md), which determines when the defined constraint is checked. 
+In fact, a constraint is a [simple event](Simple_event.md), where condition is the constrained property and handling is [showing](#Constraints-message) all the non-**NULL** values (in the [asynchronous message](57737722.html#Inaprintview(PRINT)-interactive) mode) and [canceling](Cancel_changes_CANCEL.md) all the changes. As well as for a simple event, you need to specify a base [event](Events.md), which determines when the defined constraint is checked. 
 
 Compared to implementation via simple events, constraints have a set of additional advantages:
 
@@ -16,7 +16,7 @@ Note that in some cases, instead of showing a message to the user and canceling 
 
 ### Show message
 
-For any non-**NULL** value [output](In_a_print_view_PRINT_.md) the platform uses an automatically generated [form](Forms.md), consisting of:
+For any non-**NULL** value [output](In_a_print_view_PRINT.md) the platform uses an automatically generated [form](Forms.md), consisting of:
 
 -   one [group of objects](Form-structure_1573069.html#Formstructure-objects) with the objects corresponding to the parameters of the constrained property.
 -   properties with the matching classes belonging to the **System.recognize** [property group](Groups_of_properties_and_actions.md).

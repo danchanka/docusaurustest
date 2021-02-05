@@ -2,7 +2,7 @@
 title: 'IMPORT operator'
 ---
 
-The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT_.md) or, in general, into a [specified form](57737720.html#Inastructuredview(EXPORT,IMPORT)-importForm).
+The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT.md) or, in general, into a [specified form](57737720.html#Inastructuredview(EXPORT,IMPORT)-importForm).
 
 ### Syntax
 

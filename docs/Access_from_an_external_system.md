@@ -59,7 +59,7 @@ At the same time, if the number of results being returned is more than one, then
 -   If the request has a returnmultitype=bodyurl parameter, the response content type on transmission is set to application/x-www-form-urlencoded and the results are encoded as if they were [passed in the request string](#Accessfromanexternalsystem-url).
 -   Otherwise, the response content type during transmission is set to multipart/mixed, and the results are passed as internal parts of this response. 
 
-Note that the processing of parameters and request results is largely similar to their processing during [access to an external system](Access_to_an_external_system_EXTERNAL_.md) over the HTTP protocol (in this case, parameters are processed as results and vice versa, results are processed as parameters).
+Note that the processing of parameters and request results is largely similar to their processing during [access to an external system](Access_to_an_external_system_EXTERNAL.md) over the HTTP protocol (in this case, parameters are processed as results and vice versa, results are processed as parameters).
 
 *Stateful API*
 

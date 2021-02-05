@@ -8,7 +8,7 @@ Let's suppose we have a set of books. For each of these books, we define a numbe
 We implement a property that will find a book by its number. It can be useful, for example, for importing data where each book is identified by a number. It can be used to get a link to a book object by getting its number as a parameter.
 
 
-The [GROUP AGGR](Grouping_GROUP_.md) operator automatically adds a constraint on the uniqueness of the number. If you try to save the same number to the database, you will get an error message.
+The [GROUP AGGR](Grouping_GROUP.md) operator automatically adds a constraint on the uniqueness of the number. If you try to save the same number to the database, you will get an error message.
 
 Let's add an [event](Events.md) that will automatically number books by increasing the maximum number existing in the database.
 

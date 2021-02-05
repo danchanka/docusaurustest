@@ -9,7 +9,7 @@ title: 'Metaprogramming'
 In l**sFusion **the metaprogramming tool used is *metacode*, which is described by the [**META** instruction](META_instruction.md). Metacode consists of a header and an **lsFusion** code block describing the [instruction](Instructions.md) sequence.** **This code block must end with the keyword **END**. Let us consider an example of metacode that allows you to add two [actions](Actions.md) to an arbitrary [form](Forms.md):
 
 
-The first line of the example contains the metacode header. It consists of the keyword **META**, metacode name, and parameter list. In this example, the metacode **addActions** has one parameter: **formName**. This is the name of the form to which the actions will be added. Let's consider the possible uses for this metacode, which are described by the [instruction @](Instruction_.md). 
+The first line of the example contains the metacode header. It consists of the keyword **META**, metacode name, and parameter list. In this example, the metacode **addActions** has one parameter: **formName**. This is the name of the form to which the actions will be added. Let's consider the possible uses for this metacode, which are described by the [instruction @](Instruction.md). 
 
 
 The instruction to use metacode starts with the special symbol @, followed by the name of the metacode and the parameters passed. When generating the code, each metacode parameter is replaced by the value passed as a parameter of the @ instruction in all places where the metacode parameter is used. In this example, the metacode parameter **formName** will be replaced with **documentForm** and **orderForm**. The above metacode uses generate the following code block:

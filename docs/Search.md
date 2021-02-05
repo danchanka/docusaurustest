@@ -55,7 +55,7 @@ This step is only executed if no search namespace is specified.
 
 The candidate is a [local property](688168.html#Dataproperties(DATA)-local) and:
 
--   is declared inside an operator of a [sequence](Sequence_..._.md) that executes an action that refers to the required element.
+-   is declared inside an operator of a [sequence](Sequence_....md) that executes an action that refers to the required element.
 -   is declared earlier than the action that directly refers to the required element.
 
 ##### Suitable classes of parameters

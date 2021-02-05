@@ -10,7 +10,7 @@ The **NESTEDSESSION** operator creates an [action](Actions.md) that executes t
 
 ### Description
 
-The **NESTEDSESSION** operator creates an action which executes the other action in a nested session. With that, all changes that have already been made in the current session get into the created nested session. Also, all changes that are made in the nested session will get into the current session when [the changes are applied](Apply_changes_APPLY_.md) in the nested session.
+The **NESTEDSESSION** operator creates an action which executes the other action in a nested session. With that, all changes that have already been made in the current session get into the created nested session. Also, all changes that are made in the nested session will get into the current session when [the changes are applied](Apply_changes_APPLY.md) in the nested session.
 
 ### Parameters
 

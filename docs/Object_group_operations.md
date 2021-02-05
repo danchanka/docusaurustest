@@ -6,10 +6,10 @@ Object group operations include the following operators:
 
 ### Actions
 
--   [Seek (SEEK)](Search_SEEK_.md)
+-   [Seek (SEEK)](Search_SEEK.md)
 
 ### Properties
 
--   [Filter (FILTER)](Filter_FILTER_.md)
--   [Order (ORDER)](Order_ORDER_.md)
--   [View (VIEW)](View_VIEW_.md)
+-   [Filter (FILTER)](Filter_FILTER.md)
+-   [Order (ORDER)](Order_ORDER.md)
+-   [View (VIEW)](View_VIEW.md)

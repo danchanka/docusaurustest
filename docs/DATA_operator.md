@@ -2,7 +2,7 @@
 title: 'DATA operator'
 ---
 
-The **DATA** operator creates a [data property](Data_properties_DATA_.md).
+The **DATA** operator creates a [data property](Data_properties_DATA.md).
 
 ### Syntax
 

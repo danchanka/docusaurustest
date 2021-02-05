@@ -14,7 +14,7 @@ We need to make it so that orders are closed automatically at the end of the day
 ###### Solution
 
 
-In the first case, the event will only be executed in one transaction at the time the expression inside the [SET](Change_operators_SET_CHANGED_..._.md) operator changes. That is, at the moment when the order date becomes smaller than the current date. However, if the user manually changes the order date to one greater than the current date and saves, the system will automatically execute this event and close the order. Therefore, the second option is preferable, since it will only come into effect when the current date changes at midnight.
+In the first case, the event will only be executed in one transaction at the time the expression inside the [SET](Change_operators_SET_CHANGED_....md) operator changes. That is, at the moment when the order date becomes smaller than the current date. However, if the user manually changes the order date to one greater than the current date and saves, the system will automatically execute this event and close the order. Therefore, the second option is preferable, since it will only come into effect when the current date changes at midnight.
 
 ##### Example 2
 
@@ -56,7 +56,7 @@ We need to make it so that orders are closed automatically at the end of the day
 ###### Solution
 
 
-In the first case, the event will only be executed in one transaction at the time the expression inside the [SET](Change_operators_SET_CHANGED_..._.md) operator changes. That is, at the moment when the order date becomes smaller than the current date. However, if the user manually changes the order date to one greater than the current date and saves, the system will automatically execute this event and close the order. Therefore, the second option is preferable, since it will only come into effect when the current date changes at midnight.
+In the first case, the event will only be executed in one transaction at the time the expression inside the [SET](Change_operators_SET_CHANGED_....md) operator changes. That is, at the moment when the order date becomes smaller than the current date. However, if the user manually changes the order date to one greater than the current date and saves, the system will automatically execute this event and close the order. Therefore, the second option is preferable, since it will only come into effect when the current date changes at midnight.
 
 ##### Example 2
 

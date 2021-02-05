@@ -90,4 +90,4 @@ The following set of logs is supported for each platform component in the platfo
 
   
 
-With [automatic installation](Execution_auto_.md) under Linux, symlinks for these folders (as well as for the [lsFusion launch parameters](Launch-parameters_65241244.html#Launchparameters-applsfusion)) are automatically created to [other folders](57738078.html#Execution(auto)-logs) whose location is better aligned with Linux ideology.
+With [automatic installation](Execution_auto.md) under Linux, symlinks for these folders (as well as for the [lsFusion launch parameters](Launch-parameters_65241244.html#Launchparameters-applsfusion)) are automatically created to [other folders](57738078.html#Execution(auto)-logs) whose location is better aligned with Linux ideology.

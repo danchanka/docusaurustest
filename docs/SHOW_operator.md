@@ -2,7 +2,7 @@
 title: 'SHOW operator'
 ---
 
-The **SHOW** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG_.md) in interactive view. 
+The **SHOW** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG.md) in interactive view. 
 
 ### Syntax
 
