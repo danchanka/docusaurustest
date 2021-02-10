@@ -26,19 +26,19 @@ In the current implementation of the platform, a form shown as a window is alway
 
 ### System action management
 
-By default, when the interactive view is enabled, the platform [automatically determines](Interactive_view.md#Interactiveview-sysactions) which system actions of the form/session lifecycle management should be shown and which not. But since these conditions are somewhat heuristic, the developer can use a corresponding set of options to specify the actions that need to be shown when the form is opened. Similarly, the corresponding option can be used to specify whether the form is the [owner of the session](Interactive_view.md#Interactiveview-anchor) in which it is opened or not.
+By default, when the interactive view is enabled, the platform [automatically determines](Interactive_view.md#system-actions-for-formsession-lifecycle-management) which system actions of the form/session lifecycle management should be shown and which not. But since these conditions are somewhat heuristic, the developer can use a corresponding set of options to specify the actions that need to be shown when the form is opened. Similarly, the corresponding option can be used to specify whether the form is the [owner of the session](Interactive_view.md#anchor-broken) in which it is opened or not.
 
 ### Dialog form
 
-This operator also allows to return the latest [current value](Form_structure.md#Formstructure-currentObject) of a specified object (or, if necessary, of several objects), thus, essentially, performing [value input](Value_input.md). In this case, [input is considered to be canceled](Value_input.md#Valueinput-result) if the user closes the form using **System.formClose (**not **System.formOk**).
+This operator also allows to return the latest [current value](Form_structure.md#currentObject-broken) of a specified object (or, if necessary, of several objects), thus, essentially, performing [value input](Value_input.md). In this case, [input is considered to be canceled](Value_input.md#cancellation-and-input-result) if the user closes the form using **System.formClose (**not **System.formOk**).
 
 While inputting a value, it is sometimes necessary to not just choose one from a list, but also allow the user to return a **NULL** value. For this purpose, the dialog form has a special option that, if enabled, shows the drop action (**System.formDrop**) on the form. Calling this action closes the form and returns a **NULL** value as a result.
 
 Similar to the other value input operators, the dialog form of this operator allows to:
 
--   specify [initial object values](Value_input.md#Valueinput-initial) (through the [passing objects](Open_form.md) mechanism).
--   specify [main and alternative](Value_input.md#Valueinput-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled).
--   [change](Value_input.md#Valueinput-initial) a specified property.
+-   specify [initial object values](Value_input.md#initial-values-and-automatic-change) (through the [passing objects](Open_form.md) mechanism).
+-   specify [main and alternative](Value_input.md#cancellation-and-input-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled).
+-   [change](Value_input.md#initial-values-and-automatic-change) a specified property.
 
 In addition, if a value is entered to input to change the specified property, it is often necessary (at the value selection stage) to show the user not all object collections, but only those ones, whose selection (and subsequent change with these objects) will not violate existing [constraints](Constraints.md). Accordingly, so that the developer does not have to copy the form and manually add the necessary filter, the platform automatically generates and adds corresponding filters to the form (this behavior, however, can be disabled using a corresponding option).
 
@@ -46,9 +46,9 @@ The operator dialog form is available in the synchronous mode only.
 
 ### Extra features
 
-When opening a form, you can specify that all of its properties should be available in the "read-only"mode. In this case, the behavior will be identical to the behavior when during form creation, the "read-only" mode is specified for each [property view](Interactive_view.md#Interactiveview-property).
+When opening a form, you can specify that all of its properties should be available in the "read-only"mode. In this case, the behavior will be identical to the behavior when during form creation, the "read-only" mode is specified for each [property view](Interactive_view.md#property-views).
 
-Also, when calling the form, you can specify that it will be opened in a [new](New_session_NEWSESSION_NESTEDSESSION.md) (nested) session. In this case, [passing objects](Open_form.md#Openform-params) and value input will be performed in the current session (so it makes sense to use this option only if you need to pass objects and/or input a value; otherwise, it makes more sense to use a [new session](New_session_NEWSESSION_NESTEDSESSION.md) operator).
+Also, when calling the form, you can specify that it will be opened in a [new](New_session_NEWSESSION_NESTEDSESSION.md) (nested) session. In this case, [passing objects](Open_form.md#passing-objects) and value input will be performed in the current session (so it makes sense to use this option only if you need to pass objects and/or input a value; otherwise, it makes more sense to use a [new session](New_session_NEWSESSION_NESTEDSESSION.md) operator).
 
 ### Language
 

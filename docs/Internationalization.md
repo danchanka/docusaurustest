@@ -19,7 +19,7 @@ The language and country are specified in [standard Java](https://docs.oracle.co
 
 ### Determining the current locale
 
-The server locale is determined by the [default locale](http://www.oracle.com/us/technologies/java/locale-140624.html) of the JVM in which the server starts (namely, the startup parameters [user.language, user.country, user.timezone, and user.twoDigitYearStart](Launch_parameters.md#Launchparameters-locale)). When the application server starts, the parameters of this locale are automatically saved in the following properties:
+The server locale is determined by the [default locale](http://www.oracle.com/us/technologies/java/locale-140624.html) of the JVM in which the server starts (namely, the startup parameters [user.language, user.country, user.timezone, and user.twoDigitYearStart](Launch_parameters.md#locale-broken)). When the application server starts, the parameters of this locale are automatically saved in the following properties:
 
 
 The server locale is used as *current* when the action in which localization is being performed is initiated by the system, and not by a particular user (i.e., the system user is considered the current user).
@@ -31,6 +31,6 @@ In the current platform implementation, the above properties allow you both to u
 
 ### String data localization
 
-The main task of platform internationalization is to localize the string data that the user sees. When sending text messages, property captions, actions, forms, etc. to the client from the server, these can be translated into another language or otherwise converted depending on the [current locale](#Internationalization-current).
+The main task of platform internationalization is to localize the string data that the user sees. When sending text messages, property captions, actions, forms, etc. to the client from the server, these can be translated into another language or otherwise converted depending on the [current locale](#determining-the-current-locale).
 
 Localizable strings are created as follows: in the string, in place of the text to be localized, *the string data ID* is specified in curly brackets (e.g., '{button.cancel}'). When this string is sent to the client, all IDs found in the string are searched for on the server, then each is searched for in all [ResourceBundle](https://en.wikipedia.org/wiki/Java_resource_bundle) project files in the required locale. If found, the ID in the brackets is replaced with the corresponding text.

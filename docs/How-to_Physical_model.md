@@ -7,7 +7,7 @@ By default, each class in the database creates a separate table that stores all 
 To explicitly specify a table in which all properties with one parameter of this class will be stored, we can use the following construct:
 
 
-With a standard [field naming policy](Tables.md#Tables-name), a <[Namespace](Naming.md)\>**\_animal** table will be created within the database, with a key **key0** with the internal ID of an animal and a <[Namespace](Naming.md)\>**\_name\_Animal** field storing its name.
+With a standard [field naming policy](Tables.md#field-naming), a <[Namespace](Naming.md)\>**\_animal** table will be created within the database, with a key **key0** with the internal ID of an animal and a <[Namespace](Naming.md)\>**\_name\_Animal** field storing its name.
 
 For properties with multiple parameters, we can create a table as follows:
 

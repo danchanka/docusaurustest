@@ -20,17 +20,17 @@ title: 'CLASS instruction'
 
 The **CLASS** instruction declares a new class and adds it to the current [module](Modules.md). 
 
-The instruction has two forms:  **CLASS ABSTRACT** for declaring an [abstract class](User_classes.md#Userclasses-abstract) and just **CLASS** for declaring a concrete class. In the latter case, during declaration, you can declare the [static objects](Static_objects.md)  of this class and specify their names and captions in a curly brackets block.   
+The instruction has two forms:  **CLASS ABSTRACT** for declaring an [abstract class](User_classes.md#abstract-classes) and just **CLASS** for declaring a concrete class. In the latter case, during declaration, you can declare the [static objects](Static_objects.md)  of this class and specify their names and captions in a curly brackets block.   
 
 ### Parameters
 
 *name *
 
-Class name. [Simple ID](IDs.md#IDs-id). The name must be unique within the current [namespace](Naming.md#Naming-namespace).
+Class name. [Simple ID](IDs.md#id-broken). The name must be unique within the current [namespace](Naming.md#namespaces).
 
 *caption*
 
-Class header. [String literal](Literals.md#Literals-strliteral). If the caption is not defined, the name of the class will be its caption.  
+Class header. [String literal](Literals.md#strliteral-broken). If the caption is not defined, the name of the class will be its caption.  
 
 *objectName1, ..., objectNameM*
 
@@ -42,7 +42,7 @@ Captions of static objects of this class. Each caption is a string literal. If t
 
 *parent1, ..., parentN*
 
-List of parent class names. Each name is defined by a [composite ID](IDs.md#IDs-cid). If the list of parent classes is not specified, the class is inherited from the **System.Object** class.  
+List of parent class names. Each name is defined by a [composite ID](IDs.md#cid-broken). If the list of parent classes is not specified, the class is inherited from the **System.Object** class.  
 
 ### Examples
 

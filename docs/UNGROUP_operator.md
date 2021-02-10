@@ -36,7 +36,7 @@ The **WHERE **block defines a condition under which an object collection will 
 
 *propertyId*
 
-[ID](IDs.md#IDs-propertyid) of the distributed property. The value of this property must be numeric, and the number of parameters must be equal to the number of groups in the **BY** block. When calculating the values of group/partition expressions will be passed to this property as an input.
+[ID](IDs.md#propertyid-broken) of the distributed property. The value of this property must be numeric, and the number of parameters must be equal to the number of groups in the **BY** block. When calculating the values of group/partition expressions will be passed to this property as an input.
 
 *groupExpr1, ..., groupExprM*  
 
@@ -58,7 +58,7 @@ When this keyword is specified, the value of the distributed property must be ex
 
 Specifies the number of decimal places the value will be rounded to.
 
-*digits* – [Integer literal](Literals.md#Literals-intliteral) specifying the number of decimal places. 
+*digits* – [Integer literal](Literals.md#intliteral-broken) specifying the number of decimal places. 
 
 **LIMIT**
 
@@ -70,7 +70,7 @@ When this keyword is specified, the value of the distributed property must be ex
 
 *exPropertyId*
 
-[ID](IDs.md#IDs-propertyid) of the property that defines a proportion for **PROPORTION** type distributions, and defines limits for **LIMIT** type distributions. The value of this property must be numeric, and the number of parameters must be equal to the number of groups in the **BY** block. 
+[ID](IDs.md#propertyid-broken) of the property that defines a proportion for **PROPORTION** type distributions, and defines limits for **LIMIT** type distributions. The value of this property must be numeric, and the number of parameters must be equal to the number of groups in the **BY** block. 
 
 *exGroupExpr1, ..., exGroupExprM*  
 

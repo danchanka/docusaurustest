@@ -16,7 +16,7 @@ The **NEWEXECUTOR** operator creates an action that creates a new thread pool a
 
 *action *
 
-A [context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) that defines an action to be executed.
+A [context-dependent action operator](Action_operator.md#context-dependent-operators) that defines an action to be executed.
 
 *threadExpr*
 

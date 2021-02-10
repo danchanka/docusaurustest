@@ -16,7 +16,7 @@ The **CONCAT** operator creates a property that concatenates values using the 
 
 *separatorString*
 
- A [string literal](Literals.md#Literals-strliteral) to be used as a separator.
+ A [string literal](Literals.md#strliteral-broken) to be used as a separator.
 
 *concatExpr1, ..., concatExprN*
 

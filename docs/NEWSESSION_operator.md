@@ -17,7 +17,7 @@ where *nestedBlock* has one of two possible syntaxes:
 
 The **NEWSESSION** operator creates an action which executes the other action in a new session.
 
-If the **NESTED** keyword is specified, the changes of the [local properties](Data_properties_DATA.md#Dataproperties(DATA)-local) will be visible in the new session. If the **LOCAL** keyword is specified, changes of all the local properties will be visible, otherwise, a list of the local properties whose changes need to be visible in the new session should be specified. Also, changes to these local properties in the new session will get to the current session when applying changes in this new session.
+If the **NESTED** keyword is specified, the changes of the [local properties](Data_properties_DATA.md#local-data-properties) will be visible in the new session. If the **LOCAL** keyword is specified, changes of all the local properties will be visible, otherwise, a list of the local properties whose changes need to be visible in the new session should be specified. Also, changes to these local properties in the new session will get to the current session when applying changes in this new session.
 
 ### Parameters
 
@@ -31,11 +31,11 @@ If this keyword is specified, changes to all the local properties will be visibl
 
 *propertyId1, ..., propertyIdN*
 
-A list of local properties whose changes will be visible in the new session. Each list element must be a [property ID](IDs.md#IDs-propertyid).
+A list of local properties whose changes will be visible in the new session. Each list element must be a [property ID](IDs.md#propertyid-broken).
 
 *action* 
 
-A [context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) that defines an action to be executed in the new session.
+A [context-dependent action operator](Action_operator.md#context-dependent-operators) that defines an action to be executed in the new session.
 
 ### Examples
 

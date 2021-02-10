@@ -16,12 +16,12 @@ The **ACTIVE TAB** operator creates a property that returns **TRUE** if the sp
 
 *formName*
 
-Form name. [Composite ID](IDs.md#IDs-cid).
+Form name. [Composite ID](IDs.md#cid-broken).
 
 **componentSelector*  
 *
 
-Design component [selector](DESIGN_instruction.md#DESIGNinstruction-selector). The component must be a tab in the tab panel.
+Design component [selector](DESIGN_instruction.md#selector-broken). The component must be a tab in the tab panel.
 
 ### Examples
 

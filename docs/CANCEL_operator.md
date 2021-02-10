@@ -15,7 +15,7 @@ where *nestedBlock* has one of two possible syntaxes:
 
 ### Description
 
-The **CANCEL** operator creates an action that cancels changes in the current session. By specifying the keyword **NESTED** you can specify [local properties](Data_properties_DATA.md#Dataproperties(DATA)-local) whose changes are not dropped when cancelling the changes. 
+The **CANCEL** operator creates an action that cancels changes in the current session. By specifying the keyword **NESTED** you can specify [local properties](Data_properties_DATA.md#local-data-properties) whose changes are not dropped when cancelling the changes. 
 
 ### Parameters
 
@@ -25,7 +25,7 @@ Keyword. If specified, all local properties preserve their changes after the **C
 
 *propertyId1, ..., propertyIdN*
 
-List of local properties. Each list element is a [property ID](IDs.md#IDs-propertyid). The local properties specified in the list will preserve their changes after the operator is executed.
+List of local properties. Each list element is a [property ID](IDs.md#propertyid-broken). The local properties specified in the list will preserve their changes after the operator is executed.
 
 ### Examples
 

@@ -14,7 +14,7 @@ To install the plug-in, Intellij IDEA version 2017.1.6 or higher must be install
 
 #### Installing an application server via IDE
 
--   When [creating a new lsFusion project](IDE.md#IDE-newproject) click the Download button opposed to the lsFusion library: IDEA automatically downloads the JAR file of the latest (non-beta) version of the lsFusion server from the [central server](https://download.lsfusion.org/java) and installs this file as a dependency of this project (or rather, as its only module: File → Project Structure → Modules → project name → Dependencies tab). Also, if necessary, you can download another version of the server (different from the latest) or select a previously downloaded server JAR file on the local disk.  
+-   When [creating a new lsFusion project](IDE.md#creating-a-new-lsfusion-project) click the Download button opposed to the lsFusion library: IDEA automatically downloads the JAR file of the latest (non-beta) version of the lsFusion server from the [central server](https://download.lsfusion.org/java) and installs this file as a dependency of this project (or rather, as its only module: File → Project Structure → Modules → project name → Dependencies tab). Also, if necessary, you can download another version of the server (different from the latest) or select a previously downloaded server JAR file on the local disk.  
 
     Note that IDEA remembers the downloaded/specified application server file in its settings and automatically sets it when creating other lsFusion projects. 
 
@@ -27,9 +27,9 @@ To install the plug-in, Intellij IDEA version 2017.1.6 or higher must be install
 #### Installing an application server via IDE
 
 -   Download the lsfusion-server-<version\>.jar file of the required version (for example, lsfusion-server-2.0.jar) from the [central server](https://download.lsfusion.org/java) to the folder of the required project module (we will call this folder *$FUSION\_DIR$*).
--   If the database server is located on another computer, and if authorization is enabled on the database server (for example, for Postgres, using the md5 method and if the postgres password is not empty), set the [database server connection parameters](Launch_parameters.md#Launchparameters-connectdb) (e.g., by creating a startup [settings file](Launch_parameters.md#Launchparameters-filesettings) in the project folder)
+-   If the database server is located on another computer, and if authorization is enabled on the database server (for example, for Postgres, using the md5 method and if the postgres password is not empty), set the [database server connection parameters](Launch_parameters.md#connectdb-broken) (e.g., by creating a startup [settings file](Launch_parameters.md#filesettings-broken) in the project folder)
 -   Add the downloaded file as a dependency of the required project module (File → Project Structure → Modules → module name → Dependencies tab → +) 
--   Create a [startup configuration](IDE.md#IDE-configuration) (when creating a new lsFusion project, this and the upper two sections are done automatically). If the platform is loaded as a library, instead of creating a configuration you can use a Spring bean with the logicsInstance ID from the lsfusion.xml configuration file, and its start() and stop() methods, responsible for starting and stopping the application server, respectively.
+-   Create a [startup configuration](IDE.md#creating-a-server-startup-configuration) (when creating a new lsFusion project, this and the upper two sections are done automatically). If the platform is loaded as a library, instead of creating a configuration you can use a Spring bean with the logicsInstance ID from the lsfusion.xml configuration file, and its start() and stop() methods, responsible for starting and stopping the application server, respectively.
 
  For an existing maven project, server installation and loading can (and should) be done differently (see below). 
 
@@ -61,6 +61,6 @@ To install the plug-in, Intellij IDEA version 2017.1.6 or higher must be install
 
     In the second case, all of the above must be manually configured directly by the developer.
 
-    As for other projects not created using the operation for creating a new lsFusion project, for a maven project you must manually create a [settings file](Launch_parameters.md#Launchparameters-filesettings) and a [startup configuration](IDE.md#IDE-configuration) (or, if the platform needs to be loaded as a library, use a [special Spring bean](#Development(manual)-bean))
+    As for other projects not created using the operation for creating a new lsFusion project, for a maven project you must manually create a [settings file](Launch_parameters.md#filesettings-broken) and a [startup configuration](IDE.md#creating-a-server-startup-configuration) (or, if the platform needs to be loaded as a library, use a [special Spring bean](#bean-broken))
 
 If working with a large project, and [metacodes](Metaprogramming.md) are actively being used in it (such as [ERP](https://github.com/lsfusion-solutions/erp)), it is recommended that in the IDEA startup parameters (idea.exe.vmoptions or idea64.exe.vmoptions) the Xmx be increased to at least 2gb.

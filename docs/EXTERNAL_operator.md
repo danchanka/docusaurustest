@@ -57,17 +57,17 @@ Keyword. Specifies that the operator executes an action of another lsFusion serv
 
 ### headersToPropertyId
 
-[Property ID](IDs.md#IDs-propertyid) containing request headers. The property must have exactly one parameter: the name of the request's header. This parameter must belong to a string class. If the property is not specified, headers are ignored/not set.
+[Property ID](IDs.md#propertyid-broken) containing request headers. The property must have exactly one parameter: the name of the request's header. This parameter must belong to a string class. If the property is not specified, headers are ignored/not set.
 
 *cookiesPropertyId*
 
 *cookiesToPropertyId*
 
-[Property ID](IDs.md#IDs-propertyid) containing request cookies. The property must have exactly one parameter: the name of the cookie. This parameter must belong to a string class. If the property is not specified, cookies are ignored/not set.
+[Property ID](IDs.md#propertyid-broken) containing request cookies. The property must have exactly one parameter: the name of the cookie. This parameter must belong to a string class. If the property is not specified, cookies are ignored/not set.
 
 lsfExecType
 
-Keyword. Specifies the [way of defining](Access_from_an_external_system.md#Accessfromanexternalsystem-actiontype) the action:
+Keyword. Specifies the [way of defining](Access_from_an_external_system.md#defining-an-action) the action:
 
 -   **EXEC** – the name of the action is specified.
 -   **EVAL** – the code of the action is specified in the lsFusion language. It is assumed that this code contains a declaration of an action named **run**. This is the action that will be called.

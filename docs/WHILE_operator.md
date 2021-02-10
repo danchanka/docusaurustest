@@ -32,15 +32,15 @@ A list of expressions that define the order in which object collections will be 
 
 *alias*
 
-The name of the local parameter that will correspond to the object being created. [Simple ID](IDs.md#IDs-id).
+The name of the local parameter that will correspond to the object being created. [Simple ID](IDs.md#id-broken).
 
 *className*
 
-The name of the class of the object to create. Defined by a [class ID](IDs.md#IDs-classid).
+The name of the class of the object to create. Defined by a [class ID](IDs.md#classid-broken).
 
 *action*
 
-[Context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) describing the action being executed.
+[Context-dependent action operator](Action_operator.md#context-dependent-operators) describing the action being executed.
 
 ### Examples
 

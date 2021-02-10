@@ -13,11 +13,11 @@ Extension of properties allows you to:
 
 ### Polymorphic form
 
-Just as [for a selection operator](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-poly), for an abstract property there is a *polymorphic form* where the selection condition and the result corresponding to it are set by a single property. Accordingly, as in a selection operator, either belonging to the [signature ](Property_signature_CLASS.md)of this property or the property itself can be a condition.
+Just as [for a selection operator](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#polymorphic-form), for an abstract property there is a *polymorphic form* where the selection condition and the result corresponding to it are set by a single property. Accordingly, as in a selection operator, either belonging to the [signature ](Property_signature_CLASS.md)of this property or the property itself can be a condition.
 
 ### Mutual exclusion of conditions
 
-As [for a selection operator](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive), you can specify that all conditions of an abstract property must be *mutually exclusive*. If this option is set, and the conditions are not in fact mutually exclusive, the platform will throw the corresponding error.
+As [for a selection operator](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#mutual-exclusion-of-conditions), you can specify that all conditions of an abstract property must be *mutually exclusive*. If this option is set, and the conditions are not in fact mutually exclusive, the platform will throw the corresponding error.
 
 It is worth noting that this check is no more than a hint to the platform (for better optimization), and also a kind of self-checking on the part of the developer. However, in many cases it allows you to make the code more transparent and readable (especially given a polymorphic form of the abstract property).
 

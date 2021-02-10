@@ -27,13 +27,13 @@ When opening the list/edit form, the syntax is slightly different:
 
 ### Description
 
-The **SHOW** operator creates an action that opens the specified form. When opening the form in the **OBJECTS** block, [initial values](Open_form.md#Openform-params) can be specified for [Form structure](Form_structure.md)form objects.
+The **SHOW** operator creates an action that opens the specified form. When opening the form in the **OBJECTS** block, [initial values](Open_form.md#passing-objects) can be specified for [Form structure](Form_structure.md)form objects.
 
 ### Parameters
 
 *name*
 
-Form name. [Composite ID](IDs.md#IDs-cid).
+Form name. [Composite ID](IDs.md#cid-broken).
 
 *classFormType*
 
@@ -44,11 +44,11 @@ Keyword. Determines which form to open:
 
 *className*
 
-The name of the user class whose list/edit form is to be opened. [Composite ID](IDs.md#IDs-cid)
+The name of the user class whose list/edit form is to be opened. [Composite ID](IDs.md#cid-broken)
 
 *objName1 ... objNameN*
 
-Names of form objects for which initial values are specified. [Simple IDs](IDs.md#IDs-id).
+Names of form objects for which initial values are specified. [Simple IDs](IDs.md#id-broken).
 
 *expr, expr1 ... exprN*
 
@@ -62,25 +62,25 @@ Specifies that the values passed may be **NULL**.
 
 *syncType*
 
-Determines in which [flow control](In_an_interactive_view_SHOW_DIALOG.md#Inaninteractiveview(SHOW,DIALOG)-flow) mode the operator will work:
+Determines in which [flow control](In_an_interactive_view_SHOW_DIALOG.md#flow-management) mode the operator will work:
 
 -   **WAIT** - synchronous. Used by default.
 -   **NOWAIT** - asynchronous.
 
 *windowType*
 
-Method of [the form layout](In_an_interactive_view_SHOW_DIALOG.md#Inaninteractiveview(SHOW,DIALOG)-location):
+Method of [the form layout](In_an_interactive_view_SHOW_DIALOG.md#form-location):
 
 -   **DOCKED** – as a tab. Used by default in asynchronous mode.
 -   **FLOAT** - as a window. Used by default in synchronous mode.
 
 *MANAGESESSION* | *NOMANAGESESSION*
 
-Keyword. Determines whether or not the created form [is considered to be the owner of the session](Interactive_view.md#Interactiveview-owner) (if so, in interactive mode the corresponding buttons for managing the session will be shown on the form). By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#Interactiveview-sysactions) depending on the context.
+Keyword. Determines whether or not the created form [is considered to be the owner of the session](Interactive_view.md#session-owner) (if so, in interactive mode the corresponding buttons for managing the session will be shown on the form). By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#system-actions-for-formsession-lifecycle-management) depending on the context.
 
 *CANCEL* | *NOCANCEL*
 
-Keyword. Determines whether or not to show the "Cancel" system action (**System.formCancel**)** **on the form. By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#Interactiveview-sysactions) depending on context.
+Keyword. Determines whether or not to show the "Cancel" system action (**System.formCancel**)** **on the form. By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#system-actions-for-formsession-lifecycle-management) depending on context.
 
 *NEWSESSION | NESTEDSESSION*
 
@@ -88,7 +88,7 @@ Keyword. Determines whether or not to show the "Cancel" system action (**System.
 
 *READONLY*
 
-Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG.md#Inaninteractiveview(SHOW,DIALOG)-extra) mode.
+Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG.md#extra-features) mode.
 
 ### Examples
 

@@ -29,11 +29,11 @@ The name of the candidate matches the search name (must always be specified expl
 
 ##### Located in dependent module
 
-Candidate module [depends on](Modules.md#Modules-depends) the module in which the search is performed.
+Candidate module [depends on](Modules.md#dependencies-between-modules) the module in which the search is performed.
 
 ##### Located in specified namespace (if explicitly specified)
 
-[Namespace](Naming.md#Naming-namespace) of the candidate equals the namespace of the search (if this namespace is specified explicitly).
+[Namespace](Naming.md#namespaces) of the candidate equals the namespace of the search (if this namespace is specified explicitly).
 
 ##### Selection of a priority namespace (if the namespace is not explicitly specified)
 
@@ -53,18 +53,18 @@ This step is only executed if no search namespace is specified.
 
 ##### Located upper in the stack
 
-The candidate is a [local property](Data_properties_DATA.md#Dataproperties(DATA)-local) and:
+The candidate is a [local property](Data_properties_DATA.md#local-data-properties) and:
 
 -   is declared inside an operator of a [sequence](Sequence_....md) that executes an action that refers to the required element.
 -   is declared earlier than the action that directly refers to the required element.
 
 ##### Suitable classes of parameters
 
-[Classes of call parameters](#Search-call) [match](#Search-directclasses) [the classes of the candidate's parameters](#Search-decl) or classes of the referring parameters are unknown.
+[Classes of call parameters](#call-broken) [match](#directclasses-broken) [the classes of the candidate's parameters](#decl-broken) or classes of the referring parameters are unknown.
 
 ##### Classes of parameters intersect
 
-[Classes of the referring parameters](#Search-call) [intersect](#Search-indirectclasses) with [classes of the candidate's parameters](#Search-decl).
+[Classes of the referring parameters](#call-broken) [intersect](#indirectclasses-broken) with [classes of the candidate's parameters](#decl-broken).
 
 ##### Selection of more specific classes of parameters
 
@@ -99,7 +99,7 @@ Let's say that the classes of parameters (A1, ..., An) *match* the classes of p
 -   for each parameter **i**, one of the following is true:
     -   Ai is unknown (equal to **?**)
     -   Bi is unknown (equal to **?**)
-    -   Ai [inherits](User_classes.md#Userclasses-inheritance) from Bi (more specifically, the set of descendant classes of Bi includes the set of descendant classes of Ai)
+    -   Ai [inherits](User_classes.md#inheritance) from Bi (more specifically, the set of descendant classes of Bi includes the set of descendant classes of Ai)
 
 *Intersection of parameter classes*
 

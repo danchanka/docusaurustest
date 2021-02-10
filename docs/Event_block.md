@@ -38,15 +38,15 @@ Type of form event. It is specified with one of the following keywords:
 
 *eventActionId*
 
-The [ID of the action](IDs.md#IDs-propertyid), that will be the event handler.
+The [ID of the action](IDs.md#propertyid-broken), that will be the event handler.
 
 *param1, ..., paramK*
 
-List of action parameters. Each parameter is specified with the object name on the form. The object name, in turn, is specified with a [simple ID](IDs.md#IDs-id).
+List of action parameters. Each parameter is specified with the object name on the form. The object name, in turn, is specified with a [simple ID](IDs.md#id-broken).
 
 *actionOperator*
 
-[Context-dependent action operator](Action_operator.md#Actionoperator-contextdependent). You can use the names of already declared objects on the form as parameters.
+[Context-dependent action operator](Action_operator.md#context-dependent-operators). You can use the names of already declared objects on the form as parameters.
 
   
 

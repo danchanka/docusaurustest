@@ -2,7 +2,7 @@
 title: 'MULTI operator'
 ---
 
-The **MULTI** operator creates a [property](Properties.md) that implements [selection](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-single) of one of the values (polymorphic form).
+The **MULTI** operator creates a [property](Properties.md) that implements [selection](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#single-form) of one of the values (polymorphic form).
 
 ### Syntax
 
@@ -20,7 +20,7 @@ A list of [expressions](Expression.md) defining the properties from which the se
 
 *exclusionType*
 
-[Type of mutual exclusion](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive). Determines whether several conditions for the property selection can be met simultaneously with a certain set of parameters. It is specified by one of the keywords:
+[Type of mutual exclusion](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#mutual-exclusion-of-conditions). Determines whether several conditions for the property selection can be met simultaneously with a certain set of parameters. It is specified by one of the keywords:
 
 -   **EXCLUSIVE**
 -   **OVERRIDE**

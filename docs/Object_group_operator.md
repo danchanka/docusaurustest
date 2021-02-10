@@ -14,7 +14,7 @@ title: 'Object group operator'
 
 Object group operators create properties that accept the same number of parameters as the number of objects in the object group. These operators cannot be used inside [expressions](Expression.md).
 
-The **FILTER** operator creates a property which value is **TRUE** when the object collection passed as parameters meets all the [filtering](Form_structure.md#Formstructure-filters) conditions on the form, otherwise the property value will be **NULL**.
+The **FILTER** operator creates a property which value is **TRUE** when the object collection passed as parameters meets all the [filtering](Form_structure.md#filters) conditions on the form, otherwise the property value will be **NULL**.
 
 The **VIEW** operator creates a property which value is **TRUE** if the object collection passed as parameters is currently displayed on the form, otherwise, the property value will be **NULL**.
 
@@ -24,7 +24,7 @@ The **ORDER** operator creates a property which value determines the relative or
 
 *groupObjectId*
 
-Global [object group ID](IDs.md#IDs-groupobjectid).
+Global [object group ID](IDs.md#groupobjectid-broken).
 
 ### Examples
 

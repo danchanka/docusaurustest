@@ -2,7 +2,7 @@
 title: 'Properties and actions block'
 ---
 
-The property and action [block of the FORM instruction](FORM_instruction.md) adds [properties and actions](Form_structure.md#Formstructure-properties) to the [form structure](Form_structure.md). 
+The property and action [block of the FORM instruction](FORM_instruction.md) adds [properties and actions](Form_structure.md#properties-and-actions) to the [form structure](Form_structure.md). 
 
 ### Syntax
 
@@ -48,7 +48,7 @@ Each *formPropertyOptions* specifies options for the property or action being ad
 
 ### Description
 
-One **PROPERTIES** block adds properties and actions to the form structure. To add a property (action), specify its ID and the [form objects](Form_structure.md#Formstructure-objects) whose values will be passed to this property (action) as arguments. Sometimes it’s convenient to list these form objects for the entire **PROPERTIES** block. To do this, specify the block of *common parameters*. In this case, when adding a property (action), you only need to specify its ID, while the common parameters will be passed as arguments.
+One **PROPERTIES** block adds properties and actions to the form structure. To add a property (action), specify its ID and the [form objects](Form_structure.md#objects) whose values will be passed to this property (action) as arguments. Sometimes it’s convenient to list these form objects for the entire **PROPERTIES** block. To do this, specify the block of *common parameters*. In this case, when adding a property (action), you only need to specify its ID, while the common parameters will be passed as arguments.
 
 Each property (action) being added to the form structure must have a *unique name within the form*. This name may be specified either explicitly or based on the name of the property and the passed parameters, i. e. names of objects separated by commas. 
 
@@ -60,29 +60,29 @@ In the given example, the names of the added properties **date** and **Order.num
 
 When adding a property (action) to the form structure, you may specify a set of its options. You may also specify common options for the entire **PROPERTIES** block. If any of the options are specified for both the entire block and a specific declaration, the option value for the declaration will be used.
 
-In all [expressions](Expression.md) and [context-dependent action operators](Action_operator.md#Actionoperator-contextdependent), you can use the names of the objects already declared on the form as parameters.
+In all [expressions](Expression.md) and [context-dependent action operators](Action_operator.md#context-dependent-operators), you can use the names of the objects already declared on the form as parameters.
 
 ### Parameters
 
 *cparam1, ..., cparamN*
 
-List of common parameters of the block. Each parameter is specified with the name of the object on the form. If this list is defined, then adding a property (action) will require that you specify only its ID without parameters. The object name is specified with [simple ID](IDs.md#IDs-id).
+List of common parameters of the block. Each parameter is specified with the name of the object on the form. If this list is defined, then adding a property (action) will require that you specify only its ID without parameters. The object name is specified with [simple ID](IDs.md#id-broken).
 
 *alias*
 
-The name of the property or action being added to the form. [Simple ID](IDs.md#IDs-id). If the name is not specified, then the name of the property (action) on the form will be the same as the property's name itself (but without the namespace and signature) with parameters, i. e. names of the objects separated by commas and enclosed in brackets. 
+The name of the property or action being added to the form. [Simple ID](IDs.md#id-broken). If the name is not specified, then the name of the property (action) on the form will be the same as the property's name itself (but without the namespace and signature) with parameters, i. e. names of the objects separated by commas and enclosed in brackets. 
 
 *caption*
 
-The caption of the property or action being added to the form. [String literal](Literals.md#Literals-strliteral). If the caption is not specified, then the caption of the property (action) itself will be used on the form.
+The caption of the property or action being added to the form. [String literal](Literals.md#strliteral-broken). If the caption is not specified, then the caption of the property (action) itself will be used on the form.
 
 In the current platform implementation, if the name and caption are not specified together, then **=** is required when using the expressions and action operators (i. e. f(a,b), but =a\*b+5)
 
 *formPropertyId*
 
-[ID of the property or action](IDs.md#IDs-propertyid) being added to the form structure.
+[ID of the property or action](IDs.md#propertyid-broken) being added to the form structure.
 
-Alternatively, you may use [object operators](Interactive_view.md#Interactiveview-objectoperators) instead of the property/action IDs:
+Alternatively, you may use [object operators](Interactive_view.md#object-operators) instead of the property/action IDs:
 
 **VALUE** displays the object value (or the object ID for custom classes).
 
@@ -102,7 +102,7 @@ Keyword. When specified, it is considered that the action is specified in formP
 
 *param1, ..., paramNk*
 
-List of parameters of the added properties or actions. Each parameter is specified with the name of the object on the form. The number of specified parameters must match the number of parameters for the property or action being added. Not specified if the common parameters block is specified. The object name, in turn, is specified with a [simple ID](IDs.md#IDs-id).
+List of parameters of the added properties or actions. Each parameter is specified with the name of the object on the form. The number of specified parameters must match the number of parameters for the property or action being added. Not specified if the common parameters block is specified. The object name, in turn, is specified with a [simple ID](IDs.md#id-broken).
 
 *formPropertyExpression*
 
@@ -110,13 +110,13 @@ List of parameters of the added properties or actions. Each parameter is specifi
 
 *formActionOperator*
 
-[Context-dependent action operator](Action_operator.md#Actionoperator-contextdependent) being added to the form structure
+[Context-dependent action operator](Action_operator.md#context-dependent-operators) being added to the form structure
 
 ### *Options*** ***for the property or action*
 
 *changeType*
 
-Specifying [standard handlers](Form_events.md#Formevents-predefined) for property/action change events. It is specified with one of the keywords:
+Specifying [standard handlers](Form_events.md#standard-handlers) for property/action change events. It is specified with one of the keywords:
 
 -   **CHANGEABLE** calls the corresponding handler of the triggered event. Default value. It makes sense to use it explicitly only when another modifier is defined for the entire block but should not be applied to a specific property.
 -   **READONLY** will either turn on the filtering mechanism or simply ignore the event when the user tries to change the property.
@@ -172,15 +172,15 @@ Specifying a property that determines the footer of the property (action) being
 
 *COLUMNS \[groupid\] (groupName1, ..., groupNameM)*
 
-Specifies the upper [object groups](Form_structure.md#Formstructure-objects) whose values will define a set of [columns](Form_structure.md#Formstructure-groupcolumns) to display the added property (action). The **COLUMNS** option is often used with the **HEADER** option which defines headers for these columns.
+Specifies the upper [object groups](Form_structure.md#objects) whose values will define a set of [columns](Form_structure.md#groupcolumns-broken) to display the added property (action). The **COLUMNS** option is often used with the **HEADER** option which defines headers for these columns.
 
 *groupid*
 
-Column group ID. [String literal](Literals.md#Literals-strliteral). If the **COLUMNS** option is specified for several properties (actions) being added with the same set of object groups, then by default the columns of the first property (action) will be added, followed by the columns of the second property (action), and so on. To group columns of different properties (actions) by values of the upper objects, you can set for them the same string ID of the group of columns. In this case, the columns for different properties (actions) will alternate. 
+Column group ID. [String literal](Literals.md#strliteral-broken). If the **COLUMNS** option is specified for several properties (actions) being added with the same set of object groups, then by default the columns of the first property (action) will be added, followed by the columns of the second property (action), and so on. To group columns of different properties (actions) by values of the upper objects, you can set for them the same string ID of the group of columns. In this case, the columns for different properties (actions) will alternate. 
 
 *groupName1, ..., groupNameM*
 
-List of the names of the upper object groups. Each name is defined [by a simple ID](IDs.md#IDs-id).
+List of the names of the upper object groups. Each name is defined [by a simple ID](IDs.md#id-broken).
 
 *DRAW groupObjectName*
 
@@ -188,17 +188,17 @@ Specifying the name of the object group on the form where the added property or 
 
 *groupObjectName*
 
-Name of an object group. [Simple ID](IDs.md#IDs-id).
+Name of an object group. [Simple ID](IDs.md#id-broken).
 
 *viewType*
 
-Specifying the [view type](Interactive_view.md#Interactiveview-property) of the property or action being added:
+Specifying the [view type](Interactive_view.md#property-views) of the property or action being added:
 
 -   **GRID** — table column
 -   **TOOLBAR** — toolbar
 -   **PANEL** — panel
 
-If not specified, the corresponding option from the [property options](Property_options.md) is used. If it is also not specified, then the [default view type](Interactive_view.md#Interactiveview-defaultPropertyView) is used for the display group of this property or action.
+If not specified, the corresponding option from the [property options](Property_options.md) is used. If it is also not specified, then the [default view type](Interactive_view.md#defaultPropertyView-broken) is used for the display group of this property or action.
 
 *NEWSESSION | NESTEDSESSION*
 
@@ -212,15 +212,15 @@ Specifying that a property or an action should be added to the form structure be
 
 *formPropertyName*
 
-[Property/action name on the form](#Propertiesandactionsblock-name).
+[Property/action name on the form](#name-broken).
 
 *QUICKFILTER formPropertyName*
 
-Specifying the property to be used in [default handlers](Form_events.md#Formevents-default) for quick filtering.
+Specifying the property to be used in [default handlers](Form_events.md#default-handlers) for quick filtering.
 
 *formPropertyName*
 
-[Property name/actions on the form](#Propertiesandactionsblock-name).
+[Property name/actions on the form](#name-broken).
 
 *ON eventType actionId(param1, ..., paramZ) | { actionOperator }*
 
@@ -239,11 +239,11 @@ Type of form event. It is specified by one of the following keywords:
 
 *caption*
 
-Caption of the item in the context menu. [String literal](Literals.md#Literals-strliteral). If the caption is not specified explicitly, then it will be the same as the caption of the action called upon the event.
+Caption of the item in the context menu. [String literal](Literals.md#strliteral-broken). If the caption is not specified explicitly, then it will be the same as the caption of the action called upon the event.
 
 *actionId*
 
-[Action ID](IDs.md#IDs-propertyid).
+[Action ID](IDs.md#propertyid-broken).
 
 *param1, ..., paramZ*
 
@@ -251,18 +251,18 @@ List of action parameters. Each parameter is specified with the object name on 
 
 *actionOperator*
 
-[Context-dependent action operator](Action_operator.md#Actionoperator-contextdependent).
+[Context-dependent action operator](Action_operator.md#context-dependent-operators).
 
 *ATTR*
 
-Keyword. Used only in the [hierarchical](Structured_view.md#Structuredview-hierarchy) view. Indicates that:
+Keyword. Used only in the [hierarchical](Structured_view.md#hierarchical-view) view. Indicates that:
 
 -   When importing from XML, the data is imported from the tag attributes instead of the child tag.
 -   When exporting to XML, the data is exported to the tag attributes instead of the child tag.
 
 *EXTID extID*
 
-Specifying the name to be used for [export/import](Structured_view.md#Structuredview-extid) operations of this property. Used only in the [structured](Structured_view.md) view.
+Specifying the name to be used for [export/import](Structured_view.md#exportimport-name) operations of this property. Used only in the [structured](Structured_view.md) view.
 
 *extId*
 
@@ -272,7 +272,7 @@ String literal.
 
 Specifying a [property/action group](Groups_of_properties_and_actions.md) which the property (action) on the form belongs to. If this option is not specified, then the property group of the property itself will be used as the property (action) group on the form. 
 
-**propertyGroup* – *the property group name. [Composite ID](IDs.md#IDs-cid).
+**propertyGroup* – *the property group name. [Composite ID](IDs.md#cid-broken).
 
 ### Examples
 

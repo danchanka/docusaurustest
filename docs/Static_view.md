@@ -11,7 +11,7 @@ As a rule, structured view is used to load data into other information systems, 
 
 ### Empty object group
 
-In static view, any form has a predefined *empty* object group, which is considered to be the first object group on the form, does not contain any objects and is considered to be the [display group](Form_structure.md#Formstructure-drawgroup) for properties/filters without parameters. Accordingly, in this display group there is always a maximum of one empty object collection (exactly one, if there are no filters without parameters).
+In static view, any form has a predefined *empty* object group, which is considered to be the first object group on the form, does not contain any objects and is considered to be the [display group](Form_structure.md#drawgroup-broken) for properties/filters without parameters. Accordingly, in this display group there is always a maximum of one empty object collection (exactly one, if there are no filters without parameters).
 
 ### Object group hierarchy
 
@@ -22,7 +22,7 @@ To display information in static view , the form's [object groups](Form_structu
 The platform builds object group hierarchy based on the [form structure](Form_structure.md) as follows:
 
 -   First, relations between object groups are built according to the following rules:
-    -   object group **A** *depends* on object group **B** if **A** appears in the list of object groups later than **B** and the form has a property or filter that takes objects from **A** and **B** as input arguments (**B** should not be a [group-in-column](Form_structure.md#Formstructure-groupcolumns) of this property).
+    -   object group **A** *depends* on object group **B** if **A** appears in the list of object groups later than **B** and the form has a property or filter that takes objects from **A** and **B** as input arguments (**B** should not be a [group-in-column](Form_structure.md#groupcolumns-broken) of this property).
     -   any object group **A** depends on the empty object group
     -   group **A** *indirectly depends* on group **B** if, again, **A** appears later than **B** and there is an object group **C** which depends on both **A** and **B**
 

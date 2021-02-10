@@ -9,7 +9,7 @@ The result of that execution will be either a [property](Properties.md) or a par
 An expression can be described by the following set of recursive rules:
 
 
-An expression cannot include [context-independent](Property_operators.md#Propertyoperators-contextindependent) property operators.
+An expression cannot include [context-independent](Property_operators.md#context-independent-operators) property operators.
 
 ### Examples
 

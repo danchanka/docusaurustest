@@ -4,7 +4,7 @@ title: 'Cancel changes (CANCEL)'
 
 The *cancel changes* operator completely clears the current [change session](Change_sessions.md).
 
-As with other session management operators, you can explicitly specify [nested local properties](Session_management.md#Sessionmanagement-nested) for the cancel operator.
+As with other session management operators, you can explicitly specify [nested local properties](Session_management.md#nested-local-properties) for the cancel operator.
 
 
 ### Language

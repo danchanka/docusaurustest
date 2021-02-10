@@ -1,4 +1,4 @@
-import sys, re, os
+import sys, re, os, json
 
 def get_dirs():
     usage_string = 'Usage: transform_md.py input_dir [output_dir]' 
@@ -16,6 +16,10 @@ def get_dirs():
         output_dir = sys.argv[2]
         if not os.path.isdir(output_dir):
             os.makedirs(output_dir)
+    if not input_dir.endswith('/'):
+        input_dir += '/'        
+    if not output_dir.endswith('/'):
+        output_dir += '/'        
     return input_dir, output_dir
 
 def remove_tables(data):
@@ -66,17 +70,49 @@ def make_headers(data):
     return '\n'.join(nlines)    
 
 def load_filemap():
-    mapfile = open('filemap.txt', 'r', encoding='utf-8')
-    m = dict()
-    for line in mapfile.readlines():
-        key, value = line.rstrip().split(':')
-        m[key] = value
-    return m
+    return json.load(open('filemap.json', 'r', encoding='utf-8'))
 
-def fix_links(data):
+def load_anchors_map():
+    return json.load(open('anchormap.json', 'r', encoding='utf-8'))
+
+def header_text_to_anchor(text):
+    anchor = re.sub(r'\s+', '-', text.lower())
+    anchor = re.sub(r'[/()]', '', anchor)
+    return anchor
+
+def fix_anchors(data, anchors_map, filename, logfile):
+    data = re.sub(r'\.md#.*?-([^-]*?)\)', r'.md#\1)', data)  # '.md#WRITEoperator-extension)' -> '.md#extension'
+    data = re.sub(r'\(#.*?-([^-]*?)\)', r'(#\1)', data) # '(#Interactiveview-delete)' -> '(#delete)'
+
+    replacements = {}
+    for r in re.finditer(r'\]\(([^)]*?\.md)#([^)]*?)\)', data): # ](filename.md#id)
+        lfilename = r.group(1)
+        anchor = r.group(2)
+        if anchor in anchors_map[lfilename]:
+            replacements[f'({lfilename}#{anchor})'] = f'({lfilename}#{header_text_to_anchor(anchors_map[lfilename][anchor])})'       
+        else:     
+            replacements[f'({lfilename}#{anchor})'] = f'({lfilename}#{anchor}-broken)'       
+
+    for r in re.finditer(r'\(#([^)]*?)\)', data): # ](#id)
+        anchor = r.group(1)
+        if anchor in anchors_map[filename]:
+            replacements[f'(#{anchor})'] = f'(#{header_text_to_anchor(anchors_map[filename][anchor])})'
+        else:            
+            replacements[f'(#{anchor})'] = f'(#{anchor}-broken)'
+
+    broken = 0
+    for key, value in replacements.items():
+        if value.endswith('-broken)'):
+            broken += 1
+        logfile.write(f'Replacement {filename}: {key} -> {value}\n')
+        data = data.replace(key, value)            
+    return (data, len(replacements) - broken, broken) 
+
+def fix_links(data, anchors_map, filename, logfile):
     html_to_md = load_filemap()
     for html, md in html_to_md.items():
         data = data.replace(html, md)
+    data = fix_anchors(data, anchors_map, filename, logfile)    
     return data
 
 def transform_file_content(data):
@@ -84,19 +120,46 @@ def transform_file_content(data):
     data = create_title(data)
     data = remove_tables(data)
     data = make_headers(data)
-    data = fix_links(data)
     return data    
 
+def filter_anchor_links(files, logfile):
+    anchor_map = load_anchors_map()
+    for filename in files:
+        if filename in anchor_map:
+            data = files[filename]
+            headers = {re.sub(r'^#+', '', line).strip().replace('*', '') for line in data.split('\n') if line.startswith('#')}
+            to_delete = [key for key, value in anchor_map[filename].items() if value not in headers] 
+            for del_key in to_delete:
+                # logfile.write(f'Filtered {filename}: {del_key} -> {anchor_map[filename][del_key]}\n') 
+                del anchor_map[filename][del_key]
+    return anchor_map            
+
+
+print('transform started..')
 indir, outdir = get_dirs()
+files = {}
 for filename in os.listdir(indir):
     fullname = indir + filename 
-    print(fullname)
     if os.path.isfile(fullname) and fullname.endswith('.md') and not fullname.endswith('index.md'):
         infile = open(fullname, 'r', encoding='utf-8')
         data = infile.read()
         infile.close()
-        fulloutname = outdir + filename
-        if len(data) > 0 and data[0] == '#':
+        if len(data) > 0 and data[0] == '#': # not transformed earlier
             data = transform_file_content(data)
-            with open(fulloutname, 'w', encoding='utf-8') as outfile:
-                outfile.write(data)
+            files[filename] = data
+
+logfile = open('anchors.log', 'w', encoding='utf-8')
+anchors_map = filter_anchor_links(files, logfile)
+# json.dump(anchors_map, logfile, indent=4)
+success = 0
+fail = 0
+for filename, data in files.items():
+    data, s, f = fix_links(data, anchors_map, filename, logfile)
+    success += s
+    fail += f
+    with open(outdir + filename, 'w', encoding='utf-8') as outfile:
+        outfile.write(data)
+
+logfile.write(f'success: {success}, fail: {fail}, percent: {success / (success + fail)}')    
+
+print('transform finished')

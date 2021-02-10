@@ -41,7 +41,7 @@ When defining the form design, the developer can use the following base componen
 
 *Filter groups*
 
--   *Filter group* (**FILTERGROUP**): a component with which the user can activate the filters they need in a form's [filter groups](Interactive_view.md#Interactiveview-filtergroup).
+-   *Filter group* (**FILTERGROUP**): a component with which the user can activate the filters they need in a form's [filter groups](Interactive_view.md#filter-group).
 
 *Properties / Actions*
 
@@ -103,7 +103,7 @@ The default height of a property value cell is equal to the height of the font 
 
 ### Window size
 
-If the form opens in [window](In_an_interactive_view_SHOW_DIALOG.md#Inaninteractiveview(SHOW,DIALOG)-location) mode it does not have an upper container, so you need to determine this window's initial size. This size is determined similarly to the default base size, the only difference is that for tables/trees the default size is determined not as a constant (the default is 130.70) but in such a way that it contains their whole contents (similar to the automatic sizing mechanism), but no less than 130 in width and 140 in height.
+If the form opens in [window](In_an_interactive_view_SHOW_DIALOG.md#form-location) mode it does not have an upper container, so you need to determine this window's initial size. This size is determined similarly to the default base size, the only difference is that for tables/trees the default size is determined not as a constant (the default is 130.70) but in such a way that it contains their whole contents (similar to the automatic sizing mechanism), but no less than 130 in width and 140 in height.
 
 ### **Default design**
 
@@ -112,7 +112,7 @@ An automatic design can be created for each form, based on the form's structure
 The automatic design is generated as follows:
 
 -   **BOX**: contains all the components of this form. Vertical container. Extension coefficient: 1, alignment: STRETCH.
-    -   **PANEL**: contains components of the properties that are displayed in PANEL view  and [display group](Form_structure.md#Formstructure-drawgroup) of which is undefined (the property has no parameters). The internal structure and layout are similar to the internal structure and layout of the object group container. 
+    -   **PANEL**: contains components of the properties that are displayed in PANEL view  and [display group](Form_structure.md#drawgroup-broken) of which is undefined (the property has no parameters). The internal structure and layout are similar to the internal structure and layout of the object group container. 
         -   **GROUP...**
     -   **OBJECTS**: contains all the components that are created for object groups/trees on this form. Vertical container. Extension coefficient: 1, alignment: STRETCH.
         -   **BOX** (<object group/tree\>):  contains all the components of this group of objects. Vertical container. Extension coefficient: 1, alignment: STRETCH.

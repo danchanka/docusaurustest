@@ -45,7 +45,7 @@ Keyword. If specified, the current values of the objects of the specified object
 
 *formObjectId*
 
-Global [form object ID](IDs.md#IDs-groupobjectid) for which the required value is specified.
+Global [form object ID](IDs.md#groupobjectid-broken) for which the required value is specified.
 
 *expr*
 
@@ -53,11 +53,11 @@ An [expression](Expression.md) whose value is the required value of the form obj
 
 *formGroupObjectId*
 
-A global [ID for an object group](IDs.md#IDs-groupobjectid) for whose objects required values are specified.
+A global [ID for an object group](IDs.md#groupobjectid-broken) for whose objects required values are specified.
 
 *formObject1 ...  formObjectK*
 
-List of form object names. May contain only a part of the objects of the specified object group. An object name is defined by a [simple ID](IDs.md#IDs-id).
+List of form object names. May contain only a part of the objects of the specified object group. An object name is defined by a [simple ID](IDs.md#id-broken).
 
 *expr1 ... exprk*
 

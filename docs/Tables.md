@@ -15,7 +15,7 @@ For each property, you can specify in which table it should be stored. In this c
 For each table created in the platform, a corresponding table is created in the database, which name, depending on the selected naming policy, is defined as follows:
 
 
-The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#Launchparameters-namingpolicy) startup parameter.
+The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#namingpolicy-broken) startup parameter.
 
 ### Field naming
 
@@ -26,7 +26,7 @@ If necessary, for each property, the developer can explicitly specify the name o
 
 Using too short property naming policy (in case the number of materialized properties is large enough) can significantly complicate [naming](Naming.md) these properties (keeping them unique), or, accordingly, lead to the case when you will need to explicitly name the fields in which these properties will be stored too often.
 
-The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#Launchparameters-namingpolicy) startup parameter.
+The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#namingpolicy-broken) startup parameter.
 
 ### Default tables
 

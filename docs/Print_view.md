@@ -4,7 +4,7 @@ title: 'Print view'
 
 Print view of the [form](Forms.md) consists of a set of templates (*reports*). When data is substituted in these templates, a *document* is formed in graphic (with pixel positioning) or pseudographic (with cell positioning) format. This document is displayed to the user using a special graphic component, inside which the user can navigate through pages, zoom in/out within pages and print the contents of the component or export it to various formats (for example, PDF or Excel). If necessary, it is possible to skip the display of the component to the user and send the document for printing or save it into a selected file in the specified format.
 
-For each report, a set of the form [object groups](Form_structure.md#Formstructure-objects) that it will display is determined.
+For each report, a set of the form [object groups](Form_structure.md#objects) that it will display is determined.
 
 ### Report hierarchy
 
@@ -21,7 +21,7 @@ Using this option comes down to whether to display data for a parent object grou
 
 ### Report hierarchy example
 
-The form is similar to the [example of building an object group hierarchy](Static_view.md#Staticview-hierarchysample):
+The form is similar to the [example of building an object group hierarchy](Static_view.md#hierarchysample-broken):
 
 
 The report hierarchy for this form is built as follows:

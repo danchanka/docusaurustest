@@ -16,7 +16,7 @@ Parameters can be passed both in the request string (to refer to the parameter, 
 
 When processing file class parameters (**FILE**, **PDFFILE**, etc.) to BODY, the [content type](https://en.wikipedia.org/wiki/Media_type) of the parameter, depending on the file extension, is determined in accordance with the following [table](https://github.com/lsfusion/platform/blob/master/api/src/main/resources/MIMETypes.properties). If the file extension is not found in this table, the content type is set to application/<file extension\>.
 
-The file extension in this case is determined automatically, similarly to the [**WRITE** operator](WRITE_operator.md#WRITEoperator-extension).
+The file extension in this case is determined automatically, similarly to the [**WRITE** operator](WRITE_operator.md#extension-broken).
 
 In each of the three cases above, if the parameter value is **NULL**, "null" is substituted for the file extension in the content type (for example, application/null), and an empty string is passed as the parameter itself.
 
@@ -38,7 +38,7 @@ All results are returned in UTF-8 encoding.
 
 If more than one parameter is passed to BODY, then:
 
--   If the option **BODYURL** is specified, the BODY content type on transmission is set to "application/x-www-form-urlencoded," and the specified string, in which the parameters are encoded as if they were [passed in the request string](#Accesstoanexternalsystem(EXTERNAL)-url), is passed as BODY.
+-   If the option **BODYURL** is specified, the BODY content type on transmission is set to "application/x-www-form-urlencoded," and the specified string, in which the parameters are encoded as if they were [passed in the request string](#url-broken), is passed as BODY.
 -   Otherwise, during transmission the response content type is set to "multipart/mixed," and the parameters are passed as components of this BODY. 
 
 In turn, if the request response type is multipart/\* or application/x-www-form-urlencoded, it will be split into parts, and each part will be considered a separate execution result. In this case, the order of these results is equal to the order of the corresponding parts in the request response.
@@ -66,9 +66,9 @@ The predefined LOCAL value may be used as the connection string. In this case th
 
 For this type of interaction, the following things need to be specified: the connection string for connecting to the lsFusion server (or its web server, if any), the action being executed, and the list of properties (without parameters) to whose values the results of the call will be written. The parameters passed must match the parameters of the action being performed by number and by class.
 
-The way of defining an action in this type of interaction fully corresponds to the [way of defining](Access_from_an_external_system.md#Accessfromanexternalsystem-actiontype) an action during [access from an external system](Access_from_an_external_system.md).
+The way of defining an action in this type of interaction fully corresponds to the [way of defining](Access_from_an_external_system.md#defining-an-action) an action during [access from an external system](Access_from_an_external_system.md).
 
-By default, this type of interaction is implemented via HTTP protocol using the corresponding interfaces for access [to](#Accesstoanexternalsystem(EXTERNAL)-http) and [from](Access_from_an_external_system.md#Accessfromanexternalsystem-http) an external system.
+By default, this type of interaction is implemented via HTTP protocol using the corresponding interfaces for access [to](#http-broken) and [from](Access_from_an_external_system.md#http-broken) an external system.
 
 You can also use operators for [reading](Read_file_READ.md) and [writing](Write_file_WRITE.md) files to access external systems (if file exchange is the interface for this interaction).
 

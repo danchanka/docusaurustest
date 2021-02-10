@@ -22,7 +22,7 @@ Keyword specifying that the property being created may return **NULL** if all pa
 
 *className*
 
-The name of the [builtin class](Built-in_classes.md) of the value returned by the property. If not specified, the resulting class is considered to be the [common ancestor](Built-in_classes.md#Built-inclasses-commonparentclass) of all property operands.
+The name of the [builtin class](Built-in_classes.md) of the value returned by the property. If not specified, the resulting class is considered to be the [common ancestor](Built-in_classes.md#common-ancestor) of all property operands.
 
 *syntaxType1, ..., syntaxTypeN*
 
@@ -35,7 +35,7 @@ If the dialect type is not specified explicitly, then the corresponding formula 
 
 *text1, ..., textN*
 
-[String literals](IDs.md#IDs-strliteral), each of which contains a formula in SQL syntax. The notation **$1**, **$2** etc. is used to pass property parameters to the formula, where the number denotes the property parameter number. Parameter numbers start from 1. The number of parameters in the created property will be equal to the maximum parameter number specified in the description of the formula.
+[String literals](IDs.md#strliteral-broken), each of which contains a formula in SQL syntax. The notation **$1**, **$2** etc. is used to pass property parameters to the formula, where the number denotes the property parameter number. Parameter numbers start from 1. The number of parameters in the created property will be equal to the maximum parameter number specified in the description of the formula.
 
 ### Examples
 

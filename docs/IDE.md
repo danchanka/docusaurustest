@@ -4,15 +4,15 @@ title: 'IDE'
 
 ### Table of contents
 
--   [Creating a new lsFusion project](#IDE-newproject)
+-   [Creating a new lsFusion project](#creating-a-new-lsfusion-project)
 
--   [Developing an application](#IDE-dev)
+-   [Developing an application](#developing-an-application)
 
--   [Starting up a server](#IDE-run)
+-   [Starting up a server](#starting-up-a-server)
 
--   [Creating a server startup configuration](#IDE-configuration)
+-   [Creating a server startup configuration](#creating-a-server-startup-configuration)
 
--   [Building an application (with embedded server)](#IDE-build)
+-   [Building an application (with embedded server)](#building-an-application-with-embedded-server)
 
 ### Creating a new lsFusion project
 
@@ -52,7 +52,7 @@ After the server has been successfully started, you can connect to it over a web
 
 ### Creating a server startup configuration
 
-If the platform is embedded to an existing project (for example, [via Maven](Development_manual.md#Development(manual)-maven) for a Maven project), you may need to manually create a server startup configuration for the applications. This is done as follows:
+If the platform is embedded to an existing project (for example, [via Maven](Development_manual.md#installing-the-application-server-via-maven-only-for-maven-projects) for a Maven project), you may need to manually create a server startup configuration for the applications. This is done as follows:
 
 In the menu, select *Edit configurations*:
 
@@ -68,7 +68,7 @@ Set the configuration name and the module (if there are several) for which you 
 
 ### Building an application (with embedded server)
 
-To compile a single JAR file that contains both the developed code and the application server itself, you can use the following [guide](https://blog.jetbrains.com/idea/2010/08/quickly-create-jar-artifact/). The result JAR file (*artifact*) can be used to install applications on a production server as described in the section [installing an applications server as a service](Execution_manual.md#Execution(manual)-appservice). Note that since all modules and the server itself will be inside the same JAR file, the installation process is slightly different:
+To compile a single JAR file that contains both the developed code and the application server itself, you can use the following [guide](https://blog.jetbrains.com/idea/2010/08/quickly-create-jar-artifact/). The result JAR file (*artifact*) can be used to install applications on a production server as described in the section [installing an applications server as a service](Execution_manual.md#installing-the-web-server-web-and-desktop-client-as-a-service). Note that since all modules and the server itself will be inside the same JAR file, the installation process is slightly different:
 
 -   in the first section instead of the server JAR file this file must be downloaded
 -   the third section (copying application files to the server) can be skipped

@@ -20,7 +20,7 @@ The platform currently supports the following network protocols:
 
 Communication over this protocol is supported both for an application server on port 7651, as well as a web server (if any) on the same port, that has a web client installed.
 
-The URL format, depending on the method of [action definition](#Accessfromanexternalsystem-actiontype), looks as follows:
+The URL format, depending on the method of [action definition](#defining-an-action), looks as follows:
 
 -   EXEC - http://server address:port/exec?action=<action name\>. The "action" parameter must always be specified.
 -   EVAL - http://server address:port/eval?script=<code\>. If the "script" parameter is not specified, it is assumed that the code is passed in the first BODY parameter.
@@ -38,11 +38,11 @@ BODY parameters with types of content different from the ones mentioned above ar
 
 *Results*
 
-Properties whose values must be returned as the result are passed in the request string by adding strings like &return=<property name\> to its end. It is assumed that the values of specified properties are returned in the order of their appearance in the request string. By default, if no result properties are specified, the resulting property is the first one with a non-**NULL** value from the following [list](Built-in_classes.md#Built-inclasses-export). 
+Properties whose values must be returned as the result are passed in the request string by adding strings like &return=<property name\> to its end. It is assumed that the values of specified properties are returned in the order of their appearance in the request string. By default, if no result properties are specified, the resulting property is the first one with a non-**NULL** value from the following [list](Built-in_classes.md#export-broken). 
 
 If the result of a request is a file (**FILE**, **PDFFILE**, etc.), the response [content type](https://en.wikipedia.org/wiki/Media_type) , depending on the file extension, is determined in accordance with the following [table](https://github.com/lsfusion/platform/blob/master/api/src/main/resources/MIMETypes.properties). If the file extension is not found in this table, the content type is set to application/<file extension\>.
 
-The file extension in this case is determined automatically, similarly to the [**WRITE** operator](WRITE_operator.md#WRITEoperator-extension).
+The file extension in this case is determined automatically, similarly to the [**WRITE** operator](WRITE_operator.md#extension-broken).
 
 In all of the three cases above, if the result value is **NULL**, a null string (for example, application/null) is substituted for the file extension in the content type, and an empty string is returned as the response itself.
 
@@ -56,7 +56,7 @@ If the type of request BODY is multipart/\* or application/x-www-form-urlencoded
 
 At the same time, if the number of results being returned is more than one, then the following happens:
 
--   If the request has a returnmultitype=bodyurl parameter, the response content type on transmission is set to application/x-www-form-urlencoded and the results are encoded as if they were [passed in the request string](#Accessfromanexternalsystem-url).
+-   If the request has a returnmultitype=bodyurl parameter, the response content type on transmission is set to application/x-www-form-urlencoded and the results are encoded as if they were [passed in the request string](#url-broken).
 -   Otherwise, the response content type during transmission is set to multipart/mixed, and the results are passed as internal parts of this response. 
 
 Note that the processing of parameters and request results is largely similar to their processing during [access to an external system](Access_to_an_external_system_EXTERNAL.md) over the HTTP protocol (in this case, parameters are processed as results and vice versa, results are processed as parameters).
@@ -75,7 +75,7 @@ When executing an http request, it is often necessary to identify the user on wh
 
 -   [Basic identification](https://en.wikipedia.org/wiki/Basic_access_authentication) - the user name and password are passed in an encoded form in the "Authorization: Basic <credentials\>"heading.
 -   Token-based authentication consists of two stages:
-    -   At the first stage, you need to execute the  **Authentication.getAuthToken\[\]** action with basic authentication. The result of this action will be an authentication token with a fixed lifetime (one day [by default](Working_parameters.md#Workingparameters-authTokenExpiration)). An example of a request:  <http://localhost/exec?action=getAuthToken.>
+    -   At the first stage, you need to execute the  **Authentication.getAuthToken\[\]** action with basic authentication. The result of this action will be an authentication token with a fixed lifetime (one day [by default](Working_parameters.md#authTokenExpiration-broken)). An example of a request:  <http://localhost/exec?action=getAuthToken.>
     -   The token you receive can be used for authentication during its lifetime by passing it in the "Authorization: Bearer <token\>" header (similarly to JWT which is used in the current implementation of the platform for generating authentication tokens).
 
 *Form API*
@@ -88,10 +88,10 @@ The JavaScript library is available in the central npm-repository under the name
 
 The key concept in this API is the concept of *state*. A state is a JS object with a structure corresponding to form elements in the following way:
 
--   [An object group](Form_structure.md#Formstructure-objects) corresponds to a JS object that is stored in the js field of the state object. The name of the field matches the name of the object group. Each JS object from the object group, in turn, stores an array of JS objects (with [filters](Form_structure.md#Formstructure-filters) and [orders](Form_structure.md#Formstructure-sort) taken into account) in the **list** field. The JS object of the object group corresponds to the [current](Form_structure.md#Formstructure-currentObject) object collection. Also, each JS object of an array (including the JS object of the object group) in the **value** field stores the value of objects – only values if there is just one object in the object group or, if there are multiple objects, a JS object with fields whose names are equal to object names and values are equal to object values.
--   [Properties](Properties.md) correspond to a value stored in a field (the name of the field is equal to the property name) of a JS object which is determined in the following way depending on the existence of parameters and [its view](Interactive_view.md#Interactiveview-property):
+-   [An object group](Form_structure.md#objects) corresponds to a JS object that is stored in the js field of the state object. The name of the field matches the name of the object group. Each JS object from the object group, in turn, stores an array of JS objects (with [filters](Form_structure.md#filters) and [orders](Form_structure.md#orders) taken into account) in the **list** field. The JS object of the object group corresponds to the [current](Form_structure.md#currentObject-broken) object collection. Also, each JS object of an array (including the JS object of the object group) in the **value** field stores the value of objects – only values if there is just one object in the object group or, if there are multiple objects, a JS object with fields whose names are equal to object names and values are equal to object values.
+-   [Properties](Properties.md) correspond to a value stored in a field (the name of the field is equal to the property name) of a JS object which is determined in the following way depending on the existence of parameters and [its view](Interactive_view.md#property-views):
     -   A property has parameters:
-        -   The property view is equal to **GRID** of each JS object in the **list** array of the JS object of this property's [display group](Form_structure.md#Formstructure-drawgroup).
+        -   The property view is equal to **GRID** of each JS object in the **list** array of the JS object of this property's [display group](Form_structure.md#drawgroup-broken).
         -   The property's view is equal to **PANEL**, **TOOLBAR**  of the JS object of this property's display group
     -   A property has no parameters - of a JS state object.
 
@@ -114,7 +114,7 @@ The library exports the following functions:
 -   numberOfPendingRequests - show how many change requests are currently queued. Returns a long type value. Parameters:
     1.  state - a JS state object
 
-As the names of object groups and properties, not names on the form are used, but [export/import](Structured_view.md#Structuredview-extid) names (which, however, match the names on forms if not explicitly defined). While working with a form via Form API, actions created using operators for [object operations](Interactive_view.md#Interactiveview-objectoperators) **NEW** and **DELETE** automatically get export/import names **NEW** and **DELETE**, respectively (that is you can call change(setState, {game : {NEW:true}} for adding an object, for example) ). Also, when Form API is used, it automatically adds a property called logMessage to the form to which all dialog messages are written (including those generated when [constraints](Constraints.md) were violated).
+As the names of object groups and properties, not names on the form are used, but [export/import](Structured_view.md#exportimport-name) names (which, however, match the names on forms if not explicitly defined). While working with a form via Form API, actions created using operators for [object operations](Interactive_view.md#object-operators) **NEW** and **DELETE** automatically get export/import names **NEW** and **DELETE**, respectively (that is you can call change(setState, {game : {NEW:true}} for adding an object, for example) ). Also, when Form API is used, it automatically adds a property called logMessage to the form to which all dialog messages are written (including those generated when [constraints](Constraints.md) were violated).
 
 Authentication, stateful and form API are only supported when executing http requests on the web server. When an application server (or specifically, a built-in web server) executes an HTTP request, authentication headers, as well as parameters with the session ID, are ignored (the user is considered anonymous). Form API is completely unsupported by the built-in web server.
 

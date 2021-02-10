@@ -41,7 +41,7 @@ In turn, *groupObjectTreeSelector* can be one of two types:
 
 ### Description
 
-Using the **DESIGN** instruction the developer can manage the [design](Form_design.md) [of the](Interactive_view.md) interactive form view by creating, moving, and deleting containers and components, as well as changing their certain properties. By default, a [default design](Form_design.md#Formdesign-defaultDesign)  is created for each form, along with appropriate containers. If necessary, you can recreate the design without the default containers and previously configured settings. This is done using the keyword **CUSTOM**.  
+Using the **DESIGN** instruction the developer can manage the [design](Form_design.md) [of the](Interactive_view.md) interactive form view by creating, moving, and deleting containers and components, as well as changing their certain properties. By default, a [default design](Form_design.md#default-design)  is created for each form, along with appropriate containers. If necessary, you can recreate the design without the default containers and previously configured settings. This is done using the keyword **CUSTOM**.  
 
 Each block of design instructions enclosed in braces alows to modify a particular component and its descendants. Let's call this component the *current component* or the *current container* if we know that the component should be a container in our case. In the external block following the  **DESIGN **keyword, the **main** container is the current component. There are the following design instructions:
 
@@ -61,15 +61,15 @@ To access design components, you can use their names or address property compon
 
 *formName*
 
-The name of the form being changed. [Composite ID](IDs.md#IDs-cid).* *
+The name of the form being changed. [Composite ID](IDs.md#cid-broken).* *
 
 *caption*
 
-The new form caption in the interactive view mode. [String literal](Literals.md#Literals-strliteral). The form caption doesn't change in the [navigator](Navigator.md).
+The new form caption in the interactive view mode. [String literal](Literals.md#strliteral-broken). The form caption doesn't change in the [navigator](Navigator.md).
 
 *name*
 
-The name of the container being created. [Simple ID](IDs.md#IDs-id).
+The name of the container being created. [Simple ID](IDs.md#id-broken).
 
 *insertPos*
 
@@ -113,27 +113,27 @@ The value assigned to the corresponding container property. Acceptable value typ
 
 *componentName*
 
-Name of a design component. [Simple ID](IDs.md#IDs-id).
+Name of a design component. [Simple ID](IDs.md#id-broken).
 
 *formPropertyName *
 
-[Property/action name on the form](Properties_and_actions_block.md#Propertiesandactionsblock-name)*.*
+[Property/action name on the form](Properties_and_actions_block.md#name-broken)*.*
 
 *filterGroupName*
 
-The name of [a filter group](Filters_and_sortings_block.md#Filtersandsortingsblock-filterName). [Simple ID](IDs.md#IDs-id).
+The name of [a filter group](Filters_and_sortings_block.md#filterName-broken). [Simple ID](IDs.md#id-broken).
 
 *propertyGroupSelector*
 
-The name of a [property group](Groups_of_properties_and_actions.md). [Simple ID](IDs.md#IDs-id).
+The name of a [property group](Groups_of_properties_and_actions.md). [Simple ID](IDs.md#id-broken).
 
 *groupObjectSelector*
 
-The name of an [object group on the form](Object_blocks.md#Objectblocks-groupName). [Simple ID](IDs.md#IDs-id).
+The name of an [object group on the form](Object_blocks.md#groupName-broken). [Simple ID](IDs.md#id-broken).
 
 *treeSelector*
 
-The name of [an object tree on the form](Object_blocks.md#Objectblocks-treeName). [Simple ID](IDs.md#IDs-id).
+The name of [an object tree on the form](Object_blocks.md#treeName-broken). [Simple ID](IDs.md#id-broken).
 
 *noGroupObjectTreeContainerType*
 

@@ -24,11 +24,11 @@ The  **INDEX** instruction adds a new index by an ordered list of fields of a c
 
 *propertyId*
 
-The ID of the [property](IDs.md#IDs-propertyid) that should be stored in the table for which the index is being created.
+The ID of the [property](IDs.md#propertyid-broken) that should be stored in the table for which the index is being created.
 
 *param1, ..., paramN*
 
-A list of property parameters. Each element of the list is a [typed parameter](IDs.md#IDs-paramid).
+A list of property parameters. Each element of the list is a [typed parameter](IDs.md#paramid-broken).
 
 *param*
 

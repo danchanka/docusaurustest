@@ -2,7 +2,7 @@
 title: 'Filters and sortings block'
 ---
 
-The filter and order block of the [FORM instruction](FORM_instruction.md) – add [filters](Form_structure.md#Formstructure-filters) and [orderings](Form_structure.md#Formstructure-sort) to the form structure; add [filter groups](Interactive_view.md#Interactiveview-filtergroup) to the interactive form view.
+The filter and order block of the [FORM instruction](FORM_instruction.md) – add [filters](Form_structure.md#filters) and [orderings](Form_structure.md#orders) to the form structure; add [filter groups](Interactive_view.md#filter-group) to the interactive form view.
 
 Fixed filter block
 
@@ -47,11 +47,11 @@ Each filter is defined with an [expression](Expression.md) that defines the fil
 
 *groupName*
 
-Internal name of a filter group [Simple ID](IDs.md#IDs-id). If the **EXTEND** keyword is specified, the platform will search the form for the created filter group with the specified name — otherwise a new filter group with the specified name will be created.
+Internal name of a filter group [Simple ID](IDs.md#id-broken). If the **EXTEND** keyword is specified, the platform will search the form for the created filter group with the specified name — otherwise a new filter group with the specified name will be created.
 
 *caption1, ..., captionN*
 
-Captions that will be shown in the user interface for the corresponding filter being added. Each caption is defined with a [string literal](IDs.md#IDs-strliteral).
+Captions that will be shown in the user interface for the corresponding filter being added. Each caption is defined with a [string literal](IDs.md#strliteral-broken).
 
 *expression1, ..., expressionN*
 

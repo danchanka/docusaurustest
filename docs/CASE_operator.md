@@ -20,7 +20,7 @@ The CASE operator creates a property that implements a conditional selection. Se
 
 ** ***exclusionType*
 
-** **[Type of mutual exclusion](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#Selection(CASE,IF,MULTI,OVERRIDE,EXCLUSIVE)-exclusive). Determines whether several conditions can be met simultaneously for a certain set of parameters. It is specified by one of the keywords:
+** **[Type of mutual exclusion](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md#mutual-exclusion-of-conditions). Determines whether several conditions can be met simultaneously for a certain set of parameters. It is specified by one of the keywords:
 
 -   **EXCLUSIVE**
 -   **OVERRIDE**

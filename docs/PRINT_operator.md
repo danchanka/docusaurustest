@@ -18,17 +18,17 @@ The **PRINT** operator creates an [action](Actions.md) that [opens a form](In
 
 ### Description
 
-The **PRINT** operator creates an action that prints the specified form. When printing a form in the **OBJECTS** block you can add [additional filters](Open_form.md#Openform-params) for form objects to check these objects for equality to the values passed.
+The **PRINT** operator creates an action that prints the specified form. When printing a form in the **OBJECTS** block you can add [additional filters](Open_form.md#passing-objects) for form objects to check these objects for equality to the values passed.
 
 ### Parameters
 
 *name*
 
-Form name. [Composite ID](IDs.md#IDs-cid).
+Form name. [Composite ID](IDs.md#cid-broken).
 
 *objName1 ... objNameN*
 
-Names of form objects for which additional filters are specified. [Simple IDs](IDs.md#IDs-id).
+Names of form objects for which additional filters are specified. [Simple IDs](IDs.md#id-broken).
 
 *expr1 ... exprN*
 
@@ -38,7 +38,7 @@ Names of form objects for which additional filters are specified. [Simple IDs](I
 
 *printFormat*
 
-The [print format](In_a_print_view_PRINT.md#Inaprintview(PRINT)-format) is specified by one of these keywords:
+The [print format](In_a_print_view_PRINT.md#format) is specified by one of these keywords:
 
 -   **PDF** – the form will be exported to a PDF file.
 -   **XLS**, **XLSX** – the form will be exported to a file in one of the specified EXCEL formats.
@@ -50,7 +50,7 @@ The [print format](In_a_print_view_PRINT.md#Inaprintview(PRINT)-format) is speci
 
     sheetProperty
 
-The [ID of the property](IDs.md#IDs-propertyid) whose value is used as the name of the sheet in the exported file. The property must not have parameters. It is used for **XLS** and **XLSX** print formats.
+The [ID of the property](IDs.md#propertyid-broken) whose value is used as the name of the sheet in the exported file. The property must not have parameters. It is used for **XLS** and **XLSX** print formats.
 
 *passwordExpr*
 
@@ -58,11 +58,11 @@ An expression whose value determines the password that sets the read-only mode f
 
 *propertyId*
 
-[Property ID](IDs.md#IDs-propertyid) to which the generated file will be written. The property must not have parameters. If a property is not specified, the generated file is sent to the client and opened by the operating system
+[Property ID](IDs.md#propertyid-broken) to which the generated file will be written. The property must not have parameters. If a property is not specified, the generated file is sent to the client and opened by the operating system
 
 *PREVIEW*
 
-Keyword. If specified, the form is displayed in [preview](In_a_print_view_PRINT.md#Inaprintview(PRINT)-interactive) mode. This mode is used by default if no other modes/formats are specified.
+Keyword. If specified, the form is displayed in [preview](In_a_print_view_PRINT.md#interactive-print-view) mode. This mode is used by default if no other modes/formats are specified.
 
 *NOPREVIEW*
 
@@ -74,11 +74,11 @@ An expression whose value determines the name of the printer to which the print 
 
 *MESSAGE*
 
-Keyword. If specified, the form displays data to the user in [message](In_a_print_view_PRINT.md#Inaprintview(PRINT)-interactive) mode.
+Keyword. If specified, the form displays data to the user in [message](In_a_print_view_PRINT.md#interactive-print-view) mode.
 
 *TOP n*
 
-Displays only the first N entries. [Integer literal](Literals.md#Literals-intliteral).
+Displays only the first N entries. [Integer literal](Literals.md#intliteral-broken).
 
 *syncType*
 
