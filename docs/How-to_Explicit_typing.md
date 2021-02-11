@@ -11,7 +11,7 @@ Accordingly, the first property gets one parameter of the **OrderDetail** class 
 
 But if we create, for example, a constraint with one parameter and then try to refer to the **sum** property without explicitly specifying the class of this parameter, an error will occur:
 
-<img src="attachments/65241514/65241516.png" height="85" />
+![](attachments/65241514/65241516.png)
 
 All such references require an explicitly specified class:
 

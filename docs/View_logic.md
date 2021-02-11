@@ -13,4 +13,4 @@ In the simplest version of the user interface the user opens several fixed forms
 **  
 **
 
-<img src="download/temp/svgout8980731593997826128.png" width="637" height="302" />
+![](download/temp/svgout8980731593997826128.png)

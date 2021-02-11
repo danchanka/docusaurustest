@@ -35,6 +35,6 @@ As follows from the algorithm, the empty object group is always the only root gr
 
 The hierarchy of groups of objects for this form will be constructed as follows:
 
-<img src="download/temp/svgout9040357159828641685.png" width="653" height="421" />
+![](download/temp/svgout9040357159828641685.png)
 
   

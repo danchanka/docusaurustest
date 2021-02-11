@@ -164,4 +164,4 @@ The type of an object group / tree container.
 
 The output is the following form:
 
-<img src="attachments/4718609/43648025.png" height="250" />
+![](attachments/4718609/43648025.png)

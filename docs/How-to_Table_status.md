@@ -31,4 +31,4 @@ The property with the current order, defined using the [ORDER](Order_ORDER.md) 
 
 The form obtained in both examples, with user-defined filter and order, will look like this:
 
-<img src="attachments/46367766/46367772.png" height="250" />
+![](attachments/46367766/46367772.png)

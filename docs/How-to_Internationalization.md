@@ -29,7 +29,7 @@ You can change the language and country settings for a particular user in their 
 
 In this case, when the user logs in to the system again, everything will be shown in the selected language:
 
-<img src="attachments/60555378/60555387.png" height="143" />
+![](attachments/60555378/60555387.png)
 
 Ids can also be used in expressions:
 

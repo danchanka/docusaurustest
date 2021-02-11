@@ -34,4 +34,4 @@ Finally, let's design a form that will allow the user to enter the markup for ca
 
 As a result, the form with the filled data will look like this:
 
-<img src="attachments/46367603/46367612.png" height="250" />
+![](attachments/46367603/46367612.png)

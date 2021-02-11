@@ -18,7 +18,7 @@ Object **c** will not be displayed on the form, since no properties have been ad
 
 The form will look like this:
 
-<img src="attachments/46367544/46367547.png" height="218" />
+![](attachments/46367544/46367547.png)
 
 ##### Example 2
 
@@ -38,7 +38,7 @@ All properties with the same ID after the word **COLUMNS** will go side by side
 
 The form will look like this:
 
-<img src="attachments/46367544/46367551.png" height="250" />
+![](attachments/46367544/46367551.png)
 
 ##### Example 3
 
@@ -53,4 +53,4 @@ In real projects, we recommend limiting the number of rows and columns during da
 
 Result:
 
-<img src="attachments/46367544/46367557.png" height="250" />
+![](attachments/46367544/46367557.png)

@@ -46,7 +46,7 @@ When you create a new project, a server startup configuration is also created by
 
 ![](attachments/46367442/65241582.png)
 
-<img src="attachments/46367442/65241583.png" height="250" />
+![](attachments/46367442/65241583.png)
 
 After the server has been successfully started, you can connect to it over a web-based or desktop client via a shortcut on your desktop.
 
@@ -56,15 +56,15 @@ If the platform is embedded to an existing project (for example, [via Maven](Dev
 
 In the menu, select *Edit configurations*:
 
-<img src="attachments/46367442/57737363.png" width="1000" />
+![](attachments/46367442/57737363.png)
 
 In the window that opens, click + in the upper left corner and select *lsFusion Server* from the drop-down list
 
-<img src="attachments/46367442/57737364.png" width="501" />
+![](attachments/46367442/57737364.png)
 
 Set the configuration name and the module (if there are several) for which you need to start the lsFusion application server. In the same window, if necessary, you can specify the build process to be followed at configuration startup, additional parameters for the Java virtual machine, etc.
 
-<img src="attachments/46367442/57737376.png" width="1000" />
+![](attachments/46367442/57737376.png)
 
 ### Building an application (with embedded server)
 

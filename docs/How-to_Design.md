@@ -16,7 +16,7 @@ We need to customize the design of the form, so that the lines and payments can 
 
 The form will look like this:
 
-<img src="attachments/36307439/46367472.png" height="250" />
+![](attachments/36307439/46367472.png)
 
 ##### Example 2
 
@@ -32,4 +32,4 @@ We need to add filtering elements to the design of the previously created form.
 
 Result:
 
-<img src="attachments/36307439/46367474.png" height="250" />
+![](attachments/36307439/46367474.png)

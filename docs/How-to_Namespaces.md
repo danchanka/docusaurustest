@@ -15,7 +15,7 @@ Let's declare a test module with a **Test** namespace that will simultaneously d
 
 If you try to refer to the **Order** class without explicitly specifying the namespace, you will see an error message:
 
-<img src="attachments/60555394/60555398.png" height="102" />
+![](attachments/60555394/60555398.png)
 
 All such references require an explicit specification of the namespace.
 

@@ -1,10 +1,9 @@
 $mode = $args[0]
 
-if ($mode -eq 'all') { 
-	rd docusaurustest/docs -r >$null
-	yarn --cwd ./confluence-to-markdown start ../LSFUS ../docusaurustest/docs
-	robocopy ./docusaurustest/docs/LSFUS ./docusaurustest/docs /e /copyall /move >$null
-}
+rd docusaurustest/docs -r >$null
+yarn --cwd ./confluence-to-markdown start ../LSFUS ../docusaurustest/docs
+robocopy ./docusaurustest/docs/LSFUS ./docusaurustest/docs /e /copyall /move >$null
+robocopy ./LSFUS/download ./docusaurustest/docs/download /e /copyall >$null
 
 python build_maps.py LSFUS
 

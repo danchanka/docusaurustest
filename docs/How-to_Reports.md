@@ -24,11 +24,11 @@ Now let's display them on the **books** form in the toolbar of the table of bo
 
 Then, we start the server from the IDE, launch the desktop client, open the form with books and click the created "Print" button. The system will automatically create a print-ready form and open it in the [preview](In_a_print_view_PRINT.md#interactive-print-view) mode. Then, click the button below:
 
-<img src="attachments/46367627/46367670.png" width="800" />
+![](attachments/46367627/46367670.png)
 
 The system will save automatic templates for [Jasper Reports](https://community.jaspersoft.com/project/jasperreports-library) to the source code folder (src/main/lsfusion).
 
-<img src="attachments/46367627/57738054.png" width="800" />
+![](attachments/46367627/57738054.png)
 
 The system will then start the editor associated with the jrxml format where these files will be opened. You can use [JasperSoft Studio](https://community.jaspersoft.com/project/jaspersoft-studio) as an editor. In addition, a background process will be launched to constantly synchronize report files in the src / main / lsfusion and out / production folders (or target / classes if Maven is used to start the configuration instead of IDEA Build) to eliminate the need for rebuilding the project after the templates are modified in the editor.
 
@@ -36,7 +36,7 @@ Since categories and books are associated, a single flat report will be created 
 
 Let's make a few changes in the automatic template and save it:
 
-<img src="attachments/46367627/57738052.png" width="800" />
+![](attachments/46367627/57738052.png)
 
 ### Template: Sample\_booksByCategories.jrxml
  Expand source
@@ -79,7 +79,7 @@ Let's make a few changes in the automatic template and save it:
 
 Once done, if you re-run the report generation procedure, it will use modified templates and the result will look as follows:
 
-<img src="attachments/46367627/57738056.png" width="800" />
+![](attachments/46367627/57738056.png)
 
 If the background process fails to synchronize development and execution folders for some reason, you just need to restart the server so that the project is re-built and changes are applied.
 
@@ -101,7 +101,7 @@ Since the **i** objects of the **invoice** form are displayed on the panel, the 
 
 Let's move the invoice data from the group header (**Group Header**) to the invoice header so that it gets displayed above the columns.
 
-<img src="attachments/46367627/57738059.png" width="800" />
+![](attachments/46367627/57738059.png)
 
   
 
@@ -152,7 +152,7 @@ Let's move the invoice data from the group header (**Group Header**) to the invo
 
 The resulting report will look like this:
 
-<img src="attachments/46367627/57738060.png" width="800" />
+![](attachments/46367627/57738060.png)
 
 ##### Example 3
 
@@ -173,7 +173,7 @@ The principle of this report is that objects with invoices and orders are indepe
 Since the dependency between objects forms a tree with two leaf nodes, a total of three templates will be formed:
 
 1.  *Sample\_customerInfo* is a top report that will show buyer data (in this case, for a single buyer). It will contain links to subreports *Sample\_customerInfo\_i* and *Sample\_customerInfo\_o*.  
-    <img src="attachments/46367627/57738063.png" width="800" />
+    ![](attachments/46367627/57738063.png)
 
     **Template: Sample\_customerInfo.jrxml**
      Expand source
@@ -284,4 +284,4 @@ Since the dependency between objects forms a tree with two leaf nodes, a total o
 
 The result of this slightly modified report will look like this:
 
-<img src="attachments/46367627/57738064.png" width="800" />
+![](attachments/46367627/57738064.png)

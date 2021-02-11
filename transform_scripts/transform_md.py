@@ -69,6 +69,17 @@ def make_headers(data):
                 nlines.append(line)    
     return '\n'.join(nlines)    
 
+def fix_image_links(data):
+    return re.sub(r'<img src="(.*?)".*?/>', r'![](\1)', data)
+
+def transform_file_content(data):
+    data = replace_html_ltgt(data)
+    data = create_title(data)
+    data = remove_tables(data)
+    data = make_headers(data)
+    data = fix_image_links(data)
+    return data    
+    
 def load_filemap():
     return json.load(open('filemap.json', 'r', encoding='utf-8'))
 
@@ -114,13 +125,6 @@ def fix_links(data, anchors_map, filename, logfile):
         data = data.replace(html, md)
     data = fix_anchors(data, anchors_map, filename, logfile)    
     return data
-
-def transform_file_content(data):
-    data = replace_html_ltgt(data)
-    data = create_title(data)
-    data = remove_tables(data)
-    data = make_headers(data)
-    return data    
 
 def filter_anchor_links(files, logfile):
     anchor_map = load_anchors_map()

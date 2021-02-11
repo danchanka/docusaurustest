@@ -28,4 +28,4 @@ Some views are *graphic*, meaning that to display them the data read must be pla
 **  
 **
 
-<img src="download/temp/svgout1185317823116941986.png" width="558" height="78" />
+![](download/temp/svgout1185317823116941986.png)

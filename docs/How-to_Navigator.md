@@ -16,7 +16,7 @@ We need to add them to the [navigator](Navigator.md) to the new folder called **
 
 By specifying **WINDOW** for the **application** element, we indicated that all its child objects must be displayed in the system [window](Navigator_design.md) called **toolbar**. This will look like this:
 
-<img src="attachments/46367463/46367465.png" height="153" />
+![](attachments/46367463/46367465.png)
 
 ##### Example 2
 
@@ -31,4 +31,4 @@ We need to place the same forms in the subfolder called Directories.
 
 Result:
 
-<img src="attachments/46367463/46367468.png" height="172" />
+![](attachments/46367463/46367468.png)

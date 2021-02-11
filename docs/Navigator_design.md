@@ -12,7 +12,7 @@ Each window must have a *caption* which will be used when displaying the window
 
 For each navigator element, you can specify the window in which its descendants should be displayed. If necessary, the element itself can be displayed there. Thus, the set of *subtrees* (navigator *elements*) that is displayed in each window is uniquely determined. Graphically, this can be represented as follows:
 
-<img src="attachments/1310742/86476284.png" height="400" />
+![](attachments/1310742/86476284.png)
 
 ### Window layout on the desktop
 

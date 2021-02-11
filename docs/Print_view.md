@@ -28,7 +28,7 @@ The report hierarchy for this form is built as follows:
 
   
 
-<img src="download/temp/svgout2047691192645434560.png" width="581" height="371" />
+![](download/temp/svgout2047691192645434560.png)
 
 ### Language
 

@@ -14,4 +14,4 @@ In the user interface, a form is opened when a corresponding element is chosen i
 **  
 **
 
-<img src="download/temp/svgout3838092450276803615.png" width="611" height="182" />
+![](download/temp/svgout3838092450276803615.png)

@@ -15,7 +15,7 @@ This log contains all errors that occurred during the operation. Errors are divi
     -   «Temporary connection loss» - connection with the server was interrupted, but was then restored;
     -   «Permanent connection loss» - connection with the server was interrupted and could not be restored;
 
-<img src="attachments/60555482/65241132.png" height="250" />
+![](attachments/60555482/65241132.png)
 
  Fig. 1 Error log.
 
@@ -23,7 +23,7 @@ The «Exception trace» section displays the java stack for the error; the «Exc
 
 -   Connection Log (fig. 2).
 
-<img src="attachments/60555482/65241133.png" height="250" />** **
+![](attachments/60555482/65241133.png)** **
 
 Fig. 2 Connection Log.
 
@@ -37,7 +37,7 @@ The «Form» section shows which forms the user entered and how many times. The 
 
 -   The change log contains more detailed information about the changes which were reflected in the «Session» section of the connection log (fig. 3.).
 
-<img src="attachments/60555482/65241134.png" height="249" />
+![](attachments/60555482/65241134.png)
 
 Fig. 3 Change log.
 
@@ -47,7 +47,7 @@ The form lets you filter the changes made by users (excluding system changes) by
 
 -   The client application log contains information about the quality of the connection while working with the application server for a given period of time (fig. 4.).
 
-<img src="attachments/60555482/65241135.png" height="217" />
+![](attachments/60555482/65241135.png)
 
 Fig. 4 Client application log.
 
@@ -57,7 +57,7 @@ The «Data» tab at the bottom provides a chronology of changes in response time
 
 How much information should be stored in these logs is indicated in the Admin form \\\\ Settings \\\\ Logging tab (fig. 5.).
 
-<img src="attachments/60555482/65241136.png" height="250" />
+![](attachments/60555482/65241136.png)
 
 Fig. 5 Setting the number of days for logging.
 
@@ -65,19 +65,19 @@ If you need to track changes to the individual values of any  Properties (colum
 
 1.  go to any entry in the «Surname» column and right-click to bring up the «Configure property policy» menu (fig. 6.);
 
-<img src="attachments/60555482/65241138.png" height="148" />
+![](attachments/60555482/65241138.png)
 
 Fig. 6 Select a property to log changes.
 
 -   in the «Security policy» form, check «Logged by user» and click «OK» (fig. 7.);
 
-<img src="attachments/60555482/65241139.png" height="165" />
+![](attachments/60555482/65241139.png)
 
 Fig. 7 Setting user logging.
 
 -   once you restart the application server, right-clicking on the «Surname» property will bring up an additional «Show Change History» menu item. If the surname for the current record has been changed by someone, then this will be reflected in the property change history (fig. 8).
 
-### <img src="attachments/60555482/65241140.png" height="250" />
+### ![](attachments/60555482/65241140.png)
 
 Fig. 8. Property change history.
 

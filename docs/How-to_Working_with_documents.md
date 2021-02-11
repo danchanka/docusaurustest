@@ -35,7 +35,7 @@ We need to add a possibility to enter order lines by specifying the quantify in 
 
 The form will look like this:
 
-<img src="attachments/46367481/46367490.png" height="250" /><img src="attachments/46367481/46367491.png" height="250" />
+![](attachments/46367481/46367490.png)![](attachments/46367481/46367491.png)
 
 If the quantity changes on the **Selection** tab, the system will automatically change order lines. If the order lines are changed, the quantity on the **Selection** tab will change as well.
 
