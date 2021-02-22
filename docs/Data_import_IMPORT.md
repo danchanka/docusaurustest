@@ -28,3 +28,6 @@ To declare an action that imports data, use the [**IMPORT** operator](IMPORT_ope
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=import"/>

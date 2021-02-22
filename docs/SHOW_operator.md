@@ -93,3 +93,6 @@ Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=show"/>

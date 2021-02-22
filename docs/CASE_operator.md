@@ -45,3 +45,6 @@ An expression whose value defines the property value if none of the conditions a
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=case"/>

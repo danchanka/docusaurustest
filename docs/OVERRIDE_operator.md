@@ -21,6 +21,9 @@ List of [expressions](Expression.md) whose values will determine the value of th
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=override"/>
 
 **  
 **

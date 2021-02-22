@@ -29,6 +29,7 @@ The **IMPORT** operator creates an action that imports data from a specified fil
 
 If * *the format of the imported file* *is not specified, it is determined automatically depending on the class of the imported file (or on the extension, if the class is **FILE**), in the following way:
 
+[table was removed]
 
   
 
@@ -136,4 +137,8 @@ Keyword. Specifies that **NULL** values during import (if the imported format 
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=import"/>
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=importForm"/>

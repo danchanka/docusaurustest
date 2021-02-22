@@ -36,4 +36,8 @@ To open the form in the structured view, use the [**EXPORT** operator](EXPORT_
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=export"/>
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=importForm"/>

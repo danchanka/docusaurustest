@@ -18,6 +18,7 @@ For each navigator element, you can specify the window in which its descendants 
 
 Each window occupies a predefined section of the desktop. Graphically, this can be represented as follows:
 
+[table was removed]
 
 The entire desktop is 100x100 *pixels* in size. When creating a window, you must specify the window's upper left coordinate, width and height, expressed in *pixels*. It is desirable that windows should "cover" the entire area of the desktop. If this does not happen, then the free area will be given to one of the windows (there is no guarantee as to which one). Two windows are allowed to have absolutely identical coordinates and sizes. In this case they will be displayed in the same place, but switching between them will be possible using tabs.
 
@@ -54,6 +55,7 @@ Also, three additional windows are automatically created for ease of development
 
 By default, the desktop has the following layout (the left coordinate, upper coordinate, width, and height are indicated in brackets):
 
+[table was removed]
 
 ### Language
 
@@ -61,5 +63,8 @@ To manage windows, use the [**WINDOW** instruction](WINDOW_instruction.md).
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=window"/>
 
   

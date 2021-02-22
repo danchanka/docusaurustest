@@ -16,5 +16,9 @@ To create an action that executes another action in a new session, use the [**N
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=newsession"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=nestedsession"/>

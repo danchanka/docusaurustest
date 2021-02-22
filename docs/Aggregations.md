@@ -14,3 +14,6 @@ To create aggregations, use the [operator**AGGR**](AGGR_operator.md).
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=AggregationSample&block=aggr"/>

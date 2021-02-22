@@ -12,3 +12,6 @@ To add a new action to the system, use [the **ACTION** instruction](ACTION_inst
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample"/>

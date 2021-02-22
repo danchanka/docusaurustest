@@ -6,6 +6,9 @@ In certain situations, you may want to use the same [name](Naming.md) for differ
 
 For example, let's create two properties named **sum**: one of them will calculate the sum of the order line, and the second will calculate the sum of the entire order:
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseTyping&block=sums"/>
 
 Accordingly, the first property gets one parameter of the **OrderDetail** class as input while the second gets one parameter of the **Order** class.
 
@@ -15,6 +18,7 @@ But if we create, for example, a constraint with one parameter and then try to r
 
 All such references require an explicitly specified class:
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseTyping&block=sref"/>
 
   
 

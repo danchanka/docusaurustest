@@ -19,6 +19,7 @@ The following URL types are supported:
 
 It is assumed that the file extension is not specified in the URL (that is, the period (.) is also considered a part of the file name). This extension is determined automatically based on the class of the file being written:
 
+[table was removed]
 
 The Downloads folder in the user folder is considered to be the current folder on the client side.
 
@@ -51,4 +52,7 @@ Keyword. If specified, the file is re-read from  fileExpr and appended to the 
 ### **Examples**
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=write"/>
 

@@ -65,6 +65,9 @@ A list of expressions whose values are the required values of the corresponding 
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=seek"/>
 
 **  
 **

@@ -25,5 +25,8 @@ An [expression](Expression.md) whose value is for the action being created. If 
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=delete"/>
 
   

@@ -16,3 +16,6 @@ To implement conversion, the [type conversion operator](Type_conversion_operato
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=explicitcast"/>

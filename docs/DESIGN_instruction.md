@@ -96,18 +96,23 @@ The value assigned to the corresponding container property. Acceptable value typ
 
 ### *Component properties*
 
+[table was removed]
 
 ### *Container properties*
 
+[table was removed]
 
 ### *Properties of actions and properties on the form*
 
+[table was removed]
 
 ### *Toolbar properties*
 
+[table was removed]
 
 ### *Other properties*
 
+[table was removed]
 
 ### *Selector parameters*
 
@@ -161,6 +166,9 @@ The type of an object group / tree container.
  **Examples**
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=design"/>
 
 The output is the following form:
 

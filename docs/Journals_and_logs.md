@@ -87,6 +87,7 @@ The retention time for these logs is set to the same retention time as for the C
 
 The following set of logs is supported for each platform component in the platform:
 
+[table was removed]
 
   
 

@@ -14,6 +14,9 @@ To declare an exception handling action, use the [**TRY** operator](TRY_operato
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=try"/>
 
   
   

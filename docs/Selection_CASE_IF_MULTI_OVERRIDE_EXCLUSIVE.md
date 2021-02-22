@@ -38,15 +38,23 @@ To create a property implementing a general form of selection, the **[CASE](CAS
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=case"/>
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=multi"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=override"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=exclusive"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=if"/>
 
 
-
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=ifthen"/>
 
 **  
 **

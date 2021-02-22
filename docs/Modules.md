@@ -24,3 +24,6 @@ Each module in the platform corresponds to exactly one file, which starts with a
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ModuleSample"/>

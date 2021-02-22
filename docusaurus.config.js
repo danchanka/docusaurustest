@@ -79,6 +79,9 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} lsFusion Foundation. Built with Docusaurus.`,
     },
+    // prism: {
+    //   theme: require('prism-react-renderer/themes/okaidia'),
+    // },
   },
   presets: [
     [

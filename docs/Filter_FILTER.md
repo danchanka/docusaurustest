@@ -10,3 +10,6 @@ To declare a property that determines matching the filter use the [**FILTER** op
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=groupobject"/>

@@ -25,5 +25,8 @@ An [expression](Expression.md) which value determines the number of threads in t
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=newexecutor"/>
 
   

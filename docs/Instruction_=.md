@@ -50,3 +50,6 @@ A context-independent property operator that describes and creates a property. 
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample"/>

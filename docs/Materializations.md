@@ -12,3 +12,6 @@ To materialize a property, use the [**MATERIALIZED** option](Property_options.md
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=materialized"/>

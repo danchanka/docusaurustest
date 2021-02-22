@@ -8,6 +8,9 @@ Each module consists of a sequence of [instructions](Instructions.md) divided i
 
 ### Example
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=LanguageSample"/>
 
 **  
 **

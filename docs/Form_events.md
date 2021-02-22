@@ -94,5 +94,8 @@ To define the form event handlers, use the **ON** option in the **FORM** instruc
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=events"/>
 
   

@@ -8,11 +8,15 @@ title: 'How-to: Interaction via HTTP protocol'
 
 We have a certain set of cities associated with their countries.
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=sample1"/>
 
 We need to send an HTTP request for adding a city in the JSON format to a certain url.
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=solution1"/>
 
 The [EXPORT](Data_export_EXPORT.md) operator will create a JSON in the [FILE](Built-in_classes.md) format and then will write it to the exportFile property. Here is an example of the generated file: 
 
@@ -36,6 +40,7 @@ We need to handle the incoming HTTP request and create a new city in the databas
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=solution2"/>
 
 Since the property is named **createCity** and located in the [module](Modules.md) with the namespace **Location**, the url on which the request will be handled looks like this:
 
@@ -53,11 +58,13 @@ If all the actions are completed successfully, the corresponding "OK message" is
 
 We have the logic of book orders.
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=sample3"/>
 
 We need to send an HTTP request for creating a new order in the JSON format to a certain url.
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=solution3"/>
 
 To create a JSON with nested tags, we need to create a form with the corresponding objects linked via the **FILTERS** block of operators. Based on the dependencies between objects, the system will generate a JSON file with the corresponding structure. In the considering example, the output JSON structure will look like this:
 
@@ -91,6 +98,7 @@ We need to handle the incoming HTTP request and create a new order in the databa
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=solution4"/>
 
 To import the corresponding file in the JSON format, we need to create a form of a similar structure, except that the INTEGER type will be used as object classes. During the import process, the tag values will be placed in the properties with the corresponding names. The **date** and **number** properties have no parameters, since their values in JSON are provided at the topmost level.
 
@@ -104,6 +112,7 @@ We need to send an HTTP request to create an order in the JSON format to a certa
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=solution5"/>
 
   
 
@@ -138,6 +147,7 @@ We need to handle the incoming HTTP request and create a new order in the databa
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=solution6"/>
 
 Just as in the export process, we put all the properties and the **detail** object to the "order" group to correctly receive the new version of JSON.
 
@@ -151,6 +161,7 @@ We need to return a list of order numbers for a given date using an HTTP GET req
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExternal&block=solution7"/>
 
 The url to which the HTTP request should be sent will look like this:   http://localhost:7651/exec?action=Location.getOrdersByDate&p=12.11.2018 .
 

@@ -121,6 +121,7 @@ The following system actions are automatically added to any form (their names 
 
 By default, these system actions have the following visibility conditions:
 
+[table was removed]
 
 If necessary, all these actions can be shown/hidden by removing the corresponding components from the [form design](Form_design.md) and/or using the corresponding options in the [open form](Open_form.md) operator.
 
@@ -140,4 +141,8 @@ To display the form in the interactive view, the corresponding [open form](Open_
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=show"/>
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=dialog"/>

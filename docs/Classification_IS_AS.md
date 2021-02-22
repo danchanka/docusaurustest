@@ -10,3 +10,6 @@ To implement classification operators, [**IS** and **AS** operators](IS_AS_ope
 
 ### Examples 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=isas"/>

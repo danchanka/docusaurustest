@@ -39,5 +39,8 @@ A list of names of new parent classes. Each name is definedÂ by a composite ID.Â
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=extendclass"/>
 
   

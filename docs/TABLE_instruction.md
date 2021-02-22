@@ -35,5 +35,8 @@ The keyword that, when specified, excludes the table from the process of automat
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=table"/>
 
   

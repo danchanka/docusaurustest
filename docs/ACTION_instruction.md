@@ -47,3 +47,6 @@ The [context-independent](Action_operator.md#context-independent-operators) act
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample"/>

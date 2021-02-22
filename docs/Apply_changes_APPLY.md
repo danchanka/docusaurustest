@@ -10,6 +10,7 @@ After completion of operation (whether successful or unsuccessful), all messages
 
 As with other session management operators, you can explicitly specify [nested local properties](Session_management.md#nested-local-properties) for the apply changes operator, which will preserve their changes after the operator is executed.
 
+[table was removed]
 
 ### Language
 
@@ -17,3 +18,6 @@ To declare an action that applies changes, use the [**APPLY** operator](APPLY_o
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=apply"/>

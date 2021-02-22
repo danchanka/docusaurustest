@@ -8,11 +8,15 @@ title: 'How-to: Filtering and ordering'
 
 There are remaining books in stock.
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseFilter&block=sample1"/>
 
 We need to create a form to display the balances of books in a given stock in alphabetical order.
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseFilter&block=solution1"/>
 
 Option 1 sets up a fixed filter that the user cannot remove. Option 2 allows the user to choose between predefined criteria (by default the one for which the *DEFAULT* option is set).
 
@@ -26,6 +30,7 @@ We need to create a form to display remaining books in several warehouses, with 
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseFilter&block=solution2"/>
 
 In this case a warehouse cannot be declared via the *OBJECTS* block, because then not specifying a warehouse for filtering will not be an option.
 
@@ -35,11 +40,13 @@ In this case a warehouse cannot be declared via the *OBJECTS* block, because the
 
 There is a list of orders for certain customers
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseFilter&block=sample3"/>
 
 We need to create a form to display the list of orders allowing to filter by date and/or customer. By default, orders should be in descending date order.
 
 ###### Solution
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseFilter&block=solution3"/>
 
 It should be noted that the dates in this case should always be selected (by default, the current date will be set when the form is opened). But it is possible not to select a customer.
 

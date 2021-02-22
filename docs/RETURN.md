@@ -15,5 +15,8 @@ The **RETURN** operator creates an action that exits from the most nested [acti
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=return"/>
 
   

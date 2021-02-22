@@ -11,5 +11,6 @@ The platform working parameters can be set in one of the following ways (in the 
 -   In the database: Administration → System → Settings → Parameters. In this interface, you can set both global settings and settings for specific roles
 -   During the execution of an action using system actions: **Service.pushSetting\[STRING, STRING\]**, **Service.popSetting\[STRING\]** (overriding the value of the property for the entire current thread).
 
+[table was removed]
 
 In addition to the system parameters, the platform also has [launch parameters](Launch_parameters.md) which are set a little differently and are relevant mainly for startup (initialization) processes of various components of the platform and access to these components.

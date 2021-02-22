@@ -35,5 +35,8 @@ An [expression](Expression.md) whose value determines the selection condition of
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=extendaction"/>
 
   

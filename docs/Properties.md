@@ -18,3 +18,6 @@ To create properties, use [the **=** instruction](Instruction_=.md). 
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample"/>

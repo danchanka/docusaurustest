@@ -124,5 +124,8 @@ Sets the current form as the [list form](Interactive_view.md#selectionediting-fo
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=form"/>
 
   

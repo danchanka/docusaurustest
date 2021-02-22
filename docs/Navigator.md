@@ -20,3 +20,6 @@ To manage the navigator use the [**NAVIGATOR** instruction](NAVIGATOR_instruct
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=navigator"/>

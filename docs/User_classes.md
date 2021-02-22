@@ -30,3 +30,6 @@ To add a new custom class to the system, use the [**CLASS** instruction](CLASS_
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=class"/>

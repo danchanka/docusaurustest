@@ -61,3 +61,6 @@ To create a new form and define its structure, the [**FORM** instruction](FORM_i
 
  
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=form"/>

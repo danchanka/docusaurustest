@@ -90,5 +90,8 @@ Determines when the created action should be continued:
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=print"/>
 
   

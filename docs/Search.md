@@ -20,6 +20,7 @@ If, after performing the last selection operation, there remains:
 
 Below are the steps, conditions and operations of the search algorithm, depending on the type of the required element:
 
+[table was removed]
 
 Description of steps, conditions and operations of the search algorithm:
 
@@ -115,19 +116,26 @@ Let's say that the classes of parameters (A1, ..., An) *intersect with* the cla
 
 When a call is made a property (action), if the parameter classes are not explicitly set, the platform tries to automatically determine them from the reference context. The following is an (incomplete) list of possible contexts, and how the platform determines the referring parameter classes in these cases:
 
+[table was removed]
 
 *Determining parameter classes of a property (action)*
 
 If the parameter classes of a property (action) are not explicitly specified, the platform tries to automatically determine them from the property (action) implementation. The following is an (incomplete) list of possible implementations, and how the platform determines property (action) parameter classes in these cases:
 
+[table was removed]
 
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ResolveASample"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ResolveBSample"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ResolveCSample"/>
 
 **  
 **

@@ -32,10 +32,15 @@ To declare an action implementing general form of branching, the [**CASE** opera
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=case"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=ifthena"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=multi"/>
 
   
 

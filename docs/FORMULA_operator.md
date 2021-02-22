@@ -40,6 +40,9 @@ If the dialect type is not specified explicitly, then the corresponding formula 
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=formula"/>
 
 **  
 **

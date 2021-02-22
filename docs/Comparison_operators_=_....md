@@ -6,6 +6,7 @@ title: 'Comparison operators (=, \>, <, ...)'
 
 The platform currently supports the following comparison operators:
 
+[table was removed]
 
 If one of the operands is **NULL**, all operators will return **NULL** as a result.
 
@@ -16,3 +17,6 @@ Description of [comparison operators](Comparison_operators.md).
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=compare"/>

@@ -33,6 +33,9 @@ A context-dependent operator that describes an action to be executed after the a
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=try"/>
 
 **  
 **

@@ -22,8 +22,12 @@ To declare an action that executes another action in a new thread, use the [**N
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=newthread"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=newexecutor"/>
 
   
 

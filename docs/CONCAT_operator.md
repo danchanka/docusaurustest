@@ -25,6 +25,9 @@ The **CONCAT** operator creates a property that concatenates values using the 
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=concat"/>
 
 **  
 **

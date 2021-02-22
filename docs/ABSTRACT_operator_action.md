@@ -56,6 +56,9 @@ List of class names of property arguments. Each name is defined by a [class ID](
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=abstract"/>
 
 **  
 **

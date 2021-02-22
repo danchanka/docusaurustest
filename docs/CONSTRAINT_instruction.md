@@ -45,6 +45,9 @@ An expression whose value is shown as a message to the user when the set constra
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=constraint"/>
 
 **  
 **

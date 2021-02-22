@@ -16,3 +16,6 @@ To declare an action that implements property change, use the [**CHANGE** operat
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=assign"/>

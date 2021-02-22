@@ -4,6 +4,7 @@ rd docusaurustest/docs -r >$null
 yarn --cwd ./confluence-to-markdown start ../LSFUS ../docusaurustest/docs
 robocopy ./docusaurustest/docs/LSFUS ./docusaurustest/docs /e /copyall /move >$null
 robocopy ./LSFUS/download ./docusaurustest/docs/download /e /copyall >$null
+xcopy CodeSample.mdx docusaurustest\docs /Y >$null
 
 python build_maps.py LSFUS
 

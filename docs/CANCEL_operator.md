@@ -30,5 +30,8 @@ List of local properties. Each list element is a [property ID](IDs.md#propertyi
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=cancel"/>
 
   

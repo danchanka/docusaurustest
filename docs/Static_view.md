@@ -32,6 +32,9 @@ As follows from the algorithm, the empty object group is always the only root gr
 
 ### An example of constructing ****object group**** hierarchy
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=GroupHierarchySample"/>
 
 The hierarchy of groups of objects for this form will be constructed as follows:
 

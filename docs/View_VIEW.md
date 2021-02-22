@@ -10,3 +10,6 @@ To declare a property that determines whether a specified object collection is d
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=groupobject"/>

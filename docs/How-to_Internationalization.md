@@ -6,6 +6,9 @@ The system supports  [internationalization](Internationalization.md) by passing
 
 We will declare logic in the usual way, but instead of specifying names explicitly, we will be using IDs.
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseInternationalization&block=sample1"/>
 
 We will then create a new Resource Bundle and will save our Id values in different languages to it:
 
@@ -33,6 +36,7 @@ In this case, when the user logs in to the system again, everything will be show
 
 Ids can also be used in expressions:
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseInternationalization&block=sample2"/>
 
 Remember that such expressions cannot be used in [materializations](Materializations.md). 
 

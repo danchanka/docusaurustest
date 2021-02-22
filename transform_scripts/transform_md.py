@@ -22,13 +22,26 @@ def get_dirs():
         output_dir += '/'        
     return input_dir, output_dir
 
-def remove_tables(data):
+def transform_tables(data, links):
     lines = data.split('\n')
     nlines = []
     opened = 0
+    sample_index = 0
     for line in lines:
         if line.lstrip().startswith('<table'):
             opened += 1
+            if opened == 1:
+                if line.lstrip().startswith('<table class="highlighttable"'):
+                    if sample_index == 0:
+                        nlines.append('import {CodeSample} from \'./CodeSample.mdx\'')
+                        nlines.append('')
+
+                    # <CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=write"/>                        
+                    url = links[sample_index].replace("localhost:5000/samphighl", "documentation.lsfusion.org:5000/sample")    
+                    nlines.append(f'<CodeSample url="{url}"/>')
+                    sample_index += 1
+                else:    
+                    nlines.append('[table was removed]')
         if opened == 0:
             nlines.append(line)   
         if line.lstrip().startswith('</table>'):
@@ -72,10 +85,10 @@ def make_headers(data):
 def fix_image_links(data):
     return re.sub(r'<img src="(.*?)".*?/>', r'![](\1)', data)
 
-def transform_file_content(data):
+def transform_file_content(data, samples_links):
     data = replace_html_ltgt(data)
     data = create_title(data)
-    data = remove_tables(data)
+    data = transform_tables(data, samples_links)
     data = make_headers(data)
     data = fix_image_links(data)
     return data    
@@ -85,6 +98,9 @@ def load_filemap():
 
 def load_anchors_map():
     return json.load(open('anchormap.json', 'r', encoding='utf-8'))
+
+def load_samples_map():
+    return json.load(open('samples.json', 'r', encoding='utf-8'))
 
 def header_text_to_anchor(text):
     anchor = re.sub(r'\s+', '-', text.lower())
@@ -140,8 +156,11 @@ def filter_anchor_links(files, logfile):
 
 
 print('transform started..')
+
 indir, outdir = get_dirs()
 files = {}
+samples_links = load_samples_map()
+
 for filename in os.listdir(indir):
     fullname = indir + filename 
     if os.path.isfile(fullname) and fullname.endswith('.md') and not fullname.endswith('index.md'):
@@ -149,7 +168,7 @@ for filename in os.listdir(indir):
         data = infile.read()
         infile.close()
         if len(data) > 0 and data[0] == '#': # not transformed earlier
-            data = transform_file_content(data)
+            data = transform_file_content(data, samples_links[filename])
             files[filename] = data
 
 logfile = open('anchors.log', 'w', encoding='utf-8')

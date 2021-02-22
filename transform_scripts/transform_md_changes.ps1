@@ -1,5 +1,7 @@
 rd docusaurustest/docs -r >$null
 robocopy ./pure/LSFUS ./docusaurustest/docs /e /copyall >$null
+robocopy ./LSFUS/download ./docusaurustest/docs/download /e /copyall >$null
+xcopy CodeSample.mdx docusaurustest\docs /Y >$null
 
 python transform_md.py docusaurustest/docs/
 

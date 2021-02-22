@@ -106,6 +106,9 @@ Path to the file. String literal. The path is relative to the  **images** dire
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=navigator"/>
 
 **  
 **

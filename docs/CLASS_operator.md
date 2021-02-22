@@ -21,6 +21,9 @@ An [expression](Expression.md) whose result is a property. For this property, a 
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=class"/>
 
 **  
 **

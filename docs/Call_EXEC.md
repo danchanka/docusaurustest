@@ -10,6 +10,9 @@ The **EXEC** operator creates an [action](Actions.md) that executes another acti
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=exec"/>
 
 **  
 **

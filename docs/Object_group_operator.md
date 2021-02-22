@@ -29,6 +29,9 @@ Global [object group ID](IDs.md#groupobjectid-broken).
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=groupobject"/>
 
 **  
 **

@@ -89,6 +89,7 @@ In the last two cases (that is, when specifying the width as a sample value or i
 
 By default, the extension coefficient and alignment for components are determined as follows:
 
+[table was removed]
 
 The base container size (except the tab panel) is equal by default to the sum of the base sizes of all its child components for the dynamic direction, and the maximum for the static direction. The base height of the tab panel is the sum of the base height of its current tab and the height of the tab title bar, the base width is the same as the base width of the current tab.
 
@@ -98,6 +99,7 @@ The base width of tables/trees is 130 pixels by default, and the height is 70 pi
 
 The following formulas are used by default to determine the width of a property value cell:
 
+[table was removed]
 
 The default height of a property value cell is equal to the height of the font used, except properties whose values belong to the **TEXT** class (in this case, the height is four times the font height).
 
@@ -137,6 +139,9 @@ The automatic design is generated as follows:
 
 ### Default design example
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormDesignSample"/>
 
 The hierarchy of containers and components in the default design will look like this:
 
@@ -150,6 +155,7 @@ To set up the design of the form, use the [****DESIGN**** instruction](DESIGN_i
 
 ### Examples
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=design"/>
 
 The output is the following form:
 

@@ -23,6 +23,9 @@ Using this option comes down to whether to display data for a parent object grou
 
 The form is similar to the [example of building an object group hierarchy](Static_view.md#hierarchysample-broken):
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=GroupHierarchySample"/>
 
 The report hierarchy for this form is built as follows:
 
@@ -40,3 +43,4 @@ To display the form in print view, the correspondingÂ [open form](Open_form.md)Â
 
 ### Examples
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=print"/>

@@ -78,3 +78,6 @@ To declare an action that accesses an external system, use the [**EXTERNAL** o
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=external"/>

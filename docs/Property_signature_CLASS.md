@@ -10,3 +10,6 @@ To implement this operator, use the [**CLASS** operator](CLASS_operator.md).
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=class"/>

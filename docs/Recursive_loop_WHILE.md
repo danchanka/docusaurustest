@@ -10,3 +10,6 @@ The syntax of the recursive loop operator is described by the [**WHILE** operato
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=while"/>

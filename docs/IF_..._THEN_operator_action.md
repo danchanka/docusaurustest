@@ -31,5 +31,8 @@ Context-dependent operator that describes an action that will be executed if the
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=ifthena"/>
 
   

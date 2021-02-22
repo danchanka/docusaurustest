@@ -12,5 +12,8 @@ Static objects of built-in classes are specified by special [literals](Literals.
 
 Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample&block=constant"/>
 
   

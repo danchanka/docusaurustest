@@ -151,3 +151,6 @@ Default filter type. [String literal](Literals.md#strliteral-broken). Can be one
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample"/>

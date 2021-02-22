@@ -10,3 +10,6 @@ The interrupt operator syntax is described by the [**BREAK** operator](BREAK_ope
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=break"/>

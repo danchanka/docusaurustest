@@ -46,6 +46,9 @@ A list of argument class ID's of the local property.
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=action"/>
 
 **  
 **

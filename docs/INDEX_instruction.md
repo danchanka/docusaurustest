@@ -38,5 +38,8 @@ A typed parameter that determines the key field of the table.*
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=index"/>
 
   

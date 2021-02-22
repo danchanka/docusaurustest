@@ -15,6 +15,7 @@ title: 'Launch parameters'
 
 Java application server startup parameters are set in the launch command (for example, for [manual](Execution_manual.md#command-broken) or [automatic](Execution_auto.md#settings-broken) installation):
 
+[table was removed]
 
 #### lsFusion
 
@@ -25,6 +26,7 @@ lsFusion startup parameters for server applications can be set in one of the fo
 -   In conf/settings.properties (for specific installations)
 -   In the [Java startup options](#java) (starting with D, e.g. -Dlogics.topModule=FFF)
 
+[table was removed]
 
 Example conf/settings.properties file ([section 3](#appp3-broken)):
 
@@ -45,6 +47,7 @@ By default, it is assumed that the startup parameter files conf/settings.propert
 
 Java web server startup parameters are set in the Tomcat launch command, which, in turn, launches this web server (for example, for [automatic](Execution_auto.md#webapp-broken) installation). 
 
+[table was removed]
 
 #### lsFusion
 
@@ -60,6 +63,7 @@ lsFusion startup parameters for the web server can be set in one of the followin
     -   in Tomcat, in the file $CATALINA\_BASE/conf/server.xml, Context tag, Parameter tag (not recommended)
 -   In URL parameters (e.g. [http://tryonline.lsfusion.org?host=3.3.3.3&port = 4444](http://tryonline.lsfusion.org?host=3.3.3.3&port=4444))
 
+[table was removed]
 
 Example Tomcat configuration file ([section 3](#webp3-broken) in context parameters):
 

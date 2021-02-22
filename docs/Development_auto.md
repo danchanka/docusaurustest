@@ -6,6 +6,7 @@ On this page you can download installers that install everything needed for deve
 
 ### Download
 
+[table was removed]
 
 ### After installation
 

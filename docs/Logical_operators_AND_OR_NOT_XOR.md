@@ -6,6 +6,7 @@ title: 'Logical operators (AND, OR, NOT, XOR)'
 
 The platform currently supports the following logical operators:
 
+[table was removed]
 
 ### Language
 
@@ -13,3 +14,6 @@ Description of [logical operator syntax](AND_OR_NOT_XOR_operators.md).
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=aonx"/>

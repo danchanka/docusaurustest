@@ -16,5 +16,9 @@ To declare an action that implements a change of object classes, use the [**CHAN
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=delete"/>
 
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=changeclass"/>

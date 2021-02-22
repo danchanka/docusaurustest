@@ -14,3 +14,6 @@ To create indexes, you must use the [**INDEX** instruction](INDEX_instruction.m
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=index"/>

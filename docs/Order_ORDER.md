@@ -10,3 +10,6 @@ To declare a property that determines the order in a group of objects, use the [
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=groupobject"/>

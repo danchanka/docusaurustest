@@ -35,6 +35,9 @@ An expression whose value is a condition for the generated event.
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=setwhen"/>
 
 **  
 **

@@ -34,5 +34,8 @@ An expression which value is a property that returns the delay before the first 
  **Examples**
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=newthread"/>
 
   

@@ -21,5 +21,8 @@ A [context-dependent action operator](Action_operator.md#context-dependent-opera
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=nestedsession"/>
 
   

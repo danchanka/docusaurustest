@@ -27,6 +27,9 @@ The sequence number of an object. [Numeric literal](Literals.md#intliteral-broke
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=brackets"/>
 
 **  
 **

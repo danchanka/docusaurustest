@@ -29,5 +29,8 @@ Form blocks.
 ### Example
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=extendform"/>
 
   

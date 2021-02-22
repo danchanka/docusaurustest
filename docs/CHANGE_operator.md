@@ -37,5 +37,8 @@ An expression whose value is a condition for the change being created. If not sp
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=assign"/>
 
   

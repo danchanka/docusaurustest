@@ -21,6 +21,9 @@ List of [expressions](Expression.md) whose values will be elements of the struct
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=struct"/>
 
 **  
 **

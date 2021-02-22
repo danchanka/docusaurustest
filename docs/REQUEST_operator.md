@@ -29,6 +29,9 @@ A context-dependent action operator that is executed if the input was [cancelled
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=request"/>
 
 **  
 **

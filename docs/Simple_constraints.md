@@ -4,6 +4,7 @@ title: 'Simple constraints'
 
 The platform currently supports four types of *simple constraints*: *consequence*, *exception*, *equality*, and *definiteness*. For all simple constraints, an *automatic resolution* mechanism is supported. When this is enabled, instead of throwing an error the platform itself restores system integrity.
 
+[table was removed]
 
 \* A change to **NULL**/non-**NULL** is the following:
 
@@ -19,3 +20,6 @@ There is also an implicit fifth kind of simple constraint, *uniqueness*, but it 
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=means"/>

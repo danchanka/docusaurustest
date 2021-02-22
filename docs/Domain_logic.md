@@ -12,6 +12,7 @@ As a rule, the business logic does not allow just any data changes: only changes
 
 Accordingly, the summary table for all elements of the business logic is as follows:
 
+[table was removed]
 
 ### Stack
 

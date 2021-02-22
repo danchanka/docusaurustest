@@ -14,6 +14,7 @@ For each property, you can specify in which table it should be stored. In this c
 
 For each table created in the platform, a corresponding table is created in the database, which name, depending on the selected naming policy, is defined as follows:
 
+[table was removed]
 
 The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#namingpolicy-broken) startup parameter.
 
@@ -21,6 +22,7 @@ The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#na
 
 The values of each property are always stored exactly in one field, which name, depending on the selected naming policy, is defined as follows:
 
+[table was removed]
 
 If necessary, for each property, the developer can explicitly specify the name of the field in which this property will be stored. Also, it is possible to create a custom policy for naming property fields if the above does not suit for some reason.
 
@@ -60,3 +62,6 @@ To create tables, use the [**TABLE** instruction](TABLE_instruction.md). To spe
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=table"/>

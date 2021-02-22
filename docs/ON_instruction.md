@@ -24,6 +24,9 @@ This [context-dependent action operator](Action_operator.md#context-dependent-op
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=on"/>
 
  
 

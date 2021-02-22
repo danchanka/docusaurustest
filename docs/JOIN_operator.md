@@ -47,9 +47,13 @@ An [expression](Expression.md) which is used to define the main property. Cannot
 ### Examples
 
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=join1"/>
 
 **  
 **
 
 Sometimes it’s convenient to define the main property with an expression to simplify the source code and make it more understandable.
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=join2"/>

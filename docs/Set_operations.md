@@ -12,6 +12,7 @@ Aggregate function is *commutative* if the order in which the object collection
 
 The table below shows the currently supported types of aggregate functions:
 
+[table was removed]
 
 From the perspective of determining the set of object collections and the result display method, four main operators for working with sets can be distinguished:
 
@@ -26,9 +27,13 @@ You should consider that during each operation on a set of object collections, t
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample&block=set"/>
 
 **  
 **
 
 There are several non-trivial cases when the operation is correct but the platform cannot determine this. For example, if the only limiting condition for a parameter is whether it falls within the range:
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample&block=set2"/>

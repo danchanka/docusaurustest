@@ -28,4 +28,8 @@ The key instructions that implement the extension procedure are the [**ABSTRACT*
 ### Example
 
 
+import {CodeSample} from './CodeSample.mdx'
 
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=abstract"/>
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=extendproperty"/>

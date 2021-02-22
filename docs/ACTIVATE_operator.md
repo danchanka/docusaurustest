@@ -30,5 +30,8 @@ The global [ID of a property or action on a form](IDs.md#formpropertyid-broken)
 
 ### Examples
 
+import {CodeSample} from './CodeSample.mdx'
+
+<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=activate"/>
 
   
