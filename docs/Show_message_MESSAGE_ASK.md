@@ -29,9 +29,9 @@ To declare an action showing a message, use [the **MESSAGE** operator](MESSAGE
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=message"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=message"/>
 
   
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=ask"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=ask"/>

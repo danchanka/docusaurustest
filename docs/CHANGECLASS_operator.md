@@ -31,4 +31,4 @@ An expression whose value is a condition for the created action. If not specifi
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=changeclass"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=changeclass"/>

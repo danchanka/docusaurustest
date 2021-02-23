@@ -12,4 +12,4 @@ The interrupt operator syntax is described by the [**BREAK** operator](BREAK_ope
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=break"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=break"/>

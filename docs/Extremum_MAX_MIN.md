@@ -12,10 +12,10 @@ The maximum property is created using the [**MAX** operator](MAX_operator.md), t
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=max"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=max"/>
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=min"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=min"/>
 
 **  
 **

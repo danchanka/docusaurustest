@@ -108,7 +108,7 @@ Path to the file. String literal. The path is relative to the  **images** dire
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=navigator"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=navigator"/>
 
 **  
 **

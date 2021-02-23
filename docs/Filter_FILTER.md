@@ -12,4 +12,4 @@ To declare a property that determines matching the filter use the [**FILTER** op
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=groupobject"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=groupobject"/>

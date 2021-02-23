@@ -14,4 +14,4 @@ To declare an action that reads a file, use the [**READ** operator](READ_operato
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=read"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=read"/>

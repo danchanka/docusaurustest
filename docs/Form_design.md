@@ -141,7 +141,7 @@ The automatic design is generated as follows:
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormDesignSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormDesignSample"/>
 
 The hierarchy of containers and components in the default design will look like this:
 
@@ -155,7 +155,7 @@ To set up the design of the form, use the [****DESIGN**** instruction](DESIGN_i
 
 ### Examples
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=design"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=design"/>
 
 The output is the following form:
 

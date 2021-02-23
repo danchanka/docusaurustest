@@ -80,4 +80,4 @@ To declare an action that accesses an external system, use the [**EXTERNAL** o
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=external"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=external"/>

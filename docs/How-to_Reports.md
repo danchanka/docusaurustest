@@ -10,7 +10,7 @@ We have a logic for books split into categories.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseReports&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=sample1"/>
 
 We need to create a [print form](Print_view.md) to display all the books by category. We also need to export this form to the XLSX format.
 
@@ -18,15 +18,15 @@ We need to create a [print form](Print_view.md) to display all the books by cate
 
 First, we need to declare a [form](Forms.md) to define the print form structure.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseReports&block=solution1a"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=solution1a"/>
 
 Then, we add two actions that use the [PRINT](PRINT_operator.md) operator for creating a report and for previewing it and exporting to XLSX respectively.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseReports&block=solution1b"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=solution1b"/>
 
 Now let's display them on the **books** form in the toolbar of the table of books.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseReports&block=solution1c"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=solution1c"/>
 
 Then, we start the server from the IDE, launch the desktop client, open the form with books and click the created "Print" button. The system will automatically create a print-ready form and open it in the [preview](In_a_print_view_PRINT.md#interactive-print-view) mode. Then, click the button below:
 
@@ -95,7 +95,7 @@ If the background process fails to synchronize development and execution folders
 
 The invoice logic has been defined.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseReports&block=sample2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=sample2"/>
 
 We need to create a print form for invoices that will contain all of their parameters and lines. We also need to be able to export this form to the DOCX format.
 
@@ -103,7 +103,7 @@ We need to create a print form for invoices that will contain all of their para
 
 To create a print form, let's use the existing **invoice** form that works for us in terms of structure. However, we can create a new form, if necessary.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseReports&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=solution2"/>
 
 Since the **i** objects of the **invoice** form are displayed on the panel, the report will only contain data for the invoice that is passed to this object as a parameter in the **PRINT** operator.
 
@@ -168,7 +168,7 @@ The resulting report will look like this:
 
 Similar to **Example 2**, plus the buyer and order logic.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseReports&block=sample3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=sample3"/>
 
 We need to create a print form with customer information that will include all orders and invoices.
 
@@ -176,7 +176,7 @@ We need to create a print form with customer information that will include all 
 
 First, let's create a form whose structure will correspond to the logic of the required print form. We will display the buyer object in the panel, as we only need to show data for a single buyer. The rest of the objects remain tables.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseReports&block=solution3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=solution3"/>
 
 The principle of this report is that objects with invoices and orders are independent of each other. Thus, they will be generated as different subreports (**Subreport**).
 

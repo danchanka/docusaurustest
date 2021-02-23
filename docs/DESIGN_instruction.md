@@ -168,7 +168,7 @@ The type of an object group / tree container.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=design"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=design"/>
 
 The output is the following form:
 

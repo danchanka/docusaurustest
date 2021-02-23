@@ -25,4 +25,4 @@ In the + operator, operands which classes are other than string are cast to stri
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=concat"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=concat"/>

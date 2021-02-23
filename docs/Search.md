@@ -129,13 +129,13 @@ If the parameter classes of a property (action) are not explicitly specified, th
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ResolveASample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ResolveASample"/>
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ResolveBSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ResolveBSample"/>
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ResolveCSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ResolveCSample"/>
 
 **  
 **

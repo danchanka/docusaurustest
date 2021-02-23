@@ -48,4 +48,4 @@ The name of the module namespace. A simple ID that cannot contain an underscore.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ModuleSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ModuleSample"/>

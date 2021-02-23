@@ -40,6 +40,6 @@ A [context-dependent operator](Action_operator.md#context-dependent-operators) t
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=apply"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=apply"/>
 
   

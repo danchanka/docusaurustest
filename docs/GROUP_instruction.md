@@ -38,7 +38,7 @@ Name of the parent group. [Сomposite ID](IDs.md#cid-broken). If the name of th
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=group"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=group"/>
 
 **  
 **

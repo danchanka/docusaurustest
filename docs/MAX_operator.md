@@ -23,7 +23,7 @@ A list of [expressions](Expression.md) of which values the maximum is selected.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=max"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=max"/>
 
 **  
 **

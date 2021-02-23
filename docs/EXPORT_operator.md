@@ -119,9 +119,9 @@ Names of object groups from the exported form for which you want to export data.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=exportplain"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=exportplain"/>
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=export"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=export"/>
 
   
 

@@ -15,4 +15,4 @@ To declare a property that returns a previous value, use the [**PREV** operator
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=prev"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=prev"/>

@@ -52,4 +52,4 @@ A context-independent property operator that describes and creates a property. 
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=PropertySample"/>

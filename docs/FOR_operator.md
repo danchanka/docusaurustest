@@ -61,6 +61,6 @@ Context-dependent action operator defining an alternative action. Parameters add
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=for"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=for"/>
 
   

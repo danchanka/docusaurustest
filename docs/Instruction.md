@@ -27,6 +27,6 @@ The list of instruction parameters that will be substituted for the parameters o
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=implementmeta"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=implementmeta"/>
 
   

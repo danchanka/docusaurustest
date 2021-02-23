@@ -16,4 +16,4 @@ Description of [logical operator syntax](AND_OR_NOT_XOR_operators.md).
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=aonx"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=aonx"/>

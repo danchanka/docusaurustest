@@ -18,4 +18,4 @@ To declare a property using a custom formula, use the [**FORMULA** operator](FOR
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=formula"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=formula"/>

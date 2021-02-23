@@ -22,4 +22,4 @@ To manage the navigator use the [**NAVIGATOR** instruction](NAVIGATOR_instruct
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=navigator"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=navigator"/>

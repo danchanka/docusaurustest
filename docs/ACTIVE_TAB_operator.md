@@ -27,4 +27,4 @@ Design component [selector](DESIGN_instruction.md#selector-broken). The compone
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=activetab"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=activetab"/>

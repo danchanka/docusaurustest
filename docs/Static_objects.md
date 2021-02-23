@@ -20,7 +20,7 @@ Static objects of custom classes are defined in the [CLASS **instruction**](CLAS
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=StaticObjectSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=StaticObjectSample"/>
 
 **  
 **

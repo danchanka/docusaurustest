@@ -20,4 +20,4 @@ To declare an action that applies changes, use the [**APPLY** operator](APPLY_o
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=apply"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=apply"/>

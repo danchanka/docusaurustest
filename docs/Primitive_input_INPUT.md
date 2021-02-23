@@ -20,4 +20,4 @@ The syntax of the primitive input operator is described by [the **INPUT** operat
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=input"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=input"/>

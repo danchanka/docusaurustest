@@ -12,4 +12,4 @@ To implement classification operators, [**IS** and **AS** operators](IS_AS_ope
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=isas"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=isas"/>

@@ -21,4 +21,4 @@ To declare a property that implements grouping, use the [**GROUP** operator](GRO
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=group"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=group"/>

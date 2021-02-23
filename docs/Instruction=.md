@@ -57,7 +57,7 @@ List of [parameters](IDs.md#paramid-broken) of the property that defines the pre
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=means"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=means"/>
 
 **  
 **

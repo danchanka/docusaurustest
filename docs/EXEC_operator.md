@@ -31,6 +31,6 @@ An operator that creates the action being executed.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=exec"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=exec"/>
 
   

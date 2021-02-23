@@ -55,6 +55,6 @@ List of action parameters. Each parameter is specified with the object name on 
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=events"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=events"/>
 
 

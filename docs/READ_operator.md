@@ -42,6 +42,6 @@ The [ID of the property](IDs.md#propertyid-broken) to which read data should be
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=read"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=read"/>
 
   

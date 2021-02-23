@@ -25,7 +25,7 @@ It's important to understand that **PREV** is not a built-in property with [co
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=prev"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=prev"/>
 
 **  
 **

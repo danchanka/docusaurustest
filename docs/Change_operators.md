@@ -34,7 +34,7 @@ An [expression](Expression.md) which value defines the property that should be c
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=changed"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=changed"/>
 
 **  
 **

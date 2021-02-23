@@ -33,6 +33,6 @@ Context-dependent operator that describes an action that will be executed if the
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=ifthena"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=ifthena"/>
 
   

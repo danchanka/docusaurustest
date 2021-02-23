@@ -16,4 +16,4 @@ To declare an action implemented in **Java** use the  [**INTERNAL** operator](
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=custom"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=custom"/>

@@ -10,13 +10,13 @@ We have an order for which a date is defined.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseWhile&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseWhile&block=sample1"/>
 
 We need to display a message containing the number of orders for each date from a given interval.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseWhile&block=solution1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseWhile&block=solution1"/>
 
 Both these options will provide the same result.
 
@@ -28,13 +28,13 @@ The **sum** property defined in the **Time** system [module](Modules.md) is us
 
 Similar to **Example 1**. We have also defined order lines, so that each line contains the (full) amount and the discount.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseWhile&block=sample2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseWhile&block=sample2"/>
 
 We need to create an action that "distributes" given discount by line, starting from the line with the largest amount.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseWhile&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseWhile&block=solution2"/>
 
 ##### Example 3
 
@@ -42,10 +42,10 @@ We need to create an action that "distributes" given discount by line, starting 
 
 The logic for changing the balance for the book is defined as follows:
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseWhile&block=sample3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseWhile&block=sample3"/>
 
 We need to create an action that will calculate the accumulated (integral) balance for a given time period.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseWhile&block=solution3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseWhile&block=solution3"/>

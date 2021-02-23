@@ -153,4 +153,4 @@ Default filter type. [String literal](Literals.md#strliteral-broken). Can be one
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=PropertySample"/>

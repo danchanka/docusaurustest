@@ -91,6 +91,6 @@ List of property IDs (without parameters) to which the results will be written
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=external"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=external"/>
 
   

@@ -29,11 +29,11 @@ You should consider that during each operation on a set of object collections, t
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample&block=set"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=PropertySample&block=set"/>
 
 **  
 **
 
 There are several non-trivial cases when the operation is correct but the platform cannot determine this. For example, if the only limiting condition for a parameter is whether it falls within the range:
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample&block=set2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=PropertySample&block=set2"/>

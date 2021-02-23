@@ -27,7 +27,7 @@ The [expression](Expression.md) whose value will be converted into the value of 
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=explicitcast"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=explicitcast"/>
 
 **  
 **

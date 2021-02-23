@@ -49,7 +49,7 @@ List of parent class names. Each name is defined by a [composite ID](IDs.md#cid
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=class"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=class"/>
 
 **  
 **

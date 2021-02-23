@@ -48,4 +48,4 @@ The syntax of the value request operator is described by the [**REQUEST** operat
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=request"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=request"/>

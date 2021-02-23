@@ -30,7 +30,7 @@ Class name. [Class ID](IDs.md#classid-broken).
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=isas"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=isas"/>
 
 **  
 **

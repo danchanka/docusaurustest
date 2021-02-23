@@ -12,4 +12,4 @@ To implement this operator, use the [**CLASS** operator](CLASS_operator.md).
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=class"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=class"/>

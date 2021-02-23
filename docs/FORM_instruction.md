@@ -126,6 +126,6 @@ Sets the current form as the [list form](Interactive_view.md#selectionediting-fo
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=form"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=form"/>
 
   

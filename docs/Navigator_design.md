@@ -65,6 +65,6 @@ To manage windows, use the [**WINDOW** instruction](WINDOW_instruction.md).
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=window"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=window"/>
 
   

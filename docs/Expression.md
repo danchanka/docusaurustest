@@ -16,7 +16,7 @@ An expression cannot include [context-independent](Property_operators.md#context
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ExpressionSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ExpressionSample"/>
 
 **  
 **

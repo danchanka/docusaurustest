@@ -42,6 +42,6 @@ A list of data property parameter names. You can use only the local parameters t
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=new"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=new"/>
 
   

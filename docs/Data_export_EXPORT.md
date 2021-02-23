@@ -28,6 +28,6 @@ To declare an action that exports data, use the [**EXPORT** operator](EXPORT_op
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=exportplain"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=exportplain"/>
 
   

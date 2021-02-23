@@ -46,7 +46,7 @@ A list of expressions that defines the order in which handlers will be called fo
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=when"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=when"/>
 
 **  
 **

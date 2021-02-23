@@ -12,4 +12,4 @@ To declare an action that executes a sequence of other actions, use the [**{...}
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=action"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=action"/>

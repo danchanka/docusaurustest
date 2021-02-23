@@ -14,4 +14,4 @@ To define calculated events, use [the **<- WHEN** instruction](Instruction_-_WHE
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=setwhen"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=setwhen"/>

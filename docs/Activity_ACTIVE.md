@@ -16,9 +16,9 @@ To create a property that determines whether a tab is active, use the [**ACTIVE 
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=activetab"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=activetab"/>
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=activeform"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=activeform"/>
 
   

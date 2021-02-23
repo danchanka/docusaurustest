@@ -17,6 +17,6 @@ An empty instruction is intended to prevent extra semicolons from being diagnose
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=empty"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=empty"/>
 
   

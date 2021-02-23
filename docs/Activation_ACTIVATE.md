@@ -16,6 +16,6 @@ To create an action that activates a form element, use the [**ACTIVATE** operato
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=activate"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=activate"/>
 
   

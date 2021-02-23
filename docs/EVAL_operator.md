@@ -33,6 +33,6 @@ A list of expressions whose values will be passed to the action being executed a
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=eval"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=eval"/>
 
   

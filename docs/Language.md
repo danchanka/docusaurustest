@@ -10,7 +10,7 @@ Each module consists of a sequence of [instructions](Instructions.md) divided i
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=LanguageSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=LanguageSample"/>
 
 **  
 **

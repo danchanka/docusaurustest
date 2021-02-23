@@ -10,13 +10,13 @@ We have the books for which names and prices are defined. The order logic is als
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseImport&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=sample1"/>
 
 We need to create a button that loads the contents of the order from the Excel file selected by the user on their computer.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseImport&block=solution1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=solution1"/>
 
 The [INPUT](INPUT_operator.md) operator which requests a file will display a dialog where the user will be able to choose an .xls or .xlsx file. Once the file is selected successfully, the system will call the [action](Actions.md) specified after **DO**.
 
@@ -30,13 +30,13 @@ The  [IMPORT](IMPORT_operator.md) operator reads the selected file and then w
 
 Similar to **Example 1**. In addition, we have specified a directory to which an external system puts orders. For each order, a separate CSV file is generated for storing the order date and number (in the denormalized form) along with the book code, quantity, and price.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseImport&block=sample2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=sample2"/>
 
 We need to implement an action that will import orders from this folder into the system.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseImport&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=solution2"/>
 
 The **listFiles** action is declared in the **Utils** system [module](Modules.md). The action scans the folder specified in the argument and reads all the files from it and writes their contents to the **fileName** and **fileIsDirectory** properties.
 
@@ -60,7 +60,7 @@ We need to create an action that will synchronize the book directory with this e
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseImport&block=solution3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=solution3"/>
 
 Synchronization consists of the three main actions. First, we create books whose codes can be found in the external database, but not in our database. Then, we update the values for all books that can be found in our database. And finally, books that cannot be found in the external database are removed from our database.
 
@@ -74,7 +74,7 @@ Similar to **Example 1**.
 
 For each order line, we have added the decoding of this line by color and size.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseImport&block=sample4"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=sample4"/>
 
 We need to implement the import of orders from the JSON file of the specified structure. A JSON file may look like this:
 
@@ -170,7 +170,7 @@ We need to implement the import of orders from the JSON file of the specified st
 
 Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseImport&block=solution4"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=solution4"/>
 
 To implement the import process, we need to declare the form of the [structure](Structured_view.md) matching the structure of the JSON file.
 

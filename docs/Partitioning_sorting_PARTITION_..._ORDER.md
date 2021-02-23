@@ -16,4 +16,4 @@ To declare a property that implements partition/order, use the [**PARTITION** op
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=partition"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=partition"/>

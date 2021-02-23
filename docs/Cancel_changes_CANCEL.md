@@ -16,4 +16,4 @@ To declare an action that implements cancellation, use the [**CANCEL** operator
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=cancel"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=cancel"/>

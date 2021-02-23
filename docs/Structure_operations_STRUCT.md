@@ -20,10 +20,10 @@ To create a property that returns an object from the structure the [**\[ \]** o
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=struct"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=struct"/>
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=brackets"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=brackets"/>
 
 **  
 **

@@ -15,4 +15,4 @@ To declare an action that writes a file, use the [**WRITE** operator](WRITE_oper
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=write"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=write"/>

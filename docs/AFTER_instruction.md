@@ -31,6 +31,6 @@ A [context-dependent action operator](Action_operator.md#context-dependent-opera
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=after"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=after"/>
 
   

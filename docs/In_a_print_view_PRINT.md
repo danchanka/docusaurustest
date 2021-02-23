@@ -30,4 +30,4 @@ To open the form in the print view, [**PRINT** operator](PRINT_operator.md) is
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=print"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=print"/>

@@ -137,10 +137,10 @@ The expression whose value will be used as the name of the  [report](Print_view
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=objects"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=objects"/>
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=view"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=view"/>
 
   
 
@@ -197,6 +197,6 @@ Specifying that the object tree should be added to the form structure immediatel
 ### Examples
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=tree"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=tree"/>
 
   

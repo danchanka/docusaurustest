@@ -10,15 +10,15 @@ Create an abstract class **Shape** with an abstract action **whoAmI**:
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseActionShape&block=shape"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseActionShape&block=shape"/>
 
 Then, create **Square** and **Circle** classes inherited from **Shape** :
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseActionShape&block=concreteclass"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseActionShape&block=concreteclass"/>
 
 Define the implementation of **whoAmI** for the created classes:
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseActionShape&block=concreteaction"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseActionShape&block=concreteaction"/>
 
 When executing the **whoAmI** action, all the actions added as an implementation will be called. In this case, a corresponding message will appear depending on the argument.
 
@@ -28,8 +28,8 @@ Suppose that we need to implement an action that copies an object (e. g. the **B
 
 Declare the **Book** class and the actions to copy it:
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseActionBook"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseActionBook"/>
 
 In the dependent module **MyBook**, we want to extend the **Book** class with new properties and also define the action to copy them:
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseActionMyBook"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseActionMyBook"/>

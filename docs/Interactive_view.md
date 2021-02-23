@@ -143,6 +143,6 @@ To display the form in the interactive view, the corresponding [open form](Open_
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=show"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=show"/>
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=dialog"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=dialog"/>

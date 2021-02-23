@@ -35,7 +35,7 @@ A context-dependent operator that describes an action to be executed after the a
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=try"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=try"/>
 
 **  
 **

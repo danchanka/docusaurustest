@@ -93,7 +93,7 @@ A list of expressions that define the order in which object collections will be 
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=partition"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=partition"/>
 
 **  
 **

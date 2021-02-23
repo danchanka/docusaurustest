@@ -31,6 +31,6 @@ Form blocks.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=extendform"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=extendform"/>
 
   

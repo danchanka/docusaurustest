@@ -47,7 +47,7 @@ An expression whose value is shown as a message to the user when the set constra
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=constraint"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=constraint"/>
 
 **  
 **

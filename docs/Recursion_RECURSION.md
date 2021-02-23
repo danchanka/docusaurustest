@@ -28,4 +28,4 @@ To declare a property that implements recursion, use the [**RECURSION** operator
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=recursion1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=recursion1"/>

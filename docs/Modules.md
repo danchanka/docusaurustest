@@ -26,4 +26,4 @@ Each module in the platform corresponds to exactly one file, which starts with a
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ModuleSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ModuleSample"/>

@@ -49,4 +49,4 @@ The [context-independent](Action_operator.md#context-independent-operators) act
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample"/>

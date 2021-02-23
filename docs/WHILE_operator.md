@@ -47,7 +47,7 @@ The name of the class of the object to create. Defined by a [class ID](IDs.md#c
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=while"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=while"/>
 
 **  
 **

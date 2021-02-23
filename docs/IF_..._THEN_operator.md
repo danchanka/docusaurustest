@@ -33,7 +33,7 @@ An expression whose value will be the value of the created property if the condi
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=ifthen"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=ifthen"/>
 
 **  
 **

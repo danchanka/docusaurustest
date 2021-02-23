@@ -20,23 +20,23 @@ We declare a [module](Modules.md) within which the required functionality will b
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=module"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=module"/>
 
 We define the use of functionality from other modules in the HockeyStats module. In particular, we need the system module **System**, in which some system elements used in the example are declared.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=require&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=require&original=1"/>
 
 ###### Team definition
 
 We introduce the concept of a team, for which we create a separate [class](Classes.md) using the corresponding instruction [CLASS](CLASS_instruction.md). 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=classteam&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=classteam&original=1"/>
 
 We assign a name to the class created (for example, "Team"), which will subsequently be used when building [expressions](Expression.md), as well as a caption to display on custom forms (for example, "Team").
 
 So that all teams can be easily identified when working with forms created later, we create a name for the team. In other words, we create a "Name" [property](Properties.md) that can be defined for objects of the "Team" class.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=nameteam&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=nameteam&original=1"/>
 
 Thus, the team name is a [data](Data_properties_DATA.md) (user-entered) string-type property. Using the IN option, the created property is added to the predefined **base** [property group](Groups_of_properties_and_actions.md). Object properties belonging to the **base** group will be automatically displayed on the dialog form for selecting an object of the "Team" class.
 
@@ -44,59 +44,59 @@ Thus, the team name is a [data](Data_properties_DATA.md) (user-entered) string-t
 
 We introduce the concept of the game and its attributes: date, participants (host team and guest team), and their names.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=game&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=game&original=1"/>
 
 The hostTeam and guestTeam properties are [data](Data_properties_DATA.md) object properties of a game, whose values are links to the host team and guest team, respectively (that is, to specific Team-class objects). Properties of the team names of the game hosts and guests (hostTeamName and guestTeamName) are created for subsequent use on forms. If the hostTeam and guestTeam properties are added to the form, the user will see the internal IDs of objects from the database.
 
 We introduce the constraint that the game participants must be two different teams.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=constrainthostguest&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=constrainthostguest&original=1"/>
 
 The operating mechanism of this expression is as follows: when the host team or guest team of a game changes, the system checks the condition of equality of these teams (hostTeam(team) == guestTeam(team)), and if it is met the system blocks the application of changes to the database, and also gives the user the specified message ('Host and guest teams must be different'). In other words, the result of the expression specified after the CONSTRAINT operator must be NULL. In all other cases the restriction will be considered violated.  In addition, thanks to the CHECKED BY block, the created constraint will filter teams when selecting a home team or a guest team for a game (that is, it will exclude the team already set as the opponent from the list of teams in the dialog that appears upon selecting a team).
 
 We define the number of goals scored by each team during the game.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=goals&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=goals&original=1"/>
 
 The defined properties use the INTEGER type, since the number of goals scored by each team is an integer.
 
 We introduce the constraint that the game cannot end in a tie. The system should prohibit the user from setting an identical number of goals for both teams in the game, and issue a message with the specified text.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=constraintgoals&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=constraintgoals&original=1"/>
 
 ###### Determining the winner of the game
 
 We determine the winner of the game - the team that has scored more goals than its opponent.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gamewinner&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gamewinner&original=1"/>
 
 Here we use the operator [IF... THEN... ELSE](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md), which checks the condition that the host team in this game has scored more goals than the guest team. If it is met, the winner is the home team; if not, the guest team.
 
 By a similar principle, the team that participated in the game and scored fewer goals than its opponent will be considered the loser.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gamelooser&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gamelooser&original=1"/>
 
 ###### Determining game result
 
 We introduce the concept of the possible game result with a predefined set of values: regular-time win, overtime win, penalty shootout win.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gameresultclass&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gameresultclass&original=1"/>
 
 For this purpose we create a GameResult class and add three [static objects](Static_objects.md) to it that are specified using expressions specified in braces { }. In this case, the values win, winOT, winSO and W, OW, SW will be stored in the system properties staticName and staticCaption, respectively.
 
 We create the resultName property, which will return the caption of the game result (W, OW, or SW). To do this, we take the system property staticCaption, which is supported for all objects in the system, and constrain its signature using the IF operator, indicating that the object must be of the Game class. This property is added to the "base" property group so that it appears in the automatic dialog for selecting an object of the GameResult class.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gameresultname&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gameresultname&original=1"/>
 
 We determine the result of a particular game. In case when one of the teams won by 2 or more goals, the game result is considered a regular-time win. If not, and only if not, the game result (the type of win for a given score) will be set by the user. However, the user cannot set a regular-time win as the game result.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gameresult&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gameresult&original=1"/>
 
 To determine the game result, the OVERRIDE operator is used, which returns the first non-**NULL** value in the order in which expressions are specified. In this case, calculating the "result" property will return either an object of the static class GameResult.win, if the goal difference in the game is greater than 1, or the value of the userResult data property.
 
 In order to always determine a result for the game, we create a constraint that ensures that the user sets the value of the userResult property if the result is not calculated based on the game score.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gameresultset&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gameresultset&original=1"/>
 
 The result of the NOT userResult(game) expression will be true only if userResult(game) is not defined (that is, if it is NULL). Thus, the constraint will be violated if the score difference is 1, and the type of win is not specified by the user.
 
@@ -108,7 +108,7 @@ We define the indicators that determine the team's place on the scoreboard:
 
 -   number of games played by the team at home and away, and their total number  
       
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gamesplayed&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gamesplayed&original=1"/>
 
 Here, the construction (+) is used instead of the arithmetic + to obtain the correct result if at least one of the terms has a value of NULL. Using (+) in this case is equivalent to replacing a possible NULL with 0. If one of the terms is NULL, then using the arithmetic + will also result in a value of NULL.
 
@@ -116,7 +116,7 @@ To determine the number of games played by the team at home and away, the [GROUP
 
 -   number of games won in regular time, in overtime, and in extra time  
       
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gameswon&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gameswon&original=1"/>
 
 Since the logic for determining the number of wins of each type for a team is almost identical, we create and use the intermediate property gamesWonByResult, which is defined for a pair of objects (arguments). This property calculates for the team (first argument) the number of wins of a given type (second argument). The value of the gamesWonBy property is calculated with the OVERRIDE operator, which takes as input an expression specified in brackets (\[=...\]) and 0. If the expression value is **NULL**, the result of the whole property will be the value 0. A nested expression is specified in square brackets using the [GROUP SUM](Grouping_GROUP.md) construct. Using a given expression in brackets is identical to using a previously defined property with a similar expression. Thus, the construction \[=...\] allows you to simply reduce the number of lines of code. Here, [GROUP SUM](Grouping_GROUP.md) returns the total sum on number 1 for all games grouped by game winner and game result.
 
@@ -124,19 +124,19 @@ The total result of the gamesWonByResult property will be the number of wins of 
 
 -   number of games played in regular time, in overtime and in extra time (determined by analogy with the above-specified properties of the number of wins)  
       
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=gameslost&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gameslost&original=1"/>
 
 We calculate the number of points scored by the team in the tournament. The calculation is the sum of the number of wins of a particular type for each team, multiplied by the number of points awarded.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=points&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=points&original=1"/>
 
 To be used as additional indicators for ranking teams, we calculate the total number of goals scored and missed by the team.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=goalsresult&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=goalsresult&original=1"/>
 
 We determine the place of the team on the scoreboard.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=place&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=place&original=1"/>
 
   
 
@@ -153,7 +153,7 @@ We add an interface that allows you to work with the developed system, entering 
 
 We declare the form with a name and caption. We add to the form a block of objects of the Game class with all the properties defined in the system. We also place a button on the form for adding a new game and deleting it.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=formgame&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=formgame&original=1"/>
 
 The FORM instruction creates an empty form with [a certain default functionality](Form_structure.md). Using the OBJECTS game=Game expression, a "game" object is added to the form: a table view block containing all instances of the Game class entered in the system. Using the expression PROPERTIES(game) with a the subsequent listing of a subset of properties, the specified properties are added to the form, and objects of the "game" block are passed to them as arguments. In addition to previously created properties, the [actions](Actions.md) NEW and DELETE are also placed on the form, which will visually appear as buttons and allow you to add and remove objects of the Game class.
 
@@ -161,18 +161,18 @@ Data properties displayed on a form that are of a primitive type (date, hostGoal
 
 We extend the form by adding a score table block to it. The score table will be shown as a list of teams (objects of the Team class) with their statistical indicators, sorted by rating using the ORDER BY operator.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=formteam&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=formteam&original=1"/>
 
 The above form can be defined with a single block of code without using the EXTEND instruction.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=formsingle&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=formsingle&original=1"/>
 
 We place the created form on the main menu of the program - the predefined navigator **root** folder - and indicate that it should be positioned by the very first element in front of the system menu item **Administration**.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats&block=navigator&original=1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=navigator&original=1"/>
 
 The process of creating an information system is completed.
 
 ##### The complete source code (on [GitHub](https://github.com/lsfusion/samples/tree/master/hockeystats))
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=hockeystats/HockeyStats"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats"/>

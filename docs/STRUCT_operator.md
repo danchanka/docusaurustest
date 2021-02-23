@@ -23,7 +23,7 @@ List of [expressions](Expression.md) whose values will be elements of the struct
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=struct"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=struct"/>
 
 **  
 **

@@ -57,7 +57,7 @@ Filtering expression. Only object groups for which the value of the filtering ex
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=group"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=group"/>
 
 **  
 **

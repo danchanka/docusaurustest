@@ -22,4 +22,4 @@ To declare an action that executes program code, use the [**EVAL** operator](EV
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=eval"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=eval"/>

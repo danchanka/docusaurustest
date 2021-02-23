@@ -22,4 +22,4 @@ There is also an implicit fifth kind of simple constraint, *uniqueness*, but it 
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=means"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=means"/>

@@ -10,13 +10,13 @@ We have sales orders for several books.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExport&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExport&block=sample1"/>
 
 We need to create a button that exports the contents of the order in the XML format.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExport&block=solution1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExport&block=solution1"/>
 
 To upload the data in the XML format, we need to create a form [with the corresponding structure](Structured_view.md) and then call the [EXPORT operator](EXPORT_operator.md). This operator will generate a file based on the form and then write the file to the **exportFile** property, which is then opened on the client side using the **open** action. The file will be opened in the software associated with its extension (i. e. ".json").
 
@@ -82,7 +82,7 @@ We need to create a button that exports the contents of the order in the JSON fo
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExport&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExport&block=solution2"/>
 
 The resulting file will look like this:
 
@@ -125,7 +125,7 @@ We need to create a button that exports all the orders for a certain date in the
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseExport&block=solution3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExport&block=solution3"/>
 
 The first action gets a date as input and then generates a flat CSV file with a semicolon delimiter using the **EXPORT** operator. The file will look like this:
 

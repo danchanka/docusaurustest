@@ -14,6 +14,6 @@ Examples
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=PropertySample&block=constant"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=PropertySample&block=constant"/>
 
   

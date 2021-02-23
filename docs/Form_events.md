@@ -96,6 +96,6 @@ To define the form event handlers, use the **ON** option in the **FORM** instruc
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=events"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=events"/>
 
   

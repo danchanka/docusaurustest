@@ -39,6 +39,6 @@ To add a new property/action group to the system, use the [**GROUP** instruction
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=group"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=group"/>
 
   

@@ -29,7 +29,7 @@ The sequence number of an object. [Numeric literal](Literals.md#intliteral-broke
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=brackets"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=brackets"/>
 
 **  
 **

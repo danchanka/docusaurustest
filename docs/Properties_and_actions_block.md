@@ -279,4 +279,4 @@ Specifying a [property/action group](Groups_of_properties_and_actions.md) which
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=properties"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=properties"/>

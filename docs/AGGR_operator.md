@@ -48,6 +48,6 @@ An [expression](Expression.md) whose value defines an aggregated property.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=AggregationSample&block=aggr"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=AggregationSample&block=aggr"/>
 
   

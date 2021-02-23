@@ -64,4 +64,4 @@ To create tables, use the [**TABLE** instruction](TABLE_instruction.md). To spe
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=table"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=table"/>

@@ -36,6 +36,6 @@ An expression whose value determines the selection condition of the implementati
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=extendproperty"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=extendproperty"/>
 
   

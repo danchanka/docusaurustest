@@ -10,13 +10,13 @@ We have a set of books associated with certain category.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=sample1"/>
 
 We need to calculate the number of books in the category.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=solution1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=solution1"/>
 
 ##### Example 2
 
@@ -24,13 +24,13 @@ We need to calculate the number of books in the category.
 
 We have a set of books associated with certain tags. Each book can be associated with several tags at the same time.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=sample2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=sample2"/>
 
 We need to calculate the number of books in the tag.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=solution2"/>
 
 ##### Example 3
 
@@ -38,13 +38,13 @@ We need to calculate the number of books in the tag.
 
 We have the information about the movement of books: each record is linked to the book itself and the warehouse where the movement occured, and also contains quantity and types of operations (receipt/shipment).
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=sample3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=sample3"/>
 
 We need to calculate the current balance for a book at the warehouse.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=solution3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=solution3"/>
 
 It is recommended to mark the **currentBalance** property as **[MATERIALIZED](Materializations.md)**, so that when reading the current balances, the system could take the calculated value from the **bookStock** table instead of recalculating this value based on all movements. Though this will slow down the writing process (since writing each movement will require updating the current balance), the reading process will become much faster.
 
@@ -56,13 +56,13 @@ Note that you do not need to define explicitly in which table to keep the **curr
 
 Similar to **Example 3**, except that each movement is associated with the date of movement.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=sample4"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=sample4"/>
 
 We need to calculate the current balance for a given book at the warehouse for the specific date (as of the morning, without the movements occured on that day).
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=solution4"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=solution4"/>
 
   
 
@@ -76,7 +76,7 @@ Similar to **Example 3**, except that we need to calculate the current balance 
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseSum&block=solution5"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseSum&block=solution5"/>
 
   
 

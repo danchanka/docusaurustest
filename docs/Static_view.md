@@ -34,7 +34,7 @@ As follows from the algorithm, the empty object group is always the only root gr
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=GroupHierarchySample"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=GroupHierarchySample"/>
 
 The hierarchy of groups of objects for this form will be constructed as follows:
 

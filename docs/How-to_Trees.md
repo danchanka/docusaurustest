@@ -10,13 +10,13 @@ We have a set of books associated with certain categories.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseTree&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseTree&block=sample1"/>
 
 We need to build a form with a tree, where the category is shown above and the product is shown below.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseTree&block=solution1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseTree&block=solution1"/>
 
 ##### Example 2
 
@@ -24,13 +24,13 @@ We need to build a form with a tree, where the category is shown above and the p
 
 Similar to **Example 1**, except that each category has a parent in the hierarchy.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseTree&block=sample2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseTree&block=sample2"/>
 
 We need to build a form with a tree, where the categories will be displayed as hierarchy.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseTree&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseTree&block=solution2"/>
 
 ##### Example 3
 
@@ -42,4 +42,4 @@ We need to create a form with a category tree, so that the books that belong to 
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseTree&block=solution3"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseTree&block=solution3"/>

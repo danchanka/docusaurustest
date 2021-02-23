@@ -28,4 +28,4 @@ To declare an action that implements an object change, use the [**SEEK** operat
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=seek"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=seek"/>

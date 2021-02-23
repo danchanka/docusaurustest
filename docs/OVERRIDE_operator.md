@@ -23,7 +23,7 @@ List of [expressions](Expression.md) whose values will determine the value of th
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=override"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=override"/>
 
 **  
 **

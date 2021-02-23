@@ -24,7 +24,7 @@ title: 'Arithmetic operators'
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=arithmetic"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=arithmetic"/>
 
 **  
 **

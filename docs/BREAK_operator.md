@@ -17,6 +17,6 @@ The **BREAK** operator creates an action that exits the most nested loop within 
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=break"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=break"/>
 
   

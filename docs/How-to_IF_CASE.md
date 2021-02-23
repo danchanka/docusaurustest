@@ -10,13 +10,13 @@ We have a list of books associated with certain categories. Each book is assigne
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseIfCase&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseIfCase&block=sample1"/>
 
 We need to create an action that sets a given price for books associated with the specific category and a fixed price for all other books. When no category is selected, the error message must appear.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseIfCase&block=solution1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseIfCase&block=solution1"/>
 
 ##### Example 2
 
@@ -28,4 +28,4 @@ We need to create an action that sets pre-defined prices for books associated wi
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseIfCase&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseIfCase&block=solution2"/>

@@ -61,4 +61,4 @@ An expression which values determine the names of the attachments.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=email"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=email"/>

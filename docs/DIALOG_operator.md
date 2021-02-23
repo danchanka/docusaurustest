@@ -128,6 +128,6 @@ Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=dialog"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=dialog"/>
 
   

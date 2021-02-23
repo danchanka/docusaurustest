@@ -6,27 +6,27 @@ Let's suppose we have a set of books. For each of these books, we define a numbe
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseNumerating&block=numbermaster"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNumerating&block=numbermaster"/>
 
 We implement a property that will find a book by its number. It can be useful, for example, for importing data where each book is identified by a number. It can be used to get a link to a book object by getting its number as a parameter.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseNumerating&block=numberaggr"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNumerating&block=numberaggr"/>
 
 The [GROUP AGGR](Grouping_GROUP.md) operator automatically adds a constraint on the uniqueness of the number. If you try to save the same number to the database, you will get an error message.
 
 Let's add an [event](Events.md) that will automatically number books by increasing the maximum number existing in the database.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseNumerating&block=numbergenerate"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNumerating&block=numbergenerate"/>
 
 The event will be triggered at the moment of saving a book to the database in the same transaction.
 
 In some situations, you may need to apply different numbering for the same object. For this purpose, you can add a special **Numerator** class.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseNumerating&block=numerator"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNumerating&block=numerator"/>
 
 The **value** property will store the current value of the numerator that will be written to the number of the necessary object. To achieve this, a reference to a particular numerator is set for an object (for example, an order). If such a reference is specified at the time of object creation, you need to automatically assign the numerator's current value increased by one to the order number.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseNumerating&block=numeratororder"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNumerating&block=numeratororder"/>
 
 The event conditions check if the number has been changed in order to avoid changing it if the user specified it manually (or if it was assigned during import).
 
@@ -34,4 +34,4 @@ An important difference between the numerator and "assigning the maximum value p
 
 You can define a default numerator with property without arguments so that the user does not have to select a numerator every time. After that, you can create an event that will automatically set the numerator if the user doesn't choose it manually.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseNumerating&block=numeratororderdefault"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNumerating&block=numeratororderdefault"/>

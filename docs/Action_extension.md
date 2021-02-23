@@ -29,9 +29,9 @@ The key instructions that implement the extension technique are the [**ABSTRACT*
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=abstract"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=abstract"/>
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=extendaction"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=extendaction"/>
 
   

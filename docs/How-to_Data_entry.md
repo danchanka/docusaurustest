@@ -10,11 +10,11 @@ We have a form that displays a list of books. We need to implement an option for
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseInput&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseInput&block=sample1"/>
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseInput&block=solution1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseInput&block=solution1"/>
 
   
 
@@ -24,7 +24,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 We have a form that displays a list of books. In this form, the user can specify a genre, so that only books of this genre will be displayed. We also have a form containing the list of orders where you can also apply a filter by genre. Each book has a restricted/allowed flag, and the order may contain only allowed books.
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseInput&block=sample2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseInput&block=sample2"/>
 
 We need to replace the book selection mechanism on the order form so that the genre selection form is called. Additional requirements:
 
@@ -36,6 +36,6 @@ We need to replace the book selection mechanism on the order form so that the ge
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseInput&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseInput&block=solution2"/>
 
   

@@ -10,13 +10,13 @@ We have the concept of books, for which title, genre and price are defined.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseFormProperties&block=sample1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFormProperties&block=sample1"/>
 
 We need to display the number of books on the form, taking into account filters made by the user.
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseFormProperties&block=solution1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFormProperties&block=solution1"/>
 
 The solution uses the [FILTER](Filter_FILTER.md) operator, which returns **TRUE** if the object is included in the current filter on the form.
 
@@ -30,7 +30,7 @@ We need to display the serial number of the book in the table with books taking 
 
 ###### Solution
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=UseCaseFormProperties&block=solution2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFormProperties&block=solution2"/>
 
 The property with the current order, defined using the [ORDER](Order_ORDER.md) operator, is not declared as a separate named property but is used directly in the expression.
 

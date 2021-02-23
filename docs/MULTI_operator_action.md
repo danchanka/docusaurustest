@@ -34,6 +34,6 @@ A list of [context dependent action operators](Action_operator.md#context-depen
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=multi"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=multi"/>
 
   

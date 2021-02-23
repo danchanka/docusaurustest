@@ -18,4 +18,4 @@ To extend a class, use the [**EXTEND CLASS** instruction](EXTEND_CLASS_instructi
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=extendclass"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=extendclass"/>

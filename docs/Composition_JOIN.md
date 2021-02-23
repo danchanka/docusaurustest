@@ -13,9 +13,9 @@ To implement composition, use the [**JOIN** operator](JOIN_operator.md).
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=join1"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=join1"/>
 
 **  
 **
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=join2"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=join2"/>

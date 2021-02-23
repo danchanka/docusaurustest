@@ -30,6 +30,6 @@ The key instructions that implement the extension procedure are the [**ABSTRACT*
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=abstract"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=abstract"/>
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=extendproperty"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=extendproperty"/>

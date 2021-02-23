@@ -23,4 +23,4 @@ A list of [expressions](Expression.md) of which values the minimum is selected.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=min"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=min"/>

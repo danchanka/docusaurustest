@@ -31,7 +31,7 @@ A context-dependent action operator that is executed if the input was [cancelled
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=request"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=request"/>
 
 **  
 **

@@ -23,7 +23,7 @@ An [expression](Expression.md) whose result is a property. For this property, a 
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=class"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=class"/>
 
 **  
 **

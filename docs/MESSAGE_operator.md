@@ -30,6 +30,6 @@ Specifies when the created action should be completed:
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=message"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=message"/>
 
   

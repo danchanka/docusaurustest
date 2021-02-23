@@ -27,7 +27,7 @@ List of filter expressions.
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=filters"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=filters"/>
 
   
 
@@ -73,7 +73,7 @@ A keyword specifying that the filter being added must be selected automatically 
 ### Examples
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=regularfilters"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=regularfilters"/>
 
   
 
@@ -102,4 +102,4 @@ Keyword. Specifies reverse order. By default, ascending order is used.
 ### Examples
 
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=FormSample&block=sort"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=sort"/>

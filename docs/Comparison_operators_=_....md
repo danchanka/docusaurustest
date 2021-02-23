@@ -19,4 +19,4 @@ Description of [comparison operators](Comparison_operators.md).
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=OperatorPropertySample&block=compare"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=compare"/>

@@ -26,7 +26,7 @@ This [context-dependent action operator](Action_operator.md#context-dependent-op
 
 import {CodeSample} from './CodeSample.mdx'
 
-<CodeSample url="http://documentation.lsfusion.org:5000/sample?file=InstructionSample&block=on"/>
+<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=on"/>
 
  
 
