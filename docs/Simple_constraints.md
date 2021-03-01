@@ -4,7 +4,12 @@ title: 'Simple constraints'
 
 The platform currently supports four types of *simple constraints*: *consequence*, *exception*, *equality*, and *definiteness*. For all simple constraints, an *automatic resolution* mechanism is supported. When this is enabled, instead of throwing an error the platform itself restores system integrity.
 
-[table was removed]
+|<br /><br/>|Consequence|Exception|Equality|Definiteness|
+|---|---|---|---|---|
+|Number of properties|2|2...N|2|1|
+|Description|If the value of one property (the <em>premise</em>) is non-<strong>NULL</strong>, the value of the second property (the <em>consequence</em>) must also be non-<strong>NULL</strong>|Only one of the values of the specified properties must be non-<strong>NULL</strong>|If the value of one property is non-<strong>NULL</strong> and the value of the second property is non-<strong>NULL</strong>, they must be equal|If all property parameters match specified classes, a non-<strong>NULL</strong> value must be specified for them|
+|Instruction|<strong>[=>](Instruction=.md)</strong>|Not yet implemented|Not yet implemented|<strong>NONULL</strong> option when defining properties|
+|Auto-resolution|<p>Two modes are supported:</p><br/><ul><br/><li><strong>LEFT</strong> - if the premise changes to non-<strong>NULL</strong>, change the * consequence to non-<strong>NULL</strong></li><br/><li><strong>RIGHT</strong> - if the consequence changes to <strong>NULL</strong>, change the premise to <strong>NULL</strong></li><br/></ul>|If one of the properties changes to non-<strong>NULL</strong>, change the rest to <strong>NULL</strong>|If one of the properties changes to a non-<strong>NULL</strong> value, change the second to the same value|<p><strong>AGGR</strong> - if a property value changes to <strong>NULL</strong>, delete objects corresponding to the parameters</p><br/><p><strong>DEFAULT</strong> value - if objects whose classes match the parameters classes are added/reclassified, change the property value for these objects to the default value.</p>|
 
 \* A change to **NULL**/non-**NULL** is the following:
 

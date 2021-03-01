@@ -19,7 +19,19 @@ The following URL types are supported:
 
 It is assumed that the file extension is not specified in the URL (that is, the period (.) is also considered a part of the file name). This extension is determined automatically based on the class of the file being written:
 
-[table was removed]
+|<p>Extension</p>|<p>Class</p>|
+|---|---|
+|read from the passed object|<strong>FILE</strong>|
+|json|<strong>JSONFILE</strong>|
+|xml|<strong>XMLFILE</strong>|
+|csv|<strong>CSVFILE</strong>|
+|xls or xlsx, depending on the file content|<strong>EXCELFILE</strong>|
+|dbf|<strong>DBFFILE</strong>|
+|table|<strong>TABLEFILE</strong>|
+|html|<strong>HTMLFILE</strong>|
+|doc or docx, depending on the file content|<strong>WORDFILE</strong>|
+|jpg|<strong>IMAGEFILE</strong>|
+|pdf|<strong>PDFFILE</strong>|
 
 The Downloads folder in the user folder is considered to be the current folder on the client side.
 

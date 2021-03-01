@@ -6,7 +6,12 @@ title: 'Logical operators (AND, OR, NOT, XOR)'
 
 The platform currently supports the following logical operators:
 
-[table was removed]
+|<div><br/>Operator<br/></div>|<div><br/>Name<br/></div>|<div><br/>Description<br/></div>|<div><br/>Example<br/></div>|<div><br/>Result<br/></div>|
+|---|---|---|---|---|
+|AND|Conjunction|Takes two operands and returns <strong>TRUE</strong> if both operands are non-<strong>NULL</strong>|TRUE AND TRUE|TRUE|
+|OR|Disjunction|<p>Takes two operands and returns <strong>TRUE</strong> if either operand is non-<strong>NULL</strong></p>|NULL OR TRUE|TRUE|
+|NOT|Negation|Takes one operand and returns <strong>TRUE</strong> if the operands is <strong>NULL</strong>|NOT TRUE|NULL|
+|XOR|Exception|Takes two operands and returns <strong>TRUE</strong> if exactly one operand is non-<strong>NULL</strong>|TRUE XOR TRUE|NULL|
 
 ### Language
 

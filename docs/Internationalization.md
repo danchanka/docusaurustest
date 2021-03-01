@@ -21,13 +21,23 @@ The language and country are specified in [standard Java](https://docs.oracle.co
 
 The server locale is determined by the [default locale](http://www.oracle.com/us/technologies/java/locale-140624.html) of the JVM in which the server starts (namely, the startup parameters [user.language, user.country, user.timezone, and user.twoDigitYearStart](Launch_parameters.md#locale-broken)). When the application server starts, the parameters of this locale are automatically saved in the following properties:
 
-[table was removed]
+|Locale parameter|Start parameter|Property|
+|---|---|---|
+|Language|user.language|<strong>Authentication.serverLanguage[]</strong>|
+|Country|user.country|<strong>Authentication.serverCountry[]</strong>|
+|Timezone|user.timezone|<strong>Authentication.serverTimezone[]</strong>|
+|Starting year of the 100-year period|user.twoDigitYearStart|<strong>Authentication.serverTwoDigitYearStart[]</strong>|
 
 The server locale is used as *current* when the action in which localization is being performed is initiated by the system, and not by a particular user (i.e., the system user is considered the current user).
 
 Otherwise, the current locale is determined by the values of the following properties (the user who initiated the action is passed as a parameter):
 
-[table was removed]
+|Parameter|Property|
+|---|---|
+|Language|<strong>Authentication.language[CustomUser]</strong>|
+|Country|<strong>Authentication.country[CustomUser]</strong>|
+|Timezone|<strong>Authentication.timezone[CustomUser]</strong>|
+|Starting year of the 100-year period|<strong>Authentication.twoDigitYearStart[CustomUser]</strong>|
 
 In the current platform implementation, the above properties allow you both to use the locale parameters of the user's operating system and to set these parameters explicitly for specific users; or, for example, to use the server locale for all users (this is the default behavior).
 

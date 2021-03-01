@@ -89,7 +89,13 @@ In the last two cases (that is, when specifying the width as a sample value or i
 
 By default, the extension coefficient and alignment for components are determined as follows:
 
-[table was removed]
+|Component|Extension coefficient|Alignment|
+|---|---|---|
+|Table / Tree|1|STRETCH|
+|Component inside scrollable containers, splitters and tabbed panel|1|STRETCH|
+|Property panel inside a horizontal container or property in a table. The property values are objects of built-in classes of dynamic length (i.e. strings and numbers)|With of the value cell|START|
+|Property panel inside a vertical container. The property values are objects of builtin classes of dynamic length (i.e. strings and numbers)|0|STRETCH|
+|All others|0|START|
 
 The base container size (except the tab panel) is equal by default to the sum of the base sizes of all its child components for the dynamic direction, and the maximum for the static direction. The base height of the tab panel is the sum of the base height of its current tab and the height of the tab title bar, the base width is the same as the base width of the current tab.
 
@@ -99,7 +105,17 @@ The base width of tables/trees is 130 pixels by default, and the height is 70 pi
 
 The following formulas are used by default to determine the width of a property value cell:
 
-[table was removed]
+|Property value class|Width unit|Width/Value|
+|---|---|---|
+|Strings|In characters|<div class="content-wrapper"><br/><div class="code panel pdl" style="border-width: 1px;"><br/><div class="codeContent panelContent pdl"><br/><pre class="plain" data-syntaxhighlighter-params="brush: plain; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: plain; gutter: false; theme: Confluence"><code>IF length <= 12<br/>    result = length<br/>ELSE IF length = INFINITE<br/>    result = 15<br/>ELSE <br/>    result = 12 + (length - 12) ^ 0.7</code></pre><br/></div><br/></div><br/></div>|
+|Numbers|In characters|<div class="content-wrapper"><br/><div class="code panel pdl" style="border-width: 1px;"><br/><div class="codeContent panelContent pdl"><br/><pre class="plain" data-syntaxhighlighter-params="brush: plain; gutter: false; theme: Confluence" data-theme="Confluence" style="brush: plain; gutter: false; theme: Confluence"><code>IF length <= 6<br/>    result = length<br/>ELSE IF this = DOUBLE<br/>    result = 10<br/>ELSE <br/>    result = MIN(6 + (length - 6) ^ 0.7, 10)</code></pre><br/></div><br/></div><br/><p>Where length = integerPart + precision</p><br/></div>|
+|<strong>COLOR</strong>|In pixels|40|
+|Files and file links|In pixels|18|
+|<strong>BOOLEAN</strong>|In pixels|25|
+|<strong>DATE</strong>|Sample value|1991_11_21|
+|<strong>DATETIME</strong>|Sample value|1991_11_21_10:55:55|
+|<strong>TIME</strong>|Sample value|10:55:55|
+|User classes|In characters|7|
 
 The default height of a property value cell is equal to the height of the font used, except properties whose values belong to the **TEXT** class (in this case, the height is four times the font height).
 

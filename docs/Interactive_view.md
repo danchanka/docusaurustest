@@ -121,7 +121,12 @@ The following system actions are automatically added to any form (their names 
 
 By default, these system actions have the following visibility conditions:
 
-[table was removed]
+|Action|Condition|
+|---|---|
+|Refresh|Always|
+|Save, Cancel|If the form is the owner and actions that change the current session can be called on the form. Cancel may not be shown if the platform determines that canceling the changes is guaranteed to lead to a change of the [initial values](Open_form.md#passing-objects) of form objects (i.e., selecting other objects)|
+|OK, Close|If the form was opened [synchronously](In_an_interactive_view_SHOW_DIALOG.md#flow-management)|
+|Drop|If the form is opened synchronously, returns a value and allows <strong>NULL</strong> values to be passed|
 
 If necessary, all these actions can be shown/hidden by removing the corresponding components from the [form design](Form_design.md) and/or using the corresponding options in the [open form](Open_form.md) operator.
 

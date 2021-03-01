@@ -6,7 +6,9 @@ On this page you can download installers that install everything needed for deve
 
 ### Download
 
-[table was removed]
+|Windows|
+|---|
+|<div class="content-wrapper"><br/><p>lsFusion <strong>4.1 </strong>(OpenJDK 11.0.9, PostgreSQL 13.1(x64)/<strong>10.8</strong>(x32), Tomcat <strong>9.0.21</strong>, IntelliJ IDEA Community Edition <strong>2020.3.1</strong>)<strong>:</strong></p><br/><ul><br/><li><p>[x32](http://download.lsfusion.org/exe/lsfusion-dev-4.1.exe)</p></li><br/><li>x64</li><br/></ul><br/><div id="expander-258916512" class="expand-container"><br/><div id="expander-control-258916512" class="expand-control"><br/>Older versions<br/></div><br/><div id="expander-content-258916512" class="expand-content"><br/><div id="expander-573457910" class="expand-container"><br/><div id="expander-control-573457910" class="expand-control"><br/>lsFusion 4.0<br/></div><br/><div id="expander-content-573457910" class="expand-content"><br/><ul><br/><li>[x32](https://download.lsfusion.org/exe/lsfusion-dev-4.0.exe)</li><br/><li>[x64](https://download.lsfusion.org/exe/lsfusion-dev-4.0-x64.exe)</li><br/></ul><br/></div><br/></div><br/><div id="expander-897509677" class="expand-container"><br/><div id="expander-control-897509677" class="expand-control"><br/>lsFusion 3.1<br/></div><br/><div id="expander-content-897509677" class="expand-content"><br/><ul><br/><li>[x32](https://download.lsfusion.org/exe/lsfusion-dev-3.1.exe)</li><br/><li>[x64](https://download.lsfusion.org/exe/lsfusion-dev-3.1-x64.exe)</li><br/></ul><br/></div><br/></div><br/><div id="expander-2056437259" class="expand-container"><br/><div id="expander-control-2056437259" class="expand-control"><br/>lsFusion 2.4<br/></div><br/><div id="expander-content-2056437259" class="expand-content"><br/><ul><br/><li>[x32](https://download.lsfusion.org/exe/lsfusion-dev-2.4.exe)</li><br/><li>[x64](https://download.lsfusion.org/exe/lsfusion-dev-2.4-x64.exe)</li><br/></ul><br/></div><br/></div><br/></div><br/></div><br/></div>|
 
 ### After installation
 

@@ -22,32 +22,107 @@ def get_dirs():
         output_dir += '/'        
     return input_dir, output_dir
 
-def transform_tables(data, links):
+def transform_tables(data, filename, samples_links):
     lines = data.split('\n')
     nlines = []
+    table_lines = []
+    inside_simple_table = False
     opened = 0
     sample_index = 0
     for line in lines:
         if line.lstrip().startswith('<table'):
             opened += 1
             if opened == 1:
+                inside_simple_table = True
                 if line.lstrip().startswith('<table class="highlighttable"'):
+                    inside_simple_table = False
                     if sample_index == 0:
                         nlines.append('import {CodeSample} from \'./CodeSample.mdx\'')
                         nlines.append('')
 
-                    # <CodeSample url="http://documentation.lsfusion.org:5000/sample?file=ActionSample&block=write"/>                        
-                    url = links[sample_index].replace("localhost:5000/samphighl", "documentation.lsfusion.org:5000/sample")    
+                    # <CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=write"/>                        
+                    url = samples_links[sample_index].replace("http://localhost:5000/samphighl", "https://documentation.lsfusion.org/sample")    
                     nlines.append(f'<CodeSample url="{url}"/>')
                     sample_index += 1
-                else:    
-                    nlines.append('[table was removed]')
+                # else:    
+                #     nlines.append('[table was removed]')
+
         if opened == 0:
             nlines.append(line)   
+        elif inside_simple_table:    
+            table_lines.append(line)
+
         if line.lstrip().startswith('</table>'):
             opened -= 1    
+            if opened == 0 and inside_simple_table:
+                inside_simple_table = False
+                transformed_table_lines = transform_simple_table(table_lines)
+                nlines.extend(transformed_table_lines)
+                table_lines = []
+
     return '\n'.join(nlines)    
 
+def transform_simple_table(lines):
+    data = '\n'.join(lines)
+    data = re.sub(r'<a href="(.*?)">(.*?)</a>', r'[\2](\1)', data)
+    rows = []
+    pos = 0
+    while True:
+        tr_start = data.find('<tr', pos)
+        if tr_start == -1:
+            break
+        close_pos = find_close_tag_pos(data, tr_start + 1, '<tr', '</tr>')
+        rows.append(get_table_row(data[tr_start:close_pos]))
+        pos = close_pos
+
+    if len(rows) == 1:
+        if len(rows[0]) != 2:
+            print(f'one row table with unusual number of cells\n{data}')
+        return create_caution_block(rows)     
+    else:
+        return create_md_table(rows)    
+    return data.split('\n')
+
+def get_table_row(data):
+    row = []
+    pos = 1
+    cell_tag = 'td' if data.find('<td', pos) != -1 else 'th'
+    open_tag = f'<{cell_tag}'
+    close_tag = f'</{cell_tag}>'
+    while True:
+        td_start = data.find(open_tag, pos)
+        if td_start == -1:
+            break
+        close_pos = find_close_tag_pos(data, td_start+1, open_tag, close_tag)
+        row.append(data[data.find('>', td_start) + 1 : close_pos - len(close_tag)].replace('\n', '<br/>').replace('|', '\\|'))
+        pos = close_pos
+    return row    
+
+
+def create_caution_block(rows):
+    return [':::caution', rows[0][1], ':::']
+
+def create_md_table(rows):
+    cells_cnt = len(rows[0])
+    lines = ['|' + '|'.join(rows[0]) + '|', '|' + '---|'*cells_cnt]
+    for row in rows[1:]:
+        lines.append('|' + '|'.join(row) + '|')
+    return lines
+
+def find_close_tag_pos(data, start_pos, open_tag, close_tag):
+    opened = 1
+    cur_pos = start_pos
+    while opened > 0:
+        open_pos = data.find(open_tag, cur_pos)
+        close_pos = data.find(close_tag, cur_pos)
+        if open_pos != -1 and open_pos < close_pos:
+            opened += 1
+            cur_pos = open_pos + len(open_tag)
+        else:
+            opened -= 1
+            cur_pos = close_pos + len(close_tag)            
+    return cur_pos
+        
 def escape_title(title):
     return '\'' + title + '\''       
 
@@ -85,10 +160,10 @@ def make_headers(data):
 def fix_image_links(data):
     return re.sub(r'<img src="(.*?)".*?/>', r'![](\1)', data)
 
-def transform_file_content(data, samples_links):
+def transform_file_content(data, filename, samples_links):
+    data = transform_tables(data, filename, samples_links)
     data = replace_html_ltgt(data)
     data = create_title(data)
-    data = transform_tables(data, samples_links)
     data = make_headers(data)
     data = fix_image_links(data)
     return data    
@@ -168,7 +243,7 @@ for filename in os.listdir(indir):
         data = infile.read()
         infile.close()
         if len(data) > 0 and data[0] == '#': # not transformed earlier
-            data = transform_file_content(data, samples_links[filename])
+            data = transform_file_content(data, filename, samples_links[filename])
             files[filename] = data
 
 logfile = open('anchors.log', 'w', encoding='utf-8')

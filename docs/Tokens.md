@@ -8,4 +8,8 @@ Tokens are usually separated by *delimiters* (spaces, line breaks, tabs), but se
 
 ### Examples
 
-[table was removed]
+|Keywords|<strong>CLASS</strong>, <strong>FORM</strong>, <strong>DATA</strong>, <strong>IF</strong>, <strong>INTEGER</strong>|
+|---|---|
+|IDs|System, base, Object, incomeDocument|
+|Literals|5, 1.25, 'Text String', #FF00FF, 1982_07_13|
+|Special characters|:, ->, !=, (+), ###|

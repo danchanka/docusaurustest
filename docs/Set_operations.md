@@ -12,7 +12,13 @@ Aggregate function is *commutative* if the order in which the object collection
 
 The table below shows the currently supported types of aggregate functions:
 
-[table was removed]
+|Type/instruction option|Initial value|Names of the operands|Add operation|Conversion function|Commutativity|Data type|
+|---|---|---|---|---|---|---|
+|SUM|NULL|operand|result = result (+) operand|result|+|number|
+|MAX|NULL|operand|result = max(result, operand)|result|+|any comparable|
+|MIN|NULL|operand|result = min(result, operand)|result|+|any comparable|
+|<p>CONCAT</p>|NULL|separator, operand|<p>result = CONCAT separator, result, operand</p>|result|-|string|
+|LAST / PREV|NULL|where, operand|result = IF where THEN operand ELSE result|result|-|<p>any</p>|
 
 From the perspective of determining the set of object collections and the result display method, four main operators for working with sets can be distinguished:
 

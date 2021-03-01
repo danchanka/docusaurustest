@@ -96,23 +96,87 @@ The value assigned to the corresponding container property. Acceptable value typ
 
 ### *Component properties*
 
-[table was removed]
+|Property name|Description|Value type|Default value|Examples|
+|---|---|---|---|---|
+|size|The base component size in pixels (a value of -1 means that the size is undefined)|A pair [of integer literals](Literals.md#intliteral-broken) (width, height)|(-1, -1)|(100, 20)|
+|height|The base component height in pixels.|Integer literal|-1|50|
+|width|The base component width in pixels.|Integer literal|-1|20|
+|<p>background</p>|<p>The color to be used for the component background</p>|[Literal of class <strong>COLOR</strong>](Literals.md#colorliteral-broken)|#FFFFFF|#FFFFCC, RGB(255, 0, 0)|
+|foreground|The color to be used for the component text|Color |<strong>NULL</strong>|#FFFFCC, RGB(255, 0, 0)|
+|font|<p>The font to be used for displaying the component text — for example, property value, action caption, table text</p>|[String literal](Literals.md#strliteral-broken)|depends on the component|'Tahoma bold 16', 'Times 12'|
+|fontSize|The size of the font to be used for displaying the component text|Numeric literal|depends on the component|10|
+|fontStyle|The style of the font to be used for the component text May contain the words 'bold' and/or 'italic', or an empty string|String literal|''|'bold', 'bold italic'|
+|defaultComponent|<p>Specifying that this component should get the focus when the form is initialized. Can only be set for one component on the entire form</p>|Extended [Boolean literal](Literals.md#booleanliteral-broken)|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|align, alignment|Component alignment inside the container. Acceptable values: <strong>START</strong> (at the beginning), <strong>CENTER</strong> (in the center), <strong>END</strong> (at the end), <strong>STRETCH</strong> (stretched).|Alignment type|<strong>START</strong>|<strong>STRETCH</strong>|
+|flex|Extension coefficient. Value of a property similar to the [CSS flex-grow](http://www.w3schools.com/cssref/css3_pr_flex-grow.asp) property. Defines how much the component should grow in size relative to other components.|[<strong>NUMERIC</strong> type literal](Literals.md#numericliteral-broken)|0|0.25|
+|fill|Similar to the <em>flex</em> property, the only difference being that if a zero value is set, the <em>align</em> property is set to <strong>START</strong>, otherwise <em>align</em> is set to <strong>STRETCH</strong>|<strong>NUMERIC</strong> type literal|0|<p>1.5</p>|
+|noSort |No sorting|[Logical literal](Literals.md#booleanliteral-broken)|<strong>FALSE</strong>|<p><strong>TRUE</strong>, <strong>FALSE</strong></p>|
+|defaultCompare|Default filter. Acceptable values: <strong>EQUALS</strong>, <strong>GREATER</strong>, <strong></strong> <strong>LESS</strong>, <strong></strong> <strong>GREATER_EQUALS</strong>, <strong></strong> <strong>LESS_EQUALS</strong>, <strong>NOT_EQUALS</strong>, <strong>START_WITH</strong>, <strong>CONTAINS</strong>, <strong></strong> <strong>ENDS_WITH</strong>, <strong>LIKE.</strong>|String literal|<strong>CONTAINS</strong>|<p><strong>START_WITH</strong></p>|
+|marginTop|Top margin|Integer literal|0|3|
+|marginRight|Right margin|Integer literal|0|1|
+|marginBottom|Bottom margin|Integer literal|0|4|
+|marginLeft|Left margin|Integer literal|0|1|
+|margin|Margin. Sets the same value to the following properties: <em>marginTop</em>, <em>marginRight</em>, <em>marginBottom</em>, <em>marginLeft</em>|Integer literal|0|5|
 
 ### *Container properties*
 
-[table was removed]
+|Property name|Description|Value type|Default value|Examples|
+|---|---|---|---|---|
+|caption|Container header|String literal|<strong>NULL</strong>|'Caption'|
+|type|<p>Container type. Acceptable values:</p><br/><p><strong>CONTAINERV</strong> - vertical container</p><br/><p><strong>CONTAINERH</strong> - horizontal container</p><br/><p><strong>COLUMNS</strong> - column container</p><br/><p><strong>SPLITV</strong> - vertical splitter</p><br/><p><strong>SPLITH</strong> - horizontal splitter</p><br/><p><strong>TABBED</strong> - tabbed panel</p><br/><p><strong>SCROLL</strong>– a scrollable container, cannot have more than one child</p>|Container type|<strong>CONTAINERV</strong>|<strong>CONTAINERH, TABBED</strong>|
+|childrenAlignment|Alignment of child components inside a container. Acceptable values: <strong>START</strong>, <strong>CENTER</strong>, <strong>END</strong>|Alignment type|<strong>START</strong>|<strong>CENTER</strong>|
+|columns|Number of columns in a <strong>COLUMNS</strong> type container|Integer literal|4|3|
+|columnLabelsWidth|Width of component captions in a <strong>COLUMNS</strong> type container.|Integer literal|0|50|
+|showIf|Specifies a condition under which the container will be displayed.|[Expression](Expression.md)|<strong>NULL</strong>|isLeapYear(date), hasComplexity(a, b)|
 
 ### *Properties of actions and properties on the form*
 
-[table was removed]
+|Property name|Description|Value type|Default value|Examples|
+|---|---|---|---|---|
+|caption|Caption of a property or action|String literal|caption of a property or action|'Caption'|
+|askConfirm|Specifies that an attempt to change the property (execute an action) will show a confirmation request|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|askConfirmMessage|Text of the confirmation request shown when an attempt to change the property (execute the action) is made|String literal|default message|'Are you sure you want to modify this property?'|
+|autoSize|Automatic component size option. Applies to text components only|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|valueWidth|Width of the property value cell in pixels|Integer literal|depends on the property|100|
+|charWidth|Width of the property value cell in characters|Integer literal|depends on the property|10|
+|charHeight|Height of the property value cell in characters (rows).|Integer literal|depends on the property|2, 3|
+|clearText|Specifying that the current text should be reset when input starts|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|echoSymbols|Specifying that a set of '*' characters will be displayed instead of the property value. Used for passwords, for example|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|changeKey|<p>The key that will trigger the property change event. The definition principle is similar to specifying a parameter in [Keystroke.getKeystroke(String)](https://docs.oracle.com/javase/8/docs/api/javax/swing/KeyStroke.html#getKeyStroke-java.lang.String-)</p>|String literal|<strong>NULL</strong>|'ctrl F6', 'BACK_SPACE', 'alt shift X'|
+|showChangeKey|Specifying that the property caption will include that name of the key shortcut that will trigger the change event|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|editOnSingleClick|Specifying that change event should be triggered after the property component is clicked once|Extended Boolean literal|depends on the property|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|focusable|Specifying that the property (action) component or a table column can get focus|Extended Boolean literal|changeKey = <strong>NULL</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|captionFont|The font that will be used to display the property caption|String literal|depends on the component|'Tahoma bold italic 16', 'Times 12'|
+|hide|Specifying that the property (action) component should be always hidden|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|imagePath|The path to the file with the image to be displayed as an action icon. The path is specified relative to the <strong>images</strong> folder|String literal|<strong>NULL</strong>|'image.png', 'pring.png' |
+|maxValue|The maximum numerical value that the property component can have|Integer literal|<strong>NULL</strong>|1000000, 5000000000L|
+|notNull|Specifies that in case of a <strong>NULL</strong> property value, the component of this property should be highlighted|Extended Boolean literal|depends on the property|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|panelCaptionAbove|Indicates that the captions of property or action components should be drawn above the value on the panel|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|<p>panelCaptionAfter</p>|Indicates that the value should be drawn on the panel prior to thee property caption|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|regexp|The regular expression that the property value must match during input|String literal|<strong>NULL</strong>|'^((8\|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'|
+|regexpMessage|The message to be shown to the user if they enter a value that does not match the regular expression|String literal|default message|'Incorrect phone number format'|
+|<p>toolTip</p>|The tip to be shown when the cursor hovers over the caption of a property or action|String literal|Default toolTip|'Tip'|
+|pattern|Property value formatting template. The syntax of template definition is similar to the [DecimalFormat](https://docs.oracle.com/javase/8/docs/api/java/text/DecimalFormat.html) or [SimpleDateFormat](https://docs.oracle.com/javase/8/docs/api/java/text/SimpleDateFormat.html) syntax, depending on the value type|String literal|<strong>NULL</strong>|<pre><code>&#39;#,##0.00&#39;</code></pre>|
 
 ### *Toolbar properties*
 
-[table was removed]
+|Property name|Description|Value type|Default value|Examples|
+|---|---|---|---|---|
+|showCalculateSum|Show the column sum calculation button|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|showCountQuantity|Show the row quantity calculation button|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|showGroupChange|Show the group adjustment button|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|showGroup|Show the grouping report button|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|showPrintGroup|Show the table printing button|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|showPrintGroupXls|Show the XLS export button|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|showSettings|Show the table setting button|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
 
 ### *Other properties*
 
-[table was removed]
+|Property name|Applies to|Description|Value type|Default value|Examples|
+|---|---|---|---|---|---|
+|tabVertical|table|Specifying that focus will be moved from top to bottom (not from left to right)|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|quickSearch|table|Specifying that the table will support quick element search|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|visible|custom filter, class tree|Specifying the visibility of the component for setting custom filters (class tree)|Extended Boolean literal|<strong>TRUE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
 
 ### *Selector parameters*
 

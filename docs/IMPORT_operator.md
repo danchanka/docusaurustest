@@ -29,7 +29,14 @@ The **IMPORT** operator creates an action that imports data from a specified fil
 
 If * *the format of the imported file* *is not specified, it is determined automatically depending on the class of the imported file (or on the extension, if the class is **FILE**), in the following way:
 
-[table was removed]
+|<p>Format</p>|<p>Extension</p>|Class|
+|---|---|---|
+|<strong>JSON</strong>|json|<strong>JSONFILE</strong>|
+|<strong>XML</strong>|xml|<strong>XMLFILE</strong>|
+|<strong>CSV</strong>|csv|<strong>CSVFILE</strong>|
+|<strong>XLS</strong>|xls or xlsx|<strong>EXCELFILE</strong>|
+|<strong>DBF</strong>|dbf|<strong>DBFFILE</strong>|
+|<strong>TABLE</strong>|table|<strong>TABLEFILE</strong>|
 
   
 

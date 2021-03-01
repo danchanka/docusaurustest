@@ -8,7 +8,13 @@ The result of that execution will be either a [property](Properties.md) or a par
 
 An expression can be described by the following set of recursive rules:
 
-[table was removed]
+|<strong>Rule</strong>|<strong>Description</strong>|
+|---|---|
+|<pre><code>expression := parameter \| constant \| prefixOperator</code></pre>|A single parameter, [constant](Constant.md), or non-arithmetic prefix operator|
+|<pre><code>expression := prefixArithmOp expression</code></pre>|A unary arithmetic prefix operator, with the expression passed to it as an operand|
+|<pre><code>expression := expression postfixOp</code></pre>|A unary postfix operator, with the expression passed to it as an operand|
+|<pre><code>expression := expression binaryOp expression</code></pre>|A binary operator with the expressions passed to it as operands|
+|<pre><code>expression := ( expression )</code></pre>|Expression in parentheses|
 
 An expression cannot include [context-independent](Property_operators.md#context-independent-operators) property operators.
 

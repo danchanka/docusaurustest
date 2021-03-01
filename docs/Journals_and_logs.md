@@ -87,7 +87,11 @@ The retention time for these logs is set to the same retention time as for the C
 
 The following set of logs is supported for each platform component in the platform:
 
-[table was removed]
+|Component|Folder|Logs|
+|---|---|---|
+|Application server (Server)|$FUSION_DIR$/logs, where $FUSION_DIR$ is the application server startup folder|<div class="content-wrapper"><br/><ul><br/><li>stdout - standard output log (output to the standard output stream, i.e. to the OS console, IDE, etc.). Includes start and explain logs.</li><br/><li>stderr - general error log</li><br/><li>start - a log of the stop and start process</li><br/><li>remote, invocation - logs of processes related to accessing the application server</li><br/><li>sql, sqlhand, sqlconnection, sqlconflict, sqladjust - logs of processes related to accessing the database server</li><br/><li>explain, explaincompile - logs where query plans are displayed (database server and application server, respectively)</li><br/><li>lru - log of memory management processes (mainly LRU caches)</li><br/><li>allocatedbytes - log of memory allocation processes</li><br/><li>assert - a log of various checks on meeting specified conditions (or rather, non-meeting)</li><br/><li>mail - mail log</li><br/><li>jasperReports - JasperReports log</li><br/><li>jdbc - jdbc driver log</li><br/><li>exinfo - a log of additional information (not included in the above)</li><br/></ul><br/></div>|
+|Web server (Client)|$CATALINA_BASE$/logs,  where $CATALINA_BASE$ is the folder where Tomcat is installed|<ul><br/><li>catalina.out - general output log</li><br/><li>gwtlog, gwtlog-err - GWT logs</li><br/><li>invocation - logs of processes related to accessing the web server</li><br/></ul>|
+|Desktop client|$USER_DIR$/.fusion/logs, where $USER_DIR$ is the user folder|<ul><br/><li>stdout - standard output log (output to the standard output stream, i.e. to the OS console, IDE, etc.).</li><br/><li>stderr - general error log</li><br/><li>remote, invocation - logs of processes related to accessing the application server</li><br/><li>jasperReports - JasperReports log</li><br/></ul>|
 
   
 

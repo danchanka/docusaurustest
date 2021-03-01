@@ -14,7 +14,11 @@ For each property, you can specify in which table it should be stored. In this c
 
 For each table created in the platform, a corresponding table is created in the database, which name, depending on the selected naming policy, is defined as follows:
 
-[table was removed]
+|Naming policy|Field name|
+|---|---|
+|Full with signature (default)|<strong><strong>NameSpace_TableName</strong><br /><br/></strong>|
+|Full without signature|<strong>NameSpace_TableName</strong>|
+|Short|<strong>TableName</strong>|
 
 The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#namingpolicy-broken) startup parameter.
 
@@ -22,7 +26,11 @@ The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#na
 
 The values of each property are always stored exactly in one field, which name, depending on the selected naming policy, is defined as follows:
 
-[table was removed]
+|Naming policy|Field name|
+|---|---|
+|Full with signature (default)|<strong>NameSpace_PropertyName_ClassName1_ClassName2_..,ClassNameN</strong>|
+|Full without signature|<strong>NameSpace_PropertyName</strong>|
+|Short|<strong>PropertyName</strong>|
 
 If necessary, for each property, the developer can explicitly specify the name of the field in which this property will be stored. Also, it is possible to create a custom policy for naming property fields if the above does not suit for some reason.
 

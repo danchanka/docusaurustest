@@ -20,7 +20,15 @@ If, after performing the last selection operation, there remains:
 
 Below are the steps, conditions and operations of the search algorithm, depending on the type of the required element:
 
-[table was removed]
+|Element type|Search step|Step conditions|Selection conditions|Selection operations|
+|---|---|---|---|---|
+|[Modules](Modules.md)|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name equals[...](#name-matches)</li><br/></ul>|<br /><br/>|
+|[Forms](Forms.md), [Classes](User_classes.md), [Navigator Elements](Navigator.md), [Property and action groups](Groups_of_properties_and_actions.md) , [Tables](Tables.md), [Navigator Design](Navigator_design.md)|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located in dependent module[...](#located-in-dependent-module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#located-in-specified-namespace-if-explicitly-specified)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#selection-of-a-priority-namespace-if-the-namespace-is-not-explicitly-specified)</li><br/></ul>|
+|<p>[Metacodes](Metaprogramming.md)</p>|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located in dependent module[...](#located-in-dependent-module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#located-in-specified-namespace-if-explicitly-specified)</li><br/><li>Number of parameters matches[...](#number-of-parameters-matches)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#selection-of-a-priority-namespace-if-the-namespace-is-not-explicitly-specified)</li><br/></ul>|
+|[Properties](Properties.md), [Actions](Actions.md)|Local|<ul><br/><li>Search for property inside action[...](#search-for-property-inside-action)</li><br/><li>Namespace not specified explicitly[...](#namespace-not-specified-explicitly)</li><br/></ul>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located upper in the stack[...](#located-upper-in-the-stack)</li><br/><li>Parameters classes match[...](#suitable-classes-of-parameters)</li><br/></ul>|<ul><br/><li>Selection of more specific classes of parameters[...](#selection-of-more-specific-classes-of-parameters)</li><br/></ul>|
+|Local common|<ul><br/><li>Search for property inside action[...](#search-for-property-inside-action)</li><br/><li>Namespace not specified explicitly[...](#namespace-not-specified-explicitly)</li><br/></ul>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located upper in the stack[...](#located-upper-in-the-stack)</li><br/><li>Parameters classes intersect[...](#classes-of-parameters-intersect)</li><br/></ul>|<p><br /><br/></p><br/><p><br /><br/></p>|
+|Global|<br /><br/>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located in dependent module[...](#located-in-dependent-module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#located-in-specified-namespace-if-explicitly-specified)</li><br/><li>Parameters classes match[...](#suitable-classes-of-parameters)</li><br/><li>Abstract property (if an abstract property is being searched for)[...](#abstract-property-if-an-abstract-property-is-being-searched-for)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#selection-of-a-priority-namespace-if-the-namespace-is-not-explicitly-specified)</li><br/><li>Selection of non-matching classes of parameters (if an abstract property is being searched for)[...](#selection-of-non-matching-classes-of-parameters-if-an-abstract-property-is-being-searched-for)</li><br/><li>Selection of more specific classes of parameters[...](#selection-of-more-specific-classes-of-parameters)</li><br/></ul>|
+|Global common|<ul><br/><li>Not searching for an abstract property[...](#not-searching-for-an-abstract-property)</li><br/></ul>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located in dependent module[...](#located-in-dependent-module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#located-in-specified-namespace-if-explicitly-specified)</li><br/><li>Parameters classes intersect[...](#classes-of-parameters-intersect)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#selection-of-a-priority-namespace-if-the-namespace-is-not-explicitly-specified)</li><br/></ul>|
 
 Description of steps, conditions and operations of the search algorithm:
 
@@ -116,13 +124,27 @@ Let's say that the classes of parameters (A1, ..., An) *intersect with* the cla
 
 When a call is made a property (action), if the parameter classes are not explicitly set, the platform tries to automatically determine them from the reference context. The following is an (incomplete) list of possible contexts, and how the platform determines the referring parameter classes in these cases:
 
-[table was removed]
+|Context|Call parameter classes|
+|---|---|
+|Composition / Call|Classes of the values of argument properties|
+|Use on the form|Classes of objects taken by the required property/action|
+|Add actions to the navigator|Empty list|
+|Results of input, external access|Empty list|
+|Simple partitioning|Classes of the values of group properties (<strong>BY</strong> block)|
+|Nested local properties in session operators|Unknown|
+|Data import|If a list of values is imported (<strong>LIST</strong>), the empty list, otherwise a list of a single <strong>INTEGER</strong> element|
 
 *Determining parameter classes of a property (action)*
 
 If the parameter classes of a property (action) are not explicitly specified, the platform tries to automatically determine them from the property (action) implementation. The following is an (incomplete) list of possible implementations, and how the platform determines property (action) parameter classes in these cases:
 
-[table was removed]
+|Context|Call parameter classes|
+|---|---|
+|Expressions|Classes of the parameters (in the order of their use)|
+|Primary, Abstract|Classes are specified explicitly in the operator itself|
+|Formula, Internal Call|The classes can be specified explicitly in the operator itself; if not specified, all parameter classes are considered unknown (<strong>?</strong>) and the number is determined by the specifics of the particular operator|
+|Grouping|Classes of the values of group properties (<strong>BY</strong> block)|
+|Operations with object groups|Classes of objects belonging to the used objects group|
 
 ### Examples
 

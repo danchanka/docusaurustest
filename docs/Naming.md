@@ -38,7 +38,26 @@ Since properties and actions can have the same names within the same namespace, 
 
 Since the signature of properties/actions do not have to contain only custom classes, canonical names are also determined for builtin classes: 
 
-[table was removed]
+|Class name|Canonical name|
+|---|---|
+|<strong>INTEGER</strong>|<strong>INTEGER</strong>|
+|<strong>LONG</strong>|<strong>LONG</strong>|
+|<strong>DOUBLE</strong>|<strong>DOUBLE</strong>|
+|<strong>NUMERIC[ , ]</strong>|<strong>NUMERIC</strong>|
+|<strong>BOOLEAN</strong>|<strong>BOOLEAN</strong>|
+|<strong>DATE</strong>|<strong>DATE</strong>|
+|<strong>DATETIME</strong>|<strong>DATETIME</strong>|
+|<strong>TIME</strong>|<strong>TIME</strong>|
+|<strong>YEAR</strong>|<strong>YEAR</strong>|
+|<strong>STRING, STRING[ ]</strong>|<strong>STRING</strong>|
+|<strong>ISTRING, ISTRING[ ]</strong>|<strong>STRING</strong>|
+|<strong>BPSTRING[ ]</strong>|<strong>STRING</strong>|
+|<strong>BPISTRING[ ]</strong>|<strong>STRING</strong> |
+|<strong>TEXT</strong>|<strong>STRING</strong> |
+|<strong>ITEXT</strong>|<strong>STRING</strong> |
+|<strong>RICHTEXT</strong>|<strong>STRING</strong> |
+|<strong>COLOR</strong>|<strong>COLOR</strong>|
+|<strong>FILE,RAWFILE...</strong>|<strong>FILE,RAWFILE...</strong>|
 
 In some cases, an element of the property signature may be not a single class but a set of classes. In this case, the canonical name will be more complex.
 
