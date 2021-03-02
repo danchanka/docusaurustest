@@ -8,6 +8,16 @@ export const CodeSample = ({url, lines}) => {
               .then(content => setContent(content))
   }, [url, setContent])
   if (!content) return (<CodeBlock className='lsf'>loading...</CodeBlock>)
-  if (!lines) return (<CodeBlock className='lsf'>{content}</CodeBlock>)
-  return (<CodeBlock className='lsf' metastring={lines}>{content}</CodeBlock>)
+  if (!lines) return (
+    <>
+      <CodeBlock className='lsf'>{content}</CodeBlock>
+      <br/>
+    </>  
+  )
+  return (
+    <>
+      <CodeBlock className='lsf' metastring={lines}>{content}</CodeBlock>
+      <br/>
+    </>
+  )    
 };
