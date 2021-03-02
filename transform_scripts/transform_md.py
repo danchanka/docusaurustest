@@ -187,7 +187,7 @@ def load_samples_map():
 
 def header_text_to_anchor(text):
     anchor = re.sub(r'\s+', '-', text.lower())
-    anchor = re.sub(r'[/()]', '', anchor)
+    anchor = re.sub(r'[/()\']', '', anchor)
     return anchor
 
 def fix_anchors(data, anchors_map, filename, logfile):
