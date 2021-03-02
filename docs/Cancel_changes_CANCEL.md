@@ -7,7 +7,7 @@ The *cancel changes* operator completely clears the current [change session](Cha
 As with other session management operators, you can explicitly specify [nested local properties](Session_management.md#nested-local-properties) for the cancel operator.
 
 :::caution
-<p>This operator works differently if executed inside [events](Events.md#change-operators'-event-mode) handling: in this case, it cancels [applying the changes](Apply_changes_APPLY.md) that led to this handling</p>
+This operator works differently if executed inside [events](Events.md#change-operators'-event-mode) handling: in this case, it cancels [applying the changes](Apply_changes_APPLY.md) that led to this handling
 :::
 
 ### Language

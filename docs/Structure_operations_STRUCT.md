@@ -12,7 +12,7 @@ The term *structure* is used in the platform to refer to the [classes](Classes.m
 Structures support comparison operations which are executed sequentially for each object included in the structure. 
 
 :::caution
-<p>To better understand how this works, it’s sufficient to say that physically a structure is just a concatenation of the objects included in this structure converted to bit strings</p>
+To better understand how this works, it’s sufficient to say that physically a structure is just a concatenation of the objects included in this structure converted to bit strings
 :::
 
 ### Language
