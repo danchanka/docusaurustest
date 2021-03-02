@@ -64,7 +64,9 @@ def transform_tables(data, filename, samples_links):
 
 def transform_simple_table(lines):
     data = '\n'.join(lines)
-    data = re.sub(r'<a href="(.*?)">(.*?)</a>', r'[\2](\1)', data)
+    data = transform_links_inside_table(data)
+    data = remove_style_from_table(data) 
+
     rows = []
     pos = 0
     while True:
@@ -83,6 +85,12 @@ def transform_simple_table(lines):
         return create_md_table(rows)    
     return data.split('\n')
 
+def transform_links_inside_table(data):
+    return re.sub(r'<a href="(.*?)">(.*?)</a>', r'[\2](\1)', data)
+
+def remove_style_from_table(data):
+    return re.sub(r'\bstyle=".*?"', '', data) 
+
 def get_table_row(data):
     row = []
     pos = 1
@@ -100,7 +108,7 @@ def get_table_row(data):
 
 
 def create_caution_block(rows):
-    return [':::caution', rows[0][1], ':::']
+    return [':::caution', rows[0][1].replace('<p>', '').replace('</p>', ''), ':::']
 
 def create_md_table(rows):
     cells_cnt = len(rows[0])
