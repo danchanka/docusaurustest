@@ -28,9 +28,9 @@ def add_file_id(filename, mdname, id_to_md):
     if match:
         id_to_md[match.group(1)] = mdname
 
-def parse_confluence_xml(id_to_md):
+def parse_confluence_xml(id_to_md, xml_filename):
     samples_links = {}
-    with open('entities.xml', 'r', encoding='utf-8') as xmlfile:
+    with open(xml_filename, 'r', encoding='utf-8') as xmlfile:
         root = ET.fromstring(xmlfile.read())
         for obj in root.iter('object'):
             if obj.get('class') == 'BodyContent':
@@ -52,10 +52,11 @@ def parse_confluence_xml(id_to_md):
                     #     # print(f'id {id} not in dict')
     return samples_links
 
+settings = json.load(open(sys.argv[1], 'r', encoding='utf-8'))
 file_dict = {}
 anchor_dict = {}
 id_to_md = {}
-indir = sys.argv[1]
+indir = settings['html_dir']
 print('building maps...')
 for filename in os.listdir(indir):
     fullname = indir + '/' + filename 
@@ -66,11 +67,11 @@ for filename in os.listdir(indir):
             add_to_anchormap(data, file_dict[filename], anchor_dict)
             add_file_id(filename, file_dict[filename], id_to_md)
 
-json.dump(file_dict, open('filemap.json', 'w', encoding='utf-8'), indent=4)
-json.dump(anchor_dict, open('anchormap.json', 'w', encoding='utf-8'), indent=4)
+json.dump(file_dict, open(settings['filemap'], 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
+json.dump(anchor_dict, open(settings['anchormap'], 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
 
-samples_dict = parse_confluence_xml(id_to_md)
+samples_dict = parse_confluence_xml(id_to_md, settings['xml_file'])
 # print(len(samples_dict)) 
-json.dump(samples_dict, open('samples.json', 'w', encoding='utf-8'), indent=4)
+json.dump(samples_dict, open(settings['samples'], 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
 
 print('end of building maps')

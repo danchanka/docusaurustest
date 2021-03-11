@@ -72,7 +72,7 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/danchanka/docusaurustest',
+              href: 'https://github.com/lsfusion/platform',
             },
           ],
         },

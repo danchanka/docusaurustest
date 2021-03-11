@@ -109,14 +109,14 @@ The value assigned to the corresponding container property. Acceptable value typ
 |defaultComponent|<p>Specifying that this component should get the focus when the form is initialized. Can only be set for one component on the entire form</p>|Extended [Boolean literal](Literals.md#booleanliteral-broken)|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
 |align, alignment|Component alignment inside the container. Acceptable values: <strong>START</strong> (at the beginning), <strong>CENTER</strong> (in the center), <strong>END</strong> (at the end), <strong>STRETCH</strong> (stretched).|Alignment type|<strong>START</strong>|<strong>STRETCH</strong>|
 |flex|Extension coefficient. Value of a property similar to the [CSS flex-grow](http://www.w3schools.com/cssref/css3_pr_flex-grow.asp) property. Defines how much the component should grow in size relative to other components.|[<strong>NUMERIC</strong> type literal](Literals.md#numericliteral-broken)|0|0.25|
-|fill|Similar to the <em>flex</em> property, the only difference being that if a zero value is set, the <em>align</em> property is set to <strong>START</strong>, otherwise <em>align</em> is set to <strong>STRETCH</strong>|<strong>NUMERIC</strong> type literal|0|<p>1.5</p>|
+|fill|Similar to the *flex* property, the only difference being that if a zero value is set, the *align* property is set to <strong>START</strong>, otherwise *align* is set to <strong>STRETCH</strong>|<strong>NUMERIC</strong> type literal|0|<p>1.5</p>|
 |noSort |No sorting|[Logical literal](Literals.md#booleanliteral-broken)|<strong>FALSE</strong>|<p><strong>TRUE</strong>, <strong>FALSE</strong></p>|
 |defaultCompare|Default filter. Acceptable values: <strong>EQUALS</strong>, <strong>GREATER</strong>, <strong></strong> <strong>LESS</strong>, <strong></strong> <strong>GREATER_EQUALS</strong>, <strong></strong> <strong>LESS_EQUALS</strong>, <strong>NOT_EQUALS</strong>, <strong>START_WITH</strong>, <strong>CONTAINS</strong>, <strong></strong> <strong>ENDS_WITH</strong>, <strong>LIKE.</strong>|String literal|<strong>CONTAINS</strong>|<p><strong>START_WITH</strong></p>|
 |marginTop|Top margin|Integer literal|0|3|
 |marginRight|Right margin|Integer literal|0|1|
 |marginBottom|Bottom margin|Integer literal|0|4|
 |marginLeft|Left margin|Integer literal|0|1|
-|margin|Margin. Sets the same value to the following properties: <em>marginTop</em>, <em>marginRight</em>, <em>marginBottom</em>, <em>marginLeft</em>|Integer literal|0|5|
+|margin|Margin. Sets the same value to the following properties: *marginTop*, *marginRight*, *marginBottom*, *marginLeft*|Integer literal|0|5|
 
 ### *Container properties*
 

@@ -1,28 +1,21 @@
 import sys, re, os, json
 
-def get_dirs():
-    usage_string = 'Usage: transform_md.py input_dir [output_dir]' 
-    if len(sys.argv) < 2:
-        print(usage_string)
-        sys.exit()
-
-    input_dir = sys.argv[1]
+def get_dirs(settings):
+    input_dir = settings["input_dir"]
     if not os.path.isdir(input_dir):                
         print(f'"{input_dir}" is not a correct path to directory. ' + usage_string)
         sys.exit()
 
-    output_dir = input_dir
-    if len(sys.argv) > 2:    
-        output_dir = sys.argv[2]
-        if not os.path.isdir(output_dir):
-            os.makedirs(output_dir)
+    output_dir = settings["output_dir"]
+    if not os.path.isdir(output_dir):
+        os.makedirs(output_dir)
     if not input_dir.endswith('/'):
         input_dir += '/'        
     if not output_dir.endswith('/'):
         output_dir += '/'        
     return input_dir, output_dir
 
-def transform_tables(data, filename, samples_links):
+def transform_tables(data, filename, samples_links, samples_url):
     lines = data.split('\n')
     nlines = []
     table_lines = []
@@ -41,7 +34,7 @@ def transform_tables(data, filename, samples_links):
                         nlines.append('')
 
                     # <CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=write"/>                        
-                    url = samples_links[sample_index].replace("http://localhost:5000/samphighl", "https://documentation.lsfusion.org/sample")    
+                    url = samples_links[sample_index].replace("http://localhost:5000/samphighl", samples_url)    
                     nlines.append(f'<CodeSample url="{url}"/>')
                     sample_index += 1
                 # else:    
@@ -57,6 +50,7 @@ def transform_tables(data, filename, samples_links):
             if opened == 0 and inside_simple_table:
                 inside_simple_table = False
                 transformed_table_lines = transform_simple_table(table_lines)
+                transformed_table_lines = extra_execution_auto_file_check(filename, transformed_table_lines)
                 nlines.extend(transformed_table_lines)
                 table_lines = []
 
@@ -66,7 +60,7 @@ def transform_simple_table(lines):
     data = '\n'.join(lines)
     data = transform_links_inside_table(data)
     data = remove_style_from_table(data) 
-
+    data = replace_em_tag(data)
     rows = []
     pos = 0
     while True:
@@ -85,11 +79,26 @@ def transform_simple_table(lines):
         return create_md_table(rows)    
     return data.split('\n')
 
+def extra_execution_auto_file_check(filename, lines):
+    if filename == 'Выполнение_авто.md' or filename == 'Execution_auto.md':
+        data = '\n'.join(lines)
+        data = re.sub(r'<code class=.*?>', '', data).replace('</code>', '')
+        data = re.sub(r'<pre class=.*?>', '', data).replace('</pre>', '')
+        if filename == 'Выполнение_авто.md':
+            data = data.replace('$INSTALL_DIR/Server/bin/lsfusion4_serverw.exe', '$INSTALL\\_DIR/Server/bin/lsfusion4\\_serverw.exe')
+            data = data.replace('FUSION_OPTS', 'FUSION\\_OPTS')
+        return data.split('\n')
+    return lines    
+
 def transform_links_inside_table(data):
     return re.sub(r'<a href="(.*?)">(.*?)</a>', r'[\2](\1)', data)
 
 def remove_style_from_table(data):
     return re.sub(r'\bstyle=".*?"', '', data) 
+
+def replace_em_tag(data):
+    data = re.sub(r'<em.*?>', '*', data)
+    return data.replace('</em>', '*')
 
 def get_table_row(data):
     row = []
@@ -168,22 +177,22 @@ def make_headers(data):
 def fix_image_links(data):
     return re.sub(r'<img src="(.*?)".*?/>', r'![](\1)', data)
 
-def transform_file_content(data, filename, samples_links):
-    data = transform_tables(data, filename, samples_links)
+def transform_file_content(data, filename, samples_links, samples_url):
+    data = transform_tables(data, filename, samples_links, samples_url)
     data = replace_html_ltgt(data)
     data = create_title(data)
     data = make_headers(data)
     data = fix_image_links(data)
     return data    
     
-def load_filemap():
-    return json.load(open('filemap.json', 'r', encoding='utf-8'))
+def load_filemap(filename):
+    return json.load(open(filename, 'r', encoding='utf-8'))
 
-def load_anchors_map():
-    return json.load(open('anchormap.json', 'r', encoding='utf-8'))
+def load_anchors_map(filename):
+    return json.load(open(filename, 'r', encoding='utf-8'))
 
-def load_samples_map():
-    return json.load(open('samples.json', 'r', encoding='utf-8'))
+def load_samples_map(filename):
+    return json.load(open(filename, 'r', encoding='utf-8'))
 
 def header_text_to_anchor(text):
     anchor = re.sub(r'\s+', '-', text.lower())
@@ -191,8 +200,8 @@ def header_text_to_anchor(text):
     return anchor
 
 def fix_anchors(data, anchors_map, filename, logfile):
-    data = re.sub(r'\.md#.*?-([^-]*?)\)', r'.md#\1)', data)  # '.md#WRITEoperator-extension)' -> '.md#extension'
-    data = re.sub(r'\(#.*?-([^-]*?)\)', r'(#\1)', data) # '(#Interactiveview-delete)' -> '(#delete)'
+    data = re.sub(r'\.md#.*?-([^-()]*?)\)', r'.md#\1)', data)  # '.md#WRITEoperator-extension)' -> '.md#extension'
+    data = re.sub(r'\(#.*?-([^-()]*?)\)', r'(#\1)', data) # '(#Interactiveview-delete)' -> '(#delete)'
 
     replacements = {}
     for r in re.finditer(r'\]\(([^)]*?\.md)#([^)]*?)\)', data): # ](filename.md#id)
@@ -218,15 +227,16 @@ def fix_anchors(data, anchors_map, filename, logfile):
         data = data.replace(key, value)            
     return (data, len(replacements) - broken, broken) 
 
-def fix_links(data, anchors_map, filename, logfile):
-    html_to_md = load_filemap()
+def fix_links(data, anchors_map, filename, logfile, filemap_name):
+    html_to_md = load_filemap(filemap_name)
     for html, md in html_to_md.items():
         data = data.replace(html, md)
+    data = re.sub(r'(\[[^\[]*?\])\(\.\./\w+?/(.*?)\)', r'\1(\2)', data) # [Learn](../LSFUS/Learn.md) -> [Learn](Learn.md)
     data = fix_anchors(data, anchors_map, filename, logfile)    
     return data
 
-def filter_anchor_links(files, logfile):
-    anchor_map = load_anchors_map()
+def filter_anchor_links(files, logfile, anchormap_filename):
+    anchor_map = load_anchors_map(anchormap_filename)
     for filename in files:
         if filename in anchor_map:
             data = files[filename]
@@ -240,9 +250,15 @@ def filter_anchor_links(files, logfile):
 
 print('transform started..')
 
-indir, outdir = get_dirs()
+usage_string = 'Usage: transform_md.py settings_file' 
+if len(sys.argv) < 1:
+    print(usage_string)
+    sys.exit()
+
+settings = json.load(open(sys.argv[1], 'r', encoding='utf-8'))
+indir, outdir = get_dirs(settings)
 files = {}
-samples_links = load_samples_map()
+samples_links = load_samples_map(settings["samples"])
 
 for filename in os.listdir(indir):
     fullname = indir + filename 
@@ -251,21 +267,21 @@ for filename in os.listdir(indir):
         data = infile.read()
         infile.close()
         if len(data) > 0 and data[0] == '#': # not transformed earlier
-            data = transform_file_content(data, filename, samples_links[filename])
+            data = transform_file_content(data, filename, samples_links[filename], settings["samples_url"])
             files[filename] = data
 
-logfile = open('anchors.log', 'w', encoding='utf-8')
-anchors_map = filter_anchor_links(files, logfile)
+logfile = open(settings["anchors_log"], 'w', encoding='utf-8')
+anchors_map = filter_anchor_links(files, logfile, settings["anchormap"])
 # json.dump(anchors_map, logfile, indent=4)
 success = 0
 fail = 0
 for filename, data in files.items():
-    data, s, f = fix_links(data, anchors_map, filename, logfile)
+    data, s, f = fix_links(data, anchors_map, filename, logfile, settings["filemap"])
     success += s
     fail += f
     with open(outdir + filename, 'w', encoding='utf-8') as outfile:
         outfile.write(data)
 
-logfile.write(f'success: {success}, fail: {fail}, percent: {success / (success + fail)}')    
+logfile.write(f'success: {success}, fail: {fail}, percent: {0 if success + fail == 0 else success / (success + fail)}')    
 
 print('transform finished')
