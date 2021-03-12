@@ -67,7 +67,7 @@ Keyword. Specifies that the operator executes an action of another lsFusion serv
 
 lsfExecType
 
-Keyword. Specifies the [way of defining](Access_from_an_external_system.md#defining-an-action) the action:
+Keyword. Specifies the [way of defining](Access_from_an_external_system.md#actiontype) the action:
 
 -   **EXEC** – the name of the action is specified.
 -   **EVAL** – the code of the action is specified in the lsFusion language. It is assumed that this code contains a declaration of an action named **run**. This is the action that will be called.

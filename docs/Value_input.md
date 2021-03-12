@@ -7,15 +7,15 @@ This category includes operators responsible for inputting a value:
 -   [Value input (INPUT)](Primitive_input_INPUT.md)
 -   [Value request (REQUEST)](Value_request_REQUEST.md)
 
-In addition to the above operators, data input is also performed via the *dialog forms* of message display  [(ASK)](Show_message_MESSAGE_ASK.md#dialog-form)  and [form opening (DIALOG)](In_an_interactive_view_SHOW_DIALOG.md#dialog-form) operators in an interactive view.
+In addition to the above operators, data input is also performed via the *dialog forms* of message display  [(ASK)](Show_message_MESSAGE_ASK.md#dialog)  and [form opening (DIALOG)](In_an_interactive_view_SHOW_DIALOG.md#dialog) operators in an interactive view.
 
-### Cancellation and input result
+### Cancellation and input result {#result}
 
 In value input operators, an input operation can be  *canceled* (for each operator, this situation is determined in its own way)*.*If it happens, a **TRUE** value  is written to the **System.requestCanceled** property (otherwise it will be **NULL**).
 
 For all value input operators, the platform allows to specify an action (let's call it  *main action*) that will be executed only if the input operation is successful (i.e. not canceled). The input result (if any) is passed to this action as a parameter. You can specify an *alternative* action for all value input operators that will be executed if an operation is canceled.
 
-### Initial values and automatic change
+### Initial values and automatic change {#initial}
 
 Value input often assumes the presence of a certain *initial* (previous) value that the input starts from (that is, the initial value is assigned to the current one) and that the user can subsequently change. Like most other values, the initial value is defined as a property.
 

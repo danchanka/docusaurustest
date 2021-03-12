@@ -66,7 +66,7 @@ The predefined LOCAL value may be used as the connection string. In this case th
 
 For this type of interaction, the following things need to be specified: the connection string for connecting to the lsFusion server (or its web server, if any), the action being executed, and the list of properties (without parameters) to whose values the results of the call will be written. The parameters passed must match the parameters of the action being performed by number and by class.
 
-The way of defining an action in this type of interaction fully corresponds to the [way of defining](Access_from_an_external_system.md#defining-an-action) an action during [access from an external system](Access_from_an_external_system.md).
+The way of defining an action in this type of interaction fully corresponds to the [way of defining](Access_from_an_external_system.md#actiontype) an action during [access from an external system](Access_from_an_external_system.md).
 
 By default, this type of interaction is implemented via HTTP protocol using the corresponding interfaces for access [to](#http-broken) and [from](Access_from_an_external_system.md#http-broken) an external system.
 

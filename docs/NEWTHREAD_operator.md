@@ -17,7 +17,7 @@ The **NEWTHREAD** operator creates an action that executes another action in a 
 
 *action *
 
-A [context dependent operator](Action_operator.md#context-dependent-operators) that defines an action to be executed in the new thread.
+A [context dependent operator](Action_operator.md#contextdependent) that defines an action to be executed in the new thread.
 
 *connectionExpr*
 

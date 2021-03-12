@@ -27,7 +27,7 @@ The name of one of the [built-in classes](Built-in_classes.md). 
 
 expr
 
-        An [expression](Expression.md), which value determines the [initial value](Value_input.md#initial-values-and-automatic-change) of the input.
+        An [expression](Expression.md), which value determines the [initial value](Value_input.md#initial) of the input.
 
 *alias*
 
@@ -43,11 +43,11 @@ An [expression](Expression.md) that determines the property to which the input r
 
 *actionOperator*
 
-A [context-dependent action operator](Action_operator.md#context-dependent-operators) that is executed if the input was completed successfully.
+A [context-dependent action operator](Action_operator.md#contextdependent) that is executed if the input was completed successfully.
 
 *elseActionOperator*
 
-A [context-dependent action operator](Action_operator.md#context-dependent-operators) that is executed if the input was cancelled. The input result parameter cannot be used as parameters.
+A [context-dependent action operator](Action_operator.md#contextdependent) that is executed if the input was cancelled. The input result parameter cannot be used as parameters.
 
 ### Examples
 

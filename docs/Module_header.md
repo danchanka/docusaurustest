@@ -17,9 +17,9 @@ The module header can consist of four special instructions, in the following ord
 
 The **MODULE**  instruction defines the module name. It is required. Each module within one [project](Projects.md) must have a unique name.
 
-The **REQUIRE** instruction defines the list of modules on which the current module [depends](Modules.md#dependencies-between-modules). If the **REQUIRE** instruction is absent, that is equivalent to depending only on the **System** module.
+The **REQUIRE** instruction defines the list of modules on which the current module [depends](Modules.md#depends). If the **REQUIRE** instruction is absent, that is equivalent to depending only on the **System** module.
 
-The **PRIORITY** instruction defines the list of additional [namespaces](Naming.md#namespaces) that will have priority in [finding](Search.md) [system elements](Element_identification.md).
+The **PRIORITY** instruction defines the list of additional [namespaces](Naming.md#namespace) that will have priority in [finding](Search.md) [system elements](Element_identification.md).
 
 The **NAMESPACE** instruction defines the module's namespace.  
 

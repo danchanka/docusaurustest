@@ -53,7 +53,7 @@ The hierarchy described within a single **NAVIGATOR** instruction can have an ar
 
 *name*
 
-Navigator element name. In the create instruction, it is [a simple ID](IDs.md#id-broken) and must be unique within the current [namespace](Naming.md#namespaces), while in the rest of the instructions it is a [composite ID](IDs.md#cid-broken). The name does not have to be specified when creating a form element or action element. Here the form name or action name is used as the element name.
+Navigator element name. In the create instruction, it is [a simple ID](IDs.md#id-broken) and must be unique within the current [namespace](Naming.md#namespace), while in the rest of the instructions it is a [composite ID](IDs.md#cid-broken). The name does not have to be specified when creating a form element or action element. Here the form name or action name is used as the element name.
 
 *caption*
 

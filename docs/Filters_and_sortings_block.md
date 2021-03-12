@@ -2,7 +2,7 @@
 title: 'Filters and sortings block'
 ---
 
-The filter and order block of the [FORM instruction](FORM_instruction.md) – add [filters](Form_structure.md#filters) and [orderings](Form_structure.md#orders) to the form structure; add [filter groups](Interactive_view.md#filter-group) to the interactive form view.
+The filter and order block of the [FORM instruction](FORM_instruction.md) – add [filters](Form_structure.md#filters) and [orderings](Form_structure.md#sort) to the form structure; add [filter groups](Interactive_view.md#filtergroup) to the interactive form view.
 
 Fixed filter block
 
@@ -31,7 +31,7 @@ import {CodeSample} from './CodeSample.mdx'
 
   
 
-### Filter group block
+### Filter group block {#filtergroup}
 
 ### Syntax
 
@@ -77,7 +77,7 @@ A keyword specifying that the filter being added must be selected automatically 
 
   
 
-### Order block
+### Order block {#sort}
 
 ### Syntax
 

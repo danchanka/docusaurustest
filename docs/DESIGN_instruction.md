@@ -41,7 +41,7 @@ In turn, *groupObjectTreeSelector* can be one of two types:
 
 ### Description
 
-Using the **DESIGN** instruction the developer can manage the [design](Form_design.md) [of the](Interactive_view.md) interactive form view by creating, moving, and deleting containers and components, as well as changing their certain properties. By default, a [default design](Form_design.md#default-design)  is created for each form, along with appropriate containers. If necessary, you can recreate the design without the default containers and previously configured settings. This is done using the keyword **CUSTOM**.  
+Using the **DESIGN** instruction the developer can manage the [design](Form_design.md) [of the](Interactive_view.md) interactive form view by creating, moving, and deleting containers and components, as well as changing their certain properties. By default, a [default design](Form_design.md#defaultDesign)  is created for each form, along with appropriate containers. If necessary, you can recreate the design without the default containers and previously configured settings. This is done using the keyword **CUSTOM**.  
 
 Each block of design instructions enclosed in braces alows to modify a particular component and its descendants. Let's call this component the *current component* or the *current container* if we know that the component should be a container in our case. In the external block following the  **DESIGN **keyword, the **main** container is the current component. There are the following design instructions:
 

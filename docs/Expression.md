@@ -16,7 +16,7 @@ An expression can be described by the following set of recursive rules:
 |<pre><code>expression := expression binaryOp expression</code></pre>|A binary operator with the expressions passed to it as operands|
 |<pre><code>expression := ( expression )</code></pre>|Expression in parentheses|
 
-An expression cannot include [context-independent](Property_operators.md#context-independent-operators) property operators.
+An expression cannot include [context-independent](Property_operators.md#contextindependent) property operators.
 
 ### Examples
 

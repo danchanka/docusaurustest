@@ -55,7 +55,7 @@ Context dependent property operators can be part of [expressions](Expression.md)
 -   [Change operators](Change_operators.md)
 -   [Comparison operators](Comparison_operators.md)
 
-### Context independent operators
+### Context independent operators {#contextindependent}
 
 Context independent property operators differ from the context dependent ones in that they do not just use the upper parameters but define the parameters themselves. As a result, they cannot be part of expressions and can only be used in the [**=** instruction](Instruction_=.md) and the [**JOIN** operator](JOIN_operator.md): 
 

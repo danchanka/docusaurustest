@@ -3,15 +3,15 @@ title: 'Launch parameters'
 ---
 
 -   Application server (Server)
-    -   [Java](#java)
-    -   [lsFusion](#lsfusion)
+    -   [Java](#appjava)
+    -   [lsFusion](#applsfusion)
 -   Web server (Client)
-    -   [Java](#java)
-    -   [lsFusion](#lsfusion)
+    -   [Java](#webjava)
+    -   [lsFusion](#weblsfusion)
 
 ### Application server (Server)
 
-#### Java
+#### Java {#appjava}
 
 Java application server startup parameters are set in the launch command (for example, for [manual](Execution_manual.md#command-broken) or [automatic](Execution_auto.md#settings-broken) installation):
 
@@ -19,18 +19,18 @@ Java application server startup parameters are set in the launch command (for ex
 |---|---|---|---|---|
 |System (starting with X)|[Standard](https://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html)|<br /><br/>|<div class="content-wrapper"><br/><p>Standard Java parameters. It is important above all to pay attention to:</p><br/><ul><br/><li>cp - classpath, the paths in which java looks for class files and other resources (including lsFusion modules). The default is. - current folder (different for automatic installation).</li><br/><li>Xmx - maximum memory size. The default value is determined depending on the configuration of the computer on which the application server is running. For complex logics, it is recommended that you allocate at least 4GB. </li><br/></ul><br/></div>|<br /><br/>|
 |-XX:CMSInitiatingOccupancyFraction|int|In general, this is the standard parameter responsible for the threshold after which the CMS garbage collector is turned on. At the same time, the platform uses this parameter to target the memory usage amount using LRU caches (setting more aggressive parameters for cleaning them if this goal is exceeded, and less aggressive in the opposite case). For heavily loaded servers, it is recommended that you set it in the range from 40 to 60.|70|
-|Custom (starting with D)|<div class="content-wrapper"><br/><p>-Dlsfusion.server.lightstart</p><br/></div>|boolean|<p>"Light" start mode (usually used during development). In this mode, the server does not perform metadata synchronization operations or create [security policy](Security_policy.md) settings forms, etc., and the startup time and the amount of memory consumed at startup are therefore reduced.</p><br/><p>In the [IDE](IDE.md) it is set with a checkmark in [lsFusion server configuration](IDE.md#creating-a-server-startup-configuration) (enabled by default).</p>|false|
-|<div class="content-wrapper"><br/><p>-Dlsfusion.server.devmode</p><br/></div>|boolean|<p>Development mode. In this mode:</p><br/><ul><br/><li>System tasks are not launched (so as not to interfere with the debugger)</li><br/><li>You can edit [report design](Report_design.md) in [interactive print](In_a_print_view_PRINT.md#interactive-print-view) view</li><br/><li>Anonymous access to the API and UI is enabled ([system parameters](Working_parameters.md) enableAPI, enableUI). In addition, anonymous access in this mode is as an admin and not an anonymous user</li><br/><li>Client is automatically reconnected when connection is lost</li><br/><li>The cache for reading reports from resources is turned off</li><br/></ul><br/><p>In the [IDE](IDE.md), automatically enabled when running [lsFusion server configuration](IDE.md#creating-a-server-startup-configuration).</p>|false|
+|Custom (starting with D)|<div class="content-wrapper"><br/><p>-Dlsfusion.server.lightstart</p><br/></div>|boolean|<p>"Light" start mode (usually used during development). In this mode, the server does not perform metadata synchronization operations or create [security policy](Security_policy.md) settings forms, etc., and the startup time and the amount of memory consumed at startup are therefore reduced.</p><br/><p>In the [IDE](IDE.md) it is set with a checkmark in [lsFusion server configuration](IDE.md#configuration) (enabled by default).</p>|false|
+|<div class="content-wrapper"><br/><p>-Dlsfusion.server.devmode</p><br/></div>|boolean|<p>Development mode. In this mode:</p><br/><ul><br/><li>System tasks are not launched (so as not to interfere with the debugger)</li><br/><li>You can edit [report design](Report_design.md) in [interactive print](In_a_print_view_PRINT.md#interactive) view</li><br/><li>Anonymous access to the API and UI is enabled ([system parameters](Working_parameters.md) enableAPI, enableUI). In addition, anonymous access in this mode is as an admin and not an anonymous user</li><br/><li>Client is automatically reconnected when connection is lost</li><br/><li>The cache for reading reports from resources is turned off</li><br/></ul><br/><p>In the [IDE](IDE.md), automatically enabled when running [lsFusion server configuration](IDE.md#configuration).</p>|false|
 |-Dlsfusion.server.testmode|boolean|<p>Enables some experimental features</p><br/><p>Automatically enabled if assertions are enabled (-ea option)</p>|false|
 
-#### lsFusion
+#### lsFusion {#applsfusion}
 
 lsFusion startup parameters for server applications can be set in one of the following ways (in the order of their priorities, lower priority at the bottom):
 
 -   In the resources in the lsfusion.xml file in the places where these parameters are used, after: (relevant for platform forks)
 -   In lsfusion.properties (usually part of a project, which means it acts by default for all installations)
 -   In conf/settings.properties (for specific installations)
--   In the [Java startup options](#java) (starting with D, e.g. -Dlogics.topModule=FFF)
+-   In the [Java startup options](#appjava) (starting with D, e.g. -Dlogics.topModule=FFF)
 
 |Name|Type|Description|<p>Default</p>|
 |---|---|---|---|
@@ -38,7 +38,7 @@ lsFusion startup parameters for server applications can be set in one of the fo
 |<div class="content-wrapper"><br/><p>rmi.port, rmi.exportName, http.port</p><br/></div>|int, string, int|<p>Access settings for the application server:</p><br/><ul><br/><li>rmi.port - port for the application server (RMI register / objects exported)</li><br/><li>rmi.exportName - name of the application server (the root RMI object exported by it). It makes sense to use it if you need to export several logics on one port</li><br/><li>http.port - port for the web server embedded in the application server (used for access from external systems)</li><br/></ul>|7652, default, 7651|
 |<div class="content-wrapper"><br/><p>logics.includePaths, logics.excludePaths, logics.topModule, logics.orderDependencies</p><br/></div>|string. string, string, string|Parameters of the [project](Projects.md) (which modules to load and in what order, detailed description here)|logics.includePaths equals *, others blank|
 |<div class="content-wrapper"><br/><p>user.country, user.language, user.timezone, user.twoDigitYearStart</p><br/><p>(user.setCountry, user.setLanguage, user.setTimezone)</p><br/></div>|string, string, string, int|<p>Standard Java parameters defining [locale](Internationalization.md#locale) parameters (regional settings - language, country, etc., detailed description here)</p><br/><p>Due to the peculiarities of Java Spring (namely, locale parameters are considered byJava Spring to be set even if they are not explicitly specified in the start command, that is, settings of these parameters in .properties files are ignored), the platform supports "clones" of these parameters that start as set: if they are specified (either in .properties files or in the launch string), they "overload" the native parameters. That is, the priority is OS, -Duser.*, User.set* in .properties files and -Duser.set* (none of the above applies to user.twoDigitYearStart, since it is not a standard Java parameter)</p>|The first three are determined from the operating system settings, current year minus 80|
-|<div class="content-wrapper"><br/><p>db.namingPolicy, db.maxIdLength</p><br/></div>|string, int|<p>Parameters of the [naming policy](Tables.md#field-naming) for tables and fields:</p><br/><p>db.namingPolicy - the name of the java class of the property (full name, with package); in the constructor, it must accept one parameter of type int - the maximum size of the name.</p><br/><p>Builtin policy class names:</p><br/><ul><br/><li>Complete with signature - lsfusion.server.physics.dev.id.name.FullDBNamingPolicy</li><br/><li>Complete without signature - lsfusion.server.physics.dev.id.name.NamespaceDBNamingPolicy</li><br/><li>Brief - lsfusion.server.physics.dev.id.name.ShortDBNamingPolicy</li><br/></ul><br/><p>db.maxIdLength - maximum size of a table or field name. Passed as the first parameter to the constructor of the java class of the naming policy for tables and fields.</p>|Complete with signature, 63|
+|<div class="content-wrapper"><br/><p>db.namingPolicy, db.maxIdLength</p><br/></div>|string, int|<p>Parameters of the [naming policy](Tables.md#name) for tables and fields:</p><br/><p>db.namingPolicy - the name of the java class of the property (full name, with package); in the constructor, it must accept one parameter of type int - the maximum size of the name.</p><br/><p>Builtin policy class names:</p><br/><ul><br/><li>Complete with signature - lsfusion.server.physics.dev.id.name.FullDBNamingPolicy</li><br/><li>Complete without signature - lsfusion.server.physics.dev.id.name.NamespaceDBNamingPolicy</li><br/><li>Brief - lsfusion.server.physics.dev.id.name.ShortDBNamingPolicy</li><br/></ul><br/><p>db.maxIdLength - maximum size of a table or field name. Passed as the first parameter to the constructor of the java class of the naming policy for tables and fields.</p>|Complete with signature, 63|
 |db.denyDropModules, db.denyDropTables|boolean, boolean|<p>Ban on deletion at startup:</p><br/><ul><br/><li>db.denyDropModules - modules</li><br/><li>db.denyDropTables - tables</li><br/></ul>|false, false|
 |logics.initialAdminPassword|string|Default admin password|<br /><br/>|
 
@@ -57,7 +57,7 @@ By default, it is assumed that the startup parameter files conf/settings.propert
 
 ### Web server (Client)
 
-#### Java
+#### Java {#appjava}
 
 Java web server startup parameters are set in the Tomcat launch command, which, in turn, launches this web server (for example, for [automatic](Execution_auto.md#webapp-broken) installation). 
 
@@ -65,7 +65,7 @@ Java web server startup parameters are set in the Tomcat launch command, which, 
 |---|---|---|---|
 |System (starting with X)|[Standard](https://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html)|<br /><br/>|<div class="content-wrapper"><br/><p>Standard Java parameters. It is important above all to pay attention to:</p><br/><ul><br/><li>Xmx - maximum memory size. For complex logics, it is recommended that you allocate at least 2GB. </li><br/></ul><br/></div>|
 
-#### lsFusion
+#### lsFusion {#applsfusion}
 
 lsFusion startup parameters for the web server can be set in one of the following ways (in the order of their priorities, lower priority at the bottom):
 

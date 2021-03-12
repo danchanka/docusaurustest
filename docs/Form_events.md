@@ -11,7 +11,7 @@ While the application is running, there is a number of events for each form that
 
 *For objects on the form*
 
--   **CHANGE** - user [changed](Interactive_view.md#object-views) the [current value](Form_structure.md#currentObject-broken) of an object.
+-   **CHANGE** - user [changed](Interactive_view.md#objects) the [current value](Form_structure.md#currentObject-broken) of an object.
 
 *For properties or actions on the form*
 
@@ -34,7 +34,7 @@ There are also several so-called *derivative* events that are nothing more than 
 -   **CLOSE** - occurs when the **System.formClose** action is executed.
 -   **DROP** - occurs when the **System.formDrop** action is executed.
 
-If the form is [the session owner](Interactive_view.md#session-owner) (meaning that when the **System.formOk** action is executed the form session [is saved](Apply_changes_APPLY.md)):
+If the form is [the session owner](Interactive_view.md#owner) (meaning that when the **System.formOk** action is executed the form session [is saved](Apply_changes_APPLY.md)):
 
 -   **OK, OK BEFORE, OK AFTER** - occurs when the **System.formOk** action is executed, at the moments similar to the corresponding moments for the **APPLY** event (i.e. inside, before and after the transaction). In this case, **OK** and **OK BEFORE** handlers are executed before executing **APPLY** and **APPLY BEFORE** handlers, and **OK AFTER** is executed after **APPLY AFTER**.
 
@@ -54,7 +54,7 @@ For property, it is possible to define its event handlers for the whole logics a
 
 You can also specify a keyboard shortcut for each property, pressing which triggers the property's **CHANGE** event. If several properties on the form correspond to one key combination, the event will be triggered only for the property whose component is closest to the current active component in the component hierarchy.
 
-### Default handlers
+### Default handlers {#default}
 
 For some events, the platform automatically creates default handlers:
 
@@ -68,20 +68,20 @@ QUERYOK
 
 *CHANGE*
 
-The user is requested for an object of the changed property value class, after which the received object is written to this property. If the property is not [mutable](Property_change_CHANGE.md#changeable-properties), the [user filter](Interactive_view.md#custom-filtersorders) mechanism for this property (or for the property specified using the corresponding option) is automatically called.
+The user is requested for an object of the changed property value class, after which the received object is written to this property. If the property is not [mutable](Property_change_CHANGE.md#changeable), the [user filter](Interactive_view.md#userfilters) mechanism for this property (or for the property specified using the corresponding option) is automatically called.
 
 *GROUPCHANGE*
 
 Calls the **CHANGE** event handler for all objects that meet the filter conditions of the object group in which the changed property is displayed. 
 
-If property event handler uses (even [implicitly](Value_request_REQUEST.md#implicit-use)) the [value request](Value_request_REQUEST.md) operator, then default handler can be created [in a different way](Value_request_REQUEST.md#defaultChange-broken).
+If property event handler uses (even [implicitly](Value_request_REQUEST.md#implicit)) the [value request](Value_request_REQUEST.md) operator, then default handler can be created [in a different way](Value_request_REQUEST.md#defaultChange-broken).
 
 For an *object request* from the user, depending on the type of class , the following operators are used:
 
 -   Builtin classes - the [input primitive](Primitive_input_INPUT.md) operator.
--   [Custom classes](User_classes.md) - the [open form](In_an_interactive_view_SHOW_DIALOG.md) operator. The form is the [list](Interactive_view.md#selectionediting-forms) form for this class. 
+-   [Custom classes](User_classes.md) - the [open form](In_an_interactive_view_SHOW_DIALOG.md) operator. The form is the [list](Interactive_view.md#edtClass) form for this class. 
 
-### Standard handlers
+### Standard handlers {#predefined}
 
 For properties and actions on the form, it is also possible to define the following *standard* change event handlers (**CHANGE**, **CHANGEWYS**, **GROUPCHANGE**, **EDIT**): 
 
@@ -90,7 +90,7 @@ For properties and actions on the form, it is also possible to define the follow
 
 ### Language
 
-To define the form event handlers, use the **ON** option in the **FORM** instruction ([events](Event_block.md) block, [properties and actions](Properties_and_actions_block.md) block, [objects](Object_blocks.md#object-block) block), as well as in [property options](Property_options.md). 
+To define the form event handlers, use the **ON** option in the **FORM** instruction ([events](Event_block.md) block, [properties and actions](Properties_and_actions_block.md) block, [objects](Object_blocks.md#objects) block), as well as in [property options](Property_options.md). 
 
 ### Examples
 

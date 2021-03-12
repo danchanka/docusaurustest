@@ -16,7 +16,7 @@ The **EXTEND CLASS** instruction [extends](Class_extension.md) an existing cla
 
 ### Description
 
-The **EXTEND CLASS** instruction extends an existing [custom class](User_classes.md) with additional parent classes and new[static objects](Static_objects.md). You can also extend [abstract classes](User_classes.md#abstract-classes) by adding parent classes to them.
+The **EXTEND CLASS** instruction extends an existing [custom class](User_classes.md) with additional parent classes and new[static objects](Static_objects.md). You can also extend [abstract classes](User_classes.md#abstract) by adding parent classes to them.
 
 ### Parameters
 

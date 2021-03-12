@@ -16,7 +16,7 @@ By default, depending on the implementation specifics, conversion can take place
 
 From a data flow standpoint, the interactive view is internal, meaning that the data remains inside the server/native client, while the static view is external, with the data converted and sent to the reporting subsystem, or to the operating system in the form of files in various formats. 
 
-### Graphic view
+### Graphic view {#graphic}
 
 Some views are *graphic*, meaning that to display them the data read must be placed in two-dimensional space: on paper or the screen of the device. Accordingly, for these views a design may/must be defined:
 

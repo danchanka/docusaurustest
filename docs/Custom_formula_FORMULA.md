@@ -8,7 +8,7 @@ Using this operator is recommended only if the task cannot be accomplished using
 
 ### Determining the result class
 
-By default, the result class of the custom operator is a [common ancestor](Built-in_classes.md#common-ancestor) of all its operands. If necessary, the developer can specify this class explicitly.
+By default, the result class of the custom operator is a [common ancestor](Built-in_classes.md#commonparentclass) of all its operands. If necessary, the developer can specify this class explicitly.
 
 ### Language
 

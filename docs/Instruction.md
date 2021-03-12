@@ -10,7 +10,7 @@ The @ instruction uses [metacode](Metaprogramming.md#metacode).
 
 ### Description
 
-The @ instruction generates code obtained from the metacode with the name **name**, replacing metacode parameters with the values of its own parameters and executing the special [\#\# and \#\#\#](Metaprogramming.md#lexeme-concatenation) instructions. 
+The @ instruction generates code obtained from the metacode with the name **name**, replacing metacode parameters with the values of its own parameters and executing the special [\#\# and \#\#\#](Metaprogramming.md#concat) instructions. 
 
 ### Parameters 
 

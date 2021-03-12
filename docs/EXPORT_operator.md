@@ -38,7 +38,7 @@ If the property to which the data is exported is of class **FILE**, then the ext
 |<strong>DBF</strong>|dbf|
 |<strong>TABLE</strong>|table|
 
-When exporting a form in an **OBJECTS** block, it is possible to add extra filters to check for the equality of the objects on the form with [the values passed](Open_form.md#passing-objects). These objects [will not participate](Structured_view.md#objects-broken) in building the object group hierarchy.
+When exporting a form in an **OBJECTS** block, it is possible to add extra filters to check for the equality of the objects on the form with [the values passed](Open_form.md#params). These objects [will not participate](Structured_view.md#objects-broken) in building the object group hierarchy.
 
 ### Parameters
 
@@ -120,7 +120,7 @@ Names of object groups from the exported form for which you want to export data.
 
 ### propertyIdM *, ..., *propertyIdM
 
-[Property IDs](IDs.md#propertyid-broken) to which the generated files for specified object groups will be written. These properties must not have parameters and their value must be of file classes (**FILE**, **RAWFILE**, **JSONFILE**, etc.). Used only for exporting forms to flat formats. For the[empty group](Static_view.md#empty-object-group) of objects, the name **root** is used. 
+[Property IDs](IDs.md#propertyid-broken) to which the generated files for specified object groups will be written. These properties must not have parameters and their value must be of file classes (**FILE**, **RAWFILE**, **JSONFILE**, etc.). Used only for exporting forms to flat formats. For the[empty group](Static_view.md#empty) of objects, the name **root** is used. 
 
 ### Examples
 

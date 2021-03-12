@@ -17,7 +17,7 @@ Password: **guest**
 The GitHub source code is located [here](https://github.com/lsfusion/samples/tree/master/hockeystats).**  
 **
 
-### Materials management (MM)
+### Materials management (MM) {#mm}
 
 Application from the [Materials Management](Materials_management.md) example.
 

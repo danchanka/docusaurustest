@@ -64,7 +64,7 @@ Keyword that, if specified, then when the property becomes **NULL**, objects tha
 
 *viewType*
 
-Specifying the type of [property view](Interactive_view.md#property-views) when added to the form.
+Specifying the type of [property view](Interactive_view.md#property) when added to the form.
 
 -   **GRID** - table column
 -   **TOOLBAR** - toolbar
@@ -88,7 +88,7 @@ Type of form event. Specified by one of the following options:
 
 *actionOperator*
 
-[Context-dependent action operator](Action_operator.md#context-dependent-operators). An operator that defines the action executed on an event. You can use the parameters of the property itself as operator parameters.
+[Context-dependent action operator](Action_operator.md#contextdependent). An operator that defines the action executed on an event. You can use the parameters of the property itself as operator parameters.
 
 ### *DESIGN instruction default values block*
 
@@ -143,7 +143,7 @@ Keyword. When specified, the key combination will not be displayed in the proper
 
 *DEFAULTCOMPARE*
 
-Specifies a [default filter](Interactive_view.md#custom-filtersorders) type for the property.
+Specifies a [default filter](Interactive_view.md#userfilters) type for the property.
 
 *compare*
 

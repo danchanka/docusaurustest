@@ -6,7 +6,7 @@ For storing and calculating values of the [properties](Properties.md) the **lsFu
 
 When creating a table, you must specify a list of the object classes which will be the keys in this table.
 
-### Property table determining
+### Property table determining {#property}
 
 For each property, you can specify in which table it should be stored. In this case, the number of the table keys must be equal to the number of property parameters, and the parameter classes must match the table key classes. If the table in which the property should be stored is not set explicitly, the property will be placed automatically to the "nearest" existing table in the system (i.e., which number of keys matches the number of the property parameters and the key classes are the closest to the parameter classes). Also if necessary, you can use the special option (**NODEFAULT**) to specify that when automatically determining property tables, this table should be ignored (i.e., a property can only be put into such a table explicitly using the corresponding option (**TABLE**)).
 
@@ -22,7 +22,7 @@ For each table created in the platform, a corresponding table is created in the
 
 The naming policy is defined using the [db.namingPolicy](Launch_parameters.md#namingpolicy-broken) startup parameter.
 
-### Field naming
+### Field naming {#name}
 
 The values of each property are always stored exactly in one field, which name, depending on the selected naming policy, is defined as follows:
 
@@ -48,7 +48,7 @@ Also, it is possible to create a custom policy for naming tables in the platform
 
 By default, a unique [index](Indexes.md) is built for each table by its key fields **key0**, **key1**, ..., **keyN** named as **pk\_<table ID\>** where N is the number of key fields in the table minus 1. Also indexes on key fields **keyK**, ..., **keyN** with names like **<table ID\>\_keyK \_...\_ keyN\_idx** are automatically added for all **K** from 1 to **N**.
 
-### Full tables
+### Full tables {#full}
 
 Let's say that the table is *full* if for each of its keys it contains all existing in the system objects of this key class. In general, the fullness of a table is specified explicitly using the special option (**FULL**) and is implemented via an implicit creation of a materialized [classification](Classification_IS_AS.md) property (we will call it the *fullness* property). However, in some cases, the platform may not create this property if it determines that the table already has properties which guarantee that it contains all the necessary objects (for example, the property of belonging to the class).
 

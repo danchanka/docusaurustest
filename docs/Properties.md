@@ -6,7 +6,7 @@ A *property* is an element of the system that takes a set of objects (*parameter
 
 The type and the specifics of how to calculate each property are determined by the operator used to create the property.
 
-### Type constraint
+### Type constraint {#type}
 
 Due to implementation features, all non-**NULL** property values returned must be of the same type. That is, a property cannot return, for example, a string for one set of parameters and a number for another.
 

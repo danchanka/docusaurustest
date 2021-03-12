@@ -4,7 +4,7 @@ title: 'Naming'
 
 Each [system element](Element_identification.md) may have a *name* which can be used to [access](Search.md) the element.
 
-### Namespaces
+### Namespaces {#namespace}
 
 It is often necessary to use the same name in different contexts. In order not to include this context in the name itself (producing long and bulky names), the platform has the concept of *namespaces*. Each element is created in a namespace, and if other elements are accessed during the creation process then elements created in the same namespace take precedence.  However, if you do need an element from another namespace, you can always specify the namespace of the element you are looking for explicitly. Also, you can specify additional namespaces that will take precedence when searching for items.
 
@@ -18,7 +18,7 @@ Each namespace has its own name, which is its unique ID. Accordingly, the string
 
 Elements of the system must be named so that the system does not contain any two elements that cannot be distinguished from one another. In most cases, it is necessary and sufficient for the full name of the element to be unique. Exceptions to this rule are metacodes and properties / actions. So, for example, several metacodes may have the same full name if they differ in the number of parameters they take (properties / actions must have a different signature).
 
-### Canonical names
+### Canonical names {#canonicalname}
 
 For some elements of the system, string *canonical names* are determined and are unique among all elements of the given type within the system. For most system elements (user-defined classes, property groups, navigator elements, windows, tables) the canonical name is equivalent to the *full name* of that element of the system, which looks as follows:
 

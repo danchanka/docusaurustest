@@ -2,7 +2,7 @@
 title: 'Properties and actions block'
 ---
 
-The property and action [block of the FORM instruction](FORM_instruction.md) adds [properties and actions](Form_structure.md#properties-and-actions) to the [form structure](Form_structure.md). 
+The property and action [block of the FORM instruction](FORM_instruction.md) adds [properties and actions](Form_structure.md#properties) to the [form structure](Form_structure.md). 
 
 ### Syntax
 
@@ -60,7 +60,7 @@ In the given example, the names of the added properties **date** and **Order.num
 
 When adding a property (action) to the form structure, you may specify a set of its options. You may also specify common options for the entire **PROPERTIES** block. If any of the options are specified for both the entire block and a specific declaration, the option value for the declaration will be used.
 
-In all [expressions](Expression.md) and [context-dependent action operators](Action_operator.md#context-dependent-operators), you can use the names of the objects already declared on the form as parameters.
+In all [expressions](Expression.md) and [context-dependent action operators](Action_operator.md#contextdependent), you can use the names of the objects already declared on the form as parameters.
 
 ### Parameters
 
@@ -82,7 +82,7 @@ In the current platform implementation, if the name and caption are not specifie
 
 [ID of the property or action](IDs.md#propertyid-broken) being added to the form structure.
 
-Alternatively, you may use [object operators](Interactive_view.md#object-operators) instead of the property/action IDs:
+Alternatively, you may use [object operators](Interactive_view.md#objectoperators) instead of the property/action IDs:
 
 **VALUE** displays the object value (or the object ID for custom classes).
 
@@ -110,13 +110,13 @@ List of parameters of the added properties or actions. Each parameter is specifi
 
 *formActionOperator*
 
-[Context-dependent action operator](Action_operator.md#context-dependent-operators) being added to the form structure
+[Context-dependent action operator](Action_operator.md#contextdependent) being added to the form structure
 
 ### *Options*** ***for the property or action*
 
 *changeType*
 
-Specifying [standard handlers](Form_events.md#standard-handlers) for property/action change events. It is specified with one of the keywords:
+Specifying [standard handlers](Form_events.md#predefined) for property/action change events. It is specified with one of the keywords:
 
 -   **CHANGEABLE** calls the corresponding handler of the triggered event. Default value. It makes sense to use it explicitly only when another modifier is defined for the entire block but should not be applied to a specific property.
 -   **READONLY** will either turn on the filtering mechanism or simply ignore the event when the user tries to change the property.
@@ -192,7 +192,7 @@ Name of an object group. [Simple ID](IDs.md#id-broken).
 
 *viewType*
 
-Specifying the [view type](Interactive_view.md#property-views) of the property or action being added:
+Specifying the [view type](Interactive_view.md#property) of the property or action being added:
 
 -   **GRID** — table column
 -   **TOOLBAR** — toolbar
@@ -216,7 +216,7 @@ Specifying that a property or an action should be added to the form structure be
 
 *QUICKFILTER formPropertyName*
 
-Specifying the property to be used in [default handlers](Form_events.md#default-handlers) for quick filtering.
+Specifying the property to be used in [default handlers](Form_events.md#default) for quick filtering.
 
 *formPropertyName*
 
@@ -251,18 +251,18 @@ List of action parameters. Each parameter is specified with the object name on 
 
 *actionOperator*
 
-[Context-dependent action operator](Action_operator.md#context-dependent-operators).
+[Context-dependent action operator](Action_operator.md#contextdependent).
 
 *ATTR*
 
-Keyword. Used only in the [hierarchical](Structured_view.md#hierarchical-view) view. Indicates that:
+Keyword. Used only in the [hierarchical](Structured_view.md#hierarchy) view. Indicates that:
 
 -   When importing from XML, the data is imported from the tag attributes instead of the child tag.
 -   When exporting to XML, the data is exported to the tag attributes instead of the child tag.
 
 *EXTID extID*
 
-Specifying the name to be used for [export/import](Structured_view.md#exportimport-name) operations of this property. Used only in the [structured](Structured_view.md) view.
+Specifying the name to be used for [export/import](Structured_view.md#extid) operations of this property. Used only in the [structured](Structured_view.md) view.
 
 *extId*
 

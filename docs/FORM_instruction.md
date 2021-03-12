@@ -39,7 +39,7 @@ The **FORM** instruction declares a new form and adds it to the current [module]
 
 *name*
 
-Form name. [Simple ID](IDs.md#id-broken). The name must be unique within the current [namespace](Naming.md#namespaces).
+Form name. [Simple ID](IDs.md#id-broken). The name must be unique within the current [namespace](Naming.md#namespace).
 
 *caption*
 
@@ -55,7 +55,7 @@ The relative path to the file with the image that will be used as the form icon.
 
 AUTOREFRESH period
 
-Specifying the [automatic form update](Interactive_view.md#additional-features) period. If the option is not specified, the form will not be updated automatically.
+Specifying the [automatic form update](Interactive_view.md#extra) period. If the option is not specified, the form will not be updated automatically.
 
 *period* - a period of time in seconds. [Integral literal](IDs.md#intliteral-broken). 
 
@@ -67,7 +67,7 @@ Adds objects to the form. [Object block syntax](Object_blocks.md) .
 
 TREE ...
 
-Adds an object tree to the form. [Syntax of the object tree block](Object_blocks.md#object-tree-block).
+Adds an object tree to the form. [Syntax of the object tree block](Object_blocks.md#tree).
 
 PROPERTIES ...
 
@@ -79,11 +79,11 @@ Adds fixed filters to the form. [Syntax of the fixed filters block](Filters_and_
 
 \[EXTEND\] FILTERGROUP ...
 
-Adds a group of filters to the form or extends an existing one. [Syntax of a filter group block](Filters_and_sortings_block.md#filter-group-block).
+Adds a group of filters to the form or extends an existing one. [Syntax of a filter group block](Filters_and_sortings_block.md#filtergroup).
 
 ORDER ...
 
-Adds sorting options to the form. [Syntax of the order block](Filters_and_sortings_block.md#order-block).
+Adds sorting options to the form. [Syntax of the order block](Filters_and_sortings_block.md#sort).
 
 EVENTS ...
 
@@ -91,7 +91,7 @@ Defines actions that are executed on specific events. [Syntax of the event block
 
 *FORMEXTID extID*
 
-Specifying the name to be used to [export/import](Structured_view.md#exportimport-name) this form. Used only in the [structured](Structured_view.md) view.
+Specifying the name to be used to [export/import](Structured_view.md#extid) this form. Used only in the [structured](Structured_view.md) view.
 
 *extId*
 
@@ -107,7 +107,7 @@ REPORT propertyExpression
 
 EDIT сlassName OBJECT objectName
 
-Sets the current form as the [edit](Interactive_view.md#selectionediting-forms) form for all objects of the specified class.
+Sets the current form as the [edit](Interactive_view.md#edtClass) form for all objects of the specified class.
 
 *className* – the name of the [custom](User_classes.md) . When editing objects of this class, the created form will be opened. Defined with a [composite ID](IDs.md#cid-broken).
 
@@ -115,7 +115,7 @@ Sets the current form as the [edit](Interactive_view.md#selectionediting-forms) 
 
 LIST сlassName OBJECT objectName
 
-Sets the current form as the [list form](Interactive_view.md#selectionediting-forms) for the object of the specified class. 
+Sets the current form as the [list form](Interactive_view.md#edtClass) for the object of the specified class. 
 
 *className* – the name of the [custom](User_classes.md) class whose objects will be listed using the created form. Defined with a composite ID.
 

@@ -20,7 +20,7 @@ The CASE operator creates an action that executes one of the actions passed to
 
 ** ** *exclusionType*
 
-** **[Type of mutual exclusion](Branching_CASE_IF_MULTI.md#mutual-exclusion-of-conditions). Determines whether several conditions can be met simultaneously for a certain set of parameters. It is specified by one of the keywords:
+** **[Type of mutual exclusion](Branching_CASE_IF_MULTI.md#exclusive). Determines whether several conditions can be met simultaneously for a certain set of parameters. It is specified by one of the keywords:
 
 -   **EXCLUSIVE**
 -   **OVERRIDE**
@@ -35,7 +35,7 @@ The **OVERRIDE** type is used by default.
 
 *action1 ... actionN*
 
-[Context-dependent operators](Action_operator.md#context-dependent-operators) that describe actions that may be called when the corresponding condition is met.
+[Context-dependent operators](Action_operator.md#contextdependent) that describe actions that may be called when the corresponding condition is met.
 
 *elseAction*
 

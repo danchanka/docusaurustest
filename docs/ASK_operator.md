@@ -2,7 +2,7 @@
 title: 'ASK operator'
 ---
 
-The **ASK** operator creates an action that shows the user a message in a [dialog form](Show_message_MESSAGE_ASK.md#dialog-form).
+The **ASK** operator creates an action that shows the user a message in a [dialog form](Show_message_MESSAGE_ASK.md#dialog).
 
 ### Syntax
 
@@ -30,11 +30,11 @@ The name of the local parameter in which the user's response to the question wil
 
 *actionOperator*
 
-A [context-dependent action operator](Action_operator.md#context-dependent-operators) that is executed if the input was completed successfully. Both upper parameters and the user response parameter (if the question was Yes/No) can be used as parameters
+A [context-dependent action operator](Action_operator.md#contextdependent) that is executed if the input was completed successfully. Both upper parameters and the user response parameter (if the question was Yes/No) can be used as parameters
 
 *elseActionOperator*
 
-A [context-dependent action operator](Action_operator.md#context-dependent-operators) that is executed if the input was cancelled. Only upper parameters can be used as parameters.
+A [context-dependent action operator](Action_operator.md#contextdependent) that is executed if the input was cancelled. Only upper parameters can be used as parameters.
 
 ### Example
 

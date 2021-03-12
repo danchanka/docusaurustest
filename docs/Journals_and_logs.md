@@ -2,7 +2,7 @@
 title: 'Journals and logs'
 ---
 
-### Logs
+### Logs {#logs}
 
 -   Error log (fig. 1).
 
@@ -83,7 +83,7 @@ Fig. 8. Property change history.
 
 The retention time for these logs is set to the same retention time as for the Change Log.
 
-### Logs
+### Logs {#logs}
 
 The following set of logs is supported for each platform component in the platform:
 
@@ -95,4 +95,4 @@ The following set of logs is supported for each platform component in the platfo
 
   
 
-With [automatic installation](Execution_auto.md) under Linux, symlinks for these folders (as well as for the [lsFusion launch parameters](Launch_parameters.md#lsfusion)) are automatically created to [other folders](Execution_auto.md#logs-broken) whose location is better aligned with Linux ideology.
+With [automatic installation](Execution_auto.md) under Linux, symlinks for these folders (as well as for the [lsFusion launch parameters](Launch_parameters.md#applsfusion)) are automatically created to [other folders](Execution_auto.md#logs-broken) whose location is better aligned with Linux ideology.

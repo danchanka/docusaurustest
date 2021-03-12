@@ -4,7 +4,7 @@ title: 'Set operations'
 
 One of the key features of the platform is the ability to execute certain operations for all object collections for which the values of one or more [properties](Properties.md) are not **NULL**. In the property logic such an operation is the calculation of various *aggregate functions*. 
 
-### Aggregate functions
+### Aggregate functions {#func}
 
 An aggregate function calculates a certain *result* as a single object on a set of object collections. This function is defined by the *initial value* (typically **NULL**), [properties](Properties.md) that it uses (*operands*), *operation of addition* to the *intermediate result* of the current operand values, and *conversion function* of the intermediate result to the final (typically the intermediate result is the final result).
 
@@ -27,7 +27,7 @@ From the perspective of determining the set of object collections and the result
 -   [Recursion (RECURSION)](Recursion_RECURSION.md)
 -   [Distribution (UNGROUP)](Distribution_UNGROUP.md)
 
-### Operation correctness
+### Operation correctness {#correct}
 
 You should consider that during each operation on a set of object collections, this set must be finite. In this case, the operation is called *correct*.
 

@@ -4,7 +4,7 @@ title: 'Access from an external system'
 
 The platform allows external systems   to access an lsFusion-based system using various network protocols. The interface of such interaction is a call for an action with specified parameters and, if necessary, the return of certain property values (without parameters) as  *results*. It is assumed that all parameter and result objects are objects of [built-in classes](Built-in_classes.md).
 
-### Defining an action
+### Defining an action {#actiontype}
 
 An action being called can be defined in one of the three ways:
 
@@ -20,7 +20,7 @@ The platform currently supports the following network protocols:
 
 Communication over this protocol is supported both for an application server on port 7651, as well as a web server (if any) on the same port, that has a web client installed.
 
-The URL format, depending on the method of [action definition](#defining-an-action), looks as follows:
+The URL format, depending on the method of [action definition](#actiontype), looks as follows:
 
 -   EXEC - http://server address:port/exec?action=<action name\>. The "action" parameter must always be specified.
 -   EVAL - http://server address:port/eval?script=<code\>. If the "script" parameter is not specified, it is assumed that the code is passed in the first BODY parameter.
@@ -88,8 +88,8 @@ The JavaScript library is available in the central npm-repository under the name
 
 The key concept in this API is the concept of *state*. A state is a JS object with a structure corresponding to form elements in the following way:
 
--   [An object group](Form_structure.md#objects) corresponds to a JS object that is stored in the js field of the state object. The name of the field matches the name of the object group. Each JS object from the object group, in turn, stores an array of JS objects (with [filters](Form_structure.md#filters) and [orders](Form_structure.md#orders) taken into account) in the **list** field. The JS object of the object group corresponds to the [current](Form_structure.md#currentObject-broken) object collection. Also, each JS object of an array (including the JS object of the object group) in the **value** field stores the value of objects – only values if there is just one object in the object group or, if there are multiple objects, a JS object with fields whose names are equal to object names and values are equal to object values.
--   [Properties](Properties.md) correspond to a value stored in a field (the name of the field is equal to the property name) of a JS object which is determined in the following way depending on the existence of parameters and [its view](Interactive_view.md#property-views):
+-   [An object group](Form_structure.md#objects) corresponds to a JS object that is stored in the js field of the state object. The name of the field matches the name of the object group. Each JS object from the object group, in turn, stores an array of JS objects (with [filters](Form_structure.md#filters) and [orders](Form_structure.md#sort) taken into account) in the **list** field. The JS object of the object group corresponds to the [current](Form_structure.md#currentObject-broken) object collection. Also, each JS object of an array (including the JS object of the object group) in the **value** field stores the value of objects – only values if there is just one object in the object group or, if there are multiple objects, a JS object with fields whose names are equal to object names and values are equal to object values.
+-   [Properties](Properties.md) correspond to a value stored in a field (the name of the field is equal to the property name) of a JS object which is determined in the following way depending on the existence of parameters and [its view](Interactive_view.md#property):
     -   A property has parameters:
         -   The property view is equal to **GRID** of each JS object in the **list** array of the JS object of this property's [display group](Form_structure.md#drawgroup-broken).
         -   The property's view is equal to **PANEL**, **TOOLBAR**  of the JS object of this property's display group
@@ -114,7 +114,7 @@ The library exports the following functions:
 -   numberOfPendingRequests - show how many change requests are currently queued. Returns a long type value. Parameters:
     1.  state - a JS state object
 
-As the names of object groups and properties, not names on the form are used, but [export/import](Structured_view.md#exportimport-name) names (which, however, match the names on forms if not explicitly defined). While working with a form via Form API, actions created using operators for [object operations](Interactive_view.md#object-operators) **NEW** and **DELETE** automatically get export/import names **NEW** and **DELETE**, respectively (that is you can call change(setState, {game : {NEW:true}} for adding an object, for example) ). Also, when Form API is used, it automatically adds a property called logMessage to the form to which all dialog messages are written (including those generated when [constraints](Constraints.md) were violated).
+As the names of object groups and properties, not names on the form are used, but [export/import](Structured_view.md#extid) names (which, however, match the names on forms if not explicitly defined). While working with a form via Form API, actions created using operators for [object operations](Interactive_view.md#objectoperators) **NEW** and **DELETE** automatically get export/import names **NEW** and **DELETE**, respectively (that is you can call change(setState, {game : {NEW:true}} for adding an object, for example) ). Also, when Form API is used, it automatically adds a property called logMessage to the form to which all dialog messages are written (including those generated when [constraints](Constraints.md) were violated).
 
 Authentication, stateful and form API are only supported when executing http requests on the web server. When an application server (or specifically, a built-in web server) executes an HTTP request, authentication headers, as well as parameters with the session ID, are ignored (the user is considered anonymous). Form API is completely unsupported by the built-in web server.
 

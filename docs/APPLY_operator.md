@@ -15,7 +15,7 @@ where *nestedBlock* has one of two possible syntaxes:
 
 ### Description
 
-The **APPLY** operator creates an action that applies changes to the database. By specifying the keyword **NESTED** you can specify [local properties](Data_properties_DATA.md#local-data-properties) whose changes are not dropped when applying the changes. This operator also includes an action to be executed before applying the changes to the database.
+The **APPLY** operator creates an action that applies changes to the database. By specifying the keyword **NESTED** you can specify [local properties](Data_properties_DATA.md#local) whose changes are not dropped when applying the changes. This operator also includes an action to be executed before applying the changes to the database.
 
 ### Parameters
 
@@ -33,7 +33,7 @@ A keyword that sets the transaction isolation level to "Serializable."
 
 *action*
 
-A [context-dependent operator](Action_operator.md#context-dependent-operators) that describes an action to be executed before applying changes. It is executed in the same transaction as the application of changes.
+A [context-dependent operator](Action_operator.md#contextdependent) that describes an action to be executed before applying changes. It is executed in the same transaction as the application of changes.
 
 ### Examples
 

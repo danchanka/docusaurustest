@@ -14,7 +14,7 @@ title: 'Change operators (SET, CHANGED, ...)'
 |<strong>SETDROPPED</strong>|SET(f) OR DROPPED(f)|Value is either reset or changed from <strong>NULL</strong> to non-<strong>NULL</strong>|
 
 :::caution
-These operators are computed differently inside the [event](Events.md#change-operators-event-mode) handler: in this case, they return changes from the point of the previous occurrence of this event, or rather, from the point at which all its handlers are completed.
+These operators are computed differently inside the [event](Events.md#change) handler: in this case, they return changes from the point of the previous occurrence of this event, or rather, from the point at which all its handlers are completed.
 :::
 
 ### Language

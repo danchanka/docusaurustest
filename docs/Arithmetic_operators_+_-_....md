@@ -24,7 +24,7 @@ The result class is determined as:
 
 |Operator|Result|
 |---|---|
-|<strong>+</strong>, <strong>-</strong>|[Common ancestor](Built-in_classes.md#common-ancestor) ("Numbers" family)|
+|<strong>+</strong>, <strong>-</strong>|[Common ancestor](Built-in_classes.md#commonparentclass) ("Numbers" family)|
 |<strong>*</strong>|<pre><code>NUMERIC[p1.IntegerPart + p1.Precision + p2.IntegerPart + p2.Precision, p1.Precision + p2.Precision]</code></pre>|
 |<strong>/</strong>|<pre><code>NUMERIC[p1.IntegerPart + p1.Precision + p2.IntegerPart + p2.Precision, p1.Precision + p2.IntegerPart]</code></pre>|
 

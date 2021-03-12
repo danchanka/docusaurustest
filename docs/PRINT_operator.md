@@ -18,7 +18,7 @@ The **PRINT** operator creates an [action](Actions.md) that [opens a form](In
 
 ### Description
 
-The **PRINT** operator creates an action that prints the specified form. When printing a form in the **OBJECTS** block you can add [additional filters](Open_form.md#passing-objects) for form objects to check these objects for equality to the values passed.
+The **PRINT** operator creates an action that prints the specified form. When printing a form in the **OBJECTS** block you can add [additional filters](Open_form.md#params) for form objects to check these objects for equality to the values passed.
 
 ### Parameters
 
@@ -62,7 +62,7 @@ An expression whose value determines the password that sets the read-only mode f
 
 *PREVIEW*
 
-Keyword. If specified, the form is displayed in [preview](In_a_print_view_PRINT.md#interactive-print-view) mode. This mode is used by default if no other modes/formats are specified.
+Keyword. If specified, the form is displayed in [preview](In_a_print_view_PRINT.md#interactive) mode. This mode is used by default if no other modes/formats are specified.
 
 *NOPREVIEW*
 
@@ -74,7 +74,7 @@ An expression whose value determines the name of the printer to which the print 
 
 *MESSAGE*
 
-Keyword. If specified, the form displays data to the user in [message](In_a_print_view_PRINT.md#interactive-print-view) mode.
+Keyword. If specified, the form displays data to the user in [message](In_a_print_view_PRINT.md#interactive) mode.
 
 *TOP n*
 

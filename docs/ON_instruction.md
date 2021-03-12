@@ -20,7 +20,7 @@ This [event description block](Event_description_block.md) describes an event f
 
 *eventAction*
 
-This [context-dependent action operator](Action_operator.md#context-dependent-operators) describes the event handler.
+This [context-dependent action operator](Action_operator.md#contextdependent) describes the event handler.
 
 ### Examples
 

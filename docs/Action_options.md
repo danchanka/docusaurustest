@@ -32,7 +32,7 @@ Specifying the [group of properties and actions](Groups_of_properties_and_actio
 
 *viewType*
 
-Specifying the type of the [action view](Interactive_view.md#property-views) when added to the form.
+Specifying the type of the [action view](Interactive_view.md#property) when added to the form.
 
 -   **GRID** - table column
 -   **TOOLBAR** - toolbar
@@ -56,7 +56,7 @@ A [form event](Form_events.md) type. It is specified by one of the keywords:
 
 *actionOperator*
 
-A [context-dependent action operator](Action_operator.md#context-dependent-operators). An operator that defines the action executed on an event. You can use the parameters of the property itself as operator parameters.
+A [context-dependent action operator](Action_operator.md#contextdependent). An operator that defines the action executed on an event. You can use the parameters of the property itself as operator parameters.
 
 *ASON eventType \[ACTION\] propertyId*
 
@@ -84,7 +84,7 @@ Specifies the file with the image to be displayed as an action icon.
 
 *EDITKEY key \[SHOW | HIDE\]*
 
-Specifies a [keyboard shortcut](Form_events.md#keyboard-broken) which triggers this action. Sets the value for the [default design](Form_design.md#default-design) and can be overridden in the [**DESIGN** instruction](DESIGN_instruction.md).
+Specifies a [keyboard shortcut](Form_events.md#keyboard-broken) which triggers this action. Sets the value for the [default design](Form_design.md#defaultDesign) and can be overridden in the [**DESIGN** instruction](DESIGN_instruction.md).
 
 *key* -* * a [string literal](Literals.md#strliteral-broken) that defines a keyboard shortcut*. *The definition method is identical to that for a parameter in the Java class method [Keystroke.getKeystroke(String)](http://docs.oracle.com/javase/7/docs/api/javax/swing/KeyStroke.html#getKeyStroke(java.lang.String)).
 

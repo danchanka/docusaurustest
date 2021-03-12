@@ -6,7 +6,7 @@ A *module* is a functionally complete part of a [project](Projects.md). A module
 
 Each module has a name, which must be unique within the [project](Projects.md).
 
-### Dependencies between modules
+### Dependencies between modules {#depends}
 
 Usually modules use elements from other modules to describe part of their functionality. Accordingly, if module **B** uses elements from module **A**, it must be specified in module **B **that it*** ****depends* on **A**. Based on these dependencies, all modules in the project are arranged in a certain order in which they are initialized. It is guaranteed that if module **B **depends on module **A**, module **A **will be initialized before module **B**. Circular dependencies between project modules are not* *allowed.  
 
@@ -16,7 +16,7 @@ Any module always automatically depends on the system module **[System](https://
 
 ### Namespaces
 
-In each module a [namespace](Naming.md#namespaces) is specified, containing the names of all system elements created in this module. By default, the module creates its own namespace, the name of which is equal to the name of the module. For the module you can also specify a list of additional namespaces that will have priority when [finding](Search.md) [system elements](Element_identification.md).
+In each module a [namespace](Naming.md#namespace) is specified, containing the names of all system elements created in this module. By default, the module creates its own namespace, the name of which is equal to the name of the module. For the module you can also specify a list of additional namespaces that will have priority when [finding](Search.md) [system elements](Element_identification.md).
 
 ### Language
 

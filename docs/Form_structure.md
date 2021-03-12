@@ -4,7 +4,7 @@ title: 'Form structure'
 
 The [form](Forms.md) structure is a complex of *objects*, [properties](Properties.md), [actions](Actions.md) and relations between them.
 
-### Objects
+### Objects {#objects}
 
 When creating a form, first you must define which objects it will display. For each form object you need to specify its [class](Classes.md).
 
@@ -12,9 +12,9 @@ It is possible to combine objects into *object groups*. In this case, the table 
 
 In accordance with the order of adding object groups to the form, an ordered *list* of object groups is formed. Accordingly, the group with the maximum number for a certain set of object groups shall be called the *last* group for this set (i.e., the latest). The *last* group for a set of objects is determined similarly: first, a set of object groups into which these objects are included is built, then the last group is determined for the obtained set of object groups.
 
-Each object on the form has a *current value* at any time. It changes either as a result of [corresponding user actions](Interactive_view.md#object-views) in [interactive](Interactive_view.md) view or "virtually" while reading data in [static](Static_view.md) view.
+Each object on the form has a *current value* at any time. It changes either as a result of [corresponding user actions](Interactive_view.md#objects) in [interactive](Interactive_view.md) view or "virtually" while reading data in [static](Static_view.md) view.
 
-### Properties and actions
+### Properties and actions {#properties}
 
 After defining objects, you can add properties and actions to the form, passing these objects to them as arguments.
 
@@ -35,19 +35,19 @@ When determining a [display group](#drawgroup-broken), properties of the group-t
 
 *Property groups*
 
-Properties on the form can be combined into [groups](Groups_of_properties_and_actions.md) which, in turn, are used in the interactive ([default design](Form_design.md#default-design)) and [hierarchical](Structured_view.md#hierarchical-view) form views. By default, a property is included in a group globally (i.e., this inclusion is defined for a property for all forms at once), however, this inclusion can be redefined for particular forms.
+Properties on the form can be combined into [groups](Groups_of_properties_and_actions.md) which, in turn, are used in the interactive ([default design](Form_design.md#defaultDesign)) and [hierarchical](Structured_view.md#hierarchy) form views. By default, a property is included in a group globally (i.e., this inclusion is defined for a property for all forms at once), however, this inclusion can be redefined for particular forms.
 
 *Default settings*
 
 Properties on the form have a large number of display settings in various [views](Form_views.md), most of which can be set not only directly for the property on the form, but also for the property itself (when creating it). These settings will be the default settings, i.e., if the setting is not explicitly set for a specific property on the form, then the setting of the property itself is used. In addition, these default settings are "inherited" when using [composition](Composition_JOIN.md), [selection](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md) and [previous value](Previous_value_PREV.md) operators (i.e., if property f(a) has the default width of 10, then the property g(a) = f(a) IF h(a) will also have a width of 10 by default).
 
-### Filters
+### Filters {#filters}
 
 For each form, the developer can create *filters* which will limit the list of object collections available for viewing/selection on the form.
 
 To define a filter, you must specify a property that will be used as a filter condition. The filter will be applied to the table of the object group that is the last for the set of objects which this property takes as input (i.e., similar to the definition of the property *display group*). In this case, only those object collections (rows) for which property values are not **NULL** will be shown.
 
-### Orders
+### Orders {#sort}
 
 By default, in all object group views, object collections are displayed in a certain non-deterministic order, which is determined by the specific implementation of the platform (most often, internal identifiers are used to determine the order). If necessary, the developer can define this order explicitly by specifying a list of properties on the form that will be used as orders. At the same time, for each property in this list, you can specify whether the order should be ascending or descending (by default, the ascending option is used).
 

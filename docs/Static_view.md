@@ -9,11 +9,11 @@ In *static* view, all form data is read at the time the form is [opened](Open_fo
 
 As a rule, structured view is used to load data into other information systems, while print view is used to view data by a user and print to a printer.
 
-### Empty object group
+### Empty object group {#empty}
 
 In static view, any form has a predefined *empty* object group, which is considered to be the first object group on the form, does not contain any objects and is considered to be the [display group](Form_structure.md#drawgroup-broken) for properties/filters without parameters. Accordingly, in this display group there is always a maximum of one empty object collection (exactly one, if there are no filters without parameters).
 
-### Object group hierarchy
+### Object group hierarchy {#hierarchy}
 
 To display information in static view , the form's [object groups](Form_structure.md) must be organized in a *hierarchy* in which data for object groups will be a kind of "nested" in each other. For example, if we have object groups **A** and **B, ** and **A **is the *parent* of**B**, then in static view all properties of **A** will be displayed first for the first object collection from **A**, then all the properties of **B** and of the pair (**A**, **B**) for all object collections from **B**, then similar information will be displayed for the second object collection from **A** and all sets of objects from **B** and so on.
 

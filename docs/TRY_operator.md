@@ -20,7 +20,7 @@ An operator form with the **FINALLY** keyword creates an action that executes an
 
 *action*
 
-A [context-dependent operator](Action_operator.md#context-dependent-operators) that describes an action to be executed with exception handling.
+A [context-dependent operator](Action_operator.md#contextdependent) that describes an action to be executed with exception handling.
 
 *catchAction*
 

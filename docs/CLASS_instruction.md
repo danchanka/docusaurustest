@@ -20,13 +20,13 @@ title: 'CLASS instruction'
 
 The **CLASS** instruction declares a new class and adds it to the current [module](Modules.md). 
 
-The instruction has two forms:  **CLASS ABSTRACT** for declaring an [abstract class](User_classes.md#abstract-classes) and just **CLASS** for declaring a concrete class. In the latter case, during declaration, you can declare the [static objects](Static_objects.md)  of this class and specify their names and captions in a curly brackets block.   
+The instruction has two forms:  **CLASS ABSTRACT** for declaring an [abstract class](User_classes.md#abstract) and just **CLASS** for declaring a concrete class. In the latter case, during declaration, you can declare the [static objects](Static_objects.md)  of this class and specify their names and captions in a curly brackets block.   
 
 ### Parameters
 
 *name *
 
-Class name. [Simple ID](IDs.md#id-broken). The name must be unique within the current [namespace](Naming.md#namespaces).
+Class name. [Simple ID](IDs.md#id-broken). The name must be unique within the current [namespace](Naming.md#namespace).
 
 *caption*
 

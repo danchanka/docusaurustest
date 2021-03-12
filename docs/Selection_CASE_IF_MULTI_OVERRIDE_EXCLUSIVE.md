@@ -6,13 +6,13 @@ The *selection* operator creates a property that determines for a set of *condi
 
 All conditions and results are defined as some properties and/or parameters. Accordingly, a condition *is satisfied* if the value of the property or parameter by which this condition is set is not equal to **NULL**. 
 
-### Polymorphic form
+### Polymorphic form {#poly}
 
 The platform also allows you to define a condition and the corresponding result with one property. In this case, the condition may be either matching the property's [signature](Property_signature_CLASS.md), or the property itself. We will call this the*polymorphic* form of the operator.
 
 Note that the [extremum operator](Extremum_MAX_MIN.md) and logical operators basically are also varieties of the selection operator (and of its polymorphic form, i.e. the conditions and result are defined by one property)
 
-### Mutual exclusion of conditions
+### Mutual exclusion of conditions {#exclusive}
 
 The selection operator lets you specify that all its conditions are *mutually exclusive*. If this option is specified, and the conditions are not in fact mutually exclusive, the platform will throw the corresponding error.
 
@@ -22,7 +22,7 @@ It is worth noting that this check is no more than a hint to the platform (for b
 
 This operator supports [implicit definition](Property_extension.md) using the technique of extensions, which allows, in particular, to implement polymorphism in the form that is common practice in OOP.
 
-### Single form
+### Single form {#single}
 
 The *single *form of the selection operator checks exactly one condition. If this condition is met, the value of the specified result is returned. It is also possible to specify an *alternative result *which value is returned if the condition is not met.
 
@@ -30,7 +30,7 @@ Type of mutual exclusion and implicit definition do not make sense/are not suppo
 
 ### Determining the result class
 
-The result class of the selection operator is the common ancestor (builtin or [user-defined](User_classes.md#common-ancestor)) of its operands.
+The result class of the selection operator is the common ancestor (builtin or [user-defined](User_classes.md#commonparentclass)) of its operands.
 
 ### Language
 

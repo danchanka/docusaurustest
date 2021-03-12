@@ -61,7 +61,7 @@ For the application server to work, it must have access to the PostgreSQL databa
 
         java -cp ".;lsfusion-server-2.0.jar" lsfusion.server.logics.BusinessLogicsBootstrap
 
-#### Installing the web server (web and desktop client) as a service
+#### Installing the web server (web and desktop client) as a service {#appservice}
 
 To install the web server, Apache Tomcat version 7 or higher must be installed on the computer.
 

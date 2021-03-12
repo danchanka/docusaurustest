@@ -6,11 +6,11 @@ title: 'Branching (CASE, IF, MULTI)'
 
 All conditions are defined as [properties](Properties.md) and/or parameters. Accordingly, a condition is *met* if the value of the [p](Properties.md)roperty or parameter by which it is set is not equal to **NULL**.
 
-### Polymorphic form
+### Polymorphic form {#poly}
 
 This operator also allows to define a condition not explicitly but by using as a condition the [signature](Property_signature_CLASS.md) of the action corresponding to that condition. We will call this the *polymorphic* form of the operator.
 
-### Mutual exclusion of conditions
+### Mutual exclusion of conditions {#exclusive}
 
 The branching operator lets you specify that all its conditions are *mutually exclusive*. If this option is set, and the conditions are not in fact mutually exclusive, the platform will throw the corresponding error.
 
@@ -20,7 +20,7 @@ It is worth noting that this check is no more than a hint to the platform (for b
 
 This operator has the capability of an [implicit definition](Action_extension.md) using the technique of [extensions](Extensions.md), which allows, in particular, to implement polymorphism in the form that is common practice in OOP.
 
-### Single form
+### Single form {#single}
 
 The *single *form of the branching operator checks exactly one condition. If this condition is met, the specified action is called. It is also possible to specify an *alternative action *that is called if the condition is not met.
 

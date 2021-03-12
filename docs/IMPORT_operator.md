@@ -2,7 +2,7 @@
 title: 'IMPORT operator'
 ---
 
-The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT.md) or, in general, into a [specified form](In_a_structured_view_EXPORT_IMPORT.md#form-import).
+The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT.md) or, in general, into a [specified form](In_a_structured_view_EXPORT_IMPORT.md#importForm).
 
 ### Syntax
 
@@ -56,7 +56,7 @@ Names of object groups of the imported form for which you want to import data. 
 
 *fileExpr1 , ..., fileExprM*
 
-Expressions whose values are files that need to be imported for the specified object groups. The value of each expression must be an object of a file class (**FILE**, **RAWFILE**, **JSONFILE** etc. ). Used only to import forms from flat formats. For the [empty object group](Static_view.md#empty-object-group), the name **root** is used. 
+Expressions whose values are files that need to be imported for the specified object groups. The value of each expression must be an object of a file class (**FILE**, **RAWFILE**, **JSONFILE** etc. ). Used only to import forms from flat formats. For the [empty object group](Static_view.md#empty), the name **root** is used. 
 
 ### *Import format*
 
@@ -97,7 +97,7 @@ charsetStr is a string literal that defines the encoding. 
 
 *actionOperator*
 
-[Context-dependent action operator](Action_operator.md#context-dependent-operators) describing the action that is executed for each imported record.
+[Context-dependent action operator](Action_operator.md#contextdependent) describing the action that is executed for each imported record.
 
 *elseActionOperator*
 
@@ -127,7 +127,7 @@ A list of column IDs in the source file from which data will be imported to the 
 
 *whereId*
 
-Property ID to which [a default value](Built-in_classes.md#default-value) of the class of this property value will be written for each imported object. Property parameters and classes must match the imported objects and their classes. If the property is not specified and the number of imported objects is greater than 0, a property with the name **imported** and classes of imported objects (e.g. **System.imported\[INTEGER\]**) is used.
+Property ID to which [a default value](Built-in_classes.md#defaultvalue) of the class of this property value will be written for each imported object. Property parameters and classes must match the imported objects and their classes. If the property is not specified and the number of imported objects is greater than 0, a property with the name **imported** and classes of imported objects (e.g. **System.imported\[INTEGER\]**) is used.
 
 *propClassId1, ..., *propClassId*N*
 

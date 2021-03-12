@@ -29,7 +29,7 @@ The **WINDOW** instruction declares a new window and adds it to the current [m
 
 *name*
 
-Window name. [Simple ID](IDs.md#id-broken). The name must be unique within the current [namespace](Naming.md#namespaces).
+Window name. [Simple ID](IDs.md#id-broken). The name must be unique within the current [namespace](Naming.md#namespace).
 
 *caption*
 

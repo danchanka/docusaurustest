@@ -24,7 +24,7 @@ List of action parameter names. Each name is defined [by a simple ID](IDs.md#id
 
 *aspectAction*
 
-A [context-dependent action operator](Action_operator.md#context-dependent-operators) describing the aspect.
+A [context-dependent action operator](Action_operator.md#contextdependent) describing the aspect.
 
 ### Examples
 

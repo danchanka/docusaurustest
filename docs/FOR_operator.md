@@ -50,7 +50,7 @@ The name of the class of the object to create. Defined by a [class ID](IDs.md#cl
 
 *action*
 
-[Context-dependent action operator](Action_operator.md#context-dependent-operators) describing the main action.
+[Context-dependent action operator](Action_operator.md#contextdependent) describing the main action.
 
 *alternativeAction*
 

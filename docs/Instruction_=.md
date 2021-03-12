@@ -16,7 +16,7 @@ The **= ** instruction declares a new property and adds it to the current [mo
 When creating a property, the instruction has two forms:
 
 -   The first form describes and creates a property using an [expression](Expression.md). 
--   The second form describes the property using one of the [context-independent](Property_operators.md#context-independent-operators) [property operators](Property_operators.md) that cannot be part of an expression.
+-   The second form describes the property using one of the [context-independent](Property_operators.md#contextindependent) [property operators](Property_operators.md) that cannot be part of an expression.
 
 When declaring a property, its set of options can also be specified.   
 

@@ -12,7 +12,7 @@ If the user initiates a [property](Form_events.md) [change event](Form_events.m
 
 When the user inserts a value into a property cell using the OS tools, the platform triggers a WYSIWYG event to change this property (**CHANGEWYS**), and calls the corresponding handler on the server. In this case, the value that the user inserted is pushed as the request value.
 
-*Change event (**CHANGEWYS** and **CHANGE**) [default handler](Form_events.md#default-handlers) for composition*
+*Change event (**CHANGEWYS** and **CHANGE**) [default handler](Form_events.md#default) for composition*
 
 If a property being changed is created using the [composition](Composition_JOIN.md) operator with one argument (most often a name or ID), and change event handler is not explicitly defined for it, the platform automatically creates this handler as follows: 
 
@@ -34,9 +34,9 @@ By default, group change handler is created as follows: **CHANGE** is called fir
 
 In fact, the value request operator performs only two operations: it [checks](Branching_CASE_IF_MULTI.md) **System.requestPushed** (pushing the value) for the value request action and **System.requestCanceled** (canceling the value) for the request processing action, and it is also responsible for determining the possibility of asynchronous input of the property being changed. At the same time, using this operator makes the code clearer and more readable, therefore it is recommended to use it (instead of explicit checks and options).
 
-As with other value input operators, it is possible to define [main and alternative](Value_input.md#cancellation-and-input-result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled). Accordingly, it is these two actions in this operator that are responsible for processing request values.
+As with other value input operators, it is possible to define [main and alternative](Value_input.md#result) actions. The first is called if the input was successfully completed, the second if not (i.e. if the input was canceled). Accordingly, it is these two actions in this operator that are responsible for processing request values.
 
-### Implicit use
+### Implicit use {#implicit}
 
 Note that all [value input](Value_input.md) operators can be automatically "wrapped" in the value request operator by using the corresponding option (**DO**). And since, as a rule, a value is input using one input operator, it is recommended to use this option by default, and use the value request operator explicitly only in really complex cases, for example, if there can be several input options (depending on the condition, different forms, etc.)
 

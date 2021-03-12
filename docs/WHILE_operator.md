@@ -40,7 +40,7 @@ The name of the class of the object to create. Defined by a [class ID](IDs.md#c
 
 *action*
 
-[Context-dependent action operator](Action_operator.md#context-dependent-operators) describing the action being executed.
+[Context-dependent action operator](Action_operator.md#contextdependent) describing the action being executed.
 
 ### Examples
 

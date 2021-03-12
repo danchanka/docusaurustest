@@ -32,7 +32,7 @@ Each window occupies a predefined section of the desktop. Graphically, this can 
 
 The entire desktop is 100x100 *pixels* in size. When creating a window, you must specify the window's upper left coordinate, width and height, expressed in *pixels*. It is desirable that windows should "cover" the entire area of the desktop. If this does not happen, then the free area will be given to one of the windows (there is no guarantee as to which one). Two windows are allowed to have absolutely identical coordinates and sizes. In this case they will be displayed in the same place, but switching between them will be possible using tabs.
 
-### Selected folder
+### Selected folder {#selectedfolder}
 
 At any moment in time in each window there can be one current user-*selected *navigator folder. Accordingly, if the element item belongs to a window other than the window of its parent folder, then this element is shown in its window if and only if its parent folder is selected in its window. The predefined **System.root** folder is always considered to be selected. If at some point a window does not display any navigator element, then that window is automatically hidden.
 

@@ -11,7 +11,7 @@ As with any GUI, form design is a hierarchy whose nodes are *components*. Compo
 
 Each component must have its own unique name within *the form*. 
 
-### Containers
+### Containers {#containers}
 
 All children of any container make an ordered list. It is necessary to determine how the child components of each container on the form should be placed. To do this, one of the following *types* can be specified for a container:
 
@@ -41,13 +41,13 @@ When defining the form design, the developer can use the following base componen
 
 *Filter groups*
 
--   *Filter group* (**FILTERGROUP**): a component with which the user can activate the filters they need in a form's [filter groups](Interactive_view.md#filter-group).
+-   *Filter group* (**FILTERGROUP**): a component with which the user can activate the filters they need in a form's [filter groups](Interactive_view.md#filtergroup).
 
 *Properties / Actions*
 
 -   *Property panel* (**PROPERTY**): a component that displays the title and current value of a property. The caption can be either to the left of the value cell or at the top. Not shown if the property is displayed in the table.
 
-### Dimensions and components layout
+### Dimensions and components layout {#components}
 
 The developer can control how the platform distributes the available container sizes between its internal components, as well as how these components will be located relative to each other.
 
@@ -121,9 +121,9 @@ The default height of a property value cell is equal to the height of the font 
 
 ### Window size
 
-If the form opens in [window](In_an_interactive_view_SHOW_DIALOG.md#form-location) mode it does not have an upper container, so you need to determine this window's initial size. This size is determined similarly to the default base size, the only difference is that for tables/trees the default size is determined not as a constant (the default is 130.70) but in such a way that it contains their whole contents (similar to the automatic sizing mechanism), but no less than 130 in width and 140 in height.
+If the form opens in [window](In_an_interactive_view_SHOW_DIALOG.md#location) mode it does not have an upper container, so you need to determine this window's initial size. This size is determined similarly to the default base size, the only difference is that for tables/trees the default size is determined not as a constant (the default is 130.70) but in such a way that it contains their whole contents (similar to the automatic sizing mechanism), but no less than 130 in width and 140 in height.
 
-### **Default design**
+### **Default design** {#defaultDesign}
 
 An automatic design can be created for each form, based on the form's structure. The developer can modify the automatic design or create a design from scratch.
 

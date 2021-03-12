@@ -18,10 +18,10 @@ Where *exclusionType* is of two types:
 The **ABSTRACT** operator creates an abstract property, the implementations of which can be defined later (for example, in other [modules](Modules.md) dependent on the module containing the **ABSTRACT** property). Implementations are added to the property using the [instruction + =](Instruction_+=.md). When calculating an abstract property, its *matching* implementation is selected and calculated. The selection of the matching implementation depends on the *selection conditions* that are defined when adding implementations, and on the **ABSTRACT** operator type.
 
 -   **CASE** - a general case.** **The selection condition will be explicitly specified in the implementation using the [**WHEN** block](Instruction_+=.md).
--   **MULTI** – a [polymorphic form](Property_extension.md#polymorphic-form). The selection condition is that the parameters match the implementation [signature](CLASS_operator.md). This type is the default type and need not to be explicitly specified.
+-   **MULTI** – a [polymorphic form](Property_extension.md#poly). The selection condition is that the parameters match the implementation [signature](CLASS_operator.md). This type is the default type and need not to be explicitly specified.
 -   **VALUE** - a polymorphic form**. **The selection condition will be definiteness (a none-**NULL** value) of the implementation value (essentially, the implementation itself).** **
 
-The [type of mutual exclusion](Property_extension.md#mutual-exclusion-of-conditions) of an operator determines whether several conditions for the implementation of an abstract property can simultaneously be met with a certain set of parameters. The **EXCLUSIVE** type indicates that implementation conditions cannot be met simultaneously. The **OVERRIDE** type allows several simultaneously met conditions. In this case, the implementation to be selected is determined by the keywords **FIRST** and **LAST**.
+The [type of mutual exclusion](Property_extension.md#exclusive) of an operator determines whether several conditions for the implementation of an abstract property can simultaneously be met with a certain set of parameters. The **EXCLUSIVE** type indicates that implementation conditions cannot be met simultaneously. The **OVERRIDE** type allows several simultaneously met conditions. In this case, the implementation to be selected is determined by the keywords **FIRST** and **LAST**.
 
 The **ABSTRACT** operator cannot be used inside [expressions](Expression.md).
 

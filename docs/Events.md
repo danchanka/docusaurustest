@@ -4,7 +4,7 @@ title: 'Events'
 
 *Events* are a mechanism that allows to execute certain [actions](Actions.md) at certain points in time (these actions shall be called event *handlers*).
 
-### Event types
+### Event types {#type}
 
 There are two types of events:
 
@@ -38,7 +38,7 @@ Advantages of global events:
 
 The platform also allows to additionally specify that the event will occur only if the change session belongs to one of the given forms. If this is not done, then it must be kept in mind that most of the described events occur very often, so their handling should not have side effects (for example, showing messages) if there are no changes in the session. Ideally, events should be [simple](Simple_event.md) and should generally be used only to optimize the performance of really complex cases.
 
-### Change operators' event mode
+### Change operators' event mode {#change}
 
 When handling events, you can use a special mode of the [previous value](Previous_value_PREV.md) operator (it shall be called *event* mode). In this mode, the previous value operator will return the property's values not at the beginning of the session, but at the time of the previous occurrence of this event (or rather, the end of its handling). A similar mode is supported for all [change](Change_operators_SET_CHANGED_....md) operators.
 

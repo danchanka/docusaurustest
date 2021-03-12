@@ -13,7 +13,7 @@ Similar to an object group, each report has a *parent* report, so all reports fo
 -   include [the hierarchy of object groups](Static_view.md), i.e. if a group of objects of one report is a child of a group of objects of the other report, then the first report must match the second one or be its child as well
 -   within one report, each group of objects must have exactly one child.
 
-### Building report hierarchy
+### Building report hierarchy {#buildhierarchy}
 
 Based on the report hierarchy restrictions, only "chains" of object groups can be included in one report (i.e., G1, G2, G3, ... Gn, where G2 is the only linear child object of G1, G3 is the only child of G2, etc.). Thus, the decision on how to break object groups into reports comes down to whether to merge an object group with its only child (if there is one) or not. By default, such a merge is performed, however, if necessary, the developer can disable it by specifying the corresponding option (**SUBREPORT**) for a child object group.
 

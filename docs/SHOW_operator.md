@@ -27,7 +27,7 @@ When opening the list/edit form, the syntax is slightly different:
 
 ### Description
 
-The **SHOW** operator creates an action that opens the specified form. When opening the form in the **OBJECTS** block, [initial values](Open_form.md#passing-objects) can be specified for [Form structure](Form_structure.md)form objects.
+The **SHOW** operator creates an action that opens the specified form. When opening the form in the **OBJECTS** block, [initial values](Open_form.md#params) can be specified for [Form structure](Form_structure.md)form objects.
 
 ### Parameters
 
@@ -62,25 +62,25 @@ Specifies that the values passed may be **NULL**.
 
 *syncType*
 
-Determines in which [flow control](In_an_interactive_view_SHOW_DIALOG.md#flow-management) mode the operator will work:
+Determines in which [flow control](In_an_interactive_view_SHOW_DIALOG.md#flow) mode the operator will work:
 
 -   **WAIT** - synchronous. Used by default.
 -   **NOWAIT** - asynchronous.
 
 *windowType*
 
-Method of [the form layout](In_an_interactive_view_SHOW_DIALOG.md#form-location):
+Method of [the form layout](In_an_interactive_view_SHOW_DIALOG.md#location):
 
 -   **DOCKED** – as a tab. Used by default in asynchronous mode.
 -   **FLOAT** - as a window. Used by default in synchronous mode.
 
 *MANAGESESSION* | *NOMANAGESESSION*
 
-Keyword. Determines whether or not the created form [is considered to be the owner of the session](Interactive_view.md#session-owner) (if so, in interactive mode the corresponding buttons for managing the session will be shown on the form). By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#system-actions-for-formsession-lifecycle-management) depending on the context.
+Keyword. Determines whether or not the created form [is considered to be the owner of the session](Interactive_view.md#owner) (if so, in interactive mode the corresponding buttons for managing the session will be shown on the form). By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#sysactions) depending on the context.
 
 *CANCEL* | *NOCANCEL*
 
-Keyword. Determines whether or not to show the "Cancel" system action (**System.formCancel**)** **on the form. By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#system-actions-for-formsession-lifecycle-management) depending on context.
+Keyword. Determines whether or not to show the "Cancel" system action (**System.formCancel**)** **on the form. By default, the platform tries to determine which mode to use [automatically](Interactive_view.md#sysactions) depending on context.
 
 *NEWSESSION | NESTEDSESSION*
 
@@ -88,7 +88,7 @@ Keyword. Determines whether or not to show the "Cancel" system action (**System.
 
 *READONLY*
 
-Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG.md#extra-features) mode.
+Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG.md#extra) mode.
 
 ### Examples
 

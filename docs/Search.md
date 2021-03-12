@@ -22,72 +22,72 @@ Below are the steps, conditions and operations of the search algorithm, dependin
 
 |Element type|Search step|Step conditions|Selection conditions|Selection operations|
 |---|---|---|---|---|
-|[Modules](Modules.md)|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name equals[...](#name-matches)</li><br/></ul>|<br /><br/>|
-|[Forms](Forms.md), [Classes](User_classes.md), [Navigator Elements](Navigator.md), [Property and action groups](Groups_of_properties_and_actions.md) , [Tables](Tables.md), [Navigator Design](Navigator_design.md)|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located in dependent module[...](#located-in-dependent-module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#located-in-specified-namespace-if-explicitly-specified)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#selection-of-a-priority-namespace-if-the-namespace-is-not-explicitly-specified)</li><br/></ul>|
-|<p>[Metacodes](Metaprogramming.md)</p>|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located in dependent module[...](#located-in-dependent-module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#located-in-specified-namespace-if-explicitly-specified)</li><br/><li>Number of parameters matches[...](#number-of-parameters-matches)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#selection-of-a-priority-namespace-if-the-namespace-is-not-explicitly-specified)</li><br/></ul>|
-|[Properties](Properties.md), [Actions](Actions.md)|Local|<ul><br/><li>Search for property inside action[...](#search-for-property-inside-action)</li><br/><li>Namespace not specified explicitly[...](#namespace-not-specified-explicitly)</li><br/></ul>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located upper in the stack[...](#located-upper-in-the-stack)</li><br/><li>Parameters classes match[...](#suitable-classes-of-parameters)</li><br/></ul>|<ul><br/><li>Selection of more specific classes of parameters[...](#selection-of-more-specific-classes-of-parameters)</li><br/></ul>|
-|Local common|<ul><br/><li>Search for property inside action[...](#search-for-property-inside-action)</li><br/><li>Namespace not specified explicitly[...](#namespace-not-specified-explicitly)</li><br/></ul>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located upper in the stack[...](#located-upper-in-the-stack)</li><br/><li>Parameters classes intersect[...](#classes-of-parameters-intersect)</li><br/></ul>|<p><br /><br/></p><br/><p><br /><br/></p>|
-|Global|<br /><br/>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located in dependent module[...](#located-in-dependent-module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#located-in-specified-namespace-if-explicitly-specified)</li><br/><li>Parameters classes match[...](#suitable-classes-of-parameters)</li><br/><li>Abstract property (if an abstract property is being searched for)[...](#abstract-property-if-an-abstract-property-is-being-searched-for)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#selection-of-a-priority-namespace-if-the-namespace-is-not-explicitly-specified)</li><br/><li>Selection of non-matching classes of parameters (if an abstract property is being searched for)[...](#selection-of-non-matching-classes-of-parameters-if-an-abstract-property-is-being-searched-for)</li><br/><li>Selection of more specific classes of parameters[...](#selection-of-more-specific-classes-of-parameters)</li><br/></ul>|
-|Global common|<ul><br/><li>Not searching for an abstract property[...](#not-searching-for-an-abstract-property)</li><br/></ul>|<ul><br/><li>Name matches[...](#name-matches)</li><br/><li>Located in dependent module[...](#located-in-dependent-module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#located-in-specified-namespace-if-explicitly-specified)</li><br/><li>Parameters classes intersect[...](#classes-of-parameters-intersect)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#selection-of-a-priority-namespace-if-the-namespace-is-not-explicitly-specified)</li><br/></ul>|
+|[Modules](Modules.md)|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name equals[...](#name)</li><br/></ul>|<br /><br/>|
+|[Forms](Forms.md), [Classes](User_classes.md), [Navigator Elements](Navigator.md), [Property and action groups](Groups_of_properties_and_actions.md) , [Tables](Tables.md), [Navigator Design](Navigator_design.md)|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name matches[...](#name)</li><br/><li>Located in dependent module[...](#module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#namespace)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#priority)</li><br/></ul>|
+|<p>[Metacodes](Metaprogramming.md)</p>|<br /><br/>|<p><br /><br/></p>|<ul><br/><li>Name matches[...](#name)</li><br/><li>Located in dependent module[...](#module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#namespace)</li><br/><li>Number of parameters matches[...](#metacode)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#priority)</li><br/></ul>|
+|[Properties](Properties.md), [Actions](Actions.md)|Local|<ul><br/><li>Search for property inside action[...](#locals)</li><br/><li>Namespace not specified explicitly[...](#nonamespace)</li><br/></ul>|<ul><br/><li>Name matches[...](#name)</li><br/><li>Located upper in the stack[...](#stack)</li><br/><li>Parameters classes match[...](#direct)</li><br/></ul>|<ul><br/><li>Selection of more specific classes of parameters[...](#concrete)</li><br/></ul>|
+|Local common|<ul><br/><li>Search for property inside action[...](#locals)</li><br/><li>Namespace not specified explicitly[...](#nonamespace)</li><br/></ul>|<ul><br/><li>Name matches[...](#name)</li><br/><li>Located upper in the stack[...](#stack)</li><br/><li>Parameters classes intersect[...](#indirect)</li><br/></ul>|<p><br /><br/></p><br/><p><br /><br/></p>|
+|Global|<br /><br/>|<ul><br/><li>Name matches[...](#name)</li><br/><li>Located in dependent module[...](#module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#namespace)</li><br/><li>Parameters classes match[...](#direct)</li><br/><li>Abstract property (if an abstract property is being searched for)[...](#abstract)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#priority)</li><br/><li>Selection of non-matching classes of parameters (if an abstract property is being searched for)[...](#notequals)</li><br/><li>Selection of more specific classes of parameters[...](#concrete)</li><br/></ul>|
+|Global common|<ul><br/><li>Not searching for an abstract property[...](#notabstract)</li><br/></ul>|<ul><br/><li>Name matches[...](#name)</li><br/><li>Located in dependent module[...](#module)</li><br/><li>Located in specified namespace (if explicitly specified)[...](#namespace)</li><br/><li>Parameters classes intersect[...](#indirect)</li><br/></ul>|<ul><br/><li>Selection of a priority namespace (if the namespace is not explicitly specified)[...](#priority)</li><br/></ul>|
 
 Description of steps, conditions and operations of the search algorithm:
 
-##### Name matches
+##### Name matches {#name}
 
 The name of the candidate matches the search name (must always be specified explicitly when searching). The comparison is case-sensitive (i.e. aA != AA).
 
-##### Located in dependent module
+##### Located in dependent module {#module}
 
-Candidate module [depends on](Modules.md#dependencies-between-modules) the module in which the search is performed.
+Candidate module [depends on](Modules.md#depends) the module in which the search is performed.
 
-##### Located in specified namespace (if explicitly specified)
+##### Located in specified namespace (if explicitly specified) {#namespace}
 
-[Namespace](Naming.md#namespaces) of the candidate equals the namespace of the search (if this namespace is specified explicitly).
+[Namespace](Naming.md#namespace) of the candidate equals the namespace of the search (if this namespace is specified explicitly).
 
-##### Selection of a priority namespace (if the namespace is not explicitly specified)
+##### Selection of a priority namespace (if the namespace is not explicitly specified) {#priority}
 
 If the current set contains candidates from the namespace in which the search is performed, all other candidates are deleted from the set of candidates, and the selection operation is completed. If not, a similar action is repeated for *priority* namespaces of the module in which the search is being performed (in the order in which these priority namespaces were set). If nothing is found for them either, the set of candidates remains unchanged.
 
-##### Number of parameters matches
+##### Number of parameters matches {#metacode}
 
 The number of parameters of the candidate is equal to the number of parameters of the call.
 
-##### Search for property inside action
+##### Search for property inside action {#locals}
 
 This step is only executed to search for a property, and only if this search is inside some action (and not, for example, in a form declaration).
 
-###### Namespace not specified explicitly
+###### Namespace not specified explicitly {#nonamespace}
 
 This step is only executed if no search namespace is specified.
 
-##### Located upper in the stack
+##### Located upper in the stack {#stack}
 
-The candidate is a [local property](Data_properties_DATA.md#local-data-properties) and:
+The candidate is a [local property](Data_properties_DATA.md#local) and:
 
 -   is declared inside an operator of a [sequence](Sequence_....md) that executes an action that refers to the required element.
 -   is declared earlier than the action that directly refers to the required element.
 
-##### Suitable classes of parameters
+##### Suitable classes of parameters {#direct}
 
 [Classes of call parameters](#call-broken) [match](#directclasses-broken) [the classes of the candidate's parameters](#decl-broken) or classes of the referring parameters are unknown.
 
-##### Classes of parameters intersect
+##### Classes of parameters intersect {#indirect}
 
 [Classes of the referring parameters](#call-broken) [intersect](#indirectclasses-broken) with [classes of the candidate's parameters](#decl-broken).
 
-##### Selection of more specific classes of parameters
+##### Selection of more specific classes of parameters {#concrete}
 
 If the set of candidates includes properties **A** and **B** such that **A**'s parameter classes match **B**'s, then property **B** is removed from the set of candidates.
 
-##### Not searching for an abstract property
+##### Not searching for an abstract property {#notabstract}
 
 This step is not executed if a property (action) is searched in the [extension](Property_extension.md) operator of the property (action), and the searched property is an extensible (abstract) property (when searching for properties in the right one part of extension operator implementation the common search mechanism is used).
 
-##### Abstract property (if an abstract property is being searched for)
+##### Abstract property (if an abstract property is being searched for) {#abstract}
 
 The candidate is an [abstract](Property_extension.md) property (action).
 
-##### Selection of non-matching classes of parameters (if an abstract property is being searched for)
+##### Selection of non-matching classes of parameters (if an abstract property is being searched for) {#notequals}
 
 If:
 

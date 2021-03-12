@@ -13,7 +13,7 @@ The **ACTION** instruction creates an [action](Actions.md).
 
 The **ACTION **instruction declares a new action and adds it to the current [module](Modules.md).
 
-The instruction has two forms: the first form creates an action using a [context-dependent](Action_operator.md#context-dependent-operators) action operator, the second form creates a [context-independent](Property_operators.md#context-independent-operators) one.
+The instruction has two forms: the first form creates an action using a [context-dependent](Action_operator.md#contextdependent) action operator, the second form creates a [context-independent](Property_operators.md#contextindependent) one.
 
 Also, when declaring an action, a set of its options can be specified.   
 
@@ -35,11 +35,11 @@ If parameters are not defined explicitly, they will be automatically calculated 
 
 *operator*
 
-A [context-dependent](Action_operator.md#context-dependent-operators) action operator describing and creating an action. You can use the parameters defined in this instruction (if any) as operator parameters.
+A [context-dependent](Action_operator.md#contextdependent) action operator describing and creating an action. You can use the parameters defined in this instruction (if any) as operator parameters.
 
 *contextIndependentOperator*
 
-The [context-independent](Action_operator.md#context-independent-operators) action operator describing and creating an action. 
+The [context-independent](Action_operator.md#contextindependent) action operator describing and creating an action. 
 
 *options*
 

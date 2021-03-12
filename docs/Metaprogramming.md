@@ -4,7 +4,7 @@ title: 'Metaprogramming'
 
 *Metaprogramming* is a type of programming associated with writing software code that results in the generation of more software code. Metaprogramming is used for code reusability and to speed up development.  
 
-### Metacode
+### Metacode {#metacode}
 
 In l**sFusion **the metaprogramming tool used is *metacode*, which is described by the [**META** instruction](META_instruction.md). Metacode consists of a header and an **lsFusion** code block describing the [instruction](Instructions.md) sequence.** **This code block must end with the keyword **END**. Let us consider an example of metacode that allows you to add two [actions](Actions.md) to an arbitrary [form](Forms.md):
 
@@ -20,7 +20,7 @@ The instruction to use metacode starts with the special symbol @, followed by th
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=MetaSampleResult&block=resultmeta1"/>
 
-### Lexeme concatenation 
+### Lexeme concatenation  {#concat}
 
 Simply substituting an ID for a metacode parameter is often not enough. For example, when creating a large number of new [system elements](Element_identification.md) inside the metacode, you must be able to specify these new names. Passing all the names as metacode parameters can be inconvenient. For this reason the metacode contains the special operation \#\#, which operates at the [tokens](Tokens.md) level. This operation can concatenate two adjacent lexemes into one. If one of the concatenated lexemes is a [string literal](Literals.md#strliteral-broken), the concatenation will result in a single string literal.
 

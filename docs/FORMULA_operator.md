@@ -22,7 +22,7 @@ Keyword specifying that the property being created may return **NULL** if all pa
 
 *className*
 
-The name of the [builtin class](Built-in_classes.md) of the value returned by the property. If not specified, the resulting class is considered to be the [common ancestor](Built-in_classes.md#common-ancestor) of all property operands.
+The name of the [builtin class](Built-in_classes.md) of the value returned by the property. If not specified, the resulting class is considered to be the [common ancestor](Built-in_classes.md#commonparentclass) of all property operands.
 
 *syntaxType1, ..., syntaxTypeN*
 
