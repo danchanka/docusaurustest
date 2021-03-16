@@ -6,14 +6,14 @@ def transform_name(title):
     title = title.replace('&gt;', '>').replace('&lt;', '<')    
     title = re.sub(r'[\s<>()\[\]{}:;\'`"\/\\|?\*~!@#$%^&,]', '_', title)
     title = re.sub(r'__+', '_', title) 
-    title = re.sub(r'_+$', '', title)
+#    title = re.sub(r'_+$', '', title)
     return title
 
-def add_to_filemap(data, filename, file_dict):
+def add_to_filemap(data, filename, file_dict, md_dict):
     title = re.search('<title>(.*?)</title>', data).group(1)
     if title:
         name = transform_name(title)                        
-        file_dict[filename] = name + ".md"
+        file_dict[filename] = md_dict[name + ".md"]
     else:
         print(f'error: there was no title in {filename}')
 
@@ -57,13 +57,15 @@ file_dict = {}
 anchor_dict = {}
 id_to_md = {}
 indir = settings['html_dir']
+md_dict = json.load(open(settings["mdmap"], 'r', encoding='utf-8'))
+
 print('building maps...')
 for filename in os.listdir(indir):
     fullname = indir + '/' + filename 
-    if os.path.isfile(fullname) and fullname.endswith('.html'):
+    if os.path.isfile(fullname) and fullname.endswith('.html') and not fullname.endswith('index.html'):
         with open(fullname, 'r', encoding='utf-8') as infile:
             data = infile.read()
-            add_to_filemap(data, filename, file_dict)
+            add_to_filemap(data, filename, file_dict, md_dict)
             add_to_anchormap(data, file_dict[filename], anchor_dict)
             add_file_id(filename, file_dict[filename], id_to_md)
 

@@ -2,7 +2,7 @@
 title: 'DATA operator'
 ---
 
-The **DATA** operator creates a [data property](Data_properties_DATA.md).
+The **DATA** operator creates a [data property](Data_properties_DATA_.md).
 
 ### Syntax
 
@@ -18,7 +18,7 @@ This operator cannot be used in the [**JOIN** operator](JOIN_operator.md) (ins
 
 *LOCAL*
 
-A keyword that, when specified, creates a [local data property](Data_properties_DATA.md#local). 
+A keyword that, when specified, creates a [local data property](Data_properties_DATA_.md#local). 
 
 *NESTED*
 

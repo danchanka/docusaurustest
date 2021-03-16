@@ -12,7 +12,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=MetaSample&block=definemeta1"/>
 
-The first line of the example contains the metacode header. It consists of the keyword **META**, metacode name, and parameter list. In this example, the metacode **addActions** has one parameter: **formName**. This is the name of the form to which the actions will be added. Let's consider the possible uses for this metacode, which are described by the [instruction @](Instruction.md). 
+The first line of the example contains the metacode header. It consists of the keyword **META**, metacode name, and parameter list. In this example, the metacode **addActions** has one parameter: **formName**. This is the name of the form to which the actions will be added. Let's consider the possible uses for this metacode, which are described by the [instruction @](Instruction_.md). 
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=MetaSample&block=implementmeta1"/>
 

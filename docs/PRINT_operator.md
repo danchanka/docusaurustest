@@ -2,7 +2,7 @@
 title: 'PRINT operator'
 ---
 
-The **PRINT** operator creates an [action](Actions.md) that [opens a form](In_a_print_view_PRINT.md) in print view. 
+The **PRINT** operator creates an [action](Actions.md) that [opens a form](In_a_print_view_PRINT_.md) in print view. 
 
 ### Syntax
 
@@ -38,7 +38,7 @@ Names of form objects for which additional filters are specified. [Simple IDs](I
 
 *printFormat*
 
-The [print format](In_a_print_view_PRINT.md#format) is specified by one of these keywords:
+The [print format](In_a_print_view_PRINT_.md#format) is specified by one of these keywords:
 
 -   **PDF** – the form will be exported to a PDF file.
 -   **XLS**, **XLSX** – the form will be exported to a file in one of the specified EXCEL formats.
@@ -62,7 +62,7 @@ An expression whose value determines the password that sets the read-only mode f
 
 *PREVIEW*
 
-Keyword. If specified, the form is displayed in [preview](In_a_print_view_PRINT.md#interactive) mode. This mode is used by default if no other modes/formats are specified.
+Keyword. If specified, the form is displayed in [preview](In_a_print_view_PRINT_.md#interactive) mode. This mode is used by default if no other modes/formats are specified.
 
 *NOPREVIEW*
 
@@ -74,7 +74,7 @@ An expression whose value determines the name of the printer to which the print 
 
 *MESSAGE*
 
-Keyword. If specified, the form displays data to the user in [message](In_a_print_view_PRINT.md#interactive) mode.
+Keyword. If specified, the form displays data to the user in [message](In_a_print_view_PRINT_.md#interactive) mode.
 
 *TOP n*
 

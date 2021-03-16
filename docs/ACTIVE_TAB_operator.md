@@ -2,7 +2,7 @@
 title: 'ACTIVE TAB operator'
 ---
 
-The **ACTIVE TAB** operator creates a [property](Properties.md) that checks if specified tab is [active](Activity_ACTIVE.md).
+The **ACTIVE TAB** operator creates a [property](Properties.md) that checks if specified tab is [active](Activity_ACTIVE_.md).
 
 ### Syntax 
 

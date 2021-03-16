@@ -2,7 +2,7 @@
 title: 'SHOW operator'
 ---
 
-The **SHOW** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG.md) in interactive view. 
+The **SHOW** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG_.md) in interactive view. 
 
 ### Syntax
 
@@ -62,14 +62,14 @@ Specifies that the values passed may be **NULL**.
 
 *syncType*
 
-Determines in which [flow control](In_an_interactive_view_SHOW_DIALOG.md#flow) mode the operator will work:
+Determines in which [flow control](In_an_interactive_view_SHOW_DIALOG_.md#flow) mode the operator will work:
 
 -   **WAIT** - synchronous. Used by default.
 -   **NOWAIT** - asynchronous.
 
 *windowType*
 
-Method of [the form layout](In_an_interactive_view_SHOW_DIALOG.md#location):
+Method of [the form layout](In_an_interactive_view_SHOW_DIALOG_.md#location):
 
 -   **DOCKED** – as a tab. Used by default in asynchronous mode.
 -   **FLOAT** - as a window. Used by default in synchronous mode.
@@ -88,7 +88,7 @@ Keyword. Determines whether or not to show the "Cancel" system action (**System.
 
 *READONLY*
 
-Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG.md#extra) mode.
+Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG_.md#extra) mode.
 
 ### Examples
 

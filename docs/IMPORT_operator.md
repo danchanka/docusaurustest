@@ -2,7 +2,7 @@
 title: 'IMPORT operator'
 ---
 
-The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT.md) or, in general, into a [specified form](In_a_structured_view_EXPORT_IMPORT.md#importForm).
+The **IMPORT** operator creates an [action](Actions.md) that imports data from a specified file into [specified properties (parameters)](Data_import_IMPORT_.md) or, in general, into a [specified form](In_a_structured_view_EXPORT_IMPORT_.md#importForm).
 
 ### Syntax
 
@@ -111,7 +111,7 @@ The name of the form into which data has to be imported. [Composite ID](IDs.md#
 
 *objClassId1, ..., objClassIdK*
 
-Classes of the [imported](Data_import_IMPORT.md#objects-broken) objects. Specified by [class IDs](IDs.md#classid-broken). K <= 1. By default, it is assumed that what is being imported is one object of class **INTEGER**.
+Classes of the [imported](Data_import_IMPORT_.md#objects-broken) objects. Specified by [class IDs](IDs.md#classid-broken). K <= 1. By default, it is assumed that what is being imported is one object of class **INTEGER**.
 
 *objAlias1, ..., objAliasK*
 

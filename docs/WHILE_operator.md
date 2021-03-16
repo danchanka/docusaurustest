@@ -2,7 +2,7 @@
 title: 'WHILE operator'
 ---
 
-The **WHILE** operator creates an [action](Actions.md) that implements a [recursive loop](Recursive_loop_WHILE.md).
+The **WHILE** operator creates an [action](Actions.md) that implements a [recursive loop](Recursive_loop_WHILE_.md).
 
 ### Syntax
 

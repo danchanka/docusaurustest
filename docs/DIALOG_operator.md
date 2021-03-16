@@ -2,7 +2,7 @@
 title: 'DIALOG operator'
 ---
 
-The **DIALOG** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG.md) in an interactive view in [dialog](In_an_interactive_view_SHOW_DIALOG.md#dialog) mode. 
+The **DIALOG** operator creates an [action](Actions.md) that [opens a form](In_an_interactive_view_SHOW_DIALOG_.md) in an interactive view in [dialog](In_an_interactive_view_SHOW_DIALOG_.md#dialog) mode. 
 
 ### Syntax
 
@@ -102,7 +102,7 @@ A [context-dependent action operator](Action_operator.md#contextdependent) that 
 
 *windowType*
 
-Method of [the form layout](In_an_interactive_view_SHOW_DIALOG.md#location):
+Method of [the form layout](In_an_interactive_view_SHOW_DIALOG_.md#location):
 
 -   **DOCKED** - as a tab.
 -   **FLOAT** - as a window. Used by default.
@@ -121,7 +121,7 @@ Keyword. Determines whether or not to show the "Cancel" system action (**System.
 
 *READONLY*
 
-Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG.md#extra) mode.
+Keyword. If specified, the form is opened in [read-only](In_an_interactive_view_SHOW_DIALOG_.md#extra) mode.
 
 ### Examples
 

@@ -12,7 +12,7 @@ We implement a property that will find a book by its number. It can be useful, f
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNumerating&block=numberaggr"/>
 
-The [GROUP AGGR](Grouping_GROUP.md) operator automatically adds a constraint on the uniqueness of the number. If you try to save the same number to the database, you will get an error message.
+The [GROUP AGGR](Grouping_GROUP_.md) operator automatically adds a constraint on the uniqueness of the number. If you try to save the same number to the database, you will get an error message.
 
 Let's add an [event](Events.md) that will automatically number books by increasing the maximum number existing in the database.
 

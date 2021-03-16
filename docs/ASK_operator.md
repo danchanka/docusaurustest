@@ -2,7 +2,7 @@
 title: 'ASK operator'
 ---
 
-The **ASK** operator creates an action that shows the user a message in a [dialog form](Show_message_MESSAGE_ASK.md#dialog).
+The **ASK** operator creates an action that shows the user a message in a [dialog form](Show_message_MESSAGE_ASK_.md#dialog).
 
 ### Syntax
 

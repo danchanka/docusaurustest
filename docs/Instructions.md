@@ -14,7 +14,7 @@ Instructions are of the following kinds:
 -   [The **WHEN** instruction](WHEN_instruction.md)
 -   [The <-**WHEN** instruction](Instruction_-_WHEN.md)
 -   [The **CONSTRAINT** instruction](CONSTRAINT_instruction.md)
--   [The => instruction](Instruction=.md)
+-   [The => instruction](Instruction=_.md)
 -   [The **CLASS** instruction](CLASS_instruction.md)
 -   [The **FORM** instruction](FORM_instruction.md)
 -   [The **DESIGN** instruction](DESIGN_instruction.md)
@@ -25,7 +25,7 @@ Instructions are of the following kinds:
 -   The [+=](Instruction_+=.md) instruction 
 -   [The **ACTION+** instruction](ACTION+_instruction.md)
 -   [The **META** instruction](META_instruction.md)
--   [Instruction** **@](Instruction.md)
+-   [Instruction** **@](Instruction_.md)
 -   [The **TABLE** instruction](TABLE_instruction.md)
 -   [The **INDEX** instruction](INDEX_instruction.md)
 -   [The **BEFORE** instruction](BEFORE_instruction.md)

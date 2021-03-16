@@ -2,7 +2,7 @@
 title: 'APPLY operator'
 ---
 
-The **APPLY** operator creates an [action](Actions.md) that [applies changes](Apply_changes_APPLY.md) to the database.
+The **APPLY** operator creates an [action](Actions.md) that [applies changes](Apply_changes_APPLY_.md) to the database.
 
 ### Syntax
 
@@ -15,7 +15,7 @@ where *nestedBlock* has one of two possible syntaxes:
 
 ### Description
 
-The **APPLY** operator creates an action that applies changes to the database. By specifying the keyword **NESTED** you can specify [local properties](Data_properties_DATA.md#local) whose changes are not dropped when applying the changes. This operator also includes an action to be executed before applying the changes to the database.
+The **APPLY** operator creates an action that applies changes to the database. By specifying the keyword **NESTED** you can specify [local properties](Data_properties_DATA_.md#local) whose changes are not dropped when applying the changes. This operator also includes an action to be executed before applying the changes to the database.
 
 ### Parameters
 

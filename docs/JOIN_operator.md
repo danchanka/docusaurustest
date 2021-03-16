@@ -2,7 +2,7 @@
 title: 'JOIN operator'
 ---
 
-The **JOIN** operator creates a [property](Properties.md) that implements a [composition](Composition_JOIN.md).
+The **JOIN** operator creates a [property](Properties.md) that implements a [composition](Composition_JOIN_.md).
 
 ### Syntax
 
@@ -16,7 +16,7 @@ Where "\[" and "\]" are ordinary brackets.
 
 **Description** 
 
-The **JOIN** operator creates a property that implements a composition of properties. The [main property](Composition_JOIN.md) can be defined by one of the three following options:
+The **JOIN** operator creates a property that implements a composition of properties. The [main property](Composition_JOIN_.md) can be defined by one of the three following options:
 
 -   an ID of the existing property
 -   a [context independent](Property_operators.md#contextindependent) [property operator](Property_operators.md) enclosed in brackets.

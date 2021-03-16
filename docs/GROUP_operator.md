@@ -2,7 +2,7 @@
 title: 'GROUP operator'
 ---
 
-The **GROUP** operator creates a [property](Properties.md) implementing [grouping](Grouping_GROUP.md).
+The **GROUP** operator creates a [property](Properties.md) implementing [grouping](Grouping_GROUP_.md).
 
 ### Syntax 
 

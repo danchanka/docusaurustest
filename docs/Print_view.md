@@ -31,7 +31,7 @@ The report hierarchy for this form is built as follows:
 
   
 
-![](download/temp/svgout2047691192645434560.png)
+![](download/temp/svgout8892903451953158670.png)
 
 ### Language
 
@@ -39,7 +39,7 @@ All of the above options, as well as defining the form structure, can be done u
 
 ### Open form
 
-To display the form in print view, the corresponding [open form](Open_form.md) in the [print view](In_a_print_view_PRINT.md) operator is used.
+To display the form in print view, the corresponding [open form](Open_form.md) in the [print view](In_a_print_view_PRINT_.md) operator is used.
 
 ### Examples
 

@@ -7,20 +7,20 @@
 
 -   [Install](Install.md)
     -   [Automatic installation](Automatic_installation.md)
-        -   [Development (auto)](Development_auto.md)
+        -   [Development (auto)](Development_auto_.md)
 
         <!-- -->
 
-        -   [Execution (auto)](Execution_auto.md)
+        -   [Execution (auto)](Execution_auto_.md)
 
     <!-- -->
 
     -   [Manual installation](Manual_installation.md)
-        -   [Development (manual)](Development_manual.md)
+        -   [Development (manual)](Development_manual_.md)
 
         <!-- -->
 
-        -   [Execution (manual)](Execution_manual.md)
+        -   [Execution (manual)](Execution_manual_.md)
 -   [Learn](Learn.md)
     <img src="images/icons/contenttypes/home_page_16.png" width="16" height="16" />
     -   [Paradigm](Paradigm.md)
@@ -28,11 +28,11 @@
             -   [Domain logic](Domain_logic.md)
                 -   [Properties](Properties.md)
                     -   [Operators](Operators.md)
-                        -   [Data properties (DATA)](Data_properties_DATA.md)
+                        -   [Data properties (DATA)](Data_properties_DATA_.md)
 
                         <!-- -->
 
-                        -   [Composition (JOIN)](Composition_JOIN.md)
+                        -   [Composition (JOIN)](Composition_JOIN_.md)
 
                         <!-- -->
 
@@ -41,27 +41,27 @@
                         <!-- -->
 
                         -   [Primitive operations](Primitive_operations.md)
-                            -   [Arithmetic operators (+, -, \*, ...)](Arithmetic_operators_+_-_....md)
+                            -   [Arithmetic operators (+, -, \*, ...)](Arithmetic_operators_+_-_..._.md)
 
                             <!-- -->
 
-                            -   [Logical operators (AND, OR, NOT, XOR)](Logical_operators_AND_OR_NOT_XOR.md)
+                            -   [Logical operators (AND, OR, NOT, XOR)](Logical_operators_AND_OR_NOT_XOR_.md)
 
                             <!-- -->
 
-                            -   [Comparison operators (=, &gt;, &lt;, ...)](Comparison_operators_=_....md)
+                            -   [Comparison operators (=, &gt;, &lt;, ...)](Comparison_operators_=_..._.md)
 
                             <!-- -->
 
-                            -   [Extremum (MAX, MIN)](Extremum_MAX_MIN.md)
+                            -   [Extremum (MAX, MIN)](Extremum_MAX_MIN_.md)
 
                             <!-- -->
 
-                            -   [String operators (+, CONCAT, SUBSTRING)](String_operators_+_CONCAT_SUBSTRING.md)
+                            -   [String operators (+, CONCAT, SUBSTRING)](String_operators_+_CONCAT_SUBSTRING_.md)
 
                             <!-- -->
 
-                            -   [Structure operations (STRUCT, \[\])](Structure_operations_STRUCT.md)
+                            -   [Structure operations (STRUCT, \[\])](Structure_operations_STRUCT_.md)
 
                             <!-- -->
 
@@ -70,32 +70,32 @@
                         <!-- -->
 
                         -   [Class operations](Class_operations.md)
-                            -   [Classification (IS/AS)](Classification_IS_AS.md)
+                            -   [Classification (IS/AS)](Classification_IS_AS_.md)
 
                             <!-- -->
 
-                            -   [Property signature (CLASS)](Property_signature_CLASS.md)
+                            -   [Property signature (CLASS)](Property_signature_CLASS_.md)
 
                         <!-- -->
 
-                        -   [Selection (CASE, IF, MULTI, OVERRIDE, EXCLUSIVE)](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE.md)
+                        -   [Selection (CASE, IF, MULTI, OVERRIDE, EXCLUSIVE)](Selection_CASE_IF_MULTI_OVERRIDE_EXCLUSIVE_.md)
 
                         <!-- -->
 
                         -   [Set operations](Set_operations.md)
-                            -   [Grouping (GROUP)](Grouping_GROUP.md)
+                            -   [Grouping (GROUP)](Grouping_GROUP_.md)
 
                             <!-- -->
 
-                            -   [Partitioning / sorting (PARTITION ... ORDER)](Partitioning_sorting_PARTITION_..._ORDER.md)
+                            -   [Partitioning / sorting (PARTITION ... ORDER)](Partitioning_sorting_PARTITION_..._ORDER_.md)
 
                             <!-- -->
 
-                            -   [Recursion (RECURSION)](Recursion_RECURSION.md)
+                            -   [Recursion (RECURSION)](Recursion_RECURSION_.md)
 
                             <!-- -->
 
-                            -   [Distribution (UNGROUP)](Distribution_UNGROUP.md)
+                            -   [Distribution (UNGROUP)](Distribution_UNGROUP_.md)
 
                 <!-- -->
 
@@ -106,99 +106,99 @@
 
                     -   [Оperators](Оperators.md)
                         -   [Execution order](Execution_order.md)
-                            -   [Sequence ({...})](Sequence_....md)
+                            -   [Sequence ({...})](Sequence_..._.md)
 
                             <!-- -->
 
-                            -   [Call (EXEC)](Call_EXEC.md)
+                            -   [Call (EXEC)](Call_EXEC_.md)
 
                             <!-- -->
 
-                            -   [Loop (FOR)](Loop_FOR.md)
+                            -   [Loop (FOR)](Loop_FOR_.md)
 
                             <!-- -->
 
-                            -   [Branching (CASE, IF, MULTI)](Branching_CASE_IF_MULTI.md)
+                            -   [Branching (CASE, IF, MULTI)](Branching_CASE_IF_MULTI_.md)
 
                             <!-- -->
 
-                            -   [Recursive loop (WHILE)](Recursive_loop_WHILE.md)
+                            -   [Recursive loop (WHILE)](Recursive_loop_WHILE_.md)
 
                             <!-- -->
 
-                            -   [Interruption (BREAK)](Interruption_BREAK.md)
+                            -   [Interruption (BREAK)](Interruption_BREAK_.md)
 
                             <!-- -->
 
-                            -   [Exit (RETURN)](Exit_RETURN.md)
+                            -   [Exit (RETURN)](Exit_RETURN_.md)
 
                             <!-- -->
 
-                            -   [New threads (NEWTHREAD, NEWEXECUTOR)](New_threads_NEWTHREAD_NEWEXECUTOR.md)
+                            -   [New threads (NEWTHREAD, NEWEXECUTOR)](New_threads_NEWTHREAD_NEWEXECUTOR_.md)
 
                             <!-- -->
 
-                            -   [Exception handling (TRY)](Exception_handling_TRY.md)
+                            -   [Exception handling (TRY)](Exception_handling_TRY_.md)
 
                         <!-- -->
 
                         -   [State change](State_change.md)
-                            -   [Property change (CHANGE)](Property_change_CHANGE.md)
+                            -   [Property change (CHANGE)](Property_change_CHANGE_.md)
 
                             <!-- -->
 
-                            -   [New object (NEW)](New_object_NEW.md)
+                            -   [New object (NEW)](New_object_NEW_.md)
 
                             <!-- -->
 
-                            -   [Class change (CHANGECLASS, DELETE)](Class_change_CHANGECLASS_DELETE.md)
+                            -   [Class change (CHANGECLASS, DELETE)](Class_change_CHANGECLASS_DELETE_.md)
 
                         <!-- -->
 
                         -   [Session management](Session_management.md)
-                            -   [Apply changes (APPLY)](Apply_changes_APPLY.md)
+                            -   [Apply changes (APPLY)](Apply_changes_APPLY_.md)
 
                             <!-- -->
 
-                            -   [Cancel changes (CANCEL)](Cancel_changes_CANCEL.md)
+                            -   [Cancel changes (CANCEL)](Cancel_changes_CANCEL_.md)
 
                             <!-- -->
 
-                            -   [New session (NEWSESSION, NESTEDSESSION)](New_session_NEWSESSION_NESTEDSESSION.md)
+                            -   [New session (NEWSESSION, NESTEDSESSION)](New_session_NEWSESSION_NESTEDSESSION_.md)
 
                             <!-- -->
 
-                            -   [Previous value (PREV)](Previous_value_PREV.md)
+                            -   [Previous value (PREV)](Previous_value_PREV_.md)
 
                             <!-- -->
 
-                            -   [Change operators (SET, CHANGED, ...)](Change_operators_SET_CHANGED_....md)
+                            -   [Change operators (SET, CHANGED, ...)](Change_operators_SET_CHANGED_..._.md)
 
                         <!-- -->
 
                         -   [User/IS interaction](User_IS_interaction.md)
-                            -   [Show message (MESSAGE, ASK)](Show_message_MESSAGE_ASK.md)
+                            -   [Show message (MESSAGE, ASK)](Show_message_MESSAGE_ASK_.md)
 
                             <!-- -->
 
                             -   [File operators](File_operators.md)
-                                -   [Read file (READ)](Read_file_READ.md)
+                                -   [Read file (READ)](Read_file_READ_.md)
 
                                 <!-- -->
 
-                                -   [Write file (WRITE)](Write_file_WRITE.md)
+                                -   [Write file (WRITE)](Write_file_WRITE_.md)
 
                                 <!-- -->
 
-                                -   [Data import (IMPORT)](Data_import_IMPORT.md)
+                                -   [Data import (IMPORT)](Data_import_IMPORT_.md)
 
                                 <!-- -->
 
-                                -   [Data export (EXPORT)](Data_export_EXPORT.md)
+                                -   [Data export (EXPORT)](Data_export_EXPORT_.md)
 
                             <!-- -->
 
-                            -   [Send mail (EMAIL)](Send_mail_EMAIL.md)
+                            -   [Send mail (EMAIL)](Send_mail_EMAIL_.md)
 
                 <!-- -->
 
@@ -252,37 +252,37 @@
 
                             -   [Form operators](Form_operators.md)
                                 -   [Value input](Value_input.md)
-                                    -   [Primitive input (INPUT)](Primitive_input_INPUT.md)
+                                    -   [Primitive input (INPUT)](Primitive_input_INPUT_.md)
 
                                     <!-- -->
 
-                                    -   [Value request (REQUEST)](Value_request_REQUEST.md)
+                                    -   [Value request (REQUEST)](Value_request_REQUEST_.md)
 
                                 <!-- -->
 
                                 -   [Object group operations](Object_group_operations.md)
-                                    -   [Search (SEEK)](Search_SEEK.md)
+                                    -   [Search (SEEK)](Search_SEEK_.md)
 
                                     <!-- -->
 
-                                    -   [Filter (FILTER)](Filter_FILTER.md)
+                                    -   [Filter (FILTER)](Filter_FILTER_.md)
 
                                     <!-- -->
 
-                                    -   [Order (ORDER)](Order_ORDER.md)
+                                    -   [Order (ORDER)](Order_ORDER_.md)
 
                                     <!-- -->
 
-                                    -   [View (VIEW)](View_VIEW.md)
+                                    -   [View (VIEW)](View_VIEW_.md)
 
                                 <!-- -->
 
                                 -   [Focus operations](Focus_operations.md)
-                                    -   [Activation (ACTIVATE)](Activation_ACTIVATE.md)
+                                    -   [Activation (ACTIVATE)](Activation_ACTIVATE_.md)
 
                                     <!-- -->
 
-                                    -   [Activity (ACTIVE)](Activity_ACTIVE.md)
+                                    -   [Activity (ACTIVE)](Activity_ACTIVE_.md)
 
                         <!-- -->
 
@@ -297,15 +297,15 @@
                     <!-- -->
 
                     -   [Open form](Open_form.md)
-                        -   [In an interactive view (SHOW, DIALOG)](In_an_interactive_view_SHOW_DIALOG.md)
+                        -   [In an interactive view (SHOW, DIALOG)](In_an_interactive_view_SHOW_DIALOG_.md)
 
                         <!-- -->
 
-                        -   [In a print view (PRINT)](In_a_print_view_PRINT.md)
+                        -   [In a print view (PRINT)](In_a_print_view_PRINT_.md)
 
                         <!-- -->
 
-                        -   [In a structured view (EXPORT, IMPORT)](In_a_structured_view_EXPORT_IMPORT.md)
+                        -   [In a structured view (EXPORT, IMPORT)](In_a_structured_view_EXPORT_IMPORT_.md)
 
                 <!-- -->
 
@@ -364,20 +364,20 @@
 
                     <!-- -->
 
-                    -   [Access to an external system (EXTERNAL)](Access_to_an_external_system_EXTERNAL.md)
+                    -   [Access to an external system (EXTERNAL)](Access_to_an_external_system_EXTERNAL_.md)
 
                     <!-- -->
 
-                    -   [Access to an internal system (INTERNAL, FORMULA)](Access_to_an_internal_system_INTERNAL_FORMULA.md)
-                        -   [Internal call (INTERNAL)](Internal_call_INTERNAL.md)
+                    -   [Access to an internal system (INTERNAL, FORMULA)](Access_to_an_internal_system_INTERNAL_FORMULA_.md)
+                        -   [Internal call (INTERNAL)](Internal_call_INTERNAL_.md)
 
                         <!-- -->
 
-                        -   [Custom formula (FORMULA)](Custom_formula_FORMULA.md)
+                        -   [Custom formula (FORMULA)](Custom_formula_FORMULA_.md)
 
                     <!-- -->
 
-                    -   [Eval (EVAL)](Eval_EVAL.md)
+                    -   [Eval (EVAL)](Eval_EVAL_.md)
 
                 <!-- -->
 
@@ -474,7 +474,7 @@
 
                     <!-- -->
 
-                    -   [Operator \[\]](Operator.md)
+                    -   [Operator \[\]](Operator_.md)
 
                     <!-- -->
 
@@ -596,11 +596,11 @@
 
             -   [ACTION instruction](ACTION_instruction.md)
                 -   [Action operator](Action_operator.md)
-                    -   [Operator{...}](Operator_....md)
+                    -   [Operator{...}](Operator_..._.md)
 
                     <!-- -->
 
-                    -   [ABSTRACT operator (action)](ABSTRACT_operator_action.md)
+                    -   [ABSTRACT operator (action)](ABSTRACT_operator_action_.md)
 
                     <!-- -->
 
@@ -632,7 +632,7 @@
 
                     <!-- -->
 
-                    -   [CASE operator (action)](CASE_operator_action.md)
+                    -   [CASE operator (action)](CASE_operator_action_.md)
 
                     <!-- -->
 
@@ -676,7 +676,7 @@
 
                     <!-- -->
 
-                    -   [IF ... THEN operator (action)](IF_..._THEN_operator_action.md)
+                    -   [IF ... THEN operator (action)](IF_..._THEN_operator_action_.md)
 
                     <!-- -->
 
@@ -692,7 +692,7 @@
 
                     <!-- -->
 
-                    -   [MULTI operator (action)](MULTI_operator_action.md)
+                    -   [MULTI operator (action)](MULTI_operator_action_.md)
 
                     <!-- -->
 
@@ -777,7 +777,7 @@
 
             <!-- -->
 
-            -   [Instruction=&gt;](Instruction=.md)
+            -   [Instruction=&gt;](Instruction=_.md)
 
             <!-- -->
 
@@ -834,7 +834,7 @@
 
             <!-- -->
 
-            -   [Instruction@](Instruction.md)
+            -   [Instruction@](Instruction_.md)
 
             <!-- -->
 
@@ -855,6 +855,10 @@
             <!-- -->
 
             -   [Empty instruction](Empty_instruction.md)
+
+        <!-- -->
+
+        -   [Coding conventions](Coding_conventions.md)
 
     <!-- -->
 

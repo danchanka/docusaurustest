@@ -2,7 +2,7 @@
 title: 'PREV operator'
 ---
 
-The **PREV** operator creates a property using a [previous value operator](Previous_value_PREV.md).
+The **PREV** operator creates a property using a [previous value operator](Previous_value_PREV_.md).
 
 ### Syntax
 
@@ -12,7 +12,7 @@ The **PREV** operator creates a property using a [previous value operator](Pr
 
 The **PREV** operator creates a property that returns the value of another property at the start of the current session (or at the time of the previous event in [event](Events.md#change) mode) - i.e., the value that existed before the changes that were made in the current session.
 
-It's important to understand that **PREV** is not a built-in property with [composition](Composition_JOIN.md) but an operator. Thus, in particular **PREV**(f(a)) is not equal to \[**PREV**(a)\](f(a)).
+It's important to understand that **PREV** is not a built-in property with [composition](Composition_JOIN_.md) but an operator. Thus, in particular **PREV**(f(a)) is not equal to \[**PREV**(a)\](f(a)).
 
 ### Parameters
 

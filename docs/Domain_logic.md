@@ -24,6 +24,6 @@ Accordingly, the summary table for all elements of the business logic is as foll
 **  
 **
 
-![](download/temp/svgout8701704295436861760.png)
+![](download/temp/svgout619108216981339674.png)
 
   

@@ -130,7 +130,7 @@ Specifies that you need to generate a separate [report](Print_view.md) file for
 
 *subReportExpression*
 
-The expression whose value will be used as the name of the  [report](Print_view.md) file for the created object group. You can use the names of already declared objects on the form as parameters. It is assumed that the values of these objects will be [passed](Open_form.md#params) when the form is opened [in the print view](In_a_print_view_PRINT.md) (if it's not done, they will be considered equal **NULL**).
+The expression whose value will be used as the name of the  [report](Print_view.md) file for the created object group. You can use the names of already declared objects on the form as parameters. It is assumed that the values of these objects will be [passed](Open_form.md#params) when the form is opened [in the print view](In_a_print_view_PRINT_.md) (if it's not done, they will be considered equal **NULL**).
 
 ### Examples
 

@@ -28,7 +28,7 @@ Now let's display them on the **books** form in the toolbar of the table of bo
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseReports&block=solution1c"/>
 
-Then, we start the server from the IDE, launch the desktop client, open the form with books and click the created "Print" button. The system will automatically create a print-ready form and open it in the [preview](In_a_print_view_PRINT.md#interactive) mode. Then, click the button below:
+Then, we start the server from the IDE, launch the desktop client, open the form with books and click the created "Print" button. The system will automatically create a print-ready form and open it in the [preview](In_a_print_view_PRINT_.md#interactive) mode. Then, click the button below:
 
 ![](attachments/46367627/46367670.png)
 

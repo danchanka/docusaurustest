@@ -12,7 +12,7 @@ Context dependent property operators can be part of [expressions](Expression.md)
 
 -   [Arithmetic operators](Arithmetic_operators.md)
 
--   [**\[\]** operator](Operator.md)
+-   [**\[\]** operator](Operator_.md)
 
 -   [**ACTIVE TAB** operator](ACTIVE_TAB_operator.md)
 

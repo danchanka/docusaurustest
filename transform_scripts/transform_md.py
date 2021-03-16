@@ -188,6 +188,9 @@ def transform_file_content(data, filename, samples_links, samples_url):
 def load_filemap(filename):
     return json.load(open(filename, 'r', encoding='utf-8'))
 
+def load_mdmap(filename):
+    return json.load(open(filename, 'r', encoding='utf-8'))
+
 def load_anchors_map(filename):
     return json.load(open(filename, 'r', encoding='utf-8'))
 
@@ -227,11 +230,17 @@ def fix_anchors(data, anchors_map, filename, logfile):
         data = data.replace(key, value)            
     return (data, all_count - broken_count, broken_count) 
 
-def fix_links(data, anchors_map, filename, logfile, filemap_name):
+def fix_links(data, anchors_map, filename, logfile, filemap_name, md_map_name):
     html_to_md = load_filemap(filemap_name)
     for html, md in html_to_md.items():
         data = data.replace(html, md)
+
+    md_to_md = load_mdmap(md_map_name)    
+    for md_name_source, md_name_dest in md_to_md.items():
+        data = data.replace(md_name_source, md_name_dest)
+
     data = re.sub(r'(\[[^\[]*?\])\(\.\./\w+?/(.*?)\)', r'\1(\2)', data) # [Learn](../LSFUS/Learn.md) -> [Learn](Learn.md)
+
     return fix_anchors(data, anchors_map, filename, logfile)    
 
 def add_anchor_ids_to_headers(files, logfile, anchormap_filename):
@@ -280,7 +289,7 @@ def fix_all_links(settings, files):
     success = 0
     fail = 0
     for filename, data in files.items():
-        data, s, f = fix_links(data, anchors_map, filename, logfile, settings["filemap"])
+        data, s, f = fix_links(data, anchors_map, filename, logfile, settings["filemap"], settings["mdmap"])
         success += s
         fail += f
         files[filename] = data

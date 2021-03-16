@@ -2,7 +2,7 @@
 title: 'FOR operator'
 ---
 
-The **FOR** operator creates an [action](Actions.md) that implements [loop](Loop_FOR.md).
+The **FOR** operator creates an [action](Actions.md) that implements [loop](Loop_FOR_.md).
 
 ### Syntax
 

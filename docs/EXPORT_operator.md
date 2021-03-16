@@ -2,7 +2,7 @@
 title: 'EXPORT operator'
 ---
 
-The **EXPORT** operator: creates an [action](Actions.md) that exports [specified properties](Data_export_EXPORT.md) to a file, or, in common case, that [opens a form](In_a_structured_view_EXPORT_IMPORT.md) in a structured view. 
+The **EXPORT** operator: creates an [action](Actions.md) that exports [specified properties](Data_export_EXPORT_.md) to a file, or, in common case, that [opens a form](In_a_structured_view_EXPORT_IMPORT_.md) in a structured view. 
 
 ### Syntax
 
@@ -66,7 +66,7 @@ A list of column IDs in the resulting file into which data from the correspondin
 
 *whereExpr*
 
-An expression whose value is a condition for the export. If not specified, it is considered equal to the [disjunction](Logical_operators_AND_OR_NOT_XOR.md) of all exported properties (that is, at least one of the properties must be non-**NULL**).
+An expression whose value is a condition for the export. If not specified, it is considered equal to the [disjunction](Logical_operators_AND_OR_NOT_XOR_.md) of all exported properties (that is, at least one of the properties must be non-**NULL**).
 
 *orderExpr1, ..., orderExprL*
 

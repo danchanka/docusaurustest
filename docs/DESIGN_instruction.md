@@ -2,7 +2,7 @@
 title: 'DESIGN instruction'
 ---
 
-The **DESIGN** instruction changes [form design](Form_design.md).
+panelCaptionAboveThe **DESIGN** instruction changes [form design](Form_design.md).
 
 ### Syntax
 
@@ -151,7 +151,8 @@ The value assigned to the corresponding container property. Acceptable value typ
 |imagePath|The path to the file with the image to be displayed as an action icon. The path is specified relative to the <strong>images</strong> folder|String literal|<strong>NULL</strong>|'image.png', 'pring.png' |
 |maxValue|The maximum numerical value that the property component can have|Integer literal|<strong>NULL</strong>|1000000, 5000000000L|
 |notNull|Specifies that in case of a <strong>NULL</strong> property value, the component of this property should be highlighted|Extended Boolean literal|depends on the property|<strong>TRUE</strong>, <strong>FALSE</strong>|
-|panelCaptionAbove|Indicates that the captions of property or action components should be drawn above the value on the panel|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|panelCaptionAbove|<p>Indicates that the captions of property or action components should be drawn above the value on the panel</p><br/><p>removed in 5.0, use panelCaptionVertical instead</p>|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
+|panelCaptionVertical|Indicates that the captions of property or action components should be drawn above the value on the panel|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
 |<p>panelCaptionAfter</p>|Indicates that the value should be drawn on the panel prior to thee property caption|Extended Boolean literal|<strong>FALSE</strong>|<strong>TRUE</strong>, <strong>FALSE</strong>|
 |regexp|The regular expression that the property value must match during input|String literal|<strong>NULL</strong>|'^((8\|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$'|
 |regexpMessage|The message to be shown to the user if they enter a value that does not match the regular expression|String literal|default message|'Incorrect phone number format'|
