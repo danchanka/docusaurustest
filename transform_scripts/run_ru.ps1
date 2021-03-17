@@ -4,7 +4,7 @@ robocopy ./docusaurustestru/docs/LSFUSRU ./docusaurustestru/docs /e /copyall /mo
 robocopy ./LSFUSRU/download ./docusaurustestru/docs/download /e /copyall >$null
 xcopy CodeSample.mdx docusaurustestru\docs /Y >$null
 
-python rename_md_files.py docusaurustestru/docs/index.md docusaurustest/docs/index.md settings_ru.json
+python rename_md_files.py docusaurustestru/docs/index.md docusaurustest/docs/index.md settings_ru.json docusaurustestru/docs/
 
 python build_maps.py settings_ru.json
 

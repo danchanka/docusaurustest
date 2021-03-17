@@ -20,7 +20,7 @@ if (len(files1) != len(files2)):
     sys.exit()
 
 md_map = {}
-input_dir = settings['input_dir']
+input_dir = sys.argv[4]
 
 for index, filename in enumerate(files1):
     md_map[filename] = files2[index]

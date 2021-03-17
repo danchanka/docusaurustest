@@ -80,13 +80,12 @@ def transform_simple_table(lines):
     return data.split('\n')
 
 def extra_execution_auto_file_check(filename, lines):
-    if filename == 'Выполнение_авто.md' or filename == 'Execution_auto.md':
+    if filename == 'Execution_auto_.md':
         data = '\n'.join(lines)
         data = re.sub(r'<code class=.*?>', '', data).replace('</code>', '')
         data = re.sub(r'<pre class=.*?>', '', data).replace('</pre>', '')
-        if filename == 'Выполнение_авто.md':
-            data = data.replace('$INSTALL_DIR/Server/bin/lsfusion4_serverw.exe', '$INSTALL\\_DIR/Server/bin/lsfusion4\\_serverw.exe')
-            data = data.replace('FUSION_OPTS', 'FUSION\\_OPTS')
+        data = data.replace('$INSTALL_DIR/Server/bin/lsfusion4_serverw.exe', '$INSTALL\\_DIR/Server/bin/lsfusion4\\_serverw.exe')
+        data = data.replace('FUSION_OPTS', 'FUSION\\_OPTS')
         return data.split('\n')
     return lines    
 

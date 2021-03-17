@@ -5,7 +5,7 @@ xcopy CodeSample.mdx docusaurustestru\docs /Y >$null
 
 python transform_md.py settings_ru.json
 
-python create_sidebar.py docusaurustestru/docs/index.md docusaurustestru/sidebars.js
+python create_sidebar.py docusaurustestru/docs/index.md docusaurustestru/sidebars.js settings_ru.json
 
 yarn --cwd ./docusaurustestru/ start
 
