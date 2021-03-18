@@ -96,6 +96,7 @@ module.exports = {
           // Please change this to your repo.
           editUrl:
             'https://github.com/danchanka/docusaurustest/edit/master/',
+          editLocalizedFiles: true
         },
         blog: {
           showReadingTime: true,
