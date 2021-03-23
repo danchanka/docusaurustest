@@ -24,7 +24,10 @@ This operator has the capability of an [implicit definition](Action_extension.m
 
 The *single *form of the branching operator checks exactly one condition. If this condition is met, the specified action is called. It is also possible to specify an *alternative action *that is called if the condition is not met.
 
+
+:::info
 Type of mutual exclusion and implicit definition do not make sense/are not supported for this form of the operator
+:::
 
 ### Language
 

@@ -40,7 +40,10 @@ If * *the format of the imported file* *is not specified, it is determined aut
 
   
 
+
+:::info
 The first passed file is used to automatically determine a flat file format by its extension
+:::
 
 ### Parameters
 

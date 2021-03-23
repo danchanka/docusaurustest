@@ -14,6 +14,8 @@ The **CONSTRAINT** instruction creates a constraint. If the constraint is violat
 
 Also, by using the **CHECKED** option you can use the constraint when showing dialogs for changing properties whose values may violate the constraint if changed. In this instance an additional filter will be set in the dialog so that, when the property value changes, the constraint is not violated. If it is necessary to limit the set of properties for which the above filtering will be performed, the list of properties can be specified after the keyword **BY** .
 
+
+:::info
 Creating a constraint is pretty similar to the following instruction:
 
     constraintProperty = constraintExpr;
@@ -23,6 +25,7 @@ Creating a constraint is pretty similar to the following instruction:
     }
 
 but it also has [a number of advantages](Constraints.md).
+:::
 
 ### Parameters
 

@@ -14,11 +14,14 @@ The **WHEN** instruction adds a simple event handler. In a condition expression 
 
 Also, the **ORDER** block can be used to define the order in which the handler will be called for an object collection for which the condition on the simple event has been met. 
 
+
+:::info
 Using the **WHEN** instruction is much like the following instruction:
 
     ON eventClause FOR eventExpr [ORDER [DESC] orderExpr1, ..., orderExprN] DO eventAction;
 
 but it also has [a number of advantages](Simple_event.md).
+:::
 
 ### Parameters
 

@@ -18,9 +18,15 @@ Each object on the form has a *current value* at any time. It changes either as
 
 After defining objects, you can add properties and actions to the form, passing these objects to them as arguments.
 
-Adding actions is relevant only for [interactive](Interactive_view.md) view. In [static](Static_view.md) view added actions are ignored.
 
+:::info
+Adding actions is relevant only for [interactive](Interactive_view.md) view. In [static](Static_view.md) view added actions are ignored.
+:::
+
+
+:::info
 The behavior of properties and actions in the context of their display on the form is absolutely identical, therefore, in the rest of this section, we will use only the term property (the behavior for actions is completely similar).
+:::
 
   
 *Display group*

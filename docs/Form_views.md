@@ -12,7 +12,10 @@ A view in which the user can interact with an open form: select current objects,
 
 In this view, when the [form opens](Open_form.md) all its data is read at once, after which this data is converted/sent to the client. This is a one-way view type.
 
+
+:::info
 By default, depending on the implementation specifics, conversion can take place either on the server (before sending to the client) or directly on the client itself.
+:::
 
 From a data flow standpoint, the interactive view is internal, meaning that the data remains inside the server/native client, while the static view is external, with the data converted and sent to the reporting subsystem, or to the operating system in the form of files in various formats. 
 

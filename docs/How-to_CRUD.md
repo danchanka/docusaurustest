@@ -28,7 +28,10 @@ We have a set of books with given titles.
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseCRUD&block=sample2"/>
 
+
+:::info
 It is recommended that you add all the **name** properties to the **id** group. Values of this property will help identify the object in case of the constraint violations. It will also be added to automatic forms when no edit (EDIT) or list (LIST) forms are defined for the class.
+:::
 
   
 

@@ -2,7 +2,10 @@
 title: 'Groups of properties and actions'
 ---
 
+
+:::info
 The behavior of properties and actions in the context of working with groups is absolutely identical, therefore, in the rest of this section, we will use only the term property (the behavior for actions is completely similar).
+:::
 
 All [p](Properties.md)roperties in the system are divided into *property groups. * In this case, all groups form a hierarchy in which each group can contain both properties and other property groups. The root group in this hierarchy is the **System.root group.** All other groups are contained* *in some *parent group.*
 
@@ -18,7 +21,10 @@ In addition to **root** in the **System** module, the following groups of prop
             -   **id**
     -   **private**
 
+
+:::info
 All these groups (including **root**) are not used in form display mechanisms (i.e. containers in the [default form design](Form_design.md#defaultDesign) and elements of the [hierarchical](Structured_view.md#hierarchy) import / export hierarchy are not created for them).
+:::
 
 ### Property groups usage
 

@@ -50,7 +50,10 @@ By default, the following modes are used in event handling:
 -   for change operators - event (value at the time the previous event occurred). 
 -   for the cancel changes operator - event mode (canceling the application, not clearing the session).
 
+
+:::info
 For change operators and the previous value operator, when executing global synchronous event handlers, these modes (standard and event) coincide
+:::
 
 ### Language
 

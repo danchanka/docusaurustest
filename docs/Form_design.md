@@ -23,7 +23,10 @@ All children of any container make an ordered list. It is necessary to determi
 -   *Horizontal splitter* (**SPLITH**): similar to a vertical splitter, but the child components are placed from left to right.
 -   *Scrollable container* (**SCROLL**): can be used only if the container has exactly one child component. This single component occupies all the space it needs in the container, and if there is not enough a scroll bar appears.
 
+
+:::info
 In future versions, the last three types of containers (**SPLITV**, **SPLITH**, **SCROLL**) will be deprecated and [replaced](https://github.com/lsfusion/platform/issues/22) with the corresponding split and scroll options in vertical and horizontal containers.
+:::
 
 The default container type is vertical container (CONTAINERV)*.*
 
@@ -61,9 +64,15 @@ For each container, one of the directions is considered to be *dynamic*, and th
 
 -   Static: *alignment* can be specified for each component (**alignment**). Its values can be *At the start* (**START**), *Center* (**CENTER**), *At the end* (**END**), or *Stretch* (**STRETCH**). In the first three cases, the component gets its base size as the final size, and is positioned in accordance with the specified type of alignment (that is, at the beginning, center, or end). If Stretch is used as the type of alignment, the final size of the component will be the size of the top container (but not less than the base size), and it will be located exactly in the center. 
 
-    For example, in the case of a vertical upper container, if the component is set to align at the start then it will be located on the maximum left of the container; if it is set to Stretch, the component will occupy all the space from the left to the right border.
 
+:::info
+For example, in the case of a vertical upper container, if the component is set to align at the start then it will be located on the maximum left of the container; if it is set to Stretch, the component will occupy all the space from the left to the right border.
+:::
+
+
+:::info
 This component layout algorithm is a special case of [CSS Flexible Box Layout](https://www.w3.org/TR/css-flexbox-1/) (and is implemented using it in the web client). For example, the CSS flex-grow property corresponds to the extension coefficient, and flex-basis corresponds to the base size.
+:::
 
 The column container breaks its static (horizontal) direction into **N** identical parts (where **N** is the number of columns): each part then has its own components, as if this part were a separate vertical container.
 
@@ -71,7 +80,10 @@ For base components, you can specify the *automatic size* option (**autoSize**):
 
 The properties layout in a table (or rather, the columns that display their values) is done the same way as if the table were a horizontal container, and the columns of the table were internal components of this container. 
 
+
+:::info
 Since the current implementation uses the [CSS Table Layout Fixed](https://www.w3schools.com/cssref/pr_tab_table-layout.asp) mechanism to place columns inside the table in the Web client, and its capabilities are significantly limited, the extension coefficient for properties displayed in the table can be equal either to 0 or to the base size.
+:::
 
 The caption and the value cell are placed inside the property panel in the same way as if the panel were a container (horizontal if the caption is on the left, vertical if at the top), in which the cell has an extension coefficient of 1, the caption is 0 and the alignment of both is set to  STRETCH 
 

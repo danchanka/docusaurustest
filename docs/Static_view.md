@@ -28,7 +28,10 @@ The platform builds object group hierarchy based on the [form structure](Form_st
 
 -   After the relations are built, the hierarchy is constructed in such a way that the parent of object group **A** is the group **B** that is latest in the object group list on which **A** depends (directly or indirectly).
 
+
+:::info
 As follows from the algorithm, the empty object group is always the only root group of the constructed hierarchy
+:::
 
 ### An example of constructing ****object group**** hierarchy
 

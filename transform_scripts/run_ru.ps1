@@ -8,6 +8,8 @@ python rename_md_files.py docusaurustestru/docs/index.md docusaurustest/docs/ind
 
 python build_maps.py settings_ru.json
 
+python find_info_blocks.py settings_ru.json
+
 python transform_md.py settings_ru.json
 
 python create_sidebar.py docusaurustestru/docs/index.md docusaurustestru/sidebars.js settings_ru.json

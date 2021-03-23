@@ -20,7 +20,10 @@ Apart from the export in a specified format, the print view allows to display in
 
 Similarly to the [interactive view](In_an_interactive_view_SHOW_DIALOG_.md), the interactive modes of the print view enable the developer to set options for  [flow management](In_an_interactive_view_SHOW_DIALOG_.md#flow) and [form location](In_an_interactive_view_SHOW_DIALOG_.md#location) (their behavior is identical to the corresponding options in the form opening operator in the interactive view).
 
+
+:::info
 Сurrent implementation: in the **MESSAGE** mode, the form is always shown as a window (the "asynchronous window" option is not supported in this case); in the asynchronous **PREVIEW** mode the form is always shown as a tab; in the synchronous **PREVIEW** mode - as a window. The **NOPREVIEW** mode is always asynchronous and the form location in it does not make sense (since no forms are shown to the user directly)
+:::
 
 ### Language
 

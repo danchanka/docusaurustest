@@ -10,7 +10,10 @@ The system has the following operators for working with sessions:
 -   [Previous value (PREV)](Previous_value_PREV_.md)
 -   [Change operators (SET, CHANGED, ...)](Change_operators_SET_CHANGED_..._.md)
 
+
+:::info
 Note that the latter two operators create properties, not actions.
+:::
 
 ### Nested local properties {#nested}
 

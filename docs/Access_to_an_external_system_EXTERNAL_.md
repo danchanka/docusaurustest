@@ -43,7 +43,10 @@ If more than one parameter is passed to BODY, then:
 
 In turn, if the request response type is multipart/\* or application/x-www-form-urlencoded, it will be split into parts, and each part will be considered a separate execution result. In this case, the order of these results is equal to the order of the corresponding parts in the request response.
 
+
+:::info
 Note that the processing of parameters and request results is largely similar to their processing during [access from an external system](Access_from_an_external_system.md) over the HTTP protocol (here parameters are processed as results and, conversely, results are processed as parameters)
+:::
 
 -   **SQL - executing an SQL server command**. 
 
@@ -70,7 +73,10 @@ The way of defining an action in this type of interaction fully corresponds to t
 
 By default, this type of interaction is implemented via HTTP protocol using the corresponding interfaces for access [to](#http-broken) and [from](Access_from_an_external_system.md#http-broken) an external system.
 
+
+:::info
 You can also use operators for [reading](Read_file_READ_.md) and [writing](Write_file_WRITE_.md) files to access external systems (if file exchange is the interface for this interaction).
+:::
 
 ### Language
 

@@ -22,7 +22,10 @@ A form being opened can be shown in two ways:
 
 By default, forms in the synchronous mode are shown as windows, in the asynchronous mode – as tabs.
 
+
+:::info
 In the current implementation of the platform, a form shown as a window is always modal, which means that the "asynchronous window" mode is not supported.
+:::
 
 ### System action management
 

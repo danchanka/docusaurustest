@@ -34,6 +34,8 @@ There are also several so-called *derivative* events that are nothing more than 
 -   **CLOSE** - occurs when the **System.formClose** action is executed.
 -   **DROP** - occurs when the **System.formDrop** action is executed.
 
+
+:::info
 If the form is [the session owner](Interactive_view.md#owner) (meaning that when the **System.formOk** action is executed the form session [is saved](Apply_changes_APPLY_.md)):
 
 -   **OK, OK BEFORE, OK AFTER** - occurs when the **System.formOk** action is executed, at the moments similar to the corresponding moments for the **APPLY** event (i.e. inside, before and after the transaction). In this case, **OK** and **OK BEFORE** handlers are executed before executing **APPLY** and **APPLY BEFORE** handlers, and **OK AFTER** is executed after **APPLY AFTER**.
@@ -43,10 +45,14 @@ If the form is not the session owner:
 -   **OK** - occurs when the**System.formOk** action is executed
 
 If **OK BEFORE** and **OK AFTER** handlers are defined, but the form is not the session owner, these handlers are still executed, respectively before and after the **OK** event handler.
+:::
 
 If, after the execution of event handlers with the **BEFORE** postfix, the **System.applyCanceled** property value equals **TRUE**, further execution of the action that led to the occurrence of this event is stopped (for example, with **APPLY BEFORE**, saving the session is interrupted as if one of the existing constraints had been [violated](Constraints.md)).
 
+
+:::info
 For the remainder of the section, the behavior of properties and actions is exactly the same and so we will use only the term property (behavior is absolutely identical for actions).
+:::
 
 The developer can execute certain actions (*handlers*) when any of the events described above occurs. In the current implementation there can be several handlers for global events and form object events, but only one for form property events. In the first case, the handler is added to the corresponding list, in the second case, the handler replaces the existing one.
 
@@ -74,7 +80,10 @@ The user is requested for an object of the changed property value class, after w
 
 Calls the **CHANGE** event handler for all objects that meet the filter conditions of the object group in which the changed property is displayed. 
 
+
+:::info
 If property event handler uses (even [implicitly](Value_request_REQUEST_.md#implicit)) the [value request](Value_request_REQUEST_.md) operator, then default handler can be created [in a different way](Value_request_REQUEST_.md#defaultChange-broken).
+:::
 
 For an *object request* from the user, depending on the type of class , the following operators are used:
 

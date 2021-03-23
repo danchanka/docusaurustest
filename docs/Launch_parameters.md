@@ -53,7 +53,10 @@ Example conf/settings.properties file ([section 3](#appp3-broken)):
 
     rmi.port=7652
 
+
+:::info
 By default, it is assumed that the startup parameter files conf/settings.properties and lsfusion.properties are located in the application server's startup folder. However, with [automatic installation](Execution_auto_.md) under GNU Linux symlinks for these files (as well as for [log](Journals_and_logs.md#logs) folders)  are automatically created to [other files](Execution_auto_.md#settings-broken) whose layout is better aligned with Linux ideology.
+:::
 
 ### Web server (Client)
 
@@ -94,4 +97,7 @@ Example Tomcat configuration file ([section 3](#webp3-broken) in context paramet
         <Parameter name="port" value="7652" override="false"/>
     </Context>
 
+
+:::info
 In addition to the launch parameters, the platform also has [system parameters](Working_parameters.md) which are set a little differently and are relevant mainly for processes of various components of the platform (that is, processes that occur after they are launched).
+:::

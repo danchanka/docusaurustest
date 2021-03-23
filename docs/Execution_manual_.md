@@ -2,9 +2,15 @@
 title: 'Execution (manual)'
 ---
 
-To install the application server, web server and client, Java version 8 or later must first be installed on the computer.
 
+:::info
+To install the application server, web server and client, Java version 8 or later must first be installed on the computer.
+:::
+
+
+:::info
 For the application server to work, it must have access to the PostgreSQL database management server of at least version 9.6. The PostgreSQL server must accept connections using password authentication by the md5 or trust method. You can configure authorization by editing the pg\_hba.conf file, as described in the [PostgreSQL](http://www.postgresql.org/docs/9.2/static/auth-pg-hba-conf.html) documentation.
+:::
 
 #### Installing the application server as a service
 
@@ -63,7 +69,10 @@ For the application server to work, it must have access to the PostgreSQL databa
 
 #### Installing the web server (web and desktop client) as a service {#appservice}
 
+
+:::info
 To install the web server, Apache Tomcat version 8 or higher must be installed on the computer.
+:::
 
 -   Download the file lsfusion-client-<version\>.war of the required version from [the central server](https://download.lsfusion.org/java). For example, lsfusion-client-4.1.war. 
 -   If the application server is located on another computer, as well as if [access parameters to the application server](Launch_parameters.md#accessapp-broken) are different from the standard, set [connection parameters to the application server](Launch_parameters.md#connectapp-broken) (for example by creating / editing the Tomcat [settings file](Launch_parameters.md#filewebsettings-broken)) 
@@ -79,8 +88,14 @@ To install the web server, Apache Tomcat version 8 or higher must be installed o
 
         java -jar lsfusion-client-4.1.jar
 
-    You can also use the method of installing the desktop client for development. To do this, just download the file lsfusion-client-<version\>.jnlp of the required version from the central server, and then run it locally on the client. This method is faster and more convenient, but less flexible.
 
+:::info
+You can also use the method of installing the desktop client for development. To do this, just download the file lsfusion-client-<version\>.jnlp of the required version from the central server, and then run it locally on the client. This method is faster and more convenient, but less flexible.
+:::
+
+
+:::info
 The latest versions that are currently under development (snapshots) can be downloaded directly from the maven repository [https://repo.lsfusion.org](https://repo.lsfusion.org/). For example, for the server, the full path is as follows: <https://repo.lsfusion.org/nexus/service/rest/repository/browse/public/lsfusion/platform/server/> (for server and desktop client you need to download jar files with the -assembly postfix)
+:::
 
   

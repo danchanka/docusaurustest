@@ -17,7 +17,10 @@ Similar to an object group, each report has a *parent* report, so all reports fo
 
 Based on the report hierarchy restrictions, only "chains" of object groups can be included in one report (i.e., G1, G2, G3, ... Gn, where G2 is the only linear child object of G1, G3 is the only child of G2, etc.). Thus, the decision on how to break object groups into reports comes down to whether to merge an object group with its only child (if there is one) or not. By default, such a merge is performed, however, if necessary, the developer can disable it by specifying the corresponding option (**SUBREPORT**) for a child object group.
 
+
+:::info
 Using this option comes down to whether to display data for a parent object group when the child object group has no data.
+:::
 
 ### Report hierarchy example
 

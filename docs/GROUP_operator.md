@@ -18,13 +18,19 @@ The **GROUP** operator creates a property implementing grouping. The type of gro
 
 The **BY** block describes group expressions. Each expression corresponds to a parameter of the property being created. As in other operators, upper parameters can be used in this operator, and the used parameters also implicitly become groups of the created property. Accordingly, when using the operator in the [**=** instruction](Instruction_=.md) and explicitly defining the parameters on the left, the expressions from the **BY** block are mapped only for unused parameters. Moreover, if the classes or the number of these parameters do not match the number / classes of **BY** expressions then the platform will throw an error. 
 
+
+:::info
 If a **BY** block is defined, this operator cannot be used inside [expressions](Expression.md).
+:::
 
 The **ORDER** block defines the order in which the aggregate function will be calculated. Can only be used for [non-commutative](Set_operations.md) aggregate functions (**CONCAT, LAST** ) and must be uniquely defined. If a new parameter is declared in the expressions specifying the order (i.e. parameter is not used in the remaining blocks** **or in the upper context), the condition of non- **NULLness** of all these expressions is automatically added.
 
 The **WHERE** block defines the condition under which object collections will participate in the group operation. Can only be used for the aggregate functions **AGGR**, **NAGGR**, **LAST**.
 
+
+:::info
 For **AGGR** and **NAGGR** using this block explicitly (and not, say, an [**IF** operator](IF_operator.md) in **GROUP** and **BY** blocks) only makes sense from the perspective of being able to change the created property to non-**NULL** in some automatic mechanisms of the platform (for example, [automatic resolution](Simple_constraints.md) of simple constraints).
+:::
 
 ### Parameters
 

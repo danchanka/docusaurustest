@@ -8,7 +8,10 @@ Each [system element](Element_identification.md) may have a *name* which can be
 
 It is often necessary to use the same name in different contexts. In order not to include this context in the name itself (producing long and bulky names), the platform has the concept of *namespaces*. Each element is created in a namespace, and if other elements are accessed during the creation process then elements created in the same namespace take precedence.  However, if you do need an element from another namespace, you can always specify the namespace of the element you are looking for explicitly. Also, you can specify additional namespaces that will take precedence when searching for items.
 
+
+:::info
 You can [find](Search.md) more details on how namespaces are used when [finding](Search.md) elements in the relevant section.
+:::
 
 The namespace in which elements are created is determined by the [module](Modules.md), and cannot be changed in the future. The same limitation applies to additional priority namespaces.
 
@@ -59,7 +62,10 @@ Since the signature of properties/actions do not have to contain only custom cla
 |<strong>COLOR</strong>|<strong>COLOR</strong>|
 |<strong>FILE,RAWFILE...</strong>|<strong>FILE,RAWFILE...</strong>|
 
+
+:::info
 In some cases, an element of the property signature may be not a single class but a set of classes. In this case, the canonical name will be more complex.
+:::
 
 ### Name policy
 

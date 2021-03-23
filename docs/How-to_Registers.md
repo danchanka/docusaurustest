@@ -14,7 +14,10 @@ Theoretically we could just create a [property](Properties.md) that would sum up
 
 To give the system efficient [extensibility](Extensions.md), it is best to implement this kind of functionality using *ledgers*. To do this, we introduce an abstract class **SKULedger**. One instance of the class will reflect a single change in the balance by a given amount (positive or negative) for one SKU in one warehouse. Abstract properties are set for it, which need to be defined when the class is implemented.
 
+
+:::info
 All ledgers can have an arbitrary number and type of measurements. In this example they are the SKU and the Warehouse.
+:::
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseLedger&block=skuledger"/>
 

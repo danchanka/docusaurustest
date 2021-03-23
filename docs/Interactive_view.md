@@ -18,7 +18,10 @@ The platform also allows to display multiple object groups in one table simultan
 
 Object trees also can be used to display hierarchical data (such as classifiers). In this case, the descendants of the object collection of a group in the tree can be not only object collections of lower groups but also object collections of the same group (such an object group shall be called *hierarchical*). To determine these child object collections in a hierarchical object group, it is necessary to define an additional filter for it – which, unlike regular filters, can refer not only to the values of the filtered object collections but also to the values of the "upper in the tree" object collection (the same approach is used in the [recursion](Recursion_RECURSION_.md) operator). It is highly desirable that the hierarchical filter uses all the values of the upper object collections, since otherwise, as with filters between different groups of objects, creating such a tree doesn't make sense. Initially, it is assumed that all values of the "upper in the tree" object collection are **NULL**.
 
+
+:::info
 In the current platform implementation, hierarchical groups allow only trees to be displayed (not directed graphs). Accordingly, it is allowed to use only values of the upper object collections and properties that take lower (filtered) values of objects as input for a hierarchical filter (so that it is guaranteed that the same tree node cannot be reached in different ways)
+:::
 
 The properties of different object groups in the tree are arranged in columns under each other, that is, the first column displays the first properties of each object group, the second column displays the second ones, and so on. The total number of tree columns is determined by the last group of objects on the tree (all "extra" properties of the upper groups are simply ignored).
 
@@ -32,7 +35,10 @@ Any property or action can be displayed on a form in one of the following *vi
 
 For each object group, you can specify which *default view* the properties of this group will be displayed in (by default, this view is a table column). If the property has no parameters (that is, it does not have a display group), it is displayed in a panel. Actions are always displayed in a panel by default.
 
+
+:::info
 For the remainder of the section, the behavior of properties and actions is exactly the same and so we will use only the term property (behavior is absolutely identical for actions).
+:::
 
 If necessary, the developer can explicitly specify which view a property should use.
 
@@ -66,6 +72,8 @@ In the interactive form view, object group filters can change as a result of var
 
 If none of these options is explicitly specified, the platform will try to determine whether the permanent filters in the group of objects are a) mutually exclusive for different values of the upper objects (if any), and/or b) the filter selects a very small percentage of the total number of objects of the specified classes. In both of these cases, it makes no sense to search for the previous object and, by default, the first object is selected (**FIRST**); in all other cases, the previous object (**PREV**).
 
+
+:::info
 It is worth noting that the selection of objects by default is pretty the same as the [object search](Search_SEEK_.md)operation, where the search objects are:
 
 -   for type PREV
@@ -76,6 +84,7 @@ It is worth noting that the selection of objects by default is pretty the same a
     -   in other cases – an empty object collection
 
 Search direction is determined by the object's default type (**PREV** here is equivalent to **FIRST**).
+:::
 
 ### Object operators {#objectoperators}
 
@@ -106,7 +115,10 @@ To implement the mechanism for working with session owners the platform uses a n
 
 If necessary, the developer can explicitly specify when opening a form that this form is the owner of the session that it uses.
 
+
+:::info
 Session ownership only affects the display / behavior of system actions for managing the life cycle of a form / session. When using the remaining actions, it is recommended that the developer should consider the risk of applying the "wrong" changes by himself (and, for example, use the mentioned above **System.sessionOwners** property).
+:::
 
 ### System actions for form/session lifecycle management {#sysactions}
 

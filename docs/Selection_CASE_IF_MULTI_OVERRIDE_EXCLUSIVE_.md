@@ -10,7 +10,10 @@ All conditions and results are defined as some properties and/or parameters. Acc
 
 The platform also allows you to define a condition and the corresponding result with one property. In this case, the condition may be either matching the property's [signature](Property_signature_CLASS_.md), or the property itself. We will call this the*polymorphic* form of the operator.
 
+
+:::info
 Note that the [extremum operator](Extremum_MAX_MIN_.md) and logical operators basically are also varieties of the selection operator (and of its polymorphic form, i.e. the conditions and result are defined by one property)
+:::
 
 ### Mutual exclusion of conditions {#exclusive}
 
@@ -26,7 +29,10 @@ This operator supports [implicit definition](Property_extension.md) using the 
 
 The *single *form of the selection operator checks exactly one condition. If this condition is met, the value of the specified result is returned. It is also possible to specify an *alternative result *which value is returned if the condition is not met.
 
+
+:::info
 Type of mutual exclusion and implicit definition do not make sense/are not supported for this form of the operator
+:::
 
 ### Determining the result class
 

@@ -87,7 +87,10 @@ Once done, if you re-run the report generation procedure, it will use modified t
 
 ![](attachments/46367627/57738056.png)
 
+
+:::info
 If the background process fails to synchronize development and execution folders for some reason, you just need to restart the server so that the project is re-built and changes are applied.
+:::
 
 ##### Example 2
 

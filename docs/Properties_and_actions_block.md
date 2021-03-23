@@ -76,7 +76,10 @@ The name of the property or action being added to the form. [Simple ID](IDs.md#i
 
 The caption of the property or action being added to the form. [String literal](Literals.md#strliteral-broken). If the caption is not specified, then the caption of the property (action) itself will be used on the form.
 
+
+:::info
 In the current platform implementation, if the name and caption are not specified together, then **=** is required when using the expressions and action operators (i. e. f(a,b), but =a\*b+5)
+:::
 
 *formPropertyId*
 
