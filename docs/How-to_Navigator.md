@@ -2,9 +2,9 @@
 title: 'How-to: Navigator'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 We have the forms with a list of books and categories.
 
@@ -14,7 +14,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to add them to the [navigator](Navigator.md) to the new folder called **Application** under the main toolbar.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNavigator&block=solution1"/>
 
@@ -22,15 +22,15 @@ By specifying **WINDOW** for the **application** element, we indicated that all 
 
 ![](attachments/46367463/46367465.png)
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 Similar to **Example 1**.
 
 We need to place the same forms in the subfolder called Directories.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseNavigator&block=solution2"/>
 

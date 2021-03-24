@@ -167,11 +167,34 @@ def make_headers(data):
     nlines = []
     for line in lines:
         if not trash_stars(line):
-            if line.startswith('**') and line.endswith('**') and not re.fullmatch(r'[A-Z* \t]+', line):
+            if len(line) > 2 and line.startswith('**') and line.endswith('**') and not re.fullmatch(r'[A-Z* \t]+', line):
                 nlines.append('### ' + line[2:-2])
             else:
                 nlines.append(line)    
     return '\n'.join(nlines)    
+
+def change_headers(data):
+    lines = data.split('\n')
+    types = sorted(list({re.match(r'#+', line).end() for line in lines if line.startswith('#')}))
+    change_map = {}
+    if len(types) == 1:
+        change_map = { types[0]: 3 }
+    elif types == [3, 5, 6]:
+        change_map = { 3: 4, 5: 2, 6: 3 }
+    else:
+        l = 2
+        for i in types:
+            change_map[i] = l
+            l += 1 
+
+    nlines = []
+    for line in lines:
+        if line.startswith('#'):
+            dashes = re.match(r'#+', line).end()
+            line = change_map[dashes] * '#' + line[dashes:]
+        nlines.append(line)
+
+    return '\n'.join(nlines)
 
 def fix_image_links(data):
     return re.sub(r'<img src="(.*?)".*?/>', r'![](\1)', data)
@@ -181,6 +204,7 @@ def transform_file_content(data, filename, samples_links, samples_url, info_list
     data = replace_html_ltgt(data)
     data = create_title(data)
     data = make_headers(data)
+    data = change_headers(data)
     data = fix_image_links(data)
     data = add_info_blocks(data, info_list)
     return data    

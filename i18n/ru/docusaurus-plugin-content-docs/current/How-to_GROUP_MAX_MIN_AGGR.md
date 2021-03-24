@@ -2,9 +2,9 @@
 title: 'How-to: GROUP MAX/MIN/AGGR'
 ---
 
-##### Пример 1
+## Пример 1
 
-###### Условие
+### Условие
 
 Есть набор книг, для каждой из которых задан уникальный номер.
 
@@ -14,27 +14,27 @@ import {CodeSample} from './CodeSample.mdx'
 
 Необходимо найти максимальный номер книги.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseMMA&block=solution1"/>
 
-##### Пример 2
+## Пример 2
 
-###### Условие
+### Условие
 
 Аналогично **Примеру 1**.
 
 Необходимо по номеру книги найти объект *Книга*.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseMMA&block=solution2"/>
 
 Вариант 2 отличается от варианта 1 тем, что объявление этого свойства добавляет [ограничение](Constraints.md) на уникальность номера для книги. При попытке добавить две книги с одинаковыми номерами будет выдано сообщение с ошибкой.
 
-##### Пример 3
+## Пример 3
 
-###### Условие
+### Условие
 
 Есть набор книг, для каждой из которых задана категория и цена.
 
@@ -42,13 +42,13 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно посчитать минимальную цену по категории.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseMMA&block=solution3"/>
 
-##### Пример 4
+## Пример 4
 
-###### Условие
+### Условие
 
 Задан документ отгрузки книг.
 
@@ -56,7 +56,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 Необходимо найти некоторую строку отгрузки по документу и книге.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseMMA&block=solution4"/>
 

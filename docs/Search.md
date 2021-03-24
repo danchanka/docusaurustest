@@ -32,62 +32,62 @@ Below are the steps, conditions and operations of the search algorithm, dependin
 
 Description of steps, conditions and operations of the search algorithm:
 
-##### Name matches {#name}
+## Name matches {#name}
 
 The name of the candidate matches the search name (must always be specified explicitly when searching). The comparison is case-sensitive (i.e. aA != AA).
 
-##### Located in dependent module {#module}
+## Located in dependent module {#module}
 
 Candidate module [depends on](Modules.md#depends) the module in which the search is performed.
 
-##### Located in specified namespace (if explicitly specified) {#namespace}
+## Located in specified namespace (if explicitly specified) {#namespace}
 
 [Namespace](Naming.md#namespace) of the candidate equals the namespace of the search (if this namespace is specified explicitly).
 
-##### Selection of a priority namespace (if the namespace is not explicitly specified) {#priority}
+## Selection of a priority namespace (if the namespace is not explicitly specified) {#priority}
 
 If the current set contains candidates from the namespace in which the search is performed, all other candidates are deleted from the set of candidates, and the selection operation is completed. If not, a similar action is repeated for *priority* namespaces of the module in which the search is being performed (in the order in which these priority namespaces were set). If nothing is found for them either, the set of candidates remains unchanged.
 
-##### Number of parameters matches {#metacode}
+## Number of parameters matches {#metacode}
 
 The number of parameters of the candidate is equal to the number of parameters of the call.
 
-##### Search for property inside action {#locals}
+## Search for property inside action {#locals}
 
 This step is only executed to search for a property, and only if this search is inside some action (and not, for example, in a form declaration).
 
-###### Namespace not specified explicitly {#nonamespace}
+### Namespace not specified explicitly {#nonamespace}
 
 This step is only executed if no search namespace is specified.
 
-##### Located upper in the stack {#stack}
+## Located upper in the stack {#stack}
 
 The candidate is a [local property](Data_properties_DATA_.md#local) and:
 
 -   is declared inside an operator of a [sequence](Sequence_..._.md) that executes an action that refers to the required element.
 -   is declared earlier than the action that directly refers to the required element.
 
-##### Suitable classes of parameters {#direct}
+## Suitable classes of parameters {#direct}
 
 [Classes of call parameters](#call-broken) [match](#directclasses-broken) [the classes of the candidate's parameters](#decl-broken) or classes of the referring parameters are unknown.
 
-##### Classes of parameters intersect {#indirect}
+## Classes of parameters intersect {#indirect}
 
 [Classes of the referring parameters](#call-broken) [intersect](#indirectclasses-broken) with [classes of the candidate's parameters](#decl-broken).
 
-##### Selection of more specific classes of parameters {#concrete}
+## Selection of more specific classes of parameters {#concrete}
 
 If the set of candidates includes properties **A** and **B** such that **A**'s parameter classes match **B**'s, then property **B** is removed from the set of candidates.
 
-##### Not searching for an abstract property {#notabstract}
+## Not searching for an abstract property {#notabstract}
 
 This step is not executed if a property (action) is searched in the [extension](Property_extension.md) operator of the property (action), and the searched property is an extensible (abstract) property (when searching for properties in the right one part of extension operator implementation the common search mechanism is used).
 
-##### Abstract property (if an abstract property is being searched for) {#abstract}
+## Abstract property (if an abstract property is being searched for) {#abstract}
 
 The candidate is an [abstract](Property_extension.md) property (action).
 
-##### Selection of non-matching classes of parameters (if an abstract property is being searched for) {#notequals}
+## Selection of non-matching classes of parameters (if an abstract property is being searched for) {#notequals}
 
 If:
 
@@ -98,7 +98,7 @@ If:
 
 Then: properties (actions) from the third section are deleted from the set of candidates (i.e., those for which the parameter classes are equal to the classes of the referring parameters)
 
-### Additional operations to search for properties / actions
+#### Additional operations to search for properties / actions
 
 *Matching parameter classes*
 
@@ -146,7 +146,7 @@ If the parameter classes of a property (action) are not explicitly specified, th
 |Grouping|Classes of the values of group properties (<strong>BY</strong> block)|
 |Operations with object groups|Classes of objects belonging to the used objects group|
 
-### Examples
+#### Examples
 
 
 import {CodeSample} from './CodeSample.mdx'

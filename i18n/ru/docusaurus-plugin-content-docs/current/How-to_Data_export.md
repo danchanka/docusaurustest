@@ -2,9 +2,9 @@
 title: 'How-to: Экспорт данных'
 ---
 
-##### Пример 1
+## Пример 1
 
-###### Условие
+### Условие
 
 Есть заказы на продажу покупателям некоторых книг.
 
@@ -14,7 +14,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно сделать кнопку, которая выгрузит содержимое заказа в XML-формат.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseExport&block=solution1"/>
 
@@ -72,15 +72,15 @@ import {CodeSample} from './CodeSample.mdx'
 
 -   Если тэг содержит значение, то он генерируется либо *свойством* (например, **nameBook** или **quantity**) с соответствующим именем, либо группой свойств / объектом с единственным "вложенным" свойством с **EXTID** 'value').
 
-##### Пример 2
+## Пример 2
 
-###### Условие
+### Условие
 
 Аналогично **Примеру 1**.
 
 Нужно сделать кнопку, которая выгрузит содержимое заказа в JSON-формат.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseExport&block=solution2"/>
 
@@ -115,15 +115,15 @@ import {CodeSample} from './CodeSample.mdx'
 
 Следует отметить, что в случае выгрузки в формат JSON инструкция **ATTR** игнорируется.
 
-##### Пример 3
+## Пример 3
 
-###### Условие
+### Условие
 
 Аналогично **Примеру 1**.
 
 Нужно сделать кнопку, которая выгрузит все заказы за определенную дату в CSV формат.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseExport&block=solution3"/>
 

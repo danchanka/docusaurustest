@@ -2,7 +2,7 @@
 title: 'How-to: Integration'
 ---
 
-##### How to read these sections
+### How to read these sections
 
 1.  [Working with external formats](How-to_Working_with_external_formats.md): Mechanisms for working with data in various structured formats.
 2.  [HTTP communication](How-to_Interaction_via_HTTP_protocol.md): How to send and receive messages via HTTP.

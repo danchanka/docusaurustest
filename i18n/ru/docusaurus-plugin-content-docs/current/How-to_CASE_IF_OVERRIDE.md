@@ -2,9 +2,9 @@
 title: 'How-to: CASE/IF/OVERRIDE'
 ---
 
-##### Пример 1
+## Пример 1
 
-###### Условие
+### Условие
 
 Есть набор книг, которые могут быть белыми и черными.
 
@@ -14,15 +14,15 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно определить свойство, которое возвращает цвет книги.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseCIO&block=solution1"/>
 
 В данном случае эти два варианта идентичны.
 
-##### Пример 2
+## Пример 2
 
-###### Условие
+### Условие
 
 Есть заказы на книги поставщикам. Для каждого из них определено, был ли он отправлен поставщику, согласован и поставлен. В примере они введены как [первичные](Data_properties_DATA_.md) свойства, но в более сложных случаях они будут вычисляемыми.
 
@@ -30,25 +30,25 @@ import {CodeSample} from './CodeSample.mdx'
 
 Необходимо определить статус заказа.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseCIO&block=solution2"/>
 
-##### Пример 3
+## Пример 3
 
-###### Условие
+### Условие
 
 Есть набор книг, аналогично **Примеру 1**.
 
 Нужно задать для книги торговую надбавку, но чтобы можно было задать значение по умолчанию.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseCIO&block=solution3"/>
 
-##### Пример 4
+## Пример 4
 
-###### Условие
+### Условие
 
 Аналогичен **Примеру 3**, только для книги задана категория.
 
@@ -56,13 +56,13 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно задать для книги торговую надбавку, но чтобы можно было задать значение по умолчанию для категории, к которой она относится.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseCIO&block=solution4"/>
 
-##### Пример 5
+## Пример 5
 
-###### Условие
+### Условие
 
 Есть набор книг, для каждой из которых задан номер.
 
@@ -70,7 +70,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно найти номер, следующий за максимальным.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseCIO&block=solution5"/>
 

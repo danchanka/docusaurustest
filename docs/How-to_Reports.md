@@ -2,9 +2,9 @@
 title: 'How-to: Reports'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 We have a logic for books split into categories.
 
@@ -14,7 +14,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to create a [print form](Print_view.md) to display all the books by category. We also need to export this form to the XLSX format.
 
-###### Solution
+### Solution
 
 First, we need to declare a [form](Forms.md) to define the print form structure.
 
@@ -44,7 +44,7 @@ Let's make a few changes in the automatic template and save it:
 
 ![](attachments/46367627/57738052.png)
 
-### Template: Sample\_booksByCategories.jrxml
+#### Template: Sample\_booksByCategories.jrxml
  Expand source
 
     <?xml version="1.0" encoding="UTF-8"?>
@@ -92,9 +92,9 @@ Once done, if you re-run the report generation procedure, it will use modified t
 If the background process fails to synchronize development and execution folders for some reason, you just need to restart the server so that the project is re-built and changes are applied.
 :::
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 The invoice logic has been defined.
 
@@ -102,7 +102,7 @@ The invoice logic has been defined.
 
 We need to create a print form for invoices that will contain all of their parameters and lines. We also need to be able to export this form to the DOCX format.
 
-###### Solution
+### Solution
 
 To create a print form, let's use the existing **invoice** form that works for us in terms of structure. However, we can create a new form, if necessary.
 
@@ -116,7 +116,7 @@ Let's move the invoice data from the group header (**Group Header**) to the invo
 
   
 
-### Template: Sample\_invoice\_i.jrxml
+#### Template: Sample\_invoice\_i.jrxml
  Expand source
 
     <?xml version="1.0" encoding="UTF-8"?>
@@ -165,9 +165,9 @@ The resulting report will look like this:
 
 ![](attachments/46367627/57738060.png)
 
-##### Example 3
+## Example 3
 
-###### Condition
+### Condition
 
 Similar to **Example 2**, plus the buyer and order logic.
 
@@ -175,7 +175,7 @@ Similar to **Example 2**, plus the buyer and order logic.
 
 We need to create a print form with customer information that will include all orders and invoices.
 
-###### Solution
+### Solution
 
 First, let's create a form whose structure will correspond to the logic of the required print form. We will display the buyer object in the panel, as we only need to show data for a single buyer. The rest of the objects remain tables.
 

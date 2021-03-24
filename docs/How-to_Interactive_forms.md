@@ -2,7 +2,7 @@
 title: 'How-to: Interactive forms'
 ---
 
-##### How to read these sections
+### How to read these sections
 
 1.  [CRUD](How-to_CRUD.md). Create / Replace / Update / Delete. How to create a simple "catalogue".
 2.  [Documents with lines](How-to_Documents_with_lines.md). A GUI generation template for documents with lines.

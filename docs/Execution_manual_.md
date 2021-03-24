@@ -12,7 +12,7 @@ To install the application server, web server and client, Java version 8 or late
 For the application server to work, it must have access to the PostgreSQL database management server of at least version 9.6. The PostgreSQL server must accept connections using password authentication by the md5 or trust method. You can configure authorization by editing the pg\_hba.conf file, as described in the [PostgreSQL](http://www.postgresql.org/docs/9.2/static/auth-pg-hba-conf.html) documentation.
 :::
 
-#### Installing the application server as a service
+### Installing the application server as a service
 
 -   Download the file lsfusion-server-<version\>.jar of the required version (for example lsfusion-server-4.1.jar) from [the central server](https://download.lsfusion.org/java) to some folder (we will call this folder *$FUSION\_DIR$*).
 
@@ -67,7 +67,7 @@ For the application server to work, it must have access to the PostgreSQL databa
 
         java -cp ".;lsfusion-server-4.1.jar" lsfusion.server.logics.BusinessLogicsBootstrap
 
-#### Installing the web server (web and desktop client) as a service {#appservice}
+### Installing the web server (web and desktop client) as a service {#appservice}
 
 
 :::info
@@ -78,7 +78,7 @@ To install the web server, Apache Tomcat version 8 or higher must be installed o
 -   If the application server is located on another computer, as well as if [access parameters to the application server](Launch_parameters.md#accessapp-broken) are different from the standard, set [connection parameters to the application server](Launch_parameters.md#connectapp-broken) (for example by creating / editing the Tomcat [settings file](Launch_parameters.md#filewebsettings-broken)) 
 -   Deploy the application on Tomcat. The easiest way is to copy Tomcat to the webapps folder. In this case, the file can be renamed first (for example, to lsfusion.war), since the file name will correspond to the context path where the application will be available. If Tomcat uses port 8080, then the web client will be available at: <http://localhost:8080/><filename of the war file\>. For example, [http://localhost:8080/lsfusion](http://localhost:8080/lsfusion/). An empty context name in Tomcat corresponds to the name ROOT, that is, if the file name is ROOT.war, the web client will be available at <http://localhost:8080/>. You can download the desktop client from the authorization page at "Run Desktop Client" (via Java Web Start).
 
-#### Installing only the desktop client (on the client's computer)
+### Installing only the desktop client (on the client's computer)
 
 -   Download the file lsfusion-client-<version\>.jar of the required version from [the central server](https://download.lsfusion.org/). For example, lsfusion-client-4.1.jar
 

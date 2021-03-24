@@ -11,7 +11,7 @@ In these examples we will make requests without authorization. For the server to
 A safer way would be to create a separate action for each request, with an @@api marker. and set **enableAPI** to the value 0. In this case, the server will only accept requests for these specific actions and from an authorized user. Inside these actions, before starting processing you can check for availability to the user using the **currentUser()** property.
 :::
 
-#####  Example 1
+###  Example 1
 
 For clarity, we implement the simple form from the [Score table](Score_table.md) example (in read-only mode).
 
@@ -69,7 +69,7 @@ will return JSON of the form
 
 It only remains to use this data as a state(s) for React component(s) (for example, using [Material-UI](https://material-ui.com/)):
 
-##### Example 2
+### Example 2
 
 Let's consider a slightly more complicated case, when you need to make parameterized queries depending on data selected by the user. For backend logic we'll take the [Material Flow Management](Materials_management.md) example.
 
@@ -127,7 +127,7 @@ Using the requests described above, we implement the required logic. To do this,
 
 The rest of the code will look like this:
 
-##### Example 3
+### Example 3
 
 We implement a simple CRUD interface for entering goods.
 
@@ -175,7 +175,7 @@ To delete a given product:
 
 The code implementing the user interface may look like this:
 
-##### Example 4
+### Example 4
 
 In this example, we implement the ability to view and edit a list of documents with lines.
 
@@ -280,7 +280,7 @@ To handle the constraint violation error (since the response status will be 200 
 
 The implementation of the entire task may look as follows:
 
-##### Example 5
+### Example 5
 
 By analogy with **Example 1**, we implement the Score table form with editing ability using the [Form API](Access_from_an_external_system.md#form-broken). To use it, you need to link the [@lsfusion/core](https://www.npmjs.com/package/@lsfusion/core) library.
 

@@ -2,7 +2,7 @@
 title: 'How-to: Use Cases'
 ---
 
-##### How to read these sections
+### How to read these sections
 
 1.  [Working with documents](How-to_Working_with_documents.md): The key tasks related to programming of document-oriented logic.
 2.  [Registers](How-to_Registers.md): Working with accumulation and information ledgers.

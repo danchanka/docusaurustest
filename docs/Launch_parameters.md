@@ -9,9 +9,9 @@ title: 'Launch parameters'
     -   [Java](#webjava)
     -   [lsFusion](#weblsfusion)
 
-### Application server (Server)
+## Application server (Server)
 
-#### Java {#appjava}
+### Java {#appjava}
 
 Java application server startup parameters are set in the launch command (for example, for [manual](Execution_manual_.md#command-broken) or [automatic](Execution_auto_.md#settings-broken) installation):
 
@@ -23,7 +23,7 @@ Java application server startup parameters are set in the launch command (for ex
 |<div class="content-wrapper"><br/><p>-Dlsfusion.server.devmode</p><br/></div>|boolean|<p>Development mode. In this mode:</p><br/><ul><br/><li>System tasks are not launched (so as not to interfere with the debugger)</li><br/><li>You can edit [report design](Report_design.md) in [interactive print](In_a_print_view_PRINT_.md#interactive) view</li><br/><li>Anonymous access to the API and UI is enabled ([system parameters](Working_parameters.md) enableAPI, enableUI). In addition, anonymous access in this mode is as an admin and not an anonymous user</li><br/><li>Client is automatically reconnected when connection is lost</li><br/><li>The cache for reading reports from resources is turned off</li><br/></ul><br/><p>In the [IDE](IDE.md), automatically enabled when running [lsFusion server configuration](IDE.md#configuration).</p>|false|
 |-Dlsfusion.server.testmode|boolean|<p>Enables some experimental features</p><br/><p>Automatically enabled if assertions are enabled (-ea option)</p>|false|
 
-#### lsFusion {#applsfusion}
+### lsFusion {#applsfusion}
 
 lsFusion startup parameters for server applications can be set in one of the following ways (in the order of their priorities, lower priority at the bottom):
 
@@ -44,7 +44,7 @@ lsFusion startup parameters for server applications can be set in one of the fo
 
 Example conf/settings.properties file ([section 3](#appp3-broken)):
 
-### $FUSION\_DIR$/conf/settings.properties
+## $FUSION\_DIR$/conf/settings.properties
 
     db.server=localhost
     db.name=lsfusion
@@ -58,9 +58,9 @@ Example conf/settings.properties file ([section 3](#appp3-broken)):
 By default, it is assumed that the startup parameter files conf/settings.properties and lsfusion.properties are located in the application server's startup folder. However, with [automatic installation](Execution_auto_.md) under GNU Linux symlinks for these files (as well as for [log](Journals_and_logs.md#logs) folders)  are automatically created to [other files](Execution_auto_.md#settings-broken) whose layout is better aligned with Linux ideology.
 :::
 
-### Web server (Client)
+## Web server (Client)
 
-#### Java {#appjava}
+### Java {#appjava}
 
 Java web server startup parameters are set in the Tomcat launch command, which, in turn, launches this web server (for example, for [automatic](Execution_auto_.md#webapp-broken) installation). 
 
@@ -68,7 +68,7 @@ Java web server startup parameters are set in the Tomcat launch command, which, 
 |---|---|---|---|
 |System (starting with X)|[Standard](https://www.oracle.com/technetwork/java/javase/tech/vmoptions-jsp-140102.html)|<br /><br/>|<div class="content-wrapper"><br/><p>Standard Java parameters. It is important above all to pay attention to:</p><br/><ul><br/><li>Xmx - maximum memory size. For complex logics, it is recommended that you allocate at least 2GB. </li><br/></ul><br/></div>|
 
-#### lsFusion {#applsfusion}
+### lsFusion {#applsfusion}
 
 lsFusion startup parameters for the web server can be set in one of the following ways (in the order of their priorities, lower priority at the bottom):
 

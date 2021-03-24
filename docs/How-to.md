@@ -2,7 +2,7 @@
 title: 'How-to'
 ---
 
-##### How to read these sections
+### How to read these sections
 
 1.  [Computations](How-to_Computations.md): The mechanism for composing computable properties.
 2.  [GUI](How-to_GUI.md): Development of a graphical user interface.

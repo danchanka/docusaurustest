@@ -2,9 +2,9 @@
 title: 'How-to: Working with documents'
 ---
 
-##### Posting documents
+## Posting documents
 
-###### Condition
+### Condition
 
 There is some logic for working with orders.
 
@@ -22,21 +22,21 @@ Besides, a **"Posted"** property has been added for orders. In the future, only 
 
 We need to do so that instead of the **ОК** button on the order form, there is a **Post** button that simultaneously sets the **Posted** property for the order, saves changes, and closes the form.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseDocument&block=solution3"/>
 
 Each time the renamed **OK** button is pressed, the **post** action will be executed in a single transaction. With this scheme, if the user wants to "post" a document, they just need to go to the edit form, uncheck the **Posted** box in the document header, then click **Save** and **Close**.
 
-##### Line selection
+## Line selection
 
-###### Condition
+### Condition
 
 We have an order with an edit form similar to the **Posting documents** example.
 
 We need to add a possibility to enter order lines by specifying the quantify in the table containing the list of products. Any changes in order lines and this table should be automatically synchronized with each other.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseDocument&block=solution4"/>
 
@@ -52,15 +52,15 @@ If an order has two or more lines with one book, the system will reset the quant
 
 However, users may not understand this behavior, since after they enter a particular quantity on the **Selection** tab, the total quantity for all lines will be shown in the same column and it will be different from the entered value.
 
-##### Aggregated documents
+## Aggregated documents
 
-###### Condition
+### Condition
 
 We have the order logic.
 
 We need to add some invoicing logic so that an order could automatically create a corresponding invoice.
 
-###### Solution
+### Solution
 
 In order to implement this logic, you need to create an abstract **Invoice** [class](Classes.md) with the necessary set of [abstract properties](Property_extension.md).
 

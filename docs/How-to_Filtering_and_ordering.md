@@ -2,9 +2,9 @@
 title: 'How-to: Filtering and ordering'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 There are remaining books in stock.
 
@@ -14,29 +14,29 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to create a form to display the balances of books in a given stock in alphabetical order.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFilter&block=solution1"/>
 
 Option 1 sets up a fixed filter that the user cannot remove. Option 2 allows the user to choose between predefined criteria (by default the one for which the *DEFAULT* option is set).
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 Similar to **Example 1**.
 
 We need to create a form to display remaining books in several warehouses, with the possibility of filtering by a specific warehouse. Ordering should be first by warehouse, and within that by book title.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFilter&block=solution2"/>
 
 In this case a warehouse cannot be declared via the *OBJECTS* block, because then not specifying a warehouse for filtering will not be an option.
 
-##### Example 3
+## Example 3
 
-###### Condition
+### Condition
 
 There is a list of orders for certain customers
 
@@ -44,7 +44,7 @@ There is a list of orders for certain customers
 
 We need to create a form to display the list of orders allowing to filter by date and/or customer. By default, orders should be in descending date order.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFilter&block=solution3"/>
 

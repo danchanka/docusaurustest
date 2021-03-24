@@ -2,9 +2,9 @@
 title: 'How-to: PARTITION'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 We have an order with the lines.
 
@@ -14,15 +14,15 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to number the lines starting from 1 as they are added to the order.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCasePartition&block=solution1"/>
 
 In this case, we sort by internal ID of lines in the order, since we know for sure that this ID increases when the new lines are created.
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 We have a list of customer orders with specified dates.
 
@@ -30,15 +30,15 @@ We have a list of customer orders with specified dates.
 
 For each order we need to find the date of the previous order placed by the same customer.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCasePartition&block=solution2"/>
 
 Similar to **[How-to: GROUP CONCAT](How-to_GROUP_CONCAT.md)**, the order should be uniquely determined. Therefore, we add the order itself (i. e. its internal ID) as the last argument for **ORDER**.
 
-##### Example 3
+## Example 3
 
-###### Condition
+### Condition
 
 We have the current balance for books by batches.
 
@@ -46,7 +46,7 @@ We have the current balance for books by batches.
 
 We need to distribute the specified quantity for a specified book by batches according to the FIFO principle.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCasePartition&block=solution3"/>
 

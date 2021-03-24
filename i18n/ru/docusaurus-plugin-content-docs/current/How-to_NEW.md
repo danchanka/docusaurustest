@@ -2,9 +2,9 @@
 title: 'How-to: NEW'
 ---
 
-##### Пример 1
+## Пример 1
 
-###### Условие
+### Условие
 
 Есть заказ, с заданной датой и покупателем.
 
@@ -14,13 +14,13 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно создать действие, которое создаст новый заказ на основе заданного.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseNew&block=solution1"/>
 
-##### Пример 2
+## Пример 2
 
-###### Условие
+### Условие
 
 Аналогично **Примеру 1**, но для заказа заданы строки заказов.
 
@@ -28,6 +28,6 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно создать действие, которое создаст новый заказ на основе выбранного, с идентичными строками.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseNew&block=solution2"/>

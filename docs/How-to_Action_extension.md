@@ -4,7 +4,7 @@ title: 'How-to: Action extension'
 
 We can use the following scheme to implement polymorphism:
 
-###### Example 1
+### Example 1
 
 Create an abstract class **Shape** with an abstract action **whoAmI**:
 
@@ -22,7 +22,7 @@ Define the implementation of **whoAmI** for the created classes:
 
 When executing the **whoAmI** action, all the actions added as an implementation will be called. In this case, a corresponding message will appear depending on the argument.
 
-###### Example 2
+### Example 2
 
 Suppose that we need to implement an action that copies an object (e. g. the **Book** class) with its semantics defined in multiple modules. This can be implemented as follows:
 

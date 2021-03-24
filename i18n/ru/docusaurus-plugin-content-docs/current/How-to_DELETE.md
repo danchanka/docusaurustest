@@ -2,9 +2,9 @@
 title: 'How-to: DELETE'
 ---
 
-##### Пример 1
+## Пример 1
 
-###### Условие
+### Условие
 
 Есть заказ, с заданной датой и покупателем и строками заказов, которые ссылаются на книги.
 
@@ -14,19 +14,19 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно создать действие, которое удалит книгу, если по ней нету заказов.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseDelete&block=solution1"/>
 
-##### Пример 2
+## Пример 2
 
-###### Условие
+### Условие
 
 Аналогично **Примеру 1**.
 
 Нужно создать действие, которое очистит заказ, удалив все его строки.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseDelete&block=solution2"/>
 

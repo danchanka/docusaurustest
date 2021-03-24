@@ -2,7 +2,7 @@
 title: 'How-to: Registers'
 ---
 
-##### Accumulation ledger
+### Accumulation ledger
 
 Let's assume we need to implement the logic for calculating the SKU balances.
 
@@ -47,7 +47,7 @@ The ledger object will only be created when the transfer document has been poste
 
 It should be noted that documents with one warehouse can also be posted into the ledger using aggregation. The aggregation scheme is more flexible but requires the creation of additional objects in the system, which may be worse from a performance perspective.
 
-##### Information ledger
+### Information ledger
 
 The *information ledger* technique makes it possible to implement the logic of changing a certain indicator over time in a flexible way. Unlike the inventory ledger, it calculates not the sum of an indicator but its latest value over a certain period of time.
 

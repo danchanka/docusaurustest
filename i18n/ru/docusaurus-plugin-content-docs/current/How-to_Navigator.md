@@ -2,9 +2,9 @@
 title: 'How-to: Навигатор'
 ---
 
-##### Пример 1
+## Пример 1
 
-###### Условие
+### Условие
 
 Есть формы со списком книг и категорий.
 
@@ -14,7 +14,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно добавить их в [навигатор](Navigator.md) в новую папку **Приложение** снизу от основного тулбара.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseNavigator&block=solution1"/>
 
@@ -22,15 +22,15 @@ import {CodeSample} from './CodeSample.mdx'
 
 ![](attachments/46367463/46367465.png)
 
-##### Пример 2
+## Пример 2
 
-###### Условие
+### Условие
 
 Аналогичен **Примеру 1**
 
 Нужно сделать, чтобы эти же формы были в подпапке Справочники.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseNavigator&block=solution2"/>
 

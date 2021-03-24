@@ -4,7 +4,7 @@ title: 'How-to: Extensions'
 
 [Extensions](Extensions.md) are very important for providing the modularity and extensibility of applications.
 
-##### How to read these sections
+### How to read these sections
 
 1.  [Class extension](Class_extension.md).
 2.  [Property extension](How-to_Property_extension.md).

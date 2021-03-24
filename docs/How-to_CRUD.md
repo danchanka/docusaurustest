@@ -2,9 +2,9 @@
 title: 'How-to: CRUD'
 ---
 
-##### Example 1
+## Example 1
 
-###### Task
+### Task
 
 We have a set of predefined book types.
 
@@ -14,15 +14,15 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to create a form to select a type from the list.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseCRUD&block=solution1"/>
 
 *DIALOG* indicates that this form will be used for selecting a type from the list (e. g. when the user wants to change the book type).
 
-##### Example 2
+## Example 2
 
-###### Task
+### Task
 
 We have a set of books with given titles.
 
@@ -37,13 +37,13 @@ It is recommended that you add all the **name** properties to the **id** group. 
 
 We need to create a form with a list of books where the user can add, edit or delete them.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseCRUD&block=solution2"/>
 
-##### Example 3
+## Example 3
 
-###### Task
+### Task
 
 We have a set of book genres with given titles.
 
@@ -51,7 +51,7 @@ We have a set of book genres with given titles.
 
 We need to create a form with a list of genres where the user can add, edit or delete them, and one more form with a list of genres but without these options.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseCRUD&block=solution3"/>
 

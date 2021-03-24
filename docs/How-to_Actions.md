@@ -2,7 +2,7 @@
 title: 'How-to: Actions'
 ---
 
-##### How to read these sections
+### How to read these sections
 
 1.  [CHANGE](How-to_CHANGE.md): Writing values to properties.
 2.  [EXEC](How-to_EXEC.md): Calling an action from another action.

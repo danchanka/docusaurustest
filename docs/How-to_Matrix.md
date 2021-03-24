@@ -2,9 +2,9 @@
 title: 'How-to: Matrix'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 We have the concepts of books and buyers defined. A price is defined for each book and buyer.
 
@@ -14,7 +14,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to create a form with a single table where rows will contain books and columns will contain buyers. Each cell should have a price for its book and buyer.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseColumns&block=solution1"/>
 
@@ -24,9 +24,9 @@ The form will look like this:
 
 ![](attachments/46367544/46367547.png)
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 Similar to **Example 1**, only there is a deferred payment period for each book and buyer.
 
@@ -34,7 +34,7 @@ Similar to **Example 1**, only there is a deferred payment period for each book 
 
 We need to create a form with a single table where rows will contain books and columns will contain buyers. For each buyer, there will be two columns next to them: price and deferred payment period. We need to highlight columns with deferred payment information in yellow. It should be possible to choose which buyers to display in the columns.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseColumns&block=solution2"/>
 
@@ -46,13 +46,13 @@ The form will look like this:
 
 ![](attachments/46367544/46367551.png)
 
-##### Example 3
+## Example 3
 
-###### Condition
+### Condition
 
 We need to create a form containing a matrix with a specified number of rows and columns. The user should be able to check each cell.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseColumns&block=solution3"/>
 

@@ -2,9 +2,9 @@
 title: 'How-to: Interaction via HTTP protocol'
 ---
 
-##### Example 1
+## Example 1
 
-###### Task
+### Task
 
 We have a certain set of cities associated with their countries.
 
@@ -14,7 +14,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to send an HTTP request for adding a city in the JSON format to a certain url.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExternal&block=solution1"/>
 
@@ -30,15 +30,15 @@ Then we call the [EXTERNAL](Access_to_an_external_system_EXTERNAL_.md) operator,
 
 The response is handled by the [IMPORT](Data_import_IMPORT_.md) operator which parses the corresponding parameters into the **code** and **message** properties respectively. If any error occurs, the user will see a corresponding error message.
 
-##### Example 2
+## Example 2
 
-###### Task
+### Task
 
 Similar to **Example 1**. 
 
 We need to handle the incoming HTTP request and create a new city in the database with the parameters provided in the request.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExternal&block=solution2"/>
 
@@ -52,9 +52,9 @@ If there is no country with the corresponding code, then a JSON file is generate
 
 If all the actions are completed successfully, the corresponding "OK message" is generated in response.
 
-##### Example 3
+## Example 3
 
-###### Task
+### Task
 
 We have the logic of book orders.
 
@@ -62,7 +62,7 @@ We have the logic of book orders.
 
 We need to send an HTTP request for creating a new order in the JSON format to a certain url.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExternal&block=solution3"/>
 
@@ -88,29 +88,29 @@ To create a JSON with nested tags, we need to create a form with the correspondi
 We do not create a custom tag for "order", since the object value is passed as an argument to the **EXPORT** operator.  
 In this example, the response to the HTTP request is ignored.
 
-##### Example 4
+## Example 4
 
-###### Task
+### Task
 
 Similar to **Example 3**. 
 
 We need to handle the incoming HTTP request and create a new order in the database with the parameters provided in the request.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExternal&block=solution4"/>
 
 To import the corresponding file in the JSON format, we need to create a form of a similar structure, except that the INTEGER type will be used as object classes. During the import process, the tag values will be placed in the properties with the corresponding names. The **date** and **number** properties have no parameters, since their values in JSON are provided at the topmost level.
 
-##### Example 5
+## Example 5
 
-###### Condition
+### Condition
 
 Similar to **Example 4**. 
 
 We need to send an HTTP request to create an order in the JSON format to a certain url as in the previous example, except that everything must be wrapped in the **order** tag.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExternal&block=solution5"/>
 
@@ -137,29 +137,29 @@ Unlike the previous example, here we create a property [group](Groups_of_propert
        }
     }
 
-##### Example 6
+## Example 6
 
-###### Condition
+### Condition
 
 Similar to **Example 5**. 
 
 We need to handle the incoming HTTP request and create a new order in the database with the parameters provided in the request.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExternal&block=solution6"/>
 
 Just as in the export process, we put all the properties and the **detail** object to the "order" group to correctly receive the new version of JSON.
 
-##### Example 7
+## Example 7
 
-###### Task
+### Task
 
 Similar to **Example 3**. 
 
 We need to return a list of order numbers for a given date using an HTTP GET request in which this date is provided.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseExternal&block=solution7"/>
 

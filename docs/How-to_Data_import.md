@@ -2,9 +2,9 @@
 title: 'How-to: Data import'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 We have the books for which names and prices are defined. The order logic is also defined.
 
@@ -14,7 +14,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to create a button that loads the contents of the order from the Excel file selected by the user on their computer.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=solution1"/>
 
@@ -24,9 +24,9 @@ It is assumed that a file consists of three columns. The first one (A) contains 
 
 The  [IMPORT](IMPORT_operator.md) operator reads the selected file and then writes its contents to local properties which take only one argument — line number. The numbering starts from 0. The **imported** property will be set to **TRUE** if the file contains a line with the corresponding number. Then, a corresponding line is created in the order for each of these lines.
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 Similar to **Example 1**. In addition, we have specified a directory to which an external system puts orders. For each order, a separate CSV file is generated for storing the order date and number (in the denormalized form) along with the book code, quantity, and price.
 
@@ -34,7 +34,7 @@ Similar to **Example 1**. In addition, we have specified a directory to which an
 
 We need to implement an action that will import orders from this folder into the system.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=solution2"/>
 
@@ -48,9 +48,9 @@ Each file is processed in a separate new [change session](Change_sessions.md) a
 
 Since the result action has no arguments, we can add it to the scheduler for automatic launch at certain intervals.
 
-##### Example 3
+## Example 3
 
-###### Condition
+### Condition
 
 Similar to **Example 1**.
 
@@ -58,7 +58,7 @@ An external database stores a book directory with their codes and names.
 
 We need to create an action that will synchronize the book directory with this external database.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseImport&block=solution3"/>
 
@@ -66,9 +66,9 @@ Synchronization consists of the three main actions. First, we create books whose
 
 This guarantees that when the action is started, the book directory will be absolutely identical to that in the external system. This scheme is useful when some master data is maintained in another system. The result action can be added to the scheduler and triggered at certain relatively small time intervals, thereby ensuring near real-time updates for the directory.
 
-##### Example 4
+## Example 4
 
-###### Condition
+### Condition
 
 Similar to **Example 1**.
 

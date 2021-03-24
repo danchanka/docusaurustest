@@ -2,9 +2,9 @@
 title: 'How-to: Дизайн'
 ---
 
-##### Пример 1
+## Пример 1
 
-###### Условие
+### Условие
 
 Есть форма со списком заказов, для каждого из которых задан список книг и проведенные по нему оплаты.
 
@@ -14,7 +14,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 Необходимо настроить дизайн формы таким образом, чтобы строки и оплаты шли отдельными вкладками и отделялись от списка заказов при помощи вертикального сплиттера.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseDesign&block=solution1"/>
 
@@ -22,9 +22,9 @@ import {CodeSample} from './CodeSample.mdx'
 
 ![](attachments/36307439/46367472.png)
 
-##### Пример 2
+## Пример 2
 
-###### Условие
+### Условие
 
 Аналогично Примеру 1, только на форму добавлены фильтры по дате и покупателю.
 
@@ -32,7 +32,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 Нужно добавить элементы фильтрации в дизайн ранее созданной формы.
 
-###### Решение
+### Решение
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseDesign&block=solution2"/>
 

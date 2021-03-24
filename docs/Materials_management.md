@@ -2,19 +2,19 @@
 title: 'Materials management'
 ---
 
-##### Description of the "Materials management" task
+## Description of the "Materials management" task
 
 The information system being created using the **lsFusion**  platform must support very basic supply chain execution capabilities.
 
 For simplicity, let's define one type of document in our system that increases the stock balance — a receipt from the supplier; and one type of document that does the opposite — a shipment for a wholesale to a customer.
 
-##### Defining domain logic
+## Defining domain logic
 
 The information system will consist of a set of [modules](Modules.md), each implementing a logically isolated piece of functionality. Each module can use the functionality of other modules, which involves special syntax constructions for defining module dependencies.
 
 Based on our task, let's define the list of modules to be implemented: stock module, item module, legal entity module, receipt module, shipment module, current balance module. We will separately define the main module that will be executed and will basically be a compound solution. The composition of modules can be different and is determined by the developer depending on the need to re-use the functionality elsewhere.
 
-###### Defining a stock
+### Defining a stock
 
 Let's create a module where we will define a stock instance and its attributes.
 
@@ -26,7 +26,7 @@ Let's define the concept of a stock and its attributes: name, address.
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=mm/Stock&original=1&block=class"/>
 
-###### Defining an item
+### Defining an item
 
 Let's create a module in which we'll define the concept of an item and its attributes.
 
@@ -40,7 +40,7 @@ Let's set the wholesale price for an item.
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=mm/Item&original=1&block=price"/>
 
-###### Defining a legal entity
+### Defining a legal entity
 
 Let's create a module where we will define a legal entity instance and its attributes. In the system, legal entities will act as suppliers and customers.
 
@@ -56,7 +56,7 @@ We define the uniqueness of the Tax ID for the legal entity.
 
 The legalEntityINN property binds an organization and a Tax ID one-to-one and allows to find a legal entity by a Tax ID. The expression of the property can be interpreted as follows: when grouping legal entities by Tax ID (innLegalEntity property), each group must contain a non-repeating legal entity.
 
-###### Defining a receipt
+### Defining a receipt
 
 Let's create a module where we'll define all instances and attributes required for defining the logic of a supplier receipt.
 
@@ -94,7 +94,7 @@ We define a set of key attributes of a receipt line: item and its name, quantity
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=mm/Receipt&original=1&block=detailattributes"/>
 
-###### Defining a shipment
+### Defining a shipment
 
 Let's create a module where we will define all instances and attributes required for a wholesale shipment.
 
@@ -128,7 +128,7 @@ We implement the auto filling of the item sale price in the shipment with the va
 
   
 
-###### Defining current item balance
+### Defining current item balance
 
 The current item balance is defined as a difference between all item receipts and all its shipments.
 
@@ -156,7 +156,7 @@ Let's prohibit the negative item balance. The prohibition will work for any user
 
   
 
-##### Defining view logic
+## Defining view logic
 
 In order to be able to work with the created solution, let's add directory forms and a current balances form, and also a set of paired forms for working with documents: a form for listing receipts and a form for editing them, a form for listing shipments and a form for editing them.
 
@@ -212,7 +212,7 @@ In the StockAccounting module, we compose the system menu. Directories should be
 
 The process of creating an information system is completed.
 
-##### The complete source code (on [Github](https://github.com/lsfusion/samples/tree/master/mm))
+## The complete source code (on [Github](https://github.com/lsfusion/samples/tree/master/mm))
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=mm/Stock"/>
 

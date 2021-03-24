@@ -2,7 +2,7 @@
 title: 'Score table'
 ---
 
-##### "Score table" task description
+## "Score table" task description
 
 This information system, created using the **lsFusion Platform**, should contain the functionality for keeping score at a hockey tournament.
 
@@ -12,9 +12,9 @@ In each game, the result of each game can be a regular-time win of one of the te
 
 A team's score table ranking is determined by the total number of points. In case of a tie, additional parameters are considered: number of regular-time victories, number of overtime victories, number of penalty shootout victories, the difference between scores and misses, number of scores. Additional parameters for determining the final ranking are applied consecutively in a specified order until a status is achieved in which the results of the teams are uniquely ranked.
 
-##### Defining the domain logic
+## Defining the domain logic
 
-###### Module declaration
+### Module declaration
 
 We declare a [module](Modules.md) within which the required functionality will be implemented. We assign an arbitrary name to the module (for example, HockeyStats).
 
@@ -26,7 +26,7 @@ We define the use of functionality from other modules in the HockeyStats module.
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=require&original=1"/>
 
-###### Team definition
+### Team definition
 
 We introduce the concept of a team, for which we create a separate [class](Classes.md) using the corresponding instruction [CLASS](CLASS_instruction.md). 
 
@@ -40,7 +40,7 @@ So that all teams can be easily identified when working with forms created later
 
 Thus, the team name is a [data](Data_properties_DATA_.md) (user-entered) string-type property. Using the IN option, the created property is added to the predefined **base** [property group](Groups_of_properties_and_actions.md). Object properties belonging to the **base** group will be automatically displayed on the dialog form for selecting an object of the "Team" class.
 
-###### Game definition
+### Game definition
 
 We introduce the concept of the game and its attributes: date, participants (host team and guest team), and their names.
 
@@ -64,7 +64,7 @@ We introduce the constraint that the game cannot end in a tie. The system should
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=constraintgoals&original=1"/>
 
-###### Determining the winner of the game
+### Determining the winner of the game
 
 We determine the winner of the game - the team that has scored more goals than its opponent.
 
@@ -76,7 +76,7 @@ By a similar principle, the team that participated in the game and scored fewer 
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats&block=gamelooser&original=1"/>
 
-###### Determining game result
+### Determining game result
 
 We introduce the concept of the possible game result with a predefined set of values: regular-time win, overtime win, penalty shootout win.
 
@@ -100,7 +100,7 @@ In order to always determine a result for the game, we create a constraint that 
 
 The result of the NOT userResult(game) expression will be true only if userResult(game) is not defined (that is, if it is NULL). Thus, the constraint will be violated if the score difference is 1, and the type of win is not specified by the user.
 
-###### Creating a score table
+### Creating a score table
 
 The score table is the ranking of the teams in a tournament - a list of teams sorted by ranking.
 
@@ -147,7 +147,7 @@ Thus, the logic for determining the "place" property for each command is as foll
 -   all teams are arranged in a sequence (ranked) in descending order of the values of certain parameters (number of points scored, games won in regular time, and other properties specified after the ORDER DESC operator)
 -   The sum of the values of the specified SUM expression (in this case, number 1) is calculated for each team. The sum is calculated for all teams preceding that team in the ranked list (including that team). That is, 1 for the first team, 1+1 for the second, 1+1+1 for the third, etc.
 
-##### Defining view logic
+## Defining view logic
 
 We add an interface that allows you to work with the developed system, entering data into the system and obtaining the necessary information from it. The form being created will consist of two vertically arranged blocks, in the upper of which the user will be able to add, modify, and delete games with all their attributes, while in the lower one there will be a score table displaying the results of the games and allowing to add or delete teams and change their names.
 
@@ -173,6 +173,6 @@ We place the created form on the main menu of the program - the predefined navig
 
 The process of creating an information system is completed.
 
-##### The complete source code (on [GitHub](https://github.com/lsfusion/samples/tree/master/hockeystats))
+## The complete source code (on [GitHub](https://github.com/lsfusion/samples/tree/master/hockeystats))
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=hockeystats/HockeyStats"/>

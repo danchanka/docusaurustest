@@ -2,9 +2,9 @@
 title: 'How-to: Trees'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 We have a set of books associated with certain categories.
 
@@ -14,13 +14,13 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to build a form with a tree, where the category is shown above and the product is shown below.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseTree&block=solution1"/>
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 Similar to **Example 1**, except that each category has a parent in the hierarchy.
 
@@ -28,18 +28,18 @@ Similar to **Example 1**, except that each category has a parent in the hierarch
 
 We need to build a form with a tree, where the categories will be displayed as hierarchy.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseTree&block=solution2"/>
 
-##### Example 3
+## Example 3
 
-###### Condition
+### Condition
 
 Similar to **Example 2**.
 
 We need to create a form with a category tree, so that the books that belong to the current category and all its subcategories are shown to the right.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseTree&block=solution3"/>

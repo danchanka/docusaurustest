@@ -2,9 +2,9 @@
 title: 'How-to: Table status'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 We have the concept of books, for which title, genre and price are defined.
 
@@ -14,21 +14,21 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to display the number of books on the form, taking into account filters made by the user.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFormProperties&block=solution1"/>
 
 The solution uses the [FILTER](Filter_FILTER_.md) operator, which returns **TRUE** if the object is included in the current filter on the form.
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 Similar to **Example 1**.
 
 We need to display the serial number of the book in the table with books taking into account the current filter and order made by the user.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFormProperties&block=solution2"/>
 

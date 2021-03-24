@@ -2,9 +2,9 @@
 title: 'How-to: FORMULA'
 ---
 
-##### Example 1
+## Example 1
 
-###### Condition
+### Condition
 
 We have a list of orders.
 
@@ -14,15 +14,15 @@ import {CodeSample} from './CodeSample.mdx'
 
 We need to export this list to CSV and keep the date in the ISO format (YYYY-MM-DD).
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFormula&block=solution1"/>
 
 To solve this task we use the [FORMULA](FORMULA_operator.md) operator to create a new property that takes a date and returns its value as a string in the YYYY-MM-DD format. The expression contains [to\_char](https://www.postgresql.org/docs/11/functions-formatting.html) which is a standard PostgreSQL function.
 
-##### Example 2
+## Example 2
 
-###### Condition
+### Condition
 
 Similar to **Example 1**. New lines containing quantity and amount have been added to the orders.
 
@@ -30,21 +30,21 @@ Similar to **Example 1**. New lines containing quantity and amount have been add
 
 We need to export all the lines from a given order as CSV file in which quantities and amounts are shortened to 3 and 2 characters respectively. In addition, the numbers must be split into triads.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFormula&block=solution2"/>
 
 We create the toString property that takes two parameters (numeric value and format) and returns a value of the **TEXT** type. When exporting, we pass the required format as the second parameter.
 
-##### Example 3
+## Example 3
 
-###### Condition
+### Condition
 
 Similar to **Example 2**.
 
 We need to add a column that will be marked when the given order number contains only digits.
 
-###### Solution
+### Solution
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=UseCaseFormula&block=solution3"/>
 

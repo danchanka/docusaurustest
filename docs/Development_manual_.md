@@ -12,7 +12,7 @@ To install the application server, IDE, and client, Java version 8 or later must
 For the application server to work, it must have access to the PostgreSQL database management server of at least version 9.6. The PostgreSQL server must accept connections using password authentication by the md5 or trust method. You can configure authorization by editing the pg\_hba.conf file, as described in the PostgreSQL [documentation](http://www.postgresql.org/docs/9.2/static/auth-pg-hba-conf.html).
 :::
 
-#### Installing the IDE Plugin
+### Installing the IDE Plugin
 
 
 :::info
@@ -21,7 +21,7 @@ To install the plug-in, Intellij IDEA version 2020.1 or higher must be installed
 
 -   In the IDEA settings (File > Settings), select Plugins > Browse repositories, find the [lsFusion plugin](https://plugins.jetbrains.com/plugin/7601-lsfusion), click Install, and restart IDEA.
 
-#### Installing an application server via IDE
+### Installing an application server via IDE
 
 -   When [creating a new lsFusion project](IDE.md#newproject) click the Download button opposed to the lsFusion library: IDEA automatically downloads the JAR file of the latest (non-beta) version of the lsFusion server from the [central server](https://download.lsfusion.org/java) and installs this file as a dependency of this project (or rather, as its only module: File → Project Structure → Modules → project name → Dependencies tab). Also, if necessary, you can download another version of the server (different from the latest) or select a previously downloaded server JAR file on the local disk.  
 
@@ -30,13 +30,13 @@ To install the plug-in, Intellij IDEA version 2020.1 or higher must be installed
 Note that IDEA remembers the downloaded/specified application server file in its settings and automatically sets it when creating other lsFusion projects. 
 :::
 
-#### Installing a desktop client
+### Installing a desktop client
 
 -   After the server starts, in the start log one of the last lines will be a line with a link to the JNLP file (for example, <https://download.lsfusion.org/java/lsfusion-client-4.1.jnlp>), which when run will automatically install the client using Java Web Start technology.
 
 ## Installation in existing Java projects
 
-#### Installing an application server via IDE
+### Installing an application server via IDE
 
 -   Download the lsfusion-server-<version\>.jar file of the required version (for example, lsfusion-server-4.1.jar) from the [central server](https://download.lsfusion.org/java) to the folder of the required project module (we will call this folder *$FUSION\_DIR$*).
 -   If the database server is located on another computer, and if authorization is enabled on the database server (for example, for Postgres, using the md5 method and if the postgres password is not empty), set the [database server connection parameters](Launch_parameters.md#connectdb-broken) (e.g., by creating a startup [settings file](Launch_parameters.md#filesettings-broken) in the project folder)
@@ -48,7 +48,7 @@ Note that IDEA remembers the downloaded/specified application server file in its
 For an existing maven project, server installation and loading can (and should) be done differently (see below). 
 :::
 
-#### Installing the application server via Maven (only for Maven projects) {#maven}
+### Installing the application server via Maven (only for Maven projects) {#maven}
 
 -   Register in pom.xml or as parent lsfusion.platform.build:logics, or as dependency lsfusion.platform:server (at present these artifacts are not in the central repository, and so the path to the lsFusion repository must be specified additionally). For example:
 
