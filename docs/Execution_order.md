@@ -1,5 +1,6 @@
 ---
-title: 'Execution order'
+title: 'Execution order: Overview'
+sidebar_label: Overview
 ---
 
 The platform supports the following operators for managing the order in which actions are executed:

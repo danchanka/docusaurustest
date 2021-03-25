@@ -1,5 +1,6 @@
 ---
-title: 'Primitive operations'
+title: 'Primitive operations: Overview'
+sidebar_label: Overview
 ---
 
 Primitive operators include operators for working with properties which values belong to the built-in classes. The platform supports the following primitive operators:

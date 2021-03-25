@@ -1,5 +1,6 @@
 ---
-title: 'Access to an internal system (INTERNAL, FORMULA)'
+title: 'Access to an internal system (INTERNAL, FORMULA): Overview'
+sidebar_label: Overview
 ---
 
 *Java interaction*

@@ -1,5 +1,6 @@
 ---
-title: 'ACTION instruction'
+title: 'ACTION instruction: Overview'
+sidebar_label: Overview
 ---
 
 The **ACTION** instruction creates an [action](Actions.md).

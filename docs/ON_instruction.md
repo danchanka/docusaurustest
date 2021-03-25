@@ -1,5 +1,6 @@
 ---
-title: 'ON instruction'
+title: 'ON instruction: Overview'
+sidebar_label: Overview
 ---
 
 The **ON** instruction adds an [event](Events.md) handler.

@@ -1,5 +1,6 @@
 ---
-title: 'Class operations'
+title: 'Class operations: Overview'
+sidebar_label: Overview
 ---
 
 Class operators include the following operators:

@@ -1,5 +1,6 @@
 ---
-title: 'How-to: GUI'
+title: 'How-to: GUI: Overview'
+sidebar_label: Overview
 ---
 
 ### How to read these sections

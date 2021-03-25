@@ -1,5 +1,6 @@
 ---
-title: 'Form views'
+title: 'Form views: Overview'
+sidebar_label: Overview
 ---
 
 A [form](Forms.md) view can be classified as follows:

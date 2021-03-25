@@ -1,5 +1,6 @@
 ---
-title: 'Инструкция FORM'
+title: 'Инструкция FORM: Обзор'
+sidebar_label: Обзор
 ---
 
 Инструкция **FORM** - создание [формы](Forms.md). 

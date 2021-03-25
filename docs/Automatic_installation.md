@@ -1,5 +1,6 @@
 ---
-title: 'Automatic installation'
+title: 'Automatic installation: Overview'
+sidebar_label: Overview
 ---
 
 [Development](Development_auto_.md)

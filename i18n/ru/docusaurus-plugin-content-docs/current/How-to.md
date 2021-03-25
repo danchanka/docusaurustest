@@ -1,5 +1,6 @@
 ---
-title: 'How-to'
+title: 'How-to: Обзор'
+sidebar_label: Обзор
 ---
 
 ### Порядок ознакомления

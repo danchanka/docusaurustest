@@ -1,5 +1,6 @@
 ---
-title: 'Integration'
+title: 'Integration: Overview'
+sidebar_label: Overview
 ---
 
 Integration includes everything related to interaction of the lsFusion system with other systems. In terms of the direction of this interaction, integration can be divided into: 

@@ -1,5 +1,6 @@
 ---
-title: 'Ручная установка'
+title: 'Ручная установка: Обзор'
+sidebar_label: Обзор
 ---
 
 [Разработка](Development_manual_.md)

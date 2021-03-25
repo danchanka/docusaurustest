@@ -1,5 +1,6 @@
 ---
-title: 'Learn'
+title: 'Learn: Overview'
+sidebar_label: Overview
 ---
 
 Overview

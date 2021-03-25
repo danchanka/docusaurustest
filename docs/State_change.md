@@ -1,5 +1,6 @@
 ---
-title: 'State change'
+title: 'State change: Overview'
+sidebar_label: Overview
 ---
 
 System state change operators include the following.

@@ -1,5 +1,6 @@
 ---
-title: 'Обращение к внутренней системе (INTERNAL, FORMULA)'
+title: 'Обращение к внутренней системе (INTERNAL, FORMULA): Обзор'
+sidebar_label: Обзор
 ---
 
 *Java-взаимодействие*

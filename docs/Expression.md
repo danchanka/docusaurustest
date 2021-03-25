@@ -1,5 +1,6 @@
 ---
-title: 'Expression'
+title: 'Expression: Overview'
+sidebar_label: Overview
 ---
 
 An *expression* is a combination of [property operators](Property_operators.md) and [parameters](Properties.md). When an expression is evaluated sequentially in [priority](Operator_priority.md)  order, all the operators are executed.

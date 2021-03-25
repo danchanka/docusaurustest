@@ -1,5 +1,6 @@
 ---
-title: 'Form operators'
+title: 'Form operators: Overview'
+sidebar_label: Overview
 ---
 
 Form operators can be divided into several categories:

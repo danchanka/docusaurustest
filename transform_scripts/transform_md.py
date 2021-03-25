@@ -142,10 +142,16 @@ def find_close_tag_pos(data, start_pos, open_tag, close_tag):
 def escape_title(title):
     return '\'' + title + '\''       
 
-def create_title(data):
+def create_title(data, is_category, overview_str):
     lines = data.split('\n')
     title = lines[2][2:]
-    data = '---\ntitle: ' + escape_title(title) + '\n---\n' + '\n'.join(lines[3:])
+    data = '---\n'
+    if is_category:
+        data += f'title: {escape_title(title + ": " + overview_str)}\n'
+        data += f'sidebar_label: {overview_str}'
+    else:
+        data += f'title: {escape_title(title)}'
+    data += '\n---\n' + '\n'.join(lines[3:])
     return data
 
 def replace_html_ltgt(data):
@@ -199,10 +205,10 @@ def change_headers(data):
 def fix_image_links(data):
     return re.sub(r'<img src="(.*?)".*?/>', r'![](\1)', data)
 
-def transform_file_content(data, filename, samples_links, samples_url, info_list):
+def transform_file_content(data, filename, samples_links, samples_url, info_list, is_category, overview_str):
     data = transform_tables(data, filename, samples_links, samples_url)
     data = replace_html_ltgt(data)
-    data = create_title(data)
+    data = create_title(data, is_category, overview_str)
     data = make_headers(data)
     data = change_headers(data)
     data = fix_image_links(data)
@@ -287,6 +293,7 @@ def add_anchor_ids_to_headers(files, logfile, anchormap_filename):
 def transform_files(settings, indir):
     samples_links = load_map(settings["samples"])
     infomap = load_map(settings["infomap"])
+    categories = set(load_map(settings['category_list']))
     files = {}
     for filename in os.listdir(indir):
         fullname = indir + filename 
@@ -295,7 +302,7 @@ def transform_files(settings, indir):
             data = infile.read()
             infile.close()
             if len(data) > 0 and data[0] == '#': # not transformed earlier
-                files[filename] = transform_file_content(data, filename, samples_links[filename], settings["samples_url"], infomap.get(filename, []))
+                files[filename] = transform_file_content(data, filename, samples_links[filename], settings["samples_url"], infomap.get(filename, []), filename in categories, settings['overview_str'])
     return files
 
 def fix_all_links(settings, files):

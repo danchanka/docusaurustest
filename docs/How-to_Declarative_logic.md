@@ -1,5 +1,6 @@
 ---
-title: 'How-to: Declarative logic'
+title: 'How-to: Declarative logic: Overview'
+sidebar_label: Overview
 ---
 
 ### How to read these sections

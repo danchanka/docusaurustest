@@ -1,5 +1,6 @@
 ---
-title: 'Print view'
+title: 'Print view: Overview'
+sidebar_label: Overview
 ---
 
 Print view of the [form](Forms.md) consists of a set of templates (*reports*). When data is substituted in these templates, a *document* is formed in graphic (with pixel positioning) or pseudographic (with cell positioning) format. This document is displayed to the user using a special graphic component, inside which the user can navigate through pages, zoom in/out within pages and print the contents of the component or export it to various formats (for example, PDF or Excel). If necessary, it is possible to skip the display of the component to the user and send the document for printing or save it into a selected file in the specified format.

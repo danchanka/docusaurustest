@@ -1,5 +1,6 @@
 ---
-title: 'Extensions'
+title: 'Extensions: Overview'
+sidebar_label: Overview
 ---
 
 *Extension* is a technique that allows a developer to extend the functionality of one module in another. 

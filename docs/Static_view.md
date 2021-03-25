@@ -1,5 +1,6 @@
 ---
-title: 'Static view'
+title: 'Static view: Overview'
+sidebar_label: Overview
 ---
 
 In *static* view, all form data is read at the time the form is [opened](Open_form.md), after which the obtained data is converted:

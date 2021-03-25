@@ -1,5 +1,6 @@
 ---
-title: 'Element identification'
+title: 'Element identification: Overview'
+sidebar_label: Overview
 ---
 
 On the **lsFusion** platform, some elements of the system are *named*, meaning that they can be used by accessing them by name.

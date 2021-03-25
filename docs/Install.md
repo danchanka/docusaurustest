@@ -1,5 +1,6 @@
 ---
-title: 'Install'
+title: 'Install: Overview'
+sidebar_label: Overview
 ---
 
 ### Automatic installation

@@ -1,5 +1,6 @@
 ---
-title: 'How-to: Use Cases'
+title: 'How-to: Use Cases: Overview'
+sidebar_label: Overview
 ---
 
 ### How to read these sections

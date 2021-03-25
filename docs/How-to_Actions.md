@@ -1,5 +1,6 @@
 ---
-title: 'How-to: Actions'
+title: 'How-to: Actions: Overview'
+sidebar_label: Overview
 ---
 
 ### How to read these sections

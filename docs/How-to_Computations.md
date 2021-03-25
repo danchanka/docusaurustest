@@ -1,5 +1,6 @@
 ---
-title: 'How-to: Computations'
+title: 'How-to: Computations: Overview'
+sidebar_label: Overview
 ---
 
 ### How to read these sections

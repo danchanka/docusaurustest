@@ -1,5 +1,6 @@
 ---
-title: 'Instructions'
+title: 'Instructions: Overview'
+sidebar_label: Overview
 ---
 
 The code of any [module](Modules.md) in **[lsFusion](Language.md)** consists of a sequence of *instructions. *

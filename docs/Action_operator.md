@@ -1,5 +1,6 @@
 ---
-title: 'Action operator'
+title: 'Action operator: Overview'
+sidebar_label: Overview
 ---
 
 *Action operator* is a syntax construct that describes an [operator](Оperators.md) creating an [action](Actions.md).

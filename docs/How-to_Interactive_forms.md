@@ -1,5 +1,6 @@
 ---
-title: 'How-to: Interactive forms'
+title: 'How-to: Interactive forms: Overview'
+sidebar_label: Overview
 ---
 
 ### How to read these sections

@@ -1,5 +1,6 @@
 ---
-title: 'Instruction ='
+title: 'Instruction =: Overview'
+sidebar_label: Overview
 ---
 
 The **= ** instruction creates a new [property](Properties.md).

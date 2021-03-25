@@ -1,5 +1,6 @@
 ---
-title: 'Launch parameters'
+title: 'Launch parameters: Overview'
+sidebar_label: Overview
 ---
 
 -   Application server (Server)

@@ -1,5 +1,6 @@
 ---
-title: 'How-to: Integration'
+title: 'How-to: Integration: Overview'
+sidebar_label: Overview
 ---
 
 ### How to read these sections

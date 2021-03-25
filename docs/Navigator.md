@@ -1,5 +1,6 @@
 ---
-title: 'Navigator'
+title: 'Navigator: Overview'
+sidebar_label: Overview
 ---
 
 *Navigator* is a hierarchical structure (tree) consisting of *navigator elements*. There are three types of navigator elements:

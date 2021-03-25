@@ -1,5 +1,6 @@
 ---
-title: 'Инструкция ACTION'
+title: 'Инструкция ACTION: Обзор'
+sidebar_label: Обзор
 ---
 
 Инструкция **ACTION** - создание нового [действия](Actions.md).

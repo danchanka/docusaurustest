@@ -1,5 +1,6 @@
 ---
-title: 'How-to: Use Cases'
+title: 'How-to: Use Cases: Обзор'
+sidebar_label: Обзор
 ---
 
 ### Порядок ознакомления

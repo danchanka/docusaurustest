@@ -1,5 +1,6 @@
 ---
-title: 'How-to: Extensions'
+title: 'How-to: Extensions: Overview'
+sidebar_label: Overview
 ---
 
 [Extensions](Extensions.md) are very important for providing the modularity and extensibility of applications.

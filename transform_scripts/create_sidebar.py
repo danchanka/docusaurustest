@@ -32,11 +32,13 @@ def print_leaf(line, d, md_map, outfile):
     printsp(f'\'{md_map[name(line)][:-3]}\', ', d, outfile)
 
 def build_sidebar(lines, outfile, md_map):
+    category_list = []
     stack = []
     for i, line in enumerate(lines):
         d = depth(line)
         if i + 1 != len(lines) and depth(line) < depth(lines[i+1]):
             open_category(line, d, outfile)
+            category_list.append(md_map[name(line)])
             print_leaf(line, d+4, md_map, outfile)
             stack.append(line)
         else:         
@@ -46,6 +48,7 @@ def build_sidebar(lines, outfile, md_map):
                 while stack and depth(stack[-1]) >= nextd:
                     close_category(depth(stack[-1]), outfile)        
                     stack.pop()
+    return category_list                
 
 
 if len(sys.argv) < 4:
@@ -59,7 +62,9 @@ with open(sys.argv[1], 'r', encoding='utf-8') as infile:
     # print('\n'.join(lines))
     with open(sys.argv[2], 'w', encoding='utf-8') as outfile:
         outfile.write('module.exports = {\n  docs: [\n')
-        build_sidebar(lines, outfile, md_map)
+        category_list = build_sidebar(lines, outfile, md_map)
         outfile.write('  ]\n};\n')
         outfile.close()
+
+    json.dump(category_list, open(settings['category_list'], 'w', encoding='utf-8'), ensure_ascii=False, indent=4)
      
