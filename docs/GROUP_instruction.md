@@ -5,9 +5,8 @@ title: 'GROUP instruction'
 The **GROUP** instruction creates a new [property group](Groups_of_properties_and_actions.md).
 
 ### Syntax
-```
-GROUP name [caption] [EXTID extID] [: parentName];
-```
+
+    GROUP name [caption] [EXTID extID] [: parentName];
 
 ### Description
 
@@ -41,5 +40,3 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=group"/>
 
-**  
-**

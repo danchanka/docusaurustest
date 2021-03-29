@@ -19,7 +19,5 @@ Includes everything related to operations on an already working system.
 
 ### Stack
 
-**  
-**
 
 ![](download/temp/svgout7295390222912968923.png)

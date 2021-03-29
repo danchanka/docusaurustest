@@ -59,5 +59,3 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=InstructionSample&block=means"/>
 
-**  
-**

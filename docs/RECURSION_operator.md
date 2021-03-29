@@ -41,8 +41,6 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=recursion1"/>
 
-**  
-**
 
 Note that Fibonacci numbers can be implemented without adding the to parameter:
 

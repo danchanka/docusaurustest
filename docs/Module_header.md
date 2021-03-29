@@ -23,8 +23,6 @@ The **PRIORITY** instruction defines the list of additional [namespaces](Naming
 
 The **NAMESPACE** instruction defines the module's namespace.  
 
-**  
-**
 
 ## Parameters
 

@@ -29,7 +29,5 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=OperatorPropertySample&block=concat"/>
 
-**  
-**
 
  

@@ -15,7 +15,5 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=OperatorPropertySample&block=join1"/>
 
-**  
-**
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=OperatorPropertySample&block=join2"/>

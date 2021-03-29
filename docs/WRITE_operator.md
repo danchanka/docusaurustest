@@ -58,8 +58,6 @@ An [expression](Expression.md) whose value equals to the file that will be writt
 
 Keyword. If specified, the file is re-read from  fileExpr and appended to the file at urlExpr;. For the CSV extension, data is added to the end of the file. For xls and xlsx , all sheets from the fileExpr file are copied to the file at the specified location urlExpr. Not supported for other extensions. By default, the file is rewritten.
 
-**  
-**
 
 ### **Examples**
 

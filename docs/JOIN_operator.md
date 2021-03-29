@@ -51,8 +51,6 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=join1"/>
 
-**  
-**
 
 Sometimes it’s convenient to define the main property with an expression to simplify the source code and make it more understandable.
 

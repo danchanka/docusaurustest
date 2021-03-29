@@ -41,8 +41,6 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=OperatorPropertySample&block=recursion1"/>
 
-**  
-**
 
 Заметим, что числа Фибоначчи можно реализовать без добавления параметра to:
 

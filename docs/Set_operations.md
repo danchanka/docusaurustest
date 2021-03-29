@@ -38,8 +38,6 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://documentation.lsfusion.org/sample?file=PropertySample&block=set"/>
 
-**  
-**
 
 There are several non-trivial cases when the operation is correct but the platform cannot determine this. For example, if the only limiting condition for a parameter is whether it falls within the range:
 
