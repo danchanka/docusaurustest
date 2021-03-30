@@ -7,7 +7,7 @@ The *form design* defines how a [form](Forms.md) is displayed in the [interact
 As with any GUI, form design is a hierarchy whose nodes are *components*. Components, in turn, can be:
 
 -   *containers*: components that contain other components.
--   *base components*: graphical vews of the elements described in the [form structure](Form_structure.md) and the form[interactive view](Interactive_view.md).
+-   *base components*: graphical vews of the elements described in the [form structure](Form_structure.md) and the form [interactive view](Interactive_view.md).
 
 Each component must have its own unique name within *the form*. 
 
@@ -105,8 +105,8 @@ By default, the extension coefficient and alignment for components are determine
 |---|---|---|
 |Table / Tree|1|STRETCH|
 |Component inside scrollable containers, splitters and tabbed panel|1|STRETCH|
-|Property panel inside a horizontal container or property in a table. The property values are objects of built-in classes of dynamic length (i.e. strings and numbers)|With of the value cell|START|
-|Property panel inside a vertical container. The property values are objects of builtin classes of dynamic length (i.e. strings and numbers)|0|STRETCH|
+|Property panel inside a horizontal container or property in a table. The property values are objects of [built-in classes](Built-in_classes.md) of dynamic length (i.e. strings and numbers)|With of the value cell|START|
+|Property panel inside a vertical container. The property values are objects of [built-in classes](Built-in_classes.md) of dynamic length (i.e. strings and numbers)|0|STRETCH|
 |All others|0|START|
 
 The base container size (except the tab panel) is equal by default to the sum of the base sizes of all its child components for the dynamic direction, and the maximum for the static direction. The base height of the tab panel is the sum of the base height of its current tab and the height of the tab title bar, the base width is the same as the base width of the current tab.

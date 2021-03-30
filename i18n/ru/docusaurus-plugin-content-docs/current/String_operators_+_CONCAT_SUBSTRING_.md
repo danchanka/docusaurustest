@@ -30,7 +30,7 @@ title: 'Строковые операторы (+, CONCAT, SUBSTRING)'
 |<strong>NUMERIC</strong>|<strong>STRING[p.length]</strong>|
 |<strong>LOGICAL</strong>|<strong>STRING[1]</strong>|
 |<strong>FILE</strong>|<strong>TEXT</strong>|
-|[Объект](Static_objects.md)|<strong>STRING[10]</strong>|
+|[Объект](User_classes.md)|<strong>STRING[10]</strong>|
 |Остальные|<strong>STRING[8]</strong>|
 
 ### Примеры

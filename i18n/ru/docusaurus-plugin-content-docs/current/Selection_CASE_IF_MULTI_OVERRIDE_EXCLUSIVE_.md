@@ -36,7 +36,7 @@ title: 'Выбор (CASE, IF, MULTI, OVERRIDE, EXCLUSIVE)'
 
 ### Определение класса результата
 
-Результирующим классом оператора выбора является общий предок его операндов ([встроенный](Built-in_classes.md#commonparentclass) или [пользовательский](Static_objects.md#commonparentclass)).
+Результирующим классом оператора выбора является общий предок его операндов ([встроенный](Built-in_classes.md#commonparentclass) или [пользовательский](User_classes.md#commonparentclass)).
 
 ### Язык
 

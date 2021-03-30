@@ -191,8 +191,8 @@ module.exports = {
                           items: [
                             'Classes', 
                             'Built-in_classes', 
-                            'Static_objects', 
                             'User_classes', 
+                            'Static_objects', 
                           ]
                         },
                         'Aggregations', 

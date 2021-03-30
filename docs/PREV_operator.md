@@ -21,7 +21,7 @@ It's important to understand that **PREV** is not a built-in property with [co
 
 *propExpr*
 
-[Expressions](Expression.md) whose value defines the property for which the previous value must be obtained.
+[Expression](Expression.md) whose value defines the property for which the previous value must be obtained.
 
 ### Examples
 

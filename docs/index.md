@@ -221,11 +221,11 @@
 
                         <!-- -->
 
-                        -   [Static objects](Static_objects.md)
+                        -   [User classes](User_classes.md)
 
                         <!-- -->
 
-                        -   [User classes](User_classes.md)
+                        -   [Static objects](Static_objects.md)
 
                     <!-- -->
 

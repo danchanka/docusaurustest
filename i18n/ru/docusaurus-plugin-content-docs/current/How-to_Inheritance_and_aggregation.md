@@ -10,7 +10,7 @@ import {CodeSample} from './CodeSample.mdx'
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseInheritance&block=item"/>
 
-Создадим [класс](Static_objects.md) **Receipt**, объекты которого будут отражать поступление товаров :
+Создадим [класс](User_classes.md) **Receipt**, объекты которого будут отражать поступление товаров :
 
 <CodeSample url="https://ru-documentation.lsfusion.org/sample?file=UseCaseInheritance&block=receipt"/>
 

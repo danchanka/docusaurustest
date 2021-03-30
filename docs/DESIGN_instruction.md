@@ -2,7 +2,7 @@
 title: 'DESIGN instruction'
 ---
 
-panelCaptionAboveThe **DESIGN** instruction changes [form design](Form_design.md).
+The **DESIGN** instruction changes [form design](Form_design.md).
 
 ### Syntax
 

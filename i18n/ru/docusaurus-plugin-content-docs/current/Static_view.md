@@ -42,6 +42,6 @@ import {CodeSample} from './CodeSample.mdx'
 
 Иерархия групп объектов для этой формы будет построена следующим образом:
 
-![](download/temp/svgout4931671302638670306.png)
+![](download/temp/svgout5012488500235066354.png)
 
   

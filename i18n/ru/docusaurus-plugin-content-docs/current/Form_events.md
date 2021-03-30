@@ -88,7 +88,7 @@ QUERYOK
 Для *запроса объекта* у пользователя в создаваемых обработках в зависимости от типа класса используются следующие операторы :
 
 -   [Встроенные классы](Built-in_classes.md) - оператор [ввода примитива](Primitive_input_INPUT_.md).
--   [Пользовательские классы](Static_objects.md) - оператор [открытия формы](In_an_interactive_view_SHOW_DIALOG_.md) [выбора](Interactive_view.md#edtClass) этого класса. 
+-   [Пользовательские классы](User_classes.md) - оператор [открытия формы](In_an_interactive_view_SHOW_DIALOG_.md) [выбора](Interactive_view.md#edtClass) этого класса. 
 
 ### Стандартные обработки {#predefined}
 

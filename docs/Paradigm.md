@@ -15,4 +15,4 @@ It includes everything else - everything related to the development, performanc
 
 ### Stack
 
-![](download/temp/svgout746393458553047324.png)
+![](download/temp/svgout6111880952272856506.png)

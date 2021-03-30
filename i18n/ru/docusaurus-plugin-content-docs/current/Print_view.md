@@ -35,7 +35,7 @@ import {CodeSample} from './CodeSample.mdx'
 
   
 
-![](download/temp/svgout6080600897799900016.png)
+![](download/temp/svgout5085796486517020333.png)
 
 ### Язык
 

@@ -42,6 +42,6 @@ import {CodeSample} from './CodeSample.mdx'
 
 The hierarchy of groups of objects for this form will be constructed as follows:
 
-![](download/temp/svgout5696341712500413108.png)
+![](download/temp/svgout1677966355050823471.png)
 
   

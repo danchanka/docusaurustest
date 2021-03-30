@@ -23,6 +23,6 @@ Accordingly, the summary table for all elements of the business logic is as foll
 ### Stack
 
 
-![](download/temp/svgout619108216981339674.png)
+![](download/temp/svgout59120222115383154.png)
 
   
