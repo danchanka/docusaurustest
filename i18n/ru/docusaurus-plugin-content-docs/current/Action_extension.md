@@ -27,11 +27,66 @@ title: 'Расширение действий'
 
 ### Примеры
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+exportXls 'Выгрузить в Excel'  ABSTRACT CASE ( Order);         // В данном случае создается ABSTRACT CASE OVERRIDE LAST
+exportXls (Order o) + WHEN name(currency(o)) == 'USD' THEN {
+    MESSAGE 'Export USD not implemented';
+}
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=ActionSample&block=abstract"/>
+CLASS Task;
+run 'Выполнить'  ABSTRACT ( Task);                           // ABSTRACT MULTI EXCLUSIVE
+
+CLASS Task1 : Task;
+name = DATA STRING[100] (Task);
+run (Task1 t) + {
+    MESSAGE 'Run Task1 ' + name(t);
+}
 
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=InstructionSample&block=extendaction"/>
+CLASS OrderDetail;
+price = DATA NUMERIC[14,2] (OrderDetail);
+
+CLASS InvoiceDetail;
+price = DATA NUMERIC[14,2] (InvoiceDetail);
+fill  ABSTRACT LIST ( OrderDetail, InvoiceDetail);   // ABSTRACT LIST LAST
+
+fill (OrderDetail od, InvoiceDetail id) + {
+    price(id) <- price(od);
+}
+```
+
+
+```lsf
+CLASS ABSTRACT Animal;
+whoAmI  ABSTRACT ( Animal);
+
+CLASS Dog : Animal;
+whoAmI (Dog d) + {  MESSAGE 'I am a dog!'; }
+
+CLASS Cat : Animal;
+whoAmI (Cat c) + {  MESSAGE 'I am a сat!'; }
+
+ask ()  {
+    FOR Animal a IS Animal DO
+        whoAmI(a); // для каждого объекта будет выдано соответствующее сообщение
+}
+
+onStarted  ABSTRACT LIST ( );
+onStarted () + {
+    name(Sku s) <- '1';
+}
+onStarted () + {
+    name(Sku s) <- '2';
+}
+// сначала выполниться 1е действие, потом 2е действие
+
+CLASS Human;
+name = DATA STRING[100] (Human);
+
+testName  ABSTRACT CASE ( Human);
+
+testName (Human h) + WHEN name(h) == 'John' THEN {  MESSAGE 'I am John'; }
+testName (Human h) + WHEN name(h) == 'Bob' THEN {  MESSAGE 'I am Bob'; }
+```
 
   

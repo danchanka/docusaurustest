@@ -23,10 +23,17 @@ title: 'Операции со структурами (STRUCT, \[\])'
 
 ### Примеры
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+objectStruct(a, b) = STRUCT(a, f(b));
+stringStruct() = STRUCT(1, 'two', 3.0);
+```
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=OperatorPropertySample&block=struct"/>
 
-
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=OperatorPropertySample&block=brackets"/>
+```lsf
+CLASS Letter;
+attachment1 = DATA FILE (Letter);
+attachment2 = DATA FILE (Letter);
+letterAttachments (Letter l) = STRUCT(attachment1(l), attachment2(l));
+secondAttachment(Letter l) = letterAttachments(l)[2]; // возвращает attachment2
+```
 

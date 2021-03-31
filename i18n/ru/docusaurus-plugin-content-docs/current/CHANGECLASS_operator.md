@@ -29,6 +29,13 @@ title: 'Оператор CHANGECLASS'
 ### Примеры
 
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+CLASS Document;
+date = DATA DATE (Document);
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=ActionSample&block=changeclass"/>
+CLASS ClosedDocument : Document;
+// переводит все документы с датой старше 2-х недель в статус закрыт
+changeStatus()  {
+    CHANGECLASS Document d TO ClosedDocument WHERE sum(date(d), 14) <= currentDate();
+}
+```

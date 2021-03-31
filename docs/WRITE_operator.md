@@ -62,7 +62,13 @@ Keyword. If specified, the file is re-read from  fileExpr and appended to the 
 ### **Examples**
 
 
-import {CodeSample} from './CodeSample.mdx'
-
-<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=write"/>
+```lsf
+loadAndWrite ()  {
+    INPUT f = FILE DO {
+        WRITE f TO 'file:///home/user/loadedfile.csv' APPEND;
+        WRITE CLIENT f TO '/home/user/loadedfile.txt';
+        WRITE CLIENT DIALOG f TO 'loadedfile';
+    }
+}
+```
 

@@ -22,9 +22,26 @@ title: 'Изменение класса (CHANGECLASS, DELETE)'
 
 ### Примеры
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+// удаление объекта
+deleteObject(obj)  { DELETE obj; }
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=ActionSample&block=delete"/>
+// удаление всех неактивных товаров
+CLASS Article;
+active = DATA BOOLEAN (Article);
+deleteInactiveArticles()  {
+    DELETE Article a WHERE a IS Article AND NOT active(a); // добавляется локальный параметр a, соответствующий перебираемым объектам
+}
+```
 
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=ActionSample&block=changeclass"/>
+```lsf
+CLASS Document;
+date = DATA DATE (Document);
+
+CLASS ClosedDocument : Document;
+// переводит все документы с датой старше 2-х недель в статус закрыт
+changeStatus()  {
+    CHANGECLASS Document d TO ClosedDocument WHERE sum(date(d), 14) <= currentDate();
+}
+```

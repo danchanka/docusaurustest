@@ -22,7 +22,8 @@ title: 'Arithmetic operators'
 
 ### Examples
 
-import {CodeSample} from './CodeSample.mdx'
-
-<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=arithmetic"/>
+```lsf
+sum(a, b) = a + b;
+transform(a, b, c) = -a * (b (+) c);
+```
 

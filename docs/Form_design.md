@@ -167,9 +167,15 @@ The automatic design is generated as follows:
 
 ### Default design example
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
 
-<CodeSample url="https://documentation.lsfusion.org/sample?file=FormDesignSample"/>
+FORM myForm 'myForm'
+    OBJECTS myObject = myClass
+    PROPERTIES(myObject) myProperty1, myProperty2 PANEL
+    FILTERGROUP myFilter
+        FILTER 'myFilter' myProperty1(myObject)
+;
+```
 
 The hierarchy of containers and components in the default design will look like this:
 
@@ -183,7 +189,59 @@ To set up the design of the form, use the [****DESIGN**** instruction](DESIGN_i
 
 ### Examples
 
-<CodeSample url="https://documentation.lsfusion.org/sample?file=FormSample&block=design"/>
+```lsf
+DESIGN order { // customizing the design of the form, starting with the default design
+    // marking that all changes to the hierarchy will occur for the topmost container
+    NEW orderPane FIRST { // creating a new container as the very first one before the system buttons, in which we put two containers - header and specifications
+        fill = 1; // specifying that the container should occupy all the space available to it
+        type = SPLITV; // specifying that the container will be a vertical splitter
+        MOVE BOX(o) { // moving everything related to the object o to the new container
+            PANEL(o) { // configuring how properties are displayed in the object o panel
+                type = CONTAINERV; // making all descendants go from top to bottom
+                NEW headerRow1 { // creating a container - the first row
+                    type = CONTAINERH;
+                    MOVE PROPERTY(date(o)) { // moving the order date property
+                        caption = 'Date of the edited order'; // "override" the property caption in the form design (instead of the standard one)
+                        toolTip = 'Input here the date the order was made'; //setting a hint for the order date property
+                        background = #00FFFF; // making the background red
+                    }
+                    MOVE PROPERTY(time(o)) { // moving the order time property
+                        foreground = #FF00FF; // making the color green
+                    }
+                    MOVE PROPERTY(number(o)) { // moving the order number property
+                        charWidth = 5; // setting that the user should preferably be shown 5 characters
+                    }
+                    MOVE PROPERTY(series(o)); // moving the order series property
+                }
+                NEW headerRow2 {
+                    type = CONTAINERV; // descendants - from top to bottom
+                }
+                MOVE PROPERTY(note(o));
+            }
+
+            size = (400, 300); //specifying that the container o.box should have a base size of 400x300 pixels
+        }
+        NEW detailPane { // creating a container that will store various specifications for the order
+            type = TABBED; // marking that this container should be a tab panel, where its descendats are tabs
+            MOVE BOX(d) { // adding a container with order lines as one of the tabs in the top panel
+                caption = 'Lines'; // setting the caption of the tab panel
+                PROPERTY(index(d)) { focusable = FALSE; } // making the row number column never have focus
+                GRID(d) {
+                    defaultComponent = TRUE; // making sure that by default the focus when opening the form is set to the row table
+                }
+            }
+            MOVE BOX(s) { // adding a container with sku totals as one of the detailPane tabs
+                caption = 'Selection';
+            }
+        }
+    }
+}
+
+// splitting the form definition into two instructions (the second instruction can be transferred to another module)
+DESIGN order {
+    REMOVE TOOLBARLEFT; // removing from the hierarchy the container with the print and export buttons to xls, thereby making them invisible
+}
+```
 
 The output is the following form:
 

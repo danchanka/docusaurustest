@@ -12,8 +12,18 @@ title: 'Константа'
 
 Примеры
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+CLASS Direction {
+    north, east, south, west                        // объявляем статические объекты
+}
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=PropertySample&block=constant"/>
+isNorth (Direction d) = d == Direction.north;  // здесь константное свойство создается из объекта Direction.north, которое затем используется оператором сравнения для построения свойства isNorth
+
+defaultDate() = 1982_07_13;                         // здесь константное свойство создается из литерала, описывающего дату
+
+CLASS Man;
+age 'Возраст' = DATA INTEGER (Man);
+isChild (Man m) = age(m) < 17;                        // здесь используется константное свойство, созданное из целого числа (целочисленного литерала)
+```
 
  

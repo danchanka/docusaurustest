@@ -36,9 +36,14 @@ sidebar_label: Обзор
 
 ### Пример построения иерархии ****групп объектов****
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=GroupHierarchySample"/>
+FORM myForm 'myForm'
+    OBJECTS A, B SUBREPORT, C, D, E
+    PROPERTIES f(B, C), g(A, C)
+    FILTERS c(E) = C, h(B, D)
+;
+```
 
 Иерархия групп объектов для этой формы будет построена следующим образом:
 

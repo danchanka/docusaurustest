@@ -1,4 +1,5 @@
 import sys, re, os, json
+import urllib.request
 
 def get_dirs(settings):
     input_dir = settings["input_dir"]
@@ -29,13 +30,15 @@ def transform_tables(data, filename, samples_links, samples_url):
                 inside_simple_table = True
                 if line.lstrip().startswith('<table class="highlighttable"'):
                     inside_simple_table = False
-                    if sample_index == 0:
-                        nlines.append('import {CodeSample} from \'./CodeSample.mdx\'')
-                        nlines.append('')
+                    # if sample_index == 0:
+                    #     nlines.append('import {CodeSample} from \'./CodeSample.mdx\'')
+                    #     nlines.append('')
 
                     # <CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=write"/>                        
                     url = samples_links[sample_index].replace("http://localhost:5000/samphighl", samples_url)    
-                    nlines.append(f'<CodeSample url="{url}"/>')
+                    codeblock = get_codeblock_by_url(url)
+                    nlines.extend(codeblock)
+                    # nlines.append(f'<CodeSample url="{url}"/>')
                     sample_index += 1
                 # else:    
                 #     nlines.append('[table was removed]')
@@ -55,6 +58,17 @@ def transform_tables(data, filename, samples_links, samples_url):
                 table_lines = []
 
     return '\n'.join(nlines)    
+
+def get_codeblock_by_url(url):
+    lines = []
+    lines.append('```lsf')
+
+    with urllib.request.urlopen(url) as response:
+        for line in response:
+            lines.append(line.rstrip().decode('utf-8'))
+
+    lines.append('```')
+    return lines
 
 def transform_simple_table(lines):
     data = '\n'.join(lines)
@@ -205,6 +219,18 @@ def change_headers(data):
 def fix_image_links(data):
     return re.sub(r'<img src="(.*?)".*?/>', r'![](\1)', data)
 
+def remove_unnecessary_stars(data):
+    # matches = list(re.finditer(r'[^*](\*\*)[^*]|[^*](\*\*)$|^(\*\*)[^*]|^(\*\*)$', data))
+    # ndata = ''
+    # prev = 0
+    # for i in range(len(matches)-1):
+    #     if i % 2 == 0 and re.fullmatch(r'\s+', data[matches[i].end(1) : matches[i+1].start(1)]):
+    #         ndata += data[prev:matches[i].start(1)]
+    #         prev = matches[i+1].end(1)
+    # ndata += data[prev:]        
+    data = re.sub(r'\n\*\*[ \t]*\n\*\*', '', data)
+    return data
+
 def transform_file_content(data, filename, samples_links, samples_url, info_list, is_category, overview_str):
     data = transform_tables(data, filename, samples_links, samples_url)
     data = replace_html_ltgt(data)
@@ -213,6 +239,7 @@ def transform_file_content(data, filename, samples_links, samples_url, info_list
     data = change_headers(data)
     data = fix_image_links(data)
     data = add_info_blocks(data, info_list)
+    data = remove_unnecessary_stars(data)
     return data    
     
 def load_map(filename):

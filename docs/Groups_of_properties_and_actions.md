@@ -43,8 +43,9 @@ Property groups are currently used in the following mechanisms:
 
 To add a new property/action group to the system, use the [**GROUP** instruction](GROUP_instruction.md).
 
-import {CodeSample} from './CodeSample.mdx'
-
-<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=group"/>
+```lsf
+GROUP base : root; // The caption of this group will be 'base'
+GROUP local 'Local properties'; // The parent group of local will be System.private
+```
 
   

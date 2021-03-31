@@ -40,8 +40,16 @@ title: 'Оператор NEW'
 ### Примеры
 
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=ActionSample&block=new"/>
+newSku ()  {
+    LOCAL addedSkus = Sku (INTEGER);
+    NEW Sku WHERE iterate(i, 1, 3) TO addedSkus(i);
+    FOR Sku s = addedSkus(i) DO {
+        id(s) <- 425;
+        name(s) <- 'New Sku';
+    }
+}
+```
 
   

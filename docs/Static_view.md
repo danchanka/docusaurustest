@@ -36,9 +36,14 @@ As follows from the algorithm, the empty object group is always the only root gr
 
 ### An example of constructing ****object group**** hierarchy
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
 
-<CodeSample url="https://documentation.lsfusion.org/sample?file=GroupHierarchySample"/>
+FORM myForm 'myForm'
+    OBJECTS A, B SUBREPORT, C, D, E
+    PROPERTIES f(B, C), g(A, C)
+    FILTERS c(E) = C, h(B, D)
+;
+```
 
 The hierarchy of groups of objects for this form will be constructed as follows:
 

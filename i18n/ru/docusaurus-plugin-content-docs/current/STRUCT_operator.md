@@ -21,7 +21,8 @@ title: 'Оператор STRUCT'
 ### Примеры
 
 
-import {CodeSample} from './CodeSample.mdx'
-
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=OperatorPropertySample&block=struct"/>
+```lsf
+objectStruct(a, b) = STRUCT(a, f(b));
+stringStruct() = STRUCT(1, 'two', 3.0);
+```
 

@@ -73,6 +73,14 @@ To create tables, use the [**TABLE** instruction](TABLE_instruction.md). To spe
 
 ### Examples
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+TABLE book (Book);
 
-<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=table"/>
+in = DATA BOOLEAN (Sku, Stock);
+TABLE skuStock (Sku, Stock); // it will store the in property
+
+price = DATA NUMERIC[10,2] (Sku, DATE);
+TABLE skuDate (Sku, DATE); // it will store the Sku property
+
+TABLE sku (Sku) FULL;
+```

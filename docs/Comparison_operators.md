@@ -23,7 +23,9 @@ title: 'Comparison operators'
 ### Examples
 
 
-import {CodeSample} from './CodeSample.mdx'
-
-<CodeSample url="https://documentation.lsfusion.org/sample?file=OperatorPropertySample&block=compare"/>
+```lsf
+equalBarcodes = barcode(a) == barcode(b);
+outOfIntervalValue1(value, left, right) = value < left OR value > right;
+outOfIntervalValue2(value, left, right) = NOT (value >= left AND value <= right);
+```
 

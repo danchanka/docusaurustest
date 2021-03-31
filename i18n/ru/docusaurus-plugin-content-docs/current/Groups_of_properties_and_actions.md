@@ -43,8 +43,9 @@ title: 'Группы свойств и действий'
 
 Для добавления новой группы свойств и действий в систему используется [инструкция **GROUP**](GROUP_instruction.md).
 
-import {CodeSample} from './CodeSample.mdx'
-
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=InstructionSample&block=group"/>
+```lsf
+GROUP base : root; // Заголовком этой группы будет 'base'
+GROUP local 'Локальные свойства'; // Родительской группой local будет являться System.private
+```
 
   

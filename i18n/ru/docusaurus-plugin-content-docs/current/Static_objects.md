@@ -18,7 +18,28 @@ title: 'Статические объекты'
 
 ### Примеры
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+CLASS Direction 'Направление'
+{
+    north 'Север',
+    east 'Восток',
+    south 'Юг',
+    west 'Запад'
+}
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=StaticObjectSample"/>
+direction = DATA Direction ();
+
+showDirection  {
+    MESSAGE staticName(direction());
+    MESSAGE staticCaption(direction());
+}
+
+// создаем форму по выбору объекта класса Direction
+FORM directions 'Направления'
+    OBJECTS d = Direction
+    PROPERTIES(d) READONLY staticCaption
+
+    LIST Direction OBJECT d
+;
+```
 

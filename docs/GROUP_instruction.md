@@ -36,7 +36,8 @@ Name of the parent group. [Сomposite ID](IDs.md#cid-broken). If the name of th
 
 ### Examples
 
-import {CodeSample} from './CodeSample.mdx'
-
-<CodeSample url="https://documentation.lsfusion.org/sample?file=InstructionSample&block=group"/>
+```lsf
+GROUP base : root; // The caption of this group will be 'base'
+GROUP local 'Local properties'; // The parent group of local will be System.private
+```
 

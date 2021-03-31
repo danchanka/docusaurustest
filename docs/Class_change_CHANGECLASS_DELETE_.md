@@ -22,9 +22,26 @@ To declare an action that implements a change of object classes, use the [**CHAN
 
 ### Examples
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+// deleting an object
+deleteObject(obj)  { DELETE obj; }
 
-<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=delete"/>
+// deleting all inactive products
+CLASS Article;
+active = DATA BOOLEAN (Article);
+deleteInactiveArticles()  {
+    DELETE Article a WHERE a IS Article AND NOT active(a); // a local parameter a is added corresponding to the objects to be iterated over
+}
+```
 
 
-<CodeSample url="https://documentation.lsfusion.org/sample?file=ActionSample&block=changeclass"/>
+```lsf
+CLASS Document;
+date = DATA DATE (Document);
+
+CLASS ClosedDocument : Document;
+// sets status to closed for all documents with a date older than 2 weeks
+changeStatus()  {
+    CHANGECLASS Document d TO ClosedDocument WHERE sum(date(d), 14) <= currentDate();
+}
+```

@@ -27,9 +27,14 @@ sidebar_label: Обзор
 
 Форма такая же как и в [примере построения иерархии групп объектов](Static_view.md#hierarchysample-broken):
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=GroupHierarchySample"/>
+FORM myForm 'myForm'
+    OBJECTS A, B SUBREPORT, C, D, E
+    PROPERTIES f(B, C), g(A, C)
+    FILTERS c(E) = C, h(B, D)
+;
+```
 
 Иерархия отчетов для этой формы будет построена следующим образом:
 
@@ -47,4 +52,29 @@ import {CodeSample} from './CodeSample.mdx'
 
 ### Примеры
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=ActionSample&block=print"/>
+```lsf
+FORM printOrder
+    OBJECTS o = Order
+    PROPERTIES(o) currency, customer
+
+    OBJECTS d = OrderDetail
+    PROPERTIES(d) idSku, price
+    FILTERS order(d) == o
+;
+
+print (Order o)  {
+    PRINT printOrder OBJECTS o = o; // выводим на печать
+
+    LOCAL file = FILE ();
+    PRINT printOrder OBJECTS o = o DOCX TO file;
+    open(file());
+
+    //v 2.0-2.1 syntax
+    LOCAL sheetName = STRING[255]();
+    sheetName() <- 'enctypted';
+    PRINT printOrder OBJECTS o = o XLS SHEET sheetName PASSWORD 'pass';
+
+    //v 2.2 syntax
+    //PRINT printOrder OBJECTS o = o XLS SHEET 'enctypted' PASSWORD 'pass';
+}
+```

@@ -28,8 +28,32 @@ title: 'Расширение свойств'
 ### Пример
 
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+CLASS Invoice;
+CLASS InvoiceDetail;
+CLASS Range;
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=OperatorPropertySample&block=abstract"/>
+rateChargeExchange(invoice) = ABSTRACT NUMERIC[14,6] (Invoice);             // В данном случае создается ABSTRACT MULTI EXCLUSIVE
+backgroundSku 'Цвет' (d) = ABSTRACT CASE FULL COLOR (InvoiceDetail); // В данном случае создается ABSTRACT CASE OVERRIDE LAST, и если будут
+                                                                            // подходить несколько реализаций, то вычислена будет первая из них
+overVAT = ABSTRACT VALUE OVERRIDE FIRST Range (InvoiceDetail);          // Здесь же будет вычислена последняя из подходящих реализаций
+```
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=InstructionSample&block=extendproperty"/>
+```lsf
+CLASS ABSTRACT AClass;
+CLASS BClass : AClass;
+CLASS CClass : AClass;
+CLASS DClass : AClass;
+
+name(AClass a) = ABSTRACT BPSTRING[50] (AClass);
+innerName(BClass b) = DATA BPSTRING[50] (BClass);
+innerName(CClass c) = DATA BPSTRING[50] (CClass);
+innerName(DClass d) = DATA BPSTRING[50] (DClass);
+
+name(BClass b) = 'B' + innerName(b);
+name(CClass c) = 'C' + innerName(c);
+
+name[AClass](BClass b) += name(b);
+name(CClass c) += name(c); // Здесь слева будет найден name[AClass], потому что поиск идет только среди абстрактных свойств, справа же будет найден name[CClass]
+name(DClass d) += 'DClass' + innerName(d) IF d IS DClass;
+```

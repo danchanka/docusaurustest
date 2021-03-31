@@ -47,7 +47,20 @@ title: 'Инструкция CLASS'
 ### Примеры
 
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+CLASS ABSTRACT Document; // Заголовком этого класса будет 'Document'
+CLASS IncomeDocument 'Приход' : Document;
+CLASS OutcomeDocument 'Расход' : Document;
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=InstructionSample&block=class"/>
+CLASS Person;
+CLASS Worker;
+CLASS Musician : Person, Worker; // множественное наследование
+
+CLASS Barcode 'Штрих-код'; // Родительским классом Barcode будет класс System.Object
+
+CLASS PrintOrientation {
+    portrait 'Книжная',
+    landscape 'Альбомная'
+}
+```
 

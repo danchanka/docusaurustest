@@ -36,8 +36,51 @@ title: 'В структурированном представлении (EXPORT
 
 ### Примеры
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+FORM exportSku
+    OBJECTS st = Store
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=ActionSample&block=export"/>
+    OBJECTS s = Sku
+    PROPERTIES(s) id, name, weight
+    FILTERS in(st, s)
+;
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=ActionSample&block=importForm"/>
+exportSku (Store store)  {
+    // выгружаем в DBF все Sku, для которых задано in (Store, Sku) для нужного склада
+    EXPORT exportSku OBJECTS st = store DBF CHARSET 'CP866';
+    EXPORT exportSku XML;
+    EXPORT exportSku OBJECTS st = store CSV ',';
+}
+```
+
+```lsf
+
+date = DATA DATE (INTEGER);
+sku = DATA BPSTRING[50] (INTEGER);
+price = DATA NUMERIC[14,2] (INTEGER);
+order = DATA INTEGER (INTEGER);
+FORM import
+    OBJECTS o = INTEGER // заказы
+    OBJECTS od = INTEGER // строки заказов
+    PROPERTIES (o) dateOrder = date // импортируем дату из поля dateOrder
+    PROPERTIES (od) sku = sku, price = price // импортируем товар количество из полей sku и price
+    FILTERS order(od) = o // в order - записываем верхний заказ
+
+;
+
+importForm()  {
+    INPUT f = FILE DO {
+        IMPORT import JSON FROM f;
+        SHOW import; // показываем что импортировалось
+
+        // создаем объекты в базе
+        FOR DATE date = date(INTEGER io) NEW o = Order DO {
+            date(o) <- date;
+            FOR order(INTEGER iod) = io NEW od = OrderDetail DO {
+                price(od) <- price(iod);
+                sku(od) <- GROUP MAX Sku sku IF name(sku) = sku(iod); // находим sku с данным именем
+            }
+        }
+    }
+}
+```

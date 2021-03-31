@@ -16,6 +16,19 @@ title: 'Расширение классов'
 
 ### Примеры
 
-import {CodeSample} from './CodeSample.mdx'
+```lsf
+CLASS ABSTRACT Shape;
+CLASS Box : Shape;
 
-<CodeSample url="https://ru-documentation.lsfusion.org/sample?file=InstructionSample&block=extendclass"/>
+CLASS Quadrilateral;
+EXTEND CLASS Box : Quadrilateral; // Добавляем наследование
+
+CLASS ShapeType {
+	point 'Точка',
+	segment 'Отрезок'
+}
+
+EXTEND CLASS ShapeType { // Добавляем статический объект
+	circle 'Окружность'
+}
+```
