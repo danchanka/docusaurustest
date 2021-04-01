@@ -15,7 +15,7 @@ title: 'Опции свойства'
     IN groupName
     viewType
     ON eventType { actionOperator }
-    EDITKEY key [SHOW | HIDE]
+    CHANGEKEY key [SHOW | HIDE]
     MATERIALIZED
     TABLE tableName
     INDEXED

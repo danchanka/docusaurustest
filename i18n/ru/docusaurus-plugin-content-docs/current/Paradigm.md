@@ -16,4 +16,4 @@ sidebar_label: Обзор
 ### Стек
 
 
-![](download/temp/svgout1273993573123155809.png)
+![](download/temp/svgout8010603290789995159.png)

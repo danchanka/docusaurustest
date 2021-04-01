@@ -15,7 +15,7 @@ The following set of options is supported (the syntax of each option is indicate
     IN groupName
     viewType
     ON eventType { actionOperator }
-    EDITKEY key [SHOW | HIDE]
+    CHANGEKEY key [SHOW | HIDE]
     MATERIALIZED
     TABLE tableName
     INDEXED

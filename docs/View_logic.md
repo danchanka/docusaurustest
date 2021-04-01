@@ -12,4 +12,4 @@ In the simplest version of the user interface the user opens several fixed forms
 ### Stack
 
 
-![](download/temp/svgout3853100315334541183.png)
+![](download/temp/svgout412413601144893449.png)

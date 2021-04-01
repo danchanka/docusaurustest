@@ -20,4 +20,4 @@ Includes everything related to operations on an already working system.
 ### Stack
 
 
-![](download/temp/svgout3923272413594577353.png)
+![](download/temp/svgout7741212016876622307.png)
